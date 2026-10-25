@@ -389,35 +389,13 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
       <div className="flex items-start justify-between gap-3 mb-5">
         <div>
           <div className="flex items-center flex-wrap gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-medium text-[#596B8E] dark:text-[#788BB3] uppercase tracking-wider mb-1.5">
-            <span>Surah {section.surahNumber}</span>
-            <span aria-hidden="true">·</span>
-            <span>Verses {section.verseRange[0]}–{section.verseRange[1]}</span>
+            <span className="text-[#CD7743] dark:text-[#E08955] font-semibold">
+              Verses {section.verseRange[0]}–{section.verseRange[1]}
+            </span>
             <span aria-hidden="true">·</span>
             <span>Juz {section.juzNumber}</span>
             <span aria-hidden="true">·</span>
             <span className="capitalize">{section.revelationType}</span>
-            {section.volumeNumber && (
-              <>
-                <span aria-hidden="true">·</span>
-                <span className="text-[#CD7743] dark:text-[#E08955] font-semibold">
-                  Vol. {section.volumeNumber}
-                </span>
-              </>
-            )}
-            {section.archivePageUrl && (
-              <>
-                <span aria-hidden="true">·</span>
-                <a
-                  href={section.archivePageUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#CD7743] dark:text-[#E08955] hover:underline lowercase font-normal"
-                  title="Open this section's page in the 8-Volume Print Scan on Archive.org"
-                >
-                  [print scan ↗]
-                </a>
-              </>
-            )}
           </div>
           <h2 className="text-xl sm:text-2xl md:text-3xl font-serif-heading font-semibold text-[#1C1917] dark:text-[#F3F4F6] tracking-tight">
             {section.title}

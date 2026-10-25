@@ -1,7 +1,8 @@
 import React from 'react';
 import { SurahData } from '../types/quran';
 import { SurahHistoricalContext } from './SurahHistoricalContext';
-import { BookOpen, ExternalLink } from 'lucide-react';
+import { Download } from 'lucide-react';
+import { exportSurahForAnnotation } from '../utils/exportSurahPdf';
 
 interface SurahHeroProps {
   surah: SurahData;
@@ -14,10 +15,8 @@ export const SurahHero: React.FC<SurahHeroProps> = ({ surah }) => {
 
   return (
     <div className="pt-8 pb-10 px-4 sm:px-8 border-b border-[#E8E5DF] dark:border-[#2E2E33] bg-[#FDFCFB] dark:bg-[#1C1C20] text-center space-y-7">
-      {/* Surah Number & Categorization */}
+      {/* Surah Categorization Metadata */}
       <div className="flex items-center justify-center flex-wrap gap-2 text-xs uppercase font-medium tracking-widest text-[#596B8E] dark:text-[#788BB3]">
-        <span>Surah {surah.number}</span>
-        <span aria-hidden="true">·</span>
         <span>{surah.revelationType}</span>
         <span aria-hidden="true">·</span>
         <span>{surah.versesCount} Verses</span>
@@ -48,22 +47,18 @@ export const SurahHero: React.FC<SurahHeroProps> = ({ surah }) => {
           "{surah.nameEnglish}"
         </p>
 
-        {/* Direct Link to 8-Volume Print Edition on Archive.org */}
-        {surah.archivePageUrl && (
-          <div className="pt-1">
-            <a
-              href={surah.archivePageUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-medium bg-stone-100 dark:bg-[#25252B] hover:bg-[#CD7743]/15 dark:hover:bg-[#CD7743]/25 text-stone-700 dark:text-stone-300 hover:text-[#CD7743] dark:hover:text-[#E08955] border border-stone-200/80 dark:border-stone-700/80 transition-all"
-              title={`Open Surah ${surah.nameTransliterated} in the 8-Volume Ma'ariful Qur'an Print Scan (Archive.org 2-Up Reader)`}
-            >
-              <BookOpen className="w-3.5 h-3.5 text-[#CD7743] dark:text-[#E08955]" />
-              <span>View in 8-Volume Print Edition (Vol. {surah.volumeNumber || 1})</span>
-              <ExternalLink className="w-3 h-3 opacity-70" />
-            </a>
-          </div>
-        )}
+        {/* Download Surah as PDF for Annotation */}
+        <div className="pt-1">
+          <button
+            type="button"
+            onClick={() => exportSurahForAnnotation(surah)}
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold bg-white dark:bg-[#25252B] hover:bg-[#CD7743]/10 dark:hover:bg-[#CD7743]/20 text-stone-700 dark:text-stone-300 hover:text-[#CD7743] dark:hover:text-[#E08955] border border-stone-200 dark:border-stone-700/80 shadow-xs hover:border-[#CD7743]/40 transition-all cursor-pointer"
+            title="Download this Surah formatted with wide margins and notes space as a PDF for annotation"
+          >
+            <Download className="w-3.5 h-3.5 text-[#CD7743] dark:text-[#E08955]" />
+            <span>Download PDF for Annotation</span>
+          </button>
+        </div>
       </div>
 
       {/* Bismillah Calligraphy: Spacious cartouche with generous padding and line-height so descenders & diacritics are never cutoff */}

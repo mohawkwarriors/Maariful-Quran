@@ -538,21 +538,8 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
                               <span className="text-[#596B8E] dark:text-[#788BB3] font-mono font-medium shrink-0 mt-0.5 text-[11px]">
                                 [{sec.verseRange[0]}–{sec.verseRange[1]}]
                               </span>
-                              <div className="min-w-0 flex-1 space-y-0.5">
-                                <div className="text-xs font-semibold leading-snug line-clamp-2">
-                                  {sec.title}
-                                </div>
-                                {sec.summary && (
-                                  <div
-                                    className={`text-[11px] leading-snug line-clamp-2 font-normal ${
-                                      isSecActive
-                                        ? 'text-[#CD7743]/85 dark:text-[#E08955]/85'
-                                        : 'text-stone-500 dark:text-stone-400'
-                                    }`}
-                                  >
-                                    {sec.summary}
-                                  </div>
-                                )}
+                              <div className="text-xs font-semibold leading-snug line-clamp-2 min-w-0 flex-1">
+                                {sec.title}
                               </div>
                             </div>
                             {isSecBookmarked && (
