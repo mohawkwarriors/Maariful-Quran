@@ -357,12 +357,16 @@ function ReaderApp() {
           onCollapseSidebar={() => setIsSidebarCollapsed(true)}
           onSelectTopicReference={handleSelectTopicReference}
           activeThematicSections={
-            surahData?.sections.map((s) => ({
-              id: s.id,
-              verseRange: s.verseRange,
-              title: s.title,
-              summary: s.summary,
-            })) || []
+            surahData?.sections.map((s) => {
+              const manifestSec = currentSurahMeta?.sectionsPreview?.find((p) => p.id === s.id);
+              const isInvalid = !s.title || /^[\s\-_—─–]+$/.test(s.title);
+              return {
+                id: s.id,
+                verseRange: s.verseRange,
+                title: manifestSec?.title || (isInvalid ? `Verses ${s.verseRange[0]}–${s.verseRange[1]}` : s.title),
+                summary: s.summary || manifestSec?.summary,
+              };
+            }) || []
           }
           bookmark={bookmarks[0] || null}
           bookmarks={bookmarks}

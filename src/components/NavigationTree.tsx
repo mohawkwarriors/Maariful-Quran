@@ -443,9 +443,9 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
               const isSelected = surah.number === activeSurahNumber;
               const isExpanded = isSurahExpanded(surah.number);
               const sectionsToDisplay =
-                isSelected && activeThematicSections.length > 0
-                  ? activeThematicSections
-                  : surah.sectionsPreview || [];
+                surah.sectionsPreview && surah.sectionsPreview.length > 0
+                  ? surah.sectionsPreview
+                  : (isSelected && activeThematicSections.length > 0 ? activeThematicSections : []);
 
               return (
                 <div
@@ -539,7 +539,9 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
                                 [{sec.verseRange[0]}–{sec.verseRange[1]}]
                               </span>
                               <div className="text-xs font-semibold leading-snug line-clamp-2 min-w-0 flex-1">
-                                {sec.title}
+                                {!sec.title || /^[\s\-_—─–]+$/.test(sec.title)
+                                  ? `Verses ${sec.verseRange[0]}–${sec.verseRange[1]}`
+                                  : sec.title}
                               </div>
                             </div>
                             {isSecBookmarked && (
