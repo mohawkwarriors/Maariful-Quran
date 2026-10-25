@@ -31,16 +31,16 @@ export const SurahHistoricalContext: React.FC<SurahHistoricalContextProps> = ({
       <button
         type="button"
         onClick={() => setIsExpanded((prev) => !prev)}
-        className="w-full p-4 sm:p-5 flex items-center justify-between gap-3 hover:bg-stone-50/80 dark:hover:bg-[#26262C] transition-colors cursor-pointer select-none"
+        className="w-full px-5 py-3 sm:py-3.5 flex items-center justify-between gap-4 hover:bg-stone-50/80 dark:hover:bg-[#26262C] transition-colors cursor-pointer select-none"
         aria-expanded={isExpanded}
       >
-        <div className="flex items-center gap-2.5">
-          <span className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-[#CD7743] dark:text-[#E08955] font-reader">
+        <div className="flex items-center gap-2.5 min-w-0">
+          <span className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-[#CD7743] dark:text-[#E08955] font-reader truncate">
             Background
           </span>
         </div>
 
-        <div className="p-1 rounded-lg text-stone-400 hover:text-stone-700 dark:hover:text-stone-200">
+        <div className="p-1 rounded-lg text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 shrink-0">
           {isExpanded ? (
             <ChevronDown className="w-4 h-4 text-[#CD7743] dark:text-[#E08955]" />
           ) : (
