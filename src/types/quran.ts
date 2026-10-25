@@ -40,6 +40,8 @@ export interface ThematicSection {
   title: string;
   juzNumber: number;
   revelationType: 'Makki' | 'Madani';
+  volumeNumber?: number;
+  archivePageUrl?: string;
   arabicText: string;
   translation: string;
   phraseCards: PhraseCard[];
@@ -58,6 +60,8 @@ export interface SurahManifestItem {
   orderOfRevelation: number;
   juzStart: number;
   juzEnd: number;
+  volumeNumber?: number;
+  archivePageUrl?: string;
   sectionsCount: number;
   thematicSummary: string;
   sectionsPreview?: {
@@ -84,6 +88,8 @@ export interface SurahData {
   nameEnglish: string;
   versesCount: number;
   revelationType: 'Makki' | 'Madani';
+  volumeNumber?: number;
+  archivePageUrl?: string;
   juz: number[];
   bismillahPre: boolean;
   introductoryTafseer: string;
@@ -111,4 +117,3 @@ export interface BookmarkRecord {
   verseRange?: [number, number];
   timestamp: number;
 }
-

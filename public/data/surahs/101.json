@@ -1,0 +1,356 @@
+{
+  "number": 101,
+  "nameArabic": "القارعة",
+  "nameTransliterated": "Al-Qari'ah",
+  "nameEnglish": "The Calamity",
+  "versesCount": 11,
+  "revelationType": "Makki",
+  "volumeNumber": 8,
+  "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5883/mode/2up",
+  "juz": [
+    30
+  ],
+  "bismillahPre": true,
+  "introductoryTafseer": "This Surah mentions the weighing of human deeds. He whose scales are heavy will be led to Paradise, and he whose scales are light will be led to Hell. Please see Ma’ ariful Qur'an, Vol. 3/ pp 539-547, for a full and complete analysis of the Weighing of human deeds. The analysis also allays the doubts raised against the concept of weighing of deeds.",
+  "historicalContext": {
+    "background": "We have also explained there that it appears from reconciliation of conflicting narrations and Qur'anic verses that the weighing on Plain of Resurrection will take place twice. The first weighing will be to separate the believers from the non-believers. Anyone whose Book of Deeds is put on the scale and contains the belief ('Iman) will be heavy, and the scale of anyone whose Ledger of Deeds does not contain 'Iman will be light. At this stage, the believers will be separated from the non-believers. Weighing on the second time will be to distinguish between good and evil deeds of the believers. The reference, in the present Surah, is probably t...",
+    "scholarlyReference": "Ma'ariful Qur'an by Mufti Muhammad Shafi, Volume 8 (Archive.org Leaf n5883)"
+  },
+  "sections": [
+    {
+      "id": "101-1-11",
+      "surahNumber": 101,
+      "verseRange": [
+        1,
+        11
+      ],
+      "title": "Human Deeds, Good or Bad, will be Weighed",
+      "juzNumber": 30,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5884/mode/2up",
+      "arabicText": "ٱلْقَارِعَةُ ۝١ مَا ٱلْقَارِعَةُ ۝٢ وَمَآ أَدْرَىٰكَ مَا ٱلْقَارِعَةُ ۝٣ يَوْمَ يَكُونُ ٱلنَّاسُ كَٱلْفَرَاشِ ٱلْمَبْثُوثِ ۝٤ وَتَكُونُ ٱلْجِبَالُ كَٱلْعِهْنِ ٱلْمَنفُوشِ ۝٥ فَأَمَّا مَن ثَقُلَتْ مَوَٰزِينُهُۥ ۝٦ فَهُوَ فِى عِيشَةٍ رَّاضِيَةٍ ۝٧ وَأَمَّا مَنْ خَفَّتْ مَوَٰزِينُهُۥ ۝٨ فَأُمُّهُۥ هَاوِيَةٌ ۝٩ وَمَآ أَدْرَىٰكَ مَا هِيَهْ ۝١٠ نَارٌ حَامِيَةٌۢ ۝١١",
+      "translation": "The Striking Event! ۝ What is the Striking Event? ۝ And what may let you know what the Striking Event is? ۝ (It will happen) on a day when people will be like scattered moths, ۝ and the mountains will be like carded wool. ۝ Then, as for him whose scales (of good deeds) are heavy, ۝ he will be in a happy life. ۝ But he whose scales are light, ۝ -his abode will be Abyss. ۝ And what may let you know what that (Abyss) is? ۝ A blazing Fire! ۝",
+      "phraseCards": [
+        {
+          "id": "101-1-card",
+          "verseNumber": 1,
+          "arabicPhrase": "ٱلْقَارِعَةُ",
+          "englishPhrase": "The Striking Event!",
+          "vocabulary": [
+            {
+              "word": "ٱلْقَارِعَةُ",
+              "root": "ق - ر - ع",
+              "meaning": "The Striking Calamity",
+              "grammarNote": "Transliteration: al-qāriʿatu"
+            }
+          ]
+        },
+        {
+          "id": "101-2-card",
+          "verseNumber": 2,
+          "arabicPhrase": "مَا ٱلْقَارِعَةُ",
+          "englishPhrase": "What is the Striking Event?",
+          "vocabulary": [
+            {
+              "word": "مَا",
+              "root": "م - ا",
+              "meaning": "What",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "ٱلْقَارِعَةُ",
+              "root": "ق - ر - ع",
+              "meaning": "(is) the Striking Calamity",
+              "grammarNote": "Transliteration: l-qāriʿatu"
+            }
+          ]
+        },
+        {
+          "id": "101-3-card",
+          "verseNumber": 3,
+          "arabicPhrase": "وَمَآ أَدْرَىٰكَ مَا ٱلْقَارِعَةُ",
+          "englishPhrase": "And what may let you know what the Striking Event is?",
+          "vocabulary": [
+            {
+              "word": "وَمَآ",
+              "root": "و - م - ا",
+              "meaning": "And what",
+              "grammarNote": "Transliteration: wamā"
+            },
+            {
+              "word": "أَدْرَىٰكَ",
+              "root": "د - ر - ي",
+              "meaning": "will make you know",
+              "grammarNote": "Transliteration: adrāka"
+            },
+            {
+              "word": "مَا",
+              "root": "م - ا",
+              "meaning": "what",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "ٱلْقَارِعَةُ",
+              "root": "ق - ر - ع",
+              "meaning": "(is) the Striking Calamity",
+              "grammarNote": "Transliteration: l-qāriʿatu"
+            }
+          ]
+        },
+        {
+          "id": "101-4-card",
+          "verseNumber": 4,
+          "arabicPhrase": "يَوْمَ يَكُونُ ٱلنَّاسُ كَٱلْفَرَاشِ ٱلْمَبْثُوثِ",
+          "englishPhrase": "(It will happen) on a day when people will be like scattered moths,",
+          "vocabulary": [
+            {
+              "word": "يَوْمَ",
+              "root": "ي - و - م",
+              "meaning": "(The) Day",
+              "grammarNote": "Transliteration: yawma"
+            },
+            {
+              "word": "يَكُونُ",
+              "root": "ك - و - ن",
+              "meaning": "will be",
+              "grammarNote": "Transliteration: yakūnu"
+            },
+            {
+              "word": "ٱلنَّاسُ",
+              "root": "ن - ا - س",
+              "meaning": "the mankind",
+              "grammarNote": "Transliteration: l-nāsu"
+            },
+            {
+              "word": "كَٱلْفَرَاشِ",
+              "root": "ف - ر - ش",
+              "meaning": "like moths",
+              "grammarNote": "Transliteration: kal-farāshi"
+            },
+            {
+              "word": "ٱلْمَبْثُوثِ",
+              "root": "ب - ث - و",
+              "meaning": "scattered",
+              "grammarNote": "Transliteration: l-mabthūthi"
+            }
+          ]
+        },
+        {
+          "id": "101-5-card",
+          "verseNumber": 5,
+          "arabicPhrase": "وَتَكُونُ ٱلْجِبَالُ كَٱلْعِهْنِ ٱلْمَنفُوشِ",
+          "englishPhrase": "and the mountains will be like carded wool.",
+          "vocabulary": [
+            {
+              "word": "وَتَكُونُ",
+              "root": "ك - و - ن",
+              "meaning": "And will be",
+              "grammarNote": "Transliteration: watakūnu"
+            },
+            {
+              "word": "ٱلْجِبَالُ",
+              "root": "ج - ب - ل",
+              "meaning": "the mountains",
+              "grammarNote": "Transliteration: l-jibālu"
+            },
+            {
+              "word": "كَٱلْعِهْنِ",
+              "root": "ع - ه - ن",
+              "meaning": "like wool",
+              "grammarNote": "Transliteration: kal-ʿih'ni"
+            },
+            {
+              "word": "ٱلْمَنفُوشِ",
+              "root": "ن - ف - و",
+              "meaning": "fluffed up",
+              "grammarNote": "Transliteration: l-manfūshi"
+            }
+          ]
+        },
+        {
+          "id": "101-6-card",
+          "verseNumber": 6,
+          "arabicPhrase": "فَأَمَّا مَن ثَقُلَتْ مَوَٰزِينُهُۥ",
+          "englishPhrase": "Then, as for him whose scales (of good deeds) are heavy,",
+          "vocabulary": [
+            {
+              "word": "فَأَمَّا",
+              "root": "ا - م - ا",
+              "meaning": "Then as for",
+              "grammarNote": "Transliteration: fa-ammā"
+            },
+            {
+              "word": "مَن",
+              "root": "م - ن",
+              "meaning": "(him) whose",
+              "grammarNote": "Transliteration: man"
+            },
+            {
+              "word": "ثَقُلَتْ",
+              "root": "ث - ق - ل",
+              "meaning": "(are) heavy",
+              "grammarNote": "Transliteration: thaqulat"
+            },
+            {
+              "word": "مَوَٰزِينُهُۥ",
+              "root": "و - ز - ي",
+              "meaning": "his scales",
+              "grammarNote": "Transliteration: mawāzīnuhu"
+            }
+          ]
+        },
+        {
+          "id": "101-7-card",
+          "verseNumber": 7,
+          "arabicPhrase": "فَهُوَ فِى عِيشَةٍ رَّاضِيَةٍ",
+          "englishPhrase": "he will be in a happy life.",
+          "vocabulary": [
+            {
+              "word": "فَهُوَ",
+              "root": "ف - ه - و",
+              "meaning": "Then he",
+              "grammarNote": "Transliteration: fahuwa"
+            },
+            {
+              "word": "فِى",
+              "root": "ف - ي",
+              "meaning": "(will be) in",
+              "grammarNote": "Transliteration: fī"
+            },
+            {
+              "word": "عِيشَةٍۢ",
+              "root": "ع - ي - ش",
+              "meaning": "a life",
+              "grammarNote": "Transliteration: ʿīshatin"
+            },
+            {
+              "word": "رَّاضِيَةٍۢ",
+              "root": "ر - ض - ي",
+              "meaning": "pleasant",
+              "grammarNote": "Transliteration: rāḍiyatin"
+            }
+          ]
+        },
+        {
+          "id": "101-8-card",
+          "verseNumber": 8,
+          "arabicPhrase": "وَأَمَّا مَنْ خَفَّتْ مَوَٰزِينُهُۥ",
+          "englishPhrase": "But he whose scales are light,",
+          "vocabulary": [
+            {
+              "word": "وَأَمَّا",
+              "root": "ا - م - ا",
+              "meaning": "But as for",
+              "grammarNote": "Transliteration: wa-ammā"
+            },
+            {
+              "word": "مَنْ",
+              "root": "م - ن",
+              "meaning": "(him) whose",
+              "grammarNote": "Transliteration: man"
+            },
+            {
+              "word": "خَفَّتْ",
+              "root": "خ - ف - ت",
+              "meaning": "(are) light",
+              "grammarNote": "Transliteration: khaffat"
+            },
+            {
+              "word": "مَوَٰزِينُهُۥ",
+              "root": "و - ز - ي",
+              "meaning": "his scales",
+              "grammarNote": "Transliteration: mawāzīnuhu"
+            }
+          ]
+        },
+        {
+          "id": "101-9-card",
+          "verseNumber": 9,
+          "arabicPhrase": "فَأُمُّهُۥ هَاوِيَةٌ",
+          "englishPhrase": "-his abode will be Abyss.",
+          "vocabulary": [
+            {
+              "word": "فَأُمُّهُۥ",
+              "root": "ا - م - ه",
+              "meaning": "His abode",
+              "grammarNote": "Transliteration: fa-ummuhu"
+            },
+            {
+              "word": "هَاوِيَةٌۭ",
+              "root": "ه - و - ي",
+              "meaning": "(will be the) Pit",
+              "grammarNote": "Transliteration: hāwiyatun"
+            }
+          ]
+        },
+        {
+          "id": "101-10-card",
+          "verseNumber": 10,
+          "arabicPhrase": "وَمَآ أَدْرَىٰكَ مَا هِيَهْ",
+          "englishPhrase": "And what may let you know what that (Abyss) is?",
+          "vocabulary": [
+            {
+              "word": "وَمَآ",
+              "root": "و - م - ا",
+              "meaning": "And what",
+              "grammarNote": "Transliteration: wamā"
+            },
+            {
+              "word": "أَدْرَىٰكَ",
+              "root": "د - ر - ي",
+              "meaning": "will make you know",
+              "grammarNote": "Transliteration: adrāka"
+            },
+            {
+              "word": "مَا",
+              "root": "م - ا",
+              "meaning": "what",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "هِيَهْ",
+              "root": "ه - ي - ه",
+              "meaning": "it is",
+              "grammarNote": "Transliteration: hiyah"
+            }
+          ]
+        },
+        {
+          "id": "101-11-card",
+          "verseNumber": 11,
+          "arabicPhrase": "نَارٌ حَامِيَةٌۢ",
+          "englishPhrase": "A blazing Fire!",
+          "vocabulary": [
+            {
+              "word": "نَارٌ",
+              "root": "ن - ا - ر",
+              "meaning": "A Fire",
+              "grammarNote": "Transliteration: nārun"
+            },
+            {
+              "word": "حَامِيَةٌۢ",
+              "root": "ح - م - ي",
+              "meaning": "intensely hot",
+              "grammarNote": "Transliteration: ḥāmiyatun"
+            }
+          ]
+        }
+      ],
+      "commentary": "Human Deeds, Good or Bad, will be Weighed\n\nThis Surah mentions the weighing of human deeds. He whose scales are heavy will be led to Paradise, and he whose scales are light will be led to Hell. Please see Ma’ ariful Qur'an, Vol. 3/ pp 539-547, for a full and complete analysis of the Weighing of human deeds. The analysis also allays the doubts raised against the concept of weighing of deeds.\n\nWe have also explained there that it appears from reconciliation of conflicting narrations and Qur'anic verses that the weighing on Plain of Resurrection will take place twice. The first weighing will be to separate the believers from the non-believers. Anyone whose Book of Deeds is put on the scale and contains the belief ('Iman) will be heavy, and the scale of anyone whose Ledger of Deeds does not contain 'Iman will be light. At this stage, the believers will be separated from the non-believers. Weighing on the second time will be to distinguish between good and evil deeds of the believers. The reference, in the present Surah, is probably to the first weighing in which the scale of every believer will be heavy regardless of his other deeds, while the scale of an unbeliever will be light, even though he might have performed some good acts.\n\nIt is explained in Mazhari that the Holy Qur'an generally contrasts the unbelievers and righteous believers, when speaking of retribution [ reward or punishment ], because the latter are the perfect believers. As for the believers who have performed righteous as well as unrighteous deeds, the Qur'an is generally silent on the issue. However, the principle may be noted that on the Day of Judgment human deeds will not be counted, but weighed. Fewer good deeds with high degree of faith and sincerity, and in accordance with Sunnah will be heavier than many good deeds - prayers, fasting, charity and pilgrimage with lesser degree of faith and sincerity, or not completely in accordance with Sunnah.\n\nAl-Hamdullah\n\nThe Commentary on\n\nSurah al-Qari’ ah\n\nEnds here",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Juristic Rulings & Shariah Injunctions (vv. 1–11)",
+          "content": "It is explained in Mazhari that the Holy Qur'an generally contrasts the unbelievers and righteous believers, when speaking of retribution [ reward or punishment ], because the latter are the perfect believers. As for the believers who have performed righteous as well as unrighteous deeds, the Qur'an is generally silent on the issue. However, the principle may be noted that on the Day of Judgment human deeds will not be counted, but weighed. Fewer good deeds with high degree of faith and sincerity, and in accordance with Sunnah will be heavier than many good deeds - prayers, fasting, charity and pilgrimage with lesser degree of faith and sincerity, or not completely in accordance with Sunnah."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "This Surah mentions the weighing of human deeds. He whose scales are heavy will be led to Paradise, and he whose scales are light will be led to Hell. Please see Ma’ ariful Qur'an, Vol. 3/ pp 539-547, for a full and complete analysis of the Weighing of human deeds. The analysis also allays the doubts raised against the concept of weighing of deeds."
+        }
+      ],
+      "curatedTerms": []
+    }
+  ]
+}

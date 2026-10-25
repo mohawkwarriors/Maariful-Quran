@@ -1,0 +1,1714 @@
+{
+  "number": 77,
+  "nameArabic": "المرسلات",
+  "nameTransliterated": "Al-Mursalat",
+  "nameEnglish": "Those Sent Forth",
+  "versesCount": 50,
+  "revelationType": "Makki",
+  "volumeNumber": 8,
+  "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5692/mode/2up",
+  "juz": [
+    29
+  ],
+  "bismillahPre": true,
+  "introductoryTafseer": "\"While we were with Allah's Messenger in a cave at Mina, the Surah 'wal-Mursalat' was revealed to him. He was reciting it, and I was learning it from his mouth. Verily, his mouth was moist with it, when a snake leaped out at us. The Holy Prophet said, 'Kill it!' So we quickly went after it, but it got away. Then the Holy Prophet said, 'It was saved from your harm, just as you all were saved from its harm'.\" [ Ibn Kathir ].",
+  "historicalContext": {
+    "background": "Allah swears oaths in this Surah by various phenomena to assert that the Resurrection will certainly take place. The names of the phenomena are not mentioned in the Qur'an, but their five attributes are given in the following manner (The translation is given below without explanatory brackets for a better understanding of the point):",
+    "scholarlyReference": "Ma'ariful Qur'an by Mufti Muhammad Shafi, Volume 8 (Archive.org Leaf n5692)"
+  },
+  "sections": [
+    {
+      "id": "77-1-6",
+      "surahNumber": 77,
+      "verseRange": [
+        1,
+        6
+      ],
+      "title": "Occasion of Revelation",
+      "juzNumber": 29,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5693/mode/2up",
+      "arabicText": "وَٱلْمُرْسَلَـٰتِ عُرْفًا ۝١ فَٱلْعَـٰصِفَـٰتِ عَصْفًا ۝٢ وَٱلنَّـٰشِرَٰتِ نَشْرًا ۝٣ فَٱلْفَـٰرِقَـٰتِ فَرْقًا ۝٤ فَٱلْمُلْقِيَـٰتِ ذِكْرًا ۝٥ عُذْرًا أَوْ نُذْرًا ۝٦",
+      "translation": "(I swear) by those (winds) that are sent one after the other, ۝ and by those that blow violently, ۝ and by those that spread (clouds) all over, ۝ and by those (angels) who differentiate (between right and wrong) distinctly, ۝ then bring down the advice, ۝ leaving no excuse (for the disbelievers) or giving warnings, ۝",
+      "phraseCards": [
+        {
+          "id": "77-1-card",
+          "verseNumber": 1,
+          "arabicPhrase": "وَٱلْمُرْسَلَـٰتِ عُرْفًا",
+          "englishPhrase": "(I swear) by those (winds) that are sent one after the other,",
+          "vocabulary": [
+            {
+              "word": "وَٱلْمُرْسَلَـٰتِ",
+              "root": "ر - س - ل",
+              "meaning": "By the ones sent forth",
+              "grammarNote": "Transliteration: wal-mur'salāti"
+            },
+            {
+              "word": "عُرْفًۭا",
+              "root": "ع - ر - ف",
+              "meaning": "one after another",
+              "grammarNote": "Transliteration: ʿur'fan"
+            }
+          ]
+        },
+        {
+          "id": "77-2-card",
+          "verseNumber": 2,
+          "arabicPhrase": "فَٱلْعَـٰصِفَـٰتِ عَصْفًا",
+          "englishPhrase": "and by those that blow violently,",
+          "vocabulary": [
+            {
+              "word": "فَٱلْعَـٰصِفَـٰتِ",
+              "root": "ع - ص - ف",
+              "meaning": "And the winds that blow",
+              "grammarNote": "Transliteration: fal-ʿāṣifāti"
+            },
+            {
+              "word": "عَصْفًۭا",
+              "root": "ع - ص - ف",
+              "meaning": "violently",
+              "grammarNote": "Transliteration: ʿaṣfan"
+            }
+          ]
+        },
+        {
+          "id": "77-3-card",
+          "verseNumber": 3,
+          "arabicPhrase": "وَٱلنَّـٰشِرَٰتِ نَشْرًا",
+          "englishPhrase": "and by those that spread (clouds) all over,",
+          "vocabulary": [
+            {
+              "word": "وَٱلنَّـٰشِرَٰتِ",
+              "root": "ش - ر - ت",
+              "meaning": "And the ones that scatter",
+              "grammarNote": "Transliteration: wal-nāshirāti"
+            },
+            {
+              "word": "نَشْرًۭا",
+              "root": "ش - ر - ا",
+              "meaning": "far and wide",
+              "grammarNote": "Transliteration: nashran"
+            }
+          ]
+        },
+        {
+          "id": "77-4-card",
+          "verseNumber": 4,
+          "arabicPhrase": "فَٱلْفَـٰرِقَـٰتِ فَرْقًا",
+          "englishPhrase": "and by those (angels) who differentiate (between right and wrong) distinctly,",
+          "vocabulary": [
+            {
+              "word": "فَٱلْفَـٰرِقَـٰتِ",
+              "root": "ف - ر - ق",
+              "meaning": "And those who separate",
+              "grammarNote": "Transliteration: fal-fāriqāti"
+            },
+            {
+              "word": "فَرْقًۭا",
+              "root": "ر - ق - ا",
+              "meaning": "(by the) Criterion",
+              "grammarNote": "Transliteration: farqan"
+            }
+          ]
+        },
+        {
+          "id": "77-5-card",
+          "verseNumber": 5,
+          "arabicPhrase": "فَٱلْمُلْقِيَـٰتِ ذِكْرًا",
+          "englishPhrase": "then bring down the advice,",
+          "vocabulary": [
+            {
+              "word": "فَٱلْمُلْقِيَـٰتِ",
+              "root": "ل - ق - ي",
+              "meaning": "And those who bring down",
+              "grammarNote": "Transliteration: fal-mul'qiyāti"
+            },
+            {
+              "word": "ذِكْرًا",
+              "root": "ذ - ك - ر",
+              "meaning": "(the) Reminder",
+              "grammarNote": "Transliteration: dhik'ran"
+            }
+          ]
+        },
+        {
+          "id": "77-6-card",
+          "verseNumber": 6,
+          "arabicPhrase": "عُذْرًا أَوْ نُذْرًا",
+          "englishPhrase": "leaving no excuse (for the disbelievers) or giving warnings,",
+          "vocabulary": [
+            {
+              "word": "عُذْرًا",
+              "root": "ع - ذ - ر",
+              "meaning": "(As) justification",
+              "grammarNote": "Transliteration: ʿudh'ran"
+            },
+            {
+              "word": "أَوْ",
+              "root": "ا - و",
+              "meaning": "or",
+              "grammarNote": "Transliteration: aw"
+            },
+            {
+              "word": "نُذْرًا",
+              "root": "ذ - ر - ا",
+              "meaning": "warning",
+              "grammarNote": "Transliteration: nudh'ran"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verses 1–5]\n\nCommentary\n\nOccasion of Revelation\n\nSahih of Bukhari records from Sayyidna ` Abdullah Ibn Masud\n\nthat he said:\n\n\"While we were with Allah's Messenger in a cave at Mina, the Surah 'wal-Mursalat' was revealed to him. He was reciting it, and I was learning it from his mouth. Verily, his mouth was moist with it, when a snake leaped out at us. The Holy Prophet said, 'Kill it!' So we quickly went after it, but it got away. Then the Holy Prophet said, 'It was saved from your harm, just as you all were saved from its harm'.\" [ Ibn Kathir ].\n\nAllah swears oaths in this Surah by various phenomena to assert that the Resurrection will certainly take place. The names of the phenomena are not mentioned in the Qur'an, but their five attributes are given in the following manner (The translation is given below without explanatory brackets for a better understanding of the point):\n\n[ 1] (I swear) by those that are sent one after the other, (77:1)\n\n[ 2] and by those that blow violently, (77:2)\n\n[ 3] and by those that spread all over, (77:3)\n\n[ 4] and by those who differentiate (between right and wrong) distinctly, (77:4)\n\n[ 5] then bring down the advice, (77:5)\n\nThere is no traceable Hadith that gives the exact interpretation of the phenomena described. Therefore, the interpretation assigned to them by the Companions and their pupils differ. Some scholars say that all five attributes refer to angels. Others say that possibly different groups of angels are bearers of the attributes. Yet other scholars say that they refer to various types of winds. Some authorities on Tafsir say that they refer to Allah's Prophets and Messengers. Ibn Jarir Tabari says that, in this matter, it is safer to observe silence. He says that both possibilities exist, but he prefers not to side with any particular interpretation. There is no doubt about the fact that some of the attributes are more appropriately applicable to the angels of Allah, and cannot fit the winds without unusual stretch of imagination, and others are more appropriately applicable to winds, and cannot apply to angels without a fanciful stretch of imagination. Therefore, Ibn Kathir's approach seems to be the best. He says that in the first three verses of this Surah, Allah swears oaths by various types of winds. In verses [ 4] and [ 5], Allah swears oaths by the angels.\n\nIf verses [ 4] and [ 5] are applied to the winds, then the imagination will have to be stretched far to interpret them . Likewise, if the first three verses [ mursalat, ` Asifat and nashirat ] are applied to the angels, they have no choice but to assign far-fetched interpretation. According to Ibn Kathir, the verses signify ' (I swear) by those (winds) that are sent one after the other'. The word ` urfan could signify 'beneficial and useful'. The winds that bring rain are obviously beneficial and useful. Another meaning of the word ` urfan is 'one after another'. In this interpretation, the verse signifies 'those winds that bring rain and clouds consecutively'. The word ` asifat is derived from ` asf that literally means 'winds that blow violently or vehemently'. This refers to fiercely blowing winds that sometimes do occur in the world. The word nashirat refers to 'winds that spread (clouds) all over after the rain is over'. The word fariqat is the attribute of the angels 'who differentiate (between right and wrong) distinctly by bringing down the Divine revelation'. The phrase fal-mulqiyati dhikran also refers to the 'angels'. The word dhikr 'Reminder' refers to the Qur'an or revelation in general. The verse signifies 'I swear by angels who [ by bringing down revelation ] separate between truth and falsehood, right and wrong, [ and the lawful and the forbidden ] '. Likewise, I swear by angels who bring down revelation or Qur'an to the Holy Prophet t. This interpretation is plain and simple, and does not require any undue stretch of imagination.\n\nIn this interpretation, the question arises as to the contextual relationship between swearing oaths by various types of winds and the angels. First of all, it is not possible to fathom the Wisdom of Divine speech. However, it is possible to hypothesise. Allah swears oaths by useful winds and harmful winds. Winds that bring rain and clouds are useful, while those that blow fiercely and cause destruction are harmful. These belong to the perceptible world. All human beings can observe them. The perceptible things are mentioned first for reflection. The imperceptible world is mentioned later, such as the angels and revelation. If man reflects carefully on them, he will develop certainty of belief in them as well.\n\n────────────────────────────────────────\n\n[Verse 6]\n\nعُذْرً‌ا أَوْ نُذْرً‌ا ( to provide excuses [ for the believers ] or giving warnings (to disbelievers…77:6) This phrase is complement to verse [ 5]: فَالْمُلْقِيَاتِ ذِكْرً‌ا then bring down the advice, [ 77:5] The 'advice' refers to the 'revelation' that came down upon the Prophets. Verse 6 says that it serves two purposes. In the case of the people of truth and believers, it persuades them to seek excuse from Allah for their shortcomings, and pray for forgiveness; and in the case of the people of falsehood and disbelievers, it contains a warning for them of Allah's torment, if they oppose His command.",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Juristic Rulings & Shariah Injunctions (vv. 1–6)",
+          "content": "If verses [ 4] and [ 5] are applied to the winds, then the imagination will have to be stretched far to interpret them . Likewise, if the first three verses [ mursalat, ` Asifat and nashirat ] are applied to the angels, they have no choice but to assign far-fetched interpretation. According to Ibn Kathir, the verses signify ' (I swear) by those (winds) that are sent one after the other'. The word ` urfan could signify 'beneficial and useful'. The winds that bring rain are obviously beneficial and useful. Another meaning of the word ` urfan is 'one after another'. In this interpretation, the verse signifies 'those winds that bring rain and clouds consecutively'. The word ` asifat is derived from ` asf that literally means 'winds that blow violently or vehemently'. This refers to fiercely blowing winds that sometimes do occur in the world. The word nashirat refers to 'winds that spread..."
+        },
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "\"While we were with Allah's Messenger in a cave at Mina, the Surah 'wal-Mursalat' was revealed to him. He was reciting it, and I was learning it from his mouth. Verily, his mouth was moist with it, when a snake leaped out at us. The Holy Prophet said, 'Kill it!' So we quickly went after it, but it got away. Then the Holy Prophet said, 'It was saved from your harm, just as you all were saved from its harm'.\" [ Ibn Kathir ]."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "Allah swears oaths in this Surah by various phenomena to assert that the Resurrection will certainly take place. The names of the phenomena are not mentioned in the Qur'an, but their five attributes are given in the following manner (The translation is given below without explanatory brackets for a better understanding of the point):"
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "77-7-14",
+      "surahNumber": 77,
+      "verseRange": [
+        7,
+        14
+      ],
+      "title": "────────────────────────────────────────",
+      "juzNumber": 29,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5693/mode/2up",
+      "arabicText": "إِنَّمَا تُوعَدُونَ لَوَٰقِعٌ ۝٧ فَإِذَا ٱلنُّجُومُ طُمِسَتْ ۝٨ وَإِذَا ٱلسَّمَآءُ فُرِجَتْ ۝٩ وَإِذَا ٱلْجِبَالُ نُسِفَتْ ۝١٠ وَإِذَا ٱلرُّسُلُ أُقِّتَتْ ۝١١ لِأَىِّ يَوْمٍ أُجِّلَتْ ۝١٢ لِيَوْمِ ٱلْفَصْلِ ۝١٣ وَمَآ أَدْرَىٰكَ مَا يَوْمُ ٱلْفَصْلِ ۝١٤",
+      "translation": "that which you are promised is sure to happen. ۝ So, when the stars will be extinguished, ۝ and when the sky will be split, ۝ and when the mountains will be blown away as dust, ۝ and when the messengers will be assembled at the appointed time, (then all matters will be decided.) ۝ (Do you know) for which day has all this been delayed? ۝ For the Day of Decision! ۝ And what may let you know what the Day of Decision is? ۝",
+      "phraseCards": [
+        {
+          "id": "77-7-card",
+          "verseNumber": 7,
+          "arabicPhrase": "إِنَّمَا تُوعَدُونَ لَوَٰقِعٌ",
+          "englishPhrase": "that which you are promised is sure to happen.",
+          "vocabulary": [
+            {
+              "word": "إِنَّمَا",
+              "root": "ن - م - ا",
+              "meaning": "Indeed, what",
+              "grammarNote": "Transliteration: innamā"
+            },
+            {
+              "word": "تُوعَدُونَ",
+              "root": "و - ع - د",
+              "meaning": "you are promised",
+              "grammarNote": "Transliteration: tūʿadūna"
+            },
+            {
+              "word": "لَوَٰقِعٌۭ",
+              "root": "و - ق - ع",
+              "meaning": "will surely occur",
+              "grammarNote": "Transliteration: lawāqiʿun"
+            }
+          ]
+        },
+        {
+          "id": "77-8-card",
+          "verseNumber": 8,
+          "arabicPhrase": "فَإِذَا ٱلنُّجُومُ طُمِسَتْ",
+          "englishPhrase": "So, when the stars will be extinguished,",
+          "vocabulary": [
+            {
+              "word": "فَإِذَا",
+              "root": "ا - ذ - ا",
+              "meaning": "So when",
+              "grammarNote": "Transliteration: fa-idhā"
+            },
+            {
+              "word": "ٱلنُّجُومُ",
+              "root": "ج - و - م",
+              "meaning": "the stars",
+              "grammarNote": "Transliteration: l-nujūmu"
+            },
+            {
+              "word": "طُمِسَتْ",
+              "root": "ط - م - س",
+              "meaning": "are obliterated",
+              "grammarNote": "Transliteration: ṭumisat"
+            }
+          ]
+        },
+        {
+          "id": "77-9-card",
+          "verseNumber": 9,
+          "arabicPhrase": "وَإِذَا ٱلسَّمَآءُ فُرِجَتْ",
+          "englishPhrase": "and when the sky will be split,",
+          "vocabulary": [
+            {
+              "word": "وَإِذَا",
+              "root": "ا - ذ - ا",
+              "meaning": "And when",
+              "grammarNote": "Transliteration: wa-idhā"
+            },
+            {
+              "word": "ٱلسَّمَآءُ",
+              "root": "م - ا - ء",
+              "meaning": "the heaven",
+              "grammarNote": "Transliteration: l-samāu"
+            },
+            {
+              "word": "فُرِجَتْ",
+              "root": "ر - ج - ت",
+              "meaning": "is cleft asunder",
+              "grammarNote": "Transliteration: furijat"
+            }
+          ]
+        },
+        {
+          "id": "77-10-card",
+          "verseNumber": 10,
+          "arabicPhrase": "وَإِذَا ٱلْجِبَالُ نُسِفَتْ",
+          "englishPhrase": "and when the mountains will be blown away as dust,",
+          "vocabulary": [
+            {
+              "word": "وَإِذَا",
+              "root": "ا - ذ - ا",
+              "meaning": "And when",
+              "grammarNote": "Transliteration: wa-idhā"
+            },
+            {
+              "word": "ٱلْجِبَالُ",
+              "root": "ج - ب - ل",
+              "meaning": "the mountains",
+              "grammarNote": "Transliteration: l-jibālu"
+            },
+            {
+              "word": "نُسِفَتْ",
+              "root": "س - ف - ت",
+              "meaning": "are blown away",
+              "grammarNote": "Transliteration: nusifat"
+            }
+          ]
+        },
+        {
+          "id": "77-11-card",
+          "verseNumber": 11,
+          "arabicPhrase": "وَإِذَا ٱلرُّسُلُ أُقِّتَتْ",
+          "englishPhrase": "and when the messengers will be assembled at the appointed time, (then all matters will be decided.)",
+          "vocabulary": [
+            {
+              "word": "وَإِذَا",
+              "root": "ا - ذ - ا",
+              "meaning": "And when",
+              "grammarNote": "Transliteration: wa-idhā"
+            },
+            {
+              "word": "ٱلرُّسُلُ",
+              "root": "ر - س - ل",
+              "meaning": "the Messengers",
+              "grammarNote": "Transliteration: l-rusulu"
+            },
+            {
+              "word": "أُقِّتَتْ",
+              "root": "ق - ت - ت",
+              "meaning": "are gathered to their appointed time",
+              "grammarNote": "Transliteration: uqqitat"
+            }
+          ]
+        },
+        {
+          "id": "77-12-card",
+          "verseNumber": 12,
+          "arabicPhrase": "لِأَىِّ يَوْمٍ أُجِّلَتْ",
+          "englishPhrase": "(Do you know) for which day has all this been delayed?",
+          "vocabulary": [
+            {
+              "word": "لِأَىِّ",
+              "root": "ل - ا - ي",
+              "meaning": "For what",
+              "grammarNote": "Transliteration: li-ayyi"
+            },
+            {
+              "word": "يَوْمٍ",
+              "root": "ي - و - م",
+              "meaning": "Day",
+              "grammarNote": "Transliteration: yawmin"
+            },
+            {
+              "word": "أُجِّلَتْ",
+              "root": "ج - ل - ت",
+              "meaning": "are (these) postponed",
+              "grammarNote": "Transliteration: ujjilat"
+            }
+          ]
+        },
+        {
+          "id": "77-13-card",
+          "verseNumber": 13,
+          "arabicPhrase": "لِيَوْمِ ٱلْفَصْلِ",
+          "englishPhrase": "For the Day of Decision!",
+          "vocabulary": [
+            {
+              "word": "لِيَوْمِ",
+              "root": "ي - و - م",
+              "meaning": "For (the) Day",
+              "grammarNote": "Transliteration: liyawmi"
+            },
+            {
+              "word": "ٱلْفَصْلِ",
+              "root": "ف - ص - ل",
+              "meaning": "(of) Judgment",
+              "grammarNote": "Transliteration: l-faṣli"
+            }
+          ]
+        },
+        {
+          "id": "77-14-card",
+          "verseNumber": 14,
+          "arabicPhrase": "وَمَآ أَدْرَىٰكَ مَا يَوْمُ ٱلْفَصْلِ",
+          "englishPhrase": "And what may let you know what the Day of Decision is?",
+          "vocabulary": [
+            {
+              "word": "وَمَآ",
+              "root": "و - م - ا",
+              "meaning": "And what",
+              "grammarNote": "Transliteration: wamā"
+            },
+            {
+              "word": "أَدْرَىٰكَ",
+              "root": "د - ر - ي",
+              "meaning": "will make you know",
+              "grammarNote": "Transliteration: adrāka"
+            },
+            {
+              "word": "مَا",
+              "root": "م - ا",
+              "meaning": "what",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "يَوْمُ",
+              "root": "ي - و - م",
+              "meaning": "(is the) Day",
+              "grammarNote": "Transliteration: yawmu"
+            },
+            {
+              "word": "ٱلْفَصْلِ",
+              "root": "ف - ص - ل",
+              "meaning": "(of) the Judgment",
+              "grammarNote": "Transliteration: l-faṣli"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verses 7–10]\n\nإِنَّمَا تُوعَدُونَ لَوَاقِعٌ ( …that which you are promised is sure to happen…77:7)\n\nThis is the subject of these oaths. It means that the Day of Judgment, Reckoning, and Reward and Punishment that is promised by the Prophets (علیہم السلام) has certainly to be fulfilled. Allah then describes some of the events that will occur on the Day of Judgment. The stars will be extinguished, which could mean that they will be completely destroyed, or they will exist, but their lights will be lost. In this way the entire world will be plunged in absolute darkness. The second event to occur is the splitting of the sky. The third event to occur is that the mountains will be blown away as dust. The fourth event is described in the following verse:\n\n────────────────────────────────────────\n\n[Verses 11–14]\n\nوَإِذَا الرُّ‌سُلُ أُقِّتَتْ (and when the messengers will be assembled at the appointed time, [ then all matters will be decided.] [ 77:11] ' The word uqqitat is derived from tauqit which primarily means 'appointment of time'. According to Zamakhshari, it signifies 'to arrive at an appointed time' [ as cited in Ruh ]. In this context, the second meaning appears to be more appropriate. The verse signifies that the appointed time for the Prophets and Messengers to assemble with their communities will arrive, so that all matters concerning them may be decided. The verses further describe the Day of Judgment as the great and horrible day and the Day of Decision. It shall be the day of destruction for the deniers and rejecters, thus:",
+      "subsections": [
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "This is the subject of these oaths. It means that the Day of Judgment, Reckoning, and Reward and Punishment that is promised by the Prophets (علیہم السلام) has certainly to be fulfilled. Allah then describes some of the events that will occur on the Day of Judgment. The stars will be extinguished, which could mean that they will be completely destroyed, or they will exist, but their lights will be lost. In this way the entire world will be plunged in absolute darkness. The second event to occur is the splitting of the sky. The third event to occur is that the mountains will be blown away as dust. The fourth event is described in the following verse:"
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "77-15-16",
+      "surahNumber": 77,
+      "verseRange": [
+        15,
+        16
+      ],
+      "title": "────────────────────────────────────────",
+      "juzNumber": 29,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5693/mode/2up",
+      "arabicText": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ ۝١٥ أَلَمْ نُهْلِكِ ٱلْأَوَّلِينَ ۝١٦",
+      "translation": "Woe that Day to the deniers! ۝ Did We not destroy the earlier people? ۝",
+      "phraseCards": [
+        {
+          "id": "77-15-card",
+          "verseNumber": 15,
+          "arabicPhrase": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+          "englishPhrase": "Woe that Day to the deniers!",
+          "vocabulary": [
+            {
+              "word": "وَيْلٌۭ",
+              "root": "و - ي - ل",
+              "meaning": "Woe",
+              "grammarNote": "Transliteration: waylun"
+            },
+            {
+              "word": "يَوْمَئِذٍۢ",
+              "root": "و - م - ئ",
+              "meaning": "that Day",
+              "grammarNote": "Transliteration: yawma-idhin"
+            },
+            {
+              "word": "لِّلْمُكَذِّبِينَ",
+              "root": "ك - ذ - ب",
+              "meaning": "to the deniers",
+              "grammarNote": "Transliteration: lil'mukadhibīna"
+            }
+          ]
+        },
+        {
+          "id": "77-16-card",
+          "verseNumber": 16,
+          "arabicPhrase": "أَلَمْ نُهْلِكِ ٱلْأَوَّلِينَ",
+          "englishPhrase": "Did We not destroy the earlier people?",
+          "vocabulary": [
+            {
+              "word": "أَلَمْ",
+              "root": "ا - ل - م",
+              "meaning": "Did not",
+              "grammarNote": "Transliteration: alam"
+            },
+            {
+              "word": "نُهْلِكِ",
+              "root": "ن - ه - ل",
+              "meaning": "We destroy",
+              "grammarNote": "Transliteration: nuh'liki"
+            },
+            {
+              "word": "ٱلْأَوَّلِينَ",
+              "root": "ا - و - ل",
+              "meaning": "the former (people)",
+              "grammarNote": "Transliteration: l-awalīna"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verse 15]\n\nوَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ (Woe, that Day, to the deniers!...77:15) The word wail means 'destruction'. According to certain Hadith narratives, the word wail is a 'valley of Hell where the pus of the wounds of the inmates of Hell will be collected. This is the place where the deniers will live. After this, the present-day people are asked to learn a lesson from [ the destruction ] of the former generations, thus:\n\n────────────────────────────────────────\n\n[Verse 16]\n\nأَلَمْ نُهْلِكِ الْأَوَّلِينَ (Did We not destroy the earlier people?...77:16) It refers to the nations of ` Ad, Thamud, nation of Lut (علیہ السلام) and Fir'aun (The Pharaoh) who were destroyed because of their obstinacy.",
+      "subsections": [
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ (Woe, that Day, to the deniers!...77:15) The word wail means 'destruction'. According to certain Hadith narratives, the word wail is a 'valley of Hell where the pus of the wounds of the inmates of Hell will be collected. This is the place where the deniers will live. After this, the present-day people are asked to learn a lesson from [ the destruction ] of the former generations, thus:"
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "أَلَمْ نُهْلِكِ الْأَوَّلِينَ (Did We not destroy the earlier people?...77:16) It refers to the nations of ` Ad, Thamud, nation of Lut (علیہ السلام) and Fir'aun (The Pharaoh) who were destroyed because of their obstinacy."
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "77-17-31",
+      "surahNumber": 77,
+      "verseRange": [
+        17,
+        31
+      ],
+      "title": "────────────────────────────────────────",
+      "juzNumber": 29,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5693/mode/2up",
+      "arabicText": "ثُمَّ نُتْبِعُهُمُ ٱلْـَٔاخِرِينَ ۝١٧ كَذَٰلِكَ نَفْعَلُ بِٱلْمُجْرِمِينَ ۝١٨ وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ ۝١٩ أَلَمْ نَخْلُقكُّم مِّن مَّآءٍ مَّهِينٍ ۝٢٠ فَجَعَلْنَـٰهُ فِى قَرَارٍ مَّكِينٍ ۝٢١ إِلَىٰ قَدَرٍ مَّعْلُومٍ ۝٢٢ فَقَدَرْنَا فَنِعْمَ ٱلْقَـٰدِرُونَ ۝٢٣ وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ ۝٢٤ أَلَمْ نَجْعَلِ ٱلْأَرْضَ كِفَاتًا ۝٢٥ أَحْيَآءً وَأَمْوَٰتًا ۝٢٦ وَجَعَلْنَا فِيهَا رَوَٰسِىَ شَـٰمِخَـٰتٍ وَأَسْقَيْنَـٰكُم مَّآءً فُرَاتًا ۝٢٧ وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ ۝٢٨ ٱنطَلِقُوٓا۟ إِلَىٰ مَا كُنتُم بِهِۦ تُكَذِّبُونَ ۝٢٩ ٱنطَلِقُوٓا۟ إِلَىٰ ظِلٍّ ذِى ثَلَـٰثِ شُعَبٍ ۝٣٠ لَّا ظَلِيلٍ وَلَا يُغْنِى مِنَ ٱللَّهَبِ ۝٣١",
+      "translation": "Then We will cause the later ones to follow them. ۝ Thus We deal with the guilty people. ۝ Woe that Day to the deniers! ۝ Did We not create you from a worthless fluid? ۝ Then We put it in a firm place of rest ۝ for a known period. ۝ Thus We did (all this with perfect) measure; so We are the best to measure. ۝ Woe that Day to the deniers! ۝ Did We not make the earth a container that collects ۝ the living and the dead? ۝ And We placed towering mountains therein, and provided you with sweet water to drink. ۝ Woe that Day to the deniers! ۝ (It will be said to them on that day,) “Push on to what you used to deny. ۝ Push on to a canopy (of Hell’s smoke) having three branches, ۝ that neither has a comfortable shade, nor is it of any use against the scorching heat. ۝",
+      "phraseCards": [
+        {
+          "id": "77-17-card",
+          "verseNumber": 17,
+          "arabicPhrase": "ثُمَّ نُتْبِعُهُمُ ٱلْـَٔاخِرِينَ",
+          "englishPhrase": "Then We will cause the later ones to follow them.",
+          "vocabulary": [
+            {
+              "word": "ثُمَّ",
+              "root": "ث - م",
+              "meaning": "Then",
+              "grammarNote": "Transliteration: thumma"
+            },
+            {
+              "word": "نُتْبِعُهُمُ",
+              "root": "ت - ب - ع",
+              "meaning": "We follow them up",
+              "grammarNote": "Transliteration: nut'biʿuhumu"
+            },
+            {
+              "word": "ٱلْـَٔاخِرِينَ",
+              "root": "ا - خ - ر",
+              "meaning": "(with) the later ones",
+              "grammarNote": "Transliteration: l-ākhirīna"
+            }
+          ]
+        },
+        {
+          "id": "77-18-card",
+          "verseNumber": 18,
+          "arabicPhrase": "كَذَٰلِكَ نَفْعَلُ بِٱلْمُجْرِمِينَ",
+          "englishPhrase": "Thus We deal with the guilty people.",
+          "vocabulary": [
+            {
+              "word": "كَذَٰلِكَ",
+              "root": "ك - ذ - ل",
+              "meaning": "Thus",
+              "grammarNote": "Transliteration: kadhālika"
+            },
+            {
+              "word": "نَفْعَلُ",
+              "root": "ف - ع - ل",
+              "meaning": "We deal",
+              "grammarNote": "Transliteration: nafʿalu"
+            },
+            {
+              "word": "بِٱلْمُجْرِمِينَ",
+              "root": "ج - ر - م",
+              "meaning": "with the criminals",
+              "grammarNote": "Transliteration: bil-muj'rimīna"
+            }
+          ]
+        },
+        {
+          "id": "77-19-card",
+          "verseNumber": 19,
+          "arabicPhrase": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+          "englishPhrase": "Woe that Day to the deniers!",
+          "vocabulary": [
+            {
+              "word": "وَيْلٌۭ",
+              "root": "و - ي - ل",
+              "meaning": "Woe",
+              "grammarNote": "Transliteration: waylun"
+            },
+            {
+              "word": "يَوْمَئِذٍۢ",
+              "root": "و - م - ئ",
+              "meaning": "that Day",
+              "grammarNote": "Transliteration: yawma-idhin"
+            },
+            {
+              "word": "لِّلْمُكَذِّبِينَ",
+              "root": "ك - ذ - ب",
+              "meaning": "to the deniers",
+              "grammarNote": "Transliteration: lil'mukadhibīna"
+            }
+          ]
+        },
+        {
+          "id": "77-20-card",
+          "verseNumber": 20,
+          "arabicPhrase": "أَلَمْ نَخْلُقكُّم مِّن مَّآءٍ مَّهِينٍ",
+          "englishPhrase": "Did We not create you from a worthless fluid?",
+          "vocabulary": [
+            {
+              "word": "أَلَمْ",
+              "root": "ا - ل - م",
+              "meaning": "Did not",
+              "grammarNote": "Transliteration: alam"
+            },
+            {
+              "word": "نَخْلُقكُّم",
+              "root": "خ - ل - ق",
+              "meaning": "We create you",
+              "grammarNote": "Transliteration: nakhluqkkum"
+            },
+            {
+              "word": "مِّن",
+              "root": "م - ن",
+              "meaning": "from",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "مَّآءٍۢ",
+              "root": "م - ا - ء",
+              "meaning": "a water",
+              "grammarNote": "Transliteration: māin"
+            },
+            {
+              "word": "مَّهِينٍۢ",
+              "root": "ه - ي - ن",
+              "meaning": "despicable",
+              "grammarNote": "Transliteration: mahīnin"
+            }
+          ]
+        },
+        {
+          "id": "77-21-card",
+          "verseNumber": 21,
+          "arabicPhrase": "فَجَعَلْنَـٰهُ فِى قَرَارٍ مَّكِينٍ",
+          "englishPhrase": "Then We put it in a firm place of rest",
+          "vocabulary": [
+            {
+              "word": "فَجَعَلْنَـٰهُ",
+              "root": "ج - ع - ل",
+              "meaning": "Then We placed it",
+              "grammarNote": "Transliteration: fajaʿalnāhu"
+            },
+            {
+              "word": "فِى",
+              "root": "ف - ي",
+              "meaning": "in",
+              "grammarNote": "Transliteration: fī"
+            },
+            {
+              "word": "قَرَارٍۢ",
+              "root": "ق - ر - ر",
+              "meaning": "an abode",
+              "grammarNote": "Transliteration: qarārin"
+            },
+            {
+              "word": "مَّكِينٍ",
+              "root": "ك - ي - ن",
+              "meaning": "safe",
+              "grammarNote": "Transliteration: makīnin"
+            }
+          ]
+        },
+        {
+          "id": "77-22-card",
+          "verseNumber": 22,
+          "arabicPhrase": "إِلَىٰ قَدَرٍ مَّعْلُومٍ",
+          "englishPhrase": "for a known period.",
+          "vocabulary": [
+            {
+              "word": "إِلَىٰ",
+              "root": "ا - ل - ي",
+              "meaning": "For",
+              "grammarNote": "Transliteration: ilā"
+            },
+            {
+              "word": "قَدَرٍۢ",
+              "root": "ق - د - ر",
+              "meaning": "a period",
+              "grammarNote": "Transliteration: qadarin"
+            },
+            {
+              "word": "مَّعْلُومٍۢ",
+              "root": "ع - ل - و",
+              "meaning": "known",
+              "grammarNote": "Transliteration: maʿlūmin"
+            }
+          ]
+        },
+        {
+          "id": "77-23-card",
+          "verseNumber": 23,
+          "arabicPhrase": "فَقَدَرْنَا فَنِعْمَ ٱلْقَـٰدِرُونَ",
+          "englishPhrase": "Thus We did (all this with perfect) measure; so We are the best to measure.",
+          "vocabulary": [
+            {
+              "word": "فَقَدَرْنَا",
+              "root": "ق - د - ر",
+              "meaning": "So We measured",
+              "grammarNote": "Transliteration: faqadarnā"
+            },
+            {
+              "word": "فَنِعْمَ",
+              "root": "ن - ع - م",
+              "meaning": "and Best",
+              "grammarNote": "Transliteration: faniʿ'ma"
+            },
+            {
+              "word": "ٱلْقَـٰدِرُونَ",
+              "root": "ق - د - ر",
+              "meaning": "(are We to) measure",
+              "grammarNote": "Transliteration: l-qādirūna"
+            }
+          ]
+        },
+        {
+          "id": "77-24-card",
+          "verseNumber": 24,
+          "arabicPhrase": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+          "englishPhrase": "Woe that Day to the deniers!",
+          "vocabulary": [
+            {
+              "word": "وَيْلٌۭ",
+              "root": "و - ي - ل",
+              "meaning": "Woe",
+              "grammarNote": "Transliteration: waylun"
+            },
+            {
+              "word": "يَوْمَئِذٍۢ",
+              "root": "و - م - ئ",
+              "meaning": "that Day",
+              "grammarNote": "Transliteration: yawma-idhin"
+            },
+            {
+              "word": "لِّلْمُكَذِّبِينَ",
+              "root": "ك - ذ - ب",
+              "meaning": "to the deniers",
+              "grammarNote": "Transliteration: lil'mukadhibīna"
+            }
+          ]
+        },
+        {
+          "id": "77-25-card",
+          "verseNumber": 25,
+          "arabicPhrase": "أَلَمْ نَجْعَلِ ٱلْأَرْضَ كِفَاتًا",
+          "englishPhrase": "Did We not make the earth a container that collects",
+          "vocabulary": [
+            {
+              "word": "أَلَمْ",
+              "root": "ا - ل - م",
+              "meaning": "Have not",
+              "grammarNote": "Transliteration: alam"
+            },
+            {
+              "word": "نَجْعَلِ",
+              "root": "ج - ع - ل",
+              "meaning": "We made",
+              "grammarNote": "Transliteration: najʿali"
+            },
+            {
+              "word": "ٱلْأَرْضَ",
+              "root": "ا - ر - ض",
+              "meaning": "the earth",
+              "grammarNote": "Transliteration: l-arḍa"
+            },
+            {
+              "word": "كِفَاتًا",
+              "root": "ك - ف - ت",
+              "meaning": "a receptacle",
+              "grammarNote": "Transliteration: kifātan"
+            }
+          ]
+        },
+        {
+          "id": "77-26-card",
+          "verseNumber": 26,
+          "arabicPhrase": "أَحْيَآءً وَأَمْوَٰتًا",
+          "englishPhrase": "the living and the dead?",
+          "vocabulary": [
+            {
+              "word": "أَحْيَآءًۭ",
+              "root": "ح - ي - ا",
+              "meaning": "(For the) living",
+              "grammarNote": "Transliteration: aḥyāan"
+            },
+            {
+              "word": "وَأَمْوَٰتًۭا",
+              "root": "م - و - ت",
+              "meaning": "and (the) dead",
+              "grammarNote": "Transliteration: wa-amwātan"
+            }
+          ]
+        },
+        {
+          "id": "77-27-card",
+          "verseNumber": 27,
+          "arabicPhrase": "وَجَعَلْنَا فِيهَا رَوَٰسِىَ شَـٰمِخَـٰتٍ وَأَسْقَيْنَـٰكُم مَّآءً فُرَاتًا",
+          "englishPhrase": "And We placed towering mountains therein, and provided you with sweet water to drink.",
+          "vocabulary": [
+            {
+              "word": "وَجَعَلْنَا",
+              "root": "ج - ع - ل",
+              "meaning": "And We made",
+              "grammarNote": "Transliteration: wajaʿalnā"
+            },
+            {
+              "word": "فِيهَا",
+              "root": "ي - ه - ا",
+              "meaning": "therein",
+              "grammarNote": "Transliteration: fīhā"
+            },
+            {
+              "word": "رَوَٰسِىَ",
+              "root": "ر - و - س",
+              "meaning": "firmly set mountains",
+              "grammarNote": "Transliteration: rawāsiya"
+            },
+            {
+              "word": "شَـٰمِخَـٰتٍۢ",
+              "root": "ش - م - خ",
+              "meaning": "lofty",
+              "grammarNote": "Transliteration: shāmikhātin"
+            },
+            {
+              "word": "وَأَسْقَيْنَـٰكُم",
+              "root": "ا - س - ق",
+              "meaning": "and We gave you to drink",
+              "grammarNote": "Transliteration: wa-asqaynākum"
+            },
+            {
+              "word": "مَّآءًۭ",
+              "root": "م - ا - ء",
+              "meaning": "water",
+              "grammarNote": "Transliteration: māan"
+            },
+            {
+              "word": "فُرَاتًۭا",
+              "root": "ر - ت - ا",
+              "meaning": "sweet",
+              "grammarNote": "Transliteration: furātan"
+            }
+          ]
+        },
+        {
+          "id": "77-28-card",
+          "verseNumber": 28,
+          "arabicPhrase": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+          "englishPhrase": "Woe that Day to the deniers!",
+          "vocabulary": [
+            {
+              "word": "وَيْلٌۭ",
+              "root": "و - ي - ل",
+              "meaning": "Woe",
+              "grammarNote": "Transliteration: waylun"
+            },
+            {
+              "word": "يَوْمَئِذٍۢ",
+              "root": "و - م - ئ",
+              "meaning": "that Day",
+              "grammarNote": "Transliteration: yawma-idhin"
+            },
+            {
+              "word": "لِّلْمُكَذِّبِينَ",
+              "root": "ك - ذ - ب",
+              "meaning": "to the deniers",
+              "grammarNote": "Transliteration: lil'mukadhibīna"
+            }
+          ]
+        },
+        {
+          "id": "77-29-card",
+          "verseNumber": 29,
+          "arabicPhrase": "ٱنطَلِقُوٓا۟ إِلَىٰ مَا كُنتُم بِهِۦ تُكَذِّبُونَ",
+          "englishPhrase": "(It will be said to them on that day,) “Push on to what you used to deny.",
+          "vocabulary": [
+            {
+              "word": "ٱنطَلِقُوٓا۟",
+              "root": "ن - ط - ل",
+              "meaning": "Proceed",
+              "grammarNote": "Transliteration: inṭaliqū"
+            },
+            {
+              "word": "إِلَىٰ",
+              "root": "ا - ل - ي",
+              "meaning": "to",
+              "grammarNote": "Transliteration: ilā"
+            },
+            {
+              "word": "مَا",
+              "root": "م - ا",
+              "meaning": "what",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "كُنتُم",
+              "root": "ك - ن - ت",
+              "meaning": "you used to",
+              "grammarNote": "Transliteration: kuntum"
+            },
+            {
+              "word": "بِهِۦ",
+              "root": "ب - ه",
+              "meaning": "in it",
+              "grammarNote": "Transliteration: bihi"
+            },
+            {
+              "word": "تُكَذِّبُونَ",
+              "root": "ك - ذ - ب",
+              "meaning": "deny",
+              "grammarNote": "Transliteration: tukadhibūna"
+            }
+          ]
+        },
+        {
+          "id": "77-30-card",
+          "verseNumber": 30,
+          "arabicPhrase": "ٱنطَلِقُوٓا۟ إِلَىٰ ظِلٍّ ذِى ثَلَـٰثِ شُعَبٍ",
+          "englishPhrase": "Push on to a canopy (of Hell’s smoke) having three branches,",
+          "vocabulary": [
+            {
+              "word": "ٱنطَلِقُوٓا۟",
+              "root": "ن - ط - ل",
+              "meaning": "Proceed",
+              "grammarNote": "Transliteration: inṭaliqū"
+            },
+            {
+              "word": "إِلَىٰ",
+              "root": "ا - ل - ي",
+              "meaning": "to",
+              "grammarNote": "Transliteration: ilā"
+            },
+            {
+              "word": "ظِلٍّۢ",
+              "root": "ظ - ل",
+              "meaning": "a shadow",
+              "grammarNote": "Transliteration: ẓillin"
+            },
+            {
+              "word": "ذِى",
+              "root": "ذ - ي",
+              "meaning": "having",
+              "grammarNote": "Transliteration: dhī"
+            },
+            {
+              "word": "ثَلَـٰثِ",
+              "root": "ث - ل - ث",
+              "meaning": "three",
+              "grammarNote": "Transliteration: thalāthi"
+            },
+            {
+              "word": "شُعَبٍۢ",
+              "root": "ش - ع - ب",
+              "meaning": "columns",
+              "grammarNote": "Transliteration: shuʿabin"
+            }
+          ]
+        },
+        {
+          "id": "77-31-card",
+          "verseNumber": 31,
+          "arabicPhrase": "لَّا ظَلِيلٍ وَلَا يُغْنِى مِنَ ٱللَّهَبِ",
+          "englishPhrase": "that neither has a comfortable shade, nor is it of any use against the scorching heat.",
+          "vocabulary": [
+            {
+              "word": "لَّا",
+              "root": "ل - ا",
+              "meaning": "No",
+              "grammarNote": "Transliteration: lā"
+            },
+            {
+              "word": "ظَلِيلٍۢ",
+              "root": "ظ - ل - ي",
+              "meaning": "cool shade",
+              "grammarNote": "Transliteration: ẓalīlin"
+            },
+            {
+              "word": "وَلَا",
+              "root": "و - ل - ا",
+              "meaning": "and not",
+              "grammarNote": "Transliteration: walā"
+            },
+            {
+              "word": "يُغْنِى",
+              "root": "ي - غ - ن",
+              "meaning": "availing",
+              "grammarNote": "Transliteration: yugh'nī"
+            },
+            {
+              "word": "مِنَ",
+              "root": "م - ن",
+              "meaning": "against",
+              "grammarNote": "Transliteration: mina"
+            },
+            {
+              "word": "ٱللَّهَبِ",
+              "root": "ل - ه - ب",
+              "meaning": "the flame",
+              "grammarNote": "Transliteration: l-lahabi"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verses 17–24]\n\nثُمَّ نُتْبِعُهُمُ الْآخِرِ‌ينَ (Then We will cause the later ones to follow them....77:17) According to popular reading, Verse 17 purports to say that the present-day infidels, the people of Makkah, will receive punishment soon. They were punished and destroyed by Muslims in the Battle of Badr and so on. The difference between the punishment of former nations and the community of the Holy Prophet ﷺ is as follows: The former nations used to be destroyed by celestial punishment with all their habitations. The infidels in the community of the Holy Prophet ﷺ do not receive celestial punishment, because of the Holy Prophet's ﷺ special honour. They are punished by the weapons of Muslims. Furthermore, the destruction is not general. Only the obdurate criminal leaders are destroyed.\n\n────────────────────────────────────────\n\n[Verses 25–31]\n\nأَلَمْ نَجْعَلِ الْأَرْ‌ضَ كِفَاتًا أَحْيَاءً وَأَمْوَاتًا (Did We not make the earth a container that collects the living and the dead?....25, 26) The word kit is derived from kaft. It means 'to gather things together'. Thus kit is a thing that embodies many things within itself. Earth is created by Allah in a fashion that humans when alive, remain on its back, and when dead, in its belly.",
+      "subsections": [
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "ثُمَّ نُتْبِعُهُمُ الْآخِرِ‌ينَ (Then We will cause the later ones to follow them....77:17) According to popular reading, Verse 17 purports to say that the present-day infidels, the people of Makkah, will receive punishment soon. They were punished and destroyed by Muslims in the Battle of Badr and so on. The difference between the punishment of former nations and the community of the Holy Prophet ﷺ is as follows: The former nations used to be destroyed by celestial punishment with all their habitations. The infidels in the community of the Holy Prophet ﷺ do not receive celestial punishment, because of the Holy Prophet's ﷺ special honour. They are punished by the weapons of Muslims. Furthermore, the destruction is not general. Only the obdurate criminal leaders are destroyed."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "أَلَمْ نَجْعَلِ الْأَرْ‌ضَ كِفَاتًا أَحْيَاءً وَأَمْوَاتًا (Did We not make the earth a container that collects the living and the dead?....25, 26) The word kit is derived from kaft. It means 'to gather things together'. Thus kit is a thing that embodies many things within itself. Earth is created by Allah in a fashion that humans when alive, remain on its back, and when dead, in its belly."
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "77-32-45",
+      "surahNumber": 77,
+      "verseRange": [
+        32,
+        45
+      ],
+      "title": "────────────────────────────────────────",
+      "juzNumber": 29,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5693/mode/2up",
+      "arabicText": "إِنَّهَا تَرْمِى بِشَرَرٍ كَٱلْقَصْرِ ۝٣٢ كَأَنَّهُۥ جِمَـٰلَتٌ صُفْرٌ ۝٣٣ وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ ۝٣٤ هَـٰذَا يَوْمُ لَا يَنطِقُونَ ۝٣٥ وَلَا يُؤْذَنُ لَهُمْ فَيَعْتَذِرُونَ ۝٣٦ وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ ۝٣٧ هَـٰذَا يَوْمُ ٱلْفَصْلِ ۖ جَمَعْنَـٰكُمْ وَٱلْأَوَّلِينَ ۝٣٨ فَإِن كَانَ لَكُمْ كَيْدٌ فَكِيدُونِ ۝٣٩ وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ ۝٤٠ إِنَّ ٱلْمُتَّقِينَ فِى ظِلَـٰلٍ وَعُيُونٍ ۝٤١ وَفَوَٰكِهَ مِمَّا يَشْتَهُونَ ۝٤٢ كُلُوا۟ وَٱشْرَبُوا۟ هَنِيٓـًٔۢا بِمَا كُنتُمْ تَعْمَلُونَ ۝٤٣ إِنَّا كَذَٰلِكَ نَجْزِى ٱلْمُحْسِنِينَ ۝٤٤ وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ ۝٤٥",
+      "translation": "It emits sparks (as huge) as castles, ۝ as if they were yellowish camels.” ۝ Woe that Day to the deniers! ۝ This is the day when they will not speak, ۝ nor will they be allowed to offer excuses. ۝ Woe that Day to the deniers! ۝ (It will be said to them,) “This is the Day of Decision. We have assembled you and the earlier ones together. ۝ Now, if you have a trick, use the trick against Me.” ۝ Woe that Day to the deniers! ۝ Of course, the God-fearing will be amid shades and streams, ۝ and fruits of their desire. ۝ It will be said to them, “Eat and drink with pleasure because of what you used to do.” ۝ This is how We reward those who do good deeds. ۝ Woe that Day to the deniers! ۝",
+      "phraseCards": [
+        {
+          "id": "77-32-card",
+          "verseNumber": 32,
+          "arabicPhrase": "إِنَّهَا تَرْمِى بِشَرَرٍ كَٱلْقَصْرِ",
+          "englishPhrase": "It emits sparks (as huge) as castles,",
+          "vocabulary": [
+            {
+              "word": "إِنَّهَا",
+              "root": "ن - ه - ا",
+              "meaning": "Indeed, it",
+              "grammarNote": "Transliteration: innahā"
+            },
+            {
+              "word": "تَرْمِى",
+              "root": "ت - ر - م",
+              "meaning": "throws up",
+              "grammarNote": "Transliteration: tarmī"
+            },
+            {
+              "word": "بِشَرَرٍۢ",
+              "root": "ش - ر - ر",
+              "meaning": "sparks",
+              "grammarNote": "Transliteration: bishararin"
+            },
+            {
+              "word": "كَٱلْقَصْرِ",
+              "root": "ق - ص - ر",
+              "meaning": "as the fortress",
+              "grammarNote": "Transliteration: kal-qaṣri"
+            }
+          ]
+        },
+        {
+          "id": "77-33-card",
+          "verseNumber": 33,
+          "arabicPhrase": "كَأَنَّهُۥ جِمَـٰلَتٌ صُفْرٌ",
+          "englishPhrase": "as if they were yellowish camels.”",
+          "vocabulary": [
+            {
+              "word": "كَأَنَّهُۥ",
+              "root": "ك - ا - ن",
+              "meaning": "As if they (were)",
+              "grammarNote": "Transliteration: ka-annahu"
+            },
+            {
+              "word": "جِمَـٰلَتٌۭ",
+              "root": "ج - م - ل",
+              "meaning": "camels",
+              "grammarNote": "Transliteration: jimālatun"
+            },
+            {
+              "word": "صُفْرٌۭ",
+              "root": "ص - ف - ر",
+              "meaning": "yellow",
+              "grammarNote": "Transliteration: ṣuf'run"
+            }
+          ]
+        },
+        {
+          "id": "77-34-card",
+          "verseNumber": 34,
+          "arabicPhrase": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+          "englishPhrase": "Woe that Day to the deniers!",
+          "vocabulary": [
+            {
+              "word": "وَيْلٌۭ",
+              "root": "و - ي - ل",
+              "meaning": "Woe",
+              "grammarNote": "Transliteration: waylun"
+            },
+            {
+              "word": "يَوْمَئِذٍۢ",
+              "root": "و - م - ئ",
+              "meaning": "that Day",
+              "grammarNote": "Transliteration: yawma-idhin"
+            },
+            {
+              "word": "لِّلْمُكَذِّبِينَ",
+              "root": "ك - ذ - ب",
+              "meaning": "to the deniers",
+              "grammarNote": "Transliteration: lil'mukadhibīna"
+            }
+          ]
+        },
+        {
+          "id": "77-35-card",
+          "verseNumber": 35,
+          "arabicPhrase": "هَـٰذَا يَوْمُ لَا يَنطِقُونَ",
+          "englishPhrase": "This is the day when they will not speak,",
+          "vocabulary": [
+            {
+              "word": "هَـٰذَا",
+              "root": "ه - ذ - ا",
+              "meaning": "This",
+              "grammarNote": "Transliteration: hādhā"
+            },
+            {
+              "word": "يَوْمُ",
+              "root": "ي - و - م",
+              "meaning": "(is) a Day",
+              "grammarNote": "Transliteration: yawmu"
+            },
+            {
+              "word": "لَا",
+              "root": "ل - ا",
+              "meaning": "not",
+              "grammarNote": "Transliteration: lā"
+            },
+            {
+              "word": "يَنطِقُونَ",
+              "root": "ن - ط - ق",
+              "meaning": "they will speak",
+              "grammarNote": "Transliteration: yanṭiqūna"
+            }
+          ]
+        },
+        {
+          "id": "77-36-card",
+          "verseNumber": 36,
+          "arabicPhrase": "وَلَا يُؤْذَنُ لَهُمْ فَيَعْتَذِرُونَ",
+          "englishPhrase": "nor will they be allowed to offer excuses.",
+          "vocabulary": [
+            {
+              "word": "وَلَا",
+              "root": "و - ل - ا",
+              "meaning": "And not",
+              "grammarNote": "Transliteration: walā"
+            },
+            {
+              "word": "يُؤْذَنُ",
+              "root": "ؤ - ذ - ن",
+              "meaning": "will it be permitted",
+              "grammarNote": "Transliteration: yu'dhanu"
+            },
+            {
+              "word": "لَهُمْ",
+              "root": "ل - ه - م",
+              "meaning": "for them",
+              "grammarNote": "Transliteration: lahum"
+            },
+            {
+              "word": "فَيَعْتَذِرُونَ",
+              "root": "ع - ت - ذ",
+              "meaning": "to make excuses",
+              "grammarNote": "Transliteration: fayaʿtadhirūna"
+            }
+          ]
+        },
+        {
+          "id": "77-37-card",
+          "verseNumber": 37,
+          "arabicPhrase": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+          "englishPhrase": "Woe that Day to the deniers!",
+          "vocabulary": [
+            {
+              "word": "وَيْلٌۭ",
+              "root": "و - ي - ل",
+              "meaning": "Woe",
+              "grammarNote": "Transliteration: waylun"
+            },
+            {
+              "word": "يَوْمَئِذٍۢ",
+              "root": "و - م - ئ",
+              "meaning": "that Day",
+              "grammarNote": "Transliteration: yawma-idhin"
+            },
+            {
+              "word": "لِّلْمُكَذِّبِينَ",
+              "root": "ك - ذ - ب",
+              "meaning": "to the deniers",
+              "grammarNote": "Transliteration: lil'mukadhibīna"
+            }
+          ]
+        },
+        {
+          "id": "77-38-card",
+          "verseNumber": 38,
+          "arabicPhrase": "هَـٰذَا يَوْمُ ٱلْفَصْلِ ۖ جَمَعْنَـٰكُمْ وَٱلْأَوَّلِينَ",
+          "englishPhrase": "(It will be said to them,) “This is the Day of Decision. We have assembled you and the earlier ones together.",
+          "vocabulary": [
+            {
+              "word": "هَـٰذَا",
+              "root": "ه - ذ - ا",
+              "meaning": "This",
+              "grammarNote": "Transliteration: hādhā"
+            },
+            {
+              "word": "يَوْمُ",
+              "root": "ي - و - م",
+              "meaning": "(is the) Day",
+              "grammarNote": "Transliteration: yawmu"
+            },
+            {
+              "word": "ٱلْفَصْلِ ۖ",
+              "root": "ف - ص - ل",
+              "meaning": "(of) Judgment",
+              "grammarNote": "Transliteration: l-faṣli"
+            },
+            {
+              "word": "جَمَعْنَـٰكُمْ",
+              "root": "ج - م - ع",
+              "meaning": "We have gathered you",
+              "grammarNote": "Transliteration: jamaʿnākum"
+            },
+            {
+              "word": "وَٱلْأَوَّلِينَ",
+              "root": "ا - و - ل",
+              "meaning": "and the former (people)",
+              "grammarNote": "Transliteration: wal-awalīna"
+            }
+          ]
+        },
+        {
+          "id": "77-39-card",
+          "verseNumber": 39,
+          "arabicPhrase": "فَإِن كَانَ لَكُمْ كَيْدٌ فَكِيدُونِ",
+          "englishPhrase": "Now, if you have a trick, use the trick against Me.”",
+          "vocabulary": [
+            {
+              "word": "فَإِن",
+              "root": "ف - ا - ن",
+              "meaning": "So if",
+              "grammarNote": "Transliteration: fa-in"
+            },
+            {
+              "word": "كَانَ",
+              "root": "ك - ا - ن",
+              "meaning": "is",
+              "grammarNote": "Transliteration: kāna"
+            },
+            {
+              "word": "لَكُمْ",
+              "root": "ل - ك - م",
+              "meaning": "for you",
+              "grammarNote": "Transliteration: lakum"
+            },
+            {
+              "word": "كَيْدٌۭ",
+              "root": "ك - ي - د",
+              "meaning": "a plan",
+              "grammarNote": "Transliteration: kaydun"
+            },
+            {
+              "word": "فَكِيدُونِ",
+              "root": "ك - ي - د",
+              "meaning": "then plan against Me",
+              "grammarNote": "Transliteration: fakīdūni"
+            }
+          ]
+        },
+        {
+          "id": "77-40-card",
+          "verseNumber": 40,
+          "arabicPhrase": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+          "englishPhrase": "Woe that Day to the deniers!",
+          "vocabulary": [
+            {
+              "word": "وَيْلٌۭ",
+              "root": "و - ي - ل",
+              "meaning": "Woe",
+              "grammarNote": "Transliteration: waylun"
+            },
+            {
+              "word": "يَوْمَئِذٍۢ",
+              "root": "و - م - ئ",
+              "meaning": "that Day",
+              "grammarNote": "Transliteration: yawma-idhin"
+            },
+            {
+              "word": "لِّلْمُكَذِّبِينَ",
+              "root": "ك - ذ - ب",
+              "meaning": "to the deniers",
+              "grammarNote": "Transliteration: lil'mukadhibīna"
+            }
+          ]
+        },
+        {
+          "id": "77-41-card",
+          "verseNumber": 41,
+          "arabicPhrase": "إِنَّ ٱلْمُتَّقِينَ فِى ظِلَـٰلٍ وَعُيُونٍ",
+          "englishPhrase": "Of course, the God-fearing will be amid shades and streams,",
+          "vocabulary": [
+            {
+              "word": "إِنَّ",
+              "root": "ا - ن - ن",
+              "meaning": "Indeed",
+              "grammarNote": "Transliteration: inna"
+            },
+            {
+              "word": "ٱلْمُتَّقِينَ",
+              "root": "م - ت - ق",
+              "meaning": "the righteous",
+              "grammarNote": "Transliteration: l-mutaqīna"
+            },
+            {
+              "word": "فِى",
+              "root": "ف - ي",
+              "meaning": "(will be) in",
+              "grammarNote": "Transliteration: fī"
+            },
+            {
+              "word": "ظِلَـٰلٍۢ",
+              "root": "ظ - ل - ل",
+              "meaning": "shades",
+              "grammarNote": "Transliteration: ẓilālin"
+            },
+            {
+              "word": "وَعُيُونٍۢ",
+              "root": "ع - ي - و",
+              "meaning": "and springs",
+              "grammarNote": "Transliteration: waʿuyūnin"
+            }
+          ]
+        },
+        {
+          "id": "77-42-card",
+          "verseNumber": 42,
+          "arabicPhrase": "وَفَوَٰكِهَ مِمَّا يَشْتَهُونَ",
+          "englishPhrase": "and fruits of their desire.",
+          "vocabulary": [
+            {
+              "word": "وَفَوَٰكِهَ",
+              "root": "ف - و - ك",
+              "meaning": "And fruits",
+              "grammarNote": "Transliteration: wafawākiha"
+            },
+            {
+              "word": "مِمَّا",
+              "root": "م - م - ا",
+              "meaning": "from what",
+              "grammarNote": "Transliteration: mimmā"
+            },
+            {
+              "word": "يَشْتَهُونَ",
+              "root": "ش - ت - ه",
+              "meaning": "they desire",
+              "grammarNote": "Transliteration: yashtahūna"
+            }
+          ]
+        },
+        {
+          "id": "77-43-card",
+          "verseNumber": 43,
+          "arabicPhrase": "كُلُوا۟ وَٱشْرَبُوا۟ هَنِيٓـًٔۢا بِمَا كُنتُمْ تَعْمَلُونَ",
+          "englishPhrase": "It will be said to them, “Eat and drink with pleasure because of what you used to do.”",
+          "vocabulary": [
+            {
+              "word": "كُلُوا۟",
+              "root": "ك - ل - و",
+              "meaning": "Eat",
+              "grammarNote": "Transliteration: kulū"
+            },
+            {
+              "word": "وَٱشْرَبُوا۟",
+              "root": "ش - ر - ب",
+              "meaning": "and drink",
+              "grammarNote": "Transliteration: wa-ish'rabū"
+            },
+            {
+              "word": "هَنِيٓـًٔۢا",
+              "root": "ه - ن - ي",
+              "meaning": "(in) satisfaction",
+              "grammarNote": "Transliteration: hanīan"
+            },
+            {
+              "word": "بِمَا",
+              "root": "ب - م - ا",
+              "meaning": "for what",
+              "grammarNote": "Transliteration: bimā"
+            },
+            {
+              "word": "كُنتُمْ",
+              "root": "ك - ن - ت",
+              "meaning": "you used to",
+              "grammarNote": "Transliteration: kuntum"
+            },
+            {
+              "word": "تَعْمَلُونَ",
+              "root": "ع - م - ل",
+              "meaning": "do",
+              "grammarNote": "Transliteration: taʿmalūna"
+            }
+          ]
+        },
+        {
+          "id": "77-44-card",
+          "verseNumber": 44,
+          "arabicPhrase": "إِنَّا كَذَٰلِكَ نَجْزِى ٱلْمُحْسِنِينَ",
+          "englishPhrase": "This is how We reward those who do good deeds.",
+          "vocabulary": [
+            {
+              "word": "إِنَّا",
+              "root": "ا - ن - ا",
+              "meaning": "Indeed, We",
+              "grammarNote": "Transliteration: innā"
+            },
+            {
+              "word": "كَذَٰلِكَ",
+              "root": "ك - ذ - ل",
+              "meaning": "thus",
+              "grammarNote": "Transliteration: kadhālika"
+            },
+            {
+              "word": "نَجْزِى",
+              "root": "ن - ج - ز",
+              "meaning": "reward",
+              "grammarNote": "Transliteration: najzī"
+            },
+            {
+              "word": "ٱلْمُحْسِنِينَ",
+              "root": "ح - س - ن",
+              "meaning": "the good-doers",
+              "grammarNote": "Transliteration: l-muḥ'sinīna"
+            }
+          ]
+        },
+        {
+          "id": "77-45-card",
+          "verseNumber": 45,
+          "arabicPhrase": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+          "englishPhrase": "Woe that Day to the deniers!",
+          "vocabulary": [
+            {
+              "word": "وَيْلٌۭ",
+              "root": "و - ي - ل",
+              "meaning": "Woe",
+              "grammarNote": "Transliteration: waylun"
+            },
+            {
+              "word": "يَوْمَئِذٍۢ",
+              "root": "و - م - ئ",
+              "meaning": "that Day",
+              "grammarNote": "Transliteration: yawma-idhin"
+            },
+            {
+              "word": "لِّلْمُكَذِّبِينَ",
+              "root": "ك - ذ - ب",
+              "meaning": "to the deniers",
+              "grammarNote": "Transliteration: lil'mukadhibīna"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verses 32–34]\n\nإِنَّهَا تَرْ‌مِي بِشَرَ‌رٍ‌ كَالْقَصْرِ كَأَنَّهُ جِمَالَتٌ صُفْرٌ‌ ‌ (It emits sparks [ as huge ] as castles...77:32) The word gasr means a 'huge, magnificent castle'. The word jimalah is used in the sense of jamal, and means 'camel'. The word sufr is the plural of asfar which means 'yellow'. The verse describes the fire of Hell. It will emit such huge sparks of fire, as if they were huge and magnificent castles. Then they will break up into little splinters, as if they were yellowish camels. Some scholars have translated the word 'sufr' as 'black' because yellowish colour of camels tends to blackness. [ Ruh ].\n\n────────────────────────────────────────\n\n[Verses 35–45]\n\nهَـٰذَا يَوْمُ لَا يَنطِقُونَ وَلَا يُؤْذَنُ لَهُمْ فَيَعْتَذِرُ‌ونَ (This is a day when they will not speak, nor will they be allowed to offer excuses....77:35, 36) In other words, this is the Day in which they will not be able to talk, nor will they be permitted to offer pleas for their misdeeds. However, other verses of the Qur'an inform us that they will speak and will be permitted to offer excuses. There is no discrepancy between the two verses, because there will be various stages on the Plain of Gathering (Mahshar) through which people will have to pass. Sometimes they will pass through a stage where it would be forbidden for them to speak or offer excuses; and at another stage they will be permitted. [ Ruh ].",
+      "subsections": [
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "إِنَّهَا تَرْ‌مِي بِشَرَ‌رٍ‌ كَالْقَصْرِ كَأَنَّهُ جِمَالَتٌ صُفْرٌ‌ ‌ (It emits sparks [ as huge ] as castles...77:32) The word gasr means a 'huge, magnificent castle'. The word jimalah is used in the sense of jamal, and means 'camel'. The word sufr is the plural of asfar which means 'yellow'. The verse describes the fire of Hell. It will emit such huge sparks of fire, as if they were huge and magnificent castles. Then they will break up into little splinters, as if they were yellowish camels. Some scholars have translated the word 'sufr' as 'black' because yellowish colour of camels tends to blackness. [ Ruh ]."
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "77-46-49",
+      "surahNumber": 77,
+      "verseRange": [
+        46,
+        49
+      ],
+      "title": "────────────────────────────────────────",
+      "juzNumber": 29,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5693/mode/2up",
+      "arabicText": "كُلُوا۟ وَتَمَتَّعُوا۟ قَلِيلًا إِنَّكُم مُّجْرِمُونَ ۝٤٦ وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ ۝٤٧ وَإِذَا قِيلَ لَهُمُ ٱرْكَعُوا۟ لَا يَرْكَعُونَ ۝٤٨ وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ ۝٤٩",
+      "translation": "“(O disbelievers,) eat and drink for a while! You are guilty ones.” ۝ Woe that Day to the deniers! ۝ And when it is said to them, “Bow down (i.e. submit to Allah’s commands)”, they do not bow down. ۝ Woe that Day to the deniers! ۝",
+      "phraseCards": [
+        {
+          "id": "77-46-card",
+          "verseNumber": 46,
+          "arabicPhrase": "كُلُوا۟ وَتَمَتَّعُوا۟ قَلِيلًا إِنَّكُم مُّجْرِمُونَ",
+          "englishPhrase": "“(O disbelievers,) eat and drink for a while! You are guilty ones.”",
+          "vocabulary": [
+            {
+              "word": "كُلُوا۟",
+              "root": "ك - ل - و",
+              "meaning": "Eat",
+              "grammarNote": "Transliteration: kulū"
+            },
+            {
+              "word": "وَتَمَتَّعُوا۟",
+              "root": "م - ت - ع",
+              "meaning": "and enjoy yourselves",
+              "grammarNote": "Transliteration: watamattaʿū"
+            },
+            {
+              "word": "قَلِيلًا",
+              "root": "ق - ل - ي",
+              "meaning": "a little",
+              "grammarNote": "Transliteration: qalīlan"
+            },
+            {
+              "word": "إِنَّكُم",
+              "root": "ن - ك - م",
+              "meaning": "indeed, you",
+              "grammarNote": "Transliteration: innakum"
+            },
+            {
+              "word": "مُّجْرِمُونَ",
+              "root": "ج - ر - م",
+              "meaning": "(are) criminals",
+              "grammarNote": "Transliteration: muj'rimūna"
+            }
+          ]
+        },
+        {
+          "id": "77-47-card",
+          "verseNumber": 47,
+          "arabicPhrase": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+          "englishPhrase": "Woe that Day to the deniers!",
+          "vocabulary": [
+            {
+              "word": "وَيْلٌۭ",
+              "root": "و - ي - ل",
+              "meaning": "Woe",
+              "grammarNote": "Transliteration: waylun"
+            },
+            {
+              "word": "يَوْمَئِذٍۢ",
+              "root": "و - م - ئ",
+              "meaning": "that Day",
+              "grammarNote": "Transliteration: yawma-idhin"
+            },
+            {
+              "word": "لِّلْمُكَذِّبِينَ",
+              "root": "ك - ذ - ب",
+              "meaning": "to the deniers",
+              "grammarNote": "Transliteration: lil'mukadhibīna"
+            }
+          ]
+        },
+        {
+          "id": "77-48-card",
+          "verseNumber": 48,
+          "arabicPhrase": "وَإِذَا قِيلَ لَهُمُ ٱرْكَعُوا۟ لَا يَرْكَعُونَ",
+          "englishPhrase": "And when it is said to them, “Bow down (i.e. submit to Allah’s commands)”, they do not bow down.",
+          "vocabulary": [
+            {
+              "word": "وَإِذَا",
+              "root": "ا - ذ - ا",
+              "meaning": "And when",
+              "grammarNote": "Transliteration: wa-idhā"
+            },
+            {
+              "word": "قِيلَ",
+              "root": "ق - ي - ل",
+              "meaning": "it is said",
+              "grammarNote": "Transliteration: qīla"
+            },
+            {
+              "word": "لَهُمُ",
+              "root": "ل - ه - م",
+              "meaning": "to them",
+              "grammarNote": "Transliteration: lahumu"
+            },
+            {
+              "word": "ٱرْكَعُوا۟",
+              "root": "ر - ك - ع",
+              "meaning": "Bow",
+              "grammarNote": "Transliteration: ir'kaʿū"
+            },
+            {
+              "word": "لَا",
+              "root": "ل - ا",
+              "meaning": "not",
+              "grammarNote": "Transliteration: lā"
+            },
+            {
+              "word": "يَرْكَعُونَ",
+              "root": "ر - ك - ع",
+              "meaning": "they bow",
+              "grammarNote": "Transliteration: yarkaʿūna"
+            }
+          ]
+        },
+        {
+          "id": "77-49-card",
+          "verseNumber": 49,
+          "arabicPhrase": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+          "englishPhrase": "Woe that Day to the deniers!",
+          "vocabulary": [
+            {
+              "word": "وَيْلٌۭ",
+              "root": "و - ي - ل",
+              "meaning": "Woe",
+              "grammarNote": "Transliteration: waylun"
+            },
+            {
+              "word": "يَوْمَئِذٍۢ",
+              "root": "و - م - ئ",
+              "meaning": "that Day",
+              "grammarNote": "Transliteration: yawma-idhin"
+            },
+            {
+              "word": "لِّلْمُكَذِّبِينَ",
+              "root": "ك - ذ - ب",
+              "meaning": "to the deniers",
+              "grammarNote": "Transliteration: lil'mukadhibīna"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verses 46–47]\n\nكُلُوا وَتَمَتَّعُوا قَلِيلًا إِنَّكُم مُّجْرِ‌مُونَ (\"Eat and drink for a while! You are guilty ones...77:46) This verse addresses the infidels through the Holy Prophet ﷺ . They may eat and drink and enjoy themselves in this world, but the span is short, and then there will be nothing but punishment for them. [ Abu Hayyan ].\n\n────────────────────────────────────────\n\n[Verses 48–49]\n\nوَإِذَا قِيلَ لَهُمُ ارْ‌كَعُوا لَا يَرْ‌كَعُونَ (And when it is said to them, \"Bow down\", they do not bow down...77:48) According to most commentators, the word ruku' is used here in its primitive sense 'to bow down and submit'. The verse signifies that when they were told to submit to the Divine commands, they refused to comply. Some scholars take the word ruku` in its technical sense and interpret the verse to signify 'when they are called to prayer, they refused to pray.' The ruku` is a part of the prayer, but it refers here to the whole prayer. [ Ruh ]",
+      "subsections": [
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "كُلُوا وَتَمَتَّعُوا قَلِيلًا إِنَّكُم مُّجْرِ‌مُونَ (\"Eat and drink for a while! You are guilty ones...77:46) This verse addresses the infidels through the Holy Prophet ﷺ . They may eat and drink and enjoy themselves in this world, but the span is short, and then there will be nothing but punishment for them. [ Abu Hayyan ]."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "وَإِذَا قِيلَ لَهُمُ ارْ‌كَعُوا لَا يَرْ‌كَعُونَ (And when it is said to them, \"Bow down\", they do not bow down...77:48) According to most commentators, the word ruku' is used here in its primitive sense 'to bow down and submit'. The verse signifies that when they were told to submit to the Divine commands, they refused to comply. Some scholars take the word ruku` in its technical sense and interpret the verse to signify 'when they are called to prayer, they refused to pray.' The ruku` is a part of the prayer, but it refers here to the whole prayer. [ Ruh ]"
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "77-50-50",
+      "surahNumber": 77,
+      "verseRange": [
+        50,
+        50
+      ],
+      "title": "Now, in which discourse, after this, will they",
+      "juzNumber": 29,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5693/mode/2up",
+      "arabicText": "فَبِأَىِّ حَدِيثٍۭ بَعْدَهُۥ يُؤْمِنُونَ ۝٥٠",
+      "translation": "Now, in which discourse, after this, will they believe? ۝",
+      "phraseCards": [
+        {
+          "id": "77-50-card",
+          "verseNumber": 50,
+          "arabicPhrase": "فَبِأَىِّ حَدِيثٍۭ بَعْدَهُۥ يُؤْمِنُونَ",
+          "englishPhrase": "Now, in which discourse, after this, will they believe?",
+          "vocabulary": [
+            {
+              "word": "فَبِأَىِّ",
+              "root": "ب - ا - ي",
+              "meaning": "Then in what",
+              "grammarNote": "Transliteration: fabi-ayyi"
+            },
+            {
+              "word": "حَدِيثٍۭ",
+              "root": "ح - د - ي",
+              "meaning": "statement",
+              "grammarNote": "Transliteration: ḥadīthin"
+            },
+            {
+              "word": "بَعْدَهُۥ",
+              "root": "ع - د - ه",
+              "meaning": "after it",
+              "grammarNote": "Transliteration: baʿdahu"
+            },
+            {
+              "word": "يُؤْمِنُونَ",
+              "root": "ؤ - م - ن",
+              "meaning": "will they believe",
+              "grammarNote": "Transliteration: yu'minūna"
+            }
+          ]
+        }
+      ],
+      "commentary": "فَبِأَيِّ حَدِيثٍ بَعْدَهُ يُؤْمِنُونَ (Now, in which discourse, after this, will they believe? ...77:50) The Holy Qur'an is the last Book of Allah which explains its message and wisdom most lucidly, excellently, eloquently, elegantly, and its arguments most convincingly. Its style is extremely effective and the admonition soul-capturing. If they do not believe in such a Book, then for which word are they waiting? This is to express disappointment in them. A Hadith narrative instructs that when one recites this verse, he should say 'I believe in Allah'. This statement must be made outside the prayer, or in voluntary prayer. He must abstain from this statement in obligatory and Sunnah prayer. Hadith narratives are clear on this point. And Allah knows best!",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Juristic Rulings & Shariah Injunctions (v. 50)",
+          "content": "فَبِأَيِّ حَدِيثٍ بَعْدَهُ يُؤْمِنُونَ (Now, in which discourse, after this, will they believe? ...77:50) The Holy Qur'an is the last Book of Allah which explains its message and wisdom most lucidly, excellently, eloquently, elegantly, and its arguments most convincingly. Its style is extremely effective and the admonition soul-capturing. If they do not believe in such a Book, then for which word are they waiting? This is to express disappointment in them. A Hadith narrative instructs that when one recites this verse, he should say 'I believe in Allah'. This statement must be made outside the prayer, or in voluntary prayer. He must abstain from this statement in obligatory and Sunnah prayer. Hadith narratives are clear on this point. And Allah knows best!"
+        }
+      ],
+      "curatedTerms": []
+    }
+  ]
+}

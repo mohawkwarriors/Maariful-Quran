@@ -1,13 +1,13 @@
 import React from 'react';
 import { SurahData } from '../types/quran';
 import { SurahHistoricalContext } from './SurahHistoricalContext';
+import { BookOpen, ExternalLink } from 'lucide-react';
 
 interface SurahHeroProps {
   surah: SurahData;
 }
 
 export const SurahHero: React.FC<SurahHeroProps> = ({ surah }) => {
-  // Fallback background narrative if not yet explicitly stored in JSON
   const historicalContext = surah.historicalContext || {
     background: `Surah ${surah.nameTransliterated} (${surah.nameEnglish}) was revealed during the ${surah.revelationType} phase of the prophetic mission, comprising ${surah.versesCount} verses across Juz ${surah.juz.join(', ')}. Classical exegesis in Ma'ariful Qur'an records that this chapter addresses foundational guidance pertinent to the ${surah.revelationType} community, clarifying theology, moral perseverance, and divine injunctions.`,
   };
@@ -23,6 +23,14 @@ export const SurahHero: React.FC<SurahHeroProps> = ({ surah }) => {
         <span>{surah.versesCount} Verses</span>
         <span aria-hidden="true">·</span>
         <span>Juz {surah.juz.join(', ')}</span>
+        {surah.volumeNumber && (
+          <>
+            <span aria-hidden="true">·</span>
+            <span className="text-[#CD7743] dark:text-[#E08955] font-semibold">
+              Ma'ariful Qur'an Vol. {surah.volumeNumber} of 8
+            </span>
+          </>
+        )}
       </div>
 
       {/* Surah Titles: Distinct blocks with adequate line-height and vertical margin to prevent glyph collision */}
@@ -39,6 +47,23 @@ export const SurahHero: React.FC<SurahHeroProps> = ({ surah }) => {
         <p className="text-sm sm:text-base text-stone-600 dark:text-stone-400 max-w-xl mx-auto italic">
           "{surah.nameEnglish}"
         </p>
+
+        {/* Direct Link to 8-Volume Print Edition on Archive.org */}
+        {surah.archivePageUrl && (
+          <div className="pt-1">
+            <a
+              href={surah.archivePageUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-medium bg-stone-100 dark:bg-[#25252B] hover:bg-[#CD7743]/15 dark:hover:bg-[#CD7743]/25 text-stone-700 dark:text-stone-300 hover:text-[#CD7743] dark:hover:text-[#E08955] border border-stone-200/80 dark:border-stone-700/80 transition-all"
+              title={`Open Surah ${surah.nameTransliterated} in the 8-Volume Ma'ariful Qur'an Print Scan (Archive.org 2-Up Reader)`}
+            >
+              <BookOpen className="w-3.5 h-3.5 text-[#CD7743] dark:text-[#E08955]" />
+              <span>View in 8-Volume Print Edition (Vol. {surah.volumeNumber || 1})</span>
+              <ExternalLink className="w-3 h-3 opacity-70" />
+            </a>
+          </div>
+        )}
       </div>
 
       {/* Bismillah Calligraphy: Spacious cartouche with generous padding and line-height so descenders & diacritics are never cutoff */}

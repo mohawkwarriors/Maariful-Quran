@@ -1,0 +1,2699 @@
+{
+  "number": 54,
+  "nameArabic": "القمر",
+  "nameTransliterated": "Al-Qamar",
+  "nameEnglish": "The Moon",
+  "versesCount": 55,
+  "revelationType": "Makki",
+  "volumeNumber": 8,
+  "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5257/mode/2up",
+  "juz": [
+    27
+  ],
+  "bismillahPre": true,
+  "introductoryTafseer": "Whereas the preceding Surah An-Najm had ended on a note of warning to disbelievers in the words: اَزِفَۃِ الاٰزِفَۃ azifat-il-` azifah, i.e., the Hour of their doom has drawn near, the present Surah opens with a similar sentence, \"The Hour (of doom) has drawn near\" and this statement is followed by one of its proofs, that is, the appearance of the miracle of the moon being split asunder. There are many signs of the Day of Doom; one of them is the advent of the last of the Prophets Sayyidna Muhammad ﷺ itself, as reported in a hadith 'I was sent ...",
+  "historicalContext": {
+    "background": "The disbelievers of Makkah asked the Messenger of Allah ﷺ to produce a proof in support of his claim, and he, with the dispensation of Allah, split the moon into two parts. This miracle is verified by the concluding part of verse 1: 'and the moon has been split asunder.' The incident has been narrated successively in Traditions of reliable authority, and reported by such learned Companions as ` Abdullah Ibn Masud, ` Abdullah Ibn ` Umar, Jubair Ibn Mut` im, ` Abdullah Ibn ` Abbas, Anas Ibn Malik ؓ and others. ` Abdullah Ibn Masud ؓ reports that he himself was present and witnessed when the Messenger of Allah ﷺ performed this miracle. Imams Tah...",
+    "scholarlyReference": "Ma'ariful Qur'an by Mufti Muhammad Shafi, Volume 8 (Archive.org Leaf n5257)"
+  },
+  "sections": [
+    {
+      "id": "54-1-2",
+      "surahNumber": 54,
+      "verseRange": [
+        1,
+        2
+      ],
+      "title": "Linkage between Surah An-Najm and Surah Al-Qamar",
+      "juzNumber": 27,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5258/mode/2up",
+      "arabicText": "ٱقْتَرَبَتِ ٱلسَّاعَةُ وَٱنشَقَّ ٱلْقَمَرُ ۝١ وَإِن يَرَوْا۟ ءَايَةً يُعْرِضُوا۟ وَيَقُولُوا۟ سِحْرٌ مُّسْتَمِرٌّ ۝٢",
+      "translation": "The Hour (of doom) has drawn near, and the moon has split asunder. ۝ When these people see a sign, they turn away and say, “(This is) a transient magic.” ۝",
+      "phraseCards": [
+        {
+          "id": "54-1-card",
+          "verseNumber": 1,
+          "arabicPhrase": "ٱقْتَرَبَتِ ٱلسَّاعَةُ وَٱنشَقَّ ٱلْقَمَرُ",
+          "englishPhrase": "The Hour (of doom) has drawn near, and the moon has split asunder.",
+          "vocabulary": [
+            {
+              "word": "ٱقْتَرَبَتِ",
+              "root": "ق - ت - ر",
+              "meaning": "Has come near",
+              "grammarNote": "Transliteration: iq'tarabati"
+            },
+            {
+              "word": "ٱلسَّاعَةُ",
+              "root": "س - ا - ع",
+              "meaning": "the Hour",
+              "grammarNote": "Transliteration: l-sāʿatu"
+            },
+            {
+              "word": "وَٱنشَقَّ",
+              "root": "ن - ش - ق",
+              "meaning": "and has split",
+              "grammarNote": "Transliteration: wa-inshaqqa"
+            },
+            {
+              "word": "ٱلْقَمَرُ",
+              "root": "ق - م - ر",
+              "meaning": "the moon",
+              "grammarNote": "Transliteration: l-qamaru"
+            }
+          ]
+        },
+        {
+          "id": "54-2-card",
+          "verseNumber": 2,
+          "arabicPhrase": "وَإِن يَرَوْا۟ ءَايَةً يُعْرِضُوا۟ وَيَقُولُوا۟ سِحْرٌ مُّسْتَمِرٌّ",
+          "englishPhrase": "When these people see a sign, they turn away and say, “(This is) a transient magic.”",
+          "vocabulary": [
+            {
+              "word": "وَإِن",
+              "root": "و - ا - ن",
+              "meaning": "And if",
+              "grammarNote": "Transliteration: wa-in"
+            },
+            {
+              "word": "يَرَوْا۟",
+              "root": "ر - و - ا",
+              "meaning": "they see",
+              "grammarNote": "Transliteration: yaraw"
+            },
+            {
+              "word": "ءَايَةًۭ",
+              "root": "ء - ا - ي",
+              "meaning": "a Sign",
+              "grammarNote": "Transliteration: āyatan"
+            },
+            {
+              "word": "يُعْرِضُوا۟",
+              "root": "ع - ر - ض",
+              "meaning": "they turn away",
+              "grammarNote": "Transliteration: yuʿ'riḍū"
+            },
+            {
+              "word": "وَيَقُولُوا۟",
+              "root": "ق - و - ل",
+              "meaning": "and say",
+              "grammarNote": "Transliteration: wayaqūlū"
+            },
+            {
+              "word": "سِحْرٌۭ",
+              "root": "س - ح - ر",
+              "meaning": "Magic",
+              "grammarNote": "Transliteration: siḥ'run"
+            },
+            {
+              "word": "مُّسْتَمِرٌّۭ",
+              "root": "س - ت - م",
+              "meaning": "continuing",
+              "grammarNote": "Transliteration: mus'tamirrun"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verse 1]\n\nLinkage between Surah An-Najm and Surah Al-Qamar\n\nWhereas the preceding Surah An-Najm had ended on a note of warning to disbelievers in the words: اَزِفَۃِ الاٰزِفَۃ azifat-il-` azifah, i.e., the Hour of their doom has drawn near, the present Surah opens with a similar sentence, \"The Hour (of doom) has drawn near\" and this statement is followed by one of its proofs, that is, the appearance of the miracle of the moon being split asunder. There are many signs of the Day of Doom; one of them is the advent of the last of the Prophets Sayyidna Muhammad ﷺ itself, as reported in a hadith 'I was sent like this with the last Hour' and he pointed with his middle and index fingers. There are many other Traditions mentioning that the advent of the Holy Prophet ﷺ is close to the Day of doom. Likewise, a great sign of Doomsday is the miracle of the Prophet ﷺ when he split the moon into two pieces, then he rejoined them. Also, the miracle of 'moon-splitting' is significant from another point of view: Just as Allah's power split the moon into two, so will planets and stars be destroyed by Him by breaking them into very small pieces which is not impossible, as has been proved by the miracle of splitting the moon.\n\nThe Phenomenon of Moon-Splitting: A Miracle\n\nThe disbelievers of Makkah asked the Messenger of Allah ﷺ to produce a proof in support of his claim, and he, with the dispensation of Allah, split the moon into two parts. This miracle is verified by the concluding part of verse 1: 'and the moon has been split asunder.' The incident has been narrated successively in Traditions of reliable authority, and reported by such learned Companions as ` Abdullah Ibn Masud, ` Abdullah Ibn ` Umar, Jubair Ibn Mut` im, ` Abdullah Ibn ` Abbas, Anas Ibn Malik ؓ and others. ` Abdullah Ibn Masud ؓ reports that he himself was present and witnessed when the Messenger of Allah ﷺ performed this miracle. Imams Tahawi and Ibn Kathir have stated that the reports narrating the phenomenon of 'moon-splitting' are mutawatir (i.e. it has been reported successively and uninterruptedly by such a large number of authorities that their concurrence on falsehood is inconceivable.) Therefore, this Prophetic miracle has been proved by incontrovertible evidence.\n\nIt was mentioned earlier that a large number of Traditions report the incident of 'moon-splitting', which may be summarized as follows: Whilst the Messenger of Allah ﷺ was sitting at Mina in Makkah, the pagans demanded that the Messenger of Allah ﷺ should produce a proof substantiating his claim. Allah split the moon in two parts. A part of the moon was over one mountain on the eastern side, and another part was over another mountain on the western side. Thus there was a mountain between the two parts. This incident took place on a moonlit night. The Messenger of Allah ﷺ said to all who were present: 'Be witnesses'. When all the people saw the miracle clearly, the two pieces rejoined. It was not possible for any person with eyes to deny this clear miracle. However, the pagans said: 'Muhammad has ensorcelled us, but he cannot bewitch the whole world; so let us wait for people to come from the neighboring parts of the country and hear what they have to say'. (Baihaqi and Abu Dawud Tayalisi) Tayalisi records on the authority of ` Abdullah Ibn Masud ؓ that when travelers from the neighboring parts of the country arrived, they confirmed that they did see the moon in two parts. Some reports indicate that the miracle of 'moon-splitting' occurred twice, but more authentic reports confirm that the miracle occurred once only. (Bayan-ul-Quran) The following Traditions are worth noting, which have been taken from Ibn Kathir:\n\n(1) Sayyidna Anas Ibn Malik ؓ narrates, as recorded in Sahib of Bukhari:\n\nاِنَّ اَھلَ مَکَّۃَ سَاَلُوا رَسُولَ اللہِ ﷺ اَن ئُّرِیَھَمُ اٰیَۃً فَاَرَاھُمَ القَمَرَ شَقِّین حَّتّٰی رَاَوا حِرَاءَ بَینَھُمَا (بخاری و مسلم)\n\n'The people of Makkah asked the Messenger of Allah ﷺ to show them a sign, and he split the moon into two parts until they saw the mount of Hira' between them'.\n\n(2) Sayyidna ` Abdullah Ibn Masud ؓ narrates, as recorded in Sahihs of Bukhari and Muslim, and in Musnad of Ahmad,\n\nاَنشَقَّ القَمَرُ عَلٰی عَھد رَسُولَ اللہِ ﷺ شِقَّینِ حَتّٰی نَظَرُوا اِلَیہِ فقَالَ رَسُولَ اللہِ ﷺ اَشھَدُوا۔\n\n\"The moon was split in two parts during the time of Allah's Messenger ﷺ ، and they saw its two parts. Allah's Messenger ﷺ said: 'Be witnesses'.\"\n\nIbn Jarir has cited this report with the following addition:\n\nکُنَّا مَعَ رَسُولَ اللہِ ﷺ بِمِنٰی فَاشَقَّ القَمَرُ فَاَخَذَت فِرقَۃُ خَلفَ الجَبَلِ فقالَ رَسُولَ اللہِ ﷺ اَشھَدُوا اَشھَدُوا۔\n\n\"Sayyidna ` Abdullah Ibn Masud ؓ says: 'We were with Allah's Messenger ﷺ at Mina. Suddenly the moon split in two pieces, and one piece went away behind the mountain. Allah's Messenger ﷺ said: \"Be witnesses; be witnesses.'\n\n(3) The narration of Sayyidna ` Abdullah Ibn Masud ؓ is recorded by Baihaqi and Abu Dawud Tayalisi in the following words:\n\nاَنشَقَّ القَمَرُ بِمَکَّۃَ حَتّٰی صارَ فِرقَتَینِ فَقَالَ کُفَّارُ قُرَیشِ اَھل مَکَّۃ ھٰذَا سِحرَکُم بَہٰ اِبنُ اَبِی کَبشَۃَ اَنظَرُوا السُّفَّرَ فَاِن کَانُوا رَأوا ما رَاَیتُم فقد صَدَقَ وَ اِن کَانُوا لَم یَرَوا مِثلَ مَا رَایتُم فَھُوَسِحرُ سَحرَکُم بَہٰ فَسُیِٔلَ السُّفَّارُ قَالَ وَ قَدِمُوا کُلِّ جِھَۃِ فَقَالُو رَاَیٔنَا۔ (ابن کثیر)\n\n\"In Makkah, the moon was split into two parts. The disbelieving Quraish claimed: 'This is sorcery. Ibn Abi Kabshah [ the Prophet ﷺ ] has ensorcelled you. Therefore, wait for the neighboring travelers to arrive. If they too have seen the two pieces of the moon, so he has spoken the truth. But if they have not seen the parts of the moon, then this is indeed a magical illusion which he has performed on you.' When the travelers arrived and were asked about it, they all confirmed that they did see the two parts of the moon.' :(Ibn Kathir)\n\nCriticism against the Miracle of 'Moon-Splitting'\n\nThe critics have raised two types of criticism against the miracle: one is based on the assumptions of Greek philosophers, and the other is based on layman's thinking.\n\nThe deviant Greek philosophers assume that it is not possible for the heaven and other celestial bodies to split or crack, and rejoin. But this is merely an idea unsubstantiated by any solid or concrete proof. Whatever proof or evidence the philosophers have advanced is flimsy, shaky, inadequate and unsubstantial. The Islamic philosophers [ mutakallimin ] have broken down their arguments and have shown that they are baseless, false and absurd. They could not prove by any rational argument that 'moon-splitting' is impossible. Indeed, illiterate people regard every unusual thing as impossible. Obviously, the very meaning of mu’ jizah or a prophetic miracle is that it is an unusual event that is abnormal and out of general habit, which cannot be performed by common people. Any ordinary work which can be performed at any time cannot be called mu’ jizah or miracle.\n\nThe other criticism based on a layman's thinking is that if such a wonderful event had taken place, its knowledge would have been commonplace and would have found its mention in the books of history, but they say that they have found no such thing recorded.\n\nSuch a thinking is too simplistic which lacks careful analysis. A careful analysis shows that the event had occurred in Makkah at night. At that particular moment, in many parts of the world it must have been day time where and when the question of witnessing this event does not even arise. In many other countries, it must have been middle of the night, or last part of the night when the people normally sleep. Furthermore, people who are awake also do not stare at the moon all the time. Splitting of the moon would not make any difference on the moonlight spread on the earth, so that it would attract people's attention. The event took place suddenly and lasted for a short while. It is a daily experience that in particular countries at different times lunar eclipse takes place. Nowadays a forecast is made about its occurrence well in advance, yet there are hundreds of thousands of people who are absolutely unaware of it. Can this be the proof that the lunar eclipse did not take place? Thus if the event is not recorded in world history books, its occurrence cannot be denied or refuted.\n\nBesides, the event is recorded in the famous and reliable history book of India called 'Tarikh-e-Farishtah'. It has been mentioned in this book that the Maharajah, a native ruler, of Malabar had witnessed this phenomenon that night with his own eyes, and had it entered in his diary. This incident was the cause of his embracing Islam. Earlier on the narratives of Abu Dawud Tayalisi and Baihaqi were quoted about the pagans of Makkah themselves who inquired from the people arriving from the neighboring parts of the country and they confirmed and verified that they had seen it. Allah, the Pure and the Exalted, knows best!\n\n────────────────────────────────────────\n\n[Verse 2]\n\nوَإِن يَرَ‌وْا آيَةً يُعْرِ‌ضُوا وَيَقُولُوا سِحْرٌ‌ مُّسْتَمِرٌّ‌ (And when these people see a sign, they turn away and say, \"[ This is ] a transient magic.... 54:2). The word mustamirr, in the popular sense of the word, as used in Persian and Urdu, means something lasting or enduring. However, in the Arabic language it is sometimes used in the sense of passing away or coming to an end, being derived from marra and istamarra. Leading authorities on Tafsir, like Mujahid and Qatadah رحمۃ اللہ علیہما have applied this sense of the word in the present context. Thus the verse means that the Quraish alleged that the sign of moon-splitting they saw was an illusion and false; its effect will soon diminish and fade away. Another meaning of the word mustamirr is strong and firm. Abul-` Aliyah and Dahhak رحمۃ اللہ علیہما interpret the word in this sense, meaning that this is a very potent sorcery.",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Juristic Rulings & Shariah Injunctions (vv. 1–2)",
+          "content": "The disbelievers of Makkah asked the Messenger of Allah ﷺ to produce a proof in support of his claim, and he, with the dispensation of Allah, split the moon into two parts. This miracle is verified by the concluding part of verse 1: 'and the moon has been split asunder.' The incident has been narrated successively in Traditions of reliable authority, and reported by such learned Companions as ` Abdullah Ibn Masud, ` Abdullah Ibn ` Umar, Jubair Ibn Mut` im, ` Abdullah Ibn ` Abbas, Anas Ibn Malik ؓ and others. ` Abdullah Ibn Masud ؓ reports that he himself was present and witnessed when the Messenger of Allah ﷺ performed this miracle. Imams Tahawi and Ibn Kathir have stated that the reports narrating the phenomenon of 'moon-splitting' are mutawatir (i.e. it has been reported successively and uninterruptedly by such a large number of authorities that their concurrence on falsehood is..."
+        },
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "Whereas the preceding Surah An-Najm had ended on a note of warning to disbelievers in the words: اَزِفَۃِ الاٰزِفَۃ azifat-il-` azifah, i.e., the Hour of their doom has drawn near, the present Surah opens with a similar sentence, \"The Hour (of doom) has drawn near\" and this statement is followed by one of its proofs, that is, the appearance of the miracle of the moon being split asunder. There are many signs of the Day of Doom; one of them is the advent of the last of the Prophets Sayyidna Muhammad ﷺ itself, as reported in a hadith 'I was sent like this with the last Hour' and he pointed with his middle and index fingers. There are many other Traditions mentioning that the advent of the Holy Prophet ﷺ is close to the Day of doom. Likewise, a great sign of Doomsday is the miracle of the Prophet ﷺ when he split the moon into two pieces, then he rejoined them. Also, the miracle of..."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "It was mentioned earlier that a large number of Traditions report the incident of 'moon-splitting', which may be summarized as follows: Whilst the Messenger of Allah ﷺ was sitting at Mina in Makkah, the pagans demanded that the Messenger of Allah ﷺ should produce a proof substantiating his claim. Allah split the moon in two parts. A part of the moon was over one mountain on the eastern side, and another part was over another mountain on the western side. Thus there was a mountain between the two parts. This incident took place on a moonlit night. The Messenger of Allah ﷺ said to all who were present: 'Be witnesses'. When all the people saw the miracle clearly, the two pieces rejoined. It was not possible for any person with eyes to deny this clear miracle. However, the pagans said: 'Muhammad has ensorcelled us, but he cannot bewitch the whole world; so let us wait for people to come..."
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "54-3-8",
+      "surahNumber": 54,
+      "verseRange": [
+        3,
+        8
+      ],
+      "title": "────────────────────────────────────────",
+      "juzNumber": 27,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5258/mode/2up",
+      "arabicText": "وَكَذَّبُوا۟ وَٱتَّبَعُوٓا۟ أَهْوَآءَهُمْ ۚ وَكُلُّ أَمْرٍ مُّسْتَقِرٌّ ۝٣ وَلَقَدْ جَآءَهُم مِّنَ ٱلْأَنۢبَآءِ مَا فِيهِ مُزْدَجَرٌ ۝٤ حِكْمَةٌۢ بَـٰلِغَةٌ ۖ فَمَا تُغْنِ ٱلنُّذُرُ ۝٥ فَتَوَلَّ عَنْهُمْ ۘ يَوْمَ يَدْعُ ٱلدَّاعِ إِلَىٰ شَىْءٍ نُّكُرٍ ۝٦ خُشَّعًا أَبْصَـٰرُهُمْ يَخْرُجُونَ مِنَ ٱلْأَجْدَاثِ كَأَنَّهُمْ جَرَادٌ مُّنتَشِرٌ ۝٧ مُّهْطِعِينَ إِلَى ٱلدَّاعِ ۖ يَقُولُ ٱلْكَـٰفِرُونَ هَـٰذَا يَوْمٌ عَسِرٌ ۝٨",
+      "translation": "They have rejected (the Truth) and followed their desires, while every matter has to settle (at some time). ۝ And there has come to them as much news (of the earlier communities) as it is enough to deter, ۝ (containing) a perfect wisdom. But the warnings are of no avail (to them). ۝ Therefore, turn aside (O Prophet,) from them. (They will see the reality) on the day in which the caller will call (them) to a gruesome object. ۝ With their eyes humbled, they will come out of the graves like locusts spread all over, ۝ rushing quickly towards the caller. (On that Day) the disbelievers will say, “This is a hard day.” ۝",
+      "phraseCards": [
+        {
+          "id": "54-3-card",
+          "verseNumber": 3,
+          "arabicPhrase": "وَكَذَّبُوا۟ وَٱتَّبَعُوٓا۟ أَهْوَآءَهُمْ ۚ وَكُلُّ أَمْرٍ مُّسْتَقِرٌّ",
+          "englishPhrase": "They have rejected (the Truth) and followed their desires, while every matter has to settle (at some time).",
+          "vocabulary": [
+            {
+              "word": "وَكَذَّبُوا۟",
+              "root": "ك - ذ - ب",
+              "meaning": "And they denied",
+              "grammarNote": "Transliteration: wakadhabū"
+            },
+            {
+              "word": "وَٱتَّبَعُوٓا۟",
+              "root": "ت - ب - ع",
+              "meaning": "and followed",
+              "grammarNote": "Transliteration: wa-ittabaʿū"
+            },
+            {
+              "word": "أَهْوَآءَهُمْ ۚ",
+              "root": "ه - و - ا",
+              "meaning": "their desires",
+              "grammarNote": "Transliteration: ahwāahum"
+            },
+            {
+              "word": "وَكُلُّ",
+              "root": "و - ك - ل",
+              "meaning": "but (for) every",
+              "grammarNote": "Transliteration: wakullu"
+            },
+            {
+              "word": "أَمْرٍۢ",
+              "root": "ا - م - ر",
+              "meaning": "matter",
+              "grammarNote": "Transliteration: amrin"
+            },
+            {
+              "word": "مُّسْتَقِرٌّۭ",
+              "root": "س - ت - ق",
+              "meaning": "(will be a) settlement",
+              "grammarNote": "Transliteration: mus'taqirrun"
+            }
+          ]
+        },
+        {
+          "id": "54-4-card",
+          "verseNumber": 4,
+          "arabicPhrase": "وَلَقَدْ جَآءَهُم مِّنَ ٱلْأَنۢبَآءِ مَا فِيهِ مُزْدَجَرٌ",
+          "englishPhrase": "And there has come to them as much news (of the earlier communities) as it is enough to deter,",
+          "vocabulary": [
+            {
+              "word": "وَلَقَدْ",
+              "root": "ل - ق - د",
+              "meaning": "And certainly",
+              "grammarNote": "Transliteration: walaqad"
+            },
+            {
+              "word": "جَآءَهُم",
+              "root": "ج - ا - ء",
+              "meaning": "has come to them",
+              "grammarNote": "Transliteration: jāahum"
+            },
+            {
+              "word": "مِّنَ",
+              "root": "م - ن",
+              "meaning": "of",
+              "grammarNote": "Transliteration: mina"
+            },
+            {
+              "word": "ٱلْأَنۢبَآءِ",
+              "root": "ن - ب - ا",
+              "meaning": "the information",
+              "grammarNote": "Transliteration: l-anbāi"
+            },
+            {
+              "word": "مَا",
+              "root": "م - ا",
+              "meaning": "wherein",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "فِيهِ",
+              "root": "ف - ي - ه",
+              "meaning": "wherein",
+              "grammarNote": "Transliteration: fīhi"
+            },
+            {
+              "word": "مُزْدَجَرٌ",
+              "root": "ز - د - ج",
+              "meaning": "(is) deterrence",
+              "grammarNote": "Transliteration: muz'dajarun"
+            }
+          ]
+        },
+        {
+          "id": "54-5-card",
+          "verseNumber": 5,
+          "arabicPhrase": "حِكْمَةٌۢ بَـٰلِغَةٌ ۖ فَمَا تُغْنِ ٱلنُّذُرُ",
+          "englishPhrase": "(containing) a perfect wisdom. But the warnings are of no avail (to them).",
+          "vocabulary": [
+            {
+              "word": "حِكْمَةٌۢ",
+              "root": "ح - ك - م",
+              "meaning": "Wisdom",
+              "grammarNote": "Transliteration: ḥik'matun"
+            },
+            {
+              "word": "بَـٰلِغَةٌۭ ۖ",
+              "root": "ل - غ - ه",
+              "meaning": "perfect",
+              "grammarNote": "Transliteration: bālighatun"
+            },
+            {
+              "word": "فَمَا",
+              "root": "ف - م - ا",
+              "meaning": "but not",
+              "grammarNote": "Transliteration: famā"
+            },
+            {
+              "word": "تُغْنِ",
+              "root": "ت - غ - ن",
+              "meaning": "will avail",
+              "grammarNote": "Transliteration: tugh'ni"
+            },
+            {
+              "word": "ٱلنُّذُرُ",
+              "root": "ن - ذ - ر",
+              "meaning": "the warnings",
+              "grammarNote": "Transliteration: l-nudhuru"
+            }
+          ]
+        },
+        {
+          "id": "54-6-card",
+          "verseNumber": 6,
+          "arabicPhrase": "فَتَوَلَّ عَنْهُمْ ۘ يَوْمَ يَدْعُ ٱلدَّاعِ إِلَىٰ شَىْءٍ نُّكُرٍ",
+          "englishPhrase": "Therefore, turn aside (O Prophet,) from them. (They will see the reality) on the day in which the caller will call (them) to a gruesome object.",
+          "vocabulary": [
+            {
+              "word": "فَتَوَلَّ",
+              "root": "ت - و - ل",
+              "meaning": "So turn away",
+              "grammarNote": "Transliteration: fatawalla"
+            },
+            {
+              "word": "عَنْهُمْ ۘ",
+              "root": "ع - ن - ه",
+              "meaning": "from them",
+              "grammarNote": "Transliteration: ʿanhum"
+            },
+            {
+              "word": "يَوْمَ",
+              "root": "ي - و - م",
+              "meaning": "(The) Day",
+              "grammarNote": "Transliteration: yawma"
+            },
+            {
+              "word": "يَدْعُ",
+              "root": "ي - د - ع",
+              "meaning": "will call",
+              "grammarNote": "Transliteration: yadʿu"
+            },
+            {
+              "word": "ٱلدَّاعِ",
+              "root": "د - ا - ع",
+              "meaning": "the caller",
+              "grammarNote": "Transliteration: l-dāʿi"
+            },
+            {
+              "word": "إِلَىٰ",
+              "root": "ا - ل - ي",
+              "meaning": "to",
+              "grammarNote": "Transliteration: ilā"
+            },
+            {
+              "word": "شَىْءٍۢ",
+              "root": "ش - ي - ء",
+              "meaning": "a thing",
+              "grammarNote": "Transliteration: shayin"
+            },
+            {
+              "word": "نُّكُرٍ",
+              "root": "ن - ك - ر",
+              "meaning": "terrible",
+              "grammarNote": "Transliteration: nukurin"
+            }
+          ]
+        },
+        {
+          "id": "54-7-card",
+          "verseNumber": 7,
+          "arabicPhrase": "خُشَّعًا أَبْصَـٰرُهُمْ يَخْرُجُونَ مِنَ ٱلْأَجْدَاثِ كَأَنَّهُمْ جَرَادٌ مُّنتَشِرٌ",
+          "englishPhrase": "With their eyes humbled, they will come out of the graves like locusts spread all over,",
+          "vocabulary": [
+            {
+              "word": "خُشَّعًا",
+              "root": "خ - ش - ع",
+              "meaning": "(Will be) humbled",
+              "grammarNote": "Transliteration: khushaʿan"
+            },
+            {
+              "word": "أَبْصَـٰرُهُمْ",
+              "root": "ب - ص - ر",
+              "meaning": "their eyes",
+              "grammarNote": "Transliteration: abṣāruhum"
+            },
+            {
+              "word": "يَخْرُجُونَ",
+              "root": "خ - ر - ج",
+              "meaning": "they will come forth",
+              "grammarNote": "Transliteration: yakhrujūna"
+            },
+            {
+              "word": "مِنَ",
+              "root": "م - ن",
+              "meaning": "from",
+              "grammarNote": "Transliteration: mina"
+            },
+            {
+              "word": "ٱلْأَجْدَاثِ",
+              "root": "ج - د - ا",
+              "meaning": "the graves",
+              "grammarNote": "Transliteration: l-ajdāthi"
+            },
+            {
+              "word": "كَأَنَّهُمْ",
+              "root": "ك - ا - ن",
+              "meaning": "as if they (were)",
+              "grammarNote": "Transliteration: ka-annahum"
+            },
+            {
+              "word": "جَرَادٌۭ",
+              "root": "ج - ر - د",
+              "meaning": "locusts",
+              "grammarNote": "Transliteration: jarādun"
+            },
+            {
+              "word": "مُّنتَشِرٌۭ",
+              "root": "ن - ت - ش",
+              "meaning": "spreading",
+              "grammarNote": "Transliteration: muntashirun"
+            }
+          ]
+        },
+        {
+          "id": "54-8-card",
+          "verseNumber": 8,
+          "arabicPhrase": "مُّهْطِعِينَ إِلَى ٱلدَّاعِ ۖ يَقُولُ ٱلْكَـٰفِرُونَ هَـٰذَا يَوْمٌ عَسِرٌ",
+          "englishPhrase": "rushing quickly towards the caller. (On that Day) the disbelievers will say, “This is a hard day.”",
+          "vocabulary": [
+            {
+              "word": "مُّهْطِعِينَ",
+              "root": "ه - ط - ع",
+              "meaning": "Racing ahead",
+              "grammarNote": "Transliteration: muh'ṭiʿīna"
+            },
+            {
+              "word": "إِلَى",
+              "root": "ا - ل - ي",
+              "meaning": "towards",
+              "grammarNote": "Transliteration: ilā"
+            },
+            {
+              "word": "ٱلدَّاعِ ۖ",
+              "root": "د - ا - ع",
+              "meaning": "the caller",
+              "grammarNote": "Transliteration: l-dāʿi"
+            },
+            {
+              "word": "يَقُولُ",
+              "root": "ق - و - ل",
+              "meaning": "Will say",
+              "grammarNote": "Transliteration: yaqūlu"
+            },
+            {
+              "word": "ٱلْكَـٰفِرُونَ",
+              "root": "ك - ف - ر",
+              "meaning": "the disbelievers",
+              "grammarNote": "Transliteration: l-kāfirūna"
+            },
+            {
+              "word": "هَـٰذَا",
+              "root": "ه - ذ - ا",
+              "meaning": "This",
+              "grammarNote": "Transliteration: hādhā"
+            },
+            {
+              "word": "يَوْمٌ",
+              "root": "ي - و - م",
+              "meaning": "(is) a Day",
+              "grammarNote": "Transliteration: yawmun"
+            },
+            {
+              "word": "عَسِرٌۭ",
+              "root": "ع - س - ر",
+              "meaning": "difficult",
+              "grammarNote": "Transliteration: ʿasirun"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verses 3–7]\n\nوَكُلُّ أَمْرٍ‌ مُّسْتَقِرٌّ‌ (...while every matter has to be settled....54:3). The literal meaning of the word istiqrar is to settle. The verse means that everything must ultimately reach its end and the matter must become clear. If a veil is fabricated and cast over the truth or reality, eventually [ in its designated time ] the false veil will be removed and the truth and falsehood will be clearly distinguished.\n\n────────────────────────────────────────\n\n[Verse 8]\n\nمُّهْطِعِينَ إِلَى الدَّاعِ (rushing quickly towards the caller....54:8). The word muhti` in literally denotes walking quickly with one's head raised above. This, together with the two preceding verses, gives a graphic picture of the Day of Gathering or Reckoning. The people will hasten hurriedly in the direction of the voice of the Caller towards the mahshar (area of Reckoning). The words: \"With their eyes humbled, \"in preceding verse (7) are in no conflict with the present verse, because there will be many different occasions in mahshar. On some of these occasions, the eyes of all the people will be cast down.",
+      "subsections": [
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "وَكُلُّ أَمْرٍ‌ مُّسْتَقِرٌّ‌ (...while every matter has to be settled....54:3). The literal meaning of the word istiqrar is to settle. The verse means that everything must ultimately reach its end and the matter must become clear. If a veil is fabricated and cast over the truth or reality, eventually [ in its designated time ] the false veil will be removed and the truth and falsehood will be clearly distinguished."
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "54-9-12",
+      "surahNumber": 54,
+      "verseRange": [
+        9,
+        12
+      ],
+      "title": "The Story of the People of Nuh ( ) and the Lesson Learnt from it",
+      "juzNumber": 27,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5263/mode/2up",
+      "arabicText": "۞ كَذَّبَتْ قَبْلَهُمْ قَوْمُ نُوحٍ فَكَذَّبُوا۟ عَبْدَنَا وَقَالُوا۟ مَجْنُونٌ وَٱزْدُجِرَ ۝٩ فَدَعَا رَبَّهُۥٓ أَنِّى مَغْلُوبٌ فَٱنتَصِرْ ۝١٠ فَفَتَحْنَآ أَبْوَٰبَ ٱلسَّمَآءِ بِمَآءٍ مُّنْهَمِرٍ ۝١١ وَفَجَّرْنَا ٱلْأَرْضَ عُيُونًا فَٱلْتَقَى ٱلْمَآءُ عَلَىٰٓ أَمْرٍ قَدْ قُدِرَ ۝١٢",
+      "translation": "The people of NūH denied (the truth) before them. So they rejected Our servant, and said, “(He is) a madman”, and he was (also) threatened (by them). ۝ So he prayed to his Lord saying, “I am overpowered, so defend (me).” ۝ So We opened the gates of the sky with water pouring forth profusely, ۝ and We caused the earth to gush forth as springs; so the water (of both kinds) met together for a destined event. ۝",
+      "phraseCards": [
+        {
+          "id": "54-9-card",
+          "verseNumber": 9,
+          "arabicPhrase": "۞ كَذَّبَتْ قَبْلَهُمْ قَوْمُ نُوحٍ فَكَذَّبُوا۟ عَبْدَنَا وَقَالُوا۟ مَجْنُونٌ وَٱزْدُجِرَ",
+          "englishPhrase": "The people of NūH denied (the truth) before them. So they rejected Our servant, and said, “(He is) a madman”, and he was (also) threatened (by them).",
+          "vocabulary": [
+            {
+              "word": "۞ كَذَّبَتْ",
+              "root": "ك - ذ - ب",
+              "meaning": "Denied",
+              "grammarNote": "Transliteration: kadhabat"
+            },
+            {
+              "word": "قَبْلَهُمْ",
+              "root": "ق - ب - ل",
+              "meaning": "before them",
+              "grammarNote": "Transliteration: qablahum"
+            },
+            {
+              "word": "قَوْمُ",
+              "root": "ق - و - م",
+              "meaning": "(the) people",
+              "grammarNote": "Transliteration: qawmu"
+            },
+            {
+              "word": "نُوحٍۢ",
+              "root": "ن - و - ح",
+              "meaning": "(of) Nuh",
+              "grammarNote": "Transliteration: nūḥin"
+            },
+            {
+              "word": "فَكَذَّبُوا۟",
+              "root": "ك - ذ - ب",
+              "meaning": "and they denied",
+              "grammarNote": "Transliteration: fakadhabū"
+            },
+            {
+              "word": "عَبْدَنَا",
+              "root": "ع - ب - د",
+              "meaning": "Our slave",
+              "grammarNote": "Transliteration: ʿabdanā"
+            },
+            {
+              "word": "وَقَالُوا۟",
+              "root": "ق - ا - ل",
+              "meaning": "and said",
+              "grammarNote": "Transliteration: waqālū"
+            },
+            {
+              "word": "مَجْنُونٌۭ",
+              "root": "م - ج - ن",
+              "meaning": "A madman",
+              "grammarNote": "Transliteration: majnūnun"
+            },
+            {
+              "word": "وَٱزْدُجِرَ",
+              "root": "ز - د - ج",
+              "meaning": "and he was repelled",
+              "grammarNote": "Transliteration: wa-uz'dujira"
+            }
+          ]
+        },
+        {
+          "id": "54-10-card",
+          "verseNumber": 10,
+          "arabicPhrase": "فَدَعَا رَبَّهُۥٓ أَنِّى مَغْلُوبٌ فَٱنتَصِرْ",
+          "englishPhrase": "So he prayed to his Lord saying, “I am overpowered, so defend (me).”",
+          "vocabulary": [
+            {
+              "word": "فَدَعَا",
+              "root": "د - ع - ا",
+              "meaning": "So he called",
+              "grammarNote": "Transliteration: fadaʿā"
+            },
+            {
+              "word": "رَبَّهُۥٓ",
+              "root": "ر - ب - ه",
+              "meaning": "his Lord",
+              "grammarNote": "Transliteration: rabbahu"
+            },
+            {
+              "word": "أَنِّى",
+              "root": "ا - ن - ي",
+              "meaning": "I am",
+              "grammarNote": "Transliteration: annī"
+            },
+            {
+              "word": "مَغْلُوبٌۭ",
+              "root": "غ - ل - و",
+              "meaning": "one overpowered",
+              "grammarNote": "Transliteration: maghlūbun"
+            },
+            {
+              "word": "فَٱنتَصِرْ",
+              "root": "ن - ت - ص",
+              "meaning": "so help",
+              "grammarNote": "Transliteration: fa-intaṣir"
+            }
+          ]
+        },
+        {
+          "id": "54-11-card",
+          "verseNumber": 11,
+          "arabicPhrase": "فَفَتَحْنَآ أَبْوَٰبَ ٱلسَّمَآءِ بِمَآءٍ مُّنْهَمِرٍ",
+          "englishPhrase": "So We opened the gates of the sky with water pouring forth profusely,",
+          "vocabulary": [
+            {
+              "word": "فَفَتَحْنَآ",
+              "root": "ف - ت - ح",
+              "meaning": "So We opened",
+              "grammarNote": "Transliteration: fafataḥnā"
+            },
+            {
+              "word": "أَبْوَٰبَ",
+              "root": "ب - و - ب",
+              "meaning": "(the) gates",
+              "grammarNote": "Transliteration: abwāba"
+            },
+            {
+              "word": "ٱلسَّمَآءِ",
+              "root": "م - ا - ء",
+              "meaning": "(of) heaven",
+              "grammarNote": "Transliteration: l-samāi"
+            },
+            {
+              "word": "بِمَآءٍۢ",
+              "root": "م - ا - ء",
+              "meaning": "with water",
+              "grammarNote": "Transliteration: bimāin"
+            },
+            {
+              "word": "مُّنْهَمِرٍۢ",
+              "root": "ن - ه - م",
+              "meaning": "pouring down",
+              "grammarNote": "Transliteration: mun'hamirin"
+            }
+          ]
+        },
+        {
+          "id": "54-12-card",
+          "verseNumber": 12,
+          "arabicPhrase": "وَفَجَّرْنَا ٱلْأَرْضَ عُيُونًا فَٱلْتَقَى ٱلْمَآءُ عَلَىٰٓ أَمْرٍ قَدْ قُدِرَ",
+          "englishPhrase": "and We caused the earth to gush forth as springs; so the water (of both kinds) met together for a destined event.",
+          "vocabulary": [
+            {
+              "word": "وَفَجَّرْنَا",
+              "root": "ف - ج - ر",
+              "meaning": "And We caused to burst",
+              "grammarNote": "Transliteration: wafajjarnā"
+            },
+            {
+              "word": "ٱلْأَرْضَ",
+              "root": "ا - ر - ض",
+              "meaning": "the earth",
+              "grammarNote": "Transliteration: l-arḍa"
+            },
+            {
+              "word": "عُيُونًۭا",
+              "root": "ع - ي - و",
+              "meaning": "(with) springs",
+              "grammarNote": "Transliteration: ʿuyūnan"
+            },
+            {
+              "word": "فَٱلْتَقَى",
+              "root": "ت - ق - ي",
+              "meaning": "so met",
+              "grammarNote": "Transliteration: fal-taqā"
+            },
+            {
+              "word": "ٱلْمَآءُ",
+              "root": "م - ا - ء",
+              "meaning": "the water(s)",
+              "grammarNote": "Transliteration: l-māu"
+            },
+            {
+              "word": "عَلَىٰٓ",
+              "root": "ع - ل - و",
+              "meaning": "for",
+              "grammarNote": "Transliteration: ʿalā"
+            },
+            {
+              "word": "أَمْرٍۢ",
+              "root": "ا - م - ر",
+              "meaning": "a matter",
+              "grammarNote": "Transliteration: amrin"
+            },
+            {
+              "word": "قَدْ",
+              "root": "ق - د",
+              "meaning": "already",
+              "grammarNote": "Transliteration: qad"
+            },
+            {
+              "word": "قُدِرَ",
+              "root": "ق - د - ر",
+              "meaning": "predestined",
+              "grammarNote": "Transliteration: qudira"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verses 9–11]\n\nThe Story of the People of Nuh (علیہ السلام) and the Lesson Learnt from it\n\nمَجْنُونٌ وَازْدُجِرَ‌ (and said, \" (He is) a madman\", and he was threatened...54:9). The word wazdujira literally denotes 'he was rebuked'. It refers to the attitude of the people of Nuh علیہ السلام who rebuked and threatened him to stop him from preaching. On another occasion in the Qur'an, we read that the people of Nuh (علیہ السلام) threatened and warned him that if he does not stop propagating his message, he would be stoned to death.\n\n` Abd Ibn Humaid reports from Mujahid that when some of his people found him somewhere, they would choke him, as a result he would become unconscious. But when he recovered, he would pray to Allah, '0 Allah! Forgive my people, for they do not know the truth'. In this way, he endured the persecution of his people patiently for nine hundred and fifty years, prayed for their forgiveness and understanding of the truth. Eventually, when the situation became intolerable, and he could no longer resist his people, he invoked Allah to help him against them. As a result, Allah opened the gates of the heaven with torrential rain, and the entire nation was drowned which is mentioned in the forthcoming verse.\n\n────────────────────────────────────────\n\n[Verse 12]\n\nفالْتَقَى الْمَاءُ عَلَىٰ أَمْرٍ‌ قَدْ قُدِرَ‌ (so the water [ of both kinds ] met together for a destined event....54:12). In other words, the rain water pouring down from the skies in torrents and also bubbling water gushing forth from under the ground, caused the Deluge [ a huge flood ] which engulfed the entire land, and thus the Divine decree was fulfilled, destroying the people of Nuh (علیہ السلام) to the last man, and even the peaks of the mountains could not give them any shelter.",
+      "subsections": [
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "مَجْنُونٌ وَازْدُجِرَ‌ (and said, \" (He is) a madman\", and he was threatened...54:9). The word wazdujira literally denotes 'he was rebuked'. It refers to the attitude of the people of Nuh علیہ السلام who rebuked and threatened him to stop him from preaching. On another occasion in the Qur'an, we read that the people of Nuh (علیہ السلام) threatened and warned him that if he does not stop propagating his message, he would be stoned to death."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "` Abd Ibn Humaid reports from Mujahid that when some of his people found him somewhere, they would choke him, as a result he would become unconscious. But when he recovered, he would pray to Allah, '0 Allah! Forgive my people, for they do not know the truth'. In this way, he endured the persecution of his people patiently for nine hundred and fifty years, prayed for their forgiveness and understanding of the truth. Eventually, when the situation became intolerable, and he could no longer resist his people, he invoked Allah to help him against them. As a result, Allah opened the gates of the heaven with torrential rain, and the entire nation was drowned which is mentioned in the forthcoming verse."
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "54-13-17",
+      "surahNumber": 54,
+      "verseRange": [
+        13,
+        17
+      ],
+      "title": "────────────────────────────────────────",
+      "juzNumber": 27,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5263/mode/2up",
+      "arabicText": "وَحَمَلْنَـٰهُ عَلَىٰ ذَاتِ أَلْوَٰحٍ وَدُسُرٍ ۝١٣ تَجْرِى بِأَعْيُنِنَا جَزَآءً لِّمَن كَانَ كُفِرَ ۝١٤ وَلَقَد تَّرَكْنَـٰهَآ ءَايَةً فَهَلْ مِن مُّدَّكِرٍ ۝١٥ فَكَيْفَ كَانَ عَذَابِى وَنُذُرِ ۝١٦ وَلَقَدْ يَسَّرْنَا ٱلْقُرْءَانَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ ۝١٧",
+      "translation": "And We caused him (NūH) to board that (ship) which had planks and nails, ۝ which sailed under Our Eyes, as a reward for the one who was rejected (by the infidels). ۝ And We left it (the ship) as a sign. So, is there one to take lesson? ۝ Then how was My torment and My warnings? ۝ Indeed We have made the Qur’ān easy for seeking advice. So, is there one to heed to the advice? ۝",
+      "phraseCards": [
+        {
+          "id": "54-13-card",
+          "verseNumber": 13,
+          "arabicPhrase": "وَحَمَلْنَـٰهُ عَلَىٰ ذَاتِ أَلْوَٰحٍ وَدُسُرٍ",
+          "englishPhrase": "And We caused him (NūH) to board that (ship) which had planks and nails,",
+          "vocabulary": [
+            {
+              "word": "وَحَمَلْنَـٰهُ",
+              "root": "ح - م - ل",
+              "meaning": "And We carried him",
+              "grammarNote": "Transliteration: waḥamalnāhu"
+            },
+            {
+              "word": "عَلَىٰ",
+              "root": "ع - ل - و",
+              "meaning": "on",
+              "grammarNote": "Transliteration: ʿalā"
+            },
+            {
+              "word": "ذَاتِ",
+              "root": "ذ - ا - ت",
+              "meaning": "(ark) made of planks",
+              "grammarNote": "Transliteration: dhāti"
+            },
+            {
+              "word": "أَلْوَٰحٍۢ",
+              "root": "ل - و - ح",
+              "meaning": "(ark) made of planks",
+              "grammarNote": "Transliteration: alwāḥin"
+            },
+            {
+              "word": "وَدُسُرٍۢ",
+              "root": "د - س - ر",
+              "meaning": "and nails",
+              "grammarNote": "Transliteration: wadusurin"
+            }
+          ]
+        },
+        {
+          "id": "54-14-card",
+          "verseNumber": 14,
+          "arabicPhrase": "تَجْرِى بِأَعْيُنِنَا جَزَآءً لِّمَن كَانَ كُفِرَ",
+          "englishPhrase": "which sailed under Our Eyes, as a reward for the one who was rejected (by the infidels).",
+          "vocabulary": [
+            {
+              "word": "تَجْرِى",
+              "root": "ت - ج - ر",
+              "meaning": "Sailing",
+              "grammarNote": "Transliteration: tajrī"
+            },
+            {
+              "word": "بِأَعْيُنِنَا",
+              "root": "ع - ي - ن",
+              "meaning": "before Our eyes",
+              "grammarNote": "Transliteration: bi-aʿyuninā"
+            },
+            {
+              "word": "جَزَآءًۭ",
+              "root": "ج - ز - ء",
+              "meaning": "a reward",
+              "grammarNote": "Transliteration: jazāan"
+            },
+            {
+              "word": "لِّمَن",
+              "root": "ل - م - ن",
+              "meaning": "for (he) who",
+              "grammarNote": "Transliteration: liman"
+            },
+            {
+              "word": "كَانَ",
+              "root": "ك - ا - ن",
+              "meaning": "was",
+              "grammarNote": "Transliteration: kāna"
+            },
+            {
+              "word": "كُفِرَ",
+              "root": "ك - ف - ر",
+              "meaning": "denied",
+              "grammarNote": "Transliteration: kufira"
+            }
+          ]
+        },
+        {
+          "id": "54-15-card",
+          "verseNumber": 15,
+          "arabicPhrase": "وَلَقَد تَّرَكْنَـٰهَآ ءَايَةً فَهَلْ مِن مُّدَّكِرٍ",
+          "englishPhrase": "And We left it (the ship) as a sign. So, is there one to take lesson?",
+          "vocabulary": [
+            {
+              "word": "وَلَقَد",
+              "root": "ل - ق - د",
+              "meaning": "And certainly",
+              "grammarNote": "Transliteration: walaqad"
+            },
+            {
+              "word": "تَّرَكْنَـٰهَآ",
+              "root": "ر - ك - ن",
+              "meaning": "We left it",
+              "grammarNote": "Transliteration: taraknāhā"
+            },
+            {
+              "word": "ءَايَةًۭ",
+              "root": "ء - ا - ي",
+              "meaning": "(as) a Sign",
+              "grammarNote": "Transliteration: āyatan"
+            },
+            {
+              "word": "فَهَلْ",
+              "root": "ف - ه - ل",
+              "meaning": "so is (there)",
+              "grammarNote": "Transliteration: fahal"
+            },
+            {
+              "word": "مِن",
+              "root": "م - ن",
+              "meaning": "any",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "مُّدَّكِرٍۢ",
+              "root": "د - ك - ر",
+              "meaning": "who will receive admonition",
+              "grammarNote": "Transliteration: muddakirin"
+            }
+          ]
+        },
+        {
+          "id": "54-16-card",
+          "verseNumber": 16,
+          "arabicPhrase": "فَكَيْفَ كَانَ عَذَابِى وَنُذُرِ",
+          "englishPhrase": "Then how was My torment and My warnings?",
+          "vocabulary": [
+            {
+              "word": "فَكَيْفَ",
+              "root": "ك - ي - ف",
+              "meaning": "So how",
+              "grammarNote": "Transliteration: fakayfa"
+            },
+            {
+              "word": "كَانَ",
+              "root": "ك - ا - ن",
+              "meaning": "was",
+              "grammarNote": "Transliteration: kāna"
+            },
+            {
+              "word": "عَذَابِى",
+              "root": "ع - ذ - ب",
+              "meaning": "My punishment",
+              "grammarNote": "Transliteration: ʿadhābī"
+            },
+            {
+              "word": "وَنُذُرِ",
+              "root": "ن - ذ - ر",
+              "meaning": "and My warnings",
+              "grammarNote": "Transliteration: wanudhuri"
+            }
+          ]
+        },
+        {
+          "id": "54-17-card",
+          "verseNumber": 17,
+          "arabicPhrase": "وَلَقَدْ يَسَّرْنَا ٱلْقُرْءَانَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ",
+          "englishPhrase": "Indeed We have made the Qur’ān easy for seeking advice. So, is there one to heed to the advice?",
+          "vocabulary": [
+            {
+              "word": "وَلَقَدْ",
+              "root": "ل - ق - د",
+              "meaning": "And certainly",
+              "grammarNote": "Transliteration: walaqad"
+            },
+            {
+              "word": "يَسَّرْنَا",
+              "root": "ي - س - ر",
+              "meaning": "We have made easy",
+              "grammarNote": "Transliteration: yassarnā"
+            },
+            {
+              "word": "ٱلْقُرْءَانَ",
+              "root": "ق - ر - ء",
+              "meaning": "the Quran",
+              "grammarNote": "Transliteration: l-qur'āna"
+            },
+            {
+              "word": "لِلذِّكْرِ",
+              "root": "ذ - ك - ر",
+              "meaning": "for remembrance",
+              "grammarNote": "Transliteration: lildhik'ri"
+            },
+            {
+              "word": "فَهَلْ",
+              "root": "ف - ه - ل",
+              "meaning": "so is (there)",
+              "grammarNote": "Transliteration: fahal"
+            },
+            {
+              "word": "مِن",
+              "root": "م - ن",
+              "meaning": "any",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "مُّدَّكِرٍۢ",
+              "root": "د - ك - ر",
+              "meaning": "who will receive admonition",
+              "grammarNote": "Transliteration: muddakirin"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verses 13–16]\n\nذَاتِ أَلْوَاحٍ وَدُسُرٍ‌ (to board that [ ship ] which had planks and nails...54:13). The word alwah is the plural of lawh and it refers to a board or a plank. The word dusur is the plural of disar and it stands for nail. It also means a cord of fibres of the palm tree with which the planks of a ship are bound together.\n\n────────────────────────────────────────\n\n[Verse 17]\n\nوَلَقَدْ يَسَّرْ‌نَا الْقُرْ‌آنَ لِلذِّكْرِ‌ فَهَلْ مِن مُّدَّكِرٍ‌ (And indeed We have made the Qur'an easy for seeking advice. So, is there one to seek advice?....54:17). The word dhikr in the prepositional phrase 'lidh-dhikr' has several shades of meaning: to remember or memorize or by-heart; and to take heed of admonition and warnings. Both these meanings are equally applicable here. Allah has made it easy to memorize the Holy Qur'an. The followers of the previous scriptures were not privileged to memorize their entire book, word by word - whether Torah, Injil or Zabur. It is one of the privileges conferred on Muslims that He has made it easy, even for the tender-aged children, to commit the entire Qur'an to memory, word for word, without missing out a single letter. The Qur'an is preserved in the hearts of hundreds of thousands of Huffaz for the past fourteen hundred years in every age, people and their children of every level, in every region or territory of the world.\n\nThe verse could also mean that Allah has made the Qur'an so simple that just as an intellectual and knowledgeable person benefits from its contents, so does a layman, having no expertise in relevant sciences. He too can benefit from its admonition and warnings (at his own level).\n\nQur’ an is Made Simple to Memorize and to Take Heed; Not for Ijtihad or Istinbat\n\nIn this verse the verb یَسَّرنَا yassarna [ We have made easy ] is qualified by the prepositional phrase لِلذِّکرِ lidh-dhikri [ for seeking advice ]. This implies that the Qur'an has been made easy to the extent of memorizing it and paying heed to its advice and warnings, from which all can benefit -whether a learned scholar or an unlearned person, whether young or old. This does not necessarily imply that derivation or deduction of laws and injunctions from the Qur'an is easy for everybody. Ijtihad or Istinbat (deduction) of injunctions from the Qur'an is a science, having its own complex rules. Scholars well-grounded in knowledge have spent years of their life to attain to the position where they could exercise Ijtihad and Istinbat. It is not a field where every ordinary person or layman can play his role.\n\nThis indicates the error of some of the deviant people who, on the strength of this statement, wish to pose as mujtahid and derive laws and injunctions with their own reasoning, without acquiring complete and profound knowledge of the Qur'an, and without fully grasping its methodological principles and rules. This is clear deviation!",
+      "subsections": [
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "ذَاتِ أَلْوَاحٍ وَدُسُرٍ‌ (to board that [ ship ] which had planks and nails...54:13). The word alwah is the plural of lawh and it refers to a board or a plank. The word dusur is the plural of disar and it stands for nail. It also means a cord of fibres of the palm tree with which the planks of a ship are bound together."
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "54-18-48",
+      "surahNumber": 54,
+      "verseRange": [
+        18,
+        48
+      ],
+      "title": "Lexicological Analysis",
+      "juzNumber": 27,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5263/mode/2up",
+      "arabicText": "كَذَّبَتْ عَادٌ فَكَيْفَ كَانَ عَذَابِى وَنُذُرِ ۝١٨ إِنَّآ أَرْسَلْنَا عَلَيْهِمْ رِيحًا صَرْصَرًا فِى يَوْمِ نَحْسٍ مُّسْتَمِرٍّ ۝١٩ تَنزِعُ ٱلنَّاسَ كَأَنَّهُمْ أَعْجَازُ نَخْلٍ مُّنقَعِرٍ ۝٢٠ فَكَيْفَ كَانَ عَذَابِى وَنُذُرِ ۝٢١ وَلَقَدْ يَسَّرْنَا ٱلْقُرْءَانَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ ۝٢٢ كَذَّبَتْ ثَمُودُ بِٱلنُّذُرِ ۝٢٣ فَقَالُوٓا۟ أَبَشَرًا مِّنَّا وَٰحِدًا نَّتَّبِعُهُۥٓ إِنَّآ إِذًا لَّفِى ضَلَـٰلٍ وَسُعُرٍ ۝٢٤ أَءُلْقِىَ ٱلذِّكْرُ عَلَيْهِ مِنۢ بَيْنِنَا بَلْ هُوَ كَذَّابٌ أَشِرٌ ۝٢٥ سَيَعْلَمُونَ غَدًا مَّنِ ٱلْكَذَّابُ ٱلْأَشِرُ ۝٢٦ إِنَّا مُرْسِلُوا۟ ٱلنَّاقَةِ فِتْنَةً لَّهُمْ فَٱرْتَقِبْهُمْ وَٱصْطَبِرْ ۝٢٧ وَنَبِّئْهُمْ أَنَّ ٱلْمَآءَ قِسْمَةٌۢ بَيْنَهُمْ ۖ كُلُّ شِرْبٍ مُّحْتَضَرٌ ۝٢٨ فَنَادَوْا۟ صَاحِبَهُمْ فَتَعَاطَىٰ فَعَقَرَ ۝٢٩ فَكَيْفَ كَانَ عَذَابِى وَنُذُرِ ۝٣٠ إِنَّآ أَرْسَلْنَا عَلَيْهِمْ صَيْحَةً وَٰحِدَةً فَكَانُوا۟ كَهَشِيمِ ٱلْمُحْتَظِرِ ۝٣١ وَلَقَدْ يَسَّرْنَا ٱلْقُرْءَانَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ ۝٣٢ كَذَّبَتْ قَوْمُ لُوطٍۭ بِٱلنُّذُرِ ۝٣٣ إِنَّآ أَرْسَلْنَا عَلَيْهِمْ حَاصِبًا إِلَّآ ءَالَ لُوطٍ ۖ نَّجَّيْنَـٰهُم بِسَحَرٍ ۝٣٤ نِّعْمَةً مِّنْ عِندِنَا ۚ كَذَٰلِكَ نَجْزِى مَن شَكَرَ ۝٣٥ وَلَقَدْ أَنذَرَهُم بَطْشَتَنَا فَتَمَارَوْا۟ بِٱلنُّذُرِ ۝٣٦ وَلَقَدْ رَٰوَدُوهُ عَن ضَيْفِهِۦ فَطَمَسْنَآ أَعْيُنَهُمْ فَذُوقُوا۟ عَذَابِى وَنُذُرِ ۝٣٧ وَلَقَدْ صَبَّحَهُم بُكْرَةً عَذَابٌ مُّسْتَقِرٌّ ۝٣٨ فَذُوقُوا۟ عَذَابِى وَنُذُرِ ۝٣٩ وَلَقَدْ يَسَّرْنَا ٱلْقُرْءَانَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ ۝٤٠ وَلَقَدْ جَآءَ ءَالَ فِرْعَوْنَ ٱلنُّذُرُ ۝٤١ كَذَّبُوا۟ بِـَٔايَـٰتِنَا كُلِّهَا فَأَخَذْنَـٰهُمْ أَخْذَ عَزِيزٍ مُّقْتَدِرٍ ۝٤٢ أَكُفَّارُكُمْ خَيْرٌ مِّنْ أُو۟لَـٰٓئِكُمْ أَمْ لَكُم بَرَآءَةٌ فِى ٱلزُّبُرِ ۝٤٣ أَمْ يَقُولُونَ نَحْنُ جَمِيعٌ مُّنتَصِرٌ ۝٤٤ سَيُهْزَمُ ٱلْجَمْعُ وَيُوَلُّونَ ٱلدُّبُرَ ۝٤٥ بَلِ ٱلسَّاعَةُ مَوْعِدُهُمْ وَٱلسَّاعَةُ أَدْهَىٰ وَأَمَرُّ ۝٤٦ إِنَّ ٱلْمُجْرِمِينَ فِى ضَلَـٰلٍ وَسُعُرٍ ۝٤٧ يَوْمَ يُسْحَبُونَ فِى ٱلنَّارِ عَلَىٰ وُجُوهِهِمْ ذُوقُوا۟ مَسَّ سَقَرَ ۝٤٨",
+      "translation": "(The people of) ‘Ād rejected (their prophet). So how was My torment and My warnings? ۝ We did send to them a furious wind in a day of continuous misfortune, ۝ plucking people away, as if they were trunks of uprooted palm-trees. ۝ So how was My torment and My warnings? ۝ Indeed We have made the Qur’ān easy for seeking advice. So, is there one to heed to the advice? ۝ (The people of) Thamūd rejected the warners. ۝ So they said, “Shall we follow a single human being from among us? Then we will be in error and insanity. ۝ Is it that the advice has been cast upon him alone out of all of us? No, but he is a bragging liar.” ۝ Tomorrow they will know who the bragging liar is! ۝ We are going to send the she-camel as a trial for them; so watch them (O SāliH,) and keep patience, ۝ and tell them that water (of the well) is to be shared between them (and the she-camel), so as the right of having water shall be attended by each (alternatively). ۝ Then they called their man (to kill the she-camel,) so he undertook (the task) and killed (the she-camel). ۝ So how was My torment and My warnings? ۝ We sent upon them a single Cry, and they were like crushed leafs of a hedge-builder. ۝ Indeed We have made the Qur’ān easy for seeking advice. So, is there one to heed to the advice? ۝ The people of LūT rejected the warners. ۝ We sent upon them a rain of stones, except the family of LūT whom We saved in the last hours of night, ۝ as a grace from Us. This is how We reward the one who offers gratitude. ۝ And he (LūT) had certainly warned them of Our grasp, but they disputed the warnings. ۝ And they had even tried to tempt him against his guests (so that they may snatch them away for bad purpose,) but We blinded their eyes: “Now taste My torment and My warnings!” ۝ And on the next morning, a lasting torment overtook them: ۝ “Now taste My torment and My warnings.” ۝ Indeed We have made the Qur’ān easy for seeking advice. So, is there one to heed to the advice? ۝ And the warners came to the family of Fir‘aun (Pharaoh). ۝ (But) they rejected all Our signs; so We seized them- a seizure by One Mighty, Powerful. ۝ Are the disbelievers among you in a better position than all of the aforesaid (punished people), or do you have immunity (recorded) in the sacred books? ۝ Or do they say, “We are a large group, well-defended.”? ۝ Soon this ‘large group’ shall be defeated, and all of them will turn their backs. ۝ Rather the Hour (of judgment) is their appointed time (for their full recompense), and the Hour is more calamitous and much more bitter. ۝ Surely the guilty ones are in error and madness. ۝ On the Day when they will be dragged into the Fire on their faces, (it will be said to them,) “Taste the touch of Hell.” ۝",
+      "phraseCards": [
+        {
+          "id": "54-18-card",
+          "verseNumber": 18,
+          "arabicPhrase": "كَذَّبَتْ عَادٌ فَكَيْفَ كَانَ عَذَابِى وَنُذُرِ",
+          "englishPhrase": "(The people of) ‘Ād rejected (their prophet). So how was My torment and My warnings?",
+          "vocabulary": [
+            {
+              "word": "كَذَّبَتْ",
+              "root": "ك - ذ - ب",
+              "meaning": "Denied",
+              "grammarNote": "Transliteration: kadhabat"
+            },
+            {
+              "word": "عَادٌۭ",
+              "root": "ع - ا - د",
+              "meaning": "Aad",
+              "grammarNote": "Transliteration: ʿādun"
+            },
+            {
+              "word": "فَكَيْفَ",
+              "root": "ك - ي - ف",
+              "meaning": "so how",
+              "grammarNote": "Transliteration: fakayfa"
+            },
+            {
+              "word": "كَانَ",
+              "root": "ك - ا - ن",
+              "meaning": "was",
+              "grammarNote": "Transliteration: kāna"
+            },
+            {
+              "word": "عَذَابِى",
+              "root": "ع - ذ - ب",
+              "meaning": "My punishment",
+              "grammarNote": "Transliteration: ʿadhābī"
+            },
+            {
+              "word": "وَنُذُرِ",
+              "root": "ن - ذ - ر",
+              "meaning": "and My warnings",
+              "grammarNote": "Transliteration: wanudhuri"
+            }
+          ]
+        },
+        {
+          "id": "54-19-card",
+          "verseNumber": 19,
+          "arabicPhrase": "إِنَّآ أَرْسَلْنَا عَلَيْهِمْ رِيحًا صَرْصَرًا فِى يَوْمِ نَحْسٍ مُّسْتَمِرٍّ",
+          "englishPhrase": "We did send to them a furious wind in a day of continuous misfortune,",
+          "vocabulary": [
+            {
+              "word": "إِنَّآ",
+              "root": "ا - ن - ا",
+              "meaning": "Indeed, We",
+              "grammarNote": "Transliteration: innā"
+            },
+            {
+              "word": "أَرْسَلْنَا",
+              "root": "ر - س - ل",
+              "meaning": "[We] sent",
+              "grammarNote": "Transliteration: arsalnā"
+            },
+            {
+              "word": "عَلَيْهِمْ",
+              "root": "ع - ل - ي",
+              "meaning": "upon them",
+              "grammarNote": "Transliteration: ʿalayhim"
+            },
+            {
+              "word": "رِيحًۭا",
+              "root": "ر - ي - ح",
+              "meaning": "a wind",
+              "grammarNote": "Transliteration: rīḥan"
+            },
+            {
+              "word": "صَرْصَرًۭا",
+              "root": "ص - ر - ص",
+              "meaning": "furious",
+              "grammarNote": "Transliteration: ṣarṣaran"
+            },
+            {
+              "word": "فِى",
+              "root": "ف - ي",
+              "meaning": "on",
+              "grammarNote": "Transliteration: fī"
+            },
+            {
+              "word": "يَوْمِ",
+              "root": "ي - و - م",
+              "meaning": "a day",
+              "grammarNote": "Transliteration: yawmi"
+            },
+            {
+              "word": "نَحْسٍۢ",
+              "root": "ن - ح - س",
+              "meaning": "(of) misfortune",
+              "grammarNote": "Transliteration: naḥsin"
+            },
+            {
+              "word": "مُّسْتَمِرٍّۢ",
+              "root": "س - ت - م",
+              "meaning": "continuous",
+              "grammarNote": "Transliteration: mus'tamirrin"
+            }
+          ]
+        },
+        {
+          "id": "54-20-card",
+          "verseNumber": 20,
+          "arabicPhrase": "تَنزِعُ ٱلنَّاسَ كَأَنَّهُمْ أَعْجَازُ نَخْلٍ مُّنقَعِرٍ",
+          "englishPhrase": "plucking people away, as if they were trunks of uprooted palm-trees.",
+          "vocabulary": [
+            {
+              "word": "تَنزِعُ",
+              "root": "ن - ز - ع",
+              "meaning": "Plucking out",
+              "grammarNote": "Transliteration: tanziʿu"
+            },
+            {
+              "word": "ٱلنَّاسَ",
+              "root": "ن - ا - س",
+              "meaning": "men",
+              "grammarNote": "Transliteration: l-nāsa"
+            },
+            {
+              "word": "كَأَنَّهُمْ",
+              "root": "ك - ا - ن",
+              "meaning": "as if they (were)",
+              "grammarNote": "Transliteration: ka-annahum"
+            },
+            {
+              "word": "أَعْجَازُ",
+              "root": "ع - ج - ا",
+              "meaning": "trunks",
+              "grammarNote": "Transliteration: aʿjāzu"
+            },
+            {
+              "word": "نَخْلٍۢ",
+              "root": "ن - خ - ل",
+              "meaning": "(of) date-palms",
+              "grammarNote": "Transliteration: nakhlin"
+            },
+            {
+              "word": "مُّنقَعِرٍۢ",
+              "root": "ن - ق - ع",
+              "meaning": "uprooted",
+              "grammarNote": "Transliteration: munqaʿirin"
+            }
+          ]
+        },
+        {
+          "id": "54-21-card",
+          "verseNumber": 21,
+          "arabicPhrase": "فَكَيْفَ كَانَ عَذَابِى وَنُذُرِ",
+          "englishPhrase": "So how was My torment and My warnings?",
+          "vocabulary": [
+            {
+              "word": "فَكَيْفَ",
+              "root": "ك - ي - ف",
+              "meaning": "So how",
+              "grammarNote": "Transliteration: fakayfa"
+            },
+            {
+              "word": "كَانَ",
+              "root": "ك - ا - ن",
+              "meaning": "was",
+              "grammarNote": "Transliteration: kāna"
+            },
+            {
+              "word": "عَذَابِى",
+              "root": "ع - ذ - ب",
+              "meaning": "My punishment",
+              "grammarNote": "Transliteration: ʿadhābī"
+            },
+            {
+              "word": "وَنُذُرِ",
+              "root": "ن - ذ - ر",
+              "meaning": "and My warnings",
+              "grammarNote": "Transliteration: wanudhuri"
+            }
+          ]
+        },
+        {
+          "id": "54-22-card",
+          "verseNumber": 22,
+          "arabicPhrase": "وَلَقَدْ يَسَّرْنَا ٱلْقُرْءَانَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ",
+          "englishPhrase": "Indeed We have made the Qur’ān easy for seeking advice. So, is there one to heed to the advice?",
+          "vocabulary": [
+            {
+              "word": "وَلَقَدْ",
+              "root": "ل - ق - د",
+              "meaning": "And certainly",
+              "grammarNote": "Transliteration: walaqad"
+            },
+            {
+              "word": "يَسَّرْنَا",
+              "root": "ي - س - ر",
+              "meaning": "We have made easy",
+              "grammarNote": "Transliteration: yassarnā"
+            },
+            {
+              "word": "ٱلْقُرْءَانَ",
+              "root": "ق - ر - ء",
+              "meaning": "the Quran",
+              "grammarNote": "Transliteration: l-qur'āna"
+            },
+            {
+              "word": "لِلذِّكْرِ",
+              "root": "ذ - ك - ر",
+              "meaning": "for remembrance",
+              "grammarNote": "Transliteration: lildhik'ri"
+            },
+            {
+              "word": "فَهَلْ",
+              "root": "ف - ه - ل",
+              "meaning": "so is (there)",
+              "grammarNote": "Transliteration: fahal"
+            },
+            {
+              "word": "مِن",
+              "root": "م - ن",
+              "meaning": "any",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "مُّدَّكِرٍۢ",
+              "root": "د - ك - ر",
+              "meaning": "who will receive admonition",
+              "grammarNote": "Transliteration: muddakirin"
+            }
+          ]
+        },
+        {
+          "id": "54-23-card",
+          "verseNumber": 23,
+          "arabicPhrase": "كَذَّبَتْ ثَمُودُ بِٱلنُّذُرِ",
+          "englishPhrase": "(The people of) Thamūd rejected the warners.",
+          "vocabulary": [
+            {
+              "word": "كَذَّبَتْ",
+              "root": "ك - ذ - ب",
+              "meaning": "Denied",
+              "grammarNote": "Transliteration: kadhabat"
+            },
+            {
+              "word": "ثَمُودُ",
+              "root": "ث - م - و",
+              "meaning": "Thamud",
+              "grammarNote": "Transliteration: thamūdu"
+            },
+            {
+              "word": "بِٱلنُّذُرِ",
+              "root": "ن - ذ - ر",
+              "meaning": "the warnings",
+              "grammarNote": "Transliteration: bil-nudhuri"
+            }
+          ]
+        },
+        {
+          "id": "54-24-card",
+          "verseNumber": 24,
+          "arabicPhrase": "فَقَالُوٓا۟ أَبَشَرًا مِّنَّا وَٰحِدًا نَّتَّبِعُهُۥٓ إِنَّآ إِذًا لَّفِى ضَلَـٰلٍ وَسُعُرٍ",
+          "englishPhrase": "So they said, “Shall we follow a single human being from among us? Then we will be in error and insanity.",
+          "vocabulary": [
+            {
+              "word": "فَقَالُوٓا۟",
+              "root": "ق - ا - ل",
+              "meaning": "And said",
+              "grammarNote": "Transliteration: faqālū"
+            },
+            {
+              "word": "أَبَشَرًۭا",
+              "root": "ب - ش - ر",
+              "meaning": "Is (it) a human being",
+              "grammarNote": "Transliteration: abasharan"
+            },
+            {
+              "word": "مِّنَّا",
+              "root": "م - ن - ا",
+              "meaning": "among us",
+              "grammarNote": "Transliteration: minnā"
+            },
+            {
+              "word": "وَٰحِدًۭا",
+              "root": "ح - د - ا",
+              "meaning": "one",
+              "grammarNote": "Transliteration: wāḥidan"
+            },
+            {
+              "word": "نَّتَّبِعُهُۥٓ",
+              "root": "ت - ب - ع",
+              "meaning": "(that) we should follow him",
+              "grammarNote": "Transliteration: nattabiʿuhu"
+            },
+            {
+              "word": "إِنَّآ",
+              "root": "ا - ن - ا",
+              "meaning": "Indeed, we",
+              "grammarNote": "Transliteration: innā"
+            },
+            {
+              "word": "إِذًۭا",
+              "root": "ا - ذ - ا",
+              "meaning": "then",
+              "grammarNote": "Transliteration: idhan"
+            },
+            {
+              "word": "لَّفِى",
+              "root": "ل - ف - ي",
+              "meaning": "(will be) surely in",
+              "grammarNote": "Transliteration: lafī"
+            },
+            {
+              "word": "ضَلَـٰلٍۢ",
+              "root": "ض - ل - ل",
+              "meaning": "error",
+              "grammarNote": "Transliteration: ḍalālin"
+            },
+            {
+              "word": "وَسُعُرٍ",
+              "root": "س - ع - ر",
+              "meaning": "and madness",
+              "grammarNote": "Transliteration: wasuʿurin"
+            }
+          ]
+        },
+        {
+          "id": "54-25-card",
+          "verseNumber": 25,
+          "arabicPhrase": "أَءُلْقِىَ ٱلذِّكْرُ عَلَيْهِ مِنۢ بَيْنِنَا بَلْ هُوَ كَذَّابٌ أَشِرٌ",
+          "englishPhrase": "Is it that the advice has been cast upon him alone out of all of us? No, but he is a bragging liar.”",
+          "vocabulary": [
+            {
+              "word": "أَءُلْقِىَ",
+              "root": "ء - ل - ق",
+              "meaning": "Has been sent",
+              "grammarNote": "Transliteration: a-ul'qiya"
+            },
+            {
+              "word": "ٱلذِّكْرُ",
+              "root": "ذ - ك - ر",
+              "meaning": "the Reminder",
+              "grammarNote": "Transliteration: l-dhik'ru"
+            },
+            {
+              "word": "عَلَيْهِ",
+              "root": "ع - ل - ي",
+              "meaning": "to him",
+              "grammarNote": "Transliteration: ʿalayhi"
+            },
+            {
+              "word": "مِنۢ",
+              "root": "م - ن",
+              "meaning": "from",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "بَيْنِنَا",
+              "root": "ن - ن - ا",
+              "meaning": "among us",
+              "grammarNote": "Transliteration: bayninā"
+            },
+            {
+              "word": "بَلْ",
+              "root": "ب - ل",
+              "meaning": "Nay",
+              "grammarNote": "Transliteration: bal"
+            },
+            {
+              "word": "هُوَ",
+              "root": "ه - و",
+              "meaning": "he",
+              "grammarNote": "Transliteration: huwa"
+            },
+            {
+              "word": "كَذَّابٌ",
+              "root": "ك - ذ - ب",
+              "meaning": "(is) a liar",
+              "grammarNote": "Transliteration: kadhābun"
+            },
+            {
+              "word": "أَشِرٌۭ",
+              "root": "ا - ش - ر",
+              "meaning": "insolent",
+              "grammarNote": "Transliteration: ashirun"
+            }
+          ]
+        },
+        {
+          "id": "54-26-card",
+          "verseNumber": 26,
+          "arabicPhrase": "سَيَعْلَمُونَ غَدًا مَّنِ ٱلْكَذَّابُ ٱلْأَشِرُ",
+          "englishPhrase": "Tomorrow they will know who the bragging liar is!",
+          "vocabulary": [
+            {
+              "word": "سَيَعْلَمُونَ",
+              "root": "ع - ل - م",
+              "meaning": "They will know",
+              "grammarNote": "Transliteration: sayaʿlamūna"
+            },
+            {
+              "word": "غَدًۭا",
+              "root": "غ - د - ا",
+              "meaning": "tomorrow",
+              "grammarNote": "Transliteration: ghadan"
+            },
+            {
+              "word": "مَّنِ",
+              "root": "م - ن",
+              "meaning": "who",
+              "grammarNote": "Transliteration: mani"
+            },
+            {
+              "word": "ٱلْكَذَّابُ",
+              "root": "ك - ذ - ب",
+              "meaning": "(is) the liar",
+              "grammarNote": "Transliteration: l-kadhābu"
+            },
+            {
+              "word": "ٱلْأَشِرُ",
+              "root": "ا - ش - ر",
+              "meaning": "the insolent one",
+              "grammarNote": "Transliteration: l-ashiru"
+            }
+          ]
+        },
+        {
+          "id": "54-27-card",
+          "verseNumber": 27,
+          "arabicPhrase": "إِنَّا مُرْسِلُوا۟ ٱلنَّاقَةِ فِتْنَةً لَّهُمْ فَٱرْتَقِبْهُمْ وَٱصْطَبِرْ",
+          "englishPhrase": "We are going to send the she-camel as a trial for them; so watch them (O SāliH,) and keep patience,",
+          "vocabulary": [
+            {
+              "word": "إِنَّا",
+              "root": "ا - ن - ا",
+              "meaning": "Indeed, We",
+              "grammarNote": "Transliteration: innā"
+            },
+            {
+              "word": "مُرْسِلُوا۟",
+              "root": "ر - س - ل",
+              "meaning": "(are) sending",
+              "grammarNote": "Transliteration: mur'silū"
+            },
+            {
+              "word": "ٱلنَّاقَةِ",
+              "root": "ن - ا - ق",
+              "meaning": "the she-camel",
+              "grammarNote": "Transliteration: l-nāqati"
+            },
+            {
+              "word": "فِتْنَةًۭ",
+              "root": "ت - ن - ه",
+              "meaning": "(as) a trial",
+              "grammarNote": "Transliteration: fit'natan"
+            },
+            {
+              "word": "لَّهُمْ",
+              "root": "ل - ه - م",
+              "meaning": "for them",
+              "grammarNote": "Transliteration: lahum"
+            },
+            {
+              "word": "فَٱرْتَقِبْهُمْ",
+              "root": "ر - ت - ق",
+              "meaning": "so watch them",
+              "grammarNote": "Transliteration: fa-ir'taqib'hum"
+            },
+            {
+              "word": "وَٱصْطَبِرْ",
+              "root": "ص - ط - ب",
+              "meaning": "and be patient",
+              "grammarNote": "Transliteration: wa-iṣ'ṭabir"
+            }
+          ]
+        },
+        {
+          "id": "54-28-card",
+          "verseNumber": 28,
+          "arabicPhrase": "وَنَبِّئْهُمْ أَنَّ ٱلْمَآءَ قِسْمَةٌۢ بَيْنَهُمْ ۖ كُلُّ شِرْبٍ مُّحْتَضَرٌ",
+          "englishPhrase": "and tell them that water (of the well) is to be shared between them (and the she-camel), so as the right of having water shall be attended by each (alternatively).",
+          "vocabulary": [
+            {
+              "word": "وَنَبِّئْهُمْ",
+              "root": "ن - ب - ئ",
+              "meaning": "And inform them",
+              "grammarNote": "Transliteration: wanabbi'hum"
+            },
+            {
+              "word": "أَنَّ",
+              "root": "ا - ن - ن",
+              "meaning": "that",
+              "grammarNote": "Transliteration: anna"
+            },
+            {
+              "word": "ٱلْمَآءَ",
+              "root": "م - ا - ء",
+              "meaning": "the water",
+              "grammarNote": "Transliteration: l-māa"
+            },
+            {
+              "word": "قِسْمَةٌۢ",
+              "root": "ق - س - م",
+              "meaning": "(is) to be shared",
+              "grammarNote": "Transliteration: qis'matun"
+            },
+            {
+              "word": "بَيْنَهُمْ ۖ",
+              "root": "ن - ه - م",
+              "meaning": "between them",
+              "grammarNote": "Transliteration: baynahum"
+            },
+            {
+              "word": "كُلُّ",
+              "root": "ك - ل",
+              "meaning": "each",
+              "grammarNote": "Transliteration: kullu"
+            },
+            {
+              "word": "شِرْبٍۢ",
+              "root": "ش - ر - ب",
+              "meaning": "drink",
+              "grammarNote": "Transliteration: shir'bin"
+            },
+            {
+              "word": "مُّحْتَضَرٌۭ",
+              "root": "ح - ت - ض",
+              "meaning": "attended",
+              "grammarNote": "Transliteration: muḥ'taḍarun"
+            }
+          ]
+        },
+        {
+          "id": "54-29-card",
+          "verseNumber": 29,
+          "arabicPhrase": "فَنَادَوْا۟ صَاحِبَهُمْ فَتَعَاطَىٰ فَعَقَرَ",
+          "englishPhrase": "Then they called their man (to kill the she-camel,) so he undertook (the task) and killed (the she-camel).",
+          "vocabulary": [
+            {
+              "word": "فَنَادَوْا۟",
+              "root": "ن - ا - د",
+              "meaning": "But they called",
+              "grammarNote": "Transliteration: fanādaw"
+            },
+            {
+              "word": "صَاحِبَهُمْ",
+              "root": "ص - ح - ب",
+              "meaning": "their companion",
+              "grammarNote": "Transliteration: ṣāḥibahum"
+            },
+            {
+              "word": "فَتَعَاطَىٰ",
+              "root": "ع - ا - ط",
+              "meaning": "and he took",
+              "grammarNote": "Transliteration: fataʿāṭā"
+            },
+            {
+              "word": "فَعَقَرَ",
+              "root": "ع - ق - ر",
+              "meaning": "and hamstrung",
+              "grammarNote": "Transliteration: faʿaqara"
+            }
+          ]
+        },
+        {
+          "id": "54-30-card",
+          "verseNumber": 30,
+          "arabicPhrase": "فَكَيْفَ كَانَ عَذَابِى وَنُذُرِ",
+          "englishPhrase": "So how was My torment and My warnings?",
+          "vocabulary": [
+            {
+              "word": "فَكَيْفَ",
+              "root": "ك - ي - ف",
+              "meaning": "So how",
+              "grammarNote": "Transliteration: fakayfa"
+            },
+            {
+              "word": "كَانَ",
+              "root": "ك - ا - ن",
+              "meaning": "was",
+              "grammarNote": "Transliteration: kāna"
+            },
+            {
+              "word": "عَذَابِى",
+              "root": "ع - ذ - ب",
+              "meaning": "My punishment",
+              "grammarNote": "Transliteration: ʿadhābī"
+            },
+            {
+              "word": "وَنُذُرِ",
+              "root": "ن - ذ - ر",
+              "meaning": "and My warnings",
+              "grammarNote": "Transliteration: wanudhuri"
+            }
+          ]
+        },
+        {
+          "id": "54-31-card",
+          "verseNumber": 31,
+          "arabicPhrase": "إِنَّآ أَرْسَلْنَا عَلَيْهِمْ صَيْحَةً وَٰحِدَةً فَكَانُوا۟ كَهَشِيمِ ٱلْمُحْتَظِرِ",
+          "englishPhrase": "We sent upon them a single Cry, and they were like crushed leafs of a hedge-builder.",
+          "vocabulary": [
+            {
+              "word": "إِنَّآ",
+              "root": "ا - ن - ا",
+              "meaning": "Indeed, We",
+              "grammarNote": "Transliteration: innā"
+            },
+            {
+              "word": "أَرْسَلْنَا",
+              "root": "ر - س - ل",
+              "meaning": "[We] sent",
+              "grammarNote": "Transliteration: arsalnā"
+            },
+            {
+              "word": "عَلَيْهِمْ",
+              "root": "ع - ل - ي",
+              "meaning": "upon them",
+              "grammarNote": "Transliteration: ʿalayhim"
+            },
+            {
+              "word": "صَيْحَةًۭ",
+              "root": "ص - ي - ح",
+              "meaning": "thunderous blast",
+              "grammarNote": "Transliteration: ṣayḥatan"
+            },
+            {
+              "word": "وَٰحِدَةًۭ",
+              "root": "ح - د - ه",
+              "meaning": "single",
+              "grammarNote": "Transliteration: wāḥidatan"
+            },
+            {
+              "word": "فَكَانُوا۟",
+              "root": "ك - ا - ن",
+              "meaning": "and they became",
+              "grammarNote": "Transliteration: fakānū"
+            },
+            {
+              "word": "كَهَشِيمِ",
+              "root": "ك - ه - ش",
+              "meaning": "like dry twig fragments",
+              "grammarNote": "Transliteration: kahashīmi"
+            },
+            {
+              "word": "ٱلْمُحْتَظِرِ",
+              "root": "ح - ت - ظ",
+              "meaning": "(used by) a fence builder",
+              "grammarNote": "Transliteration: l-muḥ'taẓiri"
+            }
+          ]
+        },
+        {
+          "id": "54-32-card",
+          "verseNumber": 32,
+          "arabicPhrase": "وَلَقَدْ يَسَّرْنَا ٱلْقُرْءَانَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ",
+          "englishPhrase": "Indeed We have made the Qur’ān easy for seeking advice. So, is there one to heed to the advice?",
+          "vocabulary": [
+            {
+              "word": "وَلَقَدْ",
+              "root": "ل - ق - د",
+              "meaning": "And certainly",
+              "grammarNote": "Transliteration: walaqad"
+            },
+            {
+              "word": "يَسَّرْنَا",
+              "root": "ي - س - ر",
+              "meaning": "We have made easy",
+              "grammarNote": "Transliteration: yassarnā"
+            },
+            {
+              "word": "ٱلْقُرْءَانَ",
+              "root": "ق - ر - ء",
+              "meaning": "the Quran",
+              "grammarNote": "Transliteration: l-qur'āna"
+            },
+            {
+              "word": "لِلذِّكْرِ",
+              "root": "ذ - ك - ر",
+              "meaning": "for remembrance",
+              "grammarNote": "Transliteration: lildhik'ri"
+            },
+            {
+              "word": "فَهَلْ",
+              "root": "ف - ه - ل",
+              "meaning": "so is (there)",
+              "grammarNote": "Transliteration: fahal"
+            },
+            {
+              "word": "مِن",
+              "root": "م - ن",
+              "meaning": "any",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "مُّدَّكِرٍۢ",
+              "root": "د - ك - ر",
+              "meaning": "who will receive admonition",
+              "grammarNote": "Transliteration: muddakirin"
+            }
+          ]
+        },
+        {
+          "id": "54-33-card",
+          "verseNumber": 33,
+          "arabicPhrase": "كَذَّبَتْ قَوْمُ لُوطٍۭ بِٱلنُّذُرِ",
+          "englishPhrase": "The people of LūT rejected the warners.",
+          "vocabulary": [
+            {
+              "word": "كَذَّبَتْ",
+              "root": "ك - ذ - ب",
+              "meaning": "Denied",
+              "grammarNote": "Transliteration: kadhabat"
+            },
+            {
+              "word": "قَوْمُ",
+              "root": "ق - و - م",
+              "meaning": "(the) people",
+              "grammarNote": "Transliteration: qawmu"
+            },
+            {
+              "word": "لُوطٍۭ",
+              "root": "ل - و - ط",
+              "meaning": "(of) Lut",
+              "grammarNote": "Transliteration: lūṭin"
+            },
+            {
+              "word": "بِٱلنُّذُرِ",
+              "root": "ن - ذ - ر",
+              "meaning": "the warnings",
+              "grammarNote": "Transliteration: bil-nudhuri"
+            }
+          ]
+        },
+        {
+          "id": "54-34-card",
+          "verseNumber": 34,
+          "arabicPhrase": "إِنَّآ أَرْسَلْنَا عَلَيْهِمْ حَاصِبًا إِلَّآ ءَالَ لُوطٍ ۖ نَّجَّيْنَـٰهُم بِسَحَرٍ",
+          "englishPhrase": "We sent upon them a rain of stones, except the family of LūT whom We saved in the last hours of night,",
+          "vocabulary": [
+            {
+              "word": "إِنَّآ",
+              "root": "ا - ن - ا",
+              "meaning": "Indeed, We",
+              "grammarNote": "Transliteration: innā"
+            },
+            {
+              "word": "أَرْسَلْنَا",
+              "root": "ر - س - ل",
+              "meaning": "[We] sent",
+              "grammarNote": "Transliteration: arsalnā"
+            },
+            {
+              "word": "عَلَيْهِمْ",
+              "root": "ع - ل - ي",
+              "meaning": "upon them",
+              "grammarNote": "Transliteration: ʿalayhim"
+            },
+            {
+              "word": "حَاصِبًا",
+              "root": "ح - ص - ب",
+              "meaning": "a storm of stones",
+              "grammarNote": "Transliteration: ḥāṣiban"
+            },
+            {
+              "word": "إِلَّآ",
+              "root": "ا - ل - ا",
+              "meaning": "except",
+              "grammarNote": "Transliteration: illā"
+            },
+            {
+              "word": "ءَالَ",
+              "root": "ء - ا - ل",
+              "meaning": "(the) family",
+              "grammarNote": "Transliteration: āla"
+            },
+            {
+              "word": "لُوطٍۢ ۖ",
+              "root": "ل - و - ط",
+              "meaning": "(of) Lut",
+              "grammarNote": "Transliteration: lūṭin"
+            },
+            {
+              "word": "نَّجَّيْنَـٰهُم",
+              "root": "ج - ي - ن",
+              "meaning": "We saved them",
+              "grammarNote": "Transliteration: najjaynāhum"
+            },
+            {
+              "word": "بِسَحَرٍۢ",
+              "root": "س - ح - ر",
+              "meaning": "by dawn",
+              "grammarNote": "Transliteration: bisaḥarin"
+            }
+          ]
+        },
+        {
+          "id": "54-35-card",
+          "verseNumber": 35,
+          "arabicPhrase": "نِّعْمَةً مِّنْ عِندِنَا ۚ كَذَٰلِكَ نَجْزِى مَن شَكَرَ",
+          "englishPhrase": "as a grace from Us. This is how We reward the one who offers gratitude.",
+          "vocabulary": [
+            {
+              "word": "نِّعْمَةًۭ",
+              "root": "ن - ع - م",
+              "meaning": "(As) a favor",
+              "grammarNote": "Transliteration: niʿ'matan"
+            },
+            {
+              "word": "مِّنْ",
+              "root": "م - ن",
+              "meaning": "from",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "عِندِنَا ۚ",
+              "root": "ع - ن - د",
+              "meaning": "Us",
+              "grammarNote": "Transliteration: ʿindinā"
+            },
+            {
+              "word": "كَذَٰلِكَ",
+              "root": "ك - ذ - ل",
+              "meaning": "Thus",
+              "grammarNote": "Transliteration: kadhālika"
+            },
+            {
+              "word": "نَجْزِى",
+              "root": "ن - ج - ز",
+              "meaning": "We reward",
+              "grammarNote": "Transliteration: najzī"
+            },
+            {
+              "word": "مَن",
+              "root": "م - ن",
+              "meaning": "(one) who",
+              "grammarNote": "Transliteration: man"
+            },
+            {
+              "word": "شَكَرَ",
+              "root": "ش - ك - ر",
+              "meaning": "(is) grateful",
+              "grammarNote": "Transliteration: shakara"
+            }
+          ]
+        },
+        {
+          "id": "54-36-card",
+          "verseNumber": 36,
+          "arabicPhrase": "وَلَقَدْ أَنذَرَهُم بَطْشَتَنَا فَتَمَارَوْا۟ بِٱلنُّذُرِ",
+          "englishPhrase": "And he (LūT) had certainly warned them of Our grasp, but they disputed the warnings.",
+          "vocabulary": [
+            {
+              "word": "وَلَقَدْ",
+              "root": "ل - ق - د",
+              "meaning": "And certainly",
+              "grammarNote": "Transliteration: walaqad"
+            },
+            {
+              "word": "أَنذَرَهُم",
+              "root": "ن - ذ - ر",
+              "meaning": "he warned them",
+              "grammarNote": "Transliteration: andharahum"
+            },
+            {
+              "word": "بَطْشَتَنَا",
+              "root": "ط - ش - ت",
+              "meaning": "(of) Our seizure",
+              "grammarNote": "Transliteration: baṭshatanā"
+            },
+            {
+              "word": "فَتَمَارَوْا۟",
+              "root": "م - ا - ر",
+              "meaning": "but they disputed",
+              "grammarNote": "Transliteration: fatamāraw"
+            },
+            {
+              "word": "بِٱلنُّذُرِ",
+              "root": "ن - ذ - ر",
+              "meaning": "the warnings",
+              "grammarNote": "Transliteration: bil-nudhuri"
+            }
+          ]
+        },
+        {
+          "id": "54-37-card",
+          "verseNumber": 37,
+          "arabicPhrase": "وَلَقَدْ رَٰوَدُوهُ عَن ضَيْفِهِۦ فَطَمَسْنَآ أَعْيُنَهُمْ فَذُوقُوا۟ عَذَابِى وَنُذُرِ",
+          "englishPhrase": "And they had even tried to tempt him against his guests (so that they may snatch them away for bad purpose,) but We blinded their eyes: “Now taste My torment and My warnings!”",
+          "vocabulary": [
+            {
+              "word": "وَلَقَدْ",
+              "root": "ل - ق - د",
+              "meaning": "And certainly",
+              "grammarNote": "Transliteration: walaqad"
+            },
+            {
+              "word": "رَٰوَدُوهُ",
+              "root": "ر - و - د",
+              "meaning": "they demanded from him",
+              "grammarNote": "Transliteration: rāwadūhu"
+            },
+            {
+              "word": "عَن",
+              "root": "ع - ن",
+              "meaning": "they demanded from him",
+              "grammarNote": "Transliteration: ʿan"
+            },
+            {
+              "word": "ضَيْفِهِۦ",
+              "root": "ض - ي - ف",
+              "meaning": "his guests",
+              "grammarNote": "Transliteration: ḍayfihi"
+            },
+            {
+              "word": "فَطَمَسْنَآ",
+              "root": "ط - م - س",
+              "meaning": "so We blinded",
+              "grammarNote": "Transliteration: faṭamasnā"
+            },
+            {
+              "word": "أَعْيُنَهُمْ",
+              "root": "ع - ي - ن",
+              "meaning": "their eyes",
+              "grammarNote": "Transliteration: aʿyunahum"
+            },
+            {
+              "word": "فَذُوقُوا۟",
+              "root": "ذ - و - ق",
+              "meaning": "So taste",
+              "grammarNote": "Transliteration: fadhūqū"
+            },
+            {
+              "word": "عَذَابِى",
+              "root": "ع - ذ - ب",
+              "meaning": "My punishment",
+              "grammarNote": "Transliteration: ʿadhābī"
+            },
+            {
+              "word": "وَنُذُرِ",
+              "root": "ن - ذ - ر",
+              "meaning": "and My warnings",
+              "grammarNote": "Transliteration: wanudhuri"
+            }
+          ]
+        },
+        {
+          "id": "54-38-card",
+          "verseNumber": 38,
+          "arabicPhrase": "وَلَقَدْ صَبَّحَهُم بُكْرَةً عَذَابٌ مُّسْتَقِرٌّ",
+          "englishPhrase": "And on the next morning, a lasting torment overtook them:",
+          "vocabulary": [
+            {
+              "word": "وَلَقَدْ",
+              "root": "ل - ق - د",
+              "meaning": "And certainly",
+              "grammarNote": "Transliteration: walaqad"
+            },
+            {
+              "word": "صَبَّحَهُم",
+              "root": "ص - ب - ح",
+              "meaning": "seized them in the morning",
+              "grammarNote": "Transliteration: ṣabbaḥahum"
+            },
+            {
+              "word": "بُكْرَةً",
+              "root": "ك - ر - ه",
+              "meaning": "early",
+              "grammarNote": "Transliteration: buk'ratan"
+            },
+            {
+              "word": "عَذَابٌۭ",
+              "root": "ع - ذ - ب",
+              "meaning": "a punishment",
+              "grammarNote": "Transliteration: ʿadhābun"
+            },
+            {
+              "word": "مُّسْتَقِرٌّۭ",
+              "root": "س - ت - ق",
+              "meaning": "abiding",
+              "grammarNote": "Transliteration: mus'taqirrun"
+            }
+          ]
+        },
+        {
+          "id": "54-39-card",
+          "verseNumber": 39,
+          "arabicPhrase": "فَذُوقُوا۟ عَذَابِى وَنُذُرِ",
+          "englishPhrase": "“Now taste My torment and My warnings.”",
+          "vocabulary": [
+            {
+              "word": "فَذُوقُوا۟",
+              "root": "ذ - و - ق",
+              "meaning": "So taste",
+              "grammarNote": "Transliteration: fadhūqū"
+            },
+            {
+              "word": "عَذَابِى",
+              "root": "ع - ذ - ب",
+              "meaning": "My punishment",
+              "grammarNote": "Transliteration: ʿadhābī"
+            },
+            {
+              "word": "وَنُذُرِ",
+              "root": "ن - ذ - ر",
+              "meaning": "and My warnings",
+              "grammarNote": "Transliteration: wanudhuri"
+            }
+          ]
+        },
+        {
+          "id": "54-40-card",
+          "verseNumber": 40,
+          "arabicPhrase": "وَلَقَدْ يَسَّرْنَا ٱلْقُرْءَانَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ",
+          "englishPhrase": "Indeed We have made the Qur’ān easy for seeking advice. So, is there one to heed to the advice?",
+          "vocabulary": [
+            {
+              "word": "وَلَقَدْ",
+              "root": "ل - ق - د",
+              "meaning": "And certainly",
+              "grammarNote": "Transliteration: walaqad"
+            },
+            {
+              "word": "يَسَّرْنَا",
+              "root": "ي - س - ر",
+              "meaning": "We have made easy",
+              "grammarNote": "Transliteration: yassarnā"
+            },
+            {
+              "word": "ٱلْقُرْءَانَ",
+              "root": "ق - ر - ء",
+              "meaning": "the Quran",
+              "grammarNote": "Transliteration: l-qur'āna"
+            },
+            {
+              "word": "لِلذِّكْرِ",
+              "root": "ذ - ك - ر",
+              "meaning": "for remembrance",
+              "grammarNote": "Transliteration: lildhik'ri"
+            },
+            {
+              "word": "فَهَلْ",
+              "root": "ف - ه - ل",
+              "meaning": "so is (there)",
+              "grammarNote": "Transliteration: fahal"
+            },
+            {
+              "word": "مِن",
+              "root": "م - ن",
+              "meaning": "any",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "مُّدَّكِرٍۢ",
+              "root": "د - ك - ر",
+              "meaning": "who will receive admonition",
+              "grammarNote": "Transliteration: muddakirin"
+            }
+          ]
+        },
+        {
+          "id": "54-41-card",
+          "verseNumber": 41,
+          "arabicPhrase": "وَلَقَدْ جَآءَ ءَالَ فِرْعَوْنَ ٱلنُّذُرُ",
+          "englishPhrase": "And the warners came to the family of Fir‘aun (Pharaoh).",
+          "vocabulary": [
+            {
+              "word": "وَلَقَدْ",
+              "root": "ل - ق - د",
+              "meaning": "And certainly",
+              "grammarNote": "Transliteration: walaqad"
+            },
+            {
+              "word": "جَآءَ",
+              "root": "ج - ا - ء",
+              "meaning": "came",
+              "grammarNote": "Transliteration: jāa"
+            },
+            {
+              "word": "ءَالَ",
+              "root": "ء - ا - ل",
+              "meaning": "(to the) people",
+              "grammarNote": "Transliteration: āla"
+            },
+            {
+              "word": "فِرْعَوْنَ",
+              "root": "ر - ع - و",
+              "meaning": "(of) Firaun",
+              "grammarNote": "Transliteration: fir'ʿawna"
+            },
+            {
+              "word": "ٱلنُّذُرُ",
+              "root": "ن - ذ - ر",
+              "meaning": "warnings",
+              "grammarNote": "Transliteration: l-nudhuru"
+            }
+          ]
+        },
+        {
+          "id": "54-42-card",
+          "verseNumber": 42,
+          "arabicPhrase": "كَذَّبُوا۟ بِـَٔايَـٰتِنَا كُلِّهَا فَأَخَذْنَـٰهُمْ أَخْذَ عَزِيزٍ مُّقْتَدِرٍ",
+          "englishPhrase": "(But) they rejected all Our signs; so We seized them- a seizure by One Mighty, Powerful.",
+          "vocabulary": [
+            {
+              "word": "كَذَّبُوا۟",
+              "root": "ك - ذ - ب",
+              "meaning": "They denied",
+              "grammarNote": "Transliteration: kadhabū"
+            },
+            {
+              "word": "بِـَٔايَـٰتِنَا",
+              "root": "ا - ي - ت",
+              "meaning": "Our Signs",
+              "grammarNote": "Transliteration: biāyātinā"
+            },
+            {
+              "word": "كُلِّهَا",
+              "root": "ك - ل - ه",
+              "meaning": "all of them",
+              "grammarNote": "Transliteration: kullihā"
+            },
+            {
+              "word": "فَأَخَذْنَـٰهُمْ",
+              "root": "خ - ذ - ن",
+              "meaning": "so We seized them",
+              "grammarNote": "Transliteration: fa-akhadhnāhum"
+            },
+            {
+              "word": "أَخْذَ",
+              "root": "ا - خ - ذ",
+              "meaning": "(with) a seizure",
+              "grammarNote": "Transliteration: akhdha"
+            },
+            {
+              "word": "عَزِيزٍۢ",
+              "root": "ع - ز - ي",
+              "meaning": "(of) All-Mighty",
+              "grammarNote": "Transliteration: ʿazīzin"
+            },
+            {
+              "word": "مُّقْتَدِرٍ",
+              "root": "ق - ت - د",
+              "meaning": "(the) Powerful One",
+              "grammarNote": "Transliteration: muq'tadirin"
+            }
+          ]
+        },
+        {
+          "id": "54-43-card",
+          "verseNumber": 43,
+          "arabicPhrase": "أَكُفَّارُكُمْ خَيْرٌ مِّنْ أُو۟لَـٰٓئِكُمْ أَمْ لَكُم بَرَآءَةٌ فِى ٱلزُّبُرِ",
+          "englishPhrase": "Are the disbelievers among you in a better position than all of the aforesaid (punished people), or do you have immunity (recorded) in the sacred books?",
+          "vocabulary": [
+            {
+              "word": "أَكُفَّارُكُمْ",
+              "root": "ك - ف - ا",
+              "meaning": "Are your disbelievers",
+              "grammarNote": "Transliteration: akuffārukum"
+            },
+            {
+              "word": "خَيْرٌۭ",
+              "root": "خ - ي - ر",
+              "meaning": "better",
+              "grammarNote": "Transliteration: khayrun"
+            },
+            {
+              "word": "مِّنْ",
+              "root": "م - ن",
+              "meaning": "than",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "أُو۟لَـٰٓئِكُمْ",
+              "root": "و - ل - ئ",
+              "meaning": "those",
+              "grammarNote": "Transliteration: ulāikum"
+            },
+            {
+              "word": "أَمْ",
+              "root": "ا - م",
+              "meaning": "or",
+              "grammarNote": "Transliteration: am"
+            },
+            {
+              "word": "لَكُم",
+              "root": "ل - ك - م",
+              "meaning": "for you",
+              "grammarNote": "Transliteration: lakum"
+            },
+            {
+              "word": "بَرَآءَةٌۭ",
+              "root": "ر - ا - ء",
+              "meaning": "(is) an exemption",
+              "grammarNote": "Transliteration: barāatun"
+            },
+            {
+              "word": "فِى",
+              "root": "ف - ي",
+              "meaning": "in",
+              "grammarNote": "Transliteration: fī"
+            },
+            {
+              "word": "ٱلزُّبُرِ",
+              "root": "ز - ب - ر",
+              "meaning": "the Scriptures",
+              "grammarNote": "Transliteration: l-zuburi"
+            }
+          ]
+        },
+        {
+          "id": "54-44-card",
+          "verseNumber": 44,
+          "arabicPhrase": "أَمْ يَقُولُونَ نَحْنُ جَمِيعٌ مُّنتَصِرٌ",
+          "englishPhrase": "Or do they say, “We are a large group, well-defended.”?",
+          "vocabulary": [
+            {
+              "word": "أَمْ",
+              "root": "ا - م",
+              "meaning": "Or",
+              "grammarNote": "Transliteration: am"
+            },
+            {
+              "word": "يَقُولُونَ",
+              "root": "ق - و - ل",
+              "meaning": "(do) they say",
+              "grammarNote": "Transliteration: yaqūlūna"
+            },
+            {
+              "word": "نَحْنُ",
+              "root": "ن - ح - ن",
+              "meaning": "We",
+              "grammarNote": "Transliteration: naḥnu"
+            },
+            {
+              "word": "جَمِيعٌۭ",
+              "root": "ج - م - ي",
+              "meaning": "(are) an assembly",
+              "grammarNote": "Transliteration: jamīʿun"
+            },
+            {
+              "word": "مُّنتَصِرٌۭ",
+              "root": "ن - ت - ص",
+              "meaning": "helping (each other)",
+              "grammarNote": "Transliteration: muntaṣirun"
+            }
+          ]
+        },
+        {
+          "id": "54-45-card",
+          "verseNumber": 45,
+          "arabicPhrase": "سَيُهْزَمُ ٱلْجَمْعُ وَيُوَلُّونَ ٱلدُّبُرَ",
+          "englishPhrase": "Soon this ‘large group’ shall be defeated, and all of them will turn their backs.",
+          "vocabulary": [
+            {
+              "word": "سَيُهْزَمُ",
+              "root": "ه - ز - م",
+              "meaning": "Soon will be defeated",
+              "grammarNote": "Transliteration: sayuh'zamu"
+            },
+            {
+              "word": "ٱلْجَمْعُ",
+              "root": "ج - م - ع",
+              "meaning": "(their) assembly",
+              "grammarNote": "Transliteration: l-jamʿu"
+            },
+            {
+              "word": "وَيُوَلُّونَ",
+              "root": "ي - و - ل",
+              "meaning": "and they will turn",
+              "grammarNote": "Transliteration: wayuwallūna"
+            },
+            {
+              "word": "ٱلدُّبُرَ",
+              "root": "د - ب - ر",
+              "meaning": "(their) backs",
+              "grammarNote": "Transliteration: l-dubura"
+            }
+          ]
+        },
+        {
+          "id": "54-46-card",
+          "verseNumber": 46,
+          "arabicPhrase": "بَلِ ٱلسَّاعَةُ مَوْعِدُهُمْ وَٱلسَّاعَةُ أَدْهَىٰ وَأَمَرُّ",
+          "englishPhrase": "Rather the Hour (of judgment) is their appointed time (for their full recompense), and the Hour is more calamitous and much more bitter.",
+          "vocabulary": [
+            {
+              "word": "بَلِ",
+              "root": "ب - ل",
+              "meaning": "Nay",
+              "grammarNote": "Transliteration: bali"
+            },
+            {
+              "word": "ٱلسَّاعَةُ",
+              "root": "س - ا - ع",
+              "meaning": "the Hour",
+              "grammarNote": "Transliteration: l-sāʿatu"
+            },
+            {
+              "word": "مَوْعِدُهُمْ",
+              "root": "و - ع - د",
+              "meaning": "(is) their promised time",
+              "grammarNote": "Transliteration: mawʿiduhum"
+            },
+            {
+              "word": "وَٱلسَّاعَةُ",
+              "root": "س - ا - ع",
+              "meaning": "and the Hour",
+              "grammarNote": "Transliteration: wal-sāʿatu"
+            },
+            {
+              "word": "أَدْهَىٰ",
+              "root": "ا - د - ه",
+              "meaning": "(will be) more grievous",
+              "grammarNote": "Transliteration: adhā"
+            },
+            {
+              "word": "وَأَمَرُّ",
+              "root": "ا - م - ر",
+              "meaning": "and more bitter",
+              "grammarNote": "Transliteration: wa-amarru"
+            }
+          ]
+        },
+        {
+          "id": "54-47-card",
+          "verseNumber": 47,
+          "arabicPhrase": "إِنَّ ٱلْمُجْرِمِينَ فِى ضَلَـٰلٍ وَسُعُرٍ",
+          "englishPhrase": "Surely the guilty ones are in error and madness.",
+          "vocabulary": [
+            {
+              "word": "إِنَّ",
+              "root": "ا - ن - ن",
+              "meaning": "Indeed",
+              "grammarNote": "Transliteration: inna"
+            },
+            {
+              "word": "ٱلْمُجْرِمِينَ",
+              "root": "ج - ر - م",
+              "meaning": "the criminals",
+              "grammarNote": "Transliteration: l-muj'rimīna"
+            },
+            {
+              "word": "فِى",
+              "root": "ف - ي",
+              "meaning": "(are) in",
+              "grammarNote": "Transliteration: fī"
+            },
+            {
+              "word": "ضَلَـٰلٍۢ",
+              "root": "ض - ل - ل",
+              "meaning": "an error",
+              "grammarNote": "Transliteration: ḍalālin"
+            },
+            {
+              "word": "وَسُعُرٍۢ",
+              "root": "س - ع - ر",
+              "meaning": "and madness",
+              "grammarNote": "Transliteration: wasuʿurin"
+            }
+          ]
+        },
+        {
+          "id": "54-48-card",
+          "verseNumber": 48,
+          "arabicPhrase": "يَوْمَ يُسْحَبُونَ فِى ٱلنَّارِ عَلَىٰ وُجُوهِهِمْ ذُوقُوا۟ مَسَّ سَقَرَ",
+          "englishPhrase": "On the Day when they will be dragged into the Fire on their faces, (it will be said to them,) “Taste the touch of Hell.”",
+          "vocabulary": [
+            {
+              "word": "يَوْمَ",
+              "root": "ي - و - م",
+              "meaning": "(The) Day",
+              "grammarNote": "Transliteration: yawma"
+            },
+            {
+              "word": "يُسْحَبُونَ",
+              "root": "س - ح - ب",
+              "meaning": "they will be dragged",
+              "grammarNote": "Transliteration: yus'ḥabūna"
+            },
+            {
+              "word": "فِى",
+              "root": "ف - ي",
+              "meaning": "into",
+              "grammarNote": "Transliteration: fī"
+            },
+            {
+              "word": "ٱلنَّارِ",
+              "root": "ن - ا - ر",
+              "meaning": "the Fire",
+              "grammarNote": "Transliteration: l-nāri"
+            },
+            {
+              "word": "عَلَىٰ",
+              "root": "ع - ل - و",
+              "meaning": "on",
+              "grammarNote": "Transliteration: ʿalā"
+            },
+            {
+              "word": "وُجُوهِهِمْ",
+              "root": "ج - و - ه",
+              "meaning": "their faces",
+              "grammarNote": "Transliteration: wujūhihim"
+            },
+            {
+              "word": "ذُوقُوا۟",
+              "root": "ذ - و - ق",
+              "meaning": "Taste",
+              "grammarNote": "Transliteration: dhūqū"
+            },
+            {
+              "word": "مَسَّ",
+              "root": "م - س",
+              "meaning": "(the) touch",
+              "grammarNote": "Transliteration: massa"
+            },
+            {
+              "word": "سَقَرَ",
+              "root": "س - ق - ر",
+              "meaning": "(of) Hell",
+              "grammarNote": "Transliteration: saqara"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verses 18–42]\n\nLexicological Analysis\n\nThe word سُعُر su'ur has appeared twice in this Surah. First it has appeared in verse 24 in connection with the people of Thamud where it is their own word, and means 'madness or insanity'. The second time, the word appears in connection with the punishment of the sinners where it is the word of Allah in the forthcoming verse [ 47] فِي ضَلَالٍ وَسُعُرٍ‌. Here the word سُعُر su'ur may also be taken in the sense of Hell-Fire. According to lexicologists, the word su'ur is used in both these senses.\n\nرَ‌اوَدُوهُ عَن ضَيْفِهِ (And they had even tried to tempt him against his guests...54:37). The word murawadah signifies to entice someone to satisfy one's lust. This verse refers to the night when the angels came to Prophet Lut (علیہ السلام) in the shape of handsome young men, as a test from Allah for his people who were addicted to homosexuality. Prophet Lut (علیہ السلام) hosted his guests. The licentious people came to him from every direction, and the Prophet Lut (علیہ السلام) had to shut the door to protect his guests. They came during the night and tried to break the door down and scale the walls to come in. The immoral behaviour of his people distressed Prophet Lut (علیہ السلام) but when the guests revealed to him that they were angels and have been sent by Allah to inflict destructive punishment on his people, he felt comforted; they assured him that they will not be able to hurt them in any way.\n\nSurah Al-Qamar started on the note that Doomsday is fast approaching, so that the infidels and pagans, who have lust and greed for this world and are unaware of the Hereafter, come to their senses. First, the punishment of the Hereafter is mentioned. Then the evil consequences of their misdeeds in the present life are cited. Reference is made to the conditions of world-famous nations, their opposition to their respective prophets and its evil consequences. The people of Lut (علیہ السلام) were the first people who were destroyed by Divine punishment. Many different kinds of devastating torments were inflicted on the people of Lut (علیہ السلام) ، the tribes of ` Ad, Thamud and Lut (علیہ السلام) and the people of Fir'aun in this world. Their stories and histories are recounted in detail on several occasions in the Qur'an. Here they have been condensed.\n\nAll these five nations were the strongest and resourceful. It was not possible for any of the subdued nations to overcome any of these superpowers. The current set of verses show how the superpowers were destroyed by Divine punishment. After describing the punishment of each nation, the Qur'an repeats the following statement as a refrain: فَكَيْفَ كَانَ عَذَابِي وَنُذُرِ‌ (How then was My torment and My warnings?). That is, when the Divine chastisement overtook these nations who were very powerful in terms of might, wealth and number were killed like flies and mosquitoes. In addition, the following verse is repeated to advise the Muslims and the infidels in general: وَلَقَدْ يَسَّرْ‌نَا الْقُرْ‌آنَ لِلذِّكْرِ‌ فَهَلْ مِن مُّدَّكِرٍ‌ (and indeed We have made the Qur'an easy for seeking advice. So, is there one to seek advice?) This is to indicate that the only way to avoid the terrible chastisement is to take to the advice of the Qur'an. Allah has made the Qur'an easy to the extent of paying heed to the admonition and warnings. Only the most ill-fated person will not take advantage of the warnings.\n\nThe forthcoming verses address the people of the time of the Prophet Muhammad ﷺ that they are not more powerful in terms of wealth, number and might than the people of Prophet Lut (علیہ السلام) the tribes of ` Ad and Thamud, Prophet Lut’ s علیہ السلام people and the people of Fir'aun. Then how are they sitting in a careless manner?\n\n────────────────────────────────────────\n\n[Verses 43–48]\n\nLexicological analysis\n\nThe word زُبُر zubur (in verse 43) is the plural of zabur, which stands for any written book. It specifically refers to the Scripture that was revealed to Prophet Dawud (علیہ السلام) .\n\nأَدْهَىٰ وَأَمَرُّ‌ (...more calamitous and more bitter...54:46). The word adha means more or most calamitous. The word amarr is derived from murr which originally means 'bitter'. By extension anything 'difficult' or 'painful' is also referred to as amarr and murr. In the phrase فِي ضَلَالٍ وَسُعُرٍ‌ fi dalalin wa su'ur, dalal, as is known, means 'error' or 'deviation' and the word su'ur in the present context means the 'Hell-Fire1.' In the phrase ashya'akum, (verse 51) ashya` is the plural of shi'ah, and it means a 'follower', that is, those who follow their pattern of life.\n\n(1). This is according to one interpretation. The other meaning of the word is 'madness' and the translation in the text is based on this meaning. (Muhammad Taqi Usmani\n\nIn the phrase مَقْعَدِ صِدْقٍ maq` adi-sidqin, the word maq'ad means 'seat' and the word sidq means 'truth' and implies the 'seat of truth' where there will be no idle and obscene talks.",
+      "subsections": [
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "رَ‌اوَدُوهُ عَن ضَيْفِهِ (And they had even tried to tempt him against his guests...54:37). The word murawadah signifies to entice someone to satisfy one's lust. This verse refers to the night when the angels came to Prophet Lut (علیہ السلام) in the shape of handsome young men, as a test from Allah for his people who were addicted to homosexuality. Prophet Lut (علیہ السلام) hosted his guests. The licentious people came to him from every direction, and the Prophet Lut (علیہ السلام) had to shut the door to protect his guests. They came during the night and tried to break the door down and scale the walls to come in. The immoral behaviour of his people distressed Prophet Lut (علیہ السلام) but when the guests revealed to him that they were angels and have been sent by Allah to inflict destructive punishment on his people, he felt comforted; they assured him that they will not be able to..."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "The word سُعُر su'ur has appeared twice in this Surah. First it has appeared in verse 24 in connection with the people of Thamud where it is their own word, and means 'madness or insanity'. The second time, the word appears in connection with the punishment of the sinners where it is the word of Allah in the forthcoming verse [ 47] فِي ضَلَالٍ وَسُعُرٍ‌. Here the word سُعُر su'ur may also be taken in the sense of Hell-Fire. According to lexicologists, the word su'ur is used in both these senses."
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "54-49-55",
+      "surahNumber": 54,
+      "verseRange": [
+        49,
+        55
+      ],
+      "title": "Al-hamdulillah",
+      "juzNumber": 27,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5269/mode/2up",
+      "arabicText": "إِنَّا كُلَّ شَىْءٍ خَلَقْنَـٰهُ بِقَدَرٍ ۝٤٩ وَمَآ أَمْرُنَآ إِلَّا وَٰحِدَةٌ كَلَمْحٍۭ بِٱلْبَصَرِ ۝٥٠ وَلَقَدْ أَهْلَكْنَآ أَشْيَاعَكُمْ فَهَلْ مِن مُّدَّكِرٍ ۝٥١ وَكُلُّ شَىْءٍ فَعَلُوهُ فِى ٱلزُّبُرِ ۝٥٢ وَكُلُّ صَغِيرٍ وَكَبِيرٍ مُّسْتَطَرٌ ۝٥٣ إِنَّ ٱلْمُتَّقِينَ فِى جَنَّـٰتٍ وَنَهَرٍ ۝٥٤ فِى مَقْعَدِ صِدْقٍ عِندَ مَلِيكٍ مُّقْتَدِرٍۭ ۝٥٥",
+      "translation": "Verily, We have created every thing according to (Our) predestination. ۝ And (implementation of) Our command is no more than a single act like the twinkling of an eye. ۝ We have destroyed people like you; so, is there one to take lesson? ۝ And every thing they have done is recorded in the books (of deeds). ۝ And every thing, small and big, is written down. ۝ Of course, the God-fearing will be in gardens and rivers, ۝ in a seat of Truth, near to the Omnipotent Sovereign. ۝",
+      "phraseCards": [
+        {
+          "id": "54-49-card",
+          "verseNumber": 49,
+          "arabicPhrase": "إِنَّا كُلَّ شَىْءٍ خَلَقْنَـٰهُ بِقَدَرٍ",
+          "englishPhrase": "Verily, We have created every thing according to (Our) predestination.",
+          "vocabulary": [
+            {
+              "word": "إِنَّا",
+              "root": "ا - ن - ا",
+              "meaning": "Indeed, [We]",
+              "grammarNote": "Transliteration: innā"
+            },
+            {
+              "word": "كُلَّ",
+              "root": "ك - ل",
+              "meaning": "every",
+              "grammarNote": "Transliteration: kulla"
+            },
+            {
+              "word": "شَىْءٍ",
+              "root": "ش - ي - ء",
+              "meaning": "thing",
+              "grammarNote": "Transliteration: shayin"
+            },
+            {
+              "word": "خَلَقْنَـٰهُ",
+              "root": "خ - ل - ق",
+              "meaning": "We created it",
+              "grammarNote": "Transliteration: khalaqnāhu"
+            },
+            {
+              "word": "بِقَدَرٍۢ",
+              "root": "ق - د - ر",
+              "meaning": "by a measure",
+              "grammarNote": "Transliteration: biqadarin"
+            }
+          ]
+        },
+        {
+          "id": "54-50-card",
+          "verseNumber": 50,
+          "arabicPhrase": "وَمَآ أَمْرُنَآ إِلَّا وَٰحِدَةٌ كَلَمْحٍۭ بِٱلْبَصَرِ",
+          "englishPhrase": "And (implementation of) Our command is no more than a single act like the twinkling of an eye.",
+          "vocabulary": [
+            {
+              "word": "وَمَآ",
+              "root": "و - م - ا",
+              "meaning": "And not",
+              "grammarNote": "Transliteration: wamā"
+            },
+            {
+              "word": "أَمْرُنَآ",
+              "root": "ا - م - ر",
+              "meaning": "(is) Our Command",
+              "grammarNote": "Transliteration: amrunā"
+            },
+            {
+              "word": "إِلَّا",
+              "root": "ا - ل - ا",
+              "meaning": "but",
+              "grammarNote": "Transliteration: illā"
+            },
+            {
+              "word": "وَٰحِدَةٌۭ",
+              "root": "ح - د - ه",
+              "meaning": "one",
+              "grammarNote": "Transliteration: wāḥidatun"
+            },
+            {
+              "word": "كَلَمْحٍۭ",
+              "root": "ك - ل - م",
+              "meaning": "like the twinkling",
+              "grammarNote": "Transliteration: kalamḥin"
+            },
+            {
+              "word": "بِٱلْبَصَرِ",
+              "root": "ب - ص - ر",
+              "meaning": "(of) the eye",
+              "grammarNote": "Transliteration: bil-baṣari"
+            }
+          ]
+        },
+        {
+          "id": "54-51-card",
+          "verseNumber": 51,
+          "arabicPhrase": "وَلَقَدْ أَهْلَكْنَآ أَشْيَاعَكُمْ فَهَلْ مِن مُّدَّكِرٍ",
+          "englishPhrase": "We have destroyed people like you; so, is there one to take lesson?",
+          "vocabulary": [
+            {
+              "word": "وَلَقَدْ",
+              "root": "ل - ق - د",
+              "meaning": "And certainly",
+              "grammarNote": "Transliteration: walaqad"
+            },
+            {
+              "word": "أَهْلَكْنَآ",
+              "root": "ه - ل - ك",
+              "meaning": "We destroyed",
+              "grammarNote": "Transliteration: ahlaknā"
+            },
+            {
+              "word": "أَشْيَاعَكُمْ",
+              "root": "ش - ي - ا",
+              "meaning": "your kinds",
+              "grammarNote": "Transliteration: ashyāʿakum"
+            },
+            {
+              "word": "فَهَلْ",
+              "root": "ف - ه - ل",
+              "meaning": "so is (there)",
+              "grammarNote": "Transliteration: fahal"
+            },
+            {
+              "word": "مِن",
+              "root": "م - ن",
+              "meaning": "any",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "مُّدَّكِرٍۢ",
+              "root": "د - ك - ر",
+              "meaning": "who will receive admonition",
+              "grammarNote": "Transliteration: muddakirin"
+            }
+          ]
+        },
+        {
+          "id": "54-52-card",
+          "verseNumber": 52,
+          "arabicPhrase": "وَكُلُّ شَىْءٍ فَعَلُوهُ فِى ٱلزُّبُرِ",
+          "englishPhrase": "And every thing they have done is recorded in the books (of deeds).",
+          "vocabulary": [
+            {
+              "word": "وَكُلُّ",
+              "root": "و - ك - ل",
+              "meaning": "And every",
+              "grammarNote": "Transliteration: wakullu"
+            },
+            {
+              "word": "شَىْءٍۢ",
+              "root": "ش - ي - ء",
+              "meaning": "thing",
+              "grammarNote": "Transliteration: shayin"
+            },
+            {
+              "word": "فَعَلُوهُ",
+              "root": "ع - ل - و",
+              "meaning": "they did",
+              "grammarNote": "Transliteration: faʿalūhu"
+            },
+            {
+              "word": "فِى",
+              "root": "ف - ي",
+              "meaning": "(is) in",
+              "grammarNote": "Transliteration: fī"
+            },
+            {
+              "word": "ٱلزُّبُرِ",
+              "root": "ز - ب - ر",
+              "meaning": "the written records",
+              "grammarNote": "Transliteration: l-zuburi"
+            }
+          ]
+        },
+        {
+          "id": "54-53-card",
+          "verseNumber": 53,
+          "arabicPhrase": "وَكُلُّ صَغِيرٍ وَكَبِيرٍ مُّسْتَطَرٌ",
+          "englishPhrase": "And every thing, small and big, is written down.",
+          "vocabulary": [
+            {
+              "word": "وَكُلُّ",
+              "root": "و - ك - ل",
+              "meaning": "And every",
+              "grammarNote": "Transliteration: wakullu"
+            },
+            {
+              "word": "صَغِيرٍۢ",
+              "root": "ص - غ - ي",
+              "meaning": "small",
+              "grammarNote": "Transliteration: ṣaghīrin"
+            },
+            {
+              "word": "وَكَبِيرٍۢ",
+              "root": "ك - ب - ي",
+              "meaning": "and big",
+              "grammarNote": "Transliteration: wakabīrin"
+            },
+            {
+              "word": "مُّسْتَطَرٌ",
+              "root": "س - ت - ط",
+              "meaning": "(is) written down",
+              "grammarNote": "Transliteration: mus'taṭarun"
+            }
+          ]
+        },
+        {
+          "id": "54-54-card",
+          "verseNumber": 54,
+          "arabicPhrase": "إِنَّ ٱلْمُتَّقِينَ فِى جَنَّـٰتٍ وَنَهَرٍ",
+          "englishPhrase": "Of course, the God-fearing will be in gardens and rivers,",
+          "vocabulary": [
+            {
+              "word": "إِنَّ",
+              "root": "ا - ن - ن",
+              "meaning": "Indeed",
+              "grammarNote": "Transliteration: inna"
+            },
+            {
+              "word": "ٱلْمُتَّقِينَ",
+              "root": "م - ت - ق",
+              "meaning": "the righteous",
+              "grammarNote": "Transliteration: l-mutaqīna"
+            },
+            {
+              "word": "فِى",
+              "root": "ف - ي",
+              "meaning": "(will be) in",
+              "grammarNote": "Transliteration: fī"
+            },
+            {
+              "word": "جَنَّـٰتٍۢ",
+              "root": "ج - ن - ت",
+              "meaning": "gardens",
+              "grammarNote": "Transliteration: jannātin"
+            },
+            {
+              "word": "وَنَهَرٍۢ",
+              "root": "ن - ه - ر",
+              "meaning": "and river",
+              "grammarNote": "Transliteration: wanaharin"
+            }
+          ]
+        },
+        {
+          "id": "54-55-card",
+          "verseNumber": 55,
+          "arabicPhrase": "فِى مَقْعَدِ صِدْقٍ عِندَ مَلِيكٍ مُّقْتَدِرٍۭ",
+          "englishPhrase": "in a seat of Truth, near to the Omnipotent Sovereign.",
+          "vocabulary": [
+            {
+              "word": "فِى",
+              "root": "ف - ي",
+              "meaning": "In",
+              "grammarNote": "Transliteration: fī"
+            },
+            {
+              "word": "مَقْعَدِ",
+              "root": "ق - ع - د",
+              "meaning": "a seat",
+              "grammarNote": "Transliteration: maqʿadi"
+            },
+            {
+              "word": "صِدْقٍ",
+              "root": "ص - د - ق",
+              "meaning": "(of) honor",
+              "grammarNote": "Transliteration: ṣid'qin"
+            },
+            {
+              "word": "عِندَ",
+              "root": "ع - ن - د",
+              "meaning": "near",
+              "grammarNote": "Transliteration: ʿinda"
+            },
+            {
+              "word": "مَلِيكٍۢ",
+              "root": "م - ل - ي",
+              "meaning": "a King",
+              "grammarNote": "Transliteration: malīkin"
+            },
+            {
+              "word": "مُّقْتَدِرٍۭ",
+              "root": "ق - ت - د",
+              "meaning": "Most Powerful",
+              "grammarNote": "Transliteration: muq'tadirin"
+            }
+          ]
+        }
+      ],
+      "commentary": "إِنَّا كُلَّ شَيْءٍ خَلَقْنَاهُ بِقَدَرٍ‌ (Verily, We have created everything according to [ Our ] predestination...54:49). In the prepositional phrase bi-qadar, the word qadar literally denotes to 'measure' and to create something with a proper measure and proportion. It is possible for this literal sense of the word to apply in the current verse: Allah is the Supreme Sage Who created every species of the existent entity wisely with proper measurement - whether big or small, and in different shapes and sizes. Having created, He maintains the structure of every individual in a very wise measurement: The fingers and toes are not equal in size; the lengths are different; the length and breadth of hands and legs are wisely structured; and their bones, muscles and skins are created flexible to stretch and contract. When we analyze every single part of every single limb and organ of [ human ] body, we discern the wondrous vistas of Divine wisdom opening up.\n\nAs a theological term, qadar is used in the sense of taqdir [ Divine predetermination, predestination, preordainment, preordering or decree ]. Most authorities on Tafsir, on account of some versions of hadith, take the word qadar here in this sense. It is recorded in Musnad of Ahmad, Sahib Muslim and Tirmidhi on the authority of Sayyidna Abu Hurairah ؓ that once the pagans of Quraish came to the Holy Prophet ﷺ debating and arguing with him on the question of taqdir (Predestination). On that occasion this verse was revealed. In the light of this tradition, the verse purports to say that Allah has predetermined the total sum of everything. He created everything with predestined limits before they were created. He knew everything that will occur before it occurred, and recorded everything [ time and place, growth and decline ] that will occur, before they occurred. Everything that occurs in this world; occurs according to the Divine Plan worked out in Pre-Eternity or Eternity-without-Beginning.\n\nThe question of taqdir, according to Ahl-us-sunnah wal jama` ah, is one of the affirmed and standard articles of faith in Islam. Anyone who denies it outright is an atheist or goes out of the pale Islam, and the sects that deny it by convoluted or twisted interpretation are fasiq in [ sinners or transgressors ]. Imam Ahmad, Abu Dawud and Tabarani record a Tradition on the authority of Sayyidna ` Abdullah Ibn ` Umar ؓ that the Holy Messenger ﷺ said: \"Some members of every community are Magians, and the Magians of my Ummah are those who deny taqdir. If they fall ill, do not visit them; and if they die, do not attend their funerals.\" (Ruh al-Ma’ ani) Allah, the Pure and Exalted, knows best!\n\nAl-hamdulillah\n\nThe Commentary on\n\nSurah Al-Qamar\n\nEnds here",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Juristic Rulings & Shariah Injunctions (vv. 49–55)",
+          "content": "The question of taqdir, according to Ahl-us-sunnah wal jama` ah, is one of the affirmed and standard articles of faith in Islam. Anyone who denies it outright is an atheist or goes out of the pale Islam, and the sects that deny it by convoluted or twisted interpretation are fasiq in [ sinners or transgressors ]. Imam Ahmad, Abu Dawud and Tabarani record a Tradition on the authority of Sayyidna ` Abdullah Ibn ` Umar ؓ that the Holy Messenger ﷺ said: \"Some members of every community are Magians, and the Magians of my Ummah are those who deny taqdir. If they fall ill, do not visit them; and if they die, do not attend their funerals.\" (Ruh al-Ma’ ani) Allah, the Pure and Exalted, knows best!"
+        },
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "As a theological term, qadar is used in the sense of taqdir [ Divine predetermination, predestination, preordainment, preordering or decree ]. Most authorities on Tafsir, on account of some versions of hadith, take the word qadar here in this sense. It is recorded in Musnad of Ahmad, Sahib Muslim and Tirmidhi on the authority of Sayyidna Abu Hurairah ؓ that once the pagans of Quraish came to the Holy Prophet ﷺ debating and arguing with him on the question of taqdir (Predestination). On that occasion this verse was revealed. In the light of this tradition, the verse purports to say that Allah has predetermined the total sum of everything. He created everything with predestined limits before they were created. He knew everything that will occur before it occurred, and recorded everything [ time and place, growth and decline ] that will occur, before they occurred. Everything that occurs..."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "إِنَّا كُلَّ شَيْءٍ خَلَقْنَاهُ بِقَدَرٍ‌ (Verily, We have created everything according to [ Our ] predestination...54:49). In the prepositional phrase bi-qadar, the word qadar literally denotes to 'measure' and to create something with a proper measure and proportion. It is possible for this literal sense of the word to apply in the current verse: Allah is the Supreme Sage Who created every species of the existent entity wisely with proper measurement - whether big or small, and in different shapes and sizes. Having created, He maintains the structure of every individual in a very wise measurement: The fingers and toes are not equal in size; the lengths are different; the length and breadth of hands and legs are wisely structured; and their bones, muscles and skins are created flexible to stretch and contract. When we analyze every single part of every single limb and organ of [ human..."
+        }
+      ],
+      "curatedTerms": []
+    }
+  ]
+}

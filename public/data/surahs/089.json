@@ -1,0 +1,1274 @@
+{
+  "number": 89,
+  "nameArabic": "الفجر",
+  "nameTransliterated": "Al-Fajr",
+  "nameEnglish": "The Dawn",
+  "versesCount": 30,
+  "revelationType": "Makki",
+  "volumeNumber": 8,
+  "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5798/mode/2up",
+  "juz": [
+    30
+  ],
+  "bismillahPre": true,
+  "introductoryTafseer": "This Surah, by swearing five oaths in its beginning, emphasises the following fact:",
+  "historicalContext": {
+    "background": "This means that Allah is watching over whatever you do, and reward or punishment for your deeds is certain and inevitable.",
+    "scholarlyReference": "Ma'ariful Qur'an by Mufti Muhammad Shafi, Volume 8 (Archive.org Leaf n5798)"
+  },
+  "sections": [
+    {
+      "id": "89-1-6",
+      "surahNumber": 89,
+      "verseRange": [
+        1,
+        6
+      ],
+      "title": "────────────────────────────────────────",
+      "juzNumber": 30,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5799/mode/2up",
+      "arabicText": "وَٱلْفَجْرِ ۝١ وَلَيَالٍ عَشْرٍ ۝٢ وَٱلشَّفْعِ وَٱلْوَتْرِ ۝٣ وَٱلَّيْلِ إِذَا يَسْرِ ۝٤ هَلْ فِى ذَٰلِكَ قَسَمٌ لِّذِى حِجْرٍ ۝٥ أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِعَادٍ ۝٦",
+      "translation": "I swear by the dawn, ۝ and by Ten Nights, ۝ and by the even and the odd, ۝ and by the night when it moves away, ۝ -Is there (not) in such an oath (enough assurance) for a man of sense?- ۝ Have you not seen how your Lord dealt with (the people) of ‘Ād ۝",
+      "phraseCards": [
+        {
+          "id": "89-1-card",
+          "verseNumber": 1,
+          "arabicPhrase": "وَٱلْفَجْرِ",
+          "englishPhrase": "I swear by the dawn,",
+          "vocabulary": [
+            {
+              "word": "وَٱلْفَجْرِ",
+              "root": "ف - ج - ر",
+              "meaning": "By the dawn",
+              "grammarNote": "Transliteration: wal-fajri"
+            }
+          ]
+        },
+        {
+          "id": "89-2-card",
+          "verseNumber": 2,
+          "arabicPhrase": "وَلَيَالٍ عَشْرٍ",
+          "englishPhrase": "and by Ten Nights,",
+          "vocabulary": [
+            {
+              "word": "وَلَيَالٍ",
+              "root": "ل - ي - ل",
+              "meaning": "And the nights",
+              "grammarNote": "Transliteration: walayālin"
+            },
+            {
+              "word": "عَشْرٍۢ",
+              "root": "ع - ش - ر",
+              "meaning": "ten",
+              "grammarNote": "Transliteration: ʿashrin"
+            }
+          ]
+        },
+        {
+          "id": "89-3-card",
+          "verseNumber": 3,
+          "arabicPhrase": "وَٱلشَّفْعِ وَٱلْوَتْرِ",
+          "englishPhrase": "and by the even and the odd,",
+          "vocabulary": [
+            {
+              "word": "وَٱلشَّفْعِ",
+              "root": "ش - ف - ع",
+              "meaning": "And the even",
+              "grammarNote": "Transliteration: wal-shafʿi"
+            },
+            {
+              "word": "وَٱلْوَتْرِ",
+              "root": "و - ت - ر",
+              "meaning": "and the odd",
+              "grammarNote": "Transliteration: wal-watri"
+            }
+          ]
+        },
+        {
+          "id": "89-4-card",
+          "verseNumber": 4,
+          "arabicPhrase": "وَٱلَّيْلِ إِذَا يَسْرِ",
+          "englishPhrase": "and by the night when it moves away,",
+          "vocabulary": [
+            {
+              "word": "وَٱلَّيْلِ",
+              "root": "ل - ي - ل",
+              "meaning": "And the night",
+              "grammarNote": "Transliteration: wa-al-layli"
+            },
+            {
+              "word": "إِذَا",
+              "root": "ا - ذ - ا",
+              "meaning": "when",
+              "grammarNote": "Transliteration: idhā"
+            },
+            {
+              "word": "يَسْرِ",
+              "root": "ي - س - ر",
+              "meaning": "it passes",
+              "grammarNote": "Transliteration: yasri"
+            }
+          ]
+        },
+        {
+          "id": "89-5-card",
+          "verseNumber": 5,
+          "arabicPhrase": "هَلْ فِى ذَٰلِكَ قَسَمٌ لِّذِى حِجْرٍ",
+          "englishPhrase": "-Is there (not) in such an oath (enough assurance) for a man of sense?-",
+          "vocabulary": [
+            {
+              "word": "هَلْ",
+              "root": "ه - ل",
+              "meaning": "Is",
+              "grammarNote": "Transliteration: hal"
+            },
+            {
+              "word": "فِى",
+              "root": "ف - ي",
+              "meaning": "in",
+              "grammarNote": "Transliteration: fī"
+            },
+            {
+              "word": "ذَٰلِكَ",
+              "root": "ذ - ل - ك",
+              "meaning": "that",
+              "grammarNote": "Transliteration: dhālika"
+            },
+            {
+              "word": "قَسَمٌۭ",
+              "root": "ق - س - م",
+              "meaning": "(not) an oath",
+              "grammarNote": "Transliteration: qasamun"
+            },
+            {
+              "word": "لِّذِى",
+              "root": "ل - ذ - ي",
+              "meaning": "for those",
+              "grammarNote": "Transliteration: lidhī"
+            },
+            {
+              "word": "حِجْرٍ",
+              "root": "ح - ج - ر",
+              "meaning": "who understand",
+              "grammarNote": "Transliteration: ḥij'rin"
+            }
+          ]
+        },
+        {
+          "id": "89-6-card",
+          "verseNumber": 6,
+          "arabicPhrase": "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِعَادٍ",
+          "englishPhrase": "Have you not seen how your Lord dealt with (the people) of ‘Ād",
+          "vocabulary": [
+            {
+              "word": "أَلَمْ",
+              "root": "ا - ل - م",
+              "meaning": "Did not",
+              "grammarNote": "Transliteration: alam"
+            },
+            {
+              "word": "تَرَ",
+              "root": "ت - ر",
+              "meaning": "you see",
+              "grammarNote": "Transliteration: tara"
+            },
+            {
+              "word": "كَيْفَ",
+              "root": "ك - ي - ف",
+              "meaning": "how",
+              "grammarNote": "Transliteration: kayfa"
+            },
+            {
+              "word": "فَعَلَ",
+              "root": "ف - ع - ل",
+              "meaning": "dealt",
+              "grammarNote": "Transliteration: faʿala"
+            },
+            {
+              "word": "رَبُّكَ",
+              "root": "ر - ب - ب",
+              "meaning": "your Lord",
+              "grammarNote": "Transliteration: rabbuka"
+            },
+            {
+              "word": "بِعَادٍ",
+              "root": "ع - ا - د",
+              "meaning": "with Aad",
+              "grammarNote": "Transliteration: biʿādin"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verse 1]\n\nCommentary\n\nThis Surah, by swearing five oaths in its beginning, emphasises the following fact:\n\nإِنَّ رَبَّكَ لَبِالْمِرْصَادِ\n\nSurely your Lord is ever on the watch. [ 89:14]\n\nThis means that Allah is watching over whatever you do, and reward or punishment for your deeds is certain and inevitable.\n\nThe first among the five oaths sworn at the beginning is Fajr (dawn). It may refer to the dawn of every day that brings about a great change in the world, and thus directs man's attention to the absolute Omnipotence of Allah. It is also possible that it refers to the dawn of some specific day. Commentators like Sayyidna Ibn ` Abbas and Ibn Zubair ؓ say that the word is general, and it refers to any dawn. According to another narration of Ibn ` Abbas ؓ ، it refers to the dawn of the first of Muharram which is the start of the lunar-Islamic calendar. Sayyidna Qatadah رحمۃ علیہ ، among others, has interpreted it in the same way.\n\nSome commentators, like Mujahid and ` Ikramah, refer this to the dawn of 'the Day of Sacrifice' on the tenth of Dhul Hijjah. A narration from Sayyidna Ibn ` Abbas ؓ concurs with this view. The reason for this specification is that according to Islamic principles, Allah has made a night to precede the day. All days are preceded by their respective nights, except the 'the Day of Sacrifice', because the night that precedes the Day of Sacrifice is not the night of Sacrifice. In fact, the preceding night, according to Shari'ah, is the night of ` Arafah. Staying at ` Arafat is the most important and foremost rite of Hajj. If a pilgrim is not able to reach ` Arafat on the 9th of Dhul Hijjah, any time in the day or in the night following it to halt there for a while, he will not be considered to have performed Hajj at all. However if he arrives there any time during the night before the break of dawn on the 10th of Dhul Hijjah, his halt in ` Arafah will be acceptable and his Hajj will be considered valid. This shows that the day of ` Arafah has two nights, one preceding it, and another following it. The Day of Sacrifice [ 10th of Dhul Hijjah ] has no night. From this point of view, the dawn of the day of Sacrifice, among all the days of the year, occupies a special position. [ Qurtubi ].\n\n────────────────────────────────────────\n\n[Verse 2]\n\nNext, it says:\n\nلَيَالٍ عَشْرٍ (and by the Ten Nights...89:2) According Sayyidna Ibn ` Abbas ؓ Qatadah, Mujahid, Suddi, Dahhak, Kalbi and other leading commentators, the 'ten nights' refers to the [ first ] ten nights of Dhul Hijjah. It is recorded in Hadith that the Holy Prophet ﷺ said that the first ten days of Dhil Hijjah are the most meritorious days for Allah's worship. Every fast of the day is equivalent to fasts of the whole year. Worshipping Allah every night during this period is equivalent to worshipping Him on the night of Qadr. [ Transmitted by Tirmidhi and Ibn Majah with a weak chain of authorities from Abu Hurairah Mazhari ]. Abu-z-Zubair narrated from Sayyidna Jabir ؓ that the Holy Prophet ﷺ said: وَالْفَجْرِ وَلَيَالٍ عَشْرٍ (I swear by the dawn and by the Ten Nights' refers to the first ten days of Dhul Hijjah. Sayyidna Ibn ` Abbas ؓ said that these are the ten nights that are mentioned in the story of Prophet Musa علیہ السلام ; وَ اَتمَمنٰھَا بِعَشرٍ... then We supplemented them with ten' [ 7:142]. Thus these are the ten nights in the whole year which are most meritorious. Imam Qurtubi says that the Hadith reported by Sayyidna Jabir ؓ indicates that the ten nights of Dhul Hijjah are most meritorious, and that the same ten nights of Dhul Hijjah were designated for Prophet Musa (علیہ السلام) .\n\n────────────────────────────────────────\n\n[Verses 3–6]\n\nوَالشَّفْعِ وَالْوَتْرِ (and by the even and the odd,...89:3). The Qur'an has not\n\nspecified what the words 'the even' and 'the odd' refer to. Therefore, the commentators have assigned different interpretations to them. Nevertheless, it has been mentioned in a Prophetic Hadith narrated by Abu-z-Zubair from Sayyidna Jabir ؓ thus:\n\n(وَالْفَجْرِ ۔ وَلَيَالٍ عَشْرٍ ) ھو الصّبح وعشر النحر والوتر یوم عرفہ والشفع یوم النّحر\n\n'Fajr' refers to the dawn, and 'the ten nights' refer to the first ten nights of Dhul Hijjah [ which include the Day of Sacrifice ], and that al-watr [ the odd ] refers to the day of ` Arafah [ because it falls on the ninth ] and ash-shaf refers to the Day of Sacrifice [ because it falls on the 10th day of Dhul Hijjah ].'\n\nQurtubi cites this narration and confirms that its chain of authorities is more authentic than the other tradition narrated by Sayyidna ` Imran Ibn Husain ؓ which talks about odd [ three ] and even [ two/four ] units of prayers. Therefore, Sayyidna Ibn ` Abbas ؓ Ikramah and Nahhas رحمۃ علیہما have preferred the view that 'even' refers to the Day of Sacrifice and 'odd' refers to the day of ` Arafah.\n\nSome commentators like Ibn Sirin, Masruq, Abu Salih and Qatadah رحمۃ علیہم said that 'even' refers to the entire creation, because Allah has created them in pairs, and thus He says:\n\nوَمِن كُلِّ شَيْءٍ خَلَقْنَا زَوْجَيْنِ\n\n'And from everything We have created (a pair of) two kinds [ 51:49] '\n\n-belief/disbelief, happiness/unhappiness, light/darkness, night/day, cold/ heat, sky/earth, human/Jinn and male/female as against all of these pairs, Allah is the only One Being 'odd' that does not have a pair:\n\nھو اللہ الاحد الصَّمَد\n\n'He, is Allah, the One, Besought of all, needing none'\n\nوَاللَّيْلِ إِذَا يَسْرِ (and by the night when it moves away...89:4). The word yasr is derived from sara and means 'to walk in the night' or 'travel by night'. The verse says when the night itself moves away. It signifies 'when the night departs and goes away.' After taking oath by these five items, the next verse says:\n\nهَلْ فِي ذَٰلِكَ قَسَمٌ لِّذِي حِجْرٍ (Is there [ not ] in that an oath (enough) for a man of sense?...89:5). An intelligent person is, in a very special style, invited to think and reflect. The word hijr literally denotes 'to prevent'. The intellect has been called hijr because it prevents the person from doing which is unbecoming of him - actions or statements. Are these oaths not sufficient for a man possessed of intellect, sound reasoning, understanding and religious discernment? This sentence is in the form of interrogation to awaken man from his slumber. The subject of oaths is implied, though not stated explicitly. The verse purports to say that when man considers into the Majesty of Allah and reflects on the greatness of objects of oaths, it would be confirmed and verified that everyone has to give account of his deeds, and reward and punishment in the Hereafter is sure. In this connection, reference is made to the destruction of three previous nations: [ 1] the nation of ` Ad; [ 2] the nation of Thamud; and [ 3] the nation of Fir'aun (the Pharaoh). ` Ad and Thamud are two nations whose genealogy link up with Iram. Thus Iram may refer to both, ` Ad as well as Thamud. Here however with ` Ad only the name Iram is linked for genealogical reasons:\n\nأَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِعَادٍ ۔ إِرَمَ ذَاتِ الْعِمَادِ (Have you not seen how your Lord dealt with [ the people ] ` Ad of Iram, the men of tall pillars...(89:6-7). The word 'Iram' in verse [ 7] is, grammatically speaking, either ` atf bayan (syndetic explicative) or badal (complement). The purpose of the construction is to specify one of the two tribes of ` Ad. This statement specifies that it refers to ` Ad-ul-'ula (the early generation of ` Ad). A remnant from the former generation is referred to as ` Ad-ul-'Ukhra, because they are linked with their great-grand father Iram more closely than ` Ad-ul-'Ukhra. Here the Qur'an refers to the first tribe as ` Ad Iram. In Surah An-Najm, they are described as: عَادًا الْأُولَىٰ (the earlier ` Ad,) [ 53:50] '",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Juristic Rulings & Shariah Injunctions (vv. 1–6)",
+          "content": "Some commentators, like Mujahid and ` Ikramah, refer this to the dawn of 'the Day of Sacrifice' on the tenth of Dhul Hijjah. A narration from Sayyidna Ibn ` Abbas ؓ concurs with this view. The reason for this specification is that according to Islamic principles, Allah has made a night to precede the day. All days are preceded by their respective nights, except the 'the Day of Sacrifice', because the night that precedes the Day of Sacrifice is not the night of Sacrifice. In fact, the preceding night, according to Shari'ah, is the night of ` Arafah. Staying at ` Arafat is the most important and foremost rite of Hajj. If a pilgrim is not able to reach ` Arafat on the 9th of Dhul Hijjah, any time in the day or in the night following it to halt there for a while, he will not be considered to have performed Hajj at all. However if he arrives there any time during the night before the break..."
+        },
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "The first among the five oaths sworn at the beginning is Fajr (dawn). It may refer to the dawn of every day that brings about a great change in the world, and thus directs man's attention to the absolute Omnipotence of Allah. It is also possible that it refers to the dawn of some specific day. Commentators like Sayyidna Ibn ` Abbas and Ibn Zubair ؓ say that the word is general, and it refers to any dawn. According to another narration of Ibn ` Abbas ؓ ، it refers to the dawn of the first of Muharram which is the start of the lunar-Islamic calendar. Sayyidna Qatadah رحمۃ علیہ ، among others, has interpreted it in the same way."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "This means that Allah is watching over whatever you do, and reward or punishment for your deeds is certain and inevitable."
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "89-7-13",
+      "surahNumber": 89,
+      "verseRange": [
+        7,
+        13
+      ],
+      "title": "They are introduced here by the epithet: (the men of tall pillars)",
+      "juzNumber": 30,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5799/mode/2up",
+      "arabicText": "إِرَمَ ذَاتِ ٱلْعِمَادِ ۝٧ ٱلَّتِى لَمْ يُخْلَقْ مِثْلُهَا فِى ٱلْبِلَـٰدِ ۝٨ وَثَمُودَ ٱلَّذِينَ جَابُوا۟ ٱلصَّخْرَ بِٱلْوَادِ ۝٩ وَفِرْعَوْنَ ذِى ٱلْأَوْتَادِ ۝١٠ ٱلَّذِينَ طَغَوْا۟ فِى ٱلْبِلَـٰدِ ۝١١ فَأَكْثَرُوا۟ فِيهَا ٱلْفَسَادَ ۝١٢ فَصَبَّ عَلَيْهِمْ رَبُّكَ سَوْطَ عَذَابٍ ۝١٣",
+      "translation": "of Iram , the men of tall pillars, ۝ the like of whom were never created in the lands, ۝ and (how He dealt) with (the people of) Thamūd who had carved out the rocks in the Valley (of Qurā), ۝ and with Fir‘aun (Pharaoh), the man of the stakes, ۝ - those who had rebelled in the cities, ۝ and spread a lot of mischief therein. ۝ So, your Lord let loose on them the whip of torment. ۝",
+      "phraseCards": [
+        {
+          "id": "89-7-card",
+          "verseNumber": 7,
+          "arabicPhrase": "إِرَمَ ذَاتِ ٱلْعِمَادِ",
+          "englishPhrase": "of Iram , the men of tall pillars,",
+          "vocabulary": [
+            {
+              "word": "إِرَمَ",
+              "root": "ا - ر - م",
+              "meaning": "Iram",
+              "grammarNote": "Transliteration: irama"
+            },
+            {
+              "word": "ذَاتِ",
+              "root": "ذ - ا - ت",
+              "meaning": "possessors (of)",
+              "grammarNote": "Transliteration: dhāti"
+            },
+            {
+              "word": "ٱلْعِمَادِ",
+              "root": "ع - م - د",
+              "meaning": "lofty pillars",
+              "grammarNote": "Transliteration: l-ʿimādi"
+            }
+          ]
+        },
+        {
+          "id": "89-8-card",
+          "verseNumber": 8,
+          "arabicPhrase": "ٱلَّتِى لَمْ يُخْلَقْ مِثْلُهَا فِى ٱلْبِلَـٰدِ",
+          "englishPhrase": "the like of whom were never created in the lands,",
+          "vocabulary": [
+            {
+              "word": "ٱلَّتِى",
+              "root": "ا - ل - ت",
+              "meaning": "Which",
+              "grammarNote": "Transliteration: allatī"
+            },
+            {
+              "word": "لَمْ",
+              "root": "ل - م",
+              "meaning": "not",
+              "grammarNote": "Transliteration: lam"
+            },
+            {
+              "word": "يُخْلَقْ",
+              "root": "خ - ل - ق",
+              "meaning": "had been created",
+              "grammarNote": "Transliteration: yukh'laq"
+            },
+            {
+              "word": "مِثْلُهَا",
+              "root": "م - ث - ل",
+              "meaning": "like them",
+              "grammarNote": "Transliteration: mith'luhā"
+            },
+            {
+              "word": "فِى",
+              "root": "ف - ي",
+              "meaning": "in",
+              "grammarNote": "Transliteration: fī"
+            },
+            {
+              "word": "ٱلْبِلَـٰدِ",
+              "root": "ب - ل - د",
+              "meaning": "the cities",
+              "grammarNote": "Transliteration: l-bilādi"
+            }
+          ]
+        },
+        {
+          "id": "89-9-card",
+          "verseNumber": 9,
+          "arabicPhrase": "وَثَمُودَ ٱلَّذِينَ جَابُوا۟ ٱلصَّخْرَ بِٱلْوَادِ",
+          "englishPhrase": "and (how He dealt) with (the people of) Thamūd who had carved out the rocks in the Valley (of Qurā),",
+          "vocabulary": [
+            {
+              "word": "وَثَمُودَ",
+              "root": "ث - م - و",
+              "meaning": "And Thamud",
+              "grammarNote": "Transliteration: wathamūda"
+            },
+            {
+              "word": "ٱلَّذِينَ",
+              "root": "ل - ذ - ي",
+              "meaning": "who",
+              "grammarNote": "Transliteration: alladhīna"
+            },
+            {
+              "word": "جَابُوا۟",
+              "root": "ج - ا - ب",
+              "meaning": "carved out",
+              "grammarNote": "Transliteration: jābū"
+            },
+            {
+              "word": "ٱلصَّخْرَ",
+              "root": "ص - خ - ر",
+              "meaning": "the rocks",
+              "grammarNote": "Transliteration: l-ṣakhra"
+            },
+            {
+              "word": "بِٱلْوَادِ",
+              "root": "و - ا - د",
+              "meaning": "in the valley",
+              "grammarNote": "Transliteration: bil-wādi"
+            }
+          ]
+        },
+        {
+          "id": "89-10-card",
+          "verseNumber": 10,
+          "arabicPhrase": "وَفِرْعَوْنَ ذِى ٱلْأَوْتَادِ",
+          "englishPhrase": "and with Fir‘aun (Pharaoh), the man of the stakes,",
+          "vocabulary": [
+            {
+              "word": "وَفِرْعَوْنَ",
+              "root": "ف - ر - ع",
+              "meaning": "And Firaun",
+              "grammarNote": "Transliteration: wafir'ʿawna"
+            },
+            {
+              "word": "ذِى",
+              "root": "ذ - ي",
+              "meaning": "owner of",
+              "grammarNote": "Transliteration: dhī"
+            },
+            {
+              "word": "ٱلْأَوْتَادِ",
+              "root": "و - ت - ا",
+              "meaning": "stakes",
+              "grammarNote": "Transliteration: l-awtādi"
+            }
+          ]
+        },
+        {
+          "id": "89-11-card",
+          "verseNumber": 11,
+          "arabicPhrase": "ٱلَّذِينَ طَغَوْا۟ فِى ٱلْبِلَـٰدِ",
+          "englishPhrase": "- those who had rebelled in the cities,",
+          "vocabulary": [
+            {
+              "word": "ٱلَّذِينَ",
+              "root": "ل - ذ - ي",
+              "meaning": "Who",
+              "grammarNote": "Transliteration: alladhīna"
+            },
+            {
+              "word": "طَغَوْا۟",
+              "root": "ط - غ - و",
+              "meaning": "transgressed",
+              "grammarNote": "Transliteration: ṭaghaw"
+            },
+            {
+              "word": "فِى",
+              "root": "ف - ي",
+              "meaning": "in",
+              "grammarNote": "Transliteration: fī"
+            },
+            {
+              "word": "ٱلْبِلَـٰدِ",
+              "root": "ب - ل - د",
+              "meaning": "the lands",
+              "grammarNote": "Transliteration: l-bilādi"
+            }
+          ]
+        },
+        {
+          "id": "89-12-card",
+          "verseNumber": 12,
+          "arabicPhrase": "فَأَكْثَرُوا۟ فِيهَا ٱلْفَسَادَ",
+          "englishPhrase": "and spread a lot of mischief therein.",
+          "vocabulary": [
+            {
+              "word": "فَأَكْثَرُوا۟",
+              "root": "ك - ث - ر",
+              "meaning": "And (made) much",
+              "grammarNote": "Transliteration: fa-aktharū"
+            },
+            {
+              "word": "فِيهَا",
+              "root": "ي - ه - ا",
+              "meaning": "therein",
+              "grammarNote": "Transliteration: fīhā"
+            },
+            {
+              "word": "ٱلْفَسَادَ",
+              "root": "ف - س - د",
+              "meaning": "corruption",
+              "grammarNote": "Transliteration: l-fasāda"
+            }
+          ]
+        },
+        {
+          "id": "89-13-card",
+          "verseNumber": 13,
+          "arabicPhrase": "فَصَبَّ عَلَيْهِمْ رَبُّكَ سَوْطَ عَذَابٍ",
+          "englishPhrase": "So, your Lord let loose on them the whip of torment.",
+          "vocabulary": [
+            {
+              "word": "فَصَبَّ",
+              "root": "ف - ص - ب",
+              "meaning": "So poured",
+              "grammarNote": "Transliteration: faṣabba"
+            },
+            {
+              "word": "عَلَيْهِمْ",
+              "root": "ع - ل - ي",
+              "meaning": "on them",
+              "grammarNote": "Transliteration: ʿalayhim"
+            },
+            {
+              "word": "رَبُّكَ",
+              "root": "ر - ب - ب",
+              "meaning": "your Lord",
+              "grammarNote": "Transliteration: rabbuka"
+            },
+            {
+              "word": "سَوْطَ",
+              "root": "س - و - ط",
+              "meaning": "scourge",
+              "grammarNote": "Transliteration: sawṭa"
+            },
+            {
+              "word": "عَذَابٍ",
+              "root": "ع - ذ - ب",
+              "meaning": "(of) punishment",
+              "grammarNote": "Transliteration: ʿadhābin"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verses 7–9]\n\nThey are introduced here by the epithet: ذَاتِ الْعِمَادِ (the men of tall pillars)\n\nThe word ` imad' and 'amud' means 'pillar'. The people of ` Ad are mentioned as the men of tall pillars because they were very tall in stature. They were a stronger and more powerful people than any other nations. The Qur'an describes them explicitly, thus:\n\nلَمْ يُخْلَقْ مِثْلُهَا فِي الْبِلَادِ (the like of whom were never created in the lands...89:8) The Qur'an made it clear that this nation was the tallest and the strongest in their physical stature, but the Qur'an did not state the exact measurement of the people because it was unnecessary [ for Qur'anic purposes ]. Therefore, that detail has been left out. Israelite traditions, however, narrate such incredible reports about their stature, height and power that are difficult to believe. It is reported from Sayyidna Ibn ` Abbas ؓ and Muqatil that they were six yards or eighteen feet [ 5.46] tall. This too seems to be derived from Israelite reports. And Allah knows best!\n\nSome commentators say that 'Iram' is the name of the 'paradise' which ` Ad's son Shaddad had built. The epithet 'possessor of tall pillars' [ translated above as 'men of tall pillars'] is used for him. The [ so-called paradise ] was a lofty structure standing on tall pillars built with gold and silver and studded with jewels, gems and other precious stones, so that people may prefer an instant and ready at hand paradise instead of Paradise of the Hereafter. When this magnificent palace was ready for use, and Shaddad, together with the leaders of his kingdom, wanted to enter, Divine punishment overtook them. They, together with the palaces, were completely destroyed. [ Qurtubi ]. In this interpretation, the verse refers to a specific punishment which descended upon the paradise built by ` Ad's son Shaddad. In the first interpretation, which the majority of the commentators prefer, it refers to all the punishments that descended upon the nation of ` Ad.\n\n────────────────────────────────────────\n\n[Verses 10–12]\n\nوَفِرْعَوْنَ ذِي الْأَوْتَادِ (and with Fir'aun [ the Pharaoh ], the man of the stakes...89:10). The word autad is the plural of watad that means 'peg or stake or nail'. Fir'aun (the Pharaoh) is referred to as 'the man of the stakes'. There are several reasons for this. Majority of the commentators hold the view that he was so called because of the brute torture and cruel torment he inflicted on the people. When he was angry with people, he would hammer stakes into the ground and tie them to these, so that they could be tortured; or he would hammer stakes into their hands and feet, as they lay on the ground in the scorching heat of the sun, and leave them to the mercy of snakes and scorpions. Other commentators have recounted a lengthy story about his wife 'Asiyah. She embraced 'Iman (the True Faith) and expressed it to Fir'aun (the Pharaoh). This angered him and he inflicted on her the same type of brute torture and destroyed her. [ Mazhari ].\n\n────────────────────────────────────────\n\n[Verse 13]\n\nفَصَبَّ عَلَيْهِمْ رَبُّكَ سَوْطَ عَذَابٍ (So, your Lord unloosed on them the whip of torment....89:13). The punishment inflicted upon them as a result of their mischief is referred to here as a 'whip of torment'. It signifies that just as lashes are inflicted across different parts of the body, the torment these nations received was similar to it in that they suffered different kinds of punishment.",
+      "subsections": [
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "لَمْ يُخْلَقْ مِثْلُهَا فِي الْبِلَادِ (the like of whom were never created in the lands...89:8) The Qur'an made it clear that this nation was the tallest and the strongest in their physical stature, but the Qur'an did not state the exact measurement of the people because it was unnecessary [ for Qur'anic purposes ]. Therefore, that detail has been left out. Israelite traditions, however, narrate such incredible reports about their stature, height and power that are difficult to believe. It is reported from Sayyidna Ibn ` Abbas ؓ and Muqatil that they were six yards or eighteen feet [ 5.46] tall. This too seems to be derived from Israelite reports. And Allah knows best!"
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "The word ` imad' and 'amud' means 'pillar'. The people of ` Ad are mentioned as the men of tall pillars because they were very tall in stature. They were a stronger and more powerful people than any other nations. The Qur'an describes them explicitly, thus:"
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "89-14-18",
+      "surahNumber": 89,
+      "verseRange": [
+        14,
+        18
+      ],
+      "title": "────────────────────────────────────────",
+      "juzNumber": 30,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5799/mode/2up",
+      "arabicText": "إِنَّ رَبَّكَ لَبِٱلْمِرْصَادِ ۝١٤ فَأَمَّا ٱلْإِنسَـٰنُ إِذَا مَا ٱبْتَلَىٰهُ رَبُّهُۥ فَأَكْرَمَهُۥ وَنَعَّمَهُۥ فَيَقُولُ رَبِّىٓ أَكْرَمَنِ ۝١٥ وَأَمَّآ إِذَا مَا ٱبْتَلَىٰهُ فَقَدَرَ عَلَيْهِ رِزْقَهُۥ فَيَقُولُ رَبِّىٓ أَهَـٰنَنِ ۝١٦ كَلَّا ۖ بَل لَّا تُكْرِمُونَ ٱلْيَتِيمَ ۝١٧ وَلَا تَحَـٰٓضُّونَ عَلَىٰ طَعَامِ ٱلْمِسْكِينِ ۝١٨",
+      "translation": "Surely your Lord is ever on the watch. ۝ As for man, when his Lord tests him, and thus gives him honour and bounties, he says, “My Lord has honoured me.” ۝ But when he tests him, and thus straitens his provision for him, he says, “My Lord has disgraced me.” ۝ No! But you do not honour the orphan, ۝ and do not encourage one another to feed the needy. ۝",
+      "phraseCards": [
+        {
+          "id": "89-14-card",
+          "verseNumber": 14,
+          "arabicPhrase": "إِنَّ رَبَّكَ لَبِٱلْمِرْصَادِ",
+          "englishPhrase": "Surely your Lord is ever on the watch.",
+          "vocabulary": [
+            {
+              "word": "إِنَّ",
+              "root": "ا - ن - ن",
+              "meaning": "Indeed",
+              "grammarNote": "Transliteration: inna"
+            },
+            {
+              "word": "رَبَّكَ",
+              "root": "ر - ب - ب",
+              "meaning": "your Lord",
+              "grammarNote": "Transliteration: rabbaka"
+            },
+            {
+              "word": "لَبِٱلْمِرْصَادِ",
+              "root": "ب - ل - م",
+              "meaning": "(is) surely Ever Watchful",
+              "grammarNote": "Transliteration: labil-mir'ṣādi"
+            }
+          ]
+        },
+        {
+          "id": "89-15-card",
+          "verseNumber": 15,
+          "arabicPhrase": "فَأَمَّا ٱلْإِنسَـٰنُ إِذَا مَا ٱبْتَلَىٰهُ رَبُّهُۥ فَأَكْرَمَهُۥ وَنَعَّمَهُۥ فَيَقُولُ رَبِّىٓ أَكْرَمَنِ",
+          "englishPhrase": "As for man, when his Lord tests him, and thus gives him honour and bounties, he says, “My Lord has honoured me.”",
+          "vocabulary": [
+            {
+              "word": "فَأَمَّا",
+              "root": "ا - م - ا",
+              "meaning": "And as for",
+              "grammarNote": "Transliteration: fa-ammā"
+            },
+            {
+              "word": "ٱلْإِنسَـٰنُ",
+              "root": "ن - س - ن",
+              "meaning": "man",
+              "grammarNote": "Transliteration: l-insānu"
+            },
+            {
+              "word": "إِذَا",
+              "root": "ا - ذ - ا",
+              "meaning": "when",
+              "grammarNote": "Transliteration: idhā"
+            },
+            {
+              "word": "مَا",
+              "root": "م - ا",
+              "meaning": "does",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "ٱبْتَلَىٰهُ",
+              "root": "ب - ت - ل",
+              "meaning": "try him",
+              "grammarNote": "Transliteration: ib'talāhu"
+            },
+            {
+              "word": "رَبُّهُۥ",
+              "root": "ر - ب - ه",
+              "meaning": "his Lord",
+              "grammarNote": "Transliteration: rabbuhu"
+            },
+            {
+              "word": "فَأَكْرَمَهُۥ",
+              "root": "ك - ر - م",
+              "meaning": "and is generous to him",
+              "grammarNote": "Transliteration: fa-akramahu"
+            },
+            {
+              "word": "وَنَعَّمَهُۥ",
+              "root": "ن - ع - م",
+              "meaning": "and favors him",
+              "grammarNote": "Transliteration: wanaʿʿamahu"
+            },
+            {
+              "word": "فَيَقُولُ",
+              "root": "ق - و - ل",
+              "meaning": "he says",
+              "grammarNote": "Transliteration: fayaqūlu"
+            },
+            {
+              "word": "رَبِّىٓ",
+              "root": "ر - ب - ي",
+              "meaning": "My Lord",
+              "grammarNote": "Transliteration: rabbī"
+            },
+            {
+              "word": "أَكْرَمَنِ",
+              "root": "ك - ر - م",
+              "meaning": "has honored me",
+              "grammarNote": "Transliteration: akramani"
+            }
+          ]
+        },
+        {
+          "id": "89-16-card",
+          "verseNumber": 16,
+          "arabicPhrase": "وَأَمَّآ إِذَا مَا ٱبْتَلَىٰهُ فَقَدَرَ عَلَيْهِ رِزْقَهُۥ فَيَقُولُ رَبِّىٓ أَهَـٰنَنِ",
+          "englishPhrase": "But when he tests him, and thus straitens his provision for him, he says, “My Lord has disgraced me.”",
+          "vocabulary": [
+            {
+              "word": "وَأَمَّآ",
+              "root": "ا - م - ا",
+              "meaning": "But",
+              "grammarNote": "Transliteration: wa-ammā"
+            },
+            {
+              "word": "إِذَا",
+              "root": "ا - ذ - ا",
+              "meaning": "when",
+              "grammarNote": "Transliteration: idhā"
+            },
+            {
+              "word": "مَا",
+              "root": "م - ا",
+              "meaning": "does",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "ٱبْتَلَىٰهُ",
+              "root": "ب - ت - ل",
+              "meaning": "He try him",
+              "grammarNote": "Transliteration: ib'talāhu"
+            },
+            {
+              "word": "فَقَدَرَ",
+              "root": "ق - د - ر",
+              "meaning": "and restricts",
+              "grammarNote": "Transliteration: faqadara"
+            },
+            {
+              "word": "عَلَيْهِ",
+              "root": "ع - ل - ي",
+              "meaning": "for him",
+              "grammarNote": "Transliteration: ʿalayhi"
+            },
+            {
+              "word": "رِزْقَهُۥ",
+              "root": "ر - ز - ق",
+              "meaning": "his provision",
+              "grammarNote": "Transliteration: riz'qahu"
+            },
+            {
+              "word": "فَيَقُولُ",
+              "root": "ق - و - ل",
+              "meaning": "then he says",
+              "grammarNote": "Transliteration: fayaqūlu"
+            },
+            {
+              "word": "رَبِّىٓ",
+              "root": "ر - ب - ي",
+              "meaning": "My Lord",
+              "grammarNote": "Transliteration: rabbī"
+            },
+            {
+              "word": "أَهَـٰنَنِ",
+              "root": "ه - ن - ن",
+              "meaning": "(has) humiliated me",
+              "grammarNote": "Transliteration: ahānani"
+            }
+          ]
+        },
+        {
+          "id": "89-17-card",
+          "verseNumber": 17,
+          "arabicPhrase": "كَلَّا ۖ بَل لَّا تُكْرِمُونَ ٱلْيَتِيمَ",
+          "englishPhrase": "No! But you do not honour the orphan,",
+          "vocabulary": [
+            {
+              "word": "كَلَّا ۖ",
+              "root": "ك - ل - ا",
+              "meaning": "Nay",
+              "grammarNote": "Transliteration: kallā"
+            },
+            {
+              "word": "بَل",
+              "root": "ب - ل",
+              "meaning": "But",
+              "grammarNote": "Transliteration: bal"
+            },
+            {
+              "word": "لَّا",
+              "root": "ل - ا",
+              "meaning": "not",
+              "grammarNote": "Transliteration: lā"
+            },
+            {
+              "word": "تُكْرِمُونَ",
+              "root": "ك - ر - م",
+              "meaning": "you honor",
+              "grammarNote": "Transliteration: tuk'rimūna"
+            },
+            {
+              "word": "ٱلْيَتِيمَ",
+              "root": "ت - ي - م",
+              "meaning": "the orphan",
+              "grammarNote": "Transliteration: l-yatīma"
+            }
+          ]
+        },
+        {
+          "id": "89-18-card",
+          "verseNumber": 18,
+          "arabicPhrase": "وَلَا تَحَـٰٓضُّونَ عَلَىٰ طَعَامِ ٱلْمِسْكِينِ",
+          "englishPhrase": "and do not encourage one another to feed the needy.",
+          "vocabulary": [
+            {
+              "word": "وَلَا",
+              "root": "و - ل - ا",
+              "meaning": "And not",
+              "grammarNote": "Transliteration: walā"
+            },
+            {
+              "word": "تَحَـٰٓضُّونَ",
+              "root": "ت - ح - ض",
+              "meaning": "you feel the urge",
+              "grammarNote": "Transliteration: taḥāḍḍūna"
+            },
+            {
+              "word": "عَلَىٰ",
+              "root": "ع - ل - و",
+              "meaning": "to",
+              "grammarNote": "Transliteration: ʿalā"
+            },
+            {
+              "word": "طَعَامِ",
+              "root": "ط - ع - م",
+              "meaning": "feed",
+              "grammarNote": "Transliteration: ṭaʿāmi"
+            },
+            {
+              "word": "ٱلْمِسْكِينِ",
+              "root": "م - س - ك",
+              "meaning": "the poor",
+              "grammarNote": "Transliteration: l-mis'kīni"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verse 14]\n\nإِنَّ رَبَّكَ لَبِالْمِرْصَادِ (Surely your Lord is ever on the watch....89:14]. The\n\nword mirsad or marsad [ is derived from the root rasada which means 'to lie in wait or on watch']. Thus it means 'an ambush, or a place of observation; it is usually used for a place where persons have to travel through a pass in which someone is lying in wait to strike them'. The verse purports to say that Allah is ever watching and observing their movements and activities. No one should think that he could escape Divine torment, because all are under His authority and Power, and He may administer His punishment whenever He wills. Some commentators state that this verse is the subject of the five oaths mentioned taken in the first five verses of this Surah.\n\n────────────────────────────────────────\n\n[Verses 15–16]\n\nWealth and Poverty are no Signs of One's Acceptance or Rejection\n\nفَأَمَّا الْإِنسَانُ إِذَا مَا ابْتَلَاهُ رَبُّهُ فَأَكْرَمَهُ وَنَعَّمَهُ فَيَقُولُ رَبِّي أَكْرَمَنِ ۔ وَأَمَّا إِذَا مَا ابْتَلَاهُ فَقَدَرَ عَلَيْهِ رِزْقَهُ فَيَقُولُ رَبِّي أَهَانَنِ (As for man, when his Lord tests him, and thus gives him honour and bounties, he says, \"My Lord has honoured me. But when he tests him, and thus straitens his provision for him, he says, \"My Lord has disgraced me...89:15-16). The word 'man' here primarily refers to an 'unbelieving man' who may form any thought about Allah as he feels like, but in its general sense, the word may include a Muslim as well who has the same thought as an unbeliever. When Allah gives abundant wealth and good health to such people, the devil puts into their head two false ideas. First, they succumb to their baser instincts; they become haughty and arrogant; and they think that the wealth and health is the result of their superior intellect, personal capability, efforts and achievement. Secondly, they think that they are enjoying a favourable status with Allah. If they did not enjoy the favourable position with Him, they would not have been granted such an abundance of wealth. By the same token, if Allah curtails their sustenance i.e. they suffer some degree of poverty, they regard it as a curse from Allah, and complain that He is humiliating or dishonouring them, while they deserved honour and respect. The unbelievers and idolaters do hold such thoughts and ideas, as the Qur'an has pointed out on many occasions, but it is regrettable that many Muslims nowadays fall into similar ideas. Allah refutes man's belief by the expression کَلَّا Kalla 'No/never!' The matter is not as he claims. Wealth does not indicate acceptance of a man by Allah, nor does poverty indicate rejection. [ For indeed Allah gives wealth to those whom He loves and those whom He does not love. Likewise, He withholds sustenance /wealth from those whom He loves and those whom He does not love.] Often the matter is quite the contrary. Fir'aun (the Pharaoh) claimed godhead and lordship, yet he never suffered from any headache. Some of Prophets (علیہم السلام) were sliced, by enemies, into two pieces with a saw. The Holy Prophet ﷺ is reported to have said that the poor refugees will enter Paradise forty years before the wealthy muhajirs (Immigrants). [ Imam Muslim رحمۃ علیہ has transmitted it from ` Abdullah Ibn Umar ؓ - Mazhari ]. In another narration, the Holy Prophet ﷺ is reported to have said that whomever Allah loves, He keeps him away from the worldly luxuries as people keep away their sickly patients from water. [ Ahmad and Tirmidhi transmitted it on the authority of Qatadah Ibn Nu` man Mazhari ].\n\n────────────────────────────────────────\n\n[Verses 17–18]\n\nSpending on the Orphan is not Sufficient. Their respect is also necessary\n\nلَّا تُكْرِمُونَ الْيَتِيم (No! But you do not honour the orphan....89:17). The unbelievers are warned, in these verses, against some of their evil character traits. First, as is mentioned in this verse, they do not honour and treat the orphans kindly. The basic objective of the verse is that they deprive them of their rights, and do not spend on them what is due to them, but the expression used is that they do not honour them, probably to indicate that the requirement of Allah's gratitude, and also of humanitarian sense, is not only that the orphans are given their dues by spending wealth on them, but it is also necessary to honour them and treat them kindly. The guardians should not despise and look down upon their wards, and to discriminate them against their own children. This is apparently a rebuff to the unbelievers who think that wealth is an 'honour' and poverty is a 'dishonour'. After refuting their thoughts and ideas with the expression کَلَّا Kalla 'No/ never!', the verse under comment progresses to say bal 'But' that they are deprived of sustenance, because they squander it in immoral pursuits, depriving the orphans of their rights in it.\n\nوَلَا تَحَاضُّونَ عَلَىٰ طَعَامِ الْمِسْكِينِ (and do not encourage one another to feed the needy....89:18). This is the second evil trait of the unbelievers. The style of this verse, in condemning the evil trait of the unbelievers, indicates that it is an obligation of the affluent to spend on the poor and indigent from their own wealth. Obviously, the poor are unable to spend owing to lack of means, but they should at least encourage others to feed the needy.",
+      "subsections": [
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "فَأَمَّا الْإِنسَانُ إِذَا مَا ابْتَلَاهُ رَبُّهُ فَأَكْرَمَهُ وَنَعَّمَهُ فَيَقُولُ رَبِّي أَكْرَمَنِ ۔ وَأَمَّا إِذَا مَا ابْتَلَاهُ فَقَدَرَ عَلَيْهِ رِزْقَهُ فَيَقُولُ رَبِّي أَهَانَنِ (As for man, when his Lord tests him, and thus gives him honour and bounties, he says, \"My Lord has honoured me. But when he tests him, and thus straitens his provision for him, he says, \"My Lord has disgraced me...89:15-16). The word 'man' here primarily refers to an 'unbelieving man' who may form any thought about Allah as he feels like, but in its general sense, the word may include a Muslim as well who has the same thought as an unbeliever. When Allah gives abundant wealth and good health to such people, the devil puts into their head two false ideas. First, they succumb to their baser instincts; they become haughty and arrogant; and they think that the wealth and health is the result of their..."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "word mirsad or marsad [ is derived from the root rasada which means 'to lie in wait or on watch']. Thus it means 'an ambush, or a place of observation; it is usually used for a place where persons have to travel through a pass in which someone is lying in wait to strike them'. The verse purports to say that Allah is ever watching and observing their movements and activities. No one should think that he could escape Divine torment, because all are under His authority and Power, and He may administer His punishment whenever He wills. Some commentators state that this verse is the subject of the five oaths mentioned taken in the first five verses of this Surah."
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "89-19-22",
+      "surahNumber": 89,
+      "verseRange": [
+        19,
+        22
+      ],
+      "title": "────────────────────────────────────────",
+      "juzNumber": 30,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5799/mode/2up",
+      "arabicText": "وَتَأْكُلُونَ ٱلتُّرَاثَ أَكْلًا لَّمًّا ۝١٩ وَتُحِبُّونَ ٱلْمَالَ حُبًّا جَمًّا ۝٢٠ كَلَّآ إِذَا دُكَّتِ ٱلْأَرْضُ دَكًّا دَكًّا ۝٢١ وَجَآءَ رَبُّكَ وَٱلْمَلَكُ صَفًّا صَفًّا ۝٢٢",
+      "translation": "And you devour the inheritance with a sweeping gulp, ۝ and love wealth, an excessive love. ۝ No! When the earth will be crushed thoroughly to be turned into bits, ۝ and your Lord will come, and the angels as well, lined up in rows, ۝",
+      "phraseCards": [
+        {
+          "id": "89-19-card",
+          "verseNumber": 19,
+          "arabicPhrase": "وَتَأْكُلُونَ ٱلتُّرَاثَ أَكْلًا لَّمًّا",
+          "englishPhrase": "And you devour the inheritance with a sweeping gulp,",
+          "vocabulary": [
+            {
+              "word": "وَتَأْكُلُونَ",
+              "root": "ا - ك - ل",
+              "meaning": "And you consume",
+              "grammarNote": "Transliteration: watakulūna"
+            },
+            {
+              "word": "ٱلتُّرَاثَ",
+              "root": "ر - ا - ث",
+              "meaning": "the inheritance",
+              "grammarNote": "Transliteration: l-turātha"
+            },
+            {
+              "word": "أَكْلًۭا",
+              "root": "ك - ل - ا",
+              "meaning": "devouring",
+              "grammarNote": "Transliteration: aklan"
+            },
+            {
+              "word": "لَّمًّۭا",
+              "root": "ل - م - ا",
+              "meaning": "altogether",
+              "grammarNote": "Transliteration: lamman"
+            }
+          ]
+        },
+        {
+          "id": "89-20-card",
+          "verseNumber": 20,
+          "arabicPhrase": "وَتُحِبُّونَ ٱلْمَالَ حُبًّا جَمًّا",
+          "englishPhrase": "and love wealth, an excessive love.",
+          "vocabulary": [
+            {
+              "word": "وَتُحِبُّونَ",
+              "root": "ت - ح - ب",
+              "meaning": "And you love",
+              "grammarNote": "Transliteration: watuḥibbūna"
+            },
+            {
+              "word": "ٱلْمَالَ",
+              "root": "م - ا - ل",
+              "meaning": "wealth",
+              "grammarNote": "Transliteration: l-māla"
+            },
+            {
+              "word": "حُبًّۭا",
+              "root": "ح - ب - ا",
+              "meaning": "(with) love",
+              "grammarNote": "Transliteration: ḥubban"
+            },
+            {
+              "word": "جَمًّۭا",
+              "root": "ج - م - ا",
+              "meaning": "immense",
+              "grammarNote": "Transliteration: jamman"
+            }
+          ]
+        },
+        {
+          "id": "89-21-card",
+          "verseNumber": 21,
+          "arabicPhrase": "كَلَّآ إِذَا دُكَّتِ ٱلْأَرْضُ دَكًّا دَكًّا",
+          "englishPhrase": "No! When the earth will be crushed thoroughly to be turned into bits,",
+          "vocabulary": [
+            {
+              "word": "كَلَّآ",
+              "root": "ك - ل - ا",
+              "meaning": "Nay",
+              "grammarNote": "Transliteration: kallā"
+            },
+            {
+              "word": "إِذَا",
+              "root": "ا - ذ - ا",
+              "meaning": "When",
+              "grammarNote": "Transliteration: idhā"
+            },
+            {
+              "word": "دُكَّتِ",
+              "root": "د - ك - ت",
+              "meaning": "is leveled",
+              "grammarNote": "Transliteration: dukkati"
+            },
+            {
+              "word": "ٱلْأَرْضُ",
+              "root": "ا - ر - ض",
+              "meaning": "the earth",
+              "grammarNote": "Transliteration: l-arḍu"
+            },
+            {
+              "word": "دَكًّۭا",
+              "root": "د - ك - ا",
+              "meaning": "pounded",
+              "grammarNote": "Transliteration: dakkan"
+            },
+            {
+              "word": "دَكًّۭا",
+              "root": "د - ك - ا",
+              "meaning": "(and) crushed",
+              "grammarNote": "Transliteration: dakkan"
+            }
+          ]
+        },
+        {
+          "id": "89-22-card",
+          "verseNumber": 22,
+          "arabicPhrase": "وَجَآءَ رَبُّكَ وَٱلْمَلَكُ صَفًّا صَفًّا",
+          "englishPhrase": "and your Lord will come, and the angels as well, lined up in rows,",
+          "vocabulary": [
+            {
+              "word": "وَجَآءَ",
+              "root": "ج - ا - ء",
+              "meaning": "And comes",
+              "grammarNote": "Transliteration: wajāa"
+            },
+            {
+              "word": "رَبُّكَ",
+              "root": "ر - ب - ب",
+              "meaning": "your Lord",
+              "grammarNote": "Transliteration: rabbuka"
+            },
+            {
+              "word": "وَٱلْمَلَكُ",
+              "root": "م - ل - ك",
+              "meaning": "and the Angels",
+              "grammarNote": "Transliteration: wal-malaku"
+            },
+            {
+              "word": "صَفًّۭا",
+              "root": "ص - ف - ا",
+              "meaning": "rank",
+              "grammarNote": "Transliteration: ṣaffan"
+            },
+            {
+              "word": "صَفًّۭا",
+              "root": "ص - ف - ا",
+              "meaning": "(upon) rank",
+              "grammarNote": "Transliteration: ṣaffan"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verse 19]\n\nوَتَأْكُلُونَ التُّرَاثَ أَكْلًا لَّمًّا (And you devour the inheritance with a sweeping gulp...89:19). The word lamm means to 'gather, amass, concentrate the thing'. This is the third evil trait of the unbelievers, and the verse signifies that they devour inheritance with voracious appetites however they can get it, whether by lawful means or unlawful means. They gather them all together to make a sweeping gulp. When someone passes away, they take their own shares, together with the shares of others, regardless of whether the shares belong to orphans, widows or people who are absent. [ As a matter of principle,] it is not permitted to mix up lawful and forbidden wealth in any transaction. Here, however, 'inheritance' has been particularly mentioned, probably because having a greedy eye on it and pursuing it are a proof of man's greed and voracity for wealth. He stares at it like a beast of prey waiting for the person to die, and looking for the opportunity to distribute the estate. But an honourable man of principle and a noble person would not look at the wealth of the deceased with greedy eyes.\n\n────────────────────────────────────────\n\n[Verses 20–21]\n\nوَتُحِبُّونَ الْمَالَ حُبًّا جَمًّا (and love wealth, with an excessive love 89:20). The\n\nword jamm means 'excessive'. This verse refers to the fourth evil trait of the unbelievers. They have an insatiable love for wealth. The word 'excessive' indicates that love of wealth in itself, in a sober sense, is a natural instinct of man. That has not been condemned here. What is denounced is the excessive or insatiable love of wealth. After describing the evil traits of the unbelievers, the passage reverts to the main theme that was emphasised in the earlier part of the Surah with five oaths, that is, the punishment of the Hereafter. In this connection, it first mentions the process of the end of the world, and subsequently the establishment of the Day of Resurrection, thus:\n\nكَلَّا إِذَا دُكَّتِ الْأَرْضُ دَكًّا دَكًّا (No! When the earth will be crushed thoroughly to be turned into bits...89:21). The word dakk literally means 'to pound or crush a thing into bits and pieces'. This refers to the earthquakes that will crush and ground the mountains to dust. The world will thus be dissolved. This will be the first stage of Resurrection. When this stage of Resurrection ends, the second stage of Resurrection will begin. The word dakkan is repeated in order to show that there will be a series of earthquakes before the dissolution of the world.\n\n────────────────────────────────────────\n\n[Verse 22]\n\nوَجَاءَ رَبُّكَ وَالْمَلَكُ صَفًّا صَفًّا (and your Lord will come, and the angels as well, lined up in rows....89:22) They will arrive in the Plain of Gathering. The words 'your Lord will come' is an allegorical expression. No one, besides Allah, knows the nature of His coming. The words 'and the angels [ will arrive ] as well, lined up in rows' are clear in meaning.\n\nوَجِيءَ يَوْمَئِذٍ بِجَهَنَّمَ ۚ يَوْمَئِذٍ يَتَذَكَّرُ الْإِنسَانُ وَأَنَّىٰ لَهُ الذِّكْرَىٰ (and Jahannam [ Hell ], on that day, will be brought forward, it will be the day when man will realise the truth, but from where will he take advantage of such realisation?.... 89:23). No one, besides Allah, knows how exactly 'Hell' will be brought forward in the Plain of Gathering. Apparently, 'Hell' which is at the moment beneath the seventh earth will at that moment will flare up, and the oceans become part of the flame. In this way, Hell during the gathering will be in front of all.",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Juristic Rulings & Shariah Injunctions (vv. 19–22)",
+          "content": "وَتَأْكُلُونَ التُّرَاثَ أَكْلًا لَّمًّا (And you devour the inheritance with a sweeping gulp...89:19). The word lamm means to 'gather, amass, concentrate the thing'. This is the third evil trait of the unbelievers, and the verse signifies that they devour inheritance with voracious appetites however they can get it, whether by lawful means or unlawful means. They gather them all together to make a sweeping gulp. When someone passes away, they take their own shares, together with the shares of others, regardless of whether the shares belong to orphans, widows or people who are absent. [ As a matter of principle,] it is not permitted to mix up lawful and forbidden wealth in any transaction. Here, however, 'inheritance' has been particularly mentioned, probably because having a greedy eye on it and pursuing it are a proof of man's greed and voracity for wealth. He stares at it like a..."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "word jamm means 'excessive'. This verse refers to the fourth evil trait of the unbelievers. They have an insatiable love for wealth. The word 'excessive' indicates that love of wealth in itself, in a sober sense, is a natural instinct of man. That has not been condemned here. What is denounced is the excessive or insatiable love of wealth. After describing the evil traits of the unbelievers, the passage reverts to the main theme that was emphasised in the earlier part of the Surah with five oaths, that is, the punishment of the Hereafter. In this connection, it first mentions the process of the end of the world, and subsequently the establishment of the Day of Resurrection, thus:"
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "89-23-28",
+      "surahNumber": 89,
+      "verseRange": [
+        23,
+        28
+      ],
+      "title": "────────────────────────────────────────",
+      "juzNumber": 30,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5799/mode/2up",
+      "arabicText": "وَجِا۟ىٓءَ يَوْمَئِذٍۭ بِجَهَنَّمَ ۚ يَوْمَئِذٍ يَتَذَكَّرُ ٱلْإِنسَـٰنُ وَأَنَّىٰ لَهُ ٱلذِّكْرَىٰ ۝٢٣ يَقُولُ يَـٰلَيْتَنِى قَدَّمْتُ لِحَيَاتِى ۝٢٤ فَيَوْمَئِذٍ لَّا يُعَذِّبُ عَذَابَهُۥٓ أَحَدٌ ۝٢٥ وَلَا يُوثِقُ وَثَاقَهُۥٓ أَحَدٌ ۝٢٦ يَـٰٓأَيَّتُهَا ٱلنَّفْسُ ٱلْمُطْمَئِنَّةُ ۝٢٧ ٱرْجِعِىٓ إِلَىٰ رَبِّكِ رَاضِيَةً مَّرْضِيَّةً ۝٢٨",
+      "translation": "and Jahannam (Hell), on that day, will be brought forward, it will be the day when man will realize the truth, but from where will he take advantage of such realization? ۝ He will say, “O Would that I had sent ahead (some good deeds) for (this) my life!” ۝ So no one can punish like He will punish, that day, ۝ nor can anyone shackle like He will shackle. ۝ (As for an obedient man, it will be said to him,) “O content soul, ۝ come back to your Lord, well-pleased, well-pleasing. ۝",
+      "phraseCards": [
+        {
+          "id": "89-23-card",
+          "verseNumber": 23,
+          "arabicPhrase": "وَجِا۟ىٓءَ يَوْمَئِذٍۭ بِجَهَنَّمَ ۚ يَوْمَئِذٍ يَتَذَكَّرُ ٱلْإِنسَـٰنُ وَأَنَّىٰ لَهُ ٱلذِّكْرَىٰ",
+          "englishPhrase": "and Jahannam (Hell), on that day, will be brought forward, it will be the day when man will realize the truth, but from where will he take advantage of such realization?",
+          "vocabulary": [
+            {
+              "word": "وَجِا۟ىٓءَ",
+              "root": "ج - ي - ء",
+              "meaning": "And is brought",
+              "grammarNote": "Transliteration: wajīa"
+            },
+            {
+              "word": "يَوْمَئِذٍۭ",
+              "root": "و - م - ئ",
+              "meaning": "that Day",
+              "grammarNote": "Transliteration: yawma-idhin"
+            },
+            {
+              "word": "بِجَهَنَّمَ ۚ",
+              "root": "ج - ه - ن",
+              "meaning": "Hell",
+              "grammarNote": "Transliteration: bijahannama"
+            },
+            {
+              "word": "يَوْمَئِذٍۢ",
+              "root": "و - م - ئ",
+              "meaning": "That Day",
+              "grammarNote": "Transliteration: yawma-idhin"
+            },
+            {
+              "word": "يَتَذَكَّرُ",
+              "root": "ذ - ك - ر",
+              "meaning": "will remember",
+              "grammarNote": "Transliteration: yatadhakkaru"
+            },
+            {
+              "word": "ٱلْإِنسَـٰنُ",
+              "root": "ن - س - ن",
+              "meaning": "man",
+              "grammarNote": "Transliteration: l-insānu"
+            },
+            {
+              "word": "وَأَنَّىٰ",
+              "root": "ا - ن - ي",
+              "meaning": "but how",
+              "grammarNote": "Transliteration: wa-annā"
+            },
+            {
+              "word": "لَهُ",
+              "root": "ل - ه",
+              "meaning": "(will be) for him",
+              "grammarNote": "Transliteration: lahu"
+            },
+            {
+              "word": "ٱلذِّكْرَىٰ",
+              "root": "ذ - ك - ر",
+              "meaning": "the remembrance",
+              "grammarNote": "Transliteration: l-dhik'rā"
+            }
+          ]
+        },
+        {
+          "id": "89-24-card",
+          "verseNumber": 24,
+          "arabicPhrase": "يَقُولُ يَـٰلَيْتَنِى قَدَّمْتُ لِحَيَاتِى",
+          "englishPhrase": "He will say, “O Would that I had sent ahead (some good deeds) for (this) my life!”",
+          "vocabulary": [
+            {
+              "word": "يَقُولُ",
+              "root": "ق - و - ل",
+              "meaning": "He will say",
+              "grammarNote": "Transliteration: yaqūlu"
+            },
+            {
+              "word": "يَـٰلَيْتَنِى",
+              "root": "ل - ي - ت",
+              "meaning": "O I wish",
+              "grammarNote": "Transliteration: yālaytanī"
+            },
+            {
+              "word": "قَدَّمْتُ",
+              "root": "ق - د - م",
+              "meaning": "I had sent forth",
+              "grammarNote": "Transliteration: qaddamtu"
+            },
+            {
+              "word": "لِحَيَاتِى",
+              "root": "ح - ي - ت",
+              "meaning": "for my life",
+              "grammarNote": "Transliteration: liḥayātī"
+            }
+          ]
+        },
+        {
+          "id": "89-25-card",
+          "verseNumber": 25,
+          "arabicPhrase": "فَيَوْمَئِذٍ لَّا يُعَذِّبُ عَذَابَهُۥٓ أَحَدٌ",
+          "englishPhrase": "So no one can punish like He will punish, that day,",
+          "vocabulary": [
+            {
+              "word": "فَيَوْمَئِذٍۢ",
+              "root": "و - م - ئ",
+              "meaning": "So that Day",
+              "grammarNote": "Transliteration: fayawma-idhin"
+            },
+            {
+              "word": "لَّا",
+              "root": "ل - ا",
+              "meaning": "not",
+              "grammarNote": "Transliteration: lā"
+            },
+            {
+              "word": "يُعَذِّبُ",
+              "root": "ع - ذ - ب",
+              "meaning": "will punish",
+              "grammarNote": "Transliteration: yuʿadhibu"
+            },
+            {
+              "word": "عَذَابَهُۥٓ",
+              "root": "ع - ذ - ب",
+              "meaning": "(as) His punishment",
+              "grammarNote": "Transliteration: ʿadhābahu"
+            },
+            {
+              "word": "أَحَدٌۭ",
+              "root": "ا - ح - د",
+              "meaning": "anyone",
+              "grammarNote": "Transliteration: aḥadun"
+            }
+          ]
+        },
+        {
+          "id": "89-26-card",
+          "verseNumber": 26,
+          "arabicPhrase": "وَلَا يُوثِقُ وَثَاقَهُۥٓ أَحَدٌ",
+          "englishPhrase": "nor can anyone shackle like He will shackle.",
+          "vocabulary": [
+            {
+              "word": "وَلَا",
+              "root": "و - ل - ا",
+              "meaning": "And not",
+              "grammarNote": "Transliteration: walā"
+            },
+            {
+              "word": "يُوثِقُ",
+              "root": "و - ث - ق",
+              "meaning": "will bind",
+              "grammarNote": "Transliteration: yūthiqu"
+            },
+            {
+              "word": "وَثَاقَهُۥٓ",
+              "root": "ث - ا - ق",
+              "meaning": "(as) His binding",
+              "grammarNote": "Transliteration: wathāqahu"
+            },
+            {
+              "word": "أَحَدٌۭ",
+              "root": "ا - ح - د",
+              "meaning": "anyone",
+              "grammarNote": "Transliteration: aḥadun"
+            }
+          ]
+        },
+        {
+          "id": "89-27-card",
+          "verseNumber": 27,
+          "arabicPhrase": "يَـٰٓأَيَّتُهَا ٱلنَّفْسُ ٱلْمُطْمَئِنَّةُ",
+          "englishPhrase": "(As for an obedient man, it will be said to him,) “O content soul,",
+          "vocabulary": [
+            {
+              "word": "يَـٰٓأَيَّتُهَا",
+              "root": "ا - ي - ت",
+              "meaning": "O",
+              "grammarNote": "Transliteration: yāayyatuhā"
+            },
+            {
+              "word": "ٱلنَّفْسُ",
+              "root": "ن - ف - س",
+              "meaning": "soul",
+              "grammarNote": "Transliteration: l-nafsu"
+            },
+            {
+              "word": "ٱلْمُطْمَئِنَّةُ",
+              "root": "ط - م - ئ",
+              "meaning": "who is satisfied",
+              "grammarNote": "Transliteration: l-muṭ'ma-inatu"
+            }
+          ]
+        },
+        {
+          "id": "89-28-card",
+          "verseNumber": 28,
+          "arabicPhrase": "ٱرْجِعِىٓ إِلَىٰ رَبِّكِ رَاضِيَةً مَّرْضِيَّةً",
+          "englishPhrase": "come back to your Lord, well-pleased, well-pleasing.",
+          "vocabulary": [
+            {
+              "word": "ٱرْجِعِىٓ",
+              "root": "ر - ج - ع",
+              "meaning": "Return",
+              "grammarNote": "Transliteration: ir'jiʿī"
+            },
+            {
+              "word": "إِلَىٰ",
+              "root": "ا - ل - ي",
+              "meaning": "to",
+              "grammarNote": "Transliteration: ilā"
+            },
+            {
+              "word": "رَبِّكِ",
+              "root": "ر - ب - ب",
+              "meaning": "your Lord",
+              "grammarNote": "Transliteration: rabbiki"
+            },
+            {
+              "word": "رَاضِيَةًۭ",
+              "root": "ر - ض - ي",
+              "meaning": "well pleased",
+              "grammarNote": "Transliteration: rāḍiyatan"
+            },
+            {
+              "word": "مَّرْضِيَّةًۭ",
+              "root": "ر - ض - ي",
+              "meaning": "and pleasing",
+              "grammarNote": "Transliteration: marḍiyyatan"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verses 23–26]\n\nيَوْمَئِذٍ يَتَذَكَّرُ الْإِنسَانُ وَأَنَّىٰ لَهُ الذِّكْرَىٰ (it will be the day when man will realise the truth, but from where will he take advantage of such realisation? - 89-23). The word tadhakkur in this context means 'to realise'. The unbelievers will realise the errors of their ways in the Hereafter, but it will be too late, because it is this present world where 'Imn and good deeds benefit the people. The Hereafter is the place only for reckoning and retribution. Man will express his remorse thus:\n\nيَقُولُ يَا لَيْتَنِي قَدَّمْتُ لِحَيَاتِي (He will say, \"0 Would that I had sent ahead [ some good deeds ] for [ this ] my life!\"....89:24). When he faces the torment of disbelief and idolatry on that day of devastation, man will lament that he should have carried out good deeds and refrained from sin in this world to be saved from punishment in the Hereafter. But it will be of no avail. Allah says: 'So, that day, no one can punish like He will punish, nor can anyone shackle like He will shackle....89:26] Having described the torment of the unbelievers, the conclusion of the Surah gives cheerful news to the believers that they will be admitted into Paradise. Thus it says:\n\n────────────────────────────────────────\n\n[Verse 27]\n\nيَا أَيَّتُهَا النَّفْسُ الْمُطْمَئِنَّةُ ( O contented soul...89:27). Here the soul of the believer is referred to as nafs mutma'innah 'the contented soul'. The word mutma'innah literally means 'calm'. It refers to the soul that is 'peaceful and tranquil' as a result of remembrance and obedience of Allah. When he abandons it, he feels restless. This is probably the same soul as is made pure, through spiritual exercises and discipline, from the evil traits and bad conduct. Obedience of Allah and His remembrance becomes his predisposition. Shari'ah becomes his nature.\n\nارْجِعِي إِلَىٰ رَبِّكِ (come back to your Lord....89:28). The words 'come back' indicate that his first place was with his Lord, and now he is commanded to go back to Him. This confirms the narration that the souls of the believers, together with their Book of Deeds, will be in ` illiyin. ` Illiyin is a place on the seventh heaven in the shade of the Throne of the Most-Merciful Lord. This is the original resting-place of all human souls, from where they are brought out and put into human body. After death, the souls are returned to that place.\n\n────────────────────────────────────────\n\n[Verse 28]\n\nرَاضِيَةً مَّرْضِيَّةً (...well-pleased, well-pleasing....89:28). [ The true believer's ] soul is well-pleased with decrees destined by Allah and His legislative commands, and Allah too is well-pleased with His slave. The slave's being pleased with Allah's decrees and injunctions is a sign that Allah is pleased.",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Juristic Rulings & Shariah Injunctions (vv. 23–28)",
+          "content": "يَا أَيَّتُهَا النَّفْسُ الْمُطْمَئِنَّةُ ( O contented soul...89:27). Here the soul of the believer is referred to as nafs mutma'innah 'the contented soul'. The word mutma'innah literally means 'calm'. It refers to the soul that is 'peaceful and tranquil' as a result of remembrance and obedience of Allah. When he abandons it, he feels restless. This is probably the same soul as is made pure, through spiritual exercises and discipline, from the evil traits and bad conduct. Obedience of Allah and His remembrance becomes his predisposition. Shari'ah becomes his nature."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "يَوْمَئِذٍ يَتَذَكَّرُ الْإِنسَانُ وَأَنَّىٰ لَهُ الذِّكْرَىٰ (it will be the day when man will realise the truth, but from where will he take advantage of such realisation? - 89-23). The word tadhakkur in this context means 'to realise'. The unbelievers will realise the errors of their ways in the Hereafter, but it will be too late, because it is this present world where 'Imn and good deeds benefit the people. The Hereafter is the place only for reckoning and retribution. Man will express his remorse thus:"
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "89-29-30",
+      "surahNumber": 89,
+      "verseRange": [
+        29,
+        30
+      ],
+      "title": "────────────────────────────────────────",
+      "juzNumber": 30,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5799/mode/2up",
+      "arabicText": "فَٱدْخُلِى فِى عِبَـٰدِى ۝٢٩ وَٱدْخُلِى جَنَّتِى ۝٣٠",
+      "translation": "So, enter among My (special) servants, ۝ and enter My Paradise.” ۝",
+      "phraseCards": [
+        {
+          "id": "89-29-card",
+          "verseNumber": 29,
+          "arabicPhrase": "فَٱدْخُلِى فِى عِبَـٰدِى",
+          "englishPhrase": "So, enter among My (special) servants,",
+          "vocabulary": [
+            {
+              "word": "فَٱدْخُلِى",
+              "root": "د - خ - ل",
+              "meaning": "So enter",
+              "grammarNote": "Transliteration: fa-ud'khulī"
+            },
+            {
+              "word": "فِى",
+              "root": "ف - ي",
+              "meaning": "among",
+              "grammarNote": "Transliteration: fī"
+            },
+            {
+              "word": "عِبَـٰدِى",
+              "root": "ع - ب - د",
+              "meaning": "My slaves",
+              "grammarNote": "Transliteration: ʿibādī"
+            }
+          ]
+        },
+        {
+          "id": "89-30-card",
+          "verseNumber": 30,
+          "arabicPhrase": "وَٱدْخُلِى جَنَّتِى",
+          "englishPhrase": "and enter My Paradise.”",
+          "vocabulary": [
+            {
+              "word": "وَٱدْخُلِى",
+              "root": "د - خ - ل",
+              "meaning": "And enter",
+              "grammarNote": "Transliteration: wa-ud'khulī"
+            },
+            {
+              "word": "جَنَّتِى",
+              "root": "ج - ن - ت",
+              "meaning": "My Paradise",
+              "grammarNote": "Transliteration: jannatī"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verse 29]\n\nفَادْخُلِي فِي عِبَادِي (So, enter among My [ special ] servants...89:29). In other words, the contented soul will be addressed [ compassionately ], and first asked to enter the fold of righteous and sincere slaves, and then to enter Paradise. This indicates that entry into Paradise depends on their being, first and foremost, in the fold of the righteous believers. Then they will enter Paradise all together. This shows that joining the company of the righteous in this world is a sign that he will enter Paradise with them. Thus Prophet Sulaiman (علیہ السلام) prayed:\n\nوَأَدْخِلْنِي بِرَ‌حْمَتِكَ فِي عِبَادِكَ الصَّالِحِينَ\n\n'...and admit me, by Your mercy, among Your righteous slaves...[ 27:19] '\n\nProphet Yusuf (علیہ السلام) prayed:\n\nوَأَلْحِقْنِي بِالصَّالِحِينَ\n\n'...and make me join the righteous. [ 12:101] '\n\nThe above supplications indicate that the company of the righteous is such a great blessing that even the Holy Prophets cannot do without, as a result they pray for it.\n\n────────────────────────────────────────\n\n[Verse 30]\n\nوَادْخُلِي جَنَّتِي (and enter My Paradise 89:30]. In this verse, Paradise is attributed to Allah, and Allah said 'My Paradise'. This is a great honour, and indicates that Paradise will not only have all sorts of eternal comfort, but above all it is a place of Allah's pleasure.\n\nThe preceding verses describe the reward of the believers in such a manner that on behalf of Allah, the angels will address their souls honourably and in a befitting manner, as in the verses. It is not clear when they will be addressed. Some commentators say that they will be addressed on the Day of Reckoning after the reckoning is over. The context of the verses confirms this. The punishment of the unbelievers was described above. That will take place in the Hereafter after the Judgment has been passed. It is obvious that the believers will be addressed at the same time. Other scholars indicate that the believers will be addressed in this world at the time of death. Many authentic traditions bear testimony to the veracity of this view. Ibn Kathir, on the other hand, reconciles the apparently conflicting statements thus: Allah will address the soul of the believers twice with these words. Once at the time of death, and again on the Day of Judgment.\n\nSayyidna ` Ubadah Ibn Samit's narration cited earlier supports the view that the address will be at the time of death. In a lengthy narration of Sayyidna Abu Hurairah, recorded in Musnad of Ahmad, Nasa'i and Ibn Majah, the Holy Prophet ﷺ said: \"When death approaches a believer, the angels of mercy bring to him a piece of white silk and say: اخرجی راضیۃ مرضیّۃ الی روح اللہ وریحانہ 'Come out [ from this body ], well-pleased and well-pleasing, to Divine mercy and to the eternal comforts of Paradise' [ to the end of narration.] \" Sayyidna Ibn ` Abbas ؓ says that one day he recited the verse يَا أَيَّتُهَا النَّفْسُ الْمُطْمَئِنَّةُ (0 contented soul) in the presence of the Holy Prophet ﷺ ، Abu Bakr ؓ who was present in the assembly, said: \"0 Allah's Messenger, what a fine address and honour!\" The Holy Prophet ﷺ said: \"Behold, the angel will address you thus after your death.\"\n\nA Few Strange Incidents\n\nSaid Ibn Jubair رضی اللہ تعالیٰ عنہ reports that Sayyidna Ibn ` Abbas ؓ passed away in Ta'if. After the funeral was prepared, a strange bird, the like of which was never seen before, came and entered the body, but no one saw it coming out of it. When it was lowered into the grave for burial, an invisible voice was heard reciting from the side of the grave: يَا أَيَّتُهَا النَّفْسُ الْمُطْمَئِنَّةُ Everyone looked around, but could not find anyone. Another incident is recorded by Hafiz Tabarani in his book Kitab-ul-` Aja'ib. He narrates with his chain of authorities, an incident about Fattan Ibn Razin Abi Hashim that once they were imprisoned in a Roman city. They were presented before their king. The king was an infidel. He coerced them to adopt his religion, and threatened them that if anyone refuses to comply with his command, he would be beheaded. They were a few people. Three of them feared for their lives, adopted his religion and thus became apostates. The fourth person refused to adopt the king's religion. He was beheaded and his head was thrown into a nearby river. When it was thrown, the head went to the bottom of the river. Later, it emerged from the water and came to the surface. Then it looked at the other three persons, and calling each one of them by name, recited:\n\nيَا أَيَّتُهَا النَّفْسُ الْمُطْمَئِنَّةُ ﴿27﴾ ارْ‌جِعِي إِلَىٰ رَ‌بِّكِ رَ‌اضِيَةً مَّرْ‌ضِيَّةً ﴿28﴾ فَادْخُلِي فِي عِبَادِي ﴿29﴾ وَادْخُلِي جَنَّتِي ﴿30﴾\n\n\"0 contented. soul, [ 27] come back to your Lord, well-pleased, well-pleasing [ 28] So, enter among My (special) servants, [ 29] and enter Paradise.\"[ 30]\n\nAfter that it dived back into the water.\n\nThis was an unusual incident which everyone witnessed and heard. When the Christians of that place witnessed this, almost all of them embraced Islam which shook up the king's throne. The three persons who had become apostates reverted to Islam. Caliph Abu Ja'far Mansur had them all released from their [ enemy's ] prison.\n\nAl-hamdulillah\n\nThe Commentary on\n\nSurah Al-Fajr\n\nEnds here",
+      "subsections": [
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "Sayyidna ` Ubadah Ibn Samit's narration cited earlier supports the view that the address will be at the time of death. In a lengthy narration of Sayyidna Abu Hurairah, recorded in Musnad of Ahmad, Nasa'i and Ibn Majah, the Holy Prophet ﷺ said: \"When death approaches a believer, the angels of mercy bring to him a piece of white silk and say: اخرجی راضیۃ مرضیّۃ الی روح اللہ وریحانہ 'Come out [ from this body ], well-pleased and well-pleasing, to Divine mercy and to the eternal comforts of Paradise' [ to the end of narration.] \" Sayyidna Ibn ` Abbas ؓ says that one day he recited the verse يَا أَيَّتُهَا النَّفْسُ الْمُطْمَئِنَّةُ (0 contented soul) in the presence of the Holy Prophet ﷺ ، Abu Bakr ؓ who was present in the assembly, said: \"0 Allah's Messenger, what a fine address and honour!\" The Holy Prophet ﷺ said: \"Behold, the angel will address you thus after your death.\""
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "فَادْخُلِي فِي عِبَادِي (So, enter among My [ special ] servants...89:29). In other words, the contented soul will be addressed [ compassionately ], and first asked to enter the fold of righteous and sincere slaves, and then to enter Paradise. This indicates that entry into Paradise depends on their being, first and foremost, in the fold of the righteous believers. Then they will enter Paradise all together. This shows that joining the company of the righteous in this world is a sign that he will enter Paradise with them. Thus Prophet Sulaiman (علیہ السلام) prayed:"
+        }
+      ],
+      "curatedTerms": []
+    }
+  ]
+}

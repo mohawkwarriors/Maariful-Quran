@@ -51,7 +51,8 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
   onRemoveBookmark,
 }) => {
   const allBookmarks = bookmarks.length > 0 ? bookmarks : bookmark ? [bookmark] : [];
-  const [navTab, setNavTab] = useState<'surah' | 'juz' | 'theme'>('surah');
+  const [navTab, setNavTab] = useState<'surah' | 'volume' | 'juz' | 'theme'>('surah');
+  const [volExpandedMap, setVolExpandedMap] = useState<Record<number, boolean>>({});
   const [selectedTopicCategory, setSelectedTopicCategory] = useState<string>('all');
   const [expandedTopics, setExpandedTopics] = useState<Record<string, boolean>>({});
   const [searchQuery, setSearchQuery] = useState('');
@@ -112,6 +113,51 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
     });
     return map;
   }, [surahs]);
+
+  const VOLUME_METADATA: Record<number, { title: string; subtitle: string; archiveLeaf: number }> = {
+    1: { title: 'Volume 1', subtitle: 'Al-Fatihah (1) – Al-Baqarah (2)', archiveLeaf: 81 },
+    2: { title: 'Volume 2', subtitle: "Ali 'Imran (3) – An-Nisa' (4)", archiveLeaf: 773 },
+    3: { title: 'Volume 3', subtitle: "Al-Ma'idah (5) – Al-A'raf (7)", archiveLeaf: 1432 },
+    4: { title: 'Volume 4', subtitle: 'Al-Anfal (8) – Hud (11)', archiveLeaf: 2238 },
+    5: { title: 'Volume 5', subtitle: 'Yusuf (12) – Al-Kahf (18)', archiveLeaf: 2812 },
+    6: { title: 'Volume 6', subtitle: 'Maryam (19) – Ar-Rum (30)', archiveLeaf: 3485 },
+    7: { title: 'Volume 7', subtitle: 'Luqman (31) – Al-Ahqaf (46)', archiveLeaf: 4245 },
+    8: { title: 'Volume 8', subtitle: 'Muhammad (47) – An-Nas (114)', archiveLeaf: 5050 },
+  };
+
+  const getSurahVol = (s: SurahManifestItem): number => {
+    if (s.volumeNumber) return s.volumeNumber;
+    if (s.number <= 2) return 1;
+    if (s.number <= 4) return 2;
+    if (s.number <= 7) return 3;
+    if (s.number <= 11) return 4;
+    if (s.number <= 18) return 5;
+    if (s.number <= 30) return 6;
+    if (s.number <= 46) return 7;
+    return 8;
+  };
+
+  const volumeMap = useMemo(() => {
+    const map = new Map<number, SurahManifestItem[]>();
+    for (let v = 1; v <= 8; v++) map.set(v, []);
+    surahs.forEach((s) => {
+      const v = getSurahVol(s);
+      const list = map.get(v) || [];
+      list.push(s);
+      map.set(v, list);
+    });
+    return map;
+  }, [surahs]);
+
+  const isVolExpanded = (volNum: number): boolean => {
+    if (volExpandedMap[volNum] !== undefined) return volExpandedMap[volNum];
+    const currentSurah = surahs.find((s) => s.number === activeSurahNumber);
+    return currentSurah ? getSurahVol(currentSurah) === volNum : volNum === 1;
+  };
+
+  const toggleVolExpand = (volNum: number) => {
+    setVolExpandedMap((prev) => ({ ...prev, [volNum]: !isVolExpanded(volNum) }));
+  };
 
   // Filter thematic topics by category and search query
   const filteredTopics = useMemo(() => {
@@ -368,7 +414,7 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
         <div className="flex items-center gap-1 mt-3.5 p-1 rounded-xl bg-stone-100 dark:bg-[#25252A] text-xs font-medium">
           <button
             onClick={() => setNavTab('surah')}
-            className={`flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg transition-all cursor-pointer ${
+            className={`flex-1 flex items-center justify-center gap-1 py-2 rounded-lg transition-all cursor-pointer ${
               navTab === 'surah'
                 ? 'bg-white dark:bg-[#1B1B1E] text-stone-900 dark:text-stone-100 shadow-xs font-semibold'
                 : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200'
@@ -376,6 +422,18 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
           >
             <Book className="w-3.5 h-3.5" />
             <span>Surah</span>
+          </button>
+          <button
+            onClick={() => setNavTab('volume')}
+            className={`flex-1 flex items-center justify-center gap-1 py-2 rounded-lg transition-all cursor-pointer ${
+              navTab === 'volume'
+                ? 'bg-white dark:bg-[#1B1B1E] text-stone-900 dark:text-stone-100 shadow-xs font-semibold'
+                : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200'
+            }`}
+            title="Browse by the 8 Volumes of Ma'ariful Qur'an"
+          >
+            <Layers className="w-3.5 h-3.5" />
+            <span>8 Vols</span>
           </button>
           <button
             onClick={() => setNavTab('juz')}
@@ -540,6 +598,127 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
                             {isSecBookmarked && (
                               <Bookmark className="w-3.5 h-3.5 fill-[#CD7743] text-[#CD7743] shrink-0 mt-0.5" />
                             )}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        ) : navTab === 'volume' ? (
+          /* ================= 1B. 8 VOLUMES OF MA'ARIFUL QUR'AN ================= */
+          <div className="space-y-2 pb-6">
+            <div className="flex items-center justify-between px-1.5 pt-0.5 pb-1 text-xs text-stone-500 dark:text-stone-400">
+              <span className="font-medium text-stone-600 dark:text-stone-300">8 Volumes (Complete Set)</span>
+              <a
+                href="https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n1/mode/2up"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[11px] font-medium text-[#CD7743] dark:text-[#E08955] hover:underline"
+              >
+                Full Archive PDF ↗
+              </a>
+            </div>
+            {Array.from(volumeMap.entries()).map(([volNum, surahList]) => {
+              const isVolActive = surahList.some((s) => s.number === activeSurahNumber);
+              const isExpanded = isVolExpanded(volNum);
+              const vMeta = VOLUME_METADATA[volNum];
+
+              return (
+                <div
+                  key={`vol-${volNum}`}
+                  className={`rounded-xl border overflow-hidden transition-all shadow-2xs ${
+                    isVolActive
+                      ? 'border-[#CD7743]/45 dark:border-[#CD7743]/50 bg-white dark:bg-[#202025] ring-1 ring-[#CD7743]/20'
+                      : 'border-stone-200/80 dark:border-stone-800/80 bg-white dark:bg-[#202025]'
+                  }`}
+                >
+                  <button
+                    type="button"
+                    onClick={() => toggleVolExpand(volNum)}
+                    className={`w-full text-left p-3 sm:p-3.5 flex items-center justify-between gap-2.5 transition-colors cursor-pointer ${
+                      isVolActive
+                        ? 'bg-[#CD7743]/8 dark:bg-[#CD7743]/15'
+                        : 'hover:bg-stone-50/80 dark:hover:bg-[#25252B]'
+                    }`}
+                  >
+                    <div className="flex items-center gap-2.5 min-w-0 flex-1">
+                      <span
+                        className={`font-mono text-xs font-semibold px-2 py-0.5 rounded shrink-0 ${
+                          isVolActive
+                            ? 'bg-[#CD7743] text-white'
+                            : 'bg-stone-100 dark:bg-[#2A2A30] text-stone-600 dark:text-stone-300'
+                        }`}
+                      >
+                        Vol. {volNum}
+                      </span>
+                      <div className="min-w-0 flex-1 truncate">
+                        <div className="text-sm font-semibold text-stone-900 dark:text-stone-100 truncate">
+                          {vMeta.subtitle}
+                        </div>
+                        <div className="text-xs text-stone-500 dark:text-stone-400 truncate mt-0.5">
+                          <span className="text-[#596B8E] dark:text-[#788BB3] font-medium">
+                            {surahList.length} {surahList.length === 1 ? 'Surah' : 'Surahs'}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center gap-1.5 shrink-0 pl-1">
+                      {isExpanded ? (
+                        <ChevronDown className="w-4 h-4 text-[#CD7743] dark:text-[#E08955]" />
+                      ) : (
+                        <ChevronRight className="w-4 h-4 text-stone-400" />
+                      )}
+                    </div>
+                  </button>
+
+                  {isExpanded && (
+                    <div className="border-t border-stone-100 dark:border-stone-800/80 bg-stone-50/70 dark:bg-[#1A1A1E]/70 p-2 sm:p-2.5 space-y-1.5">
+                      <div className="flex items-center justify-between text-[10px] uppercase tracking-wider font-semibold text-[#596B8E] dark:text-[#788BB3] px-1 pb-0.5">
+                        <span>Surahs in Volume {volNum}</span>
+                        <a
+                          href={`https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n${vMeta.archiveLeaf}/mode/2up`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-[#CD7743] dark:text-[#E08955] hover:underline lowercase font-medium"
+                        >
+                          open vol. {volNum} scan ↗
+                        </a>
+                      </div>
+                      {surahList.map((s) => {
+                        const isSurahSelected = s.number === activeSurahNumber;
+                        return (
+                          <button
+                            key={`vol-${volNum}-surah-${s.number}`}
+                            onClick={() => {
+                              onSelectSurah(s.number);
+                              onCloseMobile();
+                            }}
+                            className={`w-full text-left p-2 rounded-lg border transition-all flex items-center justify-between gap-2 group cursor-pointer ${
+                              isSurahSelected
+                                ? 'bg-[#CD7743]/15 dark:bg-[#CD7743]/25 border-[#CD7743]/50 text-[#CD7743] dark:text-[#E08955] font-semibold shadow-2xs'
+                                : 'bg-white dark:bg-[#222227] hover:bg-[#CD7743]/10 dark:hover:bg-[#CD7743]/15 border-stone-200/60 dark:border-stone-700/60 text-stone-700 dark:text-stone-300'
+                            }`}
+                          >
+                            <div className="flex items-center gap-2 min-w-0 flex-1">
+                              <span className="font-mono text-[11px] font-semibold text-stone-400 shrink-0">
+                                {String(s.number).padStart(3, '0')}
+                              </span>
+                              <div className="truncate">
+                                <span className="text-xs font-semibold text-stone-900 dark:text-stone-100">
+                                  {s.nameTransliterated}
+                                </span>
+                                <span className="text-[11px] text-stone-400 ml-1.5">
+                                  ({s.versesCount} v · {s.sectionsCount} sec)
+                                </span>
+                              </div>
+                            </div>
+                            <span className="font-quran text-sm text-stone-500 shrink-0">
+                              {s.nameArabic}
+                            </span>
                           </button>
                         );
                       })}

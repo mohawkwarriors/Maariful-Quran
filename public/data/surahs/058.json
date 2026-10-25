@@ -1,0 +1,3225 @@
+{
+  "number": 58,
+  "nameArabic": "المجادلة",
+  "nameTransliterated": "Al-Mujadilah",
+  "nameEnglish": "The Pleading Woman",
+  "versesCount": 22,
+  "revelationType": "Madani",
+  "volumeNumber": 8,
+  "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5364/mode/2up",
+  "juz": [
+    28
+  ],
+  "bismillahPre": true,
+  "introductoryTafseer": "(1) Zihar is a term denoting a custom of the Arabs in the days of Ignorance. In case of disagreement with their wives they used to say to them, \"You are for me like the back of my mother.\" After saying this, they used to take their wives as their real mothers in being prohibited for them, and the ties of marriage were held to have been broken for good, with no possibility of their restoration. These verses have been revealed in a similar case where a husband (Aus ibn. Samit) had declared ?ihar against his wife (Khawlah) who approached the Holy ...",
+  "historicalContext": {
+    "background": "The initial verses of this Surah refer to a particular incident: Sayyidna Aus Ibn Samit ؓ said to his wife Sayyidah Khaulah bint Tha'labah ؓ which, literally, means 'You are to me like the back of my mother.' Its underlying meaning is 'You are unlawful to me for cohabitation just like my mother.' Such an utterance, in the days of ignorance, amounted to divorce - even worse because it was taken to imply that the husband is rescinding all marital ties with his wife and, in addition, he is classifying her within the prohibited degree or permanently forbidden women like his mother. According to pre-Islamic custom, reunion with the wife was possib...",
+    "scholarlyReference": "Ma'ariful Qur'an by Mufti Muhammad Shafi, Volume 8 (Archive.org Leaf n5364)"
+  },
+  "sections": [
+    {
+      "id": "58-1-2",
+      "surahNumber": 58,
+      "verseRange": [
+        1,
+        2
+      ],
+      "title": "────────────────────────────────────────",
+      "juzNumber": 28,
+      "revelationType": "Madani",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5365/mode/2up",
+      "arabicText": "قَدْ سَمِعَ ٱللَّهُ قَوْلَ ٱلَّتِى تُجَـٰدِلُكَ فِى زَوْجِهَا وَتَشْتَكِىٓ إِلَى ٱللَّهِ وَٱللَّهُ يَسْمَعُ تَحَاوُرَكُمَآ ۚ إِنَّ ٱللَّهَ سَمِيعٌۢ بَصِيرٌ ۝١ ٱلَّذِينَ يُظَـٰهِرُونَ مِنكُم مِّن نِّسَآئِهِم مَّا هُنَّ أُمَّهَـٰتِهِمْ ۖ إِنْ أُمَّهَـٰتُهُمْ إِلَّا ٱلَّـٰٓـِٔى وَلَدْنَهُمْ ۚ وَإِنَّهُمْ لَيَقُولُونَ مُنكَرًا مِّنَ ٱلْقَوْلِ وَزُورًا ۚ وَإِنَّ ٱللَّهَ لَعَفُوٌّ غَفُورٌ ۝٢",
+      "translation": "Allah has heard the talk of the woman who was debating with you about her husband, and was complaining to Allah. Allah was hearing the conversation between both of you. Indeed, Allah is All-Hearing, All-Knowing. ۝ Those of you who declare Zihār against their wives, they are not their mothers. Their mothers are none else but those who gave birth to them. Undoubtedly they utter an evil word and a lie; and Allah is surely Most-Forgiving, Very-Merciful. ۝",
+      "phraseCards": [
+        {
+          "id": "58-1-card",
+          "verseNumber": 1,
+          "arabicPhrase": "قَدْ سَمِعَ ٱللَّهُ قَوْلَ ٱلَّتِى تُجَـٰدِلُكَ فِى زَوْجِهَا وَتَشْتَكِىٓ إِلَى ٱللَّهِ وَٱللَّهُ يَسْمَعُ تَحَاوُرَكُمَآ ۚ إِنَّ ٱللَّهَ سَمِيعٌۢ بَصِيرٌ",
+          "englishPhrase": "Allah has heard the talk of the woman who was debating with you about her husband, and was complaining to Allah. Allah was hearing the conversation between both of you. Indeed, Allah is All-Hearing, All-Knowing.",
+          "vocabulary": [
+            {
+              "word": "قَدْ",
+              "root": "ق - د",
+              "meaning": "Indeed",
+              "grammarNote": "Transliteration: qad"
+            },
+            {
+              "word": "سَمِعَ",
+              "root": "س - م - ع",
+              "meaning": "Allah has heard",
+              "grammarNote": "Transliteration: samiʿa"
+            },
+            {
+              "word": "ٱللَّهُ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah has heard",
+              "grammarNote": "Transliteration: l-lahu"
+            },
+            {
+              "word": "قَوْلَ",
+              "root": "ق - و - ل",
+              "meaning": "(the) speech",
+              "grammarNote": "Transliteration: qawla"
+            },
+            {
+              "word": "ٱلَّتِى",
+              "root": "ا - ل - ت",
+              "meaning": "(of one) who",
+              "grammarNote": "Transliteration: allatī"
+            },
+            {
+              "word": "تُجَـٰدِلُكَ",
+              "root": "ج - د - ل",
+              "meaning": "disputes with you",
+              "grammarNote": "Transliteration: tujādiluka"
+            },
+            {
+              "word": "فِى",
+              "root": "ف - ي",
+              "meaning": "concerning",
+              "grammarNote": "Transliteration: fī"
+            },
+            {
+              "word": "زَوْجِهَا",
+              "root": "ز - و - ج",
+              "meaning": "her husband",
+              "grammarNote": "Transliteration: zawjihā"
+            },
+            {
+              "word": "وَتَشْتَكِىٓ",
+              "root": "ش - ت - ك",
+              "meaning": "and she directs her complaint",
+              "grammarNote": "Transliteration: watashtakī"
+            },
+            {
+              "word": "إِلَى",
+              "root": "ا - ل - ي",
+              "meaning": "to",
+              "grammarNote": "Transliteration: ilā"
+            },
+            {
+              "word": "ٱللَّهِ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah",
+              "grammarNote": "Transliteration: l-lahi"
+            },
+            {
+              "word": "وَٱللَّهُ",
+              "root": "أ - ل - ه",
+              "meaning": "And Allah",
+              "grammarNote": "Transliteration: wal-lahu"
+            },
+            {
+              "word": "يَسْمَعُ",
+              "root": "س - م - ع",
+              "meaning": "hears",
+              "grammarNote": "Transliteration: yasmaʿu"
+            },
+            {
+              "word": "تَحَاوُرَكُمَآ ۚ",
+              "root": "ح - و - ر",
+              "meaning": "(the) dialogue of both of you",
+              "grammarNote": "Transliteration: taḥāwurakumā"
+            },
+            {
+              "word": "إِنَّ",
+              "root": "ا - ن - ن",
+              "meaning": "Indeed",
+              "grammarNote": "Transliteration: inna"
+            },
+            {
+              "word": "ٱللَّهَ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah",
+              "grammarNote": "Transliteration: l-laha"
+            },
+            {
+              "word": "سَمِيعٌۢ",
+              "root": "م - ي - ع",
+              "meaning": "(is) All-Hearer",
+              "grammarNote": "Transliteration: samīʿun"
+            },
+            {
+              "word": "بَصِيرٌ",
+              "root": "ص - ي - ر",
+              "meaning": "All-Seer",
+              "grammarNote": "Transliteration: baṣīrun"
+            }
+          ]
+        },
+        {
+          "id": "58-2-card",
+          "verseNumber": 2,
+          "arabicPhrase": "ٱلَّذِينَ يُظَـٰهِرُونَ مِنكُم مِّن نِّسَآئِهِم مَّا هُنَّ أُمَّهَـٰتِهِمْ ۖ إِنْ أُمَّهَـٰتُهُمْ إِلَّا ٱلَّـٰٓـِٔى وَلَدْنَهُمْ ۚ وَإِنَّهُمْ لَيَقُولُونَ مُنكَرًا مِّنَ ٱلْقَوْلِ وَزُورًا ۚ وَإِنَّ ٱللَّهَ لَعَفُوٌّ غَفُورٌ",
+          "englishPhrase": "Those of you who declare Zihār against their wives, they are not their mothers. Their mothers are none else but those who gave birth to them. Undoubtedly they utter an evil word and a lie; and Allah is surely Most-Forgiving, Very-Merciful.",
+          "vocabulary": [
+            {
+              "word": "ٱلَّذِينَ",
+              "root": "ل - ذ - ي",
+              "meaning": "Those who",
+              "grammarNote": "Transliteration: alladhīna"
+            },
+            {
+              "word": "يُظَـٰهِرُونَ",
+              "root": "ظ - ه - ر",
+              "meaning": "pronounce zihar",
+              "grammarNote": "Transliteration: yuẓāhirūna"
+            },
+            {
+              "word": "مِنكُم",
+              "root": "ن - ك - م",
+              "meaning": "among you",
+              "grammarNote": "Transliteration: minkum"
+            },
+            {
+              "word": "مِّن",
+              "root": "م - ن",
+              "meaning": "[from]",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "نِّسَآئِهِم",
+              "root": "س - ا - ئ",
+              "meaning": "(to) their wives",
+              "grammarNote": "Transliteration: nisāihim"
+            },
+            {
+              "word": "مَّا",
+              "root": "م - ا",
+              "meaning": "not",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "هُنَّ",
+              "root": "ه - ن",
+              "meaning": "they",
+              "grammarNote": "Transliteration: hunna"
+            },
+            {
+              "word": "أُمَّهَـٰتِهِمْ ۖ",
+              "root": "م - ه - ت",
+              "meaning": "(are) their mothers",
+              "grammarNote": "Transliteration: ummahātihim"
+            },
+            {
+              "word": "إِنْ",
+              "root": "ا - ن - ن",
+              "meaning": "Not",
+              "grammarNote": "Transliteration: in"
+            },
+            {
+              "word": "أُمَّهَـٰتُهُمْ",
+              "root": "م - ه - ت",
+              "meaning": "(are) their mothers",
+              "grammarNote": "Transliteration: ummahātuhum"
+            },
+            {
+              "word": "إِلَّا",
+              "root": "ا - ل - ا",
+              "meaning": "except",
+              "grammarNote": "Transliteration: illā"
+            },
+            {
+              "word": "ٱلَّـٰٓـِٔى",
+              "root": "ا - ل - ي",
+              "meaning": "those who",
+              "grammarNote": "Transliteration: allāī"
+            },
+            {
+              "word": "وَلَدْنَهُمْ ۚ",
+              "root": "ل - د - ن",
+              "meaning": "gave them birth",
+              "grammarNote": "Transliteration: waladnahum"
+            },
+            {
+              "word": "وَإِنَّهُمْ",
+              "root": "ن - ه - م",
+              "meaning": "And indeed, they",
+              "grammarNote": "Transliteration: wa-innahum"
+            },
+            {
+              "word": "لَيَقُولُونَ",
+              "root": "ق - و - ل",
+              "meaning": "surely say",
+              "grammarNote": "Transliteration: layaqūlūna"
+            },
+            {
+              "word": "مُنكَرًۭا",
+              "root": "ن - ك - ر",
+              "meaning": "an evil",
+              "grammarNote": "Transliteration: munkaran"
+            },
+            {
+              "word": "مِّنَ",
+              "root": "م - ن",
+              "meaning": "[of]",
+              "grammarNote": "Transliteration: mina"
+            },
+            {
+              "word": "ٱلْقَوْلِ",
+              "root": "ق - و - ل",
+              "meaning": "[the] word",
+              "grammarNote": "Transliteration: l-qawli"
+            },
+            {
+              "word": "وَزُورًۭا ۚ",
+              "root": "ز - و - ر",
+              "meaning": "and a lie",
+              "grammarNote": "Transliteration: wazūran"
+            },
+            {
+              "word": "وَإِنَّ",
+              "root": "و - ا - ن",
+              "meaning": "But indeed",
+              "grammarNote": "Transliteration: wa-inna"
+            },
+            {
+              "word": "ٱللَّهَ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah",
+              "grammarNote": "Transliteration: l-laha"
+            },
+            {
+              "word": "لَعَفُوٌّ",
+              "root": "ع - ف - و",
+              "meaning": "(is) surely, Oft-Pardoning",
+              "grammarNote": "Transliteration: laʿafuwwun"
+            },
+            {
+              "word": "غَفُورٌۭ",
+              "root": "غ - ف - و",
+              "meaning": "Oft-Forgiving",
+              "grammarNote": "Transliteration: ghafūrun"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verse 1]\n\n(1) Zihar is a term denoting a custom of the Arabs in the days of Ignorance. In case of disagreement with their wives they used to say to them, \"You are for me like the back of my mother.\" After saying this, they used to take their wives as their real mothers in being prohibited for them, and the ties of marriage were held to have been broken for good, with no possibility of their restoration. These verses have been revealed in a similar case where a husband (Aus ibn. Samit) had declared ?ihar against his wife (Khawlah) who approached the Holy Prophet and complained about her husband. The custom of the days of Ignorance was condemned, and the rules of Shari'ah about zihar were laid down by these verses. (Muhammad Taqi Usmani)\n\nCommentary\n\nCause of Revelation\n\nThe initial verses of this Surah refer to a particular incident: Sayyidna Aus Ibn Samit ؓ said to his wife Sayyidah Khaulah bint Tha'labah ؓ which, literally, means 'You are to me like the back of my mother.' Its underlying meaning is 'You are unlawful to me for cohabitation just like my mother.' Such an utterance, in the days of ignorance, amounted to divorce - even worse because it was taken to imply that the husband is rescinding all marital ties with his wife and, in addition, he is classifying her within the prohibited degree or permanently forbidden women like his mother. According to pre-Islamic custom, reunion with the wife was possible after divorce, but not after zihar, as she became permanently and absolutely forbidden. When this incident took place, the aggrieved lady went to the Messenger of Allah ﷺ complaining about her husband and seeking redress for her problem according to Shari'ah. Up to that point in time the Messenger of Allah ﷺ had not received any revelation concerning that legal issue. Therefore, he pleaded his inability to do anything to help her in the absence of a revealed ordinance and said to her: مَٓا اُمِرتُ فِی شَانکِ بِشَیءِ حَتّی الاٰنِ \"I have not yet received any ordinance regarding your matter.\" However he expressed his opinion according to common custom and said: مَا اَرَاکِ اِلَّا قَد حُرمتِ عَلَیہِ \"In my opinion, you have become forbidden to him.\" Having heard this ruling, she pleaded: \"0 Allah's Messenger! He spent my wealth, exhausted my youth and my womb bore abundantly for him. When I became old, unable to bear children, he pronounced the zihar formula on me. Where shall I go and how will my children do their living?\" According to another version, she said: مَا ذَکَرَ طَلَاقاً \"My husband did not mention the word 'divorce', so how can this be counted as 'divorce'?\" According to another version, she pleaded to Allah: اَللَّھُمَّ اِنِّی اَشکُوا الیکَ \"0 Allah! I direct my complaint to You . This was the cause of the revelation of verses [ 1-6] (Al-Durarul Manthur and Ibn Kathir) which clearly state that Allah heard Sayyidah Khaulah's ؓ complaint and revealed the rule of Shari'ah to redress her grievances. Allah not only made matters easy for her, but the rule has been eternally enshrined in the Holy Qur'an for all sensible people to follow.\n\nThe noble Companions ؓ greatly respected Sayyidah Khaulah ؓ because her case has been the cause of the revelation of the current set of verses, which abolished once and for all the long-standing social evil that was practiced in Arabia. Once Sayyidna ` Umar Faruq ؓ ، the Great, was on his way with some of the blessed Companions when he came across a woman who stopped him. He instantly stopped and listened attentively to her with his head bent down. He did not move till she completed what she wanted to say. Some of the noble Companions ؓ said: \"0 Commander of the Faithful! You have held back such a large group of people for such a long time on account of this old lady!\" Sayyidna ` Umar ؓ said: \"Do you know who this lady is? She is Sayyidah Khaulah ؓ the lady whose complaint was heard in the seventh heaven. So, how can ` Umar not listen to her? She should be heard for a longer period of time and with greater attention. By Allah! If she did not take leave of her own accord, I would have stood with her here till the nightfall.\" [ Ibn Kathir ]\n\nقَدْ سَمِعَ اللَّـهُ (Allah has heard....1) The reference in the verse is to Sayyidah Khaulah ؓ the wife of Sayyidna Aus Ibn Samit ؓ ، as mentioned above. Thus this verse and the rest of the verses lay down not only the rule of Shari` ah pertaining to zihar and redress the grievances of women placed in such awkward situation, but the first verse also is in honour of the pleading lady which consoles her, in that it says that Allah was listening to her words when she was pleading her case. The word mujadalah means 'to plead, argue or dispute consistently and convincingly about one's problem or case'. According to some narratives, when the Messenger of Allah ﷺ pleaded his inability to do anything for her, as noted above, the aggrieved lady uttered spontaneously that 'you receive ordinances in all matters, then how is it that no ordinance was revealed to you in my case?' Thus the verse was revealed: وَتَشْتَكِي إِلَى اللَّـهِ \"...and was complaining to Allah...[ 1] \". [ Qurtubi ]\n\nSayyidah ` A'ishah ؓ is reported to have said: \" Pure is He, Whose hearing encompasses all things. I heard what Khaulah bint Tha'labah ؓ said about her husband while some of it I could not hear despite being so close to her in the same room, but Allah heard all her conversation and said : قَدْ سَمِعَ اللَّـهُ 'Allah has heard...'.\" [ Bukhari, Ibn Kathir ]\n\n────────────────────────────────────────\n\n[Verse 2]\n\nZihar\n\nالَّذِينَ يُظَاهِرُ‌ونَ مِنكُم\n\nمِّن نِّسَائِهِم (Those of you who declare zihar against their wives...58:2) The aorist yuzahiruna is derived from zihar. There was a cruel custom in pre-Islamic Arabia; as pointed out earlier, where the husband would utter the zihar formula اَنتِ عَلَیِّ کَظَھرِ اُمِّی 'You are to me as my mother's back', and thus she would become permanently and absolutely unlawful to him for cohabitation like the mother. Here the word zahr (back) metonymically refers to bath 'stomach or womb'. [ Qurtubi ]\n\nDefinition of zihar and its effect in Shari’ ah\n\nIn order to understand the definition of zihar in terms of Shari’ ah, it should be noted first that there are some women who are permanently forbidden for a man, such as mother, sister, daughter and others in the prohibited degree. Although looking at such women is permissible in general, yet looking at some parts of their body is not permissible, (like abdomen, back etc.) Now the definition of zihar is 'to compare one's wife with any of such parts of the body of such prohibited women'. According to the old Arab custom all conjugal relations ceased permanently between a man and his wife when he would use these words; rather it was worse than divorce. In the case of divorce, it was possible to retract and take back the wife. But in the case of zihar, according to the old Arab custom, it was not at all possible to restore the conjugal rights.\n\nThe current set of verses brought about reform in the custom in two ways: [ 1] zihar has been declared a sinful act. If a person is placed in a situation where he needs to separate from his wife, he must choose the method of 'divorce'. Zihar should not be resorted to for this purpose, because the utterance of zihar formula is absurd, nonsense and false. Obviously, their wives are not their mothers, the Qur’ an reads thus: مَّا هُنَّ أُمَّهَاتِهِمْ إِنْ أُمَّهَاتُهُمْ إِلَّا اللَّائِي وَلَدْنَهُمْ \"...Their mothers are but only those who have given birth to them …58:2] \". The وَإِنَّهُمْ لَيَقُولُونَ مُنكَرً‌ا مِّنَ الْقَوْلِ وَزُورً‌ا further says: \"...and undoubtedly they utter an evil word and a lie...[ 58:2] \" In other words, their utterance is false, meaning 'calling one's wife mother' is contrary to truth and fact, and also a heinous sin.\n\n[ 2] The second reform the Qur'an brought about is as follows: If an ignorant person or a person unacquainted with the legal formalities of Islam were to utter the zihar formula, his wife does not become permanently unlawful to him, nor does he have an open licence to do as he wishes - like enjoying intimacy with her. The guilty person will have to pay a penalty for uttering such evil, false and obnoxious words. He cannot take back his wife without first paying the prescribed expiation. The following verse prescribes this expiation.",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Juristic Rulings & Shariah Injunctions (vv. 1–2)",
+          "content": "(1) Zihar is a term denoting a custom of the Arabs in the days of Ignorance. In case of disagreement with their wives they used to say to them, \"You are for me like the back of my mother.\" After saying this, they used to take their wives as their real mothers in being prohibited for them, and the ties of marriage were held to have been broken for good, with no possibility of their restoration. These verses have been revealed in a similar case where a husband (Aus ibn. Samit) had declared ?ihar against his wife (Khawlah) who approached the Holy Prophet and complained about her husband. The custom of the days of Ignorance was condemned, and the rules of Shari'ah about zihar were laid down by these verses. (Muhammad Taqi Usmani)"
+        },
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "The initial verses of this Surah refer to a particular incident: Sayyidna Aus Ibn Samit ؓ said to his wife Sayyidah Khaulah bint Tha'labah ؓ which, literally, means 'You are to me like the back of my mother.' Its underlying meaning is 'You are unlawful to me for cohabitation just like my mother.' Such an utterance, in the days of ignorance, amounted to divorce - even worse because it was taken to imply that the husband is rescinding all marital ties with his wife and, in addition, he is classifying her within the prohibited degree or permanently forbidden women like his mother. According to pre-Islamic custom, reunion with the wife was possible after divorce, but not after zihar, as she became permanently and absolutely forbidden. When this incident took place, the aggrieved lady went to the Messenger of Allah ﷺ complaining about her husband and seeking redress for her problem according..."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "The noble Companions ؓ greatly respected Sayyidah Khaulah ؓ because her case has been the cause of the revelation of the current set of verses, which abolished once and for all the long-standing social evil that was practiced in Arabia. Once Sayyidna ` Umar Faruq ؓ ، the Great, was on his way with some of the blessed Companions when he came across a woman who stopped him. He instantly stopped and listened attentively to her with his head bent down. He did not move till she completed what she wanted to say. Some of the noble Companions ؓ said: \"0 Commander of the Faithful! You have held back such a large group of people for such a long time on account of this old lady!\" Sayyidna ` Umar ؓ said: \"Do you know who this lady is? She is Sayyidah Khaulah ؓ the lady whose complaint was heard in the seventh heaven. So, how can ` Umar not listen to her? She should be heard for a longer period of..."
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "58-3-4",
+      "surahNumber": 58,
+      "verseRange": [
+        3,
+        4
+      ],
+      "title": "The Expiation for Zihar",
+      "juzNumber": 28,
+      "revelationType": "Madani",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5365/mode/2up",
+      "arabicText": "وَٱلَّذِينَ يُظَـٰهِرُونَ مِن نِّسَآئِهِمْ ثُمَّ يَعُودُونَ لِمَا قَالُوا۟ فَتَحْرِيرُ رَقَبَةٍ مِّن قَبْلِ أَن يَتَمَآسَّا ۚ ذَٰلِكُمْ تُوعَظُونَ بِهِۦ ۚ وَٱللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ ۝٣ فَمَن لَّمْ يَجِدْ فَصِيَامُ شَهْرَيْنِ مُتَتَابِعَيْنِ مِن قَبْلِ أَن يَتَمَآسَّا ۖ فَمَن لَّمْ يَسْتَطِعْ فَإِطْعَامُ سِتِّينَ مِسْكِينًا ۚ ذَٰلِكَ لِتُؤْمِنُوا۟ بِٱللَّهِ وَرَسُولِهِۦ ۚ وَتِلْكَ حُدُودُ ٱللَّهِ ۗ وَلِلْكَـٰفِرِينَ عَذَابٌ أَلِيمٌ ۝٤",
+      "translation": "Those who declare Zihār against their wives, then retract what they said, obligated on them is to free the neck (of a slave) before the two (spouses) touch one another. This is what you are advised, and Allah is well aware of what you do. ۝ But whoever does not find (a slave) has to fast for two consecutive months before the two (spouses) touch one another. Then the one who is not able to do so has to feed sixty indigent persons. This is (laid down) so that you believe in Allah and His Messenger. These are the limits set by Allah; and for the disbelievers there is a painful punishment. ۝",
+      "phraseCards": [
+        {
+          "id": "58-3-card",
+          "verseNumber": 3,
+          "arabicPhrase": "وَٱلَّذِينَ يُظَـٰهِرُونَ مِن نِّسَآئِهِمْ ثُمَّ يَعُودُونَ لِمَا قَالُوا۟ فَتَحْرِيرُ رَقَبَةٍ مِّن قَبْلِ أَن يَتَمَآسَّا ۚ ذَٰلِكُمْ تُوعَظُونَ بِهِۦ ۚ وَٱللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ",
+          "englishPhrase": "Those who declare Zihār against their wives, then retract what they said, obligated on them is to free the neck (of a slave) before the two (spouses) touch one another. This is what you are advised, and Allah is well aware of what you do.",
+          "vocabulary": [
+            {
+              "word": "وَٱلَّذِينَ",
+              "root": "ذ - ي - ن",
+              "meaning": "And those who",
+              "grammarNote": "Transliteration: wa-alladhīna"
+            },
+            {
+              "word": "يُظَـٰهِرُونَ",
+              "root": "ظ - ه - ر",
+              "meaning": "pronounce zihar",
+              "grammarNote": "Transliteration: yuẓāhirūna"
+            },
+            {
+              "word": "مِن",
+              "root": "م - ن",
+              "meaning": "[from]",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "نِّسَآئِهِمْ",
+              "root": "س - ا - ئ",
+              "meaning": "(to) their wives",
+              "grammarNote": "Transliteration: nisāihim"
+            },
+            {
+              "word": "ثُمَّ",
+              "root": "ث - م",
+              "meaning": "then",
+              "grammarNote": "Transliteration: thumma"
+            },
+            {
+              "word": "يَعُودُونَ",
+              "root": "ع - و - د",
+              "meaning": "go back",
+              "grammarNote": "Transliteration: yaʿūdūna"
+            },
+            {
+              "word": "لِمَا",
+              "root": "ل - م - ا",
+              "meaning": "on what",
+              "grammarNote": "Transliteration: limā"
+            },
+            {
+              "word": "قَالُوا۟",
+              "root": "ق - ا - ل",
+              "meaning": "they said",
+              "grammarNote": "Transliteration: qālū"
+            },
+            {
+              "word": "فَتَحْرِيرُ",
+              "root": "ح - ر - ي",
+              "meaning": "then freeing",
+              "grammarNote": "Transliteration: fataḥrīru"
+            },
+            {
+              "word": "رَقَبَةٍۢ",
+              "root": "ر - ق - ب",
+              "meaning": "(of) a slave",
+              "grammarNote": "Transliteration: raqabatin"
+            },
+            {
+              "word": "مِّن",
+              "root": "م - ن",
+              "meaning": "before",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "قَبْلِ",
+              "root": "ق - ب - ل",
+              "meaning": "before",
+              "grammarNote": "Transliteration: qabli"
+            },
+            {
+              "word": "أَن",
+              "root": "ا - ن - ن",
+              "meaning": "[that]",
+              "grammarNote": "Transliteration: an"
+            },
+            {
+              "word": "يَتَمَآسَّا ۚ",
+              "root": "ا - س - ا",
+              "meaning": "they touch each other",
+              "grammarNote": "Transliteration: yatamāssā"
+            },
+            {
+              "word": "ذَٰلِكُمْ",
+              "root": "ذ - ل - ك",
+              "meaning": "That",
+              "grammarNote": "Transliteration: dhālikum"
+            },
+            {
+              "word": "تُوعَظُونَ",
+              "root": "و - ع - ظ",
+              "meaning": "you are admonished",
+              "grammarNote": "Transliteration: tūʿaẓūna"
+            },
+            {
+              "word": "بِهِۦ ۚ",
+              "root": "ب - ه",
+              "meaning": "to it",
+              "grammarNote": "Transliteration: bihi"
+            },
+            {
+              "word": "وَٱللَّهُ",
+              "root": "أ - ل - ه",
+              "meaning": "And Allah",
+              "grammarNote": "Transliteration: wal-lahu"
+            },
+            {
+              "word": "بِمَا",
+              "root": "ب - م - ا",
+              "meaning": "of what",
+              "grammarNote": "Transliteration: bimā"
+            },
+            {
+              "word": "تَعْمَلُونَ",
+              "root": "ع - م - ل",
+              "meaning": "you do",
+              "grammarNote": "Transliteration: taʿmalūna"
+            },
+            {
+              "word": "خَبِيرٌۭ",
+              "root": "خ - ب - ي",
+              "meaning": "(is) All-Aware",
+              "grammarNote": "Transliteration: khabīrun"
+            }
+          ]
+        },
+        {
+          "id": "58-4-card",
+          "verseNumber": 4,
+          "arabicPhrase": "فَمَن لَّمْ يَجِدْ فَصِيَامُ شَهْرَيْنِ مُتَتَابِعَيْنِ مِن قَبْلِ أَن يَتَمَآسَّا ۖ فَمَن لَّمْ يَسْتَطِعْ فَإِطْعَامُ سِتِّينَ مِسْكِينًا ۚ ذَٰلِكَ لِتُؤْمِنُوا۟ بِٱللَّهِ وَرَسُولِهِۦ ۚ وَتِلْكَ حُدُودُ ٱللَّهِ ۗ وَلِلْكَـٰفِرِينَ عَذَابٌ أَلِيمٌ",
+          "englishPhrase": "But whoever does not find (a slave) has to fast for two consecutive months before the two (spouses) touch one another. Then the one who is not able to do so has to feed sixty indigent persons. This is (laid down) so that you believe in Allah and His Messenger. These are the limits set by Allah; and for the disbelievers there is a painful punishment.",
+          "vocabulary": [
+            {
+              "word": "فَمَن",
+              "root": "ف - م - ن",
+              "meaning": "Then whoever",
+              "grammarNote": "Transliteration: faman"
+            },
+            {
+              "word": "لَّمْ",
+              "root": "ل - م",
+              "meaning": "(does) not",
+              "grammarNote": "Transliteration: lam"
+            },
+            {
+              "word": "يَجِدْ",
+              "root": "ي - ج - د",
+              "meaning": "find",
+              "grammarNote": "Transliteration: yajid"
+            },
+            {
+              "word": "فَصِيَامُ",
+              "root": "ص - ي - م",
+              "meaning": "then fasting",
+              "grammarNote": "Transliteration: faṣiyāmu"
+            },
+            {
+              "word": "شَهْرَيْنِ",
+              "root": "ش - ه - ر",
+              "meaning": "(for) two months",
+              "grammarNote": "Transliteration: shahrayni"
+            },
+            {
+              "word": "مُتَتَابِعَيْنِ",
+              "root": "ا - ب - ع",
+              "meaning": "consecutively",
+              "grammarNote": "Transliteration: mutatābiʿayni"
+            },
+            {
+              "word": "مِن",
+              "root": "م - ن",
+              "meaning": "before",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "قَبْلِ",
+              "root": "ق - ب - ل",
+              "meaning": "before",
+              "grammarNote": "Transliteration: qabli"
+            },
+            {
+              "word": "أَن",
+              "root": "ا - ن - ن",
+              "meaning": "[that]",
+              "grammarNote": "Transliteration: an"
+            },
+            {
+              "word": "يَتَمَآسَّا ۖ",
+              "root": "ا - س - ا",
+              "meaning": "they both touch each other",
+              "grammarNote": "Transliteration: yatamāssā"
+            },
+            {
+              "word": "فَمَن",
+              "root": "ف - م - ن",
+              "meaning": "But (he) who",
+              "grammarNote": "Transliteration: faman"
+            },
+            {
+              "word": "لَّمْ",
+              "root": "ل - م",
+              "meaning": "not",
+              "grammarNote": "Transliteration: lam"
+            },
+            {
+              "word": "يَسْتَطِعْ",
+              "root": "س - ت - ط",
+              "meaning": "is able",
+              "grammarNote": "Transliteration: yastaṭiʿ"
+            },
+            {
+              "word": "فَإِطْعَامُ",
+              "root": "ط - ع - ا",
+              "meaning": "then (the) feeding",
+              "grammarNote": "Transliteration: fa-iṭ'ʿāmu"
+            },
+            {
+              "word": "سِتِّينَ",
+              "root": "ت - ي - ن",
+              "meaning": "(of) sixty",
+              "grammarNote": "Transliteration: sittīna"
+            },
+            {
+              "word": "مِسْكِينًۭا ۚ",
+              "root": "س - ك - ي",
+              "meaning": "needy one(s)",
+              "grammarNote": "Transliteration: mis'kīnan"
+            },
+            {
+              "word": "ذَٰلِكَ",
+              "root": "ذ - ل - ك",
+              "meaning": "That",
+              "grammarNote": "Transliteration: dhālika"
+            },
+            {
+              "word": "لِتُؤْمِنُوا۟",
+              "root": "ؤ - م - ن",
+              "meaning": "so that you may believe",
+              "grammarNote": "Transliteration: litu'minū"
+            },
+            {
+              "word": "بِٱللَّهِ",
+              "root": "أ - ل - ه",
+              "meaning": "in Allah",
+              "grammarNote": "Transliteration: bil-lahi"
+            },
+            {
+              "word": "وَرَسُولِهِۦ ۚ",
+              "root": "ر - س - و",
+              "meaning": "and His Messenger",
+              "grammarNote": "Transliteration: warasūlihi"
+            },
+            {
+              "word": "وَتِلْكَ",
+              "root": "ت - ل - ك",
+              "meaning": "and these",
+              "grammarNote": "Transliteration: watil'ka"
+            },
+            {
+              "word": "حُدُودُ",
+              "root": "ح - د - و",
+              "meaning": "(are the) limits",
+              "grammarNote": "Transliteration: ḥudūdu"
+            },
+            {
+              "word": "ٱللَّهِ ۗ",
+              "root": "أ - ل - ه",
+              "meaning": "(of) Allah",
+              "grammarNote": "Transliteration: l-lahi"
+            },
+            {
+              "word": "وَلِلْكَـٰفِرِينَ",
+              "root": "ل - ل - ك",
+              "meaning": "and for the disbelievers",
+              "grammarNote": "Transliteration: walil'kāfirīna"
+            },
+            {
+              "word": "عَذَابٌ",
+              "root": "ع - ذ - ب",
+              "meaning": "(is) a punishment",
+              "grammarNote": "Transliteration: ʿadhābun"
+            },
+            {
+              "word": "أَلِيمٌ",
+              "root": "ل - ي - م",
+              "meaning": "painful",
+              "grammarNote": "Transliteration: alīmun"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verse 3]\n\nThe Expiation for Zihar\n\nوَالَّذِينَ يُظَاهِرُ‌ونَ مِن نِّسَائِهِمْ ثُمَّ يَعُودُونَ لِمَا قَالُوا (And those who declare zihar against their wives, then retract what they said, ...58:3). The preposition lam in the phrase يَعُودُونَ لِمَا قَالُوا \"...retract what they said...\" is used in the sense of ` an [ from ]. Sayyidna Ibn ` Abbas ؓ interprets 'retract' in the sense of 'regret': 'they regret what they said and wish to be intimate or cohabit with their wives'. [ Mazhari ]\n\nThe verse shows that the penalty has been imposed on the husband for the purpose of making the wife lawful - without it she cannot become lawful to him. zihar per se is not the cause of the expiation. In fact, zihar is a heinous sin for which repentance and seeking pardon and forgiveness is absolutely necessary. The concluding part of verse [ 2] وَإِنَّ اللَّـهَ لَعَفُوٌّ غَفُورٌ‌ \"...Allah is surely Most-forgiving, Very-Merciful.\" points to this fact. In other words, Allah in His great mercy has made allowance for man's weaknesses and He is always ready to forgive his lapses, provided he comes to Allah with a penitent heart and makes amends. However, if a person did commit zihar and does not wish to take back his wife and enjoy intimacy with her, expiation is not obligatory on him. However, destroying a wife's conjugal rights is unlawful. If she demands, it is obligatory for him to pay the expiation and take her back, should he wish to do so; or if she demands, he must divorce her and set her free from the bond of marriage. If he does not divorce her and set her free, then she has the right to apply to a Qadi or an Islamic court to compel him to either pay the expiation and take her back or to divorce her and set her free so that she could contract a second marriage. Islamic works on jurisprudence set down details of the laws pertaining to zihar.\n\nThe penalty for zihar is obligatory, which is given in this and the next verse. There are three options: [ 1] فَتَحْرِ‌يرُ‌ رَ‌قَبَةٍ (...obligated on them is to free the neck [ of a slave ]...) [ 2] If a person cannot afford to do that, he must keep fast for two consecutive months; and [ 3] if he is so weak or ill that he cannot fast, then he must feed sixty poor people. The expiation will be fulfilled if one poor person is given two meals for sixty days. Alternatively, it is possible to give two meals to sixty poor persons on a single day. In each case, the poor should be fed to their fill. Another possible alternative is to give to a poor person about 1.6 kg wheat or 2.12 kg dates or barley for sixty days or the equivalent price of these food items may be given. The details of the law appertaining to zihar and its expiation are available in the texts of Islamic jurisprudence.\n\nIt is recorded in Traditions that when Sayyidah Khaulah ؓ complained to Allah's Messenger ﷺ about her husband and pleaded her case to Allah, verses relating to zihar and its expiation were revealed. So, Allah's Messenger ﷺ called for the husband. When he came, the Holy Prophet ﷺ noticed that he was a weak-sighted old man. He recited to him the verses resolving his case, and commanded him to emancipate a slave, he said that he does not have the means to do that. The Holy Prophet ﷺ then asked him to fast two successive months, to which he replied: \"By Him Who has sent you as the true Messenger, if I do not have two or three meals a day, I lose my sight completely.\" The Holy Prophet ﷺ said 'Then feed sixty poor people'. He said 'I do not have the ability for that either, unless you help me'. The Holy Prophet ﷺ gave him some food grain, and also other people gathered more food grain for him, which amounted to the measure of sadaqatul-fitr for sixty poor men, and in this way the expiation was made. [ Ibn Kathir ]\n\n────────────────────────────────────────\n\n[Verse 4]\n\nذَٰلِكَ لِتُؤْمِنُوا بِاللَّـهِ وَرَ‌سُولِهِ وَتِلْكَ حُدُودُ اللَّـهِ وَلِلْكَافِرِ‌ينَ عَذَابٌ أَلِيمٌ (...This is [ laid down ] so that you believe in Allah and His Messenger. And these are the limits set by Allah. And for the disbelievers there is a painful chastisement. 58:4) This part of the verse contains the phrase 'so that you believe'. Belief here implies 'to act upon the sacred laws, ordinances and injunctions or obey the commandments of Allah and His Messenger'. Then the verse says that the laws of expiation are limits set by Allah. It is prohibited to exceed them. It indicates that in matters of marriage, divorce, incestuous comparison and so on, Islam has abolished all traces of pre-Islamic pagan elements of customs and practices, and set down the just and approved code of conduct. Man is required to stick strictly to the parameters of Islam. Those who oppose and deny the Divine limits will be tormented most severely.",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Juristic Rulings & Shariah Injunctions (vv. 3–4)",
+          "content": "The verse shows that the penalty has been imposed on the husband for the purpose of making the wife lawful - without it she cannot become lawful to him. zihar per se is not the cause of the expiation. In fact, zihar is a heinous sin for which repentance and seeking pardon and forgiveness is absolutely necessary. The concluding part of verse [ 2] وَإِنَّ اللَّـهَ لَعَفُوٌّ غَفُورٌ‌ \"...Allah is surely Most-forgiving, Very-Merciful.\" points to this fact. In other words, Allah in His great mercy has made allowance for man's weaknesses and He is always ready to forgive his lapses, provided he comes to Allah with a penitent heart and makes amends. However, if a person did commit zihar and does not wish to take back his wife and enjoy intimacy with her, expiation is not obligatory on him. However, destroying a wife's conjugal rights is unlawful. If she demands, it is obligatory for him to pay..."
+        },
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "وَالَّذِينَ يُظَاهِرُ‌ونَ مِن نِّسَائِهِمْ ثُمَّ يَعُودُونَ لِمَا قَالُوا (And those who declare zihar against their wives, then retract what they said, ...58:3). The preposition lam in the phrase يَعُودُونَ لِمَا قَالُوا \"...retract what they said...\" is used in the sense of ` an [ from ]. Sayyidna Ibn ` Abbas ؓ interprets 'retract' in the sense of 'regret': 'they regret what they said and wish to be intimate or cohabit with their wives'. [ Mazhari ]"
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "The penalty for zihar is obligatory, which is given in this and the next verse. There are three options: [ 1] فَتَحْرِ‌يرُ‌ رَ‌قَبَةٍ (...obligated on them is to free the neck [ of a slave ]...) [ 2] If a person cannot afford to do that, he must keep fast for two consecutive months; and [ 3] if he is so weak or ill that he cannot fast, then he must feed sixty poor people. The expiation will be fulfilled if one poor person is given two meals for sixty days. Alternatively, it is possible to give two meals to sixty poor persons on a single day. In each case, the poor should be fed to their fill. Another possible alternative is to give to a poor person about 1.6 kg wheat or 2.12 kg dates or barley for sixty days or the equivalent price of these food items may be given. The details of the law appertaining to zihar and its expiation are available in the texts of Islamic jurisprudence."
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "58-5-7",
+      "surahNumber": 58,
+      "verseRange": [
+        5,
+        7
+      ],
+      "title": "The Fate of those who Challenge Allah and His Apostle",
+      "juzNumber": 28,
+      "revelationType": "Madani",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5365/mode/2up",
+      "arabicText": "إِنَّ ٱلَّذِينَ يُحَآدُّونَ ٱللَّهَ وَرَسُولَهُۥ كُبِتُوا۟ كَمَا كُبِتَ ٱلَّذِينَ مِن قَبْلِهِمْ ۚ وَقَدْ أَنزَلْنَآ ءَايَـٰتٍۭ بَيِّنَـٰتٍ ۚ وَلِلْكَـٰفِرِينَ عَذَابٌ مُّهِينٌ ۝٥ يَوْمَ يَبْعَثُهُمُ ٱللَّهُ جَمِيعًا فَيُنَبِّئُهُم بِمَا عَمِلُوٓا۟ ۚ أَحْصَىٰهُ ٱللَّهُ وَنَسُوهُ ۚ وَٱللَّهُ عَلَىٰ كُلِّ شَىْءٍ شَهِيدٌ ۝٦ أَلَمْ تَرَ أَنَّ ٱللَّهَ يَعْلَمُ مَا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۖ مَا يَكُونُ مِن نَّجْوَىٰ ثَلَـٰثَةٍ إِلَّا هُوَ رَابِعُهُمْ وَلَا خَمْسَةٍ إِلَّا هُوَ سَادِسُهُمْ وَلَآ أَدْنَىٰ مِن ذَٰلِكَ وَلَآ أَكْثَرَ إِلَّا هُوَ مَعَهُمْ أَيْنَ مَا كَانُوا۟ ۖ ثُمَّ يُنَبِّئُهُم بِمَا عَمِلُوا۟ يَوْمَ ٱلْقِيَـٰمَةِ ۚ إِنَّ ٱللَّهَ بِكُلِّ شَىْءٍ عَلِيمٌ ۝٧",
+      "translation": "Surely those who oppose Allah and His Messenger shall be disgraced, just as those before them were disgraced. We have sent down clear verses, and for the disbelievers there is a humiliating punishment ۝ on the Day when Allah will resurrect them all together, and will tell them what they did; Allah has its full account, while they have forgotten it. Allah is witness to every thing. ۝ Have you not observed that Allah knows everything in the heavens and everything in the earth? No secret consulta-tion takes place between three, but He is fourth of them, nor between five, but He is sixth of them, nor between fewer than that or more, but He is with them wherever they may be. Then He will tell them on the Day of Judgment what they did. Surely Allah is All-Knowing about every thing. ۝",
+      "phraseCards": [
+        {
+          "id": "58-5-card",
+          "verseNumber": 5,
+          "arabicPhrase": "إِنَّ ٱلَّذِينَ يُحَآدُّونَ ٱللَّهَ وَرَسُولَهُۥ كُبِتُوا۟ كَمَا كُبِتَ ٱلَّذِينَ مِن قَبْلِهِمْ ۚ وَقَدْ أَنزَلْنَآ ءَايَـٰتٍۭ بَيِّنَـٰتٍ ۚ وَلِلْكَـٰفِرِينَ عَذَابٌ مُّهِينٌ",
+          "englishPhrase": "Surely those who oppose Allah and His Messenger shall be disgraced, just as those before them were disgraced. We have sent down clear verses, and for the disbelievers there is a humiliating punishment",
+          "vocabulary": [
+            {
+              "word": "إِنَّ",
+              "root": "ا - ن - ن",
+              "meaning": "Indeed",
+              "grammarNote": "Transliteration: inna"
+            },
+            {
+              "word": "ٱلَّذِينَ",
+              "root": "ل - ذ - ي",
+              "meaning": "those who",
+              "grammarNote": "Transliteration: alladhīna"
+            },
+            {
+              "word": "يُحَآدُّونَ",
+              "root": "ح - ا - د",
+              "meaning": "oppose",
+              "grammarNote": "Transliteration: yuḥāddūna"
+            },
+            {
+              "word": "ٱللَّهَ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah",
+              "grammarNote": "Transliteration: l-laha"
+            },
+            {
+              "word": "وَرَسُولَهُۥ",
+              "root": "ر - س - و",
+              "meaning": "and His Messenger",
+              "grammarNote": "Transliteration: warasūlahu"
+            },
+            {
+              "word": "كُبِتُوا۟",
+              "root": "ك - ب - ت",
+              "meaning": "(will) be disgraced",
+              "grammarNote": "Transliteration: kubitū"
+            },
+            {
+              "word": "كَمَا",
+              "root": "ك - م - ا",
+              "meaning": "as",
+              "grammarNote": "Transliteration: kamā"
+            },
+            {
+              "word": "كُبِتَ",
+              "root": "ك - ب - ت",
+              "meaning": "were disgraced",
+              "grammarNote": "Transliteration: kubita"
+            },
+            {
+              "word": "ٱلَّذِينَ",
+              "root": "ل - ذ - ي",
+              "meaning": "those",
+              "grammarNote": "Transliteration: alladhīna"
+            },
+            {
+              "word": "مِن",
+              "root": "م - ن",
+              "meaning": "before them",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "قَبْلِهِمْ ۚ",
+              "root": "ق - ب - ل",
+              "meaning": "before them",
+              "grammarNote": "Transliteration: qablihim"
+            },
+            {
+              "word": "وَقَدْ",
+              "root": "و - ق - د",
+              "meaning": "And certainly",
+              "grammarNote": "Transliteration: waqad"
+            },
+            {
+              "word": "أَنزَلْنَآ",
+              "root": "ن - ز - ل",
+              "meaning": "We have sent down",
+              "grammarNote": "Transliteration: anzalnā"
+            },
+            {
+              "word": "ءَايَـٰتٍۭ",
+              "root": "ء - ي - ت",
+              "meaning": "Verses",
+              "grammarNote": "Transliteration: āyātin"
+            },
+            {
+              "word": "بَيِّنَـٰتٍۢ ۚ",
+              "root": "ي - ن - ت",
+              "meaning": "clear",
+              "grammarNote": "Transliteration: bayyinātin"
+            },
+            {
+              "word": "وَلِلْكَـٰفِرِينَ",
+              "root": "ل - ل - ك",
+              "meaning": "And for the disbelievers",
+              "grammarNote": "Transliteration: walil'kāfirīna"
+            },
+            {
+              "word": "عَذَابٌۭ",
+              "root": "ع - ذ - ب",
+              "meaning": "(is) a punishment",
+              "grammarNote": "Transliteration: ʿadhābun"
+            },
+            {
+              "word": "مُّهِينٌۭ",
+              "root": "ه - ي - ن",
+              "meaning": "humiliating",
+              "grammarNote": "Transliteration: muhīnun"
+            }
+          ]
+        },
+        {
+          "id": "58-6-card",
+          "verseNumber": 6,
+          "arabicPhrase": "يَوْمَ يَبْعَثُهُمُ ٱللَّهُ جَمِيعًا فَيُنَبِّئُهُم بِمَا عَمِلُوٓا۟ ۚ أَحْصَىٰهُ ٱللَّهُ وَنَسُوهُ ۚ وَٱللَّهُ عَلَىٰ كُلِّ شَىْءٍ شَهِيدٌ",
+          "englishPhrase": "on the Day when Allah will resurrect them all together, and will tell them what they did; Allah has its full account, while they have forgotten it. Allah is witness to every thing.",
+          "vocabulary": [
+            {
+              "word": "يَوْمَ",
+              "root": "ي - و - م",
+              "meaning": "(On the) Day",
+              "grammarNote": "Transliteration: yawma"
+            },
+            {
+              "word": "يَبْعَثُهُمُ",
+              "root": "ب - ع - ث",
+              "meaning": "(when) Allah will raise them",
+              "grammarNote": "Transliteration: yabʿathuhumu"
+            },
+            {
+              "word": "ٱللَّهُ",
+              "root": "أ - ل - ه",
+              "meaning": "(when) Allah will raise them",
+              "grammarNote": "Transliteration: l-lahu"
+            },
+            {
+              "word": "جَمِيعًۭا",
+              "root": "ج - م - ي",
+              "meaning": "all",
+              "grammarNote": "Transliteration: jamīʿan"
+            },
+            {
+              "word": "فَيُنَبِّئُهُم",
+              "root": "ن - ب - ئ",
+              "meaning": "and inform them",
+              "grammarNote": "Transliteration: fayunabbi-uhum"
+            },
+            {
+              "word": "بِمَا",
+              "root": "ب - م - ا",
+              "meaning": "of what",
+              "grammarNote": "Transliteration: bimā"
+            },
+            {
+              "word": "عَمِلُوٓا۟ ۚ",
+              "root": "ع - م - ل",
+              "meaning": "they did",
+              "grammarNote": "Transliteration: ʿamilū"
+            },
+            {
+              "word": "أَحْصَىٰهُ",
+              "root": "ح - ص - ي",
+              "meaning": "Allah has recorded it",
+              "grammarNote": "Transliteration: aḥṣāhu"
+            },
+            {
+              "word": "ٱللَّهُ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah has recorded it",
+              "grammarNote": "Transliteration: l-lahu"
+            },
+            {
+              "word": "وَنَسُوهُ ۚ",
+              "root": "ن - س - و",
+              "meaning": "while they forgot it",
+              "grammarNote": "Transliteration: wanasūhu"
+            },
+            {
+              "word": "وَٱللَّهُ",
+              "root": "أ - ل - ه",
+              "meaning": "And Allah",
+              "grammarNote": "Transliteration: wal-lahu"
+            },
+            {
+              "word": "عَلَىٰ",
+              "root": "ع - ل - و",
+              "meaning": "(is) over",
+              "grammarNote": "Transliteration: ʿalā"
+            },
+            {
+              "word": "كُلِّ",
+              "root": "ك - ل",
+              "meaning": "all",
+              "grammarNote": "Transliteration: kulli"
+            },
+            {
+              "word": "شَىْءٍۢ",
+              "root": "ش - ي - ء",
+              "meaning": "things",
+              "grammarNote": "Transliteration: shayin"
+            },
+            {
+              "word": "شَهِيدٌ",
+              "root": "ش - ه - ي",
+              "meaning": "a Witness",
+              "grammarNote": "Transliteration: shahīdun"
+            }
+          ]
+        },
+        {
+          "id": "58-7-card",
+          "verseNumber": 7,
+          "arabicPhrase": "أَلَمْ تَرَ أَنَّ ٱللَّهَ يَعْلَمُ مَا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۖ مَا يَكُونُ مِن نَّجْوَىٰ ثَلَـٰثَةٍ إِلَّا هُوَ رَابِعُهُمْ وَلَا خَمْسَةٍ إِلَّا هُوَ سَادِسُهُمْ وَلَآ أَدْنَىٰ مِن ذَٰلِكَ وَلَآ أَكْثَرَ إِلَّا هُوَ مَعَهُمْ أَيْنَ مَا كَانُوا۟ ۖ ثُمَّ يُنَبِّئُهُم بِمَا عَمِلُوا۟ يَوْمَ ٱلْقِيَـٰمَةِ ۚ إِنَّ ٱللَّهَ بِكُلِّ شَىْءٍ عَلِيمٌ",
+          "englishPhrase": "Have you not observed that Allah knows everything in the heavens and everything in the earth? No secret consulta-tion takes place between three, but He is fourth of them, nor between five, but He is sixth of them, nor between fewer than that or more, but He is with them wherever they may be. Then He will tell them on the Day of Judgment what they did. Surely Allah is All-Knowing about every thing.",
+          "vocabulary": [
+            {
+              "word": "أَلَمْ",
+              "root": "ا - ل - م",
+              "meaning": "Do not",
+              "grammarNote": "Transliteration: alam"
+            },
+            {
+              "word": "تَرَ",
+              "root": "ت - ر",
+              "meaning": "you see",
+              "grammarNote": "Transliteration: tara"
+            },
+            {
+              "word": "أَنَّ",
+              "root": "ا - ن - ن",
+              "meaning": "that",
+              "grammarNote": "Transliteration: anna"
+            },
+            {
+              "word": "ٱللَّهَ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah",
+              "grammarNote": "Transliteration: l-laha"
+            },
+            {
+              "word": "يَعْلَمُ",
+              "root": "ع - ل - م",
+              "meaning": "knows",
+              "grammarNote": "Transliteration: yaʿlamu"
+            },
+            {
+              "word": "مَا",
+              "root": "م - ا",
+              "meaning": "whatever",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "فِى",
+              "root": "ف - ي",
+              "meaning": "(is) in",
+              "grammarNote": "Transliteration: fī"
+            },
+            {
+              "word": "ٱلسَّمَـٰوَٰتِ",
+              "root": "م - و - ت",
+              "meaning": "the heavens",
+              "grammarNote": "Transliteration: l-samāwāti"
+            },
+            {
+              "word": "وَمَا",
+              "root": "و - م - ا",
+              "meaning": "and whatever",
+              "grammarNote": "Transliteration: wamā"
+            },
+            {
+              "word": "فِى",
+              "root": "ف - ي",
+              "meaning": "(is) in",
+              "grammarNote": "Transliteration: fī"
+            },
+            {
+              "word": "ٱلْأَرْضِ ۖ",
+              "root": "ا - ر - ض",
+              "meaning": "the earth",
+              "grammarNote": "Transliteration: l-arḍi"
+            },
+            {
+              "word": "مَا",
+              "root": "م - ا",
+              "meaning": "Not",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "يَكُونُ",
+              "root": "ك - و - ن",
+              "meaning": "there is",
+              "grammarNote": "Transliteration: yakūnu"
+            },
+            {
+              "word": "مِن",
+              "root": "م - ن",
+              "meaning": "any",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "نَّجْوَىٰ",
+              "root": "ن - ج - و",
+              "meaning": "secret counsel",
+              "grammarNote": "Transliteration: najwā"
+            },
+            {
+              "word": "ثَلَـٰثَةٍ",
+              "root": "ث - ل - ث",
+              "meaning": "(of) three",
+              "grammarNote": "Transliteration: thalāthatin"
+            },
+            {
+              "word": "إِلَّا",
+              "root": "ا - ل - ا",
+              "meaning": "but",
+              "grammarNote": "Transliteration: illā"
+            },
+            {
+              "word": "هُوَ",
+              "root": "ه - و",
+              "meaning": "He (is)",
+              "grammarNote": "Transliteration: huwa"
+            },
+            {
+              "word": "رَابِعُهُمْ",
+              "root": "ر - ب - ع",
+              "meaning": "(the) fourth of them",
+              "grammarNote": "Transliteration: rābiʿuhum"
+            },
+            {
+              "word": "وَلَا",
+              "root": "و - ل - ا",
+              "meaning": "and not",
+              "grammarNote": "Transliteration: walā"
+            },
+            {
+              "word": "خَمْسَةٍ",
+              "root": "خ - م - س",
+              "meaning": "five",
+              "grammarNote": "Transliteration: khamsatin"
+            },
+            {
+              "word": "إِلَّا",
+              "root": "ا - ل - ا",
+              "meaning": "but",
+              "grammarNote": "Transliteration: illā"
+            },
+            {
+              "word": "هُوَ",
+              "root": "ه - و",
+              "meaning": "He (is)",
+              "grammarNote": "Transliteration: huwa"
+            },
+            {
+              "word": "سَادِسُهُمْ",
+              "root": "ا - د - س",
+              "meaning": "(the) sixth of them",
+              "grammarNote": "Transliteration: sādisuhum"
+            },
+            {
+              "word": "وَلَآ",
+              "root": "و - ل - ا",
+              "meaning": "and not",
+              "grammarNote": "Transliteration: walā"
+            },
+            {
+              "word": "أَدْنَىٰ",
+              "root": "ا - د - ن",
+              "meaning": "less",
+              "grammarNote": "Transliteration: adnā"
+            },
+            {
+              "word": "مِن",
+              "root": "م - ن",
+              "meaning": "than",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "ذَٰلِكَ",
+              "root": "ذ - ل - ك",
+              "meaning": "that",
+              "grammarNote": "Transliteration: dhālika"
+            },
+            {
+              "word": "وَلَآ",
+              "root": "و - ل - ا",
+              "meaning": "and not",
+              "grammarNote": "Transliteration: walā"
+            },
+            {
+              "word": "أَكْثَرَ",
+              "root": "ك - ث - ر",
+              "meaning": "more",
+              "grammarNote": "Transliteration: akthara"
+            },
+            {
+              "word": "إِلَّا",
+              "root": "ا - ل - ا",
+              "meaning": "but",
+              "grammarNote": "Transliteration: illā"
+            },
+            {
+              "word": "هُوَ",
+              "root": "ه - و",
+              "meaning": "He",
+              "grammarNote": "Transliteration: huwa"
+            },
+            {
+              "word": "مَعَهُمْ",
+              "root": "ع - ه - م",
+              "meaning": "(is) with them",
+              "grammarNote": "Transliteration: maʿahum"
+            },
+            {
+              "word": "أَيْنَ",
+              "root": "ا - ي - ن",
+              "meaning": "wherever",
+              "grammarNote": "Transliteration: ayna"
+            },
+            {
+              "word": "مَا",
+              "root": "م - ا",
+              "meaning": "wherever",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "كَانُوا۟ ۖ",
+              "root": "ك - ا - ن",
+              "meaning": "they are",
+              "grammarNote": "Transliteration: kānū"
+            },
+            {
+              "word": "ثُمَّ",
+              "root": "ث - م",
+              "meaning": "Then",
+              "grammarNote": "Transliteration: thumma"
+            },
+            {
+              "word": "يُنَبِّئُهُم",
+              "root": "ن - ب - ئ",
+              "meaning": "He will inform them",
+              "grammarNote": "Transliteration: yunabbi-uhum"
+            },
+            {
+              "word": "بِمَا",
+              "root": "ب - م - ا",
+              "meaning": "of what",
+              "grammarNote": "Transliteration: bimā"
+            },
+            {
+              "word": "عَمِلُوا۟",
+              "root": "ع - م - ل",
+              "meaning": "they did",
+              "grammarNote": "Transliteration: ʿamilū"
+            },
+            {
+              "word": "يَوْمَ",
+              "root": "ي - و - م",
+              "meaning": "(on the) Day",
+              "grammarNote": "Transliteration: yawma"
+            },
+            {
+              "word": "ٱلْقِيَـٰمَةِ ۚ",
+              "root": "ق - ي - م",
+              "meaning": "(of) the Resurrection",
+              "grammarNote": "Transliteration: l-qiyāmati"
+            },
+            {
+              "word": "إِنَّ",
+              "root": "ا - ن - ن",
+              "meaning": "Indeed",
+              "grammarNote": "Transliteration: inna"
+            },
+            {
+              "word": "ٱللَّهَ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah",
+              "grammarNote": "Transliteration: l-laha"
+            },
+            {
+              "word": "بِكُلِّ",
+              "root": "ب - ك - ل",
+              "meaning": "of every",
+              "grammarNote": "Transliteration: bikulli"
+            },
+            {
+              "word": "شَىْءٍ",
+              "root": "ش - ي - ء",
+              "meaning": "thing",
+              "grammarNote": "Transliteration: shayin"
+            },
+            {
+              "word": "عَلِيمٌ",
+              "root": "ع - ل - ي",
+              "meaning": "(is) All-Knower",
+              "grammarNote": "Transliteration: ʿalīmun"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verse 5]\n\nThe Fate of those who Challenge Allah and His Apostle\n\nإِنَّ الَّذِينَ يُحَادُّونَ اللَّـهَ وَرَ‌سُولَهُ كُبِتُوا كَمَا كُبِتَ الَّذِينَ مِن قَبْلِهِمْ (Surely those who oppose Allah and His Messenger shall be disgraced, just as those before them were disgraced....58:5). In the preceding verse, stress was laid on keeping to Divine limits and to the sacred laws of Islam. The current verse warns those who oppose or reject them. Their profane designs shall be foiled and they shall be humiliated in this world and a condign torment shall be inflicted on them in the Hereafter.\n\n────────────────────────────────────────\n\n[Verses 6–7]\n\nأَحْصَاهُ اللَّـهُ وَنَسُوهُ (...Allah has its full account, while they have forgotten transgressions, but because he treats them as trivial and insignificant, he is unable to remember and recall them. However, they are all recorded and kept safely with Allah, even though the humans have done the actions and forgotten them. Allah will call them to give an account of them on the Day of Resurrection and chastise them.",
+      "subsections": [
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "إِنَّ الَّذِينَ يُحَادُّونَ اللَّـهَ وَرَ‌سُولَهُ كُبِتُوا كَمَا كُبِتَ الَّذِينَ مِن قَبْلِهِمْ (Surely those who oppose Allah and His Messenger shall be disgraced, just as those before them were disgraced....58:5). In the preceding verse, stress was laid on keeping to Divine limits and to the sacred laws of Islam. The current verse warns those who oppose or reject them. Their profane designs shall be foiled and they shall be humiliated in this world and a condign torment shall be inflicted on them in the Hereafter."
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "58-8-10",
+      "surahNumber": 58,
+      "verseRange": [
+        8,
+        10
+      ],
+      "title": "Circumstances of Revelation",
+      "juzNumber": 28,
+      "revelationType": "Madani",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5372/mode/2up",
+      "arabicText": "أَلَمْ تَرَ إِلَى ٱلَّذِينَ نُهُوا۟ عَنِ ٱلنَّجْوَىٰ ثُمَّ يَعُودُونَ لِمَا نُهُوا۟ عَنْهُ وَيَتَنَـٰجَوْنَ بِٱلْإِثْمِ وَٱلْعُدْوَٰنِ وَمَعْصِيَتِ ٱلرَّسُولِ وَإِذَا جَآءُوكَ حَيَّوْكَ بِمَا لَمْ يُحَيِّكَ بِهِ ٱللَّهُ وَيَقُولُونَ فِىٓ أَنفُسِهِمْ لَوْلَا يُعَذِّبُنَا ٱللَّهُ بِمَا نَقُولُ ۚ حَسْبُهُمْ جَهَنَّمُ يَصْلَوْنَهَا ۖ فَبِئْسَ ٱلْمَصِيرُ ۝٨ يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا تَنَـٰجَيْتُمْ فَلَا تَتَنَـٰجَوْا۟ بِٱلْإِثْمِ وَٱلْعُدْوَٰنِ وَمَعْصِيَتِ ٱلرَّسُولِ وَتَنَـٰجَوْا۟ بِٱلْبِرِّ وَٱلتَّقْوَىٰ ۖ وَٱتَّقُوا۟ ٱللَّهَ ٱلَّذِىٓ إِلَيْهِ تُحْشَرُونَ ۝٩ إِنَّمَا ٱلنَّجْوَىٰ مِنَ ٱلشَّيْطَـٰنِ لِيَحْزُنَ ٱلَّذِينَ ءَامَنُوا۟ وَلَيْسَ بِضَآرِّهِمْ شَيْـًٔا إِلَّا بِإِذْنِ ٱللَّهِ ۚ وَعَلَى ٱللَّهِ فَلْيَتَوَكَّلِ ٱلْمُؤْمِنُونَ ۝١٠",
+      "translation": "Did you not see those who were forbidden from holding secret talks; then they do again what they were forbidden to do? They whisper for sinful act and wrongdoing and disobedience of the prophet, and when they come to you, they greet you the way Allah does not greet you, and say to themselves, “Why does Allah not punish us for what we say?” Enough for them is Jahannam (Hell); they will enter it, and it is an evil end. ۝ O you who believe, when you hold secret counsel, do not whisper for sinful act and wrongdoing and disobedience of the prophet, and do whisper for righteousness and taqwā (piety). And fear Allah, before whom you will be gathered together. ۝ Whispering (for sinful acts) comes from the ShaiTān (Satan), so that he may grieve those who believe, while it is not harmful to them in the least, except with Allah’s permission. And in Allah the believers must place their trust. ۝",
+      "phraseCards": [
+        {
+          "id": "58-8-card",
+          "verseNumber": 8,
+          "arabicPhrase": "أَلَمْ تَرَ إِلَى ٱلَّذِينَ نُهُوا۟ عَنِ ٱلنَّجْوَىٰ ثُمَّ يَعُودُونَ لِمَا نُهُوا۟ عَنْهُ وَيَتَنَـٰجَوْنَ بِٱلْإِثْمِ وَٱلْعُدْوَٰنِ وَمَعْصِيَتِ ٱلرَّسُولِ وَإِذَا جَآءُوكَ حَيَّوْكَ بِمَا لَمْ يُحَيِّكَ بِهِ ٱللَّهُ وَيَقُولُونَ فِىٓ أَنفُسِهِمْ لَوْلَا يُعَذِّبُنَا ٱللَّهُ بِمَا نَقُولُ ۚ حَسْبُهُمْ جَهَنَّمُ يَصْلَوْنَهَا ۖ فَبِئْسَ ٱلْمَصِيرُ",
+          "englishPhrase": "Did you not see those who were forbidden from holding secret talks; then they do again what they were forbidden to do? They whisper for sinful act and wrongdoing and disobedience of the prophet, and when they come to you, they greet you the way Allah does not greet you, and say to themselves, “Why does Allah not punish us for what we say?” Enough for them is Jahannam (Hell); they will enter it, and it is an evil end.",
+          "vocabulary": [
+            {
+              "word": "أَلَمْ",
+              "root": "ا - ل - م",
+              "meaning": "Do not",
+              "grammarNote": "Transliteration: alam"
+            },
+            {
+              "word": "تَرَ",
+              "root": "ت - ر",
+              "meaning": "you see",
+              "grammarNote": "Transliteration: tara"
+            },
+            {
+              "word": "إِلَى",
+              "root": "ا - ل - ي",
+              "meaning": "[to]",
+              "grammarNote": "Transliteration: ilā"
+            },
+            {
+              "word": "ٱلَّذِينَ",
+              "root": "ل - ذ - ي",
+              "meaning": "those who",
+              "grammarNote": "Transliteration: alladhīna"
+            },
+            {
+              "word": "نُهُوا۟",
+              "root": "ه - و - ا",
+              "meaning": "were forbidden",
+              "grammarNote": "Transliteration: nuhū"
+            },
+            {
+              "word": "عَنِ",
+              "root": "ع - ن",
+              "meaning": "from",
+              "grammarNote": "Transliteration: ʿani"
+            },
+            {
+              "word": "ٱلنَّجْوَىٰ",
+              "root": "ن - ج - و",
+              "meaning": "secret counsels",
+              "grammarNote": "Transliteration: l-najwā"
+            },
+            {
+              "word": "ثُمَّ",
+              "root": "ث - م",
+              "meaning": "then",
+              "grammarNote": "Transliteration: thumma"
+            },
+            {
+              "word": "يَعُودُونَ",
+              "root": "ع - و - د",
+              "meaning": "they return",
+              "grammarNote": "Transliteration: yaʿūdūna"
+            },
+            {
+              "word": "لِمَا",
+              "root": "ل - م - ا",
+              "meaning": "to what",
+              "grammarNote": "Transliteration: limā"
+            },
+            {
+              "word": "نُهُوا۟",
+              "root": "ه - و - ا",
+              "meaning": "they were forbidden",
+              "grammarNote": "Transliteration: nuhū"
+            },
+            {
+              "word": "عَنْهُ",
+              "root": "ع - ن - ه",
+              "meaning": "from [it]",
+              "grammarNote": "Transliteration: ʿanhu"
+            },
+            {
+              "word": "وَيَتَنَـٰجَوْنَ",
+              "root": "ت - ن - ج",
+              "meaning": "and they hold secret counsels",
+              "grammarNote": "Transliteration: wayatanājawna"
+            },
+            {
+              "word": "بِٱلْإِثْمِ",
+              "root": "ا - ث - م",
+              "meaning": "for sin",
+              "grammarNote": "Transliteration: bil-ith'mi"
+            },
+            {
+              "word": "وَٱلْعُدْوَٰنِ",
+              "root": "ع - د - و",
+              "meaning": "and aggression",
+              "grammarNote": "Transliteration: wal-ʿud'wāni"
+            },
+            {
+              "word": "وَمَعْصِيَتِ",
+              "root": "ع - ص - ي",
+              "meaning": "and disobedience",
+              "grammarNote": "Transliteration: wamaʿṣiyati"
+            },
+            {
+              "word": "ٱلرَّسُولِ",
+              "root": "ر - س - و",
+              "meaning": "(to) the Messenger",
+              "grammarNote": "Transliteration: l-rasūli"
+            },
+            {
+              "word": "وَإِذَا",
+              "root": "ا - ذ - ا",
+              "meaning": "And when",
+              "grammarNote": "Transliteration: wa-idhā"
+            },
+            {
+              "word": "جَآءُوكَ",
+              "root": "ج - ء - و",
+              "meaning": "they come to you",
+              "grammarNote": "Transliteration: jāūka"
+            },
+            {
+              "word": "حَيَّوْكَ",
+              "root": "ح - ي - و",
+              "meaning": "they greet you",
+              "grammarNote": "Transliteration: ḥayyawka"
+            },
+            {
+              "word": "بِمَا",
+              "root": "ب - م - ا",
+              "meaning": "with what",
+              "grammarNote": "Transliteration: bimā"
+            },
+            {
+              "word": "لَمْ",
+              "root": "ل - م",
+              "meaning": "not",
+              "grammarNote": "Transliteration: lam"
+            },
+            {
+              "word": "يُحَيِّكَ",
+              "root": "ي - ح - ي",
+              "meaning": "greets you",
+              "grammarNote": "Transliteration: yuḥayyika"
+            },
+            {
+              "word": "بِهِ",
+              "root": "ب - ه",
+              "meaning": "therewith",
+              "grammarNote": "Transliteration: bihi"
+            },
+            {
+              "word": "ٱللَّهُ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah",
+              "grammarNote": "Transliteration: l-lahu"
+            },
+            {
+              "word": "وَيَقُولُونَ",
+              "root": "ق - و - ل",
+              "meaning": "and they say",
+              "grammarNote": "Transliteration: wayaqūlūna"
+            },
+            {
+              "word": "فِىٓ",
+              "root": "ف - ي",
+              "meaning": "among",
+              "grammarNote": "Transliteration: fī"
+            },
+            {
+              "word": "أَنفُسِهِمْ",
+              "root": "ن - ف - س",
+              "meaning": "themselves",
+              "grammarNote": "Transliteration: anfusihim"
+            },
+            {
+              "word": "لَوْلَا",
+              "root": "و - ل - ا",
+              "meaning": "Why (does) not",
+              "grammarNote": "Transliteration: lawlā"
+            },
+            {
+              "word": "يُعَذِّبُنَا",
+              "root": "ع - ذ - ب",
+              "meaning": "Allah punish us",
+              "grammarNote": "Transliteration: yuʿadhibunā"
+            },
+            {
+              "word": "ٱللَّهُ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah punish us",
+              "grammarNote": "Transliteration: l-lahu"
+            },
+            {
+              "word": "بِمَا",
+              "root": "ب - م - ا",
+              "meaning": "for what",
+              "grammarNote": "Transliteration: bimā"
+            },
+            {
+              "word": "نَقُولُ ۚ",
+              "root": "ق - و - ل",
+              "meaning": "we say",
+              "grammarNote": "Transliteration: naqūlu"
+            },
+            {
+              "word": "حَسْبُهُمْ",
+              "root": "ح - س - ب",
+              "meaning": "Sufficient (for) them",
+              "grammarNote": "Transliteration: ḥasbuhum"
+            },
+            {
+              "word": "جَهَنَّمُ",
+              "root": "ج - ه - ن",
+              "meaning": "(is) Hell",
+              "grammarNote": "Transliteration: jahannamu"
+            },
+            {
+              "word": "يَصْلَوْنَهَا ۖ",
+              "root": "ص - ل - و",
+              "meaning": "they will burn in it",
+              "grammarNote": "Transliteration: yaṣlawnahā"
+            },
+            {
+              "word": "فَبِئْسَ",
+              "root": "ب - ئ - س",
+              "meaning": "and worst is",
+              "grammarNote": "Transliteration: fabi'sa"
+            },
+            {
+              "word": "ٱلْمَصِيرُ",
+              "root": "ص - ي - ر",
+              "meaning": "the destination",
+              "grammarNote": "Transliteration: l-maṣīru"
+            }
+          ]
+        },
+        {
+          "id": "58-9-card",
+          "verseNumber": 9,
+          "arabicPhrase": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا تَنَـٰجَيْتُمْ فَلَا تَتَنَـٰجَوْا۟ بِٱلْإِثْمِ وَٱلْعُدْوَٰنِ وَمَعْصِيَتِ ٱلرَّسُولِ وَتَنَـٰجَوْا۟ بِٱلْبِرِّ وَٱلتَّقْوَىٰ ۖ وَٱتَّقُوا۟ ٱللَّهَ ٱلَّذِىٓ إِلَيْهِ تُحْشَرُونَ",
+          "englishPhrase": "O you who believe, when you hold secret counsel, do not whisper for sinful act and wrongdoing and disobedience of the prophet, and do whisper for righteousness and taqwā (piety). And fear Allah, before whom you will be gathered together.",
+          "vocabulary": [
+            {
+              "word": "يَـٰٓأَيُّهَا",
+              "root": "ي - ا - ي",
+              "meaning": "O you who believe",
+              "grammarNote": "Transliteration: yāayyuhā"
+            },
+            {
+              "word": "ٱلَّذِينَ",
+              "root": "ل - ذ - ي",
+              "meaning": "O you who believe",
+              "grammarNote": "Transliteration: alladhīna"
+            },
+            {
+              "word": "ءَامَنُوٓا۟",
+              "root": "ء - م - ن",
+              "meaning": "O you who believe",
+              "grammarNote": "Transliteration: āmanū"
+            },
+            {
+              "word": "إِذَا",
+              "root": "ا - ذ - ا",
+              "meaning": "When",
+              "grammarNote": "Transliteration: idhā"
+            },
+            {
+              "word": "تَنَـٰجَيْتُمْ",
+              "root": "ن - ج - ي",
+              "meaning": "you hold secret counsel",
+              "grammarNote": "Transliteration: tanājaytum"
+            },
+            {
+              "word": "فَلَا",
+              "root": "ف - ل - ا",
+              "meaning": "then (do) not",
+              "grammarNote": "Transliteration: falā"
+            },
+            {
+              "word": "تَتَنَـٰجَوْا۟",
+              "root": "ج - و - ا",
+              "meaning": "hold secret counsel",
+              "grammarNote": "Transliteration: tatanājaw"
+            },
+            {
+              "word": "بِٱلْإِثْمِ",
+              "root": "ا - ث - م",
+              "meaning": "for sin",
+              "grammarNote": "Transliteration: bil-ith'mi"
+            },
+            {
+              "word": "وَٱلْعُدْوَٰنِ",
+              "root": "ع - د - و",
+              "meaning": "and aggression",
+              "grammarNote": "Transliteration: wal-ʿud'wāni"
+            },
+            {
+              "word": "وَمَعْصِيَتِ",
+              "root": "ع - ص - ي",
+              "meaning": "and disobedience",
+              "grammarNote": "Transliteration: wamaʿṣiyati"
+            },
+            {
+              "word": "ٱلرَّسُولِ",
+              "root": "ر - س - و",
+              "meaning": "(to) the Messenger",
+              "grammarNote": "Transliteration: l-rasūli"
+            },
+            {
+              "word": "وَتَنَـٰجَوْا۟",
+              "root": "ت - ن - ج",
+              "meaning": "but hold secret counsel",
+              "grammarNote": "Transliteration: watanājaw"
+            },
+            {
+              "word": "بِٱلْبِرِّ",
+              "root": "ل - ب - ر",
+              "meaning": "for righteousness",
+              "grammarNote": "Transliteration: bil-biri"
+            },
+            {
+              "word": "وَٱلتَّقْوَىٰ ۖ",
+              "root": "ت - ق - و",
+              "meaning": "and piety",
+              "grammarNote": "Transliteration: wal-taqwā"
+            },
+            {
+              "word": "وَٱتَّقُوا۟",
+              "root": "ا - ت - ق",
+              "meaning": "And fear",
+              "grammarNote": "Transliteration: wa-ittaqū"
+            },
+            {
+              "word": "ٱللَّهَ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah",
+              "grammarNote": "Transliteration: l-laha"
+            },
+            {
+              "word": "ٱلَّذِىٓ",
+              "root": "ل - ذ - ي",
+              "meaning": "the One Who",
+              "grammarNote": "Transliteration: alladhī"
+            },
+            {
+              "word": "إِلَيْهِ",
+              "root": "ا - ل - ي",
+              "meaning": "to Him",
+              "grammarNote": "Transliteration: ilayhi"
+            },
+            {
+              "word": "تُحْشَرُونَ",
+              "root": "ح - ش - ر",
+              "meaning": "you will be gathered",
+              "grammarNote": "Transliteration: tuḥ'sharūna"
+            }
+          ]
+        },
+        {
+          "id": "58-10-card",
+          "verseNumber": 10,
+          "arabicPhrase": "إِنَّمَا ٱلنَّجْوَىٰ مِنَ ٱلشَّيْطَـٰنِ لِيَحْزُنَ ٱلَّذِينَ ءَامَنُوا۟ وَلَيْسَ بِضَآرِّهِمْ شَيْـًٔا إِلَّا بِإِذْنِ ٱللَّهِ ۚ وَعَلَى ٱللَّهِ فَلْيَتَوَكَّلِ ٱلْمُؤْمِنُونَ",
+          "englishPhrase": "Whispering (for sinful acts) comes from the ShaiTān (Satan), so that he may grieve those who believe, while it is not harmful to them in the least, except with Allah’s permission. And in Allah the believers must place their trust.",
+          "vocabulary": [
+            {
+              "word": "إِنَّمَا",
+              "root": "ن - م - ا",
+              "meaning": "Only",
+              "grammarNote": "Transliteration: innamā"
+            },
+            {
+              "word": "ٱلنَّجْوَىٰ",
+              "root": "ن - ج - و",
+              "meaning": "the secret counsels",
+              "grammarNote": "Transliteration: l-najwā"
+            },
+            {
+              "word": "مِنَ",
+              "root": "م - ن",
+              "meaning": "(are) from",
+              "grammarNote": "Transliteration: mina"
+            },
+            {
+              "word": "ٱلشَّيْطَـٰنِ",
+              "root": "ش - ي - ط",
+              "meaning": "the Shaitaan",
+              "grammarNote": "Transliteration: l-shayṭāni"
+            },
+            {
+              "word": "لِيَحْزُنَ",
+              "root": "ح - ز - ن",
+              "meaning": "that he may grieve",
+              "grammarNote": "Transliteration: liyaḥzuna"
+            },
+            {
+              "word": "ٱلَّذِينَ",
+              "root": "ل - ذ - ي",
+              "meaning": "those who",
+              "grammarNote": "Transliteration: alladhīna"
+            },
+            {
+              "word": "ءَامَنُوا۟",
+              "root": "ء - م - ن",
+              "meaning": "believe",
+              "grammarNote": "Transliteration: āmanū"
+            },
+            {
+              "word": "وَلَيْسَ",
+              "root": "ل - ي - س",
+              "meaning": "but not",
+              "grammarNote": "Transliteration: walaysa"
+            },
+            {
+              "word": "بِضَآرِّهِمْ",
+              "root": "ض - ا - ر",
+              "meaning": "he (can) harm them",
+              "grammarNote": "Transliteration: biḍārrihim"
+            },
+            {
+              "word": "شَيْـًٔا",
+              "root": "ش - ي - ا",
+              "meaning": "(in) anything",
+              "grammarNote": "Transliteration: shayan"
+            },
+            {
+              "word": "إِلَّا",
+              "root": "ا - ل - ا",
+              "meaning": "except",
+              "grammarNote": "Transliteration: illā"
+            },
+            {
+              "word": "بِإِذْنِ",
+              "root": "ا - ذ - ن",
+              "meaning": "by Allah's permission",
+              "grammarNote": "Transliteration: bi-idh'ni"
+            },
+            {
+              "word": "ٱللَّهِ ۚ",
+              "root": "أ - ل - ه",
+              "meaning": "by Allah's permission",
+              "grammarNote": "Transliteration: l-lahi"
+            },
+            {
+              "word": "وَعَلَى",
+              "root": "ع - ل - ي",
+              "meaning": "And upon",
+              "grammarNote": "Transliteration: waʿalā"
+            },
+            {
+              "word": "ٱللَّهِ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah",
+              "grammarNote": "Transliteration: l-lahi"
+            },
+            {
+              "word": "فَلْيَتَوَكَّلِ",
+              "root": "ل - ي - ت",
+              "meaning": "let put (their) trust",
+              "grammarNote": "Transliteration: falyatawakkali"
+            },
+            {
+              "word": "ٱلْمُؤْمِنُونَ",
+              "root": "ؤ - م - ن",
+              "meaning": "the believers",
+              "grammarNote": "Transliteration: l-mu'minūna"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verse 8]\n\nCommentary\n\nCircumstances of Revelation\n\nThere are several incidents related to the revelation of the current set of verses. [ 1] there was a peace agreement between the Jews and Muslims. But when one of the Holy Prophet's ﷺ Companions would pass by a gathering of Jews, they would speak among themselves in secret, prompting the believer to think that they were plotting to harm or hurt him. The Holy Prophet ﷺ advised them to give up their secret plots and conspiracies but they did not heed. As a result, verse أَلَمْ تَرَ‌ إِلَى الَّذِينَ نُهُوا عَنِ النَّجْوَىٰ was revealed.\n\n[ 2] Likewise, the hypocrites used to hold secret counsels or conferences, in consequence of which verses: إِذَا تَنَاجَيْتُمْ فَلَا تَتَنَاجَوْا and إِنَّمَا النَّجْوَىٰ مِنَ الشَّيْطَانِ were revealed.\n\n[ 3] When the Jews came to see the Holy Prophet ﷺ ، they, with a little twist of the tongue, would invoke curses upon him by greeting him mischievously ` As-Samu ` alaykum' اَلسَّم ُ عَلَیکُم [ death to you!] instead of saluting him with the usual اَلسَّلَامُ عَلَیکُم ` As Salamu ` alaykum' [ peace be upon you ]. On this occasion, verse وَإِذَا جَاءُوكَ حَيَّوْكَ was revealed..\n\n[ 4] Ibn Kathir cites Imam Ahmad's narration in which it is reported that the Jews used to greet in this way, changing the meaning of Islamic greeting into an abusive statement, and then say, لَوْلَا يُعَذِّبُنَا اللَّـهُ بِمَا نَقُولُ Had he been a Prophet, Allah would have punished us for the sin we committed - why did He not punish us?'.\n\n[ 5] Once the Holy Prophet ﷺ was sitting in the suffah of the mosque. The congregation was large in the mosque. Some of the participants of the battle of Badr arrived late and they could not find place to sit, nor did the people sitting in the mosque make room for the late-comers. The Holy Prophet ﷺ asked some of the people to stand up and leave. The hypocrites, however, found this objectionable. He also asked the people to spread out and make room for their fellow-believers and he prayed Allah for such people to show His mercy them. Verse يَا أَيُّهَا الَّذِينَ آمَنُوا إِذَا قِيلَ لَكُمْ تَفَسَّحُوا فِي الْمَجَالِسِ فَافْسَحُوا was revealed on that occasion. [ Transmitted by Abu Haim ]. Piecing all the elements of the narrations together, it is possible that at first the Holy Prophet ﷺ might have asked the Companions ؓ to spread out and make room for their companions. Some of them might have complied and others probably did not. So, the Holy Prophet might have admonished them to stand up and leave as the students of seminaries are admonished to do in a similar situation. Probably, the hypocrites objected to this.\n\n[ 6] Some wealthy people used to come to the Holy Prophet ﷺ and consult him in private for a long time which inconvenienced him and the poor people would not get much time to consult him. For this reason, verse إِذَا نَاجَيْتُمُ الرَّ‌سُولَ was revealed. It is cited in Fathul Bayan from Zaid Ibn Aslam, without any authoritative source, that the Jews and hypocrites used to hold unnecessary private conferences with the Holy Prophet ﷺ . The Muslims were perturbed by this because they gained the impression that this type of consultation might be harmful. As a result verse نُهُوا عَنِ النَّجْوَىٰ was revealed. When they did not heed, verse 12 إِذَا نَاجَيْتُمُ الرَّ‌سُولَ was revealed which required them to spend something in charity before their holding a private conference. At this point the fallacious people stopped from consulting the Holy Prophet ﷺٍ , because their greed for wealth did not allow them to do so.\n\n[ 7] When verse إِذَا نَاجَيْتُمُ الرَّ‌سُولَ was revealed requiring people to give alms before private conferences with the Holy Prophet M, many people stopped even the necessary private consultation with him. So, verse [ 13] أَأَشْفَقْتُمْ أَن تُقَدِّمُوا was revealed. Maulana Ashraf ` Ali Thanawi رحمۃ اللہ علیہ says that the concluding part of verse [ 12] (...but if you find nothing [ to offer ], then Allah is Most-Forgiving, Very-Merciful...58:12) had already given a concession to poor people from the requirement of charity before consultation with the Holy Prophet ﷺ . However some people are neither completely destitute nor are they completely wealthy, even though they might have the minimum zakatable wealth. Probably, people in this category might have felt it difficult to advance freewill alms, because on the one hand, their means were limited, and on the other hand, they were unsure whether they were indigent. As a result, they could neither pay the charity, nor could they deem themselves exempt from the requirement of the verse. They felt that consultation was not an act of worship or devotion; and if they abandoned it, it could not be the cause of reproach. Therefore, they stopped consulting altogether. [ All narratives are from Ad-Durr-ul-Manthur ]. These causes of revelation will help and facilitate the comprehension of this passage. [ Bayan-ul-Qur’ an ].\n\nEthics and Etiquette of Secret Consultation\n\nAlthough the present verses were revealed in some particular events, as detailed above, the rules laid down by them are of general application, regardless of their cause of revelation. Thus the present verses contain instructions about secret or private consultations. They are explained below.\n\nSecret conferences are normally convened with special confidants to whom secrets are imparted trustingly. Members of the secret society are satisfied that they will not be betrayed. It is on the basis of this confidence that evil people design plots to oppress someone, or to kill him, or to usurp his wealth and property, and so on. In verse [ 7], Allah mentions that His knowledge is All-encompassing - it encompasses the entire creation. He is observing or watching them, perfectly hearing their speech and seeing them - whether in public or private, wherever and in whatever condition they may be. No plots or conspiracies of any kind are hidden from Him. If they commit any sin, they will not be able to escape the Divine chastisement. Allah is present in all their secret meetings or conferences - no matter how few or many people constitute their assembly. For example, if there are three people in the assembly, Allah will be the fourth one; and if there are five people in the gathering, Allah will be the sixth one - nor numerically less or numerically more but He is with them wheresoever they may be.\n\nVerse 7 specifies 'three' and 'five' numbers probably because Allah prefers that an assembly or congregation should comprise an odd number of members. This is the essence of verse [ 7].\n\nMischief of the Jews\n\nIt was narrated earlier that there was a peace treaty between the Holy Prophet and the Jews. During this period, if one of the noble Companions passed by an assembly of the Jews, they would confer secretly among themselves in such a manner as to arouse suspicion and anxiety in the mind of the believer making him think that they were conspiring to injure or hurt him. Verse [ 8] أَلَمْ تَرَ‌ إِلَى الَّذِينَ نُهُوا عَنِ النَّجْوَىٰ (Did you not see those who were forbidden to hold secret counsels,....58:8) prohibits the holding of such secret conferences. This rule applies not only to the enemies but also to the Muslims, in that they should not hold secret conference to harm or hurt another Muslim. However, the Muslims and others are allowed to hold secret conferences to promote good and righteous causes. A narration of Sayyidna ` Abdullah Ibn ` Abbas is recorded in Bukhari, Muslim and other authentic collections, according to which the Messenger of Allah ﷺ has stated اِذَا کُنتُم ثلٰثۃً فَلَا یَتَنَاجَا رَجُلَانِ دُونَ الاٰخَرِ حَتّٰی یَختَلِطُوا بِالنَّاسِ فَاِنَّ ذٰلِکَ یَحزُنُہُ , (If you were three, then two of you should not hold secret conference leaving aside the third person [ in another narration of Muslim: 'except with his permission'] because this bad manners would cause him anxiety and wound his feelings\", [ i.e. because he will feel estranged or alienated and possibly suspicions may arise that the two are plotting something against him and keeping it as a secret.] [ Mazhari ]\n\n────────────────────────────────────────\n\n[Verses 9–10]\n\nManners of the Secret Conference\n\nيَا أَيُّهَا الَّذِينَ آمَنُوا إِذَا تَنَاجَيْتُمْ فَلَا تَتَنَاجَوْا بِالْإِثْمِ وَالْعُدْوَانِ وَمَعْصِيَتِ الرَّ‌سُولِ وَتَنَاجَوْا بِالْبِرِّ‌ وَالتَّقْوَىٰ (0 those who believe, when you hold secret counsel, do not whisper for sinful act and wrongdoing and disobedience of the Messenger, and do whisper for righteousness and taqwa [ God-fearing ]... 58:9) In this and the preceding verses secret societies of the unbelievers have been condemned, but the condemnation is not unreserved or unqualified. The current verse guides the Muslims to be conscious of the fact that Allah is fully aware of their conversation and all of their conditions. Therefore, all their secret conferences must be held for good purposes. It is the object or motive of a particular conference that determines its nature. Thus in the present verse, as indicated earlier, the believers have been allowed to hold secret conferences only to promote good and righteous causes.\n\nReturn Good for Evil\n\nIt was narrated earlier that one of the evil practices of some of the Jews of Madinah was that when they came to the Messenger of Allah ﷺ ، they greeted him by invoking curses upon him, thus: اَلسَّام عَلَیکُم As-Samu` alaykum' [ death to you!] instead of saluting him with the usual اَلسَّلَام عَلَیکُم 'As-Salamu ` alaykum' [ peace be upon you ]. The word 'As-Sam' means 'death' instead of 'As-Salam' which means 'peace'. The latter word was distorted and pronounced with a little twist of the tongue, which sounded like the former word, but the difference between the two words was so subtle that the Companions ؓ could hardly detect the difference. One day, however, Sayyidah Siddiqah 'A'ishah ؓ detected that the Jews were invoking curses upon the Messenger of Allah ﷺ by saying 'As-Samu ` alaykum' [ death to you!], so she replied: اَلسَّام عَلَیکُم وَ لَعَنَکُمُ اللہُ وَ غَضِبَ عَلَیکُم As-Samu ` alaykum wa la` anakumullah wa ghadiba ` alaykum' [ death to you, and the curse of Allah be on you, and His wrath!]. The Messenger of Allah ﷺ prevented her from this and said: \"0 ` A'ishah , Allah does not like rudeness and foul speech.\" Sayyidah Siddiqah ` A'ishah ؓ said: \"0 Messenger of Allah, did you not hear what they said.\" He said to her: \"Did you not hear my answering them back by saying وَعَلَیکُم 'wa ` alaykum' [ same to you ]?\" He further said to her 'Allah accepts our supplication against them, but not theirs against us'. This event tells us that even in response to the mischievous words of the infidels, the Muslims should always adopt a soft and noble way.",
+      "subsections": [
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "There are several incidents related to the revelation of the current set of verses. [ 1] there was a peace agreement between the Jews and Muslims. But when one of the Holy Prophet's ﷺ Companions would pass by a gathering of Jews, they would speak among themselves in secret, prompting the believer to think that they were plotting to harm or hurt him. The Holy Prophet ﷺ advised them to give up their secret plots and conspiracies but they did not heed. As a result, verse أَلَمْ تَرَ‌ إِلَى الَّذِينَ نُهُوا عَنِ النَّجْوَىٰ was revealed."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "[ 2] Likewise, the hypocrites used to hold secret counsels or conferences, in consequence of which verses: إِذَا تَنَاجَيْتُمْ فَلَا تَتَنَاجَوْا and إِنَّمَا النَّجْوَىٰ مِنَ الشَّيْطَانِ were revealed."
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "58-11-13",
+      "surahNumber": 58,
+      "verseRange": [
+        11,
+        13
+      ],
+      "title": "Manners for Assemblies",
+      "juzNumber": 28,
+      "revelationType": "Madani",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5372/mode/2up",
+      "arabicText": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا قِيلَ لَكُمْ تَفَسَّحُوا۟ فِى ٱلْمَجَـٰلِسِ فَٱفْسَحُوا۟ يَفْسَحِ ٱللَّهُ لَكُمْ ۖ وَإِذَا قِيلَ ٱنشُزُوا۟ فَٱنشُزُوا۟ يَرْفَعِ ٱللَّهُ ٱلَّذِينَ ءَامَنُوا۟ مِنكُمْ وَٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ دَرَجَـٰتٍ ۚ وَٱللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ ۝١١ يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا نَـٰجَيْتُمُ ٱلرَّسُولَ فَقَدِّمُوا۟ بَيْنَ يَدَىْ نَجْوَىٰكُمْ صَدَقَةً ۚ ذَٰلِكَ خَيْرٌ لَّكُمْ وَأَطْهَرُ ۚ فَإِن لَّمْ تَجِدُوا۟ فَإِنَّ ٱللَّهَ غَفُورٌ رَّحِيمٌ ۝١٢ ءَأَشْفَقْتُمْ أَن تُقَدِّمُوا۟ بَيْنَ يَدَىْ نَجْوَىٰكُمْ صَدَقَـٰتٍ ۚ فَإِذْ لَمْ تَفْعَلُوا۟ وَتَابَ ٱللَّهُ عَلَيْكُمْ فَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ وَأَطِيعُوا۟ ٱللَّهَ وَرَسُولَهُۥ ۚ وَٱللَّهُ خَبِيرٌۢ بِمَا تَعْمَلُونَ ۝١٣",
+      "translation": "O you who believe, when it is said to you, “Make room (for others) in the sittings”, then make room, and Allah will make room for you (in the Hereafter). And when it is said, “Rise up”, then rise up, and Allah will raise those, in ranks, who have believed and are given knowledge. Allah is well-aware of what you do. ۝ O you who believe, when you consult the Messenger in private, then offer something in charity before your consultation. That is better for you and purer. But if you find nothing (to offer), then Allah is Most-Forgiving, Very-Merciful. ۝ Have you become afraid of offering charities before your consultation? So when you did not do so, and Allah has forgiven you, then establish Salāh, and pay Zakāh, and obey Allah and His Messenger. And Allah is well aware of what you do. ۝",
+      "phraseCards": [
+        {
+          "id": "58-11-card",
+          "verseNumber": 11,
+          "arabicPhrase": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا قِيلَ لَكُمْ تَفَسَّحُوا۟ فِى ٱلْمَجَـٰلِسِ فَٱفْسَحُوا۟ يَفْسَحِ ٱللَّهُ لَكُمْ ۖ وَإِذَا قِيلَ ٱنشُزُوا۟ فَٱنشُزُوا۟ يَرْفَعِ ٱللَّهُ ٱلَّذِينَ ءَامَنُوا۟ مِنكُمْ وَٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ دَرَجَـٰتٍ ۚ وَٱللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ",
+          "englishPhrase": "O you who believe, when it is said to you, “Make room (for others) in the sittings”, then make room, and Allah will make room for you (in the Hereafter). And when it is said, “Rise up”, then rise up, and Allah will raise those, in ranks, who have believed and are given knowledge. Allah is well-aware of what you do.",
+          "vocabulary": [
+            {
+              "word": "يَـٰٓأَيُّهَا",
+              "root": "ي - ا - ي",
+              "meaning": "O you who believe",
+              "grammarNote": "Transliteration: yāayyuhā"
+            },
+            {
+              "word": "ٱلَّذِينَ",
+              "root": "ل - ذ - ي",
+              "meaning": "O you who believe",
+              "grammarNote": "Transliteration: alladhīna"
+            },
+            {
+              "word": "ءَامَنُوٓا۟",
+              "root": "ء - م - ن",
+              "meaning": "O you who believe",
+              "grammarNote": "Transliteration: āmanū"
+            },
+            {
+              "word": "إِذَا",
+              "root": "ا - ذ - ا",
+              "meaning": "When",
+              "grammarNote": "Transliteration: idhā"
+            },
+            {
+              "word": "قِيلَ",
+              "root": "ق - ي - ل",
+              "meaning": "it is said",
+              "grammarNote": "Transliteration: qīla"
+            },
+            {
+              "word": "لَكُمْ",
+              "root": "ل - ك - م",
+              "meaning": "to you",
+              "grammarNote": "Transliteration: lakum"
+            },
+            {
+              "word": "تَفَسَّحُوا۟",
+              "root": "ف - س - ح",
+              "meaning": "Make room",
+              "grammarNote": "Transliteration: tafassaḥū"
+            },
+            {
+              "word": "فِى",
+              "root": "ف - ي",
+              "meaning": "in",
+              "grammarNote": "Transliteration: fī"
+            },
+            {
+              "word": "ٱلْمَجَـٰلِسِ",
+              "root": "ج - ل - س",
+              "meaning": "the assemblies",
+              "grammarNote": "Transliteration: l-majālisi"
+            },
+            {
+              "word": "فَٱفْسَحُوا۟",
+              "root": "ف - س - ح",
+              "meaning": "then make room",
+              "grammarNote": "Transliteration: fa-if'saḥū"
+            },
+            {
+              "word": "يَفْسَحِ",
+              "root": "ف - س - ح",
+              "meaning": "Allah will make room",
+              "grammarNote": "Transliteration: yafsaḥi"
+            },
+            {
+              "word": "ٱللَّهُ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah will make room",
+              "grammarNote": "Transliteration: l-lahu"
+            },
+            {
+              "word": "لَكُمْ ۖ",
+              "root": "ل - ك - م",
+              "meaning": "for you",
+              "grammarNote": "Transliteration: lakum"
+            },
+            {
+              "word": "وَإِذَا",
+              "root": "ا - ذ - ا",
+              "meaning": "And when",
+              "grammarNote": "Transliteration: wa-idhā"
+            },
+            {
+              "word": "قِيلَ",
+              "root": "ق - ي - ل",
+              "meaning": "it is said",
+              "grammarNote": "Transliteration: qīla"
+            },
+            {
+              "word": "ٱنشُزُوا۟",
+              "root": "ن - ش - ز",
+              "meaning": "Rise up",
+              "grammarNote": "Transliteration: unshuzū"
+            },
+            {
+              "word": "فَٱنشُزُوا۟",
+              "root": "ن - ش - ز",
+              "meaning": "then rise up",
+              "grammarNote": "Transliteration: fa-unshuzū"
+            },
+            {
+              "word": "يَرْفَعِ",
+              "root": "ر - ف - ع",
+              "meaning": "Allah will raise",
+              "grammarNote": "Transliteration: yarfaʿi"
+            },
+            {
+              "word": "ٱللَّهُ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah will raise",
+              "grammarNote": "Transliteration: l-lahu"
+            },
+            {
+              "word": "ٱلَّذِينَ",
+              "root": "ل - ذ - ي",
+              "meaning": "those who",
+              "grammarNote": "Transliteration: alladhīna"
+            },
+            {
+              "word": "ءَامَنُوا۟",
+              "root": "ء - م - ن",
+              "meaning": "believe",
+              "grammarNote": "Transliteration: āmanū"
+            },
+            {
+              "word": "مِنكُمْ",
+              "root": "ن - ك - م",
+              "meaning": "among you",
+              "grammarNote": "Transliteration: minkum"
+            },
+            {
+              "word": "وَٱلَّذِينَ",
+              "root": "ذ - ي - ن",
+              "meaning": "and those who",
+              "grammarNote": "Transliteration: wa-alladhīna"
+            },
+            {
+              "word": "أُوتُوا۟",
+              "root": "ا - و - ت",
+              "meaning": "were given",
+              "grammarNote": "Transliteration: ūtū"
+            },
+            {
+              "word": "ٱلْعِلْمَ",
+              "root": "ع - ل - م",
+              "meaning": "the knowledge",
+              "grammarNote": "Transliteration: l-ʿil'ma"
+            },
+            {
+              "word": "دَرَجَـٰتٍۢ ۚ",
+              "root": "د - ر - ج",
+              "meaning": "(in) degrees",
+              "grammarNote": "Transliteration: darajātin"
+            },
+            {
+              "word": "وَٱللَّهُ",
+              "root": "أ - ل - ه",
+              "meaning": "And Allah",
+              "grammarNote": "Transliteration: wal-lahu"
+            },
+            {
+              "word": "بِمَا",
+              "root": "ب - م - ا",
+              "meaning": "of what",
+              "grammarNote": "Transliteration: bimā"
+            },
+            {
+              "word": "تَعْمَلُونَ",
+              "root": "ع - م - ل",
+              "meaning": "you do",
+              "grammarNote": "Transliteration: taʿmalūna"
+            },
+            {
+              "word": "خَبِيرٌۭ",
+              "root": "خ - ب - ي",
+              "meaning": "(is) All-Aware",
+              "grammarNote": "Transliteration: khabīrun"
+            }
+          ]
+        },
+        {
+          "id": "58-12-card",
+          "verseNumber": 12,
+          "arabicPhrase": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا نَـٰجَيْتُمُ ٱلرَّسُولَ فَقَدِّمُوا۟ بَيْنَ يَدَىْ نَجْوَىٰكُمْ صَدَقَةً ۚ ذَٰلِكَ خَيْرٌ لَّكُمْ وَأَطْهَرُ ۚ فَإِن لَّمْ تَجِدُوا۟ فَإِنَّ ٱللَّهَ غَفُورٌ رَّحِيمٌ",
+          "englishPhrase": "O you who believe, when you consult the Messenger in private, then offer something in charity before your consultation. That is better for you and purer. But if you find nothing (to offer), then Allah is Most-Forgiving, Very-Merciful.",
+          "vocabulary": [
+            {
+              "word": "يَـٰٓأَيُّهَا",
+              "root": "ي - ا - ي",
+              "meaning": "O you who believe",
+              "grammarNote": "Transliteration: yāayyuhā"
+            },
+            {
+              "word": "ٱلَّذِينَ",
+              "root": "ل - ذ - ي",
+              "meaning": "O you who believe",
+              "grammarNote": "Transliteration: alladhīna"
+            },
+            {
+              "word": "ءَامَنُوٓا۟",
+              "root": "ء - م - ن",
+              "meaning": "O you who believe",
+              "grammarNote": "Transliteration: āmanū"
+            },
+            {
+              "word": "إِذَا",
+              "root": "ا - ذ - ا",
+              "meaning": "When",
+              "grammarNote": "Transliteration: idhā"
+            },
+            {
+              "word": "نَـٰجَيْتُمُ",
+              "root": "ج - ي - ت",
+              "meaning": "you privately consult",
+              "grammarNote": "Transliteration: nājaytumu"
+            },
+            {
+              "word": "ٱلرَّسُولَ",
+              "root": "ر - س - و",
+              "meaning": "the Messenger",
+              "grammarNote": "Transliteration: l-rasūla"
+            },
+            {
+              "word": "فَقَدِّمُوا۟",
+              "root": "ق - د - م",
+              "meaning": "then offer",
+              "grammarNote": "Transliteration: faqaddimū"
+            },
+            {
+              "word": "بَيْنَ",
+              "root": "ب - ي - ن",
+              "meaning": "before",
+              "grammarNote": "Transliteration: bayna"
+            },
+            {
+              "word": "يَدَىْ",
+              "root": "ي - د - ي",
+              "meaning": "before",
+              "grammarNote": "Transliteration: yaday"
+            },
+            {
+              "word": "نَجْوَىٰكُمْ",
+              "root": "ج - و - ي",
+              "meaning": "your private consultation",
+              "grammarNote": "Transliteration: najwākum"
+            },
+            {
+              "word": "صَدَقَةًۭ ۚ",
+              "root": "ص - د - ق",
+              "meaning": "charity",
+              "grammarNote": "Transliteration: ṣadaqatan"
+            },
+            {
+              "word": "ذَٰلِكَ",
+              "root": "ذ - ل - ك",
+              "meaning": "That",
+              "grammarNote": "Transliteration: dhālika"
+            },
+            {
+              "word": "خَيْرٌۭ",
+              "root": "خ - ي - ر",
+              "meaning": "(is) better",
+              "grammarNote": "Transliteration: khayrun"
+            },
+            {
+              "word": "لَّكُمْ",
+              "root": "ل - ك - م",
+              "meaning": "for you",
+              "grammarNote": "Transliteration: lakum"
+            },
+            {
+              "word": "وَأَطْهَرُ ۚ",
+              "root": "ط - ه - ر",
+              "meaning": "and purer",
+              "grammarNote": "Transliteration: wa-aṭharu"
+            },
+            {
+              "word": "فَإِن",
+              "root": "ف - ا - ن",
+              "meaning": "But if",
+              "grammarNote": "Transliteration: fa-in"
+            },
+            {
+              "word": "لَّمْ",
+              "root": "ل - م",
+              "meaning": "not",
+              "grammarNote": "Transliteration: lam"
+            },
+            {
+              "word": "تَجِدُوا۟",
+              "root": "ت - ج - د",
+              "meaning": "you find",
+              "grammarNote": "Transliteration: tajidū"
+            },
+            {
+              "word": "فَإِنَّ",
+              "root": "ف - ا - ن",
+              "meaning": "then indeed",
+              "grammarNote": "Transliteration: fa-inna"
+            },
+            {
+              "word": "ٱللَّهَ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah",
+              "grammarNote": "Transliteration: l-laha"
+            },
+            {
+              "word": "غَفُورٌۭ",
+              "root": "غ - ف - و",
+              "meaning": "(is) Oft-Forgiving",
+              "grammarNote": "Transliteration: ghafūrun"
+            },
+            {
+              "word": "رَّحِيمٌ",
+              "root": "ر - ح - ي",
+              "meaning": "Most Merciful",
+              "grammarNote": "Transliteration: raḥīmun"
+            }
+          ]
+        },
+        {
+          "id": "58-13-card",
+          "verseNumber": 13,
+          "arabicPhrase": "ءَأَشْفَقْتُمْ أَن تُقَدِّمُوا۟ بَيْنَ يَدَىْ نَجْوَىٰكُمْ صَدَقَـٰتٍ ۚ فَإِذْ لَمْ تَفْعَلُوا۟ وَتَابَ ٱللَّهُ عَلَيْكُمْ فَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ وَأَطِيعُوا۟ ٱللَّهَ وَرَسُولَهُۥ ۚ وَٱللَّهُ خَبِيرٌۢ بِمَا تَعْمَلُونَ",
+          "englishPhrase": "Have you become afraid of offering charities before your consultation? So when you did not do so, and Allah has forgiven you, then establish Salāh, and pay Zakāh, and obey Allah and His Messenger. And Allah is well aware of what you do.",
+          "vocabulary": [
+            {
+              "word": "ءَأَشْفَقْتُمْ",
+              "root": "ء - ش - ف",
+              "meaning": "Are you afraid",
+              "grammarNote": "Transliteration: a-ashfaqtum"
+            },
+            {
+              "word": "أَن",
+              "root": "ا - ن - ن",
+              "meaning": "to",
+              "grammarNote": "Transliteration: an"
+            },
+            {
+              "word": "تُقَدِّمُوا۟",
+              "root": "ق - د - م",
+              "meaning": "offer",
+              "grammarNote": "Transliteration: tuqaddimū"
+            },
+            {
+              "word": "بَيْنَ",
+              "root": "ب - ي - ن",
+              "meaning": "before",
+              "grammarNote": "Transliteration: bayna"
+            },
+            {
+              "word": "يَدَىْ",
+              "root": "ي - د - ي",
+              "meaning": "before",
+              "grammarNote": "Transliteration: yaday"
+            },
+            {
+              "word": "نَجْوَىٰكُمْ",
+              "root": "ج - و - ي",
+              "meaning": "your private consultation",
+              "grammarNote": "Transliteration: najwākum"
+            },
+            {
+              "word": "صَدَقَـٰتٍۢ ۚ",
+              "root": "ص - د - ق",
+              "meaning": "charities",
+              "grammarNote": "Transliteration: ṣadaqātin"
+            },
+            {
+              "word": "فَإِذْ",
+              "root": "ف - ا - ذ",
+              "meaning": "Then when",
+              "grammarNote": "Transliteration: fa-idh"
+            },
+            {
+              "word": "لَمْ",
+              "root": "ل - م",
+              "meaning": "you do not",
+              "grammarNote": "Transliteration: lam"
+            },
+            {
+              "word": "تَفْعَلُوا۟",
+              "root": "ف - ع - ل",
+              "meaning": "you do not",
+              "grammarNote": "Transliteration: tafʿalū"
+            },
+            {
+              "word": "وَتَابَ",
+              "root": "ت - ا - ب",
+              "meaning": "and Allah has forgiven",
+              "grammarNote": "Transliteration: watāba"
+            },
+            {
+              "word": "ٱللَّهُ",
+              "root": "أ - ل - ه",
+              "meaning": "and Allah has forgiven",
+              "grammarNote": "Transliteration: l-lahu"
+            },
+            {
+              "word": "عَلَيْكُمْ",
+              "root": "ع - ل - ي",
+              "meaning": "you",
+              "grammarNote": "Transliteration: ʿalaykum"
+            },
+            {
+              "word": "فَأَقِيمُوا۟",
+              "root": "ق - ي - م",
+              "meaning": "then establish",
+              "grammarNote": "Transliteration: fa-aqīmū"
+            },
+            {
+              "word": "ٱلصَّلَوٰةَ",
+              "root": "ص - ل - و",
+              "meaning": "the prayer",
+              "grammarNote": "Transliteration: l-ṣalata"
+            },
+            {
+              "word": "وَءَاتُوا۟",
+              "root": "ء - ا - ت",
+              "meaning": "and give",
+              "grammarNote": "Transliteration: waātū"
+            },
+            {
+              "word": "ٱلزَّكَوٰةَ",
+              "root": "ز - ك - و",
+              "meaning": "the zakah",
+              "grammarNote": "Transliteration: l-zakata"
+            },
+            {
+              "word": "وَأَطِيعُوا۟",
+              "root": "ط - ي - ع",
+              "meaning": "and obey",
+              "grammarNote": "Transliteration: wa-aṭīʿū"
+            },
+            {
+              "word": "ٱللَّهَ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah",
+              "grammarNote": "Transliteration: l-laha"
+            },
+            {
+              "word": "وَرَسُولَهُۥ ۚ",
+              "root": "ر - س - و",
+              "meaning": "and His Messenger",
+              "grammarNote": "Transliteration: warasūlahu"
+            },
+            {
+              "word": "وَٱللَّهُ",
+              "root": "أ - ل - ه",
+              "meaning": "And Allah",
+              "grammarNote": "Transliteration: wal-lahu"
+            },
+            {
+              "word": "خَبِيرٌۢ",
+              "root": "خ - ب - ي",
+              "meaning": "(is) All-Aware",
+              "grammarNote": "Transliteration: khabīrun"
+            },
+            {
+              "word": "بِمَا",
+              "root": "ب - م - ا",
+              "meaning": "of what",
+              "grammarNote": "Transliteration: bimā"
+            },
+            {
+              "word": "تَعْمَلُونَ",
+              "root": "ع - م - ل",
+              "meaning": "you do",
+              "grammarNote": "Transliteration: taʿmalūna"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verse 11]\n\nManners for Assemblies\n\nيَا أَيُّهَا الَّذِينَ آمَنُوا إِذَا قِيلَ لَكُمْ تَفَسَّحُوا فِي الْمَجَالِسِ فَافْسَحُوا (0 those who believe, when it is said to you 'Make room [ for others ] in the sittings', then make room, ...58:11) Allah teaches His servants good manners and enjoins upon them to be kind to each other when they are sitting together. There are two main rules of assemblies: The first rule states that people sitting in an assembly should make space for those who came late. They should sit together in such a way that there is enough room for others. If this is done, Allah promises that He will widen their scope in the Hereafter. However, it is not inconceivable that this space or room might be created for them in the life of this world as well.\n\nThe second rule states: وَإِذَا قِيلَ انشُزُوا فَانشُزُوا ('When it is said to you, 'Rise up', then rise up...58:11) This means when people sitting in an assembly are told to stand up and leave, they should stand up and leave. This verse uses the passive voice [ it is said ] but it is not mentioned who says it or who should say it. Authentic traditions make it plain that the late comer himself cannot move somebody out of his place and use it for himself, nor force his way into a gathering. Thus it is recorded in the Sahihain and in the Musnad of Ahmad on the authority of ` Abdullah Ibn ` Umar ؓ that the Messenger of Allah ﷺ said: لَا یُقِیمُ الرَّجُلُ الرَّجُلَ مِن مَّجلِسِہٖ فَیَجلِسُ فِیہِ وَ لٰکِن تَفَسَّحُوا وَتَوَسَّعُوا \"One of you should not move some other person up from his place and sit in it, but instead, spread out and make space for the comer.\" This explicitly shows that it is not possible for the late-comer to tell anyone to move out of his place and take his place. Therefore, it would appear that the rule would apply to the master of ceremony or the organisers of the assembly or the host. Hence, the meaning of the verse is: When the host or his representative requests a member of the audience to stand up and leave for a legitimate reason, they should comply and avoid clash with the host. There are several reasons why this might become necessary. [ 1] Occasionally, the host himself might need privacy for his own reason. [ 2] He might need privacy to share confidential information with special guests. [ 3] The capacity of the room cannot accommodate the late comers, and no alternative arrangement can be made. So, the host is allowed to courteously request some of the familiar guests to leave the room to make space for the late-comers, provided it is certain that the leaving guests will not suffer any loss. They will be able to benefit in another session. However, the host or his representative must ensure that the guests do not feel belittled or hurt in the process.\n\nIt was alluded earlier that this verse was revealed when the Holy Prophet ﷺ was sitting in the suffah of the mosque. The congregation had filled up the suffah. Some of the participants of the battle of Badr arrived late and they could not find place to sit, and remained standing. As a mark of respect for them, the Holy Prophet ﷺ gave a general order to the entire congregation to spread out and make room for their fellow-believers, and prayed to Allah to make room for such people. Some of them might have complied and there was no problem with them; and probably others did not comply. So, the Holy Prophet ﷺ might have admonished them to rise up and leave.\n\nAt any rate, this verse and Traditions related to the verse yield several rules:\n\n[ 1] The members of a conference must spread out and make space for the late comers. [ 2] The late comers should not remove other members of the conference and make room for themselves. [ 3] At times of need, the host or the master of ceremony may courteously request some of the members of the audience to leave. Late comers may not force their way into a congested congregation, but take their position in a corner or a side as recorded in Bukhari: The Messenger of Allah ﷺ was once sitting in the mosque and the people with him, when three persons arrived, one of them could not find space in the congregation but found some space on one side or in a corner and sat there. The Messenger of Allah ﷺ lauded him or praised him highly.\n\nRuling\n\nAnother etiquette of an assembly is that if two persons are sitting closely, a new comer should not intrude between them. In a hadith, Holy Prophet ﷺ has explained this etiquette in the following words: لَا یَحِلُّ لِرَجُلِ اَن یُّفَرِّقَ بَینَ اَثنِینِ اِلَّا بِاِذنِھِمَا . It is not permissible for any man to break up the meeting of two persons, who are sitting together, unless they themselves permit him.\" [ Ibn Kathir cited this Tradition and said that Abu Dad and Tirmidhi transmitted it on the authority of Usamah Ibn Laithiy ].\n\nThe reasoning behind the ruling is that sometimes two persons sit together for some specific purpose, and breaking them up might defeat that purpose.\n\n────────────────────────────────────────\n\n[Verses 12–13]\n\nيَا أَيُّهَا الَّذِينَ آمَنُوا إِذَا نَاجَيْتُمُ الرَّ‌سُولَ (0 those who believe, when you consult the Messenger of Allah, ...58:12) The Messenger of Allah ﷺ was preoccupied day and night with educating the people and improving their quality of life. In his general assemblies, all the members of the audience benefited from his teachings. However, there were people who wanted private meetings with the Holy Prophet ﷺ and he would grant them that. Obviously, it was not possible to grant everyone's request as it required time and effort, and that was difficult. The hypocrites made matters worse when they asked for private audiences with the Holy Prophet ﷺ in order to hurt the sincere Muslims. Besides, the hypocrites held protracted conferences with him. Some of the illiterate Muslims also held private audiences with him for a longer time than normal or necessary. This made things difficult for him. Allah provided a way to stop their irksome behaviour by this verse which lightened the burden of the Holy Prophet ﷺ . Initially, the verse provided that anyone who wishes to hold a private conference with him must advance a freewill charity, the amount or measure of which is not specified in the Qur'an. However, when this verse was revealed Sayyidna ` Ali رضی اللہ تعالیٰ عنہ was the first Companion to act upon it: He offered one Dinar in charity and requested a private audience with the Prophet ﷺ .\n\nOnly Sayyidna ` Ali ؓ Acted upon the verse\n\nIt is a remarkable co-incidence that most of the blessed Companions ؓ ، because of financial constraints, were unable to act upon this verse. Its provision was repealed. Sayyidna Ali ؓ used to say that there is a verse in the Qur'an that none before me and none after me has ever acted upon it. The meaning of the phrase 'none before me' is obvious. The phrase 'none after me' means 'none after me will practise it' because the verse is abrogated. Although the ordinance is repealed, it achieved its basic purpose. The Muslims, because of the dictates of their sincere love, avoided their protracted audiences with the Prophet ﷺ so that he is not inconvenienced in any way. The hypocrites avoided protracted audiences with him because they feared that they would be recognized for what they are and their hypocrisy would be exposed. Allah knows best!",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Juristic Rulings & Shariah Injunctions (vv. 11–13)",
+          "content": "The reasoning behind the ruling is that sometimes two persons sit together for some specific purpose, and breaking them up might defeat that purpose."
+        },
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "The second rule states: وَإِذَا قِيلَ انشُزُوا فَانشُزُوا ('When it is said to you, 'Rise up', then rise up...58:11) This means when people sitting in an assembly are told to stand up and leave, they should stand up and leave. This verse uses the passive voice [ it is said ] but it is not mentioned who says it or who should say it. Authentic traditions make it plain that the late comer himself cannot move somebody out of his place and use it for himself, nor force his way into a gathering. Thus it is recorded in the Sahihain and in the Musnad of Ahmad on the authority of ` Abdullah Ibn ` Umar ؓ that the Messenger of Allah ﷺ said: لَا یُقِیمُ الرَّجُلُ الرَّجُلَ مِن مَّجلِسِہٖ فَیَجلِسُ فِیہِ وَ لٰکِن تَفَسَّحُوا وَتَوَسَّعُوا \"One of you should not move some other person up from his place and sit in it, but instead, spread out and make space for the comer.\" This explicitly shows that it..."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "يَا أَيُّهَا الَّذِينَ آمَنُوا إِذَا قِيلَ لَكُمْ تَفَسَّحُوا فِي الْمَجَالِسِ فَافْسَحُوا (0 those who believe, when it is said to you 'Make room [ for others ] in the sittings', then make room, ...58:11) Allah teaches His servants good manners and enjoins upon them to be kind to each other when they are sitting together. There are two main rules of assemblies: The first rule states that people sitting in an assembly should make space for those who came late. They should sit together in such a way that there is enough room for others. If this is done, Allah promises that He will widen their scope in the Hereafter. However, it is not inconceivable that this space or room might be created for them in the life of this world as well."
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "58-14-22",
+      "surahNumber": 58,
+      "verseRange": [
+        14,
+        22
+      ],
+      "title": "Chastising the Hypocrites for their Secret Alliance with the Jews",
+      "juzNumber": 28,
+      "revelationType": "Madani",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5381/mode/2up",
+      "arabicText": "۞ أَلَمْ تَرَ إِلَى ٱلَّذِينَ تَوَلَّوْا۟ قَوْمًا غَضِبَ ٱللَّهُ عَلَيْهِم مَّا هُم مِّنكُمْ وَلَا مِنْهُمْ وَيَحْلِفُونَ عَلَى ٱلْكَذِبِ وَهُمْ يَعْلَمُونَ ۝١٤ أَعَدَّ ٱللَّهُ لَهُمْ عَذَابًا شَدِيدًا ۖ إِنَّهُمْ سَآءَ مَا كَانُوا۟ يَعْمَلُونَ ۝١٥ ٱتَّخَذُوٓا۟ أَيْمَـٰنَهُمْ جُنَّةً فَصَدُّوا۟ عَن سَبِيلِ ٱللَّهِ فَلَهُمْ عَذَابٌ مُّهِينٌ ۝١٦ لَّن تُغْنِىَ عَنْهُمْ أَمْوَٰلُهُمْ وَلَآ أَوْلَـٰدُهُم مِّنَ ٱللَّهِ شَيْـًٔا ۚ أُو۟لَـٰٓئِكَ أَصْحَـٰبُ ٱلنَّارِ ۖ هُمْ فِيهَا خَـٰلِدُونَ ۝١٧ يَوْمَ يَبْعَثُهُمُ ٱللَّهُ جَمِيعًا فَيَحْلِفُونَ لَهُۥ كَمَا يَحْلِفُونَ لَكُمْ ۖ وَيَحْسَبُونَ أَنَّهُمْ عَلَىٰ شَىْءٍ ۚ أَلَآ إِنَّهُمْ هُمُ ٱلْكَـٰذِبُونَ ۝١٨ ٱسْتَحْوَذَ عَلَيْهِمُ ٱلشَّيْطَـٰنُ فَأَنسَىٰهُمْ ذِكْرَ ٱللَّهِ ۚ أُو۟لَـٰٓئِكَ حِزْبُ ٱلشَّيْطَـٰنِ ۚ أَلَآ إِنَّ حِزْبَ ٱلشَّيْطَـٰنِ هُمُ ٱلْخَـٰسِرُونَ ۝١٩ إِنَّ ٱلَّذِينَ يُحَآدُّونَ ٱللَّهَ وَرَسُولَهُۥٓ أُو۟لَـٰٓئِكَ فِى ٱلْأَذَلِّينَ ۝٢٠ كَتَبَ ٱللَّهُ لَأَغْلِبَنَّ أَنَا۠ وَرُسُلِىٓ ۚ إِنَّ ٱللَّهَ قَوِىٌّ عَزِيزٌ ۝٢١ لَّا تَجِدُ قَوْمًا يُؤْمِنُونَ بِٱللَّهِ وَٱلْيَوْمِ ٱلْـَٔاخِرِ يُوَآدُّونَ مَنْ حَآدَّ ٱللَّهَ وَرَسُولَهُۥ وَلَوْ كَانُوٓا۟ ءَابَآءَهُمْ أَوْ أَبْنَآءَهُمْ أَوْ إِخْوَٰنَهُمْ أَوْ عَشِيرَتَهُمْ ۚ أُو۟لَـٰٓئِكَ كَتَبَ فِى قُلُوبِهِمُ ٱلْإِيمَـٰنَ وَأَيَّدَهُم بِرُوحٍ مِّنْهُ ۖ وَيُدْخِلُهُمْ جَنَّـٰتٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَـٰرُ خَـٰلِدِينَ فِيهَا ۚ رَضِىَ ٱللَّهُ عَنْهُمْ وَرَضُوا۟ عَنْهُ ۚ أُو۟لَـٰٓئِكَ حِزْبُ ٱللَّهِ ۚ أَلَآ إِنَّ حِزْبَ ٱللَّهِ هُمُ ٱلْمُفْلِحُونَ ۝٢٢",
+      "translation": "Have you not seen those who have friendship with a people with whom Allah is angry. They are neither of you nor of them. They swear false oaths while they know. ۝ Allah has prepared a severe punishment for them. Indeed, evil is what they have been doing. ۝ They have taken their oaths as a shield, and then have prevented (people) from the way of Allah. Therefore, for them there is a humiliating punishment. ۝ Their riches and their children will never benefit them against Allah. They are the inmates of the Fire. They will live there forever, ۝ the Day Allah will raise all of them, and they will swear before Him as they swear before you, and will think that they have something to stand upon. Be assured that they are sheer liars. ۝ The ShaiTān (Satan) has prevailed upon them; so he has made them neglect to remember Allah. They are the party of ShaiTān . Be assured that it is (the members of the) party of ShaiTān that are the losers. ۝ Indeed, those who oppose Allah and His Messenger, they are among the lowest. ۝ Allah has written (in His pre-destined decree), “I will certainly prevail, both I and My messengers.” Surely Allah is All-Strong, All-Mighty. ۝ You will not find those who believe in Allah and in the Hereafter having friendship with those who oppose Allah and His Messenger, even though they may be their fathers or their sons or their brothers or their clan. They are such that Allah has inscribed faith on their hearts, and has supported them with a spirit from Him. He will admit them to gardens beneath which rivers flow, in which they will live forever. Allah is pleased with them, and they are pleased with Allah. Those are the party of Allah. Be assured that it is (the members of) the party of Allah that are the successful. ۝",
+      "phraseCards": [
+        {
+          "id": "58-14-card",
+          "verseNumber": 14,
+          "arabicPhrase": "۞ أَلَمْ تَرَ إِلَى ٱلَّذِينَ تَوَلَّوْا۟ قَوْمًا غَضِبَ ٱللَّهُ عَلَيْهِم مَّا هُم مِّنكُمْ وَلَا مِنْهُمْ وَيَحْلِفُونَ عَلَى ٱلْكَذِبِ وَهُمْ يَعْلَمُونَ",
+          "englishPhrase": "Have you not seen those who have friendship with a people with whom Allah is angry. They are neither of you nor of them. They swear false oaths while they know.",
+          "vocabulary": [
+            {
+              "word": "۞ أَلَمْ",
+              "root": "ا - ل - م",
+              "meaning": "Do not",
+              "grammarNote": "Transliteration: alam"
+            },
+            {
+              "word": "تَرَ",
+              "root": "ت - ر",
+              "meaning": "you see",
+              "grammarNote": "Transliteration: tara"
+            },
+            {
+              "word": "إِلَى",
+              "root": "ا - ل - ي",
+              "meaning": "[to]",
+              "grammarNote": "Transliteration: ilā"
+            },
+            {
+              "word": "ٱلَّذِينَ",
+              "root": "ل - ذ - ي",
+              "meaning": "those who",
+              "grammarNote": "Transliteration: alladhīna"
+            },
+            {
+              "word": "تَوَلَّوْا۟",
+              "root": "ت - و - ل",
+              "meaning": "take as allies",
+              "grammarNote": "Transliteration: tawallaw"
+            },
+            {
+              "word": "قَوْمًا",
+              "root": "ق - و - م",
+              "meaning": "a people",
+              "grammarNote": "Transliteration: qawman"
+            },
+            {
+              "word": "غَضِبَ",
+              "root": "غ - ض - ب",
+              "meaning": "wrath",
+              "grammarNote": "Transliteration: ghaḍiba"
+            },
+            {
+              "word": "ٱللَّهُ",
+              "root": "أ - ل - ه",
+              "meaning": "(of) Allah",
+              "grammarNote": "Transliteration: l-lahu"
+            },
+            {
+              "word": "عَلَيْهِم",
+              "root": "ع - ل - ي",
+              "meaning": "(is) upon them",
+              "grammarNote": "Transliteration: ʿalayhim"
+            },
+            {
+              "word": "مَّا",
+              "root": "م - ا",
+              "meaning": "They (are) not",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "هُم",
+              "root": "ه - م",
+              "meaning": "They (are) not",
+              "grammarNote": "Transliteration: hum"
+            },
+            {
+              "word": "مِّنكُمْ",
+              "root": "ن - ك - م",
+              "meaning": "of you",
+              "grammarNote": "Transliteration: minkum"
+            },
+            {
+              "word": "وَلَا",
+              "root": "و - ل - ا",
+              "meaning": "and not",
+              "grammarNote": "Transliteration: walā"
+            },
+            {
+              "word": "مِنْهُمْ",
+              "root": "ن - ه - م",
+              "meaning": "of them",
+              "grammarNote": "Transliteration: min'hum"
+            },
+            {
+              "word": "وَيَحْلِفُونَ",
+              "root": "ح - ل - ف",
+              "meaning": "and they swear",
+              "grammarNote": "Transliteration: wayaḥlifūna"
+            },
+            {
+              "word": "عَلَى",
+              "root": "ع - ل - و",
+              "meaning": "to",
+              "grammarNote": "Transliteration: ʿalā"
+            },
+            {
+              "word": "ٱلْكَذِبِ",
+              "root": "ك - ذ - ب",
+              "meaning": "the lie",
+              "grammarNote": "Transliteration: l-kadhibi"
+            },
+            {
+              "word": "وَهُمْ",
+              "root": "و - ه - م",
+              "meaning": "while they",
+              "grammarNote": "Transliteration: wahum"
+            },
+            {
+              "word": "يَعْلَمُونَ",
+              "root": "ع - ل - م",
+              "meaning": "know",
+              "grammarNote": "Transliteration: yaʿlamūna"
+            }
+          ]
+        },
+        {
+          "id": "58-15-card",
+          "verseNumber": 15,
+          "arabicPhrase": "أَعَدَّ ٱللَّهُ لَهُمْ عَذَابًا شَدِيدًا ۖ إِنَّهُمْ سَآءَ مَا كَانُوا۟ يَعْمَلُونَ",
+          "englishPhrase": "Allah has prepared a severe punishment for them. Indeed, evil is what they have been doing.",
+          "vocabulary": [
+            {
+              "word": "أَعَدَّ",
+              "root": "ا - ع - د",
+              "meaning": "Allah has prepared",
+              "grammarNote": "Transliteration: aʿadda"
+            },
+            {
+              "word": "ٱللَّهُ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah has prepared",
+              "grammarNote": "Transliteration: l-lahu"
+            },
+            {
+              "word": "لَهُمْ",
+              "root": "ل - ه - م",
+              "meaning": "for them",
+              "grammarNote": "Transliteration: lahum"
+            },
+            {
+              "word": "عَذَابًۭا",
+              "root": "ع - ذ - ب",
+              "meaning": "a punishment",
+              "grammarNote": "Transliteration: ʿadhāban"
+            },
+            {
+              "word": "شَدِيدًا ۖ",
+              "root": "ش - د - ي",
+              "meaning": "severe",
+              "grammarNote": "Transliteration: shadīdan"
+            },
+            {
+              "word": "إِنَّهُمْ",
+              "root": "ن - ه - م",
+              "meaning": "Indeed, [they]",
+              "grammarNote": "Transliteration: innahum"
+            },
+            {
+              "word": "سَآءَ",
+              "root": "س - ا - ء",
+              "meaning": "evil is",
+              "grammarNote": "Transliteration: sāa"
+            },
+            {
+              "word": "مَا",
+              "root": "م - ا",
+              "meaning": "what",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "كَانُوا۟",
+              "root": "ك - ا - ن",
+              "meaning": "they used to",
+              "grammarNote": "Transliteration: kānū"
+            },
+            {
+              "word": "يَعْمَلُونَ",
+              "root": "ع - م - ل",
+              "meaning": "do",
+              "grammarNote": "Transliteration: yaʿmalūna"
+            }
+          ]
+        },
+        {
+          "id": "58-16-card",
+          "verseNumber": 16,
+          "arabicPhrase": "ٱتَّخَذُوٓا۟ أَيْمَـٰنَهُمْ جُنَّةً فَصَدُّوا۟ عَن سَبِيلِ ٱللَّهِ فَلَهُمْ عَذَابٌ مُّهِينٌ",
+          "englishPhrase": "They have taken their oaths as a shield, and then have prevented (people) from the way of Allah. Therefore, for them there is a humiliating punishment.",
+          "vocabulary": [
+            {
+              "word": "ٱتَّخَذُوٓا۟",
+              "root": "ت - خ - ذ",
+              "meaning": "They have taken",
+              "grammarNote": "Transliteration: ittakhadhū"
+            },
+            {
+              "word": "أَيْمَـٰنَهُمْ",
+              "root": "ي - م - ن",
+              "meaning": "their oaths",
+              "grammarNote": "Transliteration: aymānahum"
+            },
+            {
+              "word": "جُنَّةًۭ",
+              "root": "ج - ن - ه",
+              "meaning": "(as) a cover",
+              "grammarNote": "Transliteration: junnatan"
+            },
+            {
+              "word": "فَصَدُّوا۟",
+              "root": "ص - د - و",
+              "meaning": "so they hinder",
+              "grammarNote": "Transliteration: faṣaddū"
+            },
+            {
+              "word": "عَن",
+              "root": "ع - ن",
+              "meaning": "from",
+              "grammarNote": "Transliteration: ʿan"
+            },
+            {
+              "word": "سَبِيلِ",
+              "root": "ب - ي - ل",
+              "meaning": "(the) way of Allah",
+              "grammarNote": "Transliteration: sabīli"
+            },
+            {
+              "word": "ٱللَّهِ",
+              "root": "أ - ل - ه",
+              "meaning": "(the) way of Allah",
+              "grammarNote": "Transliteration: l-lahi"
+            },
+            {
+              "word": "فَلَهُمْ",
+              "root": "ل - ه - م",
+              "meaning": "so for them",
+              "grammarNote": "Transliteration: falahum"
+            },
+            {
+              "word": "عَذَابٌۭ",
+              "root": "ع - ذ - ب",
+              "meaning": "(is) a punishment",
+              "grammarNote": "Transliteration: ʿadhābun"
+            },
+            {
+              "word": "مُّهِينٌۭ",
+              "root": "ه - ي - ن",
+              "meaning": "humiliating",
+              "grammarNote": "Transliteration: muhīnun"
+            }
+          ]
+        },
+        {
+          "id": "58-17-card",
+          "verseNumber": 17,
+          "arabicPhrase": "لَّن تُغْنِىَ عَنْهُمْ أَمْوَٰلُهُمْ وَلَآ أَوْلَـٰدُهُم مِّنَ ٱللَّهِ شَيْـًٔا ۚ أُو۟لَـٰٓئِكَ أَصْحَـٰبُ ٱلنَّارِ ۖ هُمْ فِيهَا خَـٰلِدُونَ",
+          "englishPhrase": "Their riches and their children will never benefit them against Allah. They are the inmates of the Fire. They will live there forever,",
+          "vocabulary": [
+            {
+              "word": "لَّن",
+              "root": "ل - ن",
+              "meaning": "Never",
+              "grammarNote": "Transliteration: lan"
+            },
+            {
+              "word": "تُغْنِىَ",
+              "root": "ت - غ - ن",
+              "meaning": "will avail",
+              "grammarNote": "Transliteration: tugh'niya"
+            },
+            {
+              "word": "عَنْهُمْ",
+              "root": "ع - ن - ه",
+              "meaning": "them",
+              "grammarNote": "Transliteration: ʿanhum"
+            },
+            {
+              "word": "أَمْوَٰلُهُمْ",
+              "root": "م - و - ل",
+              "meaning": "their wealth",
+              "grammarNote": "Transliteration: amwāluhum"
+            },
+            {
+              "word": "وَلَآ",
+              "root": "و - ل - ا",
+              "meaning": "and not",
+              "grammarNote": "Transliteration: walā"
+            },
+            {
+              "word": "أَوْلَـٰدُهُم",
+              "root": "و - ل - د",
+              "meaning": "their children",
+              "grammarNote": "Transliteration: awlāduhum"
+            },
+            {
+              "word": "مِّنَ",
+              "root": "م - ن",
+              "meaning": "against",
+              "grammarNote": "Transliteration: mina"
+            },
+            {
+              "word": "ٱللَّهِ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah",
+              "grammarNote": "Transliteration: l-lahi"
+            },
+            {
+              "word": "شَيْـًٔا ۚ",
+              "root": "ش - ي - ا",
+              "meaning": "(in) anything",
+              "grammarNote": "Transliteration: shayan"
+            },
+            {
+              "word": "أُو۟لَـٰٓئِكَ",
+              "root": "و - ل - ئ",
+              "meaning": "Those",
+              "grammarNote": "Transliteration: ulāika"
+            },
+            {
+              "word": "أَصْحَـٰبُ",
+              "root": "ص - ح - ب",
+              "meaning": "(will be) companions",
+              "grammarNote": "Transliteration: aṣḥābu"
+            },
+            {
+              "word": "ٱلنَّارِ ۖ",
+              "root": "ن - ا - ر",
+              "meaning": "(of) the Fire",
+              "grammarNote": "Transliteration: l-nāri"
+            },
+            {
+              "word": "هُمْ",
+              "root": "ه - م",
+              "meaning": "they",
+              "grammarNote": "Transliteration: hum"
+            },
+            {
+              "word": "فِيهَا",
+              "root": "ي - ه - ا",
+              "meaning": "in it",
+              "grammarNote": "Transliteration: fīhā"
+            },
+            {
+              "word": "خَـٰلِدُونَ",
+              "root": "خ - ل - د",
+              "meaning": "will abide forever",
+              "grammarNote": "Transliteration: khālidūna"
+            }
+          ]
+        },
+        {
+          "id": "58-18-card",
+          "verseNumber": 18,
+          "arabicPhrase": "يَوْمَ يَبْعَثُهُمُ ٱللَّهُ جَمِيعًا فَيَحْلِفُونَ لَهُۥ كَمَا يَحْلِفُونَ لَكُمْ ۖ وَيَحْسَبُونَ أَنَّهُمْ عَلَىٰ شَىْءٍ ۚ أَلَآ إِنَّهُمْ هُمُ ٱلْكَـٰذِبُونَ",
+          "englishPhrase": "the Day Allah will raise all of them, and they will swear before Him as they swear before you, and will think that they have something to stand upon. Be assured that they are sheer liars.",
+          "vocabulary": [
+            {
+              "word": "يَوْمَ",
+              "root": "ي - و - م",
+              "meaning": "(On the) Day",
+              "grammarNote": "Transliteration: yawma"
+            },
+            {
+              "word": "يَبْعَثُهُمُ",
+              "root": "ب - ع - ث",
+              "meaning": "Allah will raise them",
+              "grammarNote": "Transliteration: yabʿathuhumu"
+            },
+            {
+              "word": "ٱللَّهُ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah will raise them",
+              "grammarNote": "Transliteration: l-lahu"
+            },
+            {
+              "word": "جَمِيعًۭا",
+              "root": "ج - م - ي",
+              "meaning": "all",
+              "grammarNote": "Transliteration: jamīʿan"
+            },
+            {
+              "word": "فَيَحْلِفُونَ",
+              "root": "ح - ل - ف",
+              "meaning": "then they will swear",
+              "grammarNote": "Transliteration: fayaḥlifūna"
+            },
+            {
+              "word": "لَهُۥ",
+              "root": "ل - ه",
+              "meaning": "to Him",
+              "grammarNote": "Transliteration: lahu"
+            },
+            {
+              "word": "كَمَا",
+              "root": "ك - م - ا",
+              "meaning": "as",
+              "grammarNote": "Transliteration: kamā"
+            },
+            {
+              "word": "يَحْلِفُونَ",
+              "root": "ح - ل - ف",
+              "meaning": "they swear",
+              "grammarNote": "Transliteration: yaḥlifūna"
+            },
+            {
+              "word": "لَكُمْ ۖ",
+              "root": "ل - ك - م",
+              "meaning": "to you",
+              "grammarNote": "Transliteration: lakum"
+            },
+            {
+              "word": "وَيَحْسَبُونَ",
+              "root": "ح - س - ب",
+              "meaning": "And they think",
+              "grammarNote": "Transliteration: wayaḥsabūna"
+            },
+            {
+              "word": "أَنَّهُمْ",
+              "root": "ن - ه - م",
+              "meaning": "that they",
+              "grammarNote": "Transliteration: annahum"
+            },
+            {
+              "word": "عَلَىٰ",
+              "root": "ع - ل - و",
+              "meaning": "(are) on",
+              "grammarNote": "Transliteration: ʿalā"
+            },
+            {
+              "word": "شَىْءٍ ۚ",
+              "root": "ش - ي - ء",
+              "meaning": "something",
+              "grammarNote": "Transliteration: shayin"
+            },
+            {
+              "word": "أَلَآ",
+              "root": "ا - ل - ا",
+              "meaning": "No doubt",
+              "grammarNote": "Transliteration: alā"
+            },
+            {
+              "word": "إِنَّهُمْ",
+              "root": "ن - ه - م",
+              "meaning": "Indeed, they",
+              "grammarNote": "Transliteration: innahum"
+            },
+            {
+              "word": "هُمُ",
+              "root": "ه - م",
+              "meaning": "[they]",
+              "grammarNote": "Transliteration: humu"
+            },
+            {
+              "word": "ٱلْكَـٰذِبُونَ",
+              "root": "ك - ذ - ب",
+              "meaning": "(are) the liars",
+              "grammarNote": "Transliteration: l-kādhibūna"
+            }
+          ]
+        },
+        {
+          "id": "58-19-card",
+          "verseNumber": 19,
+          "arabicPhrase": "ٱسْتَحْوَذَ عَلَيْهِمُ ٱلشَّيْطَـٰنُ فَأَنسَىٰهُمْ ذِكْرَ ٱللَّهِ ۚ أُو۟لَـٰٓئِكَ حِزْبُ ٱلشَّيْطَـٰنِ ۚ أَلَآ إِنَّ حِزْبَ ٱلشَّيْطَـٰنِ هُمُ ٱلْخَـٰسِرُونَ",
+          "englishPhrase": "The ShaiTān (Satan) has prevailed upon them; so he has made them neglect to remember Allah. They are the party of ShaiTān . Be assured that it is (the members of the) party of ShaiTān that are the losers.",
+          "vocabulary": [
+            {
+              "word": "ٱسْتَحْوَذَ",
+              "root": "ح - و - ذ",
+              "meaning": "Has overcome",
+              "grammarNote": "Transliteration: is'taḥwadha"
+            },
+            {
+              "word": "عَلَيْهِمُ",
+              "root": "ع - ل - ي",
+              "meaning": "them",
+              "grammarNote": "Transliteration: ʿalayhimu"
+            },
+            {
+              "word": "ٱلشَّيْطَـٰنُ",
+              "root": "ش - ي - ط",
+              "meaning": "the Shaitaan",
+              "grammarNote": "Transliteration: l-shayṭānu"
+            },
+            {
+              "word": "فَأَنسَىٰهُمْ",
+              "root": "ن - س - ي",
+              "meaning": "so he made them forget",
+              "grammarNote": "Transliteration: fa-ansāhum"
+            },
+            {
+              "word": "ذِكْرَ",
+              "root": "ذ - ك - ر",
+              "meaning": "(the) remembrance",
+              "grammarNote": "Transliteration: dhik'ra"
+            },
+            {
+              "word": "ٱللَّهِ ۚ",
+              "root": "أ - ل - ه",
+              "meaning": "(of) Allah",
+              "grammarNote": "Transliteration: l-lahi"
+            },
+            {
+              "word": "أُو۟لَـٰٓئِكَ",
+              "root": "و - ل - ئ",
+              "meaning": "Those",
+              "grammarNote": "Transliteration: ulāika"
+            },
+            {
+              "word": "حِزْبُ",
+              "root": "ح - ز - ب",
+              "meaning": "(are the) party",
+              "grammarNote": "Transliteration: ḥiz'bu"
+            },
+            {
+              "word": "ٱلشَّيْطَـٰنِ ۚ",
+              "root": "ش - ي - ط",
+              "meaning": "(of) the Shaitaan",
+              "grammarNote": "Transliteration: l-shayṭāni"
+            },
+            {
+              "word": "أَلَآ",
+              "root": "ا - ل - ا",
+              "meaning": "No doubt",
+              "grammarNote": "Transliteration: alā"
+            },
+            {
+              "word": "إِنَّ",
+              "root": "ا - ن - ن",
+              "meaning": "Indeed",
+              "grammarNote": "Transliteration: inna"
+            },
+            {
+              "word": "حِزْبَ",
+              "root": "ح - ز - ب",
+              "meaning": "(the) party",
+              "grammarNote": "Transliteration: ḥiz'ba"
+            },
+            {
+              "word": "ٱلشَّيْطَـٰنِ",
+              "root": "ش - ي - ط",
+              "meaning": "(of) the Shaitaan",
+              "grammarNote": "Transliteration: l-shayṭāni"
+            },
+            {
+              "word": "هُمُ",
+              "root": "ه - م",
+              "meaning": "they",
+              "grammarNote": "Transliteration: humu"
+            },
+            {
+              "word": "ٱلْخَـٰسِرُونَ",
+              "root": "خ - س - ر",
+              "meaning": "(will be) the losers",
+              "grammarNote": "Transliteration: l-khāsirūna"
+            }
+          ]
+        },
+        {
+          "id": "58-20-card",
+          "verseNumber": 20,
+          "arabicPhrase": "إِنَّ ٱلَّذِينَ يُحَآدُّونَ ٱللَّهَ وَرَسُولَهُۥٓ أُو۟لَـٰٓئِكَ فِى ٱلْأَذَلِّينَ",
+          "englishPhrase": "Indeed, those who oppose Allah and His Messenger, they are among the lowest.",
+          "vocabulary": [
+            {
+              "word": "إِنَّ",
+              "root": "ا - ن - ن",
+              "meaning": "Indeed",
+              "grammarNote": "Transliteration: inna"
+            },
+            {
+              "word": "ٱلَّذِينَ",
+              "root": "ل - ذ - ي",
+              "meaning": "those who",
+              "grammarNote": "Transliteration: alladhīna"
+            },
+            {
+              "word": "يُحَآدُّونَ",
+              "root": "ح - ا - د",
+              "meaning": "oppose",
+              "grammarNote": "Transliteration: yuḥāddūna"
+            },
+            {
+              "word": "ٱللَّهَ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah",
+              "grammarNote": "Transliteration: l-laha"
+            },
+            {
+              "word": "وَرَسُولَهُۥٓ",
+              "root": "ر - س - و",
+              "meaning": "and His Messenger",
+              "grammarNote": "Transliteration: warasūlahu"
+            },
+            {
+              "word": "أُو۟لَـٰٓئِكَ",
+              "root": "و - ل - ئ",
+              "meaning": "those",
+              "grammarNote": "Transliteration: ulāika"
+            },
+            {
+              "word": "فِى",
+              "root": "ف - ي",
+              "meaning": "(will be) among",
+              "grammarNote": "Transliteration: fī"
+            },
+            {
+              "word": "ٱلْأَذَلِّينَ",
+              "root": "ا - ذ - ل",
+              "meaning": "the most humiliated",
+              "grammarNote": "Transliteration: l-adhalīna"
+            }
+          ]
+        },
+        {
+          "id": "58-21-card",
+          "verseNumber": 21,
+          "arabicPhrase": "كَتَبَ ٱللَّهُ لَأَغْلِبَنَّ أَنَا۠ وَرُسُلِىٓ ۚ إِنَّ ٱللَّهَ قَوِىٌّ عَزِيزٌ",
+          "englishPhrase": "Allah has written (in His pre-destined decree), “I will certainly prevail, both I and My messengers.” Surely Allah is All-Strong, All-Mighty.",
+          "vocabulary": [
+            {
+              "word": "كَتَبَ",
+              "root": "ك - ت - ب",
+              "meaning": "Allah has decreed",
+              "grammarNote": "Transliteration: kataba"
+            },
+            {
+              "word": "ٱللَّهُ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah has decreed",
+              "grammarNote": "Transliteration: l-lahu"
+            },
+            {
+              "word": "لَأَغْلِبَنَّ",
+              "root": "غ - ل - ب",
+              "meaning": "Surely, I will overcome",
+              "grammarNote": "Transliteration: la-aghlibanna"
+            },
+            {
+              "word": "أَنَا۠",
+              "root": "ا - ن - ا",
+              "meaning": "I",
+              "grammarNote": "Transliteration: anā"
+            },
+            {
+              "word": "وَرُسُلِىٓ ۚ",
+              "root": "ر - س - ل",
+              "meaning": "and My Messengers",
+              "grammarNote": "Transliteration: warusulī"
+            },
+            {
+              "word": "إِنَّ",
+              "root": "ا - ن - ن",
+              "meaning": "Indeed",
+              "grammarNote": "Transliteration: inna"
+            },
+            {
+              "word": "ٱللَّهَ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah",
+              "grammarNote": "Transliteration: l-laha"
+            },
+            {
+              "word": "قَوِىٌّ",
+              "root": "ق - و - ي",
+              "meaning": "(is) All-Strong",
+              "grammarNote": "Transliteration: qawiyyun"
+            },
+            {
+              "word": "عَزِيزٌۭ",
+              "root": "ع - ز - ي",
+              "meaning": "All-Mighty",
+              "grammarNote": "Transliteration: ʿazīzun"
+            }
+          ]
+        },
+        {
+          "id": "58-22-card",
+          "verseNumber": 22,
+          "arabicPhrase": "لَّا تَجِدُ قَوْمًا يُؤْمِنُونَ بِٱللَّهِ وَٱلْيَوْمِ ٱلْـَٔاخِرِ يُوَآدُّونَ مَنْ حَآدَّ ٱللَّهَ وَرَسُولَهُۥ وَلَوْ كَانُوٓا۟ ءَابَآءَهُمْ أَوْ أَبْنَآءَهُمْ أَوْ إِخْوَٰنَهُمْ أَوْ عَشِيرَتَهُمْ ۚ أُو۟لَـٰٓئِكَ كَتَبَ فِى قُلُوبِهِمُ ٱلْإِيمَـٰنَ وَأَيَّدَهُم بِرُوحٍ مِّنْهُ ۖ وَيُدْخِلُهُمْ جَنَّـٰتٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَـٰرُ خَـٰلِدِينَ فِيهَا ۚ رَضِىَ ٱللَّهُ عَنْهُمْ وَرَضُوا۟ عَنْهُ ۚ أُو۟لَـٰٓئِكَ حِزْبُ ٱللَّهِ ۚ أَلَآ إِنَّ حِزْبَ ٱللَّهِ هُمُ ٱلْمُفْلِحُونَ",
+          "englishPhrase": "You will not find those who believe in Allah and in the Hereafter having friendship with those who oppose Allah and His Messenger, even though they may be their fathers or their sons or their brothers or their clan. They are such that Allah has inscribed faith on their hearts, and has supported them with a spirit from Him. He will admit them to gardens beneath which rivers flow, in which they will live forever. Allah is pleased with them, and they are pleased with Allah. Those are the party of Allah. Be assured that it is (the members of) the party of Allah that are the successful.",
+          "vocabulary": [
+            {
+              "word": "لَّا",
+              "root": "ل - ا",
+              "meaning": "You will not find",
+              "grammarNote": "Transliteration: lā"
+            },
+            {
+              "word": "تَجِدُ",
+              "root": "ت - ج - د",
+              "meaning": "You will not find",
+              "grammarNote": "Transliteration: tajidu"
+            },
+            {
+              "word": "قَوْمًۭا",
+              "root": "ق - و - م",
+              "meaning": "a people",
+              "grammarNote": "Transliteration: qawman"
+            },
+            {
+              "word": "يُؤْمِنُونَ",
+              "root": "ؤ - م - ن",
+              "meaning": "who believe",
+              "grammarNote": "Transliteration: yu'minūna"
+            },
+            {
+              "word": "بِٱللَّهِ",
+              "root": "أ - ل - ه",
+              "meaning": "in Allah",
+              "grammarNote": "Transliteration: bil-lahi"
+            },
+            {
+              "word": "وَٱلْيَوْمِ",
+              "root": "ي - و - م",
+              "meaning": "and the Day",
+              "grammarNote": "Transliteration: wal-yawmi"
+            },
+            {
+              "word": "ٱلْـَٔاخِرِ",
+              "root": "ا - خ - ر",
+              "meaning": "the Last",
+              "grammarNote": "Transliteration: l-ākhiri"
+            },
+            {
+              "word": "يُوَآدُّونَ",
+              "root": "و - ا - د",
+              "meaning": "loving",
+              "grammarNote": "Transliteration: yuwāddūna"
+            },
+            {
+              "word": "مَنْ",
+              "root": "م - ن",
+              "meaning": "(those) who",
+              "grammarNote": "Transliteration: man"
+            },
+            {
+              "word": "حَآدَّ",
+              "root": "ح - ا - د",
+              "meaning": "oppose",
+              "grammarNote": "Transliteration: ḥādda"
+            },
+            {
+              "word": "ٱللَّهَ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah",
+              "grammarNote": "Transliteration: l-laha"
+            },
+            {
+              "word": "وَرَسُولَهُۥ",
+              "root": "ر - س - و",
+              "meaning": "and His Messenger",
+              "grammarNote": "Transliteration: warasūlahu"
+            },
+            {
+              "word": "وَلَوْ",
+              "root": "و - ل - و",
+              "meaning": "even if",
+              "grammarNote": "Transliteration: walaw"
+            },
+            {
+              "word": "كَانُوٓا۟",
+              "root": "ك - ا - ن",
+              "meaning": "they were",
+              "grammarNote": "Transliteration: kānū"
+            },
+            {
+              "word": "ءَابَآءَهُمْ",
+              "root": "ء - ب - ا",
+              "meaning": "their fathers",
+              "grammarNote": "Transliteration: ābāahum"
+            },
+            {
+              "word": "أَوْ",
+              "root": "ا - و",
+              "meaning": "or",
+              "grammarNote": "Transliteration: aw"
+            },
+            {
+              "word": "أَبْنَآءَهُمْ",
+              "root": "ب - ن - ا",
+              "meaning": "their sons",
+              "grammarNote": "Transliteration: abnāahum"
+            },
+            {
+              "word": "أَوْ",
+              "root": "ا - و",
+              "meaning": "or",
+              "grammarNote": "Transliteration: aw"
+            },
+            {
+              "word": "إِخْوَٰنَهُمْ",
+              "root": "خ - و - ن",
+              "meaning": "their brothers",
+              "grammarNote": "Transliteration: ikh'wānahum"
+            },
+            {
+              "word": "أَوْ",
+              "root": "ا - و",
+              "meaning": "or",
+              "grammarNote": "Transliteration: aw"
+            },
+            {
+              "word": "عَشِيرَتَهُمْ ۚ",
+              "root": "ع - ش - ي",
+              "meaning": "their kindred",
+              "grammarNote": "Transliteration: ʿashīratahum"
+            },
+            {
+              "word": "أُو۟لَـٰٓئِكَ",
+              "root": "و - ل - ئ",
+              "meaning": "Those",
+              "grammarNote": "Transliteration: ulāika"
+            },
+            {
+              "word": "كَتَبَ",
+              "root": "ك - ت - ب",
+              "meaning": "He has decreed",
+              "grammarNote": "Transliteration: kataba"
+            },
+            {
+              "word": "فِى",
+              "root": "ف - ي",
+              "meaning": "within",
+              "grammarNote": "Transliteration: fī"
+            },
+            {
+              "word": "قُلُوبِهِمُ",
+              "root": "ق - ل - و",
+              "meaning": "their hearts",
+              "grammarNote": "Transliteration: qulūbihimu"
+            },
+            {
+              "word": "ٱلْإِيمَـٰنَ",
+              "root": "ي - م - ن",
+              "meaning": "faith",
+              "grammarNote": "Transliteration: l-īmāna"
+            },
+            {
+              "word": "وَأَيَّدَهُم",
+              "root": "ا - ي - د",
+              "meaning": "and supported them",
+              "grammarNote": "Transliteration: wa-ayyadahum"
+            },
+            {
+              "word": "بِرُوحٍۢ",
+              "root": "ر - و - ح",
+              "meaning": "with a spirit",
+              "grammarNote": "Transliteration: birūḥin"
+            },
+            {
+              "word": "مِّنْهُ ۖ",
+              "root": "م - ن - ه",
+              "meaning": "from Him",
+              "grammarNote": "Transliteration: min'hu"
+            },
+            {
+              "word": "وَيُدْخِلُهُمْ",
+              "root": "د - خ - ل",
+              "meaning": "And He will admit them",
+              "grammarNote": "Transliteration: wayud'khiluhum"
+            },
+            {
+              "word": "جَنَّـٰتٍۢ",
+              "root": "ج - ن - ت",
+              "meaning": "(to) Gardens",
+              "grammarNote": "Transliteration: jannātin"
+            },
+            {
+              "word": "تَجْرِى",
+              "root": "ت - ج - ر",
+              "meaning": "flow",
+              "grammarNote": "Transliteration: tajrī"
+            },
+            {
+              "word": "مِن",
+              "root": "م - ن",
+              "meaning": "from",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "تَحْتِهَا",
+              "root": "ت - ح - ت",
+              "meaning": "underneath it",
+              "grammarNote": "Transliteration: taḥtihā"
+            },
+            {
+              "word": "ٱلْأَنْهَـٰرُ",
+              "root": "ن - ه - ر",
+              "meaning": "the rivers",
+              "grammarNote": "Transliteration: l-anhāru"
+            },
+            {
+              "word": "خَـٰلِدِينَ",
+              "root": "خ - ل - د",
+              "meaning": "will abide forever",
+              "grammarNote": "Transliteration: khālidīna"
+            },
+            {
+              "word": "فِيهَا ۚ",
+              "root": "ي - ه - ا",
+              "meaning": "in it",
+              "grammarNote": "Transliteration: fīhā"
+            },
+            {
+              "word": "رَضِىَ",
+              "root": "ر - ض - ي",
+              "meaning": "Allah is pleased",
+              "grammarNote": "Transliteration: raḍiya"
+            },
+            {
+              "word": "ٱللَّهُ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah is pleased",
+              "grammarNote": "Transliteration: l-lahu"
+            },
+            {
+              "word": "عَنْهُمْ",
+              "root": "ع - ن - ه",
+              "meaning": "with them",
+              "grammarNote": "Transliteration: ʿanhum"
+            },
+            {
+              "word": "وَرَضُوا۟",
+              "root": "ر - ض - و",
+              "meaning": "and they are pleased",
+              "grammarNote": "Transliteration: waraḍū"
+            },
+            {
+              "word": "عَنْهُ ۚ",
+              "root": "ع - ن - ه",
+              "meaning": "with Him",
+              "grammarNote": "Transliteration: ʿanhu"
+            },
+            {
+              "word": "أُو۟لَـٰٓئِكَ",
+              "root": "و - ل - ئ",
+              "meaning": "Those",
+              "grammarNote": "Transliteration: ulāika"
+            },
+            {
+              "word": "حِزْبُ",
+              "root": "ح - ز - ب",
+              "meaning": "(are the) party",
+              "grammarNote": "Transliteration: ḥiz'bu"
+            },
+            {
+              "word": "ٱللَّهِ ۚ",
+              "root": "أ - ل - ه",
+              "meaning": "(of) Allah",
+              "grammarNote": "Transliteration: l-lahi"
+            },
+            {
+              "word": "أَلَآ",
+              "root": "ا - ل - ا",
+              "meaning": "No doubt",
+              "grammarNote": "Transliteration: alā"
+            },
+            {
+              "word": "إِنَّ",
+              "root": "ا - ن - ن",
+              "meaning": "Indeed",
+              "grammarNote": "Transliteration: inna"
+            },
+            {
+              "word": "حِزْبَ",
+              "root": "ح - ز - ب",
+              "meaning": "(the) party",
+              "grammarNote": "Transliteration: ḥiz'ba"
+            },
+            {
+              "word": "ٱللَّهِ",
+              "root": "أ - ل - ه",
+              "meaning": "(of) Allah",
+              "grammarNote": "Transliteration: l-lahi"
+            },
+            {
+              "word": "هُمُ",
+              "root": "ه - م",
+              "meaning": "they",
+              "grammarNote": "Transliteration: humu"
+            },
+            {
+              "word": "ٱلْمُفْلِحُونَ",
+              "root": "ف - ل - ح",
+              "meaning": "(are) the successful ones",
+              "grammarNote": "Transliteration: l-muf'liḥūna"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verses 14–21]\n\nCommentary\n\nChastising the Hypocrites for their Secret Alliance with the Jews\n\nأَلَمْ تَرَ‌ إِلَى الَّذِينَ تَوَلَّوْا قَوْمًا غَضِبَ اللَّـهُ عَلَيْهِم (Have you not seen those who have friendship with a people with whom Allah is angry? ....58:14) Allah condemns the hypocrites who secretly formed an alliance with the Jews who challenge Allah and His Apostle, while in effect they belong neither to the Muslims nor to the Jews. Consequently, Allah has prepared for them a humiliating and condign chastisement. It is not permissible to have a friendly intimacy with the enemies of Allah and His Messenger ﷺ - whether the unbelievers are Jews, or Christians, or pagans or of any other creed. Even rationally this is not possible, because the capital asset of a believer is the love of Allah, while a non-believer relishes in opposing and challenging Him. It is not possible for a person to have sincere love and affection for someone and to love and have intimacy with the latter's enemy. Here 'love', 'affection' or 'intimacy' refers to the one coming from the heart involving intense emotional commitment (which necessarily includes having love with his way of life. Ed.). This is called Muwalah or 'intimate friendship'. This type of friendship is limited to sincere Muslims. Therefore, the Qur'anic verses on many occasions strictly prohibit Muslims from having this sort of relationship with non-Muslims. Any Muslim who has such intimate friendship with non-Muslims will be seen to fall in the circle of unbelievers.\n\nIn contra-distinction to Muwalah [ intimate friendship ], there is a concept of Muwalah which refers to the relationship based on sympathy, kindness and concern. It includes charitable assistance and support, business, commercial, trade dealings and economic cooperation, condolence and consolation and any well-meaning attitude of well-being and welfare. Barring unbelievers who are at war with the believers, this kind of relationship is permissible with all other non-Muslims. The paradigm of the Holy Prophet ﷺ and the noble Companions ؓ in this direction is ample testimony to this practice. However, it is necessary to ensure that the relationship of Muwalah is not harmful to the cause of religion; it should not create laxity in 'faith and practice' of Islam nor should it 'harm, hurt or injure' other Muslims. Please see Ma` ariful Qur'an, Vol. 2/ pp 54-61: under Surah Al-` Imran: v.28-30 for a detailed account of the distinction between Muwalat [ intimate friendship ], Muwasat [ sympathy ] and Muamalat [ dealings ] or Mudarah [ cordiality ].\n\nوَيَحْلِفُونَ عَلَى الْكَذِبِ (and they swear false oaths ...58:14). It means they swear oaths profanely. According to some reports, this verse was revealed in connection with ` Abdullah Ibn 'Ubayy and ` Abdullah Ibn Nabtal: One day the Messenger of Allah ﷺ was sitting with his noble Companions ؓ and said to them: \"Soon a person will come to you whose heart will be the heart of a tyrant and who sees through the Shaitan's eyes.\" Soon afterwards ` Abdullah Ibn Nabtal, the hypocrite, entered. He was blue-eyed, wheat-coloured, short-statured and skimpy-bearded. The Messenger of Allah ﷺ asked him: \"Why do you and your comrades use obscene words against me?\" He swore that he did not do that. Then he called his comrades and they too took this false oath. Allah told the Holy Prophet ﷺ ; about their lie and profane oath. [ Qurtubi ]\n\n────────────────────────────────────────\n\n[Verse 22]\n\nBelievers cannot entertain intimacy with non-Believers\n\nلَّا تَجِدُ قَوْمًا يُؤْمِنُونَ بِاللَّـهِ وَالْيَوْمِ الْآخِرِ‌ يُوَادُّونَ مَنْ حَادَّ اللَّـهَ وَرَ‌سُولَهُ وَلَوْ كَانُوا آبَاءَهُمْ (You shall not find those who believe in Allah and in the Hereafter having friendship with those who oppose Allah and His Messenger, even though they were their fathers....58:22). The preceding verses showed that those [ hypocrites ] who are in intimate friendship with unbelievers and pagans shall incur Allah's wrath, indignation and severe torment. This verse describes the condition of sincere believers who would not take an enemy of Faith, the opponents of Allah, for intimacy and friendship, even though such people are their own fathers, children, brothers or any other blood relatives. The bond of belief transcends all other bonds, even the close ties of blood. This description fits all noble Companions ؓ . Commentators on this occasion have cited a number of incidents of the blessed Companions which describe how, when they heard their fathers, sons and brothers or other blood relations utter blasphemy against Islam or the Messenger of Allah ﷺ ، they left all ties aside and punished them or even killed them.\n\n` Abdullah, the son of ` Abdullah Ibn 'Ubayy, the leader of the hypocrites in Madinah, heard his father make some blasphemous remarks against the Holy Prophet ﷺ . The son came up to the Holy Prophet ﷺ and sought his permission to kill his father. The Messenger of Allah ﷺ stopped him. Sayyidna Abu Bakr ؓ heard his father, Abu Quhafah, uttering some insulting words against the Holy Prophet ﷺ . The most compassionate Siddiq ؓ became indignant and unexpectedly gave him such a hard slap that he fell down. When the Messenger of Allah ﷺ heard about it, he advised Abu Bakr Siddiq ؓ not do it again. In the battle of Uhud, Sayyidna Abu ` Ubaidah's father, Jarrah, was fighting on the side of the unbelievers against the Muslims. In the battlefield, while the battle was on, he purposely came time and again face to face with Sayyidna Abu ` Ubaidah ؓ and pursued him. Every time his father came in front of him, Sayyidna Abu ` Ubaidah ؓ would, as a mark of respect, move out. But when he persisted, Sayyidna Abu ` Ubaidah ؓ had no choice but to kill him. The biography of the blessed Companions is replete with similar incidents. The present set of verses was revealed to laud them. [ Qurtubi ]\n\nRuling\n\nMany jurists have ruled that this rule applies equally to all Muslims who transgress or violate the sacred laws of Shari’ ah or in their practical life turn away from them, in that the sincere Muslims should not maintain an intimate friendship or relationship with such transgressors. As explained earlier, Muwalah [ intimate friendship ] with a fasiq [ transgressors ] is not possible because intimacy with them is possible if and only if the germs of fisq [ transgression ] are lurking in the people befriending them. Muwasah [ sympathy ] and Mu'amalat [ dealings ] or Mudarah [ cordiality ] are, however, a different matter to the degree of necessity. This is the reason why the Messenger of Allah ﷺ used to pray: اَللَّھُمَّ لَا تَجعَلَ لِفَاجِرِ عَلَیَّ یَداً \"0 Allah, do not give any transgressor the upper hand over me.\" The Messenger of Allah prayed thus because if anyone has the upper hand in a situation, he is most likely to get his own way. He will, for instance, show kindness to people and thus gain the upper hand; and the noble persons, on account of the kindness, will feel obliged or duty-bound to return his kindness with love. Thus the Messenger of Allah sought refuge with Allah from this situation. [ Qurtubi ]\n\nوَأَيَّدَهُم بِرُ‌وحٍ مِّنْهُ (...and has helped them with a Spirit from Him....58:22) The word ruh, according to some authorities on Tafsir, stands for 'light', which radiates or emanates from Allah and enters the heart of a believer which urges him to perform righteous deeds, and is the source of peace and contentment of the heart. This tranquility and satisfaction is the source of great strength and power. Other authorities say that this word stands for the Holy Qur'an and the arguments of the Holy Qur'an. This is the real strength and power of a believer. [ Qurtubi ] Allah, the Pure and Exalted, knows best!\n\nAlhamdulillah\n\nThe Commentary on\n\nSurah A1-Mujadalah\n\nEnds here.",
+      "subsections": [
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "أَلَمْ تَرَ‌ إِلَى الَّذِينَ تَوَلَّوْا قَوْمًا غَضِبَ اللَّـهُ عَلَيْهِم (Have you not seen those who have friendship with a people with whom Allah is angry? ....58:14) Allah condemns the hypocrites who secretly formed an alliance with the Jews who challenge Allah and His Apostle, while in effect they belong neither to the Muslims nor to the Jews. Consequently, Allah has prepared for them a humiliating and condign chastisement. It is not permissible to have a friendly intimacy with the enemies of Allah and His Messenger ﷺ - whether the unbelievers are Jews, or Christians, or pagans or of any other creed. Even rationally this is not possible, because the capital asset of a believer is the love of Allah, while a non-believer relishes in opposing and challenging Him. It is not possible for a person to have sincere love and affection for someone and to love and have intimacy with the..."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "In contra-distinction to Muwalah [ intimate friendship ], there is a concept of Muwalah which refers to the relationship based on sympathy, kindness and concern. It includes charitable assistance and support, business, commercial, trade dealings and economic cooperation, condolence and consolation and any well-meaning attitude of well-being and welfare. Barring unbelievers who are at war with the believers, this kind of relationship is permissible with all other non-Muslims. The paradigm of the Holy Prophet ﷺ and the noble Companions ؓ in this direction is ample testimony to this practice. However, it is necessary to ensure that the relationship of Muwalah is not harmful to the cause of religion; it should not create laxity in 'faith and practice' of Islam nor should it 'harm, hurt or injure' other Muslims. Please see Ma` ariful Qur'an, Vol. 2/ pp 54-61: under Surah Al-` Imran: v.28-30..."
+        }
+      ],
+      "curatedTerms": []
+    }
+  ]
+}

@@ -1,0 +1,1521 @@
+{
+  "number": 75,
+  "nameArabic": "القيامة",
+  "nameTransliterated": "Al-Qiyamah",
+  "nameEnglish": "The Resurrection",
+  "versesCount": 40,
+  "revelationType": "Makki",
+  "volumeNumber": 8,
+  "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5669/mode/2up",
+  "juz": [
+    29
+  ],
+  "bismillahPre": true,
+  "introductoryTafseer": "On the same basis, Sayyidna Hasan al-Basri interpreted nafs lawwamah as nafs mu'minah meaning, the 'believing soul' and said that 'By Allah! A believer at all times upbraids his own self. It is obvious why he should reproach himself when he commits evil. He reproaches himself when he does good deeds as well, because he feels that he has not performed his duties of servitude and Divine worship adequately. He feels that he has not fulfilled and consummated his obligations of slave-hood perfectly. Therefore, he reproaches himself for his shortcomi...",
+  "historicalContext": {
+    "background": "Sayyidna Ibn ` Abbas, Hasan al-Basri and others have expressed the view that Allah has sworn an oath by the self-reproaching conscience in order to show honour for the believing souls who take account of their deeds, regret, and feel sorry for, their shortcomings and reproach themselves. Three kinds of Nafs",
+    "scholarlyReference": "Ma'ariful Qur'an by Mufti Muhammad Shafi, Volume 8 (Archive.org Leaf n5669)"
+  },
+  "sections": [
+    {
+      "id": "75-1-3",
+      "surahNumber": 75,
+      "verseRange": [
+        1,
+        3
+      ],
+      "title": "────────────────────────────────────────",
+      "juzNumber": 29,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5670/mode/2up",
+      "arabicText": "لَآ أُقْسِمُ بِيَوْمِ ٱلْقِيَـٰمَةِ ۝١ وَلَآ أُقْسِمُ بِٱلنَّفْسِ ٱللَّوَّامَةِ ۝٢ أَيَحْسَبُ ٱلْإِنسَـٰنُ أَلَّن نَّجْمَعَ عِظَامَهُۥ ۝٣",
+      "translation": "I swear by the Day of Resurrection, ۝ and I swear by the self-reproaching conscience, (that Resurrection is a reality.) ۝ Does man think that We will never reassemble his bones? ۝",
+      "phraseCards": [
+        {
+          "id": "75-1-card",
+          "verseNumber": 1,
+          "arabicPhrase": "لَآ أُقْسِمُ بِيَوْمِ ٱلْقِيَـٰمَةِ",
+          "englishPhrase": "I swear by the Day of Resurrection,",
+          "vocabulary": [
+            {
+              "word": "لَآ",
+              "root": "ل - ا",
+              "meaning": "Nay",
+              "grammarNote": "Transliteration: lā"
+            },
+            {
+              "word": "أُقْسِمُ",
+              "root": "ق - س - م",
+              "meaning": "I swear",
+              "grammarNote": "Transliteration: uq'simu"
+            },
+            {
+              "word": "بِيَوْمِ",
+              "root": "ي - و - م",
+              "meaning": "by (the) Day",
+              "grammarNote": "Transliteration: biyawmi"
+            },
+            {
+              "word": "ٱلْقِيَـٰمَةِ",
+              "root": "ق - ي - م",
+              "meaning": "(of) the Resurrection",
+              "grammarNote": "Transliteration: l-qiyāmati"
+            }
+          ]
+        },
+        {
+          "id": "75-2-card",
+          "verseNumber": 2,
+          "arabicPhrase": "وَلَآ أُقْسِمُ بِٱلنَّفْسِ ٱللَّوَّامَةِ",
+          "englishPhrase": "and I swear by the self-reproaching conscience, (that Resurrection is a reality.)",
+          "vocabulary": [
+            {
+              "word": "وَلَآ",
+              "root": "و - ل - ا",
+              "meaning": "And nay",
+              "grammarNote": "Transliteration: walā"
+            },
+            {
+              "word": "أُقْسِمُ",
+              "root": "ق - س - م",
+              "meaning": "I swear",
+              "grammarNote": "Transliteration: uq'simu"
+            },
+            {
+              "word": "بِٱلنَّفْسِ",
+              "root": "ن - ف - س",
+              "meaning": "by the soul",
+              "grammarNote": "Transliteration: bil-nafsi"
+            },
+            {
+              "word": "ٱللَّوَّامَةِ",
+              "root": "ل - و - م",
+              "meaning": "self-accusing",
+              "grammarNote": "Transliteration: l-lawāmati"
+            }
+          ]
+        },
+        {
+          "id": "75-3-card",
+          "verseNumber": 3,
+          "arabicPhrase": "أَيَحْسَبُ ٱلْإِنسَـٰنُ أَلَّن نَّجْمَعَ عِظَامَهُۥ",
+          "englishPhrase": "Does man think that We will never reassemble his bones?",
+          "vocabulary": [
+            {
+              "word": "أَيَحْسَبُ",
+              "root": "ي - ح - س",
+              "meaning": "Does think",
+              "grammarNote": "Transliteration: ayaḥsabu"
+            },
+            {
+              "word": "ٱلْإِنسَـٰنُ",
+              "root": "ن - س - ن",
+              "meaning": "[the] man",
+              "grammarNote": "Transliteration: l-insānu"
+            },
+            {
+              "word": "أَلَّن",
+              "root": "ا - ل - ن",
+              "meaning": "that not",
+              "grammarNote": "Transliteration: allan"
+            },
+            {
+              "word": "نَّجْمَعَ",
+              "root": "ج - م - ع",
+              "meaning": "We will assemble",
+              "grammarNote": "Transliteration: najmaʿa"
+            },
+            {
+              "word": "عِظَامَهُۥ",
+              "root": "ع - ظ - م",
+              "meaning": "his bones",
+              "grammarNote": "Transliteration: ʿiẓāmahu"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verse 1]\n\nCommentary\n\nلَآ اُقْسِمُ بِيَوْمِ الْقِيٰمَةِ وَلَآ اُقْسِمُ بِالنَّفْسِ اللَّوَّامَةِ (I swear by the Day of Resurrection, [ 1] and I swear by the self-reproaching conscience, (that Resurrection is a reality.)...75:1-2). The negative particle la 'nay' prefixed to the oath in this context has no meaning. When the object of oath is to refute the false thought of an opponent, this redundant negative particle is used before oath. This usage is commonplace in Arabic idiom. Such usage is sometimes employed in our language [ in Urdu ] as well [ as an answer to some objection or in repudiation of what is said before or ] to emphasize an important subject. This Surah refutes and rebuts doubts about the possibility of the Resurrection by the rejecters. The Surah first swears an oath by the Resurrection, and then by the self-reproaching conscience. The complement or subject of oath is contextually understood - the Day of Resurrection is a reality and it shall come to pass. The object of oath in verse [ 1] is to affirm and emphasize the importance of the subject about which an oath is taken. In this instance, it is the Resurrection. In verse [ 2], the object of oath is to lay emphasis on the importance of self-reproaching conscience and its acceptability in the sight of Allah. The word nafs means 'soul' or 'life' and the word lawwamah is derived from lawm signifying 'reproach or upbraid'. The phrase refers to the human conscience that upbraids him for doing bad deeds. It upbraids him not only for doing bad deeds, but also for doing good deeds - 'why did you not do more good, and attain higher stages [ of development ]?' In short, a perfect believer reproaches and upbraids himself all the time whether doing good or bad. His reproaching himself for bad deeds is quite understandable, but why should he reproach, blame or criticize himself for good deeds? He should try to reach for higher goals in life by doing better deeds. He upbraids himself for missing out on that score. This interpretation is reported from Sayyidna Ibn ` Abbas and other leading authorities on Tafsir [ Ibn Kathir and others ].\n\nOn the same basis, Sayyidna Hasan al-Basri interpreted nafs lawwamah as nafs mu'minah meaning, the 'believing soul' and said that 'By Allah! A believer at all times upbraids his own self. It is obvious why he should reproach himself when he commits evil. He reproaches himself when he does good deeds as well, because he feels that he has not performed his duties of servitude and Divine worship adequately. He feels that he has not fulfilled and consummated his obligations of slave-hood perfectly. Therefore, he reproaches himself for his shortcomings in the performance of his duties and obligations.'\n\n────────────────────────────────────────\n\n[Verses 2–3]\n\nInterpretation of Lawwarnah\n\nSayyidna Ibn ` Abbas, Hasan al-Basri and others have expressed the view that Allah has sworn an oath by the self-reproaching conscience in order to show honour for the believing souls who take account of their deeds, regret, and feel sorry for, their shortcomings and reproach themselves. Three kinds of Nafs\n\nThe foregoing interpretation of An-nafs-ul-lawwamah embraces An-nafs-ul-mutma` innah. The two terms are titles of a God-fearing\n\nperson.\n\nIn Sufi terminology, we come across the following concepts. The noble Sufis say that man in his nature goes through three stages of human development. The first stage is called ] An-nafs-ul-ammarah 'the self that tempts (to evil) ' as said by the Holy Qur'an: اِنَّ النَّفْسَ لَاَمَّارَةٌۢ بِالسُّوْۗءِ '...Surely, man's inner self often incites to evil_[ 12:53] '\n\nThe second stage of development is called An-nafs-ul-lawwamah 'the self that blames' - translated above as 'the self-reproaching conscience'.\n\nThe first stage is developed into the second stage when the traveler perform righteousness, and exerts himself in riyadah 'ascetic discipline' and mujahadah 'spiritual struggle'. This Self is conscious of its own imperfections. It regrets its evils and shortcomings, but it is not completely cut off from the evils. The third and highest stage of development is called An-nafs-ul-mutma'innah 'the self at peace'. This self develops into this stage when it progressively performs righteousness and attains Divine nearness and applies the sacred laws of Shari` ah so rigorously that Shari'ah becomes his nature and develops a natural hatred for anything contrary to Shari` ah . The title of the self at this stage is mutma'innah.",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Juristic Rulings & Shariah Injunctions (vv. 1–3)",
+          "content": "The first stage is developed into the second stage when the traveler perform righteousness, and exerts himself in riyadah 'ascetic discipline' and mujahadah 'spiritual struggle'. This Self is conscious of its own imperfections. It regrets its evils and shortcomings, but it is not completely cut off from the evils. The third and highest stage of development is called An-nafs-ul-mutma'innah 'the self at peace'. This self develops into this stage when it progressively performs righteousness and attains Divine nearness and applies the sacred laws of Shari` ah so rigorously that Shari'ah becomes his nature and develops a natural hatred for anything contrary to Shari` ah . The title of the self at this stage is mutma'innah."
+        },
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "لَآ اُقْسِمُ بِيَوْمِ الْقِيٰمَةِ وَلَآ اُقْسِمُ بِالنَّفْسِ اللَّوَّامَةِ (I swear by the Day of Resurrection, [ 1] and I swear by the self-reproaching conscience, (that Resurrection is a reality.)...75:1-2). The negative particle la 'nay' prefixed to the oath in this context has no meaning. When the object of oath is to refute the false thought of an opponent, this redundant negative particle is used before oath. This usage is commonplace in Arabic idiom. Such usage is sometimes employed in our language [ in Urdu ] as well [ as an answer to some objection or in repudiation of what is said before or ] to emphasize an important subject. This Surah refutes and rebuts doubts about the possibility of the Resurrection by the rejecters. The Surah first swears an oath by the Resurrection, and then by the self-reproaching conscience. The complement or subject of oath is contextually understood..."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "On the same basis, Sayyidna Hasan al-Basri interpreted nafs lawwamah as nafs mu'minah meaning, the 'believing soul' and said that 'By Allah! A believer at all times upbraids his own self. It is obvious why he should reproach himself when he commits evil. He reproaches himself when he does good deeds as well, because he feels that he has not performed his duties of servitude and Divine worship adequately. He feels that he has not fulfilled and consummated his obligations of slave-hood perfectly. Therefore, he reproaches himself for his shortcomings in the performance of his duties and obligations.'"
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "75-4-6",
+      "surahNumber": 75,
+      "verseRange": [
+        4,
+        6
+      ],
+      "title": "Divine Wonders in the Resurrection of Bodies",
+      "juzNumber": 29,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5670/mode/2up",
+      "arabicText": "بَلَىٰ قَـٰدِرِينَ عَلَىٰٓ أَن نُّسَوِّىَ بَنَانَهُۥ ۝٤ بَلْ يُرِيدُ ٱلْإِنسَـٰنُ لِيَفْجُرَ أَمَامَهُۥ ۝٥ يَسْـَٔلُ أَيَّانَ يَوْمُ ٱلْقِيَـٰمَةِ ۝٦",
+      "translation": "Why (can We) not (do so), while We are able to reset (even) his fingertips perfectly? ۝ But man wishes to go on violating Allah’s injunctions (even in future) ahead of him. ۝ He asks, “When will be this Day of Resurrection?” ۝",
+      "phraseCards": [
+        {
+          "id": "75-4-card",
+          "verseNumber": 4,
+          "arabicPhrase": "بَلَىٰ قَـٰدِرِينَ عَلَىٰٓ أَن نُّسَوِّىَ بَنَانَهُۥ",
+          "englishPhrase": "Why (can We) not (do so), while We are able to reset (even) his fingertips perfectly?",
+          "vocabulary": [
+            {
+              "word": "بَلَىٰ",
+              "root": "ب - ل - ي",
+              "meaning": "Nay",
+              "grammarNote": "Transliteration: balā"
+            },
+            {
+              "word": "قَـٰدِرِينَ",
+              "root": "ق - د - ر",
+              "meaning": "(We are) Able",
+              "grammarNote": "Transliteration: qādirīna"
+            },
+            {
+              "word": "عَلَىٰٓ",
+              "root": "ع - ل - و",
+              "meaning": "on",
+              "grammarNote": "Transliteration: ʿalā"
+            },
+            {
+              "word": "أَن",
+              "root": "ا - ن - ن",
+              "meaning": "that",
+              "grammarNote": "Transliteration: an"
+            },
+            {
+              "word": "نُّسَوِّىَ",
+              "root": "ن - س - و",
+              "meaning": "We can restore",
+              "grammarNote": "Transliteration: nusawwiya"
+            },
+            {
+              "word": "بَنَانَهُۥ",
+              "root": "ن - ا - ن",
+              "meaning": "his fingertips",
+              "grammarNote": "Transliteration: banānahu"
+            }
+          ]
+        },
+        {
+          "id": "75-5-card",
+          "verseNumber": 5,
+          "arabicPhrase": "بَلْ يُرِيدُ ٱلْإِنسَـٰنُ لِيَفْجُرَ أَمَامَهُۥ",
+          "englishPhrase": "But man wishes to go on violating Allah’s injunctions (even in future) ahead of him.",
+          "vocabulary": [
+            {
+              "word": "بَلْ",
+              "root": "ب - ل",
+              "meaning": "Nay",
+              "grammarNote": "Transliteration: bal"
+            },
+            {
+              "word": "يُرِيدُ",
+              "root": "ر - ي - د",
+              "meaning": "Desires",
+              "grammarNote": "Transliteration: yurīdu"
+            },
+            {
+              "word": "ٱلْإِنسَـٰنُ",
+              "root": "ن - س - ن",
+              "meaning": "[the] man",
+              "grammarNote": "Transliteration: l-insānu"
+            },
+            {
+              "word": "لِيَفْجُرَ",
+              "root": "ف - ج - ر",
+              "meaning": "to give (the) lie",
+              "grammarNote": "Transliteration: liyafjura"
+            },
+            {
+              "word": "أَمَامَهُۥ",
+              "root": "م - ا - م",
+              "meaning": "(to) what is before him",
+              "grammarNote": "Transliteration: amāmahu"
+            }
+          ]
+        },
+        {
+          "id": "75-6-card",
+          "verseNumber": 6,
+          "arabicPhrase": "يَسْـَٔلُ أَيَّانَ يَوْمُ ٱلْقِيَـٰمَةِ",
+          "englishPhrase": "He asks, “When will be this Day of Resurrection?”",
+          "vocabulary": [
+            {
+              "word": "يَسْـَٔلُ",
+              "root": "ي - س - ل",
+              "meaning": "He asks",
+              "grammarNote": "Transliteration: yasalu"
+            },
+            {
+              "word": "أَيَّانَ",
+              "root": "ي - ا - ن",
+              "meaning": "When",
+              "grammarNote": "Transliteration: ayyāna"
+            },
+            {
+              "word": "يَوْمُ",
+              "root": "ي - و - م",
+              "meaning": "(is the) Day",
+              "grammarNote": "Transliteration: yawmu"
+            },
+            {
+              "word": "ٱلْقِيَـٰمَةِ",
+              "root": "ق - ي - م",
+              "meaning": "(of) the Resurrection",
+              "grammarNote": "Transliteration: l-qiyāmati"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verse 4]\n\nThen an oft-repeated objection of the disbelievers is mentioned, that is, when they are dead and reduced to bones and dust, how will they be raised again to life. The following verse rebuts this objection, thus:\n\nبَلٰى قٰدِرِيْنَ عَلٰٓي اَنْ نُّسَوِّيَ بَنَانَهٗ (Yes! We are able to reset [ even ] his fingertips perfectly... 75:4). Man is amazed and surprised and thinks that Allah is unable to gather his tiny particles that have been scattered and reassemble his decomposed bones and give him a new life. The verse effectively rebuts this objection by saying that this has happened once before. Every man who grows and develops in the world, his body is composed of particles and elements gathered from different parts of the world. Allah has infinite power to do anything. He will gather the disintegrated bones and the scattered particles of man from different parts of the world and give them life again, as he did the first time. It is not impossible for Him to breathe soul into his structure the second time, as it was not impossible the first time. Why should it be surprising?\n\nDivine Wonders in the Resurrection of Bodies\n\nAllah is able not only to raise man's dead body again, but also to reconstruct every part of his body perfectly up to the minute detail of the very delicate fingertips and individual fingerprints. Man will be given the same body as he had in his worldly life without the slightest difference. Since the inception of time until the end of the world, zillions of human beings of different shapes and sizes come and die. Even if anyone remembers them, it is an impossible task to recompose them precisely. But Allah says in the verse under comment that He is quite able to recreate not only the large limbs, members and organs of the dead, but He is also able to put together his fingertips. The word Banan 'fingertips' is specially mentioned here because they are among the smallest parts of the body. If Allah is able to recreate such small parts [ with such precision ], it would not be impossible for Him to recreate the larger limbs of the body, such as\n\narms or hands or legs or feet.\n\nAnother reason why banan 'fingertips' finds a special mention is that Allah has characterized every human body with some identification marks through which one person could be distinctly recognized and distinguished from the other. For instance, the human face is no more than a few square centimeters; yet it has such distinctive characteristics that no two faces look exactly alike. Despite man's tongue and throat being alike, the sounds and voices of young and old, and of men and women are easily distinguishable. Even more amazing than this, are the fingertips and fingerprints. No two thumbprints or fingerprints are alike. Fingertips look alike, but the fingerprints are different. There are zillions of human beings, but the patterns of lines on the skins of the fingers is distinctly recognizable. Thumbprints have played a decisive role in court decisions and judgments. Technical analysis reveals that the patterns of lines are not only on the skin of the thumbs, but also on the skins of all the fingers - distinguishable and recognizable.\n\nIn sum, man is amazed as to how Allah will reassemble his bones and give him a new life again, but he should think further than this. He will be raised with the same face, shape and size, and with the same distinctive features, so much so that his fingertips and fingerprints will be reshaped as they were in the first instance of his creation. Fa-tabarak Allahu Ahsanul khaliqin - 'Glorious is Allah, the Best of Creators!'\n\n────────────────────────────────────────\n\n[Verses 5–6]\n\nبَلْ يُرِيْدُ الْاِنْسَانُ لِيَفْجُرَ اَمَامَهٗ (But man wishes to go on violating Allah's injunctions [ even in future ] ahead of him...75:5). The word amam signifies 'ahead or future'. The verse purports to say that the unbeliever or the unmindful man does not ponder over the manifestations of Divine Omnipotence, so that he may regret his denial in the past and make amends for the future. In fact, he wishes to persist in his denial, polytheism and sins even in the future.",
+      "subsections": [
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "Then an oft-repeated objection of the disbelievers is mentioned, that is, when they are dead and reduced to bones and dust, how will they be raised again to life. The following verse rebuts this objection, thus:"
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "75-7-13",
+      "surahNumber": 75,
+      "verseRange": [
+        7,
+        13
+      ],
+      "title": "────────────────────────────────────────",
+      "juzNumber": 29,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5670/mode/2up",
+      "arabicText": "فَإِذَا بَرِقَ ٱلْبَصَرُ ۝٧ وَخَسَفَ ٱلْقَمَرُ ۝٨ وَجُمِعَ ٱلشَّمْسُ وَٱلْقَمَرُ ۝٩ يَقُولُ ٱلْإِنسَـٰنُ يَوْمَئِذٍ أَيْنَ ٱلْمَفَرُّ ۝١٠ كَلَّا لَا وَزَرَ ۝١١ إِلَىٰ رَبِّكَ يَوْمَئِذٍ ٱلْمُسْتَقَرُّ ۝١٢ يُنَبَّؤُا۟ ٱلْإِنسَـٰنُ يَوْمَئِذٍۭ بِمَا قَدَّمَ وَأَخَّرَ ۝١٣",
+      "translation": "So, when the eyes will be dazzled, ۝ and the moon will lose its light, ۝ and the sun and the moon will be joined together, ۝ on that day man will say, “Where to escape?” ۝ Never! There will be no refuge at all. ۝ On that day, towards your Lord will be the destination (of everyone.) ۝ Man will be informed of what he sent ahead and what he left behind. ۝",
+      "phraseCards": [
+        {
+          "id": "75-7-card",
+          "verseNumber": 7,
+          "arabicPhrase": "فَإِذَا بَرِقَ ٱلْبَصَرُ",
+          "englishPhrase": "So, when the eyes will be dazzled,",
+          "vocabulary": [
+            {
+              "word": "فَإِذَا",
+              "root": "ا - ذ - ا",
+              "meaning": "So when",
+              "grammarNote": "Transliteration: fa-idhā"
+            },
+            {
+              "word": "بَرِقَ",
+              "root": "ب - ر - ق",
+              "meaning": "is dazzled",
+              "grammarNote": "Transliteration: bariqa"
+            },
+            {
+              "word": "ٱلْبَصَرُ",
+              "root": "ب - ص - ر",
+              "meaning": "the vision",
+              "grammarNote": "Transliteration: l-baṣaru"
+            }
+          ]
+        },
+        {
+          "id": "75-8-card",
+          "verseNumber": 8,
+          "arabicPhrase": "وَخَسَفَ ٱلْقَمَرُ",
+          "englishPhrase": "and the moon will lose its light,",
+          "vocabulary": [
+            {
+              "word": "وَخَسَفَ",
+              "root": "خ - س - ف",
+              "meaning": "And becomes dark",
+              "grammarNote": "Transliteration: wakhasafa"
+            },
+            {
+              "word": "ٱلْقَمَرُ",
+              "root": "ق - م - ر",
+              "meaning": "the moon",
+              "grammarNote": "Transliteration: l-qamaru"
+            }
+          ]
+        },
+        {
+          "id": "75-9-card",
+          "verseNumber": 9,
+          "arabicPhrase": "وَجُمِعَ ٱلشَّمْسُ وَٱلْقَمَرُ",
+          "englishPhrase": "and the sun and the moon will be joined together,",
+          "vocabulary": [
+            {
+              "word": "وَجُمِعَ",
+              "root": "ج - م - ع",
+              "meaning": "And are joined",
+              "grammarNote": "Transliteration: wajumiʿa"
+            },
+            {
+              "word": "ٱلشَّمْسُ",
+              "root": "ش - م - س",
+              "meaning": "the sun",
+              "grammarNote": "Transliteration: l-shamsu"
+            },
+            {
+              "word": "وَٱلْقَمَرُ",
+              "root": "ق - م - ر",
+              "meaning": "and the moon",
+              "grammarNote": "Transliteration: wal-qamaru"
+            }
+          ]
+        },
+        {
+          "id": "75-10-card",
+          "verseNumber": 10,
+          "arabicPhrase": "يَقُولُ ٱلْإِنسَـٰنُ يَوْمَئِذٍ أَيْنَ ٱلْمَفَرُّ",
+          "englishPhrase": "on that day man will say, “Where to escape?”",
+          "vocabulary": [
+            {
+              "word": "يَقُولُ",
+              "root": "ق - و - ل",
+              "meaning": "Will say",
+              "grammarNote": "Transliteration: yaqūlu"
+            },
+            {
+              "word": "ٱلْإِنسَـٰنُ",
+              "root": "ن - س - ن",
+              "meaning": "[the] man",
+              "grammarNote": "Transliteration: l-insānu"
+            },
+            {
+              "word": "يَوْمَئِذٍ",
+              "root": "و - م - ئ",
+              "meaning": "that Day",
+              "grammarNote": "Transliteration: yawma-idhin"
+            },
+            {
+              "word": "أَيْنَ",
+              "root": "ا - ي - ن",
+              "meaning": "Where",
+              "grammarNote": "Transliteration: ayna"
+            },
+            {
+              "word": "ٱلْمَفَرُّ",
+              "root": "م - ف - ر",
+              "meaning": "(is) the escape",
+              "grammarNote": "Transliteration: l-mafaru"
+            }
+          ]
+        },
+        {
+          "id": "75-11-card",
+          "verseNumber": 11,
+          "arabicPhrase": "كَلَّا لَا وَزَرَ",
+          "englishPhrase": "Never! There will be no refuge at all.",
+          "vocabulary": [
+            {
+              "word": "كَلَّا",
+              "root": "ك - ل - ا",
+              "meaning": "By no means",
+              "grammarNote": "Transliteration: kallā"
+            },
+            {
+              "word": "لَا",
+              "root": "ل - ا",
+              "meaning": "(There is) no",
+              "grammarNote": "Transliteration: lā"
+            },
+            {
+              "word": "وَزَرَ",
+              "root": "و - ز - ر",
+              "meaning": "refuge",
+              "grammarNote": "Transliteration: wazara"
+            }
+          ]
+        },
+        {
+          "id": "75-12-card",
+          "verseNumber": 12,
+          "arabicPhrase": "إِلَىٰ رَبِّكَ يَوْمَئِذٍ ٱلْمُسْتَقَرُّ",
+          "englishPhrase": "On that day, towards your Lord will be the destination (of everyone.)",
+          "vocabulary": [
+            {
+              "word": "إِلَىٰ",
+              "root": "ا - ل - ي",
+              "meaning": "To",
+              "grammarNote": "Transliteration: ilā"
+            },
+            {
+              "word": "رَبِّكَ",
+              "root": "ر - ب - ب",
+              "meaning": "your Lord",
+              "grammarNote": "Transliteration: rabbika"
+            },
+            {
+              "word": "يَوْمَئِذٍ",
+              "root": "و - م - ئ",
+              "meaning": "that Day",
+              "grammarNote": "Transliteration: yawma-idhin"
+            },
+            {
+              "word": "ٱلْمُسْتَقَرُّ",
+              "root": "س - ت - ق",
+              "meaning": "(is) the place of rest",
+              "grammarNote": "Transliteration: l-mus'taqaru"
+            }
+          ]
+        },
+        {
+          "id": "75-13-card",
+          "verseNumber": 13,
+          "arabicPhrase": "يُنَبَّؤُا۟ ٱلْإِنسَـٰنُ يَوْمَئِذٍۭ بِمَا قَدَّمَ وَأَخَّرَ",
+          "englishPhrase": "Man will be informed of what he sent ahead and what he left behind.",
+          "vocabulary": [
+            {
+              "word": "يُنَبَّؤُا۟",
+              "root": "ن - ب - ؤ",
+              "meaning": "Will be informed",
+              "grammarNote": "Transliteration: yunabba-u"
+            },
+            {
+              "word": "ٱلْإِنسَـٰنُ",
+              "root": "ن - س - ن",
+              "meaning": "[the] man",
+              "grammarNote": "Transliteration: l-insānu"
+            },
+            {
+              "word": "يَوْمَئِذٍۭ",
+              "root": "و - م - ئ",
+              "meaning": "that Day",
+              "grammarNote": "Transliteration: yawma-idhin"
+            },
+            {
+              "word": "بِمَا",
+              "root": "ب - م - ا",
+              "meaning": "of what",
+              "grammarNote": "Transliteration: bimā"
+            },
+            {
+              "word": "قَدَّمَ",
+              "root": "ق - د - م",
+              "meaning": "he sent forth",
+              "grammarNote": "Transliteration: qaddama"
+            },
+            {
+              "word": "وَأَخَّرَ",
+              "root": "ا - خ - ر",
+              "meaning": "and kept back",
+              "grammarNote": "Transliteration: wa-akhara"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verses 7–12]\n\nفَاِذَا بَرِقَ الْبَصَرُ وَخَسَفَ الْقَمَرُ وَجُمِعَ الشَّمْسُ وَالْقَمَرُ (So, when the eyes will be dazzled, and the moon will lose its light, and the sun and the moon will be joined together,...75:7-9). This describes the scenes of the Resurrection.\n\nThe verb bariqa means for the eyes 'to be dazzled and unable to see'. On the Day of Resurrection, the eyes of all will be dazzled and will not be able to see consistently. The verb khasafa is derived from khusuf which means 'to lose light and become dark'. The verse purports to say that the moon will lose its light or will be eclipsed. The statement that 'the sun and the moon will be joined together' signifies that not only the moon will lose its light, but also the sun will be eclipsed. Astronomers have discovered that the sun has the original light, and the light of the moon is borrowed from the sun. Allah says that the sun and the moon on the Day of Resurrection will be fused together, so that they both will lose their lights. Some scholars interpret this statement to mean that on that Day the sun and the moon will rise from the same point, as some narratives report. And Allah know best!\n\n────────────────────────────────────────\n\n[Verse 13]\n\nيُنَبَّؤُا الْاِنْسَانُ يَوْمَىِٕذٍۢ بِمَا قَدَّمَ وَاَخَّرَ (Man will be informed of what he sent ahead, and what he left behind....75:13). Sayyidna ` Abdullah Ibn Masud and Ibn ` Abbas are reported to have said that 'what he sent ahead' refers to the good deeds he has sent forth before his death. The words 'what he left behind' refers to the good or bad, useful or harmful custom he invented and left behind which people follow. He will continue to receive its reward or punishment. Qatadah said that 'what he sent ahead' refers to a good deed he did in his lifetime; and 'what he left behind' refers to a good deed he could have done but did not do and wasted his time or opportunity.",
+      "subsections": [
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "يُنَبَّؤُا الْاِنْسَانُ يَوْمَىِٕذٍۢ بِمَا قَدَّمَ وَاَخَّرَ (Man will be informed of what he sent ahead, and what he left behind....75:13). Sayyidna ` Abdullah Ibn Masud and Ibn ` Abbas are reported to have said that 'what he sent ahead' refers to the good deeds he has sent forth before his death. The words 'what he left behind' refers to the good or bad, useful or harmful custom he invented and left behind which people follow. He will continue to receive its reward or punishment. Qatadah said that 'what he sent ahead' refers to a good deed he did in his lifetime; and 'what he left behind' refers to a good deed he could have done but did not do and wasted his time or opportunity."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "فَاِذَا بَرِقَ الْبَصَرُ وَخَسَفَ الْقَمَرُ وَجُمِعَ الشَّمْسُ وَالْقَمَرُ (So, when the eyes will be dazzled, and the moon will lose its light, and the sun and the moon will be joined together,...75:7-9). This describes the scenes of the Resurrection."
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "75-14-21",
+      "surahNumber": 75,
+      "verseRange": [
+        14,
+        21
+      ],
+      "title": "And they will find what they did all there_ '",
+      "juzNumber": 29,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5670/mode/2up",
+      "arabicText": "بَلِ ٱلْإِنسَـٰنُ عَلَىٰ نَفْسِهِۦ بَصِيرَةٌ ۝١٤ وَلَوْ أَلْقَىٰ مَعَاذِيرَهُۥ ۝١٥ لَا تُحَرِّكْ بِهِۦ لِسَانَكَ لِتَعْجَلَ بِهِۦٓ ۝١٦ إِنَّ عَلَيْنَا جَمْعَهُۥ وَقُرْءَانَهُۥ ۝١٧ فَإِذَا قَرَأْنَـٰهُ فَٱتَّبِعْ قُرْءَانَهُۥ ۝١٨ ثُمَّ إِنَّ عَلَيْنَا بَيَانَهُۥ ۝١٩ كَلَّا بَلْ تُحِبُّونَ ٱلْعَاجِلَةَ ۝٢٠ وَتَذَرُونَ ٱلْـَٔاخِرَةَ ۝٢١",
+      "translation": "Rather, man will be a witness against himself, ۝ even though he may offer his excuses. ۝ (O Prophet,) do not move your tongue (during revelation) for (reciting) it (the Qur’ān) to receive it in hurry. ۝ It is surely undertaken by Us to store it (in your heart), and to let it be recited (by you after revelation is completed). ۝ Therefore, when it is recited by Us (through the angel), follow its recitation (by concentration of your heart). ۝ Then, it is undertaken by Us to explain it. ۝ Never, (your denial of Resurrection is never based on any sound reason!) Instead, you love that which is immediate, ۝ and neglect the Hereafter. ۝",
+      "phraseCards": [
+        {
+          "id": "75-14-card",
+          "verseNumber": 14,
+          "arabicPhrase": "بَلِ ٱلْإِنسَـٰنُ عَلَىٰ نَفْسِهِۦ بَصِيرَةٌ",
+          "englishPhrase": "Rather, man will be a witness against himself,",
+          "vocabulary": [
+            {
+              "word": "بَلِ",
+              "root": "ب - ل",
+              "meaning": "Nay",
+              "grammarNote": "Transliteration: bali"
+            },
+            {
+              "word": "ٱلْإِنسَـٰنُ",
+              "root": "ن - س - ن",
+              "meaning": "[The] man",
+              "grammarNote": "Transliteration: l-insānu"
+            },
+            {
+              "word": "عَلَىٰ",
+              "root": "ع - ل - و",
+              "meaning": "against",
+              "grammarNote": "Transliteration: ʿalā"
+            },
+            {
+              "word": "نَفْسِهِۦ",
+              "root": "ن - ف - س",
+              "meaning": "himself",
+              "grammarNote": "Transliteration: nafsihi"
+            },
+            {
+              "word": "بَصِيرَةٌۭ",
+              "root": "ص - ي - ر",
+              "meaning": "(will be) a witness",
+              "grammarNote": "Transliteration: baṣīratun"
+            }
+          ]
+        },
+        {
+          "id": "75-15-card",
+          "verseNumber": 15,
+          "arabicPhrase": "وَلَوْ أَلْقَىٰ مَعَاذِيرَهُۥ",
+          "englishPhrase": "even though he may offer his excuses.",
+          "vocabulary": [
+            {
+              "word": "وَلَوْ",
+              "root": "و - ل - و",
+              "meaning": "Even if",
+              "grammarNote": "Transliteration: walaw"
+            },
+            {
+              "word": "أَلْقَىٰ",
+              "root": "ا - ل - ق",
+              "meaning": "he presents",
+              "grammarNote": "Transliteration: alqā"
+            },
+            {
+              "word": "مَعَاذِيرَهُۥ",
+              "root": "ع - ذ - ي",
+              "meaning": "his excuses",
+              "grammarNote": "Transliteration: maʿādhīrahu"
+            }
+          ]
+        },
+        {
+          "id": "75-16-card",
+          "verseNumber": 16,
+          "arabicPhrase": "لَا تُحَرِّكْ بِهِۦ لِسَانَكَ لِتَعْجَلَ بِهِۦٓ",
+          "englishPhrase": "(O Prophet,) do not move your tongue (during revelation) for (reciting) it (the Qur’ān) to receive it in hurry.",
+          "vocabulary": [
+            {
+              "word": "لَا",
+              "root": "ل - ا",
+              "meaning": "Not",
+              "grammarNote": "Transliteration: lā"
+            },
+            {
+              "word": "تُحَرِّكْ",
+              "root": "ت - ح - ر",
+              "meaning": "move",
+              "grammarNote": "Transliteration: tuḥarrik"
+            },
+            {
+              "word": "بِهِۦ",
+              "root": "ب - ه",
+              "meaning": "with it",
+              "grammarNote": "Transliteration: bihi"
+            },
+            {
+              "word": "لِسَانَكَ",
+              "root": "س - ا - ن",
+              "meaning": "your tongue",
+              "grammarNote": "Transliteration: lisānaka"
+            },
+            {
+              "word": "لِتَعْجَلَ",
+              "root": "ع - ج - ل",
+              "meaning": "to hasten",
+              "grammarNote": "Transliteration: litaʿjala"
+            },
+            {
+              "word": "بِهِۦٓ",
+              "root": "ب - ه",
+              "meaning": "with it",
+              "grammarNote": "Transliteration: bihi"
+            }
+          ]
+        },
+        {
+          "id": "75-17-card",
+          "verseNumber": 17,
+          "arabicPhrase": "إِنَّ عَلَيْنَا جَمْعَهُۥ وَقُرْءَانَهُۥ",
+          "englishPhrase": "It is surely undertaken by Us to store it (in your heart), and to let it be recited (by you after revelation is completed).",
+          "vocabulary": [
+            {
+              "word": "إِنَّ",
+              "root": "ا - ن - ن",
+              "meaning": "Indeed",
+              "grammarNote": "Transliteration: inna"
+            },
+            {
+              "word": "عَلَيْنَا",
+              "root": "ع - ل - ي",
+              "meaning": "upon Us",
+              "grammarNote": "Transliteration: ʿalaynā"
+            },
+            {
+              "word": "جَمْعَهُۥ",
+              "root": "ج - م - ع",
+              "meaning": "(is) its collection",
+              "grammarNote": "Transliteration: jamʿahu"
+            },
+            {
+              "word": "وَقُرْءَانَهُۥ",
+              "root": "ق - ر - ء",
+              "meaning": "and its recitation",
+              "grammarNote": "Transliteration: waqur'ānahu"
+            }
+          ]
+        },
+        {
+          "id": "75-18-card",
+          "verseNumber": 18,
+          "arabicPhrase": "فَإِذَا قَرَأْنَـٰهُ فَٱتَّبِعْ قُرْءَانَهُۥ",
+          "englishPhrase": "Therefore, when it is recited by Us (through the angel), follow its recitation (by concentration of your heart).",
+          "vocabulary": [
+            {
+              "word": "فَإِذَا",
+              "root": "ا - ذ - ا",
+              "meaning": "And when",
+              "grammarNote": "Transliteration: fa-idhā"
+            },
+            {
+              "word": "قَرَأْنَـٰهُ",
+              "root": "ق - ر - ن",
+              "meaning": "We have recited it",
+              "grammarNote": "Transliteration: qaranāhu"
+            },
+            {
+              "word": "فَٱتَّبِعْ",
+              "root": "ت - ب - ع",
+              "meaning": "then follow",
+              "grammarNote": "Transliteration: fa-ittabiʿ"
+            },
+            {
+              "word": "قُرْءَانَهُۥ",
+              "root": "ق - ر - ء",
+              "meaning": "its recitation",
+              "grammarNote": "Transliteration: qur'ānahu"
+            }
+          ]
+        },
+        {
+          "id": "75-19-card",
+          "verseNumber": 19,
+          "arabicPhrase": "ثُمَّ إِنَّ عَلَيْنَا بَيَانَهُۥ",
+          "englishPhrase": "Then, it is undertaken by Us to explain it.",
+          "vocabulary": [
+            {
+              "word": "ثُمَّ",
+              "root": "ث - م",
+              "meaning": "Then",
+              "grammarNote": "Transliteration: thumma"
+            },
+            {
+              "word": "إِنَّ",
+              "root": "ا - ن - ن",
+              "meaning": "indeed",
+              "grammarNote": "Transliteration: inna"
+            },
+            {
+              "word": "عَلَيْنَا",
+              "root": "ع - ل - ي",
+              "meaning": "upon Us",
+              "grammarNote": "Transliteration: ʿalaynā"
+            },
+            {
+              "word": "بَيَانَهُۥ",
+              "root": "ي - ا - ن",
+              "meaning": "(is) its explanation",
+              "grammarNote": "Transliteration: bayānahu"
+            }
+          ]
+        },
+        {
+          "id": "75-20-card",
+          "verseNumber": 20,
+          "arabicPhrase": "كَلَّا بَلْ تُحِبُّونَ ٱلْعَاجِلَةَ",
+          "englishPhrase": "Never, (your denial of Resurrection is never based on any sound reason!) Instead, you love that which is immediate,",
+          "vocabulary": [
+            {
+              "word": "كَلَّا",
+              "root": "ك - ل - ا",
+              "meaning": "No",
+              "grammarNote": "Transliteration: kallā"
+            },
+            {
+              "word": "بَلْ",
+              "root": "ب - ل",
+              "meaning": "But",
+              "grammarNote": "Transliteration: bal"
+            },
+            {
+              "word": "تُحِبُّونَ",
+              "root": "ت - ح - ب",
+              "meaning": "you love",
+              "grammarNote": "Transliteration: tuḥibbūna"
+            },
+            {
+              "word": "ٱلْعَاجِلَةَ",
+              "root": "ع - ج - ل",
+              "meaning": "the immediate",
+              "grammarNote": "Transliteration: l-ʿājilata"
+            }
+          ]
+        },
+        {
+          "id": "75-21-card",
+          "verseNumber": 21,
+          "arabicPhrase": "وَتَذَرُونَ ٱلْـَٔاخِرَةَ",
+          "englishPhrase": "and neglect the Hereafter.",
+          "vocabulary": [
+            {
+              "word": "وَتَذَرُونَ",
+              "root": "ت - ذ - ر",
+              "meaning": "And leave",
+              "grammarNote": "Transliteration: watadharūna"
+            },
+            {
+              "word": "ٱلْـَٔاخِرَةَ",
+              "root": "ا - خ - ر",
+              "meaning": "the Hereafter",
+              "grammarNote": "Transliteration: l-ākhirata"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verses 14–18]\n\nبَلِ الْاِنْسَانُ عَلٰي نَفْسِهٖ بَصِيْرَةٌ وَّلَوْ اَلْقٰى مَعَاذِيْرَهٗ (Rather, man will be a witness against himself, even though he may offer his excuses....75:14-15). One meaning of the words bash and basirah is 'to see'. Another meaning of basirah is 'evidence', as for instance in:\n\nقَدْ جَاۗءَكُمْ بَصَاۗىِٕرُ مِنْ رَّبِّكُمْ\n\n'...There have come to you evidences 1 from your Lord_[ 6:104] '\n\nIn this verse the word basa'ir is the plural of basirah and it means 'evidence, proof, argument or insight'. The word ma` adhir is the plural of mi` dhar meaning, 'excuse'. The verse purports to say that for purposes of following the procedures of fairness and justice, man will be shown each\n\n(1). Another meaning of the word is 'insights' according to which we have translated the verse 6:104 in the text. (Muhammad Taqi Usmani) of his deeds on the Plain of Reckoning, although in fact this will not be necessary for him, because every man knows what he does in this world, and he will recall his deeds in the Hereafter, even though he will make excuses. Furthermore, he will see all his good and bad actions on the Plain of Reckoning as the Qur'an says:\n\nوَوَجَدُوْا مَا عَمِلُوْا حَاضِرًا\n\nAnd they will find what they did all there_[ 18:49] '\n\nIf the word basirah is taken in the sense of 'evidence, or proof, the verse signifies that man will be a clear proof against himself, in spite of any excuses he might offer. However, man fails to realize that in this situation, the limbs of his own body [ his hearing, his sight, his two hands and his two legs ] will testify against him. This is the meaning of the words\n\nوَّلَوْ اَلْقٰى مَعَاذِيْرَهٗ 'even though he may offer his excuses. [ 75:15] '.\n\nThus far, there was the description of the conditions and horrors of the Day of Resurrection. The next four verses are a special guidance for the Messenger of Allah to be followed by him at the time of revelation. When Jibra'il Amin descended with a set of verses, the Holy Prophet feared that there might be discrepancy in his listening and reciting it accordingly. His other fear was that he might forget some portion of it, or some word might escape his memory. As a result, when Jibra'il Amin recited a verse, he would exert himself in repeating the words immediately upon hearing them. In this manner, the strain would be multiplied. Allah revealed four verses in which he is advised not to exert himself so strenuously, because the matter has been simplified for him. Allah has taken upon Himself the responsibility of collecting it in his heart, making him recite it and conveying it to the people, thus:\n\nلَا تُحَرِّكْ بِهٖ لِسَانَكَ لِتَعْجَلَ بِهٖ اِنَّ عَلَيْنَا جَمْعَهٗ وَقُرْاٰنَه ٗ فَاِذَا قَرَاْنٰهُ فَاتَّبِعْ قُرْاٰنَهٗ\n\n([ 0 Prophet,] do not move your tongue [ during revelation ] for [ reciting ] it [ the Qur'an ] so as you receive it in hurry. It is surely undertaken by Us to store it [ in your heart ], and to let it be recited [ by you after revelation is completed ]. Therefore, when it is recited by Us [ through the angel ], follow its recitation [ by concentration of your heart ].. .75:16-18).\n\nThe word Qur'an here means 'recitation'. In other words, when Jibra'il I recites the Qur'an, you should not recite it along with him, but listen to it attentively. When its recitation is completed, follow its recitation. Here the words 'follow its recitation', by general consensus of the scholars, means 'when Jibra'il I recites, be silent and listen to it.'\n\nMuqtadis (those praying behind an Imam) should not recite the Qur'an in salah\n\nAccording to an authentic Hadith, Imam (one who leads a congregational prayer) in prayer is supposed to be followed by mugtadis (those who follow Imam). Therefore, they follow him. When the former bows, the latter must bow; and when he prostrates, the latter must all fall in prostration. In line with this principle, a Hadith in Sahih Muslim adds:\n\n'When he [ the Imam ] recites, be silent and listen.'\n\nThis explains the function of an Imam. In matters of bowing and prostrating, the followers should do as he does, that is, they should perform the acts of bowing and prostrating along with him. However, following him in the matter of recitation is different. When the Imam recites, the followers should be silent and listen. This is the argument of Imam Abu Hanifah and some other Imams in holding that the mugtadis should not recite when following an Imam in prayer. And Allah knows best!\n\n────────────────────────────────────────\n\n[Verses 19–21]\n\nIn conclusion, the passage says: اِنَّ عَلَيْنَا بَيَانَهٗ (Then, it is undertaken by Us to explain it...75:19). In other words, it is Allah's concern to explain the true message of the verses. In fact, the meaning of every single word of the Qur'an will be made plain to the Holy Prophet. He need not be concerned about it. These four verses laid down the injunctions pertaining to Qur'an and its recitation. Now the Surah reverts to its basic theme of Resurrection. It describes the conditions and horrors of the Hereafter. Here a question arises as to the contextual relationship between the four verses and the rest of the Surah where they have been studded. Before the four verses, while describing the Resurrection, it was made plain that Allah's knowledge is infinite, so much so that every man will be resurrected in the same state, the same shape and size, in which he was created the first time. His fingertips will be reconstructed with the same precision that they were created the first time; and his fingerprints will be redesigned with the same patterns of lines on their skins as were designed the before. There will be not a hair's breadth of a difference. This is possible only because Allah is Omniscient; His knowledge is infinite and all-encompassing; and His preserving capacity is incomparable, unparalleled and unique. On the basis of these attributes, the four verses were revealed to console and comfort the Holy Prophet t. The Holy Prophet is told: 'You can forget, and it is possible that you could make a mistake in transmission. But Allah is beyond these things. Allah has taken upon Himself the responsibility of storing the words of the Qur'an in your heart or explaining the message to you. Do not worry about all this. It is Our concern.' After these four verses, the Surah resumes the description of the conditions of Resurrection.",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Juristic Rulings & Shariah Injunctions (vv. 14–21)",
+          "content": "This explains the function of an Imam. In matters of bowing and prostrating, the followers should do as he does, that is, they should perform the acts of bowing and prostrating along with him. However, following him in the matter of recitation is different. When the Imam recites, the followers should be silent and listen. This is the argument of Imam Abu Hanifah and some other Imams in holding that the mugtadis should not recite when following an Imam in prayer. And Allah knows best!"
+        },
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "Thus far, there was the description of the conditions and horrors of the Day of Resurrection. The next four verses are a special guidance for the Messenger of Allah to be followed by him at the time of revelation. When Jibra'il Amin descended with a set of verses, the Holy Prophet feared that there might be discrepancy in his listening and reciting it accordingly. His other fear was that he might forget some portion of it, or some word might escape his memory. As a result, when Jibra'il Amin recited a verse, he would exert himself in repeating the words immediately upon hearing them. In this manner, the strain would be multiplied. Allah revealed four verses in which he is advised not to exert himself so strenuously, because the matter has been simplified for him. Allah has taken upon Himself the responsibility of collecting it in his heart, making him recite it and conveying it to the..."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "بَلِ الْاِنْسَانُ عَلٰي نَفْسِهٖ بَصِيْرَةٌ وَّلَوْ اَلْقٰى مَعَاذِيْرَهٗ (Rather, man will be a witness against himself, even though he may offer his excuses....75:14-15). One meaning of the words bash and basirah is 'to see'. Another meaning of basirah is 'evidence', as for instance in:"
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "75-22-33",
+      "surahNumber": 75,
+      "verseRange": [
+        22,
+        33
+      ],
+      "title": "────────────────────────────────────────",
+      "juzNumber": 29,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5670/mode/2up",
+      "arabicText": "وُجُوهٌ يَوْمَئِذٍ نَّاضِرَةٌ ۝٢٢ إِلَىٰ رَبِّهَا نَاظِرَةٌ ۝٢٣ وَوُجُوهٌ يَوْمَئِذٍۭ بَاسِرَةٌ ۝٢٤ تَظُنُّ أَن يُفْعَلَ بِهَا فَاقِرَةٌ ۝٢٥ كَلَّآ إِذَا بَلَغَتِ ٱلتَّرَاقِىَ ۝٢٦ وَقِيلَ مَنْ ۜ رَاقٍ ۝٢٧ وَظَنَّ أَنَّهُ ٱلْفِرَاقُ ۝٢٨ وَٱلْتَفَّتِ ٱلسَّاقُ بِٱلسَّاقِ ۝٢٩ إِلَىٰ رَبِّكَ يَوْمَئِذٍ ٱلْمَسَاقُ ۝٣٠ فَلَا صَدَّقَ وَلَا صَلَّىٰ ۝٣١ وَلَـٰكِن كَذَّبَ وَتَوَلَّىٰ ۝٣٢ ثُمَّ ذَهَبَ إِلَىٰٓ أَهْلِهِۦ يَتَمَطَّىٰٓ ۝٣٣",
+      "translation": "Many faces, that day, will be glowing, ۝ looking towards their Lord, ۝ and many faces, that day, will be gloomy, ۝ realizing that a back-breaking calamity is going to be afflicted on them. ۝ Never, (you will never remain in this world forever!) When the soul (of a patient) reaches the clavicles, ۝ and it is said, “Who is an enchanter (that can save him?)” ۝ and he realizes that it is (the time of) departure (from the world,) ۝ and one shank is intertwined with the other shank, ۝ then on that day, it is to your Lord that one has to be driven. ۝ So (the denier of the Hereafter) neither believed, nor prayed, ۝ but rejected the truth and turned away (from it), ۝ then he went to his home, puffed up with pride. ۝",
+      "phraseCards": [
+        {
+          "id": "75-22-card",
+          "verseNumber": 22,
+          "arabicPhrase": "وُجُوهٌ يَوْمَئِذٍ نَّاضِرَةٌ",
+          "englishPhrase": "Many faces, that day, will be glowing,",
+          "vocabulary": [
+            {
+              "word": "وُجُوهٌۭ",
+              "root": "ج - و - ه",
+              "meaning": "Faces",
+              "grammarNote": "Transliteration: wujūhun"
+            },
+            {
+              "word": "يَوْمَئِذٍۢ",
+              "root": "و - م - ئ",
+              "meaning": "that Day",
+              "grammarNote": "Transliteration: yawma-idhin"
+            },
+            {
+              "word": "نَّاضِرَةٌ",
+              "root": "ا - ض - ر",
+              "meaning": "(will be) radiant",
+              "grammarNote": "Transliteration: nāḍiratun"
+            }
+          ]
+        },
+        {
+          "id": "75-23-card",
+          "verseNumber": 23,
+          "arabicPhrase": "إِلَىٰ رَبِّهَا نَاظِرَةٌ",
+          "englishPhrase": "looking towards their Lord,",
+          "vocabulary": [
+            {
+              "word": "إِلَىٰ",
+              "root": "ا - ل - ي",
+              "meaning": "Towards",
+              "grammarNote": "Transliteration: ilā"
+            },
+            {
+              "word": "رَبِّهَا",
+              "root": "ر - ب - ه",
+              "meaning": "their Lord",
+              "grammarNote": "Transliteration: rabbihā"
+            },
+            {
+              "word": "نَاظِرَةٌۭ",
+              "root": "ا - ظ - ر",
+              "meaning": "looking",
+              "grammarNote": "Transliteration: nāẓiratun"
+            }
+          ]
+        },
+        {
+          "id": "75-24-card",
+          "verseNumber": 24,
+          "arabicPhrase": "وَوُجُوهٌ يَوْمَئِذٍۭ بَاسِرَةٌ",
+          "englishPhrase": "and many faces, that day, will be gloomy,",
+          "vocabulary": [
+            {
+              "word": "وَوُجُوهٌۭ",
+              "root": "و - ج - و",
+              "meaning": "And faces",
+              "grammarNote": "Transliteration: wawujūhun"
+            },
+            {
+              "word": "يَوْمَئِذٍۭ",
+              "root": "و - م - ئ",
+              "meaning": "that Day",
+              "grammarNote": "Transliteration: yawma-idhin"
+            },
+            {
+              "word": "بَاسِرَةٌۭ",
+              "root": "ا - س - ر",
+              "meaning": "(will be) distorted",
+              "grammarNote": "Transliteration: bāsiratun"
+            }
+          ]
+        },
+        {
+          "id": "75-25-card",
+          "verseNumber": 25,
+          "arabicPhrase": "تَظُنُّ أَن يُفْعَلَ بِهَا فَاقِرَةٌ",
+          "englishPhrase": "realizing that a back-breaking calamity is going to be afflicted on them.",
+          "vocabulary": [
+            {
+              "word": "تَظُنُّ",
+              "root": "ت - ظ - ن",
+              "meaning": "Thinking",
+              "grammarNote": "Transliteration: taẓunnu"
+            },
+            {
+              "word": "أَن",
+              "root": "ا - ن - ن",
+              "meaning": "that",
+              "grammarNote": "Transliteration: an"
+            },
+            {
+              "word": "يُفْعَلَ",
+              "root": "ف - ع - ل",
+              "meaning": "will be done",
+              "grammarNote": "Transliteration: yuf'ʿala"
+            },
+            {
+              "word": "بِهَا",
+              "root": "ب - ه - ا",
+              "meaning": "to them",
+              "grammarNote": "Transliteration: bihā"
+            },
+            {
+              "word": "فَاقِرَةٌۭ",
+              "root": "ا - ق - ر",
+              "meaning": "backbreaking",
+              "grammarNote": "Transliteration: fāqiratun"
+            }
+          ]
+        },
+        {
+          "id": "75-26-card",
+          "verseNumber": 26,
+          "arabicPhrase": "كَلَّآ إِذَا بَلَغَتِ ٱلتَّرَاقِىَ",
+          "englishPhrase": "Never, (you will never remain in this world forever!) When the soul (of a patient) reaches the clavicles,",
+          "vocabulary": [
+            {
+              "word": "كَلَّآ",
+              "root": "ك - ل - ا",
+              "meaning": "No",
+              "grammarNote": "Transliteration: kallā"
+            },
+            {
+              "word": "إِذَا",
+              "root": "ا - ذ - ا",
+              "meaning": "When",
+              "grammarNote": "Transliteration: idhā"
+            },
+            {
+              "word": "بَلَغَتِ",
+              "root": "ل - غ - ت",
+              "meaning": "it reaches",
+              "grammarNote": "Transliteration: balaghati"
+            },
+            {
+              "word": "ٱلتَّرَاقِىَ",
+              "root": "ر - ا - ق",
+              "meaning": "the collar bones",
+              "grammarNote": "Transliteration: l-tarāqiya"
+            }
+          ]
+        },
+        {
+          "id": "75-27-card",
+          "verseNumber": 27,
+          "arabicPhrase": "وَقِيلَ مَنْ ۜ رَاقٍ",
+          "englishPhrase": "and it is said, “Who is an enchanter (that can save him?)”",
+          "vocabulary": [
+            {
+              "word": "وَقِيلَ",
+              "root": "ق - ي - ل",
+              "meaning": "And it is said",
+              "grammarNote": "Transliteration: waqīla"
+            },
+            {
+              "word": "مَنْ ۜ",
+              "root": "م - ن",
+              "meaning": "Who",
+              "grammarNote": "Transliteration: man"
+            },
+            {
+              "word": "رَاقٍۢ",
+              "root": "ر - ا - ق",
+              "meaning": "(will) cure",
+              "grammarNote": "Transliteration: rāqin"
+            }
+          ]
+        },
+        {
+          "id": "75-28-card",
+          "verseNumber": 28,
+          "arabicPhrase": "وَظَنَّ أَنَّهُ ٱلْفِرَاقُ",
+          "englishPhrase": "and he realizes that it is (the time of) departure (from the world,)",
+          "vocabulary": [
+            {
+              "word": "وَظَنَّ",
+              "root": "و - ظ - ن",
+              "meaning": "And he is certain",
+              "grammarNote": "Transliteration: waẓanna"
+            },
+            {
+              "word": "أَنَّهُ",
+              "root": "ا - ن - ه",
+              "meaning": "that it",
+              "grammarNote": "Transliteration: annahu"
+            },
+            {
+              "word": "ٱلْفِرَاقُ",
+              "root": "ف - ر - ق",
+              "meaning": "(is) the parting",
+              "grammarNote": "Transliteration: l-firāqu"
+            }
+          ]
+        },
+        {
+          "id": "75-29-card",
+          "verseNumber": 29,
+          "arabicPhrase": "وَٱلْتَفَّتِ ٱلسَّاقُ بِٱلسَّاقِ",
+          "englishPhrase": "and one shank is intertwined with the other shank,",
+          "vocabulary": [
+            {
+              "word": "وَٱلْتَفَّتِ",
+              "root": "ت - ف - ت",
+              "meaning": "And is wound",
+              "grammarNote": "Transliteration: wal-tafati"
+            },
+            {
+              "word": "ٱلسَّاقُ",
+              "root": "س - ا - ق",
+              "meaning": "the leg",
+              "grammarNote": "Transliteration: l-sāqu"
+            },
+            {
+              "word": "بِٱلسَّاقِ",
+              "root": "س - ا - ق",
+              "meaning": "about the leg",
+              "grammarNote": "Transliteration: bil-sāqi"
+            }
+          ]
+        },
+        {
+          "id": "75-30-card",
+          "verseNumber": 30,
+          "arabicPhrase": "إِلَىٰ رَبِّكَ يَوْمَئِذٍ ٱلْمَسَاقُ",
+          "englishPhrase": "then on that day, it is to your Lord that one has to be driven.",
+          "vocabulary": [
+            {
+              "word": "إِلَىٰ",
+              "root": "ا - ل - ي",
+              "meaning": "To",
+              "grammarNote": "Transliteration: ilā"
+            },
+            {
+              "word": "رَبِّكَ",
+              "root": "ر - ب - ب",
+              "meaning": "your Lord",
+              "grammarNote": "Transliteration: rabbika"
+            },
+            {
+              "word": "يَوْمَئِذٍ",
+              "root": "و - م - ئ",
+              "meaning": "that Day",
+              "grammarNote": "Transliteration: yawma-idhin"
+            },
+            {
+              "word": "ٱلْمَسَاقُ",
+              "root": "س - ا - ق",
+              "meaning": "(will be) the driving",
+              "grammarNote": "Transliteration: l-masāqu"
+            }
+          ]
+        },
+        {
+          "id": "75-31-card",
+          "verseNumber": 31,
+          "arabicPhrase": "فَلَا صَدَّقَ وَلَا صَلَّىٰ",
+          "englishPhrase": "So (the denier of the Hereafter) neither believed, nor prayed,",
+          "vocabulary": [
+            {
+              "word": "فَلَا",
+              "root": "ف - ل - ا",
+              "meaning": "And not",
+              "grammarNote": "Transliteration: falā"
+            },
+            {
+              "word": "صَدَّقَ",
+              "root": "ص - د - ق",
+              "meaning": "he accepted (the) truth",
+              "grammarNote": "Transliteration: ṣaddaqa"
+            },
+            {
+              "word": "وَلَا",
+              "root": "و - ل - ا",
+              "meaning": "and not",
+              "grammarNote": "Transliteration: walā"
+            },
+            {
+              "word": "صَلَّىٰ",
+              "root": "ص - ل - ي",
+              "meaning": "he prayed",
+              "grammarNote": "Transliteration: ṣallā"
+            }
+          ]
+        },
+        {
+          "id": "75-32-card",
+          "verseNumber": 32,
+          "arabicPhrase": "وَلَـٰكِن كَذَّبَ وَتَوَلَّىٰ",
+          "englishPhrase": "but rejected the truth and turned away (from it),",
+          "vocabulary": [
+            {
+              "word": "وَلَـٰكِن",
+              "root": "ل - ك - ن",
+              "meaning": "But",
+              "grammarNote": "Transliteration: walākin"
+            },
+            {
+              "word": "كَذَّبَ",
+              "root": "ك - ذ - ب",
+              "meaning": "he denied",
+              "grammarNote": "Transliteration: kadhaba"
+            },
+            {
+              "word": "وَتَوَلَّىٰ",
+              "root": "ت - و - ل",
+              "meaning": "and turned away",
+              "grammarNote": "Transliteration: watawallā"
+            }
+          ]
+        },
+        {
+          "id": "75-33-card",
+          "verseNumber": 33,
+          "arabicPhrase": "ثُمَّ ذَهَبَ إِلَىٰٓ أَهْلِهِۦ يَتَمَطَّىٰٓ",
+          "englishPhrase": "then he went to his home, puffed up with pride.",
+          "vocabulary": [
+            {
+              "word": "ثُمَّ",
+              "root": "ث - م",
+              "meaning": "Then",
+              "grammarNote": "Transliteration: thumma"
+            },
+            {
+              "word": "ذَهَبَ",
+              "root": "ذ - ه - ب",
+              "meaning": "he went",
+              "grammarNote": "Transliteration: dhahaba"
+            },
+            {
+              "word": "إِلَىٰٓ",
+              "root": "ا - ل - ي",
+              "meaning": "to",
+              "grammarNote": "Transliteration: ilā"
+            },
+            {
+              "word": "أَهْلِهِۦ",
+              "root": "ا - ه - ل",
+              "meaning": "his family",
+              "grammarNote": "Transliteration: ahlihi"
+            },
+            {
+              "word": "يَتَمَطَّىٰٓ",
+              "root": "م - ط - ي",
+              "meaning": "swaggering",
+              "grammarNote": "Transliteration: yatamaṭṭā"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verses 22–25]\n\nوُجُوْهٌ يَّوْمَىِٕذٍ نَّاضِرَةٌ اِلٰى رَبِّهَا نَاظِرَةٌ (Many faces, that day, will be glowing, looking towards their Lord,...75:23). The word nadirah means 'fresh'. In other words, many faces that day will be happy, fresh and radiant. The words 'looking towards their Lord' mean 'gazing at their Lord'. This proves that the inmates of Paradise will see Allah in the Hereafter with physical eyes. The scholars of Ahlus-sunnah (those following the classic way of interpreting the religion) are unanimous on this issue. The Mu'tazilites and the Kharijites deny the possibility of seeing Allah, even in Paradise. Their reasoning is philosophical scepticism. They say that there are certain conditions of distance that must be met between the one who sees with his physical eyes and the object that is seen. But these conditions cannot be met between the Creator and the created. The Ahlus-sunnah respond that in the Hereafter the Beatific Vision of Allah will be beyond the need of these conditions. He will be seen [ unlike any material being ] beyond space, direction, shape or form. Hadith narratives make the subject even clearer. The inmates of Paradise will occupy different positions. Consequently, some will see Allah on a weekly basis, on Fridays. Others will see Him daily, morning and evening. Yet others will see Him all the time under all conditions. [ Mazhari ].\n\n────────────────────────────────────────\n\n[Verses 26–33]\n\nكَلَّآ اِذَا بَلَغَتِ التَّرَاقِيَ وَقِيْلَ مَنْ ۫رَاقٍ وَّظَنَّ اَنَّهُ الْفِرَاقُ وَالْتَفَّتِ السَّاقُ بِالسَّاقِ اِلٰى رَبِّكَ يَوْمَىِٕذِۨ الْمَسَاقُ\n\n(When the soul [ of a patient ] reaches the clavicles, and it is said, \"Who is an enchanter [ that can save him?] \", and he realizes that it is [ the time on departure [ from the world,] and one shank is intertwined with the other shank, then on that day, it is to your Lord that one has to be driven.... 75:26-30]\n\nIn the preceding verses, reckoning on the Day of Reckoning and conditions of the inmates of Paradise and Hell were described. In these verses, man's attention is drawn to his approaching death, which he should not neglect. He should embrace the faith and do deeds of righteousness before death overtakes him, so that he may attain salvation in the Hereafter. The above verse depicts the scene of death. The unmindful man forgets his death until his soul comes up to his collar-bone [ throat ]. The healers fail to heal him, and the people look for enchanters to save him. When one shank is entwined with the other, he realizes that it is the final moments of his parting. At this juncture neither is his repentance acceptable nor a righteous deed. Therefore, it is necessary for a wise person to make amends before this moment arrives. In the statement, وَالْتَفَّتِ السَّاقُ بِالسَّاقِ (and one shank is intertwined with the other shank) the word saq means 'shank'. This statement could mean that, being agitated and restless, he strikes one shank on the other, or rubs one shank against the other. It could also signify that if one leg is placed on the other, and the dying person wants to move it, he would not be able to do so. [ Sha` bi and Hasan have interpreted it in this way ].\n\nSayyidna Ibn ` Abbas says that the two 'shanks' refer to the two worlds: the Here and the Hereafter. The verse signifies 'the last day of the days of this world and the first day of the days of the Hereafter; one affliction will be joined to another, and the agony of leaving this world will be joined to the agony of the punishment awaiting the disbeliever in the next world'. And Allah knows best!",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Juristic Rulings & Shariah Injunctions (vv. 22–33)",
+          "content": "وُجُوْهٌ يَّوْمَىِٕذٍ نَّاضِرَةٌ اِلٰى رَبِّهَا نَاظِرَةٌ (Many faces, that day, will be glowing, looking towards their Lord,...75:23). The word nadirah means 'fresh'. In other words, many faces that day will be happy, fresh and radiant. The words 'looking towards their Lord' mean 'gazing at their Lord'. This proves that the inmates of Paradise will see Allah in the Hereafter with physical eyes. The scholars of Ahlus-sunnah (those following the classic way of interpreting the religion) are unanimous on this issue. The Mu'tazilites and the Kharijites deny the possibility of seeing Allah, even in Paradise. Their reasoning is philosophical scepticism. They say that there are certain conditions of distance that must be met between the one who sees with his physical eyes and the object that is seen. But these conditions cannot be met between the Creator and the created. The Ahlus-sunnah..."
+        },
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "Sayyidna Ibn ` Abbas says that the two 'shanks' refer to the two worlds: the Here and the Hereafter. The verse signifies 'the last day of the days of this world and the first day of the days of the Hereafter; one affliction will be joined to another, and the agony of leaving this world will be joined to the agony of the punishment awaiting the disbeliever in the next world'. And Allah knows best!"
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "كَلَّآ اِذَا بَلَغَتِ التَّرَاقِيَ وَقِيْلَ مَنْ ۫رَاقٍ وَّظَنَّ اَنَّهُ الْفِرَاقُ وَالْتَفَّتِ السَّاقُ بِالسَّاقِ اِلٰى رَبِّكَ يَوْمَىِٕذِۨ الْمَسَاقُ"
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "75-34-40",
+      "surahNumber": 75,
+      "verseRange": [
+        34,
+        40
+      ],
+      "title": "────────────────────────────────────────",
+      "juzNumber": 29,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5670/mode/2up",
+      "arabicText": "أَوْلَىٰ لَكَ فَأَوْلَىٰ ۝٣٤ ثُمَّ أَوْلَىٰ لَكَ فَأَوْلَىٰٓ ۝٣٥ أَيَحْسَبُ ٱلْإِنسَـٰنُ أَن يُتْرَكَ سُدًى ۝٣٦ أَلَمْ يَكُ نُطْفَةً مِّن مَّنِىٍّ يُمْنَىٰ ۝٣٧ ثُمَّ كَانَ عَلَقَةً فَخَلَقَ فَسَوَّىٰ ۝٣٨ فَجَعَلَ مِنْهُ ٱلزَّوْجَيْنِ ٱلذَّكَرَ وَٱلْأُنثَىٰٓ ۝٣٩ أَلَيْسَ ذَٰلِكَ بِقَـٰدِرٍ عَلَىٰٓ أَن يُحْـِۧىَ ٱلْمَوْتَىٰ ۝٤٠",
+      "translation": "(It will be said to such a man,) Woe to you, then woe to you! ۝ Again, woe to you, then woe to you! ۝ Does man presume that he will be left unchecked? ۝ Was he not an ejaculated drop of semen? ۝ Then he became a clot of blood, then He created (him) and made (him) perfect, ۝ and made from him two kinds, male and female. ۝ Has He no power to give life to the dead? ۝",
+      "phraseCards": [
+        {
+          "id": "75-34-card",
+          "verseNumber": 34,
+          "arabicPhrase": "أَوْلَىٰ لَكَ فَأَوْلَىٰ",
+          "englishPhrase": "(It will be said to such a man,) Woe to you, then woe to you!",
+          "vocabulary": [
+            {
+              "word": "أَوْلَىٰ",
+              "root": "ا - و - ل",
+              "meaning": "Woe",
+              "grammarNote": "Transliteration: awlā"
+            },
+            {
+              "word": "لَكَ",
+              "root": "ل - ك",
+              "meaning": "to you",
+              "grammarNote": "Transliteration: laka"
+            },
+            {
+              "word": "فَأَوْلَىٰ",
+              "root": "ا - و - ل",
+              "meaning": "and woe",
+              "grammarNote": "Transliteration: fa-awlā"
+            }
+          ]
+        },
+        {
+          "id": "75-35-card",
+          "verseNumber": 35,
+          "arabicPhrase": "ثُمَّ أَوْلَىٰ لَكَ فَأَوْلَىٰٓ",
+          "englishPhrase": "Again, woe to you, then woe to you!",
+          "vocabulary": [
+            {
+              "word": "ثُمَّ",
+              "root": "ث - م",
+              "meaning": "Then",
+              "grammarNote": "Transliteration: thumma"
+            },
+            {
+              "word": "أَوْلَىٰ",
+              "root": "ا - و - ل",
+              "meaning": "woe",
+              "grammarNote": "Transliteration: awlā"
+            },
+            {
+              "word": "لَكَ",
+              "root": "ل - ك",
+              "meaning": "to you",
+              "grammarNote": "Transliteration: laka"
+            },
+            {
+              "word": "فَأَوْلَىٰٓ",
+              "root": "ا - و - ل",
+              "meaning": "and woe",
+              "grammarNote": "Transliteration: fa-awlā"
+            }
+          ]
+        },
+        {
+          "id": "75-36-card",
+          "verseNumber": 36,
+          "arabicPhrase": "أَيَحْسَبُ ٱلْإِنسَـٰنُ أَن يُتْرَكَ سُدًى",
+          "englishPhrase": "Does man presume that he will be left unchecked?",
+          "vocabulary": [
+            {
+              "word": "أَيَحْسَبُ",
+              "root": "ي - ح - س",
+              "meaning": "Does think",
+              "grammarNote": "Transliteration: ayaḥsabu"
+            },
+            {
+              "word": "ٱلْإِنسَـٰنُ",
+              "root": "ن - س - ن",
+              "meaning": "man",
+              "grammarNote": "Transliteration: l-insānu"
+            },
+            {
+              "word": "أَن",
+              "root": "ا - ن - ن",
+              "meaning": "that",
+              "grammarNote": "Transliteration: an"
+            },
+            {
+              "word": "يُتْرَكَ",
+              "root": "ي - ت - ر",
+              "meaning": "he will be left",
+              "grammarNote": "Transliteration: yut'raka"
+            },
+            {
+              "word": "سُدًى",
+              "root": "س - د - ي",
+              "meaning": "neglected",
+              "grammarNote": "Transliteration: sudan"
+            }
+          ]
+        },
+        {
+          "id": "75-37-card",
+          "verseNumber": 37,
+          "arabicPhrase": "أَلَمْ يَكُ نُطْفَةً مِّن مَّنِىٍّ يُمْنَىٰ",
+          "englishPhrase": "Was he not an ejaculated drop of semen?",
+          "vocabulary": [
+            {
+              "word": "أَلَمْ",
+              "root": "ا - ل - م",
+              "meaning": "Was not",
+              "grammarNote": "Transliteration: alam"
+            },
+            {
+              "word": "يَكُ",
+              "root": "ي - ك",
+              "meaning": "he",
+              "grammarNote": "Transliteration: yaku"
+            },
+            {
+              "word": "نُطْفَةًۭ",
+              "root": "ن - ط - ف",
+              "meaning": "a semen-drop",
+              "grammarNote": "Transliteration: nuṭ'fatan"
+            },
+            {
+              "word": "مِّن",
+              "root": "م - ن",
+              "meaning": "of",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "مَّنِىٍّۢ",
+              "root": "م - ن - ي",
+              "meaning": "semen",
+              "grammarNote": "Transliteration: maniyyin"
+            },
+            {
+              "word": "يُمْنَىٰ",
+              "root": "ي - م - ن",
+              "meaning": "emitted",
+              "grammarNote": "Transliteration: yum'nā"
+            }
+          ]
+        },
+        {
+          "id": "75-38-card",
+          "verseNumber": 38,
+          "arabicPhrase": "ثُمَّ كَانَ عَلَقَةً فَخَلَقَ فَسَوَّىٰ",
+          "englishPhrase": "Then he became a clot of blood, then He created (him) and made (him) perfect,",
+          "vocabulary": [
+            {
+              "word": "ثُمَّ",
+              "root": "ث - م",
+              "meaning": "Then",
+              "grammarNote": "Transliteration: thumma"
+            },
+            {
+              "word": "كَانَ",
+              "root": "ك - ا - ن",
+              "meaning": "he was",
+              "grammarNote": "Transliteration: kāna"
+            },
+            {
+              "word": "عَلَقَةًۭ",
+              "root": "ع - ل - ق",
+              "meaning": "a clinging substance",
+              "grammarNote": "Transliteration: ʿalaqatan"
+            },
+            {
+              "word": "فَخَلَقَ",
+              "root": "خ - ل - ق",
+              "meaning": "then He created",
+              "grammarNote": "Transliteration: fakhalaqa"
+            },
+            {
+              "word": "فَسَوَّىٰ",
+              "root": "س - و - ي",
+              "meaning": "and proportioned",
+              "grammarNote": "Transliteration: fasawwā"
+            }
+          ]
+        },
+        {
+          "id": "75-39-card",
+          "verseNumber": 39,
+          "arabicPhrase": "فَجَعَلَ مِنْهُ ٱلزَّوْجَيْنِ ٱلذَّكَرَ وَٱلْأُنثَىٰٓ",
+          "englishPhrase": "and made from him two kinds, male and female.",
+          "vocabulary": [
+            {
+              "word": "فَجَعَلَ",
+              "root": "ج - ع - ل",
+              "meaning": "Then made",
+              "grammarNote": "Transliteration: fajaʿala"
+            },
+            {
+              "word": "مِنْهُ",
+              "root": "م - ن - ه",
+              "meaning": "of him",
+              "grammarNote": "Transliteration: min'hu"
+            },
+            {
+              "word": "ٱلزَّوْجَيْنِ",
+              "root": "ز - و - ج",
+              "meaning": "two kinds",
+              "grammarNote": "Transliteration: l-zawjayni"
+            },
+            {
+              "word": "ٱلذَّكَرَ",
+              "root": "ذ - ك - ر",
+              "meaning": "(the) male",
+              "grammarNote": "Transliteration: l-dhakara"
+            },
+            {
+              "word": "وَٱلْأُنثَىٰٓ",
+              "root": "ا - ن - ث",
+              "meaning": "and the female",
+              "grammarNote": "Transliteration: wal-unthā"
+            }
+          ]
+        },
+        {
+          "id": "75-40-card",
+          "verseNumber": 40,
+          "arabicPhrase": "أَلَيْسَ ذَٰلِكَ بِقَـٰدِرٍ عَلَىٰٓ أَن يُحْـِۧىَ ٱلْمَوْتَىٰ",
+          "englishPhrase": "Has He no power to give life to the dead?",
+          "vocabulary": [
+            {
+              "word": "أَلَيْسَ",
+              "root": "ل - ي - س",
+              "meaning": "Is not",
+              "grammarNote": "Transliteration: alaysa"
+            },
+            {
+              "word": "ذَٰلِكَ",
+              "root": "ذ - ل - ك",
+              "meaning": "[that]",
+              "grammarNote": "Transliteration: dhālika"
+            },
+            {
+              "word": "بِقَـٰدِرٍ",
+              "root": "ق - د - ر",
+              "meaning": "(He) Able",
+              "grammarNote": "Transliteration: biqādirin"
+            },
+            {
+              "word": "عَلَىٰٓ",
+              "root": "ع - ل - و",
+              "meaning": "[over]",
+              "grammarNote": "Transliteration: ʿalā"
+            },
+            {
+              "word": "أَن",
+              "root": "ا - ن - ن",
+              "meaning": "to",
+              "grammarNote": "Transliteration: an"
+            },
+            {
+              "word": "يُحْـِۧىَ",
+              "root": "ي - ح - ي",
+              "meaning": "give life",
+              "grammarNote": "Transliteration: yuḥ'yiya"
+            },
+            {
+              "word": "ٱلْمَوْتَىٰ",
+              "root": "م - و - ت",
+              "meaning": "(to) the dead",
+              "grammarNote": "Transliteration: l-mawtā"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verses 34–39]\n\nاَوْلٰى لَكَ فَاَوْلٰى ثُمَّ اَوْلٰى لَكَ فَاَوْلٰى\n\n'[ It will be said to such a man,] Woe to you, then woe to you! Again, woe to you, then woe to you!...(75:34-35)\n\nThe word aula is the inverted form of wail which means ' The expression 'woe' has been mentioned four times for the has made it his habit to deny and reject, and was steeped in died in that state. Therefore, destruction has been heaped times: [ 1] at the time of death; [ 2] in the grave; [ 3] at Resurrection; and finally [ 4] at the time of entering Hell. destruction'. person who wealth, and on him four the time of\n\n────────────────────────────────────────\n\n[Verse 40]\n\nاَلَيْسَ ذٰلِكَ بِقٰدِرٍ عَلٰٓي اَنْ يُّـحْيِۦ الْمَوْتٰى (Has He no power to give life to the dead?...(75:40). Can it be imagined that the Supreme Being in whose controlling power is death and life and the entire world is not able to bring the dead to life? The Holy Prophet is reported to have said: 'When anyone recites this verse of Surah Al-Qiyamah, he should say:\n\nبلی وانا علی ذالک من الشھدین۔ \"Yes indeed I am among those who bear witness\n\nthat He has the power to do it\"'. The same Hadith narrative states that\n\nwhen a person recites Surah Tin and reaches the verse اَلَيْسَ اللّٰهُ بِاَحْكَمِ الْحٰكِمِيْنَ 'Is Allah not the Greatest Ruler of all the rulers? [ 95:8] ', he should utter the same words. The same Hadith states that when a person recites Surah Al-Mursalat and reaches the verse U ;'Now, in which discourse, after this, will they believe? [ 77:50] ', he should say فَبِاَيِّ حَدِيْثٍۢ بَعْدَهٗ يُؤْمِنُوْنَ 'I believe in Allah'",
+      "subsections": [
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "اَلَيْسَ ذٰلِكَ بِقٰدِرٍ عَلٰٓي اَنْ يُّـحْيِۦ الْمَوْتٰى (Has He no power to give life to the dead?...(75:40). Can it be imagined that the Supreme Being in whose controlling power is death and life and the entire world is not able to bring the dead to life? The Holy Prophet is reported to have said: 'When anyone recites this verse of Surah Al-Qiyamah, he should say:"
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "'[ It will be said to such a man,] Woe to you, then woe to you! Again, woe to you, then woe to you!...(75:34-35)"
+        }
+      ],
+      "curatedTerms": []
+    }
+  ]
+}

@@ -396,6 +396,28 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
             <span>Juz {section.juzNumber}</span>
             <span aria-hidden="true">·</span>
             <span className="capitalize">{section.revelationType}</span>
+            {section.volumeNumber && (
+              <>
+                <span aria-hidden="true">·</span>
+                <span className="text-[#CD7743] dark:text-[#E08955] font-semibold">
+                  Vol. {section.volumeNumber}
+                </span>
+              </>
+            )}
+            {section.archivePageUrl && (
+              <>
+                <span aria-hidden="true">·</span>
+                <a
+                  href={section.archivePageUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#CD7743] dark:text-[#E08955] hover:underline lowercase font-normal"
+                  title="Open this section's page in the 8-Volume Print Scan on Archive.org"
+                >
+                  [print scan ↗]
+                </a>
+              </>
+            )}
           </div>
           <h2 className="text-xl sm:text-2xl md:text-3xl font-serif-heading font-semibold text-[#1C1917] dark:text-[#F3F4F6] tracking-tight">
             {section.title}

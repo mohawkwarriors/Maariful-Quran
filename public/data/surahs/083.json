@@ -1,0 +1,1493 @@
+{
+  "number": 83,
+  "nameArabic": "المطففين",
+  "nameTransliterated": "Al-Mutaffifin",
+  "nameEnglish": "The Defrauders",
+  "versesCount": 36,
+  "revelationType": "Makki",
+  "volumeNumber": 8,
+  "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5745/mode/2up",
+  "juz": [
+    30
+  ],
+  "bismillahPre": true,
+  "introductoryTafseer": "According to Sayyidna ` Abdullah Ibn Masud ؓ ، Surah Tatfif was revealed in Makkah. Therefore, most of the copies of the Qur'an refer to it as the Makki Surah. According to Sayyidna Ibn ` Abbas ؓ ، Qatadah, Muqatil and Dahhak رحمۃ اللہ علیہم ، it is a Madani Surah, but only about eight verses are Makki. Imam Nasa'i (رح) transmits a narrative from Sayyidna Ibn ` Abbas ؓ that when the Holy Prophet ﷺ arrived in Madinah, the people of Madinah whose most transactions were based on measurements used to cheat and short measure. For this reason, Allah ...",
+  "historicalContext": {
+    "background": "The Qur'an and Sunnah have prohibited Tatfif which primarily signifies 'giving short measure and weight', because generally all transactions are carried out by things that can be measured or weighed. But the basic purpose of weighing or measuring is none else but to give a person what he deserves. It, therefore, indicates that the rule is not restricted to weights and measures only, but it includes all other means through which the rights of someone are evaluated, assessed or appraised. It is obligatory that all rights are given to the deserving persons in full, whether they are assessed by weight, measure, number or any other means. In terms...",
+    "scholarlyReference": "Ma'ariful Qur'an by Mufti Muhammad Shafi, Volume 8 (Archive.org Leaf n5745)"
+  },
+  "sections": [
+    {
+      "id": "83-1-8",
+      "surahNumber": 83,
+      "verseRange": [
+        1,
+        8
+      ],
+      "title": "Tatjif has a Wider Scope",
+      "juzNumber": 30,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5746/mode/2up",
+      "arabicText": "وَيْلٌ لِّلْمُطَفِّفِينَ ۝١ ٱلَّذِينَ إِذَا ٱكْتَالُوا۟ عَلَى ٱلنَّاسِ يَسْتَوْفُونَ ۝٢ وَإِذَا كَالُوهُمْ أَو وَّزَنُوهُمْ يُخْسِرُونَ ۝٣ أَلَا يَظُنُّ أُو۟لَـٰٓئِكَ أَنَّهُم مَّبْعُوثُونَ ۝٤ لِيَوْمٍ عَظِيمٍ ۝٥ يَوْمَ يَقُومُ ٱلنَّاسُ لِرَبِّ ٱلْعَـٰلَمِينَ ۝٦ كَلَّآ إِنَّ كِتَـٰبَ ٱلْفُجَّارِ لَفِى سِجِّينٍ ۝٧ وَمَآ أَدْرَىٰكَ مَا سِجِّينٌ ۝٨",
+      "translation": "Woe to the curtailers ۝ who, when they measure something to receive from people, take it in full, ۝ and when they measure or weigh something to give it to them, give less than due. ۝ Do they not think that they have to be raised up ۝ on a Great Day, ۝ the Day when all the people will stand before the Lord of the worlds? ۝ Never! (i.e. they should never act in such a way.) Indeed the record of deeds of the sinners is in Sijjīn . ۝ And what may let you know what Sijjīn is? ۝",
+      "phraseCards": [
+        {
+          "id": "83-1-card",
+          "verseNumber": 1,
+          "arabicPhrase": "وَيْلٌ لِّلْمُطَفِّفِينَ",
+          "englishPhrase": "Woe to the curtailers",
+          "vocabulary": [
+            {
+              "word": "وَيْلٌۭ",
+              "root": "و - ي - ل",
+              "meaning": "Woe",
+              "grammarNote": "Transliteration: waylun"
+            },
+            {
+              "word": "لِّلْمُطَفِّفِينَ",
+              "root": "ط - ف - ف",
+              "meaning": "to those who give less",
+              "grammarNote": "Transliteration: lil'muṭaffifīna"
+            }
+          ]
+        },
+        {
+          "id": "83-2-card",
+          "verseNumber": 2,
+          "arabicPhrase": "ٱلَّذِينَ إِذَا ٱكْتَالُوا۟ عَلَى ٱلنَّاسِ يَسْتَوْفُونَ",
+          "englishPhrase": "who, when they measure something to receive from people, take it in full,",
+          "vocabulary": [
+            {
+              "word": "ٱلَّذِينَ",
+              "root": "ل - ذ - ي",
+              "meaning": "Those who",
+              "grammarNote": "Transliteration: alladhīna"
+            },
+            {
+              "word": "إِذَا",
+              "root": "ا - ذ - ا",
+              "meaning": "when",
+              "grammarNote": "Transliteration: idhā"
+            },
+            {
+              "word": "ٱكْتَالُوا۟",
+              "root": "ك - ت - ا",
+              "meaning": "they take a measure",
+              "grammarNote": "Transliteration: ik'tālū"
+            },
+            {
+              "word": "عَلَى",
+              "root": "ع - ل - و",
+              "meaning": "from",
+              "grammarNote": "Transliteration: ʿalā"
+            },
+            {
+              "word": "ٱلنَّاسِ",
+              "root": "ن - ا - س",
+              "meaning": "the people",
+              "grammarNote": "Transliteration: l-nāsi"
+            },
+            {
+              "word": "يَسْتَوْفُونَ",
+              "root": "س - ت - و",
+              "meaning": "they take in full",
+              "grammarNote": "Transliteration: yastawfūna"
+            }
+          ]
+        },
+        {
+          "id": "83-3-card",
+          "verseNumber": 3,
+          "arabicPhrase": "وَإِذَا كَالُوهُمْ أَو وَّزَنُوهُمْ يُخْسِرُونَ",
+          "englishPhrase": "and when they measure or weigh something to give it to them, give less than due.",
+          "vocabulary": [
+            {
+              "word": "وَإِذَا",
+              "root": "ا - ذ - ا",
+              "meaning": "But when",
+              "grammarNote": "Transliteration: wa-idhā"
+            },
+            {
+              "word": "كَالُوهُمْ",
+              "root": "و - ه - م",
+              "meaning": "they give by measure (to) them",
+              "grammarNote": "Transliteration: kālūhum"
+            },
+            {
+              "word": "أَو",
+              "root": "ا - و",
+              "meaning": "or",
+              "grammarNote": "Transliteration: aw"
+            },
+            {
+              "word": "وَّزَنُوهُمْ",
+              "root": "ز - ن - و",
+              "meaning": "they weigh (for) them",
+              "grammarNote": "Transliteration: wazanūhum"
+            },
+            {
+              "word": "يُخْسِرُونَ",
+              "root": "خ - س - ر",
+              "meaning": "they give less",
+              "grammarNote": "Transliteration: yukh'sirūna"
+            }
+          ]
+        },
+        {
+          "id": "83-4-card",
+          "verseNumber": 4,
+          "arabicPhrase": "أَلَا يَظُنُّ أُو۟لَـٰٓئِكَ أَنَّهُم مَّبْعُوثُونَ",
+          "englishPhrase": "Do they not think that they have to be raised up",
+          "vocabulary": [
+            {
+              "word": "أَلَا",
+              "root": "ا - ل - ا",
+              "meaning": "Do not",
+              "grammarNote": "Transliteration: alā"
+            },
+            {
+              "word": "يَظُنُّ",
+              "root": "ي - ظ - ن",
+              "meaning": "think",
+              "grammarNote": "Transliteration: yaẓunnu"
+            },
+            {
+              "word": "أُو۟لَـٰٓئِكَ",
+              "root": "و - ل - ئ",
+              "meaning": "those",
+              "grammarNote": "Transliteration: ulāika"
+            },
+            {
+              "word": "أَنَّهُم",
+              "root": "ن - ه - م",
+              "meaning": "that they",
+              "grammarNote": "Transliteration: annahum"
+            },
+            {
+              "word": "مَّبْعُوثُونَ",
+              "root": "ب - ع - و",
+              "meaning": "(will be) resurrected",
+              "grammarNote": "Transliteration: mabʿūthūna"
+            }
+          ]
+        },
+        {
+          "id": "83-5-card",
+          "verseNumber": 5,
+          "arabicPhrase": "لِيَوْمٍ عَظِيمٍ",
+          "englishPhrase": "on a Great Day,",
+          "vocabulary": [
+            {
+              "word": "لِيَوْمٍ",
+              "root": "ي - و - م",
+              "meaning": "For a Day",
+              "grammarNote": "Transliteration: liyawmin"
+            },
+            {
+              "word": "عَظِيمٍۢ",
+              "root": "ع - ظ - ي",
+              "meaning": "Great",
+              "grammarNote": "Transliteration: ʿaẓīmin"
+            }
+          ]
+        },
+        {
+          "id": "83-6-card",
+          "verseNumber": 6,
+          "arabicPhrase": "يَوْمَ يَقُومُ ٱلنَّاسُ لِرَبِّ ٱلْعَـٰلَمِينَ",
+          "englishPhrase": "the Day when all the people will stand before the Lord of the worlds?",
+          "vocabulary": [
+            {
+              "word": "يَوْمَ",
+              "root": "ي - و - م",
+              "meaning": "(The) Day",
+              "grammarNote": "Transliteration: yawma"
+            },
+            {
+              "word": "يَقُومُ",
+              "root": "ق - و - م",
+              "meaning": "will stand",
+              "grammarNote": "Transliteration: yaqūmu"
+            },
+            {
+              "word": "ٱلنَّاسُ",
+              "root": "ن - ا - س",
+              "meaning": "mankind",
+              "grammarNote": "Transliteration: l-nāsu"
+            },
+            {
+              "word": "لِرَبِّ",
+              "root": "ل - ر - ب",
+              "meaning": "before (the) Lord",
+              "grammarNote": "Transliteration: lirabbi"
+            },
+            {
+              "word": "ٱلْعَـٰلَمِينَ",
+              "root": "ع - ل - م",
+              "meaning": "(of) the worlds",
+              "grammarNote": "Transliteration: l-ʿālamīna"
+            }
+          ]
+        },
+        {
+          "id": "83-7-card",
+          "verseNumber": 7,
+          "arabicPhrase": "كَلَّآ إِنَّ كِتَـٰبَ ٱلْفُجَّارِ لَفِى سِجِّينٍ",
+          "englishPhrase": "Never! (i.e. they should never act in such a way.) Indeed the record of deeds of the sinners is in Sijjīn .",
+          "vocabulary": [
+            {
+              "word": "كَلَّآ",
+              "root": "ك - ل - ا",
+              "meaning": "Nay",
+              "grammarNote": "Transliteration: kallā"
+            },
+            {
+              "word": "إِنَّ",
+              "root": "ا - ن - ن",
+              "meaning": "Indeed",
+              "grammarNote": "Transliteration: inna"
+            },
+            {
+              "word": "كِتَـٰبَ",
+              "root": "ك - ت - ب",
+              "meaning": "(the) record",
+              "grammarNote": "Transliteration: kitāba"
+            },
+            {
+              "word": "ٱلْفُجَّارِ",
+              "root": "ف - ج - ر",
+              "meaning": "(of) the wicked",
+              "grammarNote": "Transliteration: l-fujāri"
+            },
+            {
+              "word": "لَفِى",
+              "root": "ل - ف - ي",
+              "meaning": "(is) surely in",
+              "grammarNote": "Transliteration: lafī"
+            },
+            {
+              "word": "سِجِّينٍۢ",
+              "root": "ج - ي - ن",
+              "meaning": "Sijjin",
+              "grammarNote": "Transliteration: sijjīnin"
+            }
+          ]
+        },
+        {
+          "id": "83-8-card",
+          "verseNumber": 8,
+          "arabicPhrase": "وَمَآ أَدْرَىٰكَ مَا سِجِّينٌ",
+          "englishPhrase": "And what may let you know what Sijjīn is?",
+          "vocabulary": [
+            {
+              "word": "وَمَآ",
+              "root": "و - م - ا",
+              "meaning": "And what",
+              "grammarNote": "Transliteration: wamā"
+            },
+            {
+              "word": "أَدْرَىٰكَ",
+              "root": "د - ر - ي",
+              "meaning": "can make you know",
+              "grammarNote": "Transliteration: adrāka"
+            },
+            {
+              "word": "مَا",
+              "root": "م - ا",
+              "meaning": "what",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "سِجِّينٌۭ",
+              "root": "ج - ي - ن",
+              "meaning": "(is) Sijjin",
+              "grammarNote": "Transliteration: sijjīnun"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verses 1–6]\n\nCommentary\n\nAccording to Sayyidna ` Abdullah Ibn Masud ؓ ، Surah Tatfif was revealed in Makkah. Therefore, most of the copies of the Qur'an refer to it as the Makki Surah. According to Sayyidna Ibn ` Abbas ؓ ، Qatadah, Muqatil and Dahhak رحمۃ اللہ علیہم ، it is a Madani Surah, but only about eight verses are Makki. Imam Nasa'i (رح) transmits a narrative from Sayyidna Ibn ` Abbas ؓ that when the Holy Prophet ﷺ arrived in Madinah, the people of Madinah whose most transactions were based on measurements used to cheat and short measure. For this reason, Allah revealed the Surah. It is reported from Sayyidna Ibn ` Abbas ؓ that this is the first Surah that was revealed as soon as the Holy Prophet ﷺ arrived at Madinah. The reason is that it was a common practice in Madinah that the people used to be very strict in measuring when they had to receive something from others, but when they sold something, they used to cheat the buyers. After the revelation of this Surah, all of them abandoned this bad custom totally, and mended themselves in a way that they are now well-known in their honesty in weighing and measuring. (Reported by Hakim, Nasa'i, and Ibn Majah, with sound chain of narrators)\n\nوَيْلٌ لِّلْمُطَفِّفِينَ (Woe to the curtailers...83:1) The word mutaffifin 'those who give short measure or weight' is derived from Tatfif 'to give short measure or short weight'. The Qur'anic expression 'Woe to the curtailers' is indicative of the injunction that this practice is prohibited.\n\nTatjif has a Wider Scope\n\nThe Qur'an and Sunnah have prohibited Tatfif which primarily signifies 'giving short measure and weight', because generally all transactions are carried out by things that can be measured or weighed. But the basic purpose of weighing or measuring is none else but to give a person what he deserves. It, therefore, indicates that the rule is not restricted to weights and measures only, but it includes all other means through which the rights of someone are evaluated, assessed or appraised. It is obligatory that all rights are given to the deserving persons in full, whether they are assessed by weight, measure, number or any other means. In terms of this concept of Tatfif, it is prohibited to give to any person less than his due.\n\nIt is recorded in Muwatta' of Imam Malik that Sayyidna ` Umar Ibn-ul-Khattab ؓ saw a person curtailing [ cutting short ] his bowing and prostration postures in prayers, he said to him:\n\nلَقَد طَفَّفتَ\n\n'You have committed Tatfif (curtailed the right) of Allah.'\n\nHaving cited this statement of Sayyidna ` Umar Ibn-ul-Khattab ؓ ، Imam Malik (رح) formulates the following postulate:\n\nلکلّ شیءٍ\n\n'Everything has a full due and a short measure.'\n\nThis postulate can apply even to prayers, ablution, cleanliness and all the rights of Allah and the ways of worship. If someone is deficient in fulfilling these rights of Allah, he is guilty of Tatfif. Similarly if one cuts short human rights [ by failing to perform duties imposed upon him or keeping to the terms of agreement duly ], he is covered by the rule laid down by the verse regarding Tatfif. For example, if an employee has entered into a contract with the employer that he shall work for specified time, it is imperative for him to work for the stipulated hours. If he curtails the hours, he is guilty of Tatiff. Generally, people - even scholars - are lax in this matter. They do not regard curtailment of their obligations relating to service or labour as sin. May Allah protect us from it!\n\nHADITH: Sayyidna ` Abdullah Ibn ` Abbas ؓ has narrated that the Holy Prophet ﷺ has said:\n\nحمس بخمس\n\n'There are five sins, for which there are five punishments.'\n\n[ 1] He who breaks his covenant, Allah will cause his enemy to subdue him.\n\n[ 2] The nation that abandons the sacred laws of Allah, and decides cases according to other laws, poverty will prevail commonly among them.\n\n[ 3] The nation among whom promiscuity and zina (fornication or adultery) becomes rampant, Allah will punish them with epidemics and endemic diseases.\n\n[ 4] Those who curtail measures and weights, Allah will cause famine to break out amongst them. and\n\n[ 5] Those who fail to pay their Zakah, Allah will withhold rain from them.\n\n[ Cited by Qurtubi who said that Al-Bazzar has narrated the over-all sense of this lzadith, though with different words; and Malik Ibn Anas has also narrated it from Ibn ` Umar ؓ ].\n\nTabarani narrates from Ibn ` Abbas ؓ that the Holy Prophet ﷺ said: \"When it becomes rampant in a community to steal from the spoils of war, Allah will cast terror of enemies into their hearts; when usury becomes a common practice in a community, death becomes a frequent occurrence in that society; a community that gives short measure and weight, Allah cuts off their sustenance; those who decide against the truth, murder becomes common among them; and those who betray their agreement, Allah causes their enemies to prevail upon them.\" [ Malik has also transmitted it, but as a saying of Ibn ` Abbas ؓ . See Mazhari ].\n\nVarious Forms of Poverty, Famine and Curtailment of Sustenance\n\nThe Hadith (cited above) states that people's 'sustenance' may be Cut Off as a punishment to short measuring: This can take different forms. They may be completely deprived of their sustenance; or sustenance may be available, but they may not be able to eat or use it, as it commonly happens nowadays in the case of many diseases. Likewise, 'famine' might take different forms: Items of necessity might be lacking; or they might be available abundantly, but it might be difficult to purchase them, because the prices are unbearably exorbitant, as is experienced nowadays. The Hadith says that in certain situations faqr will prevail in the society. Faqr is generally translated as 'poverty', but its real meaning in Arabic is 'being in need' or 'being dependent on someone'. Keeping this meaning in view, the situation of faqr pointed out in the Hadith is not confined to lack of money and other necessary things, but it also includes a situation where people depend on others in their business and other necessities of life. The more a person is in need of others, the greater is his degree of faqr. Let us consider the conditions of the present age. Man is bound by the most complicated laws that restrict his living, his movement and his intentions, so that he is unable to eat what he wants to eat, or utter what he wants to utter. He possesses money, but he is not free to buy of his choice from where he wants to. He is not free to undertake a journey [ or to travel ] as and when he wants to. He is bound so much by these restrictive laws that he has no choice but to follow the official procedure for which he has to flatter the officials [ at every level ] including the peons. Without this, life is difficult. This entire system of dependence on others is a part of faqr. This elaborate explanation should dispel the doubts that might apparently arise regarding the statement of the Hadith.\n\n────────────────────────────────────────\n\n[Verses 7–8]\n\nSijjin and ` illiyin\n\nكَلَّا إِنَّ كِتَابَ الْفُجَّارِ‌ لَفِي سِجِّينٍ (Never! [ i.e. they should never forget that Day.] Indeed the Record of Deeds of the sinners is in sijjin. [ 83:71' The word sijjin is derived from sajana which means to 'imprison in a narrow place'. According to Qamus, the word sijjin means 'eternal imprisonment'. Traditions indicate that sijjin is a special place where the souls of the non-believers are kept, and in the same place, the Record of the evil deeds of every wicked person is kept separately. It is also possible that in this there is a consolidated book in which the deeds of all the non-believers of the world are recorded.\n\nWhere is this place? According to a lengthy hadith reported by Sayyidna Bara' Ibn ` Azib ؓ ، the Holy Prophet ﷺ has said that sijjin is beneath the seventh level of the earth, and ` illiyin is in the seventh heaven beneath the Divine Throne. [ Baghawi, and Ahmad etc., as quoted by Mazhari ]. According to certain Traditions, sijjin is the seventh earth which contains the souls of the disbelievers, and ` illiyin is the seventh heaven which contains the souls of the believers.\n\nThe Locale of Paradise and Hell\n\nBaihaqi has recorded a narration from Sayyidna ` Abdullah Ibn Salam ؓ that Paradise is in the heaven, and Hell is in the earth. Ibn Jarir cites in his commentary on the authority of Sayyidna Mu'adh Ibn Jabal ؓ a narrative of the Holy Prophet ﷺ ، according to which he was asked about the meaning of the following verse:\n\nوَجِيءَ يَوْمَئِذٍ بِجَهَنَّمَ\n\n'and Jahannam (Hell), on that day, will be brought forward, [ 89:23] '\n\nThe Holy Prophet ﷺ was asked from where the Hell be brought forward? He replied: \"From the seventh earth.\" These narratives indicate that Hell will be brought forward from the seventh earth. It will suddenly flare up there, and all the oceans will join its blazing fire, and come forward in full view of all. This interpretation is reconcilable with narratives that define sijjin as the name of a place in Hell. [ Mahari ]. And Allah knows best!",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Juristic Rulings & Shariah Injunctions (vv. 1–8)",
+          "content": "وَيْلٌ لِّلْمُطَفِّفِينَ (Woe to the curtailers...83:1) The word mutaffifin 'those who give short measure or weight' is derived from Tatfif 'to give short measure or short weight'. The Qur'anic expression 'Woe to the curtailers' is indicative of the injunction that this practice is prohibited."
+        },
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "According to Sayyidna ` Abdullah Ibn Masud ؓ ، Surah Tatfif was revealed in Makkah. Therefore, most of the copies of the Qur'an refer to it as the Makki Surah. According to Sayyidna Ibn ` Abbas ؓ ، Qatadah, Muqatil and Dahhak رحمۃ اللہ علیہم ، it is a Madani Surah, but only about eight verses are Makki. Imam Nasa'i (رح) transmits a narrative from Sayyidna Ibn ` Abbas ؓ that when the Holy Prophet ﷺ arrived in Madinah, the people of Madinah whose most transactions were based on measurements used to cheat and short measure. For this reason, Allah revealed the Surah. It is reported from Sayyidna Ibn ` Abbas ؓ that this is the first Surah that was revealed as soon as the Holy Prophet ﷺ arrived at Madinah. The reason is that it was a common practice in Madinah that the people used to be very strict in measuring when they had to receive something from others, but when they sold something, they..."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "The Qur'an and Sunnah have prohibited Tatfif which primarily signifies 'giving short measure and weight', because generally all transactions are carried out by things that can be measured or weighed. But the basic purpose of weighing or measuring is none else but to give a person what he deserves. It, therefore, indicates that the rule is not restricted to weights and measures only, but it includes all other means through which the rights of someone are evaluated, assessed or appraised. It is obligatory that all rights are given to the deserving persons in full, whether they are assessed by weight, measure, number or any other means. In terms of this concept of Tatfif, it is prohibited to give to any person less than his due."
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "83-9-14",
+      "surahNumber": 83,
+      "verseRange": [
+        9,
+        14
+      ],
+      "title": "────────────────────────────────────────",
+      "juzNumber": 30,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5746/mode/2up",
+      "arabicText": "كِتَـٰبٌ مَّرْقُومٌ ۝٩ وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ ۝١٠ ٱلَّذِينَ يُكَذِّبُونَ بِيَوْمِ ٱلدِّينِ ۝١١ وَمَا يُكَذِّبُ بِهِۦٓ إِلَّا كُلُّ مُعْتَدٍ أَثِيمٍ ۝١٢ إِذَا تُتْلَىٰ عَلَيْهِ ءَايَـٰتُنَا قَالَ أَسَـٰطِيرُ ٱلْأَوَّلِينَ ۝١٣ كَلَّا ۖ بَلْ ۜ رَانَ عَلَىٰ قُلُوبِهِم مَّا كَانُوا۟ يَكْسِبُونَ ۝١٤",
+      "translation": "A register, inscribed! ۝ Woe that day to the deniers, ۝ who deny the Day of Requital! ۝ And none denies it but every sinful transgressor. ۝ When Our verses are recited to him, he says, “(These are) tales of the ancients.” ۝ No! But that which they used to commit has covered their hearts with rust. ۝",
+      "phraseCards": [
+        {
+          "id": "83-9-card",
+          "verseNumber": 9,
+          "arabicPhrase": "كِتَـٰبٌ مَّرْقُومٌ",
+          "englishPhrase": "A register, inscribed!",
+          "vocabulary": [
+            {
+              "word": "كِتَـٰبٌۭ",
+              "root": "ك - ت - ب",
+              "meaning": "A book",
+              "grammarNote": "Transliteration: kitābun"
+            },
+            {
+              "word": "مَّرْقُومٌۭ",
+              "root": "ر - ق - و",
+              "meaning": "written",
+              "grammarNote": "Transliteration: marqūmun"
+            }
+          ]
+        },
+        {
+          "id": "83-10-card",
+          "verseNumber": 10,
+          "arabicPhrase": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+          "englishPhrase": "Woe that day to the deniers,",
+          "vocabulary": [
+            {
+              "word": "وَيْلٌۭ",
+              "root": "و - ي - ل",
+              "meaning": "Woe",
+              "grammarNote": "Transliteration: waylun"
+            },
+            {
+              "word": "يَوْمَئِذٍۢ",
+              "root": "و - م - ئ",
+              "meaning": "that Day",
+              "grammarNote": "Transliteration: yawma-idhin"
+            },
+            {
+              "word": "لِّلْمُكَذِّبِينَ",
+              "root": "ك - ذ - ب",
+              "meaning": "to the deniers",
+              "grammarNote": "Transliteration: lil'mukadhibīna"
+            }
+          ]
+        },
+        {
+          "id": "83-11-card",
+          "verseNumber": 11,
+          "arabicPhrase": "ٱلَّذِينَ يُكَذِّبُونَ بِيَوْمِ ٱلدِّينِ",
+          "englishPhrase": "who deny the Day of Requital!",
+          "vocabulary": [
+            {
+              "word": "ٱلَّذِينَ",
+              "root": "ل - ذ - ي",
+              "meaning": "Those who",
+              "grammarNote": "Transliteration: alladhīna"
+            },
+            {
+              "word": "يُكَذِّبُونَ",
+              "root": "ك - ذ - ب",
+              "meaning": "deny",
+              "grammarNote": "Transliteration: yukadhibūna"
+            },
+            {
+              "word": "بِيَوْمِ",
+              "root": "ي - و - م",
+              "meaning": "(the) Day",
+              "grammarNote": "Transliteration: biyawmi"
+            },
+            {
+              "word": "ٱلدِّينِ",
+              "root": "د - ي - ن",
+              "meaning": "(of) the Judgment",
+              "grammarNote": "Transliteration: l-dīni"
+            }
+          ]
+        },
+        {
+          "id": "83-12-card",
+          "verseNumber": 12,
+          "arabicPhrase": "وَمَا يُكَذِّبُ بِهِۦٓ إِلَّا كُلُّ مُعْتَدٍ أَثِيمٍ",
+          "englishPhrase": "And none denies it but every sinful transgressor.",
+          "vocabulary": [
+            {
+              "word": "وَمَا",
+              "root": "و - م - ا",
+              "meaning": "And not",
+              "grammarNote": "Transliteration: wamā"
+            },
+            {
+              "word": "يُكَذِّبُ",
+              "root": "ك - ذ - ب",
+              "meaning": "can deny",
+              "grammarNote": "Transliteration: yukadhibu"
+            },
+            {
+              "word": "بِهِۦٓ",
+              "root": "ب - ه",
+              "meaning": "[of] it",
+              "grammarNote": "Transliteration: bihi"
+            },
+            {
+              "word": "إِلَّا",
+              "root": "ا - ل - ا",
+              "meaning": "except",
+              "grammarNote": "Transliteration: illā"
+            },
+            {
+              "word": "كُلُّ",
+              "root": "ك - ل",
+              "meaning": "every",
+              "grammarNote": "Transliteration: kullu"
+            },
+            {
+              "word": "مُعْتَدٍ",
+              "root": "ع - ت - د",
+              "meaning": "transgressor",
+              "grammarNote": "Transliteration: muʿ'tadin"
+            },
+            {
+              "word": "أَثِيمٍ",
+              "root": "ث - ي - م",
+              "meaning": "sinful",
+              "grammarNote": "Transliteration: athīmin"
+            }
+          ]
+        },
+        {
+          "id": "83-13-card",
+          "verseNumber": 13,
+          "arabicPhrase": "إِذَا تُتْلَىٰ عَلَيْهِ ءَايَـٰتُنَا قَالَ أَسَـٰطِيرُ ٱلْأَوَّلِينَ",
+          "englishPhrase": "When Our verses are recited to him, he says, “(These are) tales of the ancients.”",
+          "vocabulary": [
+            {
+              "word": "إِذَا",
+              "root": "ا - ذ - ا",
+              "meaning": "When",
+              "grammarNote": "Transliteration: idhā"
+            },
+            {
+              "word": "تُتْلَىٰ",
+              "root": "ت - ت - ل",
+              "meaning": "are recited",
+              "grammarNote": "Transliteration: tut'lā"
+            },
+            {
+              "word": "عَلَيْهِ",
+              "root": "ع - ل - ي",
+              "meaning": "to him",
+              "grammarNote": "Transliteration: ʿalayhi"
+            },
+            {
+              "word": "ءَايَـٰتُنَا",
+              "root": "ء - ي - ت",
+              "meaning": "Our Verses",
+              "grammarNote": "Transliteration: āyātunā"
+            },
+            {
+              "word": "قَالَ",
+              "root": "ق - ا - ل",
+              "meaning": "he says",
+              "grammarNote": "Transliteration: qāla"
+            },
+            {
+              "word": "أَسَـٰطِيرُ",
+              "root": "س - ط - ي",
+              "meaning": "Stories",
+              "grammarNote": "Transliteration: asāṭīru"
+            },
+            {
+              "word": "ٱلْأَوَّلِينَ",
+              "root": "ا - و - ل",
+              "meaning": "(of) the former (people)",
+              "grammarNote": "Transliteration: l-awalīna"
+            }
+          ]
+        },
+        {
+          "id": "83-14-card",
+          "verseNumber": 14,
+          "arabicPhrase": "كَلَّا ۖ بَلْ ۜ رَانَ عَلَىٰ قُلُوبِهِم مَّا كَانُوا۟ يَكْسِبُونَ",
+          "englishPhrase": "No! But that which they used to commit has covered their hearts with rust.",
+          "vocabulary": [
+            {
+              "word": "كَلَّا ۖ",
+              "root": "ك - ل - ا",
+              "meaning": "Nay",
+              "grammarNote": "Transliteration: kallā"
+            },
+            {
+              "word": "بَلْ ۜ",
+              "root": "ب - ل",
+              "meaning": "But",
+              "grammarNote": "Transliteration: bal"
+            },
+            {
+              "word": "رَانَ",
+              "root": "ر - ا - ن",
+              "meaning": "(the) stain has covered",
+              "grammarNote": "Transliteration: rāna"
+            },
+            {
+              "word": "عَلَىٰ",
+              "root": "ع - ل - و",
+              "meaning": "[over]",
+              "grammarNote": "Transliteration: ʿalā"
+            },
+            {
+              "word": "قُلُوبِهِم",
+              "root": "ق - ل - و",
+              "meaning": "their hearts",
+              "grammarNote": "Transliteration: qulūbihim"
+            },
+            {
+              "word": "مَّا",
+              "root": "م - ا",
+              "meaning": "(for) what",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "كَانُوا۟",
+              "root": "ك - ا - ن",
+              "meaning": "they used to",
+              "grammarNote": "Transliteration: kānū"
+            },
+            {
+              "word": "يَكْسِبُونَ",
+              "root": "ك - س - ب",
+              "meaning": "earn",
+              "grammarNote": "Transliteration: yaksibūna"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verses 9–13]\n\nكِتَابٌ مَّرْ‌قُومٌ (A register inscribed!...83:9) The word marqum (translated above as 'inscribed' ) signifies here makhtum meaning 'sealed'. Imam Baghawi and Ibn Kathir say that this statement is not the interpretation of sijjin, but rather the explication of a phrase before that, namely:\n\nكِتَابَ الْفُجَّارِ‌\n\n'Indeed the record of deeds of the sinners is in sijjin. [ 83:7] '\n\nIt is a book inscribed and sealed. No one can add anything to it, nor can anyone remove anything from it, nor is any alteration possible in it. The place where it will be kept for safe-custody is called sijjin, and it is the place where the souls of the wicked unbelievers are gathered.\n\nكَلَّا سکتہ إِنَّهُمْ عَن رَّ‌بِّهِمْ يَوْمَئِذٍ لَّمَحْجُوبُونَ (No! But that which they used to commit has covered their hearts with rust...83:14). The word rana is derived from rain and it means 'rust' or 'dust' or 'filth'. In other words, the rust of committing many sins has covered up their hearts. Just as rust consumes the iron, and turns it into dust, in the same way, the rust of while he was on the upper horizon....53:7)\n\n────────────────────────────────────────\n\n[Verse 14]\n\nsins has destroyed their innate capacity to distinguish right from wrong. Sayyidna Abu Hurairah ؓ narrates that the Holy Prophet ﷺ said: \"Surely, when the servant commits a sin, a black dot appears on his heart. If he repents from it, his heart is polished clean. However, if he increases in the sin, the blackness continues to increase. That is the statement of Allah: كَلَّا ۖ بَلْ ۜ رَانَ عَلَىٰ قُلُوبِهِم 'No! But that which they used to commit has covered their hearts with rust. [ 83:14] '.\" [ Baghawi, Ahmad, Tirmidhi, Nasai, Ibn Majah, Ibn Hibban and al-Hakim have recorded it, and Tirmidhi has rated it as sahih, as quoted by Mazhari ]. The particle kalla كَلَّا ، in Arabic grammar, is called harf-ur-ra’ d` 'particle of disapproval, particle of repelling or averting'. In the preceding verses, mention was made of the attitude of the unbelievers towards the Qur'anic verses, in that when they are recited to them, they say, \" (These are) tales of the ancients.\" [ 13]. The present verse uses kalla كَلَّا to repel the false idea of the ignoramus [ that Qur'an is the tale of the ancients ]. In fact, [ the heavy ] load of their sins have eclipsed the light and innate capacity to separate the right and the wrong. This capacity is innate and inborn in man. The verse purports to say that their rejection is not based on any logical or intellectual evidence, but their hearts have become blind, as a result they are unable to see the good and the bad.",
+      "subsections": [
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "sins has destroyed their innate capacity to distinguish right from wrong. Sayyidna Abu Hurairah ؓ narrates that the Holy Prophet ﷺ said: \"Surely, when the servant commits a sin, a black dot appears on his heart. If he repents from it, his heart is polished clean. However, if he increases in the sin, the blackness continues to increase. That is the statement of Allah: كَلَّا ۖ بَلْ ۜ رَانَ عَلَىٰ قُلُوبِهِم 'No! But that which they used to commit has covered their hearts with rust. [ 83:14] '.\" [ Baghawi, Ahmad, Tirmidhi, Nasai, Ibn Majah, Ibn Hibban and al-Hakim have recorded it, and Tirmidhi has rated it as sahih, as quoted by Mazhari ]. The particle kalla كَلَّا ، in Arabic grammar, is called harf-ur-ra’ d` 'particle of disapproval, particle of repelling or averting'. In the preceding verses, mention was made of the attitude of the unbelievers towards the Qur'anic verses, in that when..."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "كِتَابٌ مَّرْ‌قُومٌ (A register inscribed!...83:9) The word marqum (translated above as 'inscribed' ) signifies here makhtum meaning 'sealed'. Imam Baghawi and Ibn Kathir say that this statement is not the interpretation of sijjin, but rather the explication of a phrase before that, namely:"
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "83-15-20",
+      "surahNumber": 83,
+      "verseRange": [
+        15,
+        20
+      ],
+      "title": "────────────────────────────────────────",
+      "juzNumber": 30,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5746/mode/2up",
+      "arabicText": "كَلَّآ إِنَّهُمْ عَن رَّبِّهِمْ يَوْمَئِذٍ لَّمَحْجُوبُونَ ۝١٥ ثُمَّ إِنَّهُمْ لَصَالُوا۟ ٱلْجَحِيمِ ۝١٦ ثُمَّ يُقَالُ هَـٰذَا ٱلَّذِى كُنتُم بِهِۦ تُكَذِّبُونَ ۝١٧ كَلَّآ إِنَّ كِتَـٰبَ ٱلْأَبْرَارِ لَفِى عِلِّيِّينَ ۝١٨ وَمَآ أَدْرَىٰكَ مَا عِلِّيُّونَ ۝١٩ كِتَـٰبٌ مَّرْقُومٌ ۝٢٠",
+      "translation": "No! Indeed they will be screened off from their Lord on that Day. ۝ Then they will have to enter the Hell. ۝ Then it will be said, “This is what you used to deny.” ۝ No! The record of deeds of the righteous is in ‘Illiyyūn . ۝ And what may let you know what ‘Illiyyūn is ? ۝ A register inscribed, ۝",
+      "phraseCards": [
+        {
+          "id": "83-15-card",
+          "verseNumber": 15,
+          "arabicPhrase": "كَلَّآ إِنَّهُمْ عَن رَّبِّهِمْ يَوْمَئِذٍ لَّمَحْجُوبُونَ",
+          "englishPhrase": "No! Indeed they will be screened off from their Lord on that Day.",
+          "vocabulary": [
+            {
+              "word": "كَلَّآ",
+              "root": "ك - ل - ا",
+              "meaning": "Nay",
+              "grammarNote": "Transliteration: kallā"
+            },
+            {
+              "word": "إِنَّهُمْ",
+              "root": "ن - ه - م",
+              "meaning": "Indeed, they",
+              "grammarNote": "Transliteration: innahum"
+            },
+            {
+              "word": "عَن",
+              "root": "ع - ن",
+              "meaning": "from",
+              "grammarNote": "Transliteration: ʿan"
+            },
+            {
+              "word": "رَّبِّهِمْ",
+              "root": "ر - ب - ب",
+              "meaning": "their Lord",
+              "grammarNote": "Transliteration: rabbihim"
+            },
+            {
+              "word": "يَوْمَئِذٍۢ",
+              "root": "و - م - ئ",
+              "meaning": "that Day",
+              "grammarNote": "Transliteration: yawma-idhin"
+            },
+            {
+              "word": "لَّمَحْجُوبُونَ",
+              "root": "ح - ج - و",
+              "meaning": "surely will be partitioned",
+              "grammarNote": "Transliteration: lamaḥjūbūna"
+            }
+          ]
+        },
+        {
+          "id": "83-16-card",
+          "verseNumber": 16,
+          "arabicPhrase": "ثُمَّ إِنَّهُمْ لَصَالُوا۟ ٱلْجَحِيمِ",
+          "englishPhrase": "Then they will have to enter the Hell.",
+          "vocabulary": [
+            {
+              "word": "ثُمَّ",
+              "root": "ث - م",
+              "meaning": "Then",
+              "grammarNote": "Transliteration: thumma"
+            },
+            {
+              "word": "إِنَّهُمْ",
+              "root": "ن - ه - م",
+              "meaning": "indeed, they",
+              "grammarNote": "Transliteration: innahum"
+            },
+            {
+              "word": "لَصَالُوا۟",
+              "root": "ص - ا - ل",
+              "meaning": "(surely) will burn",
+              "grammarNote": "Transliteration: laṣālū"
+            },
+            {
+              "word": "ٱلْجَحِيمِ",
+              "root": "ج - ح - ي",
+              "meaning": "(in) the Hellfire",
+              "grammarNote": "Transliteration: l-jaḥīmi"
+            }
+          ]
+        },
+        {
+          "id": "83-17-card",
+          "verseNumber": 17,
+          "arabicPhrase": "ثُمَّ يُقَالُ هَـٰذَا ٱلَّذِى كُنتُم بِهِۦ تُكَذِّبُونَ",
+          "englishPhrase": "Then it will be said, “This is what you used to deny.”",
+          "vocabulary": [
+            {
+              "word": "ثُمَّ",
+              "root": "ث - م",
+              "meaning": "Then",
+              "grammarNote": "Transliteration: thumma"
+            },
+            {
+              "word": "يُقَالُ",
+              "root": "ق - ا - ل",
+              "meaning": "it will be said",
+              "grammarNote": "Transliteration: yuqālu"
+            },
+            {
+              "word": "هَـٰذَا",
+              "root": "ه - ذ - ا",
+              "meaning": "This",
+              "grammarNote": "Transliteration: hādhā"
+            },
+            {
+              "word": "ٱلَّذِى",
+              "root": "ل - ذ - ي",
+              "meaning": "(is) what",
+              "grammarNote": "Transliteration: alladhī"
+            },
+            {
+              "word": "كُنتُم",
+              "root": "ك - ن - ت",
+              "meaning": "you used to",
+              "grammarNote": "Transliteration: kuntum"
+            },
+            {
+              "word": "بِهِۦ",
+              "root": "ب - ه",
+              "meaning": "[of it]",
+              "grammarNote": "Transliteration: bihi"
+            },
+            {
+              "word": "تُكَذِّبُونَ",
+              "root": "ك - ذ - ب",
+              "meaning": "deny",
+              "grammarNote": "Transliteration: tukadhibūna"
+            }
+          ]
+        },
+        {
+          "id": "83-18-card",
+          "verseNumber": 18,
+          "arabicPhrase": "كَلَّآ إِنَّ كِتَـٰبَ ٱلْأَبْرَارِ لَفِى عِلِّيِّينَ",
+          "englishPhrase": "No! The record of deeds of the righteous is in ‘Illiyyūn .",
+          "vocabulary": [
+            {
+              "word": "كَلَّآ",
+              "root": "ك - ل - ا",
+              "meaning": "Nay",
+              "grammarNote": "Transliteration: kallā"
+            },
+            {
+              "word": "إِنَّ",
+              "root": "ا - ن - ن",
+              "meaning": "Indeed",
+              "grammarNote": "Transliteration: inna"
+            },
+            {
+              "word": "كِتَـٰبَ",
+              "root": "ك - ت - ب",
+              "meaning": "(the) record",
+              "grammarNote": "Transliteration: kitāba"
+            },
+            {
+              "word": "ٱلْأَبْرَارِ",
+              "root": "ب - ر - ا",
+              "meaning": "(of) the righteous",
+              "grammarNote": "Transliteration: l-abrāri"
+            },
+            {
+              "word": "لَفِى",
+              "root": "ل - ف - ي",
+              "meaning": "(will be) surely in",
+              "grammarNote": "Transliteration: lafī"
+            },
+            {
+              "word": "عِلِّيِّينَ",
+              "root": "ع - ل - ي",
+              "meaning": "Illiyin",
+              "grammarNote": "Transliteration: ʿilliyyīna"
+            }
+          ]
+        },
+        {
+          "id": "83-19-card",
+          "verseNumber": 19,
+          "arabicPhrase": "وَمَآ أَدْرَىٰكَ مَا عِلِّيُّونَ",
+          "englishPhrase": "And what may let you know what ‘Illiyyūn is ?",
+          "vocabulary": [
+            {
+              "word": "وَمَآ",
+              "root": "و - م - ا",
+              "meaning": "And what",
+              "grammarNote": "Transliteration: wamā"
+            },
+            {
+              "word": "أَدْرَىٰكَ",
+              "root": "د - ر - ي",
+              "meaning": "can make you know",
+              "grammarNote": "Transliteration: adrāka"
+            },
+            {
+              "word": "مَا",
+              "root": "م - ا",
+              "meaning": "what",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "عِلِّيُّونَ",
+              "root": "ع - ل - ي",
+              "meaning": "(is) Illiyun",
+              "grammarNote": "Transliteration: ʿilliyyūna"
+            }
+          ]
+        },
+        {
+          "id": "83-20-card",
+          "verseNumber": 20,
+          "arabicPhrase": "كِتَـٰبٌ مَّرْقُومٌ",
+          "englishPhrase": "A register inscribed,",
+          "vocabulary": [
+            {
+              "word": "كِتَـٰبٌۭ",
+              "root": "ك - ت - ب",
+              "meaning": "A book",
+              "grammarNote": "Transliteration: kitābun"
+            },
+            {
+              "word": "مَّرْقُومٌۭ",
+              "root": "ر - ق - و",
+              "meaning": "written",
+              "grammarNote": "Transliteration: marqūmun"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verses 15–17]\n\nإِنَّهُمْ عَن رَّبِّهِمْ يَوْمَئِذٍ لَّمَحْجُوبُونَ (No! Indeed they will be screened off from their Lord on that Day...83:15). This will be their punishment for their failure to recognise Allah in the world. The unbelievers will remain deprived of seeing their Lord on the Day of Judgment, and a screen will fall between them and their Lord. Imams Shafi` i and Malik said that in this verse is a proof that the believers and friends of Allah will be able to see Him. Otherwise, the wording that the unbelievers will be screened off from their Lord on that Day will have no real sense.\n\nSpecial Note\n\nAccording to some of the learned predecessors, this verse is a proof that man, by virtue of his innate nature, is forced to love Allah. Therefore, all unbelievers in the world, no matter how deeply they are steeped in their form of disbelief or hold false beliefs regarding the [ Supreme ] Being and attributes of Allah, there is a common denominator in their hearts. They love, respect and honour Allah. They worship Him according to their belief system in quest of Him and His pleasure. Because they have taken the wrong road, they are unable to reach their destination, but they are, nonetheless, in search of the same destination of truth. If they did not have the desire to see their Lord, it would not have been said, in their punishment, that they will remain deprived of seeing Allah, because if a person is not desirous [ rather he is hateful ] of seeing Him, it would be no punishment for him.\n\n────────────────────────────────────────\n\n[Verses 18–20]\n\nكَلَّا إِنَّ كِتَابَ الْأَبْرَارِ لَفِي عِلِّيِّينَ (No! The record of deeds of the righteous is in ` illiyyun....83:18). According to some authorities, ` illiyyun is the plural of ` uluww and it signifies the 'highest point'. According to Farra', this is the name of a place. It is not a plural, but on the measure of plural. When analysing the word sijjin in the foregoing paragraphs, the traceable Tradition of Sayyidna Bath' Ibn ` Azib ؓ was cited to prove that ` illiyyin is a place on the seventh heaven beneath the Divine Throne where the souls of the believers and their registers of deeds are kept. The phrase: كِتَابٌ مَّرْقُومٌ(A register inscribed...83:20) is not the interpretation of illiyyin, but rather an explication their records of deeds, as in the verse that precedes it:",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Juristic Rulings & Shariah Injunctions (vv. 15–20)",
+          "content": "إِنَّهُمْ عَن رَّبِّهِمْ يَوْمَئِذٍ لَّمَحْجُوبُونَ (No! Indeed they will be screened off from their Lord on that Day...83:15). This will be their punishment for their failure to recognise Allah in the world. The unbelievers will remain deprived of seeing their Lord on the Day of Judgment, and a screen will fall between them and their Lord. Imams Shafi` i and Malik said that in this verse is a proof that the believers and friends of Allah will be able to see Him. Otherwise, the wording that the unbelievers will be screened off from their Lord on that Day will have no real sense."
+        },
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "According to some of the learned predecessors, this verse is a proof that man, by virtue of his innate nature, is forced to love Allah. Therefore, all unbelievers in the world, no matter how deeply they are steeped in their form of disbelief or hold false beliefs regarding the [ Supreme ] Being and attributes of Allah, there is a common denominator in their hearts. They love, respect and honour Allah. They worship Him according to their belief system in quest of Him and His pleasure. Because they have taken the wrong road, they are unable to reach their destination, but they are, nonetheless, in search of the same destination of truth. If they did not have the desire to see their Lord, it would not have been said, in their punishment, that they will remain deprived of seeing Allah, because if a person is not desirous [ rather he is hateful ] of seeing Him, it would be no punishment for..."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "كَلَّا إِنَّ كِتَابَ الْأَبْرَارِ لَفِي عِلِّيِّينَ (No! The record of deeds of the righteous is in ` illiyyun....83:18). According to some authorities, ` illiyyun is the plural of ` uluww and it signifies the 'highest point'. According to Farra', this is the name of a place. It is not a plural, but on the measure of plural. When analysing the word sijjin in the foregoing paragraphs, the traceable Tradition of Sayyidna Bath' Ibn ` Azib ؓ was cited to prove that ` illiyyin is a place on the seventh heaven beneath the Divine Throne where the souls of the believers and their registers of deeds are kept. The phrase: كِتَابٌ مَّرْقُومٌ(A register inscribed...83:20) is not the interpretation of illiyyin, but rather an explication their records of deeds, as in the verse that precedes it:"
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "83-21-28",
+      "surahNumber": 83,
+      "verseRange": [
+        21,
+        28
+      ],
+      "title": "The Abode of Human Souls after Death",
+      "juzNumber": 30,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5746/mode/2up",
+      "arabicText": "يَشْهَدُهُ ٱلْمُقَرَّبُونَ ۝٢١ إِنَّ ٱلْأَبْرَارَ لَفِى نَعِيمٍ ۝٢٢ عَلَى ٱلْأَرَآئِكِ يَنظُرُونَ ۝٢٣ تَعْرِفُ فِى وُجُوهِهِمْ نَضْرَةَ ٱلنَّعِيمِ ۝٢٤ يُسْقَوْنَ مِن رَّحِيقٍ مَّخْتُومٍ ۝٢٥ خِتَـٰمُهُۥ مِسْكٌ ۚ وَفِى ذَٰلِكَ فَلْيَتَنَافَسِ ٱلْمُتَنَـٰفِسُونَ ۝٢٦ وَمِزَاجُهُۥ مِن تَسْنِيمٍ ۝٢٧ عَيْنًا يَشْرَبُ بِهَا ٱلْمُقَرَّبُونَ ۝٢٨",
+      "translation": "attended by those (angels) who are blessed with nearness to Allah! ۝ Indeed the righteous will be in absolute bliss. ۝ While (sitting) on thrones they will be watching (the scenes of Paradise). ۝ You will recognize the glamour of bliss on their faces. ۝ They will be served with a pure sealed wine to drink, ۝ the seal of which will be of musk.-It is this (bliss) in aspiring for which the competitors should race each other. ۝ -and it will be blended with (a drink from) Tasnīm , ۝ a spring from which will drink those who are blessed with nearness. ۝",
+      "phraseCards": [
+        {
+          "id": "83-21-card",
+          "verseNumber": 21,
+          "arabicPhrase": "يَشْهَدُهُ ٱلْمُقَرَّبُونَ",
+          "englishPhrase": "attended by those (angels) who are blessed with nearness to Allah!",
+          "vocabulary": [
+            {
+              "word": "يَشْهَدُهُ",
+              "root": "ش - ه - د",
+              "meaning": "Witness it",
+              "grammarNote": "Transliteration: yashhaduhu"
+            },
+            {
+              "word": "ٱلْمُقَرَّبُونَ",
+              "root": "ق - ر - ب",
+              "meaning": "those brought near",
+              "grammarNote": "Transliteration: l-muqarabūna"
+            }
+          ]
+        },
+        {
+          "id": "83-22-card",
+          "verseNumber": 22,
+          "arabicPhrase": "إِنَّ ٱلْأَبْرَارَ لَفِى نَعِيمٍ",
+          "englishPhrase": "Indeed the righteous will be in absolute bliss.",
+          "vocabulary": [
+            {
+              "word": "إِنَّ",
+              "root": "ا - ن - ن",
+              "meaning": "Indeed",
+              "grammarNote": "Transliteration: inna"
+            },
+            {
+              "word": "ٱلْأَبْرَارَ",
+              "root": "ب - ر - ا",
+              "meaning": "the righteous",
+              "grammarNote": "Transliteration: l-abrāra"
+            },
+            {
+              "word": "لَفِى",
+              "root": "ل - ف - ي",
+              "meaning": "(will be) surely in",
+              "grammarNote": "Transliteration: lafī"
+            },
+            {
+              "word": "نَعِيمٍ",
+              "root": "ع - ي - م",
+              "meaning": "bliss",
+              "grammarNote": "Transliteration: naʿīmin"
+            }
+          ]
+        },
+        {
+          "id": "83-23-card",
+          "verseNumber": 23,
+          "arabicPhrase": "عَلَى ٱلْأَرَآئِكِ يَنظُرُونَ",
+          "englishPhrase": "While (sitting) on thrones they will be watching (the scenes of Paradise).",
+          "vocabulary": [
+            {
+              "word": "عَلَى",
+              "root": "ع - ل - و",
+              "meaning": "On",
+              "grammarNote": "Transliteration: ʿalā"
+            },
+            {
+              "word": "ٱلْأَرَآئِكِ",
+              "root": "ر - ا - ئ",
+              "meaning": "thrones",
+              "grammarNote": "Transliteration: l-arāiki"
+            },
+            {
+              "word": "يَنظُرُونَ",
+              "root": "ن - ظ - ر",
+              "meaning": "observing",
+              "grammarNote": "Transliteration: yanẓurūna"
+            }
+          ]
+        },
+        {
+          "id": "83-24-card",
+          "verseNumber": 24,
+          "arabicPhrase": "تَعْرِفُ فِى وُجُوهِهِمْ نَضْرَةَ ٱلنَّعِيمِ",
+          "englishPhrase": "You will recognize the glamour of bliss on their faces.",
+          "vocabulary": [
+            {
+              "word": "تَعْرِفُ",
+              "root": "ع - ر - ف",
+              "meaning": "You will recognize",
+              "grammarNote": "Transliteration: taʿrifu"
+            },
+            {
+              "word": "فِى",
+              "root": "ف - ي",
+              "meaning": "in",
+              "grammarNote": "Transliteration: fī"
+            },
+            {
+              "word": "وُجُوهِهِمْ",
+              "root": "ج - و - ه",
+              "meaning": "their faces",
+              "grammarNote": "Transliteration: wujūhihim"
+            },
+            {
+              "word": "نَضْرَةَ",
+              "root": "ن - ض - ر",
+              "meaning": "(the) radiance",
+              "grammarNote": "Transliteration: naḍrata"
+            },
+            {
+              "word": "ٱلنَّعِيمِ",
+              "root": "ع - ي - م",
+              "meaning": "(of) bliss",
+              "grammarNote": "Transliteration: l-naʿīmi"
+            }
+          ]
+        },
+        {
+          "id": "83-25-card",
+          "verseNumber": 25,
+          "arabicPhrase": "يُسْقَوْنَ مِن رَّحِيقٍ مَّخْتُومٍ",
+          "englishPhrase": "They will be served with a pure sealed wine to drink,",
+          "vocabulary": [
+            {
+              "word": "يُسْقَوْنَ",
+              "root": "ي - س - ق",
+              "meaning": "They will be given to drink",
+              "grammarNote": "Transliteration: yus'qawna"
+            },
+            {
+              "word": "مِن",
+              "root": "م - ن",
+              "meaning": "of",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "رَّحِيقٍۢ",
+              "root": "ر - ح - ي",
+              "meaning": "a pure wine",
+              "grammarNote": "Transliteration: raḥīqin"
+            },
+            {
+              "word": "مَّخْتُومٍ",
+              "root": "خ - ت - و",
+              "meaning": "sealed",
+              "grammarNote": "Transliteration: makhtūmin"
+            }
+          ]
+        },
+        {
+          "id": "83-26-card",
+          "verseNumber": 26,
+          "arabicPhrase": "خِتَـٰمُهُۥ مِسْكٌ ۚ وَفِى ذَٰلِكَ فَلْيَتَنَافَسِ ٱلْمُتَنَـٰفِسُونَ",
+          "englishPhrase": "the seal of which will be of musk.-It is this (bliss) in aspiring for which the competitors should race each other.",
+          "vocabulary": [
+            {
+              "word": "خِتَـٰمُهُۥ",
+              "root": "خ - ت - م",
+              "meaning": "Its seal",
+              "grammarNote": "Transliteration: khitāmuhu"
+            },
+            {
+              "word": "مِسْكٌۭ ۚ",
+              "root": "م - س - ك",
+              "meaning": "(will be of) musk",
+              "grammarNote": "Transliteration: mis'kun"
+            },
+            {
+              "word": "وَفِى",
+              "root": "و - ف - ي",
+              "meaning": "And for",
+              "grammarNote": "Transliteration: wafī"
+            },
+            {
+              "word": "ذَٰلِكَ",
+              "root": "ذ - ل - ك",
+              "meaning": "that",
+              "grammarNote": "Transliteration: dhālika"
+            },
+            {
+              "word": "فَلْيَتَنَافَسِ",
+              "root": "ل - ي - ت",
+              "meaning": "let aspire",
+              "grammarNote": "Transliteration: falyatanāfasi"
+            },
+            {
+              "word": "ٱلْمُتَنَـٰفِسُونَ",
+              "root": "ت - ن - ف",
+              "meaning": "the aspirers",
+              "grammarNote": "Transliteration: l-mutanāfisūna"
+            }
+          ]
+        },
+        {
+          "id": "83-27-card",
+          "verseNumber": 27,
+          "arabicPhrase": "وَمِزَاجُهُۥ مِن تَسْنِيمٍ",
+          "englishPhrase": "-and it will be blended with (a drink from) Tasnīm ,",
+          "vocabulary": [
+            {
+              "word": "وَمِزَاجُهُۥ",
+              "root": "ز - ا - ج",
+              "meaning": "And its mixture",
+              "grammarNote": "Transliteration: wamizājuhu"
+            },
+            {
+              "word": "مِن",
+              "root": "م - ن",
+              "meaning": "(is) of",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "تَسْنِيمٍ",
+              "root": "س - ن - ي",
+              "meaning": "Tasneem",
+              "grammarNote": "Transliteration: tasnīmin"
+            }
+          ]
+        },
+        {
+          "id": "83-28-card",
+          "verseNumber": 28,
+          "arabicPhrase": "عَيْنًا يَشْرَبُ بِهَا ٱلْمُقَرَّبُونَ",
+          "englishPhrase": "a spring from which will drink those who are blessed with nearness.",
+          "vocabulary": [
+            {
+              "word": "عَيْنًۭا",
+              "root": "ع - ي - ن",
+              "meaning": "A spring",
+              "grammarNote": "Transliteration: ʿaynan"
+            },
+            {
+              "word": "يَشْرَبُ",
+              "root": "ش - ر - ب",
+              "meaning": "will drink",
+              "grammarNote": "Transliteration: yashrabu"
+            },
+            {
+              "word": "بِهَا",
+              "root": "ب - ه - ا",
+              "meaning": "from it",
+              "grammarNote": "Transliteration: bihā"
+            },
+            {
+              "word": "ٱلْمُقَرَّبُونَ",
+              "root": "ق - ر - ب",
+              "meaning": "those brought near",
+              "grammarNote": "Transliteration: l-muqarabūna"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verses 21–25]\n\nيَشْهَدُهُ الْمُقَرَّبُونَ (...attended by those [ angels ] who are blessed with nearness to Allah!...83:21) The verb yash-hadu is derived from shuhud which means 'to attend, to witness, to be present, to observe'. The verse purports to say that the record of deeds of the righteous will be in the custody of angels who are blessed with nearness to Allah. [ Qurtubi ]. If shuhud is taken in the sense of 'being present', then the attached pronoun will refer to ` illiyyin instead of kitab or 'register' (and 'those who are blessed with nearness to Allah' will refer to the righteous people, and not to the angels), and the verse in that case will mean: 'The souls of those blessed with nearness to Allah will be in the place called ` illiyyin' because that is the abode of their souls, as sijjin is the abode of the unbelievers. The proof of this is the narrative of ` Abdullah Ibn Masud ؓ recorded in Muslim in which the Holy Prophet ﷺ said that the souls of the martyrs are in the crops of green birds, enjoying the rivers and gardens of Paradise, and their abode will be the lamps suspended from [ the Divine ] Throne. This indicates that the souls of the martyrs will be under the Divine Throne, and will be able to stroll in Paradise. In Surah Yasin, we came across the incident of Habib Najjar, where it is stated that:\n\nقِيلَ ادْخُلِ الْجَنَّةَ ۖ قَالَ يَا لَيْتَ قَوْمِي يَعْلَمُونَ ﴿26﴾ بِمَا غَفَرَ لِي رَبِّي\n\nHe was told, \"Enter the Garden!\" He said, \"If my people only knew how my Lord has forgiven me [ 36:26] \"'\n\nThis indicates that no sooner he passed away than he entered Paradise. Similarly, some Prophetic narratives also show that the souls of the believers are in Paradise. The sum total of these verses and narratives is that the abode of all the souls is in the seventh heaven beneath the Divine Throne. This is the locale of Paradise, and the souls have been given freedom of movement within the Paradise. Here reference has been made particularly to 'those souls who are blessed with nearness to Allah' because of the most exalted ranks they will enjoy. [ This does not, however, mean that souls at the lower ranks will not be in this abode.] In fact, this will be the abode of the souls of all the believers as is narrated by Sayyidna Ka'b Ibn Malik ؓ that the Holy Prophet ﷺ said:\n\nانما نسمۃ المؤمن طایٔریعلّق فی شجر الجنَّۃ حتَّی ترجع الٰی جسدہ یوم القیٰمۃ۔ (رواہ مالک والنِّسایٔی بسند صحیح)\n\n'The soul of a believer is a bird that will be hanging in the tree of Paradise, until it returns to its body on the Day of Judgment.' [ Malik and Nasa'i through an authentic chain of narrators. A Tradition of Umm Hani' to the same effect is recorded in Musnad of Ahmad and in Tabarani. See Mazhari ].\n\nThe Abode of Human Souls after Death\n\nWhat is the abode of human souls after death? In answer to this question, reports seem apparently different. Narratives were cited in explanation of sijjin and ` illiyyun above which showed that the souls of the unbelievers are in sijjin which is beneath the seventh earth, and the souls of the believers are in ` illiyyun which is in the seventh heaven beneath the Divine Throne. Some traditions indicate that the souls of the unbelievers will be in Hell, and the souls of the believers will be in Paradise. Some narratives, like the lengthy narrative of Bath' Ibn ` Azib ؓ ، suggest that the souls of all the deceased, believers and non-believers, will be in the graves. When the angels carry the soul of a believer to the sky, Allah says: 'Keep the record of deeds of this servant of mine in ` illiyyun and return him to the earth, because I have created him from earth, and to it I shall return him, and from it I shall resurrect him.' Complying with this command, the angels return his soul to the grave. Likewise, the soul of the non-believer is carried to the sky, but the doors are not opened for him. The angels will be commanded to return the soul to its grave. Imam ` Abdul Barr prefers this narrative and believes that the souls of all [ believers and non-believers ] remain in their graves. As for the first two sets of traditions, there is no contradiction because, carefully considered, ` illiyyun is in the seventh heaven beneath the Divine Throne, and this is exactly the locale of Paradise, as is clear from the Qur'anic text:\n\nعِندَ سِدْرَةِ الْمُنتَهَىٰ عِندَهَا جَنَّةُ الْمَأْوَىٰ\n\n'by sidrat-ul-muntaha (the lot-tree in the upper realm), near which there is Jannat-ul-ma'wa (the Paradise of Abode), [ 53:14-15] '\n\nThis clearly states that Paradise is near the lot-tree in the upper realm, and ahadith confirm that the lot-tree is in the seventh heaven. Thus it may be argued that since the abode of the souls is ` illiyyun, Paradise must be near it. These souls will stroll in and along the Gardens of Paradise. Therefore, their abode may be said to be Paradise.\n\nSimilarly, the souls of the unbelievers remain in sijjin which is situated beneath the seventh earth. It is also proved by ahadith that Hell is beneath the seventh earth, and the dwellers of sijjin will receive the heat and torture of the Hell. Therefore, it would be correct to say that their abode is in Hell.\n\nHowever, the hadith that informs us that the souls of the unbelievers will remain in the graves is apparently contradictory to the preceding two narratives. The Baihaqi of his time, Qadi Thana'ullah Panipati, in his Tafsir Mazhari, has reconciled them thus: It is not far-fetched to assume that ` illiyyun and sijjin are the real abodes of the souls, but they have a special connection with their graves. None, besides Allah, knows the actual nature of the connection. However, there is the sun and the moon in the sky, but their rays fall on the earth and provide to it light and heat. Similarly, the souls of ` illiyyun and sijjin may have some spiritual connection with the graves. The scholarly view of Qadi Thana'ullah Panipati has just been discussed in Surah Nazi’ at, the sum total of which is as follows: There are two types of soul: The one is a subtle substance that permeates the human body. Despite being a material substance, it is too subtle to be visible, and its other name is nafs. The other soul is abstract and non-material, pure essence. The pure, abstract and non-material soul is the life of the first soul, and therefore it is called the 'soul of soul'. Both the categories of souls are connected to human body, but the first type of soul resides in the human body. When the soul leaves the body, death occurs. The second type of soul is connected with the body more closely than the first type, but Allah alone knows the nature of the connection. The first soul, after death, is taken to the heaven, and then returned to the grave. Grave is its abode where it is rewarded and punished. The abstract soul remains in ` illiyyun or sijjin [ as the case might be ]. Thus we have several views on the issue. The final destination of souls is Paradise or ` illiyyun, or its opposite Hell or sijjin. The abode of the abstract souls is ` illiyyun or sijjin. The souls of the first type, the nafs, or the body, remains in the grave after death. And Allah knows best!\n\n────────────────────────────────────────\n\n[Verses 26–28]\n\nوَفِي ذَٰلِكَ فَلْيَتَنَافَسِ الْمُتَنَافِسُونَ (and inaspiring for this, the competitors should compete....83:26) The word تَنَافَسِ tanafus means for a few people 'to try or strive to gain some desirable things before others can get them.' Having mentioned the bounties of Paradise, the attention of heedless people are drawn to the fact that they are thinking that certain material things are desirable, and therefore they are competing one another to obtain them before others. They are told that the material blessings [ after which they are running ] are perishable. They should not be made the ultimate goal of life, nor the object of racing. Man should be content with what he has for the comfort of the fleeting period of this life. If he loses the means, it should not hurt him much, because it is not a loss that cannot be recovered. However, people with aspiration should aspire, race and compete for the blessings of Paradise that are perfect and eternal in every possible dimension. How aptly the late poet Akbar has put it:\n\nیہ کہاں کا فسانہ ہے سود و زیاں جو گیا سو گیا جو ملا سو ملا\n\nکہو دل سے فرصت عمر ہے کم جو دلا تو اللہ ہی کی یاد دِلا\n\n'Gain and loss - what fiction is this?\n\nWhat is lost is lost, what is gained is gained\n\nSay to the mind, the life is little.\n\nIf you wish to remind me, remind me of God.'",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Juristic Rulings & Shariah Injunctions (vv. 21–28)",
+          "content": "This indicates that no sooner he passed away than he entered Paradise. Similarly, some Prophetic narratives also show that the souls of the believers are in Paradise. The sum total of these verses and narratives is that the abode of all the souls is in the seventh heaven beneath the Divine Throne. This is the locale of Paradise, and the souls have been given freedom of movement within the Paradise. Here reference has been made particularly to 'those souls who are blessed with nearness to Allah' because of the most exalted ranks they will enjoy. [ This does not, however, mean that souls at the lower ranks will not be in this abode.] In fact, this will be the abode of the souls of all the believers as is narrated by Sayyidna Ka'b Ibn Malik ؓ that the Holy Prophet ﷺ said:"
+        },
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "يَشْهَدُهُ الْمُقَرَّبُونَ (...attended by those [ angels ] who are blessed with nearness to Allah!...83:21) The verb yash-hadu is derived from shuhud which means 'to attend, to witness, to be present, to observe'. The verse purports to say that the record of deeds of the righteous will be in the custody of angels who are blessed with nearness to Allah. [ Qurtubi ]. If shuhud is taken in the sense of 'being present', then the attached pronoun will refer to ` illiyyin instead of kitab or 'register' (and 'those who are blessed with nearness to Allah' will refer to the righteous people, and not to the angels), and the verse in that case will mean: 'The souls of those blessed with nearness to Allah will be in the place called ` illiyyin' because that is the abode of their souls, as sijjin is the abode of the unbelievers. The proof of this is the narrative of ` Abdullah Ibn Masud ؓ recorded..."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "He was told, \"Enter the Garden!\" He said, \"If my people only knew how my Lord has forgiven me [ 36:26] \"'"
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "83-29-36",
+      "surahNumber": 83,
+      "verseRange": [
+        29,
+        36
+      ],
+      "title": "The people will continue laughing at us'",
+      "juzNumber": 30,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5746/mode/2up",
+      "arabicText": "إِنَّ ٱلَّذِينَ أَجْرَمُوا۟ كَانُوا۟ مِنَ ٱلَّذِينَ ءَامَنُوا۟ يَضْحَكُونَ ۝٢٩ وَإِذَا مَرُّوا۟ بِهِمْ يَتَغَامَزُونَ ۝٣٠ وَإِذَا ٱنقَلَبُوٓا۟ إِلَىٰٓ أَهْلِهِمُ ٱنقَلَبُوا۟ فَكِهِينَ ۝٣١ وَإِذَا رَأَوْهُمْ قَالُوٓا۟ إِنَّ هَـٰٓؤُلَآءِ لَضَآلُّونَ ۝٣٢ وَمَآ أُرْسِلُوا۟ عَلَيْهِمْ حَـٰفِظِينَ ۝٣٣ فَٱلْيَوْمَ ٱلَّذِينَ ءَامَنُوا۟ مِنَ ٱلْكُفَّارِ يَضْحَكُونَ ۝٣٤ عَلَى ٱلْأَرَآئِكِ يَنظُرُونَ ۝٣٥ هَلْ ثُوِّبَ ٱلْكُفَّارُ مَا كَانُوا۟ يَفْعَلُونَ ۝٣٦",
+      "translation": "Indeed those who were guilty used to laugh at those who believed, ۝ and when they passed by them, they used to wink at one another, ۝ and when they went back to their family, they went enjoying their mockery, ۝ and when they saw them, they said, “Surely these are the ones who have gone astray” ۝ while they were not sent as watchmen over them. ۝ So, today those who believed will laugh at the disbelievers. ۝ While (sitting) on thrones, they will be seeing ۝ whether the disbelievers have been paid back for what they used to do. ۝",
+      "phraseCards": [
+        {
+          "id": "83-29-card",
+          "verseNumber": 29,
+          "arabicPhrase": "إِنَّ ٱلَّذِينَ أَجْرَمُوا۟ كَانُوا۟ مِنَ ٱلَّذِينَ ءَامَنُوا۟ يَضْحَكُونَ",
+          "englishPhrase": "Indeed those who were guilty used to laugh at those who believed,",
+          "vocabulary": [
+            {
+              "word": "إِنَّ",
+              "root": "ا - ن - ن",
+              "meaning": "Indeed",
+              "grammarNote": "Transliteration: inna"
+            },
+            {
+              "word": "ٱلَّذِينَ",
+              "root": "ل - ذ - ي",
+              "meaning": "those who",
+              "grammarNote": "Transliteration: alladhīna"
+            },
+            {
+              "word": "أَجْرَمُوا۟",
+              "root": "ج - ر - م",
+              "meaning": "committed crimes",
+              "grammarNote": "Transliteration: ajramū"
+            },
+            {
+              "word": "كَانُوا۟",
+              "root": "ك - ا - ن",
+              "meaning": "used to",
+              "grammarNote": "Transliteration: kānū"
+            },
+            {
+              "word": "مِنَ",
+              "root": "م - ن",
+              "meaning": "at",
+              "grammarNote": "Transliteration: mina"
+            },
+            {
+              "word": "ٱلَّذِينَ",
+              "root": "ل - ذ - ي",
+              "meaning": "those who",
+              "grammarNote": "Transliteration: alladhīna"
+            },
+            {
+              "word": "ءَامَنُوا۟",
+              "root": "ء - م - ن",
+              "meaning": "believed",
+              "grammarNote": "Transliteration: āmanū"
+            },
+            {
+              "word": "يَضْحَكُونَ",
+              "root": "ض - ح - ك",
+              "meaning": "laugh",
+              "grammarNote": "Transliteration: yaḍḥakūna"
+            }
+          ]
+        },
+        {
+          "id": "83-30-card",
+          "verseNumber": 30,
+          "arabicPhrase": "وَإِذَا مَرُّوا۟ بِهِمْ يَتَغَامَزُونَ",
+          "englishPhrase": "and when they passed by them, they used to wink at one another,",
+          "vocabulary": [
+            {
+              "word": "وَإِذَا",
+              "root": "ا - ذ - ا",
+              "meaning": "And when",
+              "grammarNote": "Transliteration: wa-idhā"
+            },
+            {
+              "word": "مَرُّوا۟",
+              "root": "ر - و - ا",
+              "meaning": "they passed",
+              "grammarNote": "Transliteration: marrū"
+            },
+            {
+              "word": "بِهِمْ",
+              "root": "ب - ه - م",
+              "meaning": "by them",
+              "grammarNote": "Transliteration: bihim"
+            },
+            {
+              "word": "يَتَغَامَزُونَ",
+              "root": "غ - م - ز",
+              "meaning": "they winked at one another",
+              "grammarNote": "Transliteration: yataghāmazūna"
+            }
+          ]
+        },
+        {
+          "id": "83-31-card",
+          "verseNumber": 31,
+          "arabicPhrase": "وَإِذَا ٱنقَلَبُوٓا۟ إِلَىٰٓ أَهْلِهِمُ ٱنقَلَبُوا۟ فَكِهِينَ",
+          "englishPhrase": "and when they went back to their family, they went enjoying their mockery,",
+          "vocabulary": [
+            {
+              "word": "وَإِذَا",
+              "root": "ا - ذ - ا",
+              "meaning": "And when",
+              "grammarNote": "Transliteration: wa-idhā"
+            },
+            {
+              "word": "ٱنقَلَبُوٓا۟",
+              "root": "ن - ق - ل",
+              "meaning": "they returned",
+              "grammarNote": "Transliteration: inqalabū"
+            },
+            {
+              "word": "إِلَىٰٓ",
+              "root": "ا - ل - ي",
+              "meaning": "to",
+              "grammarNote": "Transliteration: ilā"
+            },
+            {
+              "word": "أَهْلِهِمُ",
+              "root": "ا - ه - ل",
+              "meaning": "their people",
+              "grammarNote": "Transliteration: ahlihimu"
+            },
+            {
+              "word": "ٱنقَلَبُوا۟",
+              "root": "ن - ق - ل",
+              "meaning": "they would return",
+              "grammarNote": "Transliteration: inqalabū"
+            },
+            {
+              "word": "فَكِهِينَ",
+              "root": "ك - ه - ي",
+              "meaning": "jesting",
+              "grammarNote": "Transliteration: fakihīna"
+            }
+          ]
+        },
+        {
+          "id": "83-32-card",
+          "verseNumber": 32,
+          "arabicPhrase": "وَإِذَا رَأَوْهُمْ قَالُوٓا۟ إِنَّ هَـٰٓؤُلَآءِ لَضَآلُّونَ",
+          "englishPhrase": "and when they saw them, they said, “Surely these are the ones who have gone astray”",
+          "vocabulary": [
+            {
+              "word": "وَإِذَا",
+              "root": "ا - ذ - ا",
+              "meaning": "And when",
+              "grammarNote": "Transliteration: wa-idhā"
+            },
+            {
+              "word": "رَأَوْهُمْ",
+              "root": "ر - ا - و",
+              "meaning": "they saw them",
+              "grammarNote": "Transliteration: ra-awhum"
+            },
+            {
+              "word": "قَالُوٓا۟",
+              "root": "ق - ا - ل",
+              "meaning": "they said",
+              "grammarNote": "Transliteration: qālū"
+            },
+            {
+              "word": "إِنَّ",
+              "root": "ا - ن - ن",
+              "meaning": "Indeed",
+              "grammarNote": "Transliteration: inna"
+            },
+            {
+              "word": "هَـٰٓؤُلَآءِ",
+              "root": "ه - ؤ - ل",
+              "meaning": "these",
+              "grammarNote": "Transliteration: hāulāi"
+            },
+            {
+              "word": "لَضَآلُّونَ",
+              "root": "ض - ا - ل",
+              "meaning": "surely have gone astray",
+              "grammarNote": "Transliteration: laḍāllūna"
+            }
+          ]
+        },
+        {
+          "id": "83-33-card",
+          "verseNumber": 33,
+          "arabicPhrase": "وَمَآ أُرْسِلُوا۟ عَلَيْهِمْ حَـٰفِظِينَ",
+          "englishPhrase": "while they were not sent as watchmen over them.",
+          "vocabulary": [
+            {
+              "word": "وَمَآ",
+              "root": "و - م - ا",
+              "meaning": "But not",
+              "grammarNote": "Transliteration: wamā"
+            },
+            {
+              "word": "أُرْسِلُوا۟",
+              "root": "ر - س - ل",
+              "meaning": "they had been sent",
+              "grammarNote": "Transliteration: ur'silū"
+            },
+            {
+              "word": "عَلَيْهِمْ",
+              "root": "ع - ل - ي",
+              "meaning": "over them",
+              "grammarNote": "Transliteration: ʿalayhim"
+            },
+            {
+              "word": "حَـٰفِظِينَ",
+              "root": "ح - ف - ظ",
+              "meaning": "(as) guardians",
+              "grammarNote": "Transliteration: ḥāfiẓīna"
+            }
+          ]
+        },
+        {
+          "id": "83-34-card",
+          "verseNumber": 34,
+          "arabicPhrase": "فَٱلْيَوْمَ ٱلَّذِينَ ءَامَنُوا۟ مِنَ ٱلْكُفَّارِ يَضْحَكُونَ",
+          "englishPhrase": "So, today those who believed will laugh at the disbelievers.",
+          "vocabulary": [
+            {
+              "word": "فَٱلْيَوْمَ",
+              "root": "ي - و - م",
+              "meaning": "So today",
+              "grammarNote": "Transliteration: fal-yawma"
+            },
+            {
+              "word": "ٱلَّذِينَ",
+              "root": "ل - ذ - ي",
+              "meaning": "those who",
+              "grammarNote": "Transliteration: alladhīna"
+            },
+            {
+              "word": "ءَامَنُوا۟",
+              "root": "ء - م - ن",
+              "meaning": "believed",
+              "grammarNote": "Transliteration: āmanū"
+            },
+            {
+              "word": "مِنَ",
+              "root": "م - ن",
+              "meaning": "at",
+              "grammarNote": "Transliteration: mina"
+            },
+            {
+              "word": "ٱلْكُفَّارِ",
+              "root": "ك - ف - ر",
+              "meaning": "the disbelievers",
+              "grammarNote": "Transliteration: l-kufāri"
+            },
+            {
+              "word": "يَضْحَكُونَ",
+              "root": "ض - ح - ك",
+              "meaning": "they will laugh",
+              "grammarNote": "Transliteration: yaḍḥakūna"
+            }
+          ]
+        },
+        {
+          "id": "83-35-card",
+          "verseNumber": 35,
+          "arabicPhrase": "عَلَى ٱلْأَرَآئِكِ يَنظُرُونَ",
+          "englishPhrase": "While (sitting) on thrones, they will be seeing",
+          "vocabulary": [
+            {
+              "word": "عَلَى",
+              "root": "ع - ل - و",
+              "meaning": "On",
+              "grammarNote": "Transliteration: ʿalā"
+            },
+            {
+              "word": "ٱلْأَرَآئِكِ",
+              "root": "ر - ا - ئ",
+              "meaning": "the thrones",
+              "grammarNote": "Transliteration: l-arāiki"
+            },
+            {
+              "word": "يَنظُرُونَ",
+              "root": "ن - ظ - ر",
+              "meaning": "observing",
+              "grammarNote": "Transliteration: yanẓurūna"
+            }
+          ]
+        },
+        {
+          "id": "83-36-card",
+          "verseNumber": 36,
+          "arabicPhrase": "هَلْ ثُوِّبَ ٱلْكُفَّارُ مَا كَانُوا۟ يَفْعَلُونَ",
+          "englishPhrase": "whether the disbelievers have been paid back for what they used to do.",
+          "vocabulary": [
+            {
+              "word": "هَلْ",
+              "root": "ه - ل",
+              "meaning": "Have (not)",
+              "grammarNote": "Transliteration: hal"
+            },
+            {
+              "word": "ثُوِّبَ",
+              "root": "ث - و - ب",
+              "meaning": "been rewarded",
+              "grammarNote": "Transliteration: thuwwiba"
+            },
+            {
+              "word": "ٱلْكُفَّارُ",
+              "root": "ك - ف - ر",
+              "meaning": "the disbelievers",
+              "grammarNote": "Transliteration: l-kufāru"
+            },
+            {
+              "word": "مَا",
+              "root": "م - ا",
+              "meaning": "(for) what",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "كَانُوا۟",
+              "root": "ك - ا - ن",
+              "meaning": "they used to",
+              "grammarNote": "Transliteration: kānū"
+            },
+            {
+              "word": "يَفْعَلُونَ",
+              "root": "ف - ع - ل",
+              "meaning": "do",
+              "grammarNote": "Transliteration: yafʿalūna"
+            }
+          ]
+        }
+      ],
+      "commentary": "إِنَّ الَّذِينَ أَجْرَمُوا كَانُوا مِنَ الَّذِينَ آمَنُوا يَضْحَكُونَ (Indeed those who were guilty used to laugh at those who believed, 83:29). In these verses, Allah depicts fully the attitudes of the followers of falsehood [ non-believers ] towards the upholders of truth [ the believers ]. The non-believers used to laugh at the believers in the worldly life. In other words, they would mock at them and despise them. Whenever they would pass by the believers, they would wink at each other in contempt of them. When the non-believers returned home, they would take great pleasure in describing the mocking manner in which they treated the poor believers, saying that Muhammad has misled the simpletons.\n\nIf we review the situation today, [ it is no better ]. People, whose minds are contaminated with contemporary secular education, are careless about the religion and the Hereafter. Belief in Allah and the Holy Prophet ﷺ is nominal. They treat the [ religious ] scholars and righteous people exactly in the same manner as the non-believers used to treat the Companions ؓ in the days of the Holy Prophet ﷺ ]. May Allah salvage the Muslims from this painful scourge. There is much solace in this verse for the righteous believers. Never bother about their laughter and mockery. How well a poet puts it:\n\nہنسے جانے سے جب تک ہم ڈریں گے زمانہ ہم پہ ہنسا ہی رہے گا\n\n'So long as we fear people's laughter [ at us ],\n\nthe people will continue laughing at us'\n\nAll amdulillah\n\nThe Commentary on\n\nSurah At-Tatfif\n\nEnds here",
+      "subsections": [
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "If we review the situation today, [ it is no better ]. People, whose minds are contaminated with contemporary secular education, are careless about the religion and the Hereafter. Belief in Allah and the Holy Prophet ﷺ is nominal. They treat the [ religious ] scholars and righteous people exactly in the same manner as the non-believers used to treat the Companions ؓ in the days of the Holy Prophet ﷺ ]. May Allah salvage the Muslims from this painful scourge. There is much solace in this verse for the righteous believers. Never bother about their laughter and mockery. How well a poet puts it:"
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "إِنَّ الَّذِينَ أَجْرَمُوا كَانُوا مِنَ الَّذِينَ آمَنُوا يَضْحَكُونَ (Indeed those who were guilty used to laugh at those who believed, 83:29). In these verses, Allah depicts fully the attitudes of the followers of falsehood [ non-believers ] towards the upholders of truth [ the believers ]. The non-believers used to laugh at the believers in the worldly life. In other words, they would mock at them and despise them. Whenever they would pass by the believers, they would wink at each other in contempt of them. When the non-believers returned home, they would take great pleasure in describing the mocking manner in which they treated the poor believers, saying that Muhammad has misled the simpletons."
+        }
+      ],
+      "curatedTerms": []
+    }
+  ]
+}

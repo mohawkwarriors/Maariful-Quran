@@ -1,0 +1,1741 @@
+{
+  "number": 71,
+  "nameArabic": "نوح",
+  "nameTransliterated": "Nuh",
+  "nameEnglish": "Prophet Noah",
+  "versesCount": 28,
+  "revelationType": "Makki",
+  "volumeNumber": 8,
+  "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5605/mode/2up",
+  "juz": [
+    29
+  ],
+  "bismillahPre": true,
+  "introductoryTafseer": "Surah Nuh (Prophet Noah) is a Makki chapter of 28 verses expounded in Volume 8 of Ma'ariful Qur'an by Mufti Muhammad Shafi. Noah's tireless multi-century summons to monotheism by night and day, seeking forgiveness for bountiful rain and prosperity, and his concluding prayer for all believing men and women.",
+  "historicalContext": {
+    "background": "Included in Volume 8 of the 8-Volume English edition of Ma'ariful Qur'an (revised by Justice Mufti Taqi Usmani). Revealed during the Makki era (chronological order 71), Surah Nuh addresses noah's tireless multi-century summons to monotheism by night and day, seeking forgiveness for bountiful rain and prosperity, and his concluding prayer for all believing men and women.",
+    "scholarlyReference": "Ma'ariful Qur'an by Mufti Muhammad Shafi, Volume 8 (Archive.org Leaf n5605)"
+  },
+  "sections": [
+    {
+      "id": "71-1-3",
+      "surahNumber": 71,
+      "verseRange": [
+        1,
+        3
+      ],
+      "title": "Al-hamdulillah",
+      "juzNumber": 29,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5606/mode/2up",
+      "arabicText": "إِنَّآ أَرْسَلْنَا نُوحًا إِلَىٰ قَوْمِهِۦٓ أَنْ أَنذِرْ قَوْمَكَ مِن قَبْلِ أَن يَأْتِيَهُمْ عَذَابٌ أَلِيمٌ ۝١ قَالَ يَـٰقَوْمِ إِنِّى لَكُمْ نَذِيرٌ مُّبِينٌ ۝٢ أَنِ ٱعْبُدُوا۟ ٱللَّهَ وَٱتَّقُوهُ وَأَطِيعُونِ ۝٣",
+      "translation": "We sent NūH to his people (and said to him): “Warn your people before a painful punishment comes to them.” ۝ He said, “O my people, I openly warn you ۝ that you must worship Allah, and fear Him, and obey me, ۝",
+      "phraseCards": [
+        {
+          "id": "71-1-card",
+          "verseNumber": 1,
+          "arabicPhrase": "إِنَّآ أَرْسَلْنَا نُوحًا إِلَىٰ قَوْمِهِۦٓ أَنْ أَنذِرْ قَوْمَكَ مِن قَبْلِ أَن يَأْتِيَهُمْ عَذَابٌ أَلِيمٌ",
+          "englishPhrase": "We sent NūH to his people (and said to him): “Warn your people before a painful punishment comes to them.”",
+          "vocabulary": [
+            {
+              "word": "إِنَّآ",
+              "root": "ا - ن - ا",
+              "meaning": "Indeed, We",
+              "grammarNote": "Transliteration: innā"
+            },
+            {
+              "word": "أَرْسَلْنَا",
+              "root": "ر - س - ل",
+              "meaning": "[We] sent",
+              "grammarNote": "Transliteration: arsalnā"
+            },
+            {
+              "word": "نُوحًا",
+              "root": "و - ح - ا",
+              "meaning": "Nuh",
+              "grammarNote": "Transliteration: nūḥan"
+            },
+            {
+              "word": "إِلَىٰ",
+              "root": "ا - ل - ي",
+              "meaning": "to",
+              "grammarNote": "Transliteration: ilā"
+            },
+            {
+              "word": "قَوْمِهِۦٓ",
+              "root": "ق - و - م",
+              "meaning": "his people",
+              "grammarNote": "Transliteration: qawmihi"
+            },
+            {
+              "word": "أَنْ",
+              "root": "ا - ن - ن",
+              "meaning": "that",
+              "grammarNote": "Transliteration: an"
+            },
+            {
+              "word": "أَنذِرْ",
+              "root": "ن - ذ - ر",
+              "meaning": "Warn",
+              "grammarNote": "Transliteration: andhir"
+            },
+            {
+              "word": "قَوْمَكَ",
+              "root": "ق - و - م",
+              "meaning": "your people",
+              "grammarNote": "Transliteration: qawmaka"
+            },
+            {
+              "word": "مِن",
+              "root": "م - ن",
+              "meaning": "from",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "قَبْلِ",
+              "root": "ق - ب - ل",
+              "meaning": "before",
+              "grammarNote": "Transliteration: qabli"
+            },
+            {
+              "word": "أَن",
+              "root": "ا - ن - ن",
+              "meaning": "[that]",
+              "grammarNote": "Transliteration: an"
+            },
+            {
+              "word": "يَأْتِيَهُمْ",
+              "root": "ا - ت - ي",
+              "meaning": "comes to them",
+              "grammarNote": "Transliteration: yatiyahum"
+            },
+            {
+              "word": "عَذَابٌ",
+              "root": "ع - ذ - ب",
+              "meaning": "a punishment",
+              "grammarNote": "Transliteration: ʿadhābun"
+            },
+            {
+              "word": "أَلِيمٌۭ",
+              "root": "ل - ي - م",
+              "meaning": "painful",
+              "grammarNote": "Transliteration: alīmun"
+            }
+          ]
+        },
+        {
+          "id": "71-2-card",
+          "verseNumber": 2,
+          "arabicPhrase": "قَالَ يَـٰقَوْمِ إِنِّى لَكُمْ نَذِيرٌ مُّبِينٌ",
+          "englishPhrase": "He said, “O my people, I openly warn you",
+          "vocabulary": [
+            {
+              "word": "قَالَ",
+              "root": "ق - ا - ل",
+              "meaning": "He said",
+              "grammarNote": "Transliteration: qāla"
+            },
+            {
+              "word": "يَـٰقَوْمِ",
+              "root": "ق - و - م",
+              "meaning": "O my people",
+              "grammarNote": "Transliteration: yāqawmi"
+            },
+            {
+              "word": "إِنِّى",
+              "root": "ا - ن - ي",
+              "meaning": "Indeed, I am",
+              "grammarNote": "Transliteration: innī"
+            },
+            {
+              "word": "لَكُمْ",
+              "root": "ل - ك - م",
+              "meaning": "to you",
+              "grammarNote": "Transliteration: lakum"
+            },
+            {
+              "word": "نَذِيرٌۭ",
+              "root": "ذ - ي - ر",
+              "meaning": "a warner",
+              "grammarNote": "Transliteration: nadhīrun"
+            },
+            {
+              "word": "مُّبِينٌ",
+              "root": "ب - ي - ن",
+              "meaning": "clear",
+              "grammarNote": "Transliteration: mubīnun"
+            }
+          ]
+        },
+        {
+          "id": "71-3-card",
+          "verseNumber": 3,
+          "arabicPhrase": "أَنِ ٱعْبُدُوا۟ ٱللَّهَ وَٱتَّقُوهُ وَأَطِيعُونِ",
+          "englishPhrase": "that you must worship Allah, and fear Him, and obey me,",
+          "vocabulary": [
+            {
+              "word": "أَنِ",
+              "root": "ا - ن - ن",
+              "meaning": "That",
+              "grammarNote": "Transliteration: ani"
+            },
+            {
+              "word": "ٱعْبُدُوا۟",
+              "root": "ع - ب - د",
+              "meaning": "Worship",
+              "grammarNote": "Transliteration: uʿ'budū"
+            },
+            {
+              "word": "ٱللَّهَ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah",
+              "grammarNote": "Transliteration: l-laha"
+            },
+            {
+              "word": "وَٱتَّقُوهُ",
+              "root": "ت - ق - و",
+              "meaning": "and fear Him",
+              "grammarNote": "Transliteration: wa-ittaqūhu"
+            },
+            {
+              "word": "وَأَطِيعُونِ",
+              "root": "ط - ي - ع",
+              "meaning": "and obey me",
+              "grammarNote": "Transliteration: wa-aṭīʿūni"
+            }
+          ]
+        }
+      ],
+      "commentary": "وَالَّذِينَ هُم بِشَهَادَاتِهِمْ قَائِمُونَ (...and those who are upright in their testimonies, [ 70:33] '. The word shahadat is the plural of shahadah. The use of plural number in this verse too indicates that there are many types and categories of 'testimony', and it is necessary to stand firm by one's testimony of any type. This includes testifying to the faith of Islam, Divine existence and His Oneness, and testifying that Sayyidna Muhammad ﷺ is His Final Messenger. It is obligatory to testify to the crescent of Ramadan, if one has seen it. Giving a true and accurate account of Shari'ah matters as expert witness, and in all judicial hearings is also implied. Everyone is duty-bound to offer the testimony when summoned. It is prohibited to add or omit any part thereof. According to this verse, it is obligatory to bear testimony, to be upright in it and stand firm by it.\n\nAl-hamdulillah\n\nThe Commentary on\n\nSurah Al-Ma’ arij\n\nEnds here.",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Juristic Rulings & Shariah Injunctions (vv. 1–3)",
+          "content": "وَالَّذِينَ هُم بِشَهَادَاتِهِمْ قَائِمُونَ (...and those who are upright in their testimonies, [ 70:33] '. The word shahadat is the plural of shahadah. The use of plural number in this verse too indicates that there are many types and categories of 'testimony', and it is necessary to stand firm by one's testimony of any type. This includes testifying to the faith of Islam, Divine existence and His Oneness, and testifying that Sayyidna Muhammad ﷺ is His Final Messenger. It is obligatory to testify to the crescent of Ramadan, if one has seen it. Giving a true and accurate account of Shari'ah matters as expert witness, and in all judicial hearings is also implied. Everyone is duty-bound to offer the testimony when summoned. It is prohibited to add or omit any part thereof. According to this verse, it is obligatory to bear testimony, to be upright in it and stand firm by it."
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "71-4-14",
+      "surahNumber": 71,
+      "verseRange": [
+        4,
+        14
+      ],
+      "title": "And Allah will forgive you your sins, and",
+      "juzNumber": 29,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5606/mode/2up",
+      "arabicText": "يَغْفِرْ لَكُم مِّن ذُنُوبِكُمْ وَيُؤَخِّرْكُمْ إِلَىٰٓ أَجَلٍ مُّسَمًّى ۚ إِنَّ أَجَلَ ٱللَّهِ إِذَا جَآءَ لَا يُؤَخَّرُ ۖ لَوْ كُنتُمْ تَعْلَمُونَ ۝٤ قَالَ رَبِّ إِنِّى دَعَوْتُ قَوْمِى لَيْلًا وَنَهَارًا ۝٥ فَلَمْ يَزِدْهُمْ دُعَآءِىٓ إِلَّا فِرَارًا ۝٦ وَإِنِّى كُلَّمَا دَعَوْتُهُمْ لِتَغْفِرَ لَهُمْ جَعَلُوٓا۟ أَصَـٰبِعَهُمْ فِىٓ ءَاذَانِهِمْ وَٱسْتَغْشَوْا۟ ثِيَابَهُمْ وَأَصَرُّوا۟ وَٱسْتَكْبَرُوا۟ ٱسْتِكْبَارًا ۝٧ ثُمَّ إِنِّى دَعَوْتُهُمْ جِهَارًا ۝٨ ثُمَّ إِنِّىٓ أَعْلَنتُ لَهُمْ وَأَسْرَرْتُ لَهُمْ إِسْرَارًا ۝٩ فَقُلْتُ ٱسْتَغْفِرُوا۟ رَبَّكُمْ إِنَّهُۥ كَانَ غَفَّارًا ۝١٠ يُرْسِلِ ٱلسَّمَآءَ عَلَيْكُم مِّدْرَارًا ۝١١ وَيُمْدِدْكُم بِأَمْوَٰلٍ وَبَنِينَ وَيَجْعَل لَّكُمْ جَنَّـٰتٍ وَيَجْعَل لَّكُمْ أَنْهَـٰرًا ۝١٢ مَّا لَكُمْ لَا تَرْجُونَ لِلَّهِ وَقَارًا ۝١٣ وَقَدْ خَلَقَكُمْ أَطْوَارًا ۝١٤",
+      "translation": "and Allah will forgive you your sins, and will respite you to an appointed term. Indeed when Allah’s term comes, it is not deferred, if you only know!” ۝ He said, “My Lord, I have called my people night and day, ۝ but my call added only to their flight (from the truth). ۝ Whenever I called them, so that You might forgive them, they put their fingers into their ears, and wrapped their clothes around themselves, and grew obstinate, and waxed proud in extreme arrogance. ۝ Then I called them loudly, ۝ and then I spoke to them in public and spoke to them in private. ۝ So I said, ‘Pray to your Lord for your forgiveness,- Indeed He is Very-Forgiving, - ۝ and He will cause the heavens to rain upon you in abundance, ۝ and will help you with riches and sons, and will cause gardens to grow for you, and cause rivers to flow for you. ۝ What has happened to you that you do not appreciate the Majesty of Allah, ۝ while He has created you in different phases? ۝",
+      "phraseCards": [
+        {
+          "id": "71-4-card",
+          "verseNumber": 4,
+          "arabicPhrase": "يَغْفِرْ لَكُم مِّن ذُنُوبِكُمْ وَيُؤَخِّرْكُمْ إِلَىٰٓ أَجَلٍ مُّسَمًّى ۚ إِنَّ أَجَلَ ٱللَّهِ إِذَا جَآءَ لَا يُؤَخَّرُ ۖ لَوْ كُنتُمْ تَعْلَمُونَ",
+          "englishPhrase": "and Allah will forgive you your sins, and will respite you to an appointed term. Indeed when Allah’s term comes, it is not deferred, if you only know!”",
+          "vocabulary": [
+            {
+              "word": "يَغْفِرْ",
+              "root": "غ - ف - ر",
+              "meaning": "He will forgive",
+              "grammarNote": "Transliteration: yaghfir"
+            },
+            {
+              "word": "لَكُم",
+              "root": "ل - ك - م",
+              "meaning": "for you",
+              "grammarNote": "Transliteration: lakum"
+            },
+            {
+              "word": "مِّن",
+              "root": "م - ن",
+              "meaning": "[of]",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "ذُنُوبِكُمْ",
+              "root": "ذ - ن - و",
+              "meaning": "your sins",
+              "grammarNote": "Transliteration: dhunūbikum"
+            },
+            {
+              "word": "وَيُؤَخِّرْكُمْ",
+              "root": "ؤ - خ - ر",
+              "meaning": "and give you respite",
+              "grammarNote": "Transliteration: wayu-akhir'kum"
+            },
+            {
+              "word": "إِلَىٰٓ",
+              "root": "ا - ل - ي",
+              "meaning": "for",
+              "grammarNote": "Transliteration: ilā"
+            },
+            {
+              "word": "أَجَلٍۢ",
+              "root": "ا - ج - ل",
+              "meaning": "a term",
+              "grammarNote": "Transliteration: ajalin"
+            },
+            {
+              "word": "مُّسَمًّى ۚ",
+              "root": "م - س - م",
+              "meaning": "specified",
+              "grammarNote": "Transliteration: musamman"
+            },
+            {
+              "word": "إِنَّ",
+              "root": "ا - ن - ن",
+              "meaning": "Indeed",
+              "grammarNote": "Transliteration: inna"
+            },
+            {
+              "word": "أَجَلَ",
+              "root": "ا - ج - ل",
+              "meaning": "(the) term",
+              "grammarNote": "Transliteration: ajala"
+            },
+            {
+              "word": "ٱللَّهِ",
+              "root": "أ - ل - ه",
+              "meaning": "(of) Allah",
+              "grammarNote": "Transliteration: l-lahi"
+            },
+            {
+              "word": "إِذَا",
+              "root": "ا - ذ - ا",
+              "meaning": "when",
+              "grammarNote": "Transliteration: idhā"
+            },
+            {
+              "word": "جَآءَ",
+              "root": "ج - ا - ء",
+              "meaning": "it comes",
+              "grammarNote": "Transliteration: jāa"
+            },
+            {
+              "word": "لَا",
+              "root": "ل - ا",
+              "meaning": "not",
+              "grammarNote": "Transliteration: lā"
+            },
+            {
+              "word": "يُؤَخَّرُ ۖ",
+              "root": "ؤ - خ - ر",
+              "meaning": "is delayed",
+              "grammarNote": "Transliteration: yu-akharu"
+            },
+            {
+              "word": "لَوْ",
+              "root": "ل - و",
+              "meaning": "if",
+              "grammarNote": "Transliteration: law"
+            },
+            {
+              "word": "كُنتُمْ",
+              "root": "ك - ن - ت",
+              "meaning": "you",
+              "grammarNote": "Transliteration: kuntum"
+            },
+            {
+              "word": "تَعْلَمُونَ",
+              "root": "ع - ل - م",
+              "meaning": "know",
+              "grammarNote": "Transliteration: taʿlamūna"
+            }
+          ]
+        },
+        {
+          "id": "71-5-card",
+          "verseNumber": 5,
+          "arabicPhrase": "قَالَ رَبِّ إِنِّى دَعَوْتُ قَوْمِى لَيْلًا وَنَهَارًا",
+          "englishPhrase": "He said, “My Lord, I have called my people night and day,",
+          "vocabulary": [
+            {
+              "word": "قَالَ",
+              "root": "ق - ا - ل",
+              "meaning": "He said",
+              "grammarNote": "Transliteration: qāla"
+            },
+            {
+              "word": "رَبِّ",
+              "root": "ر - ب - ب",
+              "meaning": "My Lord",
+              "grammarNote": "Transliteration: rabbi"
+            },
+            {
+              "word": "إِنِّى",
+              "root": "ا - ن - ي",
+              "meaning": "Indeed, I",
+              "grammarNote": "Transliteration: innī"
+            },
+            {
+              "word": "دَعَوْتُ",
+              "root": "د - ع - و",
+              "meaning": "invited",
+              "grammarNote": "Transliteration: daʿawtu"
+            },
+            {
+              "word": "قَوْمِى",
+              "root": "ق - و - م",
+              "meaning": "my people",
+              "grammarNote": "Transliteration: qawmī"
+            },
+            {
+              "word": "لَيْلًۭا",
+              "root": "ي - ل - ا",
+              "meaning": "night",
+              "grammarNote": "Transliteration: laylan"
+            },
+            {
+              "word": "وَنَهَارًۭا",
+              "root": "ه - ر - ا",
+              "meaning": "and day",
+              "grammarNote": "Transliteration: wanahāran"
+            }
+          ]
+        },
+        {
+          "id": "71-6-card",
+          "verseNumber": 6,
+          "arabicPhrase": "فَلَمْ يَزِدْهُمْ دُعَآءِىٓ إِلَّا فِرَارًا",
+          "englishPhrase": "but my call added only to their flight (from the truth).",
+          "vocabulary": [
+            {
+              "word": "فَلَمْ",
+              "root": "ف - ل - م",
+              "meaning": "But not",
+              "grammarNote": "Transliteration: falam"
+            },
+            {
+              "word": "يَزِدْهُمْ",
+              "root": "ي - ز - د",
+              "meaning": "increased them",
+              "grammarNote": "Transliteration: yazid'hum"
+            },
+            {
+              "word": "دُعَآءِىٓ",
+              "root": "د - ع - ء",
+              "meaning": "my invitation",
+              "grammarNote": "Transliteration: duʿāī"
+            },
+            {
+              "word": "إِلَّا",
+              "root": "ا - ل - ا",
+              "meaning": "except",
+              "grammarNote": "Transliteration: illā"
+            },
+            {
+              "word": "فِرَارًۭا",
+              "root": "ر - ر - ا",
+              "meaning": "(in) flight",
+              "grammarNote": "Transliteration: firāran"
+            }
+          ]
+        },
+        {
+          "id": "71-7-card",
+          "verseNumber": 7,
+          "arabicPhrase": "وَإِنِّى كُلَّمَا دَعَوْتُهُمْ لِتَغْفِرَ لَهُمْ جَعَلُوٓا۟ أَصَـٰبِعَهُمْ فِىٓ ءَاذَانِهِمْ وَٱسْتَغْشَوْا۟ ثِيَابَهُمْ وَأَصَرُّوا۟ وَٱسْتَكْبَرُوا۟ ٱسْتِكْبَارًا",
+          "englishPhrase": "Whenever I called them, so that You might forgive them, they put their fingers into their ears, and wrapped their clothes around themselves, and grew obstinate, and waxed proud in extreme arrogance.",
+          "vocabulary": [
+            {
+              "word": "وَإِنِّى",
+              "root": "ا - ن - ي",
+              "meaning": "And indeed, I",
+              "grammarNote": "Transliteration: wa-innī"
+            },
+            {
+              "word": "كُلَّمَا",
+              "root": "ك - ل - م",
+              "meaning": "every time",
+              "grammarNote": "Transliteration: kullamā"
+            },
+            {
+              "word": "دَعَوْتُهُمْ",
+              "root": "د - ع - و",
+              "meaning": "I invited them",
+              "grammarNote": "Transliteration: daʿawtuhum"
+            },
+            {
+              "word": "لِتَغْفِرَ",
+              "root": "غ - ف - ر",
+              "meaning": "that You may forgive",
+              "grammarNote": "Transliteration: litaghfira"
+            },
+            {
+              "word": "لَهُمْ",
+              "root": "ل - ه - م",
+              "meaning": "them",
+              "grammarNote": "Transliteration: lahum"
+            },
+            {
+              "word": "جَعَلُوٓا۟",
+              "root": "ج - ع - ل",
+              "meaning": "they put",
+              "grammarNote": "Transliteration: jaʿalū"
+            },
+            {
+              "word": "أَصَـٰبِعَهُمْ",
+              "root": "ص - ب - ع",
+              "meaning": "their fingers",
+              "grammarNote": "Transliteration: aṣābiʿahum"
+            },
+            {
+              "word": "فِىٓ",
+              "root": "ف - ي",
+              "meaning": "in",
+              "grammarNote": "Transliteration: fī"
+            },
+            {
+              "word": "ءَاذَانِهِمْ",
+              "root": "ء - ذ - ا",
+              "meaning": "their ears",
+              "grammarNote": "Transliteration: ādhānihim"
+            },
+            {
+              "word": "وَٱسْتَغْشَوْا۟",
+              "root": "س - ت - غ",
+              "meaning": "and covered themselves",
+              "grammarNote": "Transliteration: wa-is'taghshaw"
+            },
+            {
+              "word": "ثِيَابَهُمْ",
+              "root": "ث - ي - ب",
+              "meaning": "(with) their garments",
+              "grammarNote": "Transliteration: thiyābahum"
+            },
+            {
+              "word": "وَأَصَرُّوا۟",
+              "root": "ا - ص - ر",
+              "meaning": "and persisted",
+              "grammarNote": "Transliteration: wa-aṣarrū"
+            },
+            {
+              "word": "وَٱسْتَكْبَرُوا۟",
+              "root": "س - ت - ك",
+              "meaning": "and were arrogant",
+              "grammarNote": "Transliteration: wa-is'takbarū"
+            },
+            {
+              "word": "ٱسْتِكْبَارًۭا",
+              "root": "ك - ب - ر",
+              "meaning": "(with) pride",
+              "grammarNote": "Transliteration: is'tik'bāran"
+            }
+          ]
+        },
+        {
+          "id": "71-8-card",
+          "verseNumber": 8,
+          "arabicPhrase": "ثُمَّ إِنِّى دَعَوْتُهُمْ جِهَارًا",
+          "englishPhrase": "Then I called them loudly,",
+          "vocabulary": [
+            {
+              "word": "ثُمَّ",
+              "root": "ث - م",
+              "meaning": "Then",
+              "grammarNote": "Transliteration: thumma"
+            },
+            {
+              "word": "إِنِّى",
+              "root": "ا - ن - ي",
+              "meaning": "indeed, I",
+              "grammarNote": "Transliteration: innī"
+            },
+            {
+              "word": "دَعَوْتُهُمْ",
+              "root": "د - ع - و",
+              "meaning": "invited them",
+              "grammarNote": "Transliteration: daʿawtuhum"
+            },
+            {
+              "word": "جِهَارًۭا",
+              "root": "ج - ه - ر",
+              "meaning": "publicly",
+              "grammarNote": "Transliteration: jihāran"
+            }
+          ]
+        },
+        {
+          "id": "71-9-card",
+          "verseNumber": 9,
+          "arabicPhrase": "ثُمَّ إِنِّىٓ أَعْلَنتُ لَهُمْ وَأَسْرَرْتُ لَهُمْ إِسْرَارًا",
+          "englishPhrase": "and then I spoke to them in public and spoke to them in private.",
+          "vocabulary": [
+            {
+              "word": "ثُمَّ",
+              "root": "ث - م",
+              "meaning": "Then",
+              "grammarNote": "Transliteration: thumma"
+            },
+            {
+              "word": "إِنِّىٓ",
+              "root": "ا - ن - ي",
+              "meaning": "indeed, I",
+              "grammarNote": "Transliteration: innī"
+            },
+            {
+              "word": "أَعْلَنتُ",
+              "root": "ع - ل - ن",
+              "meaning": "announced",
+              "grammarNote": "Transliteration: aʿlantu"
+            },
+            {
+              "word": "لَهُمْ",
+              "root": "ل - ه - م",
+              "meaning": "to them",
+              "grammarNote": "Transliteration: lahum"
+            },
+            {
+              "word": "وَأَسْرَرْتُ",
+              "root": "س - ر - ر",
+              "meaning": "and I confided",
+              "grammarNote": "Transliteration: wa-asrartu"
+            },
+            {
+              "word": "لَهُمْ",
+              "root": "ل - ه - م",
+              "meaning": "to them",
+              "grammarNote": "Transliteration: lahum"
+            },
+            {
+              "word": "إِسْرَارًۭا",
+              "root": "س - ر - ا",
+              "meaning": "secretly",
+              "grammarNote": "Transliteration: is'rāran"
+            }
+          ]
+        },
+        {
+          "id": "71-10-card",
+          "verseNumber": 10,
+          "arabicPhrase": "فَقُلْتُ ٱسْتَغْفِرُوا۟ رَبَّكُمْ إِنَّهُۥ كَانَ غَفَّارًا",
+          "englishPhrase": "So I said, ‘Pray to your Lord for your forgiveness,- Indeed He is Very-Forgiving, -",
+          "vocabulary": [
+            {
+              "word": "فَقُلْتُ",
+              "root": "ق - ل - ت",
+              "meaning": "Then I said",
+              "grammarNote": "Transliteration: faqul'tu"
+            },
+            {
+              "word": "ٱسْتَغْفِرُوا۟",
+              "root": "غ - ف - ر",
+              "meaning": "Ask forgiveness",
+              "grammarNote": "Transliteration: is'taghfirū"
+            },
+            {
+              "word": "رَبَّكُمْ",
+              "root": "ر - ب - ك",
+              "meaning": "(from) your Lord",
+              "grammarNote": "Transliteration: rabbakum"
+            },
+            {
+              "word": "إِنَّهُۥ",
+              "root": "ا - ن - ه",
+              "meaning": "Indeed, He",
+              "grammarNote": "Transliteration: innahu"
+            },
+            {
+              "word": "كَانَ",
+              "root": "ك - ا - ن",
+              "meaning": "is",
+              "grammarNote": "Transliteration: kāna"
+            },
+            {
+              "word": "غَفَّارًۭا",
+              "root": "غ - ف - ر",
+              "meaning": "Oft-Forgiving",
+              "grammarNote": "Transliteration: ghaffāran"
+            }
+          ]
+        },
+        {
+          "id": "71-11-card",
+          "verseNumber": 11,
+          "arabicPhrase": "يُرْسِلِ ٱلسَّمَآءَ عَلَيْكُم مِّدْرَارًا",
+          "englishPhrase": "and He will cause the heavens to rain upon you in abundance,",
+          "vocabulary": [
+            {
+              "word": "يُرْسِلِ",
+              "root": "ر - س - ل",
+              "meaning": "He will send down",
+              "grammarNote": "Transliteration: yur'sili"
+            },
+            {
+              "word": "ٱلسَّمَآءَ",
+              "root": "م - ا - ء",
+              "meaning": "(rain from) the sky",
+              "grammarNote": "Transliteration: l-samāa"
+            },
+            {
+              "word": "عَلَيْكُم",
+              "root": "ع - ل - ي",
+              "meaning": "upon you",
+              "grammarNote": "Transliteration: ʿalaykum"
+            },
+            {
+              "word": "مِّدْرَارًۭا",
+              "root": "د - ر - ر",
+              "meaning": "(in) abundance",
+              "grammarNote": "Transliteration: mid'rāran"
+            }
+          ]
+        },
+        {
+          "id": "71-12-card",
+          "verseNumber": 12,
+          "arabicPhrase": "وَيُمْدِدْكُم بِأَمْوَٰلٍ وَبَنِينَ وَيَجْعَل لَّكُمْ جَنَّـٰتٍ وَيَجْعَل لَّكُمْ أَنْهَـٰرًا",
+          "englishPhrase": "and will help you with riches and sons, and will cause gardens to grow for you, and cause rivers to flow for you.",
+          "vocabulary": [
+            {
+              "word": "وَيُمْدِدْكُم",
+              "root": "م - د - د",
+              "meaning": "And provide you",
+              "grammarNote": "Transliteration: wayum'did'kum"
+            },
+            {
+              "word": "بِأَمْوَٰلٍۢ",
+              "root": "م - و - ل",
+              "meaning": "with wealth",
+              "grammarNote": "Transliteration: bi-amwālin"
+            },
+            {
+              "word": "وَبَنِينَ",
+              "root": "ب - ن - ي",
+              "meaning": "and children",
+              "grammarNote": "Transliteration: wabanīna"
+            },
+            {
+              "word": "وَيَجْعَل",
+              "root": "ج - ع - ل",
+              "meaning": "and make",
+              "grammarNote": "Transliteration: wayajʿal"
+            },
+            {
+              "word": "لَّكُمْ",
+              "root": "ل - ك - م",
+              "meaning": "for you",
+              "grammarNote": "Transliteration: lakum"
+            },
+            {
+              "word": "جَنَّـٰتٍۢ",
+              "root": "ج - ن - ت",
+              "meaning": "gardens",
+              "grammarNote": "Transliteration: jannātin"
+            },
+            {
+              "word": "وَيَجْعَل",
+              "root": "ج - ع - ل",
+              "meaning": "and make",
+              "grammarNote": "Transliteration: wayajʿal"
+            },
+            {
+              "word": "لَّكُمْ",
+              "root": "ل - ك - م",
+              "meaning": "for you",
+              "grammarNote": "Transliteration: lakum"
+            },
+            {
+              "word": "أَنْهَـٰرًۭا",
+              "root": "ن - ه - ر",
+              "meaning": "rivers",
+              "grammarNote": "Transliteration: anhāran"
+            }
+          ]
+        },
+        {
+          "id": "71-13-card",
+          "verseNumber": 13,
+          "arabicPhrase": "مَّا لَكُمْ لَا تَرْجُونَ لِلَّهِ وَقَارًا",
+          "englishPhrase": "What has happened to you that you do not appreciate the Majesty of Allah,",
+          "vocabulary": [
+            {
+              "word": "مَّا",
+              "root": "م - ا",
+              "meaning": "What",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "لَكُمْ",
+              "root": "ل - ك - م",
+              "meaning": "(is) for you",
+              "grammarNote": "Transliteration: lakum"
+            },
+            {
+              "word": "لَا",
+              "root": "ل - ا",
+              "meaning": "not",
+              "grammarNote": "Transliteration: lā"
+            },
+            {
+              "word": "تَرْجُونَ",
+              "root": "ت - ر - ج",
+              "meaning": "you attribute",
+              "grammarNote": "Transliteration: tarjūna"
+            },
+            {
+              "word": "لِلَّهِ",
+              "root": "أ - ل - ه",
+              "meaning": "to Allah",
+              "grammarNote": "Transliteration: lillahi"
+            },
+            {
+              "word": "وَقَارًۭا",
+              "root": "ق - ر - ا",
+              "meaning": "grandeur",
+              "grammarNote": "Transliteration: waqāran"
+            }
+          ]
+        },
+        {
+          "id": "71-14-card",
+          "verseNumber": 14,
+          "arabicPhrase": "وَقَدْ خَلَقَكُمْ أَطْوَارًا",
+          "englishPhrase": "while He has created you in different phases?",
+          "vocabulary": [
+            {
+              "word": "وَقَدْ",
+              "root": "و - ق - د",
+              "meaning": "And indeed",
+              "grammarNote": "Transliteration: waqad"
+            },
+            {
+              "word": "خَلَقَكُمْ",
+              "root": "خ - ل - ق",
+              "meaning": "He created you",
+              "grammarNote": "Transliteration: khalaqakum"
+            },
+            {
+              "word": "أَطْوَارًا",
+              "root": "ط - و - ا",
+              "meaning": "(in) stages",
+              "grammarNote": "Transliteration: aṭwāran"
+            }
+          ]
+        }
+      ],
+      "commentary": "Commentary\n\nيَغْفِرْ‌ لَكُم مِّن ذُنُوبِكُمْ and Allah will forgive you your sins, 71:4). The particle min is often used to indicate division into parts, that is, to refer to only a part of an amount, group or number. If it is taken in that sense here, it would signify that by embracing the faith only those sins would be forgiven which pertains to the Divine rights because violation of human rights would be forgiven only when the believer fulfills the human rights which he has violated [ such as pecuniary obligations ] and if they cannot be fulfilled [ such as hurting somebody physically or verbally ], then the person who has been so hurt must first be requested to forgive. The hadith which reports that by embracing the faith all sins are forgiven must be understood in the light of the foregoing explanation. In other words, the hadith has the same conditions attached to it as the verse under comment, that is, violation of the rights of the human beings is not forgiven except upon fulfillment of those rights or seeking forgiveness from the victims of that violation. Other scholars of Tafsir interpret the particle min as za'idah, (having no meaning, and added only because of usage). In this way, it signifies that all their sins would be forgiven. However, on the basis of other texts, this general expression is subject to the conditions mentioned above.",
+      "subsections": [
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "يَغْفِرْ‌ لَكُم مِّن ذُنُوبِكُمْ and Allah will forgive you your sins, 71:4). The particle min is often used to indicate division into parts, that is, to refer to only a part of an amount, group or number. If it is taken in that sense here, it would signify that by embracing the faith only those sins would be forgiven which pertains to the Divine rights because violation of human rights would be forgiven only when the believer fulfills the human rights which he has violated [ such as pecuniary obligations ] and if they cannot be fulfilled [ such as hurting somebody physically or verbally ], then the person who has been so hurt must first be requested to forgive. The hadith which reports that by embracing the faith all sins are forgiven must be understood in the light of the foregoing explanation. In other words, the hadith has the same conditions attached to it as the verse under..."
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "71-15-22",
+      "surahNumber": 71,
+      "verseRange": [
+        15,
+        22
+      ],
+      "title": "Did you not see how Allah has created",
+      "juzNumber": 29,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5606/mode/2up",
+      "arabicText": "أَلَمْ تَرَوْا۟ كَيْفَ خَلَقَ ٱللَّهُ سَبْعَ سَمَـٰوَٰتٍ طِبَاقًا ۝١٥ وَجَعَلَ ٱلْقَمَرَ فِيهِنَّ نُورًا وَجَعَلَ ٱلشَّمْسَ سِرَاجًا ۝١٦ وَٱللَّهُ أَنۢبَتَكُم مِّنَ ٱلْأَرْضِ نَبَاتًا ۝١٧ ثُمَّ يُعِيدُكُمْ فِيهَا وَيُخْرِجُكُمْ إِخْرَاجًا ۝١٨ وَٱللَّهُ جَعَلَ لَكُمُ ٱلْأَرْضَ بِسَاطًا ۝١٩ لِّتَسْلُكُوا۟ مِنْهَا سُبُلًا فِجَاجًا ۝٢٠ قَالَ نُوحٌ رَّبِّ إِنَّهُمْ عَصَوْنِى وَٱتَّبَعُوا۟ مَن لَّمْ يَزِدْهُ مَالُهُۥ وَوَلَدُهُۥٓ إِلَّا خَسَارًا ۝٢١ وَمَكَرُوا۟ مَكْرًا كُبَّارًا ۝٢٢",
+      "translation": "Did you not see how Allah has created seven heavens one upon another, ۝ and has made the moon a light therein, and made the sun a lamp? ۝ And Allah has caused you to grow well out of the earth, ۝ then He will send you back into it, and will bring you forth once again. ۝ And Allah has made the earth a spread for you, ۝ so that you may go about its broad ways.’” ۝ And said NūH, “My Lord, they disobeyed me, and followed him whose wealth and children added nothing to him but loss, ۝ and they devised a mighty plot, ۝",
+      "phraseCards": [
+        {
+          "id": "71-15-card",
+          "verseNumber": 15,
+          "arabicPhrase": "أَلَمْ تَرَوْا۟ كَيْفَ خَلَقَ ٱللَّهُ سَبْعَ سَمَـٰوَٰتٍ طِبَاقًا",
+          "englishPhrase": "Did you not see how Allah has created seven heavens one upon another,",
+          "vocabulary": [
+            {
+              "word": "أَلَمْ",
+              "root": "ا - ل - م",
+              "meaning": "Do not",
+              "grammarNote": "Transliteration: alam"
+            },
+            {
+              "word": "تَرَوْا۟",
+              "root": "ر - و - ا",
+              "meaning": "you see",
+              "grammarNote": "Transliteration: taraw"
+            },
+            {
+              "word": "كَيْفَ",
+              "root": "ك - ي - ف",
+              "meaning": "how",
+              "grammarNote": "Transliteration: kayfa"
+            },
+            {
+              "word": "خَلَقَ",
+              "root": "خ - ل - ق",
+              "meaning": "did create",
+              "grammarNote": "Transliteration: khalaqa"
+            },
+            {
+              "word": "ٱللَّهُ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah",
+              "grammarNote": "Transliteration: l-lahu"
+            },
+            {
+              "word": "سَبْعَ",
+              "root": "س - ب - ع",
+              "meaning": "(the) seven",
+              "grammarNote": "Transliteration: sabʿa"
+            },
+            {
+              "word": "سَمَـٰوَٰتٍۢ",
+              "root": "م - و - ت",
+              "meaning": "heavens",
+              "grammarNote": "Transliteration: samāwātin"
+            },
+            {
+              "word": "طِبَاقًۭا",
+              "root": "ط - ب - ق",
+              "meaning": "(in) layers",
+              "grammarNote": "Transliteration: ṭibāqan"
+            }
+          ]
+        },
+        {
+          "id": "71-16-card",
+          "verseNumber": 16,
+          "arabicPhrase": "وَجَعَلَ ٱلْقَمَرَ فِيهِنَّ نُورًا وَجَعَلَ ٱلشَّمْسَ سِرَاجًا",
+          "englishPhrase": "and has made the moon a light therein, and made the sun a lamp?",
+          "vocabulary": [
+            {
+              "word": "وَجَعَلَ",
+              "root": "ج - ع - ل",
+              "meaning": "And made",
+              "grammarNote": "Transliteration: wajaʿala"
+            },
+            {
+              "word": "ٱلْقَمَرَ",
+              "root": "ق - م - ر",
+              "meaning": "the moon",
+              "grammarNote": "Transliteration: l-qamara"
+            },
+            {
+              "word": "فِيهِنَّ",
+              "root": "ي - ه - ن",
+              "meaning": "therein",
+              "grammarNote": "Transliteration: fīhinna"
+            },
+            {
+              "word": "نُورًۭا",
+              "root": "و - ر - ا",
+              "meaning": "a light",
+              "grammarNote": "Transliteration: nūran"
+            },
+            {
+              "word": "وَجَعَلَ",
+              "root": "ج - ع - ل",
+              "meaning": "and made",
+              "grammarNote": "Transliteration: wajaʿala"
+            },
+            {
+              "word": "ٱلشَّمْسَ",
+              "root": "ش - م - س",
+              "meaning": "the sun",
+              "grammarNote": "Transliteration: l-shamsa"
+            },
+            {
+              "word": "سِرَاجًۭا",
+              "root": "ر - ج - ا",
+              "meaning": "a lamp",
+              "grammarNote": "Transliteration: sirājan"
+            }
+          ]
+        },
+        {
+          "id": "71-17-card",
+          "verseNumber": 17,
+          "arabicPhrase": "وَٱللَّهُ أَنۢبَتَكُم مِّنَ ٱلْأَرْضِ نَبَاتًا",
+          "englishPhrase": "And Allah has caused you to grow well out of the earth,",
+          "vocabulary": [
+            {
+              "word": "وَٱللَّهُ",
+              "root": "أ - ل - ه",
+              "meaning": "And Allah",
+              "grammarNote": "Transliteration: wal-lahu"
+            },
+            {
+              "word": "أَنۢبَتَكُم",
+              "root": "ن - ب - ت",
+              "meaning": "has caused you to grow",
+              "grammarNote": "Transliteration: anbatakum"
+            },
+            {
+              "word": "مِّنَ",
+              "root": "م - ن",
+              "meaning": "from",
+              "grammarNote": "Transliteration: mina"
+            },
+            {
+              "word": "ٱلْأَرْضِ",
+              "root": "ا - ر - ض",
+              "meaning": "the earth",
+              "grammarNote": "Transliteration: l-arḍi"
+            },
+            {
+              "word": "نَبَاتًۭا",
+              "root": "ب - ت - ا",
+              "meaning": "(as) a growth",
+              "grammarNote": "Transliteration: nabātan"
+            }
+          ]
+        },
+        {
+          "id": "71-18-card",
+          "verseNumber": 18,
+          "arabicPhrase": "ثُمَّ يُعِيدُكُمْ فِيهَا وَيُخْرِجُكُمْ إِخْرَاجًا",
+          "englishPhrase": "then He will send you back into it, and will bring you forth once again.",
+          "vocabulary": [
+            {
+              "word": "ثُمَّ",
+              "root": "ث - م",
+              "meaning": "Then",
+              "grammarNote": "Transliteration: thumma"
+            },
+            {
+              "word": "يُعِيدُكُمْ",
+              "root": "ع - ي - د",
+              "meaning": "He will return you",
+              "grammarNote": "Transliteration: yuʿīdukum"
+            },
+            {
+              "word": "فِيهَا",
+              "root": "ي - ه - ا",
+              "meaning": "into it",
+              "grammarNote": "Transliteration: fīhā"
+            },
+            {
+              "word": "وَيُخْرِجُكُمْ",
+              "root": "خ - ر - ج",
+              "meaning": "and bring you forth",
+              "grammarNote": "Transliteration: wayukh'rijukum"
+            },
+            {
+              "word": "إِخْرَاجًۭا",
+              "root": "خ - ر - ا",
+              "meaning": "(a new) bringing forth",
+              "grammarNote": "Transliteration: ikh'rājan"
+            }
+          ]
+        },
+        {
+          "id": "71-19-card",
+          "verseNumber": 19,
+          "arabicPhrase": "وَٱللَّهُ جَعَلَ لَكُمُ ٱلْأَرْضَ بِسَاطًا",
+          "englishPhrase": "And Allah has made the earth a spread for you,",
+          "vocabulary": [
+            {
+              "word": "وَٱللَّهُ",
+              "root": "أ - ل - ه",
+              "meaning": "And Allah",
+              "grammarNote": "Transliteration: wal-lahu"
+            },
+            {
+              "word": "جَعَلَ",
+              "root": "ج - ع - ل",
+              "meaning": "made",
+              "grammarNote": "Transliteration: jaʿala"
+            },
+            {
+              "word": "لَكُمُ",
+              "root": "ل - ك - م",
+              "meaning": "for you",
+              "grammarNote": "Transliteration: lakumu"
+            },
+            {
+              "word": "ٱلْأَرْضَ",
+              "root": "ا - ر - ض",
+              "meaning": "the earth",
+              "grammarNote": "Transliteration: l-arḍa"
+            },
+            {
+              "word": "بِسَاطًۭا",
+              "root": "ا - ط - ا",
+              "meaning": "an expanse",
+              "grammarNote": "Transliteration: bisāṭan"
+            }
+          ]
+        },
+        {
+          "id": "71-20-card",
+          "verseNumber": 20,
+          "arabicPhrase": "لِّتَسْلُكُوا۟ مِنْهَا سُبُلًا فِجَاجًا",
+          "englishPhrase": "so that you may go about its broad ways.’”",
+          "vocabulary": [
+            {
+              "word": "لِّتَسْلُكُوا۟",
+              "root": "س - ل - ك",
+              "meaning": "That you may go along",
+              "grammarNote": "Transliteration: litaslukū"
+            },
+            {
+              "word": "مِنْهَا",
+              "root": "ن - ه - ا",
+              "meaning": "therein",
+              "grammarNote": "Transliteration: min'hā"
+            },
+            {
+              "word": "سُبُلًۭا",
+              "root": "ب - ل - ا",
+              "meaning": "(in) paths",
+              "grammarNote": "Transliteration: subulan"
+            },
+            {
+              "word": "فِجَاجًۭا",
+              "root": "ج - ج - ا",
+              "meaning": "wide",
+              "grammarNote": "Transliteration: fijājan"
+            }
+          ]
+        },
+        {
+          "id": "71-21-card",
+          "verseNumber": 21,
+          "arabicPhrase": "قَالَ نُوحٌ رَّبِّ إِنَّهُمْ عَصَوْنِى وَٱتَّبَعُوا۟ مَن لَّمْ يَزِدْهُ مَالُهُۥ وَوَلَدُهُۥٓ إِلَّا خَسَارًا",
+          "englishPhrase": "And said NūH, “My Lord, they disobeyed me, and followed him whose wealth and children added nothing to him but loss,",
+          "vocabulary": [
+            {
+              "word": "قَالَ",
+              "root": "ق - ا - ل",
+              "meaning": "Said",
+              "grammarNote": "Transliteration: qāla"
+            },
+            {
+              "word": "نُوحٌۭ",
+              "root": "ن - و - ح",
+              "meaning": "Nuh",
+              "grammarNote": "Transliteration: nūḥun"
+            },
+            {
+              "word": "رَّبِّ",
+              "root": "ر - ب - ب",
+              "meaning": "My Lord",
+              "grammarNote": "Transliteration: rabbi"
+            },
+            {
+              "word": "إِنَّهُمْ",
+              "root": "ن - ه - م",
+              "meaning": "Indeed, they",
+              "grammarNote": "Transliteration: innahum"
+            },
+            {
+              "word": "عَصَوْنِى",
+              "root": "ع - ص - و",
+              "meaning": "disobeyed me",
+              "grammarNote": "Transliteration: ʿaṣawnī"
+            },
+            {
+              "word": "وَٱتَّبَعُوا۟",
+              "root": "ت - ب - ع",
+              "meaning": "and followed",
+              "grammarNote": "Transliteration: wa-ittabaʿū"
+            },
+            {
+              "word": "مَن",
+              "root": "م - ن",
+              "meaning": "(the one) who",
+              "grammarNote": "Transliteration: man"
+            },
+            {
+              "word": "لَّمْ",
+              "root": "ل - م",
+              "meaning": "(did) not",
+              "grammarNote": "Transliteration: lam"
+            },
+            {
+              "word": "يَزِدْهُ",
+              "root": "ي - ز - د",
+              "meaning": "increase him",
+              "grammarNote": "Transliteration: yazid'hu"
+            },
+            {
+              "word": "مَالُهُۥ",
+              "root": "م - ا - ل",
+              "meaning": "his wealth",
+              "grammarNote": "Transliteration: māluhu"
+            },
+            {
+              "word": "وَوَلَدُهُۥٓ",
+              "root": "و - ل - د",
+              "meaning": "and his children",
+              "grammarNote": "Transliteration: wawaladuhu"
+            },
+            {
+              "word": "إِلَّا",
+              "root": "ا - ل - ا",
+              "meaning": "except",
+              "grammarNote": "Transliteration: illā"
+            },
+            {
+              "word": "خَسَارًۭا",
+              "root": "خ - س - ر",
+              "meaning": "(in) loss",
+              "grammarNote": "Transliteration: khasāran"
+            }
+          ]
+        },
+        {
+          "id": "71-22-card",
+          "verseNumber": 22,
+          "arabicPhrase": "وَمَكَرُوا۟ مَكْرًا كُبَّارًا",
+          "englishPhrase": "and they devised a mighty plot,",
+          "vocabulary": [
+            {
+              "word": "وَمَكَرُوا۟",
+              "root": "م - ك - ر",
+              "meaning": "And they have planned",
+              "grammarNote": "Transliteration: wamakarū"
+            },
+            {
+              "word": "مَكْرًۭا",
+              "root": "ك - ر - ا",
+              "meaning": "a plan",
+              "grammarNote": "Transliteration: makran"
+            },
+            {
+              "word": "كُبَّارًۭا",
+              "root": "ك - ب - ر",
+              "meaning": "great",
+              "grammarNote": "Transliteration: kubbāran"
+            }
+          ]
+        }
+      ],
+      "commentary": "لَمْ تَرَ‌وْا كَيْفَ خَلَقَ اللَّـهُ سَبْعَ سَمَاوَاتٍ طِبَاقًا وَجَعَلَ الْقَمَرَ‌ فِيهِنَّ نُورً‌ا\n\n(Did you not see how Allah has created seven heavens one upon another, and has made the moon a light therein? ....71:15-16)\n\nThese verses are adduced as proof positive of Divine Oneness and His power. He has created seven heavens, one on top of the other, and placed the moon as a light in them. The prepositional phrase in the verse apparently indicates that the moon is placed in the body of the heavens. The subject is fully discussed in Surah Al-Furqan under the following verse:\n\nتَبَارَ‌كَ الَّذِي جَعَلَ فِي السَّمَاءِ بُرُ‌وجًا وَجَعَلَ فِيهَا سِرَ‌اجًا وَقَمَرً‌ا مُّنِيرً‌ا\n\nGlorious is the One who made stellar formations in the sky and placed therein a lamp (sun) and a bright moon. [ 25:61] Complaining about his people, Prophet Nuh (علیہ السلام) said:\n\nوَمَكَرُ‌وا مَكْرً‌ا كُبَّارً‌ا (and they devised an enormous plan....71:22). In other words, they hatched a mighty plot. They rejected the message and persecuted Prophet Nuh (علیہ السلام) . In addition, they let loose hooligans and hoodlums on him. They agreed that they will not abandon their gods, especially the five major idols whose names appear in the following verse:",
+      "subsections": [
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "(Did you not see how Allah has created seven heavens one upon another, and has made the moon a light therein? ....71:15-16)"
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "71-23-24",
+      "surahNumber": 71,
+      "verseRange": [
+        23,
+        24
+      ],
+      "title": "And said (to their people), “Never forsake your",
+      "juzNumber": 29,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5606/mode/2up",
+      "arabicText": "وَقَالُوا۟ لَا تَذَرُنَّ ءَالِهَتَكُمْ وَلَا تَذَرُنَّ وَدًّا وَلَا سُوَاعًا وَلَا يَغُوثَ وَيَعُوقَ وَنَسْرًا ۝٢٣ وَقَدْ أَضَلُّوا۟ كَثِيرًا ۖ وَلَا تَزِدِ ٱلظَّـٰلِمِينَ إِلَّا ضَلَـٰلًا ۝٢٤",
+      "translation": "and said (to their people), “Never forsake your gods, and never forsake Wadd, nor Suwā‘, nor Yaghūth and Ya‘ūq and Nasr. ۝ And they have led many astray. And (O my Lord,) let not the wrongdoers progress in anything but deviation from the right path.” ۝",
+      "phraseCards": [
+        {
+          "id": "71-23-card",
+          "verseNumber": 23,
+          "arabicPhrase": "وَقَالُوا۟ لَا تَذَرُنَّ ءَالِهَتَكُمْ وَلَا تَذَرُنَّ وَدًّا وَلَا سُوَاعًا وَلَا يَغُوثَ وَيَعُوقَ وَنَسْرًا",
+          "englishPhrase": "and said (to their people), “Never forsake your gods, and never forsake Wadd, nor Suwā‘, nor Yaghūth and Ya‘ūq and Nasr.",
+          "vocabulary": [
+            {
+              "word": "وَقَالُوا۟",
+              "root": "ق - ا - ل",
+              "meaning": "And they said",
+              "grammarNote": "Transliteration: waqālū"
+            },
+            {
+              "word": "لَا",
+              "root": "ل - ا",
+              "meaning": "(Do) not",
+              "grammarNote": "Transliteration: lā"
+            },
+            {
+              "word": "تَذَرُنَّ",
+              "root": "ذ - ر - ن",
+              "meaning": "leave",
+              "grammarNote": "Transliteration: tadharunna"
+            },
+            {
+              "word": "ءَالِهَتَكُمْ",
+              "root": "ء - ل - ه",
+              "meaning": "your gods",
+              "grammarNote": "Transliteration: ālihatakum"
+            },
+            {
+              "word": "وَلَا",
+              "root": "و - ل - ا",
+              "meaning": "and (do) not",
+              "grammarNote": "Transliteration: walā"
+            },
+            {
+              "word": "تَذَرُنَّ",
+              "root": "ذ - ر - ن",
+              "meaning": "leave",
+              "grammarNote": "Transliteration: tadharunna"
+            },
+            {
+              "word": "وَدًّۭا",
+              "root": "و - د - ا",
+              "meaning": "Wadd",
+              "grammarNote": "Transliteration: waddan"
+            },
+            {
+              "word": "وَلَا",
+              "root": "و - ل - ا",
+              "meaning": "and not",
+              "grammarNote": "Transliteration: walā"
+            },
+            {
+              "word": "سُوَاعًۭا",
+              "root": "و - ع - ا",
+              "meaning": "Suwa",
+              "grammarNote": "Transliteration: suwāʿan"
+            },
+            {
+              "word": "وَلَا",
+              "root": "و - ل - ا",
+              "meaning": "and not",
+              "grammarNote": "Transliteration: walā"
+            },
+            {
+              "word": "يَغُوثَ",
+              "root": "غ - و - ث",
+              "meaning": "Yaguth",
+              "grammarNote": "Transliteration: yaghūtha"
+            },
+            {
+              "word": "وَيَعُوقَ",
+              "root": "ع - و - ق",
+              "meaning": "and Yauq",
+              "grammarNote": "Transliteration: wayaʿūqa"
+            },
+            {
+              "word": "وَنَسْرًۭا",
+              "root": "س - ر - ا",
+              "meaning": "and Nasr",
+              "grammarNote": "Transliteration: wanasran"
+            }
+          ]
+        },
+        {
+          "id": "71-24-card",
+          "verseNumber": 24,
+          "arabicPhrase": "وَقَدْ أَضَلُّوا۟ كَثِيرًا ۖ وَلَا تَزِدِ ٱلظَّـٰلِمِينَ إِلَّا ضَلَـٰلًا",
+          "englishPhrase": "And they have led many astray. And (O my Lord,) let not the wrongdoers progress in anything but deviation from the right path.”",
+          "vocabulary": [
+            {
+              "word": "وَقَدْ",
+              "root": "و - ق - د",
+              "meaning": "And indeed",
+              "grammarNote": "Transliteration: waqad"
+            },
+            {
+              "word": "أَضَلُّوا۟",
+              "root": "ا - ض - ل",
+              "meaning": "they have led astray",
+              "grammarNote": "Transliteration: aḍallū"
+            },
+            {
+              "word": "كَثِيرًۭا ۖ",
+              "root": "ك - ث - ي",
+              "meaning": "many",
+              "grammarNote": "Transliteration: kathīran"
+            },
+            {
+              "word": "وَلَا",
+              "root": "و - ل - ا",
+              "meaning": "And not",
+              "grammarNote": "Transliteration: walā"
+            },
+            {
+              "word": "تَزِدِ",
+              "root": "ت - ز - د",
+              "meaning": "increase",
+              "grammarNote": "Transliteration: tazidi"
+            },
+            {
+              "word": "ٱلظَّـٰلِمِينَ",
+              "root": "ظ - ل - م",
+              "meaning": "the wrongdoers",
+              "grammarNote": "Transliteration: l-ẓālimīna"
+            },
+            {
+              "word": "إِلَّا",
+              "root": "ا - ل - ا",
+              "meaning": "except",
+              "grammarNote": "Transliteration: illā"
+            },
+            {
+              "word": "ضَلَـٰلًۭا",
+              "root": "ض - ل - ل",
+              "meaning": "(in) error",
+              "grammarNote": "Transliteration: ḍalālan"
+            }
+          ]
+        }
+      ],
+      "commentary": "لَا تَذَرُ‌نَّ آلِهَتَكُمْ وَلَا تَذَرُ‌نَّ وَدًّا وَلَا سُوَاعًا وَلَا يَغُوثَ وَيَعُوقَ وَنَسْرً‌ا (and never forsake Wadd, nor Suwa', nor yaghuth and Ya` uq and Nasr…71:23). Imam Baghawi reports that these five were in fact righteous servants of Allah who lived in the intervening period between Prophets 'Adam and Nuh (علیہما السلام) . There were many people who held them in high regard and followed their footsteps. Even after their death, they followed their footsteps and complied with Divine injunctions. A while later, Shaitan misled them. He put it to them that if they make pictures of their righteous elders and place them in front, their worship would be perfect and they would attain the quality of humility and humbleness. Those people fell into the Shaitanic trap and carved statues of them and placed them in their temples. When they saw the statues of their elders, their memories were refreshed and experienced a special feeling. That generation gradually died and a new generation came up. Satan played another trick with them. He imparted to them that the object of worship of their elders were statues and idols. They fell for this trick and worshipped them. This is the beginning of idol-worship or idolatry. People of Prophet Nuh (علیہ السلام) gradually got steeped in idolatry. They had many idols, the five mentioned in the verse under comment being the most popular because of the deep love they had for them.\n\nوَلَا تَزِدِ الظَّالِمِينَ إِلَّا ضَلَالًا (…let not the wrongdoers progress in anything but deviation from the right path 71:24). This is the supplication of Prophet Nuh (علیہ السلام) against his people. It may not be surmised that the duty and obligation of a Prophetic office is to guide the people, but here Prophet NuhI is praying for increase in his people's misguidance. Prophet Nuh (علیہ السلام) did not invoke this curse out of despair or impatience. In fact, he invoked it when, after doing full justice to his mission for many centuries, his people chose the path of deviation, rebellion, disbelief and obstinacy and persisted in it until they had reached a point of no return, of which Allah informed him thus, 'And it was revealed to Nuh (علیہ السلام) that none of your people would ever believe except those who have already believed__ [ 11:36] '. This situation made it clear to him that his people would definitely and certainly die in the state of disbelief. So he prayed for their final destiny to overtake them sooner and destroy them.",
+      "subsections": [
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "وَلَا تَزِدِ الظَّالِمِينَ إِلَّا ضَلَالًا (…let not the wrongdoers progress in anything but deviation from the right path 71:24). This is the supplication of Prophet Nuh (علیہ السلام) against his people. It may not be surmised that the duty and obligation of a Prophetic office is to guide the people, but here Prophet NuhI is praying for increase in his people's misguidance. Prophet Nuh (علیہ السلام) did not invoke this curse out of despair or impatience. In fact, he invoked it when, after doing full justice to his mission for many centuries, his people chose the path of deviation, rebellion, disbelief and obstinacy and persisted in it until they had reached a point of no return, of which Allah informed him thus, 'And it was revealed to Nuh (علیہ السلام) that none of your people would ever believe except those who have already believed__ [ 11:36] '. This situation made it clear to him..."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "لَا تَذَرُ‌نَّ آلِهَتَكُمْ وَلَا تَذَرُ‌نَّ وَدًّا وَلَا سُوَاعًا وَلَا يَغُوثَ وَيَعُوقَ وَنَسْرً‌ا (and never forsake Wadd, nor Suwa', nor yaghuth and Ya` uq and Nasr…71:23). Imam Baghawi reports that these five were in fact righteous servants of Allah who lived in the intervening period between Prophets 'Adam and Nuh (علیہما السلام) . There were many people who held them in high regard and followed their footsteps. Even after their death, they followed their footsteps and complied with Divine injunctions. A while later, Shaitan misled them. He put it to them that if they make pictures of their righteous elders and place them in front, their worship would be perfect and they would attain the quality of humility and humbleness. Those people fell into the Shaitanic trap and carved statues of them and placed them in their temples. When they saw the statues of their elders, their memories..."
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "71-25-28",
+      "surahNumber": 71,
+      "verseRange": [
+        25,
+        28
+      ],
+      "title": "Qur’ an Confirms Punishment in the Grave",
+      "juzNumber": 29,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5606/mode/2up",
+      "arabicText": "مِّمَّا خَطِيٓـَٔـٰتِهِمْ أُغْرِقُوا۟ فَأُدْخِلُوا۟ نَارًا فَلَمْ يَجِدُوا۟ لَهُم مِّن دُونِ ٱللَّهِ أَنصَارًا ۝٢٥ وَقَالَ نُوحٌ رَّبِّ لَا تَذَرْ عَلَى ٱلْأَرْضِ مِنَ ٱلْكَـٰفِرِينَ دَيَّارًا ۝٢٦ إِنَّكَ إِن تَذَرْهُمْ يُضِلُّوا۟ عِبَادَكَ وَلَا يَلِدُوٓا۟ إِلَّا فَاجِرًا كَفَّارًا ۝٢٧ رَّبِّ ٱغْفِرْ لِى وَلِوَٰلِدَىَّ وَلِمَن دَخَلَ بَيْتِىَ مُؤْمِنًا وَلِلْمُؤْمِنِينَ وَٱلْمُؤْمِنَـٰتِ وَلَا تَزِدِ ٱلظَّـٰلِمِينَ إِلَّا تَبَارًۢا ۝٢٨",
+      "translation": "Because of their sins they were drowned, and then admitted into the Fire. So they found no helpers for them besides Allah. ۝ And said NūH, “My Lord, do not leave on earth even a single inhabitant (surviving) out of the disbelievers. ۝ If You leave them (surviving), they will lead Your servants astray, and will beget none but a sinful disbeliever. ۝ My Lord, grant pardon to me, and to my parents, and to everyone who enters my home as a believer, and to all the believing men and believing women, and do not increase the wrongdoers but in ruin. ۝",
+      "phraseCards": [
+        {
+          "id": "71-25-card",
+          "verseNumber": 25,
+          "arabicPhrase": "مِّمَّا خَطِيٓـَٔـٰتِهِمْ أُغْرِقُوا۟ فَأُدْخِلُوا۟ نَارًا فَلَمْ يَجِدُوا۟ لَهُم مِّن دُونِ ٱللَّهِ أَنصَارًا",
+          "englishPhrase": "Because of their sins they were drowned, and then admitted into the Fire. So they found no helpers for them besides Allah.",
+          "vocabulary": [
+            {
+              "word": "مِّمَّا",
+              "root": "م - م - ا",
+              "meaning": "Because of",
+              "grammarNote": "Transliteration: mimmā"
+            },
+            {
+              "word": "خَطِيٓـَٔـٰتِهِمْ",
+              "root": "خ - ط - ي",
+              "meaning": "their sins",
+              "grammarNote": "Transliteration: khaṭīātihim"
+            },
+            {
+              "word": "أُغْرِقُوا۟",
+              "root": "غ - ر - ق",
+              "meaning": "they were drowned",
+              "grammarNote": "Transliteration: ugh'riqū"
+            },
+            {
+              "word": "فَأُدْخِلُوا۟",
+              "root": "د - خ - ل",
+              "meaning": "then made to enter",
+              "grammarNote": "Transliteration: fa-ud'khilū"
+            },
+            {
+              "word": "نَارًۭا",
+              "root": "ا - ر - ا",
+              "meaning": "(the) Fire",
+              "grammarNote": "Transliteration: nāran"
+            },
+            {
+              "word": "فَلَمْ",
+              "root": "ف - ل - م",
+              "meaning": "and not",
+              "grammarNote": "Transliteration: falam"
+            },
+            {
+              "word": "يَجِدُوا۟",
+              "root": "ي - ج - د",
+              "meaning": "they found",
+              "grammarNote": "Transliteration: yajidū"
+            },
+            {
+              "word": "لَهُم",
+              "root": "ل - ه - م",
+              "meaning": "for themselves",
+              "grammarNote": "Transliteration: lahum"
+            },
+            {
+              "word": "مِّن",
+              "root": "م - ن",
+              "meaning": "from",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "دُونِ",
+              "root": "د - و - ن",
+              "meaning": "besides",
+              "grammarNote": "Transliteration: dūni"
+            },
+            {
+              "word": "ٱللَّهِ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah",
+              "grammarNote": "Transliteration: l-lahi"
+            },
+            {
+              "word": "أَنصَارًۭا",
+              "root": "ن - ص - ا",
+              "meaning": "any helpers",
+              "grammarNote": "Transliteration: anṣāran"
+            }
+          ]
+        },
+        {
+          "id": "71-26-card",
+          "verseNumber": 26,
+          "arabicPhrase": "وَقَالَ نُوحٌ رَّبِّ لَا تَذَرْ عَلَى ٱلْأَرْضِ مِنَ ٱلْكَـٰفِرِينَ دَيَّارًا",
+          "englishPhrase": "And said NūH, “My Lord, do not leave on earth even a single inhabitant (surviving) out of the disbelievers.",
+          "vocabulary": [
+            {
+              "word": "وَقَالَ",
+              "root": "ق - ا - ل",
+              "meaning": "And said",
+              "grammarNote": "Transliteration: waqāla"
+            },
+            {
+              "word": "نُوحٌۭ",
+              "root": "ن - و - ح",
+              "meaning": "Nuh",
+              "grammarNote": "Transliteration: nūḥun"
+            },
+            {
+              "word": "رَّبِّ",
+              "root": "ر - ب - ب",
+              "meaning": "My Lord",
+              "grammarNote": "Transliteration: rabbi"
+            },
+            {
+              "word": "لَا",
+              "root": "ل - ا",
+              "meaning": "(Do) not",
+              "grammarNote": "Transliteration: lā"
+            },
+            {
+              "word": "تَذَرْ",
+              "root": "ت - ذ - ر",
+              "meaning": "leave",
+              "grammarNote": "Transliteration: tadhar"
+            },
+            {
+              "word": "عَلَى",
+              "root": "ع - ل - و",
+              "meaning": "on",
+              "grammarNote": "Transliteration: ʿalā"
+            },
+            {
+              "word": "ٱلْأَرْضِ",
+              "root": "ا - ر - ض",
+              "meaning": "the earth",
+              "grammarNote": "Transliteration: l-arḍi"
+            },
+            {
+              "word": "مِنَ",
+              "root": "م - ن",
+              "meaning": "any",
+              "grammarNote": "Transliteration: mina"
+            },
+            {
+              "word": "ٱلْكَـٰفِرِينَ",
+              "root": "ك - ف - ر",
+              "meaning": "(of) the disbelievers",
+              "grammarNote": "Transliteration: l-kāfirīna"
+            },
+            {
+              "word": "دَيَّارًا",
+              "root": "د - ي - ر",
+              "meaning": "(as) an inhabitant",
+              "grammarNote": "Transliteration: dayyāran"
+            }
+          ]
+        },
+        {
+          "id": "71-27-card",
+          "verseNumber": 27,
+          "arabicPhrase": "إِنَّكَ إِن تَذَرْهُمْ يُضِلُّوا۟ عِبَادَكَ وَلَا يَلِدُوٓا۟ إِلَّا فَاجِرًا كَفَّارًا",
+          "englishPhrase": "If You leave them (surviving), they will lead Your servants astray, and will beget none but a sinful disbeliever.",
+          "vocabulary": [
+            {
+              "word": "إِنَّكَ",
+              "root": "ا - ن - ك",
+              "meaning": "Indeed, You",
+              "grammarNote": "Transliteration: innaka"
+            },
+            {
+              "word": "إِن",
+              "root": "ا - ن - ن",
+              "meaning": "if",
+              "grammarNote": "Transliteration: in"
+            },
+            {
+              "word": "تَذَرْهُمْ",
+              "root": "ت - ذ - ر",
+              "meaning": "You leave them",
+              "grammarNote": "Transliteration: tadharhum"
+            },
+            {
+              "word": "يُضِلُّوا۟",
+              "root": "ي - ض - ل",
+              "meaning": "they will mislead",
+              "grammarNote": "Transliteration: yuḍillū"
+            },
+            {
+              "word": "عِبَادَكَ",
+              "root": "ع - ب - د",
+              "meaning": "Your slaves",
+              "grammarNote": "Transliteration: ʿibādaka"
+            },
+            {
+              "word": "وَلَا",
+              "root": "و - ل - ا",
+              "meaning": "and not",
+              "grammarNote": "Transliteration: walā"
+            },
+            {
+              "word": "يَلِدُوٓا۟",
+              "root": "ي - ل - د",
+              "meaning": "they will beget",
+              "grammarNote": "Transliteration: yalidū"
+            },
+            {
+              "word": "إِلَّا",
+              "root": "ا - ل - ا",
+              "meaning": "except",
+              "grammarNote": "Transliteration: illā"
+            },
+            {
+              "word": "فَاجِرًۭا",
+              "root": "ج - ر - ا",
+              "meaning": "a wicked",
+              "grammarNote": "Transliteration: fājiran"
+            },
+            {
+              "word": "كَفَّارًۭا",
+              "root": "ك - ف - ر",
+              "meaning": "a disbeliever",
+              "grammarNote": "Transliteration: kaffāran"
+            }
+          ]
+        },
+        {
+          "id": "71-28-card",
+          "verseNumber": 28,
+          "arabicPhrase": "رَّبِّ ٱغْفِرْ لِى وَلِوَٰلِدَىَّ وَلِمَن دَخَلَ بَيْتِىَ مُؤْمِنًا وَلِلْمُؤْمِنِينَ وَٱلْمُؤْمِنَـٰتِ وَلَا تَزِدِ ٱلظَّـٰلِمِينَ إِلَّا تَبَارًۢا",
+          "englishPhrase": "My Lord, grant pardon to me, and to my parents, and to everyone who enters my home as a believer, and to all the believing men and believing women, and do not increase the wrongdoers but in ruin.",
+          "vocabulary": [
+            {
+              "word": "رَّبِّ",
+              "root": "ر - ب - ب",
+              "meaning": "My Lord",
+              "grammarNote": "Transliteration: rabbi"
+            },
+            {
+              "word": "ٱغْفِرْ",
+              "root": "غ - ف - ر",
+              "meaning": "Forgive",
+              "grammarNote": "Transliteration: igh'fir"
+            },
+            {
+              "word": "لِى",
+              "root": "ل - ي",
+              "meaning": "me",
+              "grammarNote": "Transliteration: lī"
+            },
+            {
+              "word": "وَلِوَٰلِدَىَّ",
+              "root": "ل - و - ل",
+              "meaning": "and my parents",
+              "grammarNote": "Transliteration: waliwālidayya"
+            },
+            {
+              "word": "وَلِمَن",
+              "root": "ل - م - ن",
+              "meaning": "and whoever",
+              "grammarNote": "Transliteration: waliman"
+            },
+            {
+              "word": "دَخَلَ",
+              "root": "د - خ - ل",
+              "meaning": "enters",
+              "grammarNote": "Transliteration: dakhala"
+            },
+            {
+              "word": "بَيْتِىَ",
+              "root": "ي - ت - ي",
+              "meaning": "my house",
+              "grammarNote": "Transliteration: baytiya"
+            },
+            {
+              "word": "مُؤْمِنًۭا",
+              "root": "م - ؤ - م",
+              "meaning": "a believer",
+              "grammarNote": "Transliteration: mu'minan"
+            },
+            {
+              "word": "وَلِلْمُؤْمِنِينَ",
+              "root": "ل - ل - م",
+              "meaning": "and the believing men",
+              "grammarNote": "Transliteration: walil'mu'minīna"
+            },
+            {
+              "word": "وَٱلْمُؤْمِنَـٰتِ",
+              "root": "ؤ - م - ن",
+              "meaning": "and the believing women",
+              "grammarNote": "Transliteration: wal-mu'mināti"
+            },
+            {
+              "word": "وَلَا",
+              "root": "و - ل - ا",
+              "meaning": "And (do) not",
+              "grammarNote": "Transliteration: walā"
+            },
+            {
+              "word": "تَزِدِ",
+              "root": "ت - ز - د",
+              "meaning": "increase",
+              "grammarNote": "Transliteration: tazidi"
+            },
+            {
+              "word": "ٱلظَّـٰلِمِينَ",
+              "root": "ظ - ل - م",
+              "meaning": "the wrongdoers",
+              "grammarNote": "Transliteration: l-ẓālimīna"
+            },
+            {
+              "word": "إِلَّا",
+              "root": "ا - ل - ا",
+              "meaning": "except",
+              "grammarNote": "Transliteration: illā"
+            },
+            {
+              "word": "تَبَارًۢا",
+              "root": "ب - ر - ا",
+              "meaning": "(in) destruction",
+              "grammarNote": "Transliteration: tabāran"
+            }
+          ]
+        }
+      ],
+      "commentary": "مِّمَّا خَطِيئَاتِهِمْ أُغْرِ‌قُوا فَأُدْخِلُوا نَارً‌ا فَلَمْ يَجِدُوا لَهُم مِّن دُونِ اللَّـهِ أَنصَارً‌ا (Because of their sins they were drowned, and then admitted into the Fire. So they found no helpers for them besides Allah…1:25). The 'sins' referred to here are unpardonable sins of 'kufr and shirk'. They were drowned in water and emerged in fire, an opposing punishment which is not impossible for Divine power. Obviously, the ‘Fire’ mentioned in the verse does not refer to the fire of Hell, but refers to the fire in the realm of ‘Barzakh’ (the existence between the worldly life and the life of the Hereafter). The Qur'an speaks of the fire in the realm of 'Barzakh'. It is evident that Sayyidna Nuh's (علیہ السلام) people will be punished in Hell-Fire in the Hereafter after resurrection and accounting for their deeds.\n\nQur’ an Confirms Punishment in the Grave\n\nThe verse under comment confirms that people will be punished in the realm of Barzakh, usually referring to the period of stay in the grave. This further proves that, since the evil-doers will be punished in the grave, the righteous believers will also be rewarded and blessed with favours. Authentic and successively transmitted ahadith report about the reward and punishment in the grave so abundantly and clearly that its reality cannot be denied or rejected. Therefore, there is a total agreement of the Ummah on this issue; and belief in it is the symbol of Ahl-us-Sunnah wal-Jami'ah.\n\nAl-hamdulillah\n\nThe Commentary on\n\nSurah Nuh\n\nEnds here",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Juristic Rulings & Shariah Injunctions (vv. 25–28)",
+          "content": "The verse under comment confirms that people will be punished in the realm of Barzakh, usually referring to the period of stay in the grave. This further proves that, since the evil-doers will be punished in the grave, the righteous believers will also be rewarded and blessed with favours. Authentic and successively transmitted ahadith report about the reward and punishment in the grave so abundantly and clearly that its reality cannot be denied or rejected. Therefore, there is a total agreement of the Ummah on this issue; and belief in it is the symbol of Ahl-us-Sunnah wal-Jami'ah."
+        },
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "مِّمَّا خَطِيئَاتِهِمْ أُغْرِ‌قُوا فَأُدْخِلُوا نَارً‌ا فَلَمْ يَجِدُوا لَهُم مِّن دُونِ اللَّـهِ أَنصَارً‌ا (Because of their sins they were drowned, and then admitted into the Fire. So they found no helpers for them besides Allah…1:25). The 'sins' referred to here are unpardonable sins of 'kufr and shirk'. They were drowned in water and emerged in fire, an opposing punishment which is not impossible for Divine power. Obviously, the ‘Fire’ mentioned in the verse does not refer to the fire of Hell, but refers to the fire in the realm of ‘Barzakh’ (the existence between the worldly life and the life of the Hereafter). The Qur'an speaks of the fire in the realm of 'Barzakh'. It is evident that Sayyidna Nuh's (علیہ السلام) people will be punished in Hell-Fire in the Hereafter after resurrection and accounting for their deeds."
+        }
+      ],
+      "curatedTerms": []
+    }
+  ]
+}

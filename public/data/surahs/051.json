@@ -1,0 +1,2910 @@
+{
+  "number": 51,
+  "nameArabic": "الذاريات",
+  "nameTransliterated": "Adh-Dhariyat",
+  "nameEnglish": "The Winnowing Winds",
+  "versesCount": 60,
+  "revelationType": "Makki",
+  "volumeNumber": 8,
+  "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5191/mode/2up",
+  "juz": [
+    26,
+    27
+  ],
+  "bismillahPre": true,
+  "introductoryTafseer": "The subject-matter of Surah Adh-Dhariyat, like its predecessor Surah Qaf, is mainly the Hereafter, Resurrection, Reckoning, Judgment, and Allah's reward and punishment. The first few verses contain an oath from Allah that the promise of Resurrection is true, and shall come to pass. In these verses Allah swears an oath by four phenomena, as follows:",
+  "historicalContext": {
+    "background": "(I swear) by those (winds) that scatter dust, then by those (clouds) that bear loads, then by those (boats) that sail with ease, then by those (angels) who distribute things, (51:1-4)",
+    "scholarlyReference": "Ma'ariful Qur'an by Mufti Muhammad Shafi, Volume 8 (Archive.org Leaf n5191)"
+  },
+  "sections": [
+    {
+      "id": "51-1-9",
+      "surahNumber": 51,
+      "verseRange": [
+        1,
+        9
+      ],
+      "title": "Affirmation of After-Life",
+      "juzNumber": 26,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5192/mode/2up",
+      "arabicText": "وَٱلذَّٰرِيَـٰتِ ذَرْوًا ۝١ فَٱلْحَـٰمِلَـٰتِ وِقْرًا ۝٢ فَٱلْجَـٰرِيَـٰتِ يُسْرًا ۝٣ فَٱلْمُقَسِّمَـٰتِ أَمْرًا ۝٤ إِنَّمَا تُوعَدُونَ لَصَادِقٌ ۝٥ وَإِنَّ ٱلدِّينَ لَوَٰقِعٌ ۝٦ وَٱلسَّمَآءِ ذَاتِ ٱلْحُبُكِ ۝٧ إِنَّكُمْ لَفِى قَوْلٍ مُّخْتَلِفٍ ۝٨ يُؤْفَكُ عَنْهُ مَنْ أُفِكَ ۝٩",
+      "translation": "By those (winds) that scatter dust, ۝ then those that bear load (of clouds), ۝ then those that float with ease, ۝ then those who distribute things, ۝ whatever you are being promised is surely true, ۝ and Recompense (of deeds) is sure to happen. ۝ By the sky, having paths, ۝ you are (involved) in a contradictory discussion. ۝ Turned away from this (Qur’ān) is the one who is turned away (totally from the truth.) ۝",
+      "phraseCards": [
+        {
+          "id": "51-1-card",
+          "verseNumber": 1,
+          "arabicPhrase": "وَٱلذَّٰرِيَـٰتِ ذَرْوًا",
+          "englishPhrase": "By those (winds) that scatter dust,",
+          "vocabulary": [
+            {
+              "word": "وَٱلذَّٰرِيَـٰتِ",
+              "root": "ذ - ر - ي",
+              "meaning": "By those scattering",
+              "grammarNote": "Transliteration: wal-dhāriyāti"
+            },
+            {
+              "word": "ذَرْوًۭا",
+              "root": "ذ - ر - و",
+              "meaning": "dispersing",
+              "grammarNote": "Transliteration: dharwan"
+            }
+          ]
+        },
+        {
+          "id": "51-2-card",
+          "verseNumber": 2,
+          "arabicPhrase": "فَٱلْحَـٰمِلَـٰتِ وِقْرًا",
+          "englishPhrase": "then those that bear load (of clouds),",
+          "vocabulary": [
+            {
+              "word": "فَٱلْحَـٰمِلَـٰتِ",
+              "root": "ح - م - ل",
+              "meaning": "And those carrying",
+              "grammarNote": "Transliteration: fal-ḥāmilāti"
+            },
+            {
+              "word": "وِقْرًۭا",
+              "root": "ق - ر - ا",
+              "meaning": "a load",
+              "grammarNote": "Transliteration: wiq'ran"
+            }
+          ]
+        },
+        {
+          "id": "51-3-card",
+          "verseNumber": 3,
+          "arabicPhrase": "فَٱلْجَـٰرِيَـٰتِ يُسْرًا",
+          "englishPhrase": "then those that float with ease,",
+          "vocabulary": [
+            {
+              "word": "فَٱلْجَـٰرِيَـٰتِ",
+              "root": "ج - ر - ي",
+              "meaning": "And those sailing",
+              "grammarNote": "Transliteration: fal-jāriyāti"
+            },
+            {
+              "word": "يُسْرًۭا",
+              "root": "س - ر - ا",
+              "meaning": "(with) ease",
+              "grammarNote": "Transliteration: yus'ran"
+            }
+          ]
+        },
+        {
+          "id": "51-4-card",
+          "verseNumber": 4,
+          "arabicPhrase": "فَٱلْمُقَسِّمَـٰتِ أَمْرًا",
+          "englishPhrase": "then those who distribute things,",
+          "vocabulary": [
+            {
+              "word": "فَٱلْمُقَسِّمَـٰتِ",
+              "root": "ق - س - م",
+              "meaning": "And those distributing",
+              "grammarNote": "Transliteration: fal-muqasimāti"
+            },
+            {
+              "word": "أَمْرًا",
+              "root": "م - ر - ا",
+              "meaning": "Command",
+              "grammarNote": "Transliteration: amran"
+            }
+          ]
+        },
+        {
+          "id": "51-5-card",
+          "verseNumber": 5,
+          "arabicPhrase": "إِنَّمَا تُوعَدُونَ لَصَادِقٌ",
+          "englishPhrase": "whatever you are being promised is surely true,",
+          "vocabulary": [
+            {
+              "word": "إِنَّمَا",
+              "root": "ن - م - ا",
+              "meaning": "Indeed, what",
+              "grammarNote": "Transliteration: innamā"
+            },
+            {
+              "word": "تُوعَدُونَ",
+              "root": "و - ع - د",
+              "meaning": "you are promised",
+              "grammarNote": "Transliteration: tūʿadūna"
+            },
+            {
+              "word": "لَصَادِقٌۭ",
+              "root": "ص - د - ق",
+              "meaning": "(is) surely true",
+              "grammarNote": "Transliteration: laṣādiqun"
+            }
+          ]
+        },
+        {
+          "id": "51-6-card",
+          "verseNumber": 6,
+          "arabicPhrase": "وَإِنَّ ٱلدِّينَ لَوَٰقِعٌ",
+          "englishPhrase": "and Recompense (of deeds) is sure to happen.",
+          "vocabulary": [
+            {
+              "word": "وَإِنَّ",
+              "root": "و - ا - ن",
+              "meaning": "And indeed",
+              "grammarNote": "Transliteration: wa-inna"
+            },
+            {
+              "word": "ٱلدِّينَ",
+              "root": "د - ي - ن",
+              "meaning": "the Judgment",
+              "grammarNote": "Transliteration: l-dīna"
+            },
+            {
+              "word": "لَوَٰقِعٌۭ",
+              "root": "و - ق - ع",
+              "meaning": "(is) surely to occur",
+              "grammarNote": "Transliteration: lawāqiʿun"
+            }
+          ]
+        },
+        {
+          "id": "51-7-card",
+          "verseNumber": 7,
+          "arabicPhrase": "وَٱلسَّمَآءِ ذَاتِ ٱلْحُبُكِ",
+          "englishPhrase": "By the sky, having paths,",
+          "vocabulary": [
+            {
+              "word": "وَٱلسَّمَآءِ",
+              "root": "م - ا - ء",
+              "meaning": "By the heaven",
+              "grammarNote": "Transliteration: wal-samāi"
+            },
+            {
+              "word": "ذَاتِ",
+              "root": "ذ - ا - ت",
+              "meaning": "full of",
+              "grammarNote": "Transliteration: dhāti"
+            },
+            {
+              "word": "ٱلْحُبُكِ",
+              "root": "ح - ب - ك",
+              "meaning": "pathways",
+              "grammarNote": "Transliteration: l-ḥubuki"
+            }
+          ]
+        },
+        {
+          "id": "51-8-card",
+          "verseNumber": 8,
+          "arabicPhrase": "إِنَّكُمْ لَفِى قَوْلٍ مُّخْتَلِفٍ",
+          "englishPhrase": "you are (involved) in a contradictory discussion.",
+          "vocabulary": [
+            {
+              "word": "إِنَّكُمْ",
+              "root": "ن - ك - م",
+              "meaning": "Indeed, you",
+              "grammarNote": "Transliteration: innakum"
+            },
+            {
+              "word": "لَفِى",
+              "root": "ل - ف - ي",
+              "meaning": "(are) surely in",
+              "grammarNote": "Transliteration: lafī"
+            },
+            {
+              "word": "قَوْلٍۢ",
+              "root": "ق - و - ل",
+              "meaning": "a speech",
+              "grammarNote": "Transliteration: qawlin"
+            },
+            {
+              "word": "مُّخْتَلِفٍۢ",
+              "root": "خ - ت - ل",
+              "meaning": "differing",
+              "grammarNote": "Transliteration: mukh'talifin"
+            }
+          ]
+        },
+        {
+          "id": "51-9-card",
+          "verseNumber": 9,
+          "arabicPhrase": "يُؤْفَكُ عَنْهُ مَنْ أُفِكَ",
+          "englishPhrase": "Turned away from this (Qur’ān) is the one who is turned away (totally from the truth.)",
+          "vocabulary": [
+            {
+              "word": "يُؤْفَكُ",
+              "root": "ي - ؤ - ف",
+              "meaning": "Deluded away",
+              "grammarNote": "Transliteration: yu'faku"
+            },
+            {
+              "word": "عَنْهُ",
+              "root": "ع - ن - ه",
+              "meaning": "from it",
+              "grammarNote": "Transliteration: ʿanhu"
+            },
+            {
+              "word": "مَنْ",
+              "root": "م - ن",
+              "meaning": "(is he) who",
+              "grammarNote": "Transliteration: man"
+            },
+            {
+              "word": "أُفِكَ",
+              "root": "ا - ف - ك",
+              "meaning": "is deluded",
+              "grammarNote": "Transliteration: ufika"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verses 1–6]\n\nAffirmation of After-Life\n\nThe subject-matter of Surah Adh-Dhariyat, like its predecessor Surah Qaf, is mainly the Hereafter, Resurrection, Reckoning, Judgment, and Allah's reward and punishment. The first few verses contain an oath from Allah that the promise of Resurrection is true, and shall come to pass. In these verses Allah swears an oath by four phenomena, as follows:\n\nوَالذَّارِ‌يَاتِ ذَرْ‌وًا ﴿1﴾ فَالْحَامِلَاتِ وِقْرً‌ا ﴿2﴾ فَالْجَارِ‌يَاتِ يُسْرً‌ا ﴿3﴾ فَالْمُقَسِّمَاتِ أَمْرً‌ا ﴿4﴾\n\n(I swear) by those (winds) that scatter dust, then by those (clouds) that bear loads, then by those (boats) that sail with ease, then by those (angels) who distribute things, (51:1-4)\n\nThere is a Hadith whose attribution to the Holy Prophet ﷺ has been held by Ibn Kathir as da` eef [ weak ], but it is also reported as a saying of Sayyidna ` Umar ؓ and Ali ؓ . It explains these four things as follows: The expression Dhariyat [ scatterers ] refers to the wind that blows up dust; the expression hamilat-i-wiqran literally denotes burden-bearers and contextually refers to the clouds that carry the burden of water or rain; the expression jariyat-i-yusran refers to the ships that sail smoothly and with ease in the water; and the expression muqassimat-i-amran refers to the angels who distribute to all creatures their sustenance and water, and different kinds of difficulties and comfort as determined by Allah's orders and decrees (Ibn Kathir, Qurtubi and Ad-Durr-ul-Manthur quote these narrations both as mar' mawquf).\n\n────────────────────────────────────────\n\n[Verses 7–8]\n\nوَالسَّمَاءِ ذَاتِ الْحُبُكِ إِنَّكُمْ لَفِي قَوْلٍ مُّخْتَلِفٍ (By the sky, having paths, you are (involved) in a contradictory statement - 51:7-8) Hubuk is the plural habikah and primarily denotes thin irregular lines or streaks on fabrics when woven. They resemble tracks and pathways; therefore pathways are also referred to as hubuk in Arabic. Most interpreters take this to be the meaning in this context. Some scholars say that the 'tracks' refer to pathways used by the angels for entrance and exit. Others say that the tracks or paths of heaven are those orbits of planets and stars that are visible in the sky.\n\nAs the streaks of the woven fabric is its beauty, some scholars tend to interpret the verse as 'By the heaven full of beauty, grace, magnificence and perfection'.\n\nDiffering Beliefs of the Pagans\n\nإِنَّكُمْ لَفِي قَوْلٍ مُّخْتَلِفٍ (you are [ involved ] in a contradictory statement... 51:8) Verse [ 7] was an oath and this verse is the statement for which oath is sworn. Apparently, the verse addresses the pagans of Makkah who assigned contradictory attributes to the Holy Prophet ﷺ ، calling him at different times a madman, a sorcerer, a poet and other discordant names. According to another possible interpretation, the verse addresses the entire humankind - Muslims as well as non-believers. Thus 'contradictory statement' would mean that a sector believed in the Holy Prophet ﷺ and accepted him; and another sector rejected him and opposed him (Mazhari).\n\n────────────────────────────────────────\n\n[Verse 9]\n\nيُؤْفَكُ عَنْهُ مَنْ أُفِكَ (Turned away from this (Qur'an) is the one who is turned away 51:9). The word 'ufik literally denotes to turn away. The pronoun in ` anhu has two possibilities: [ 1] it could be referring to Qur'an and Rasul. In this case, the verse would mean that only that person turns away from the Qur'an who has been destined to be deprived of their guidance. And [ 2] the pronoun could be referring to the 'contradictory statement' in which case the meaning would be: he who turns away from the truth because of your discordant thoughts, is the one deprived of truth.",
+      "subsections": [
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "There is a Hadith whose attribution to the Holy Prophet ﷺ has been held by Ibn Kathir as da` eef [ weak ], but it is also reported as a saying of Sayyidna ` Umar ؓ and Ali ؓ . It explains these four things as follows: The expression Dhariyat [ scatterers ] refers to the wind that blows up dust; the expression hamilat-i-wiqran literally denotes burden-bearers and contextually refers to the clouds that carry the burden of water or rain; the expression jariyat-i-yusran refers to the ships that sail smoothly and with ease in the water; and the expression muqassimat-i-amran refers to the angels who distribute to all creatures their sustenance and water, and different kinds of difficulties and comfort as determined by Allah's orders and decrees (Ibn Kathir, Qurtubi and Ad-Durr-ul-Manthur quote these narrations both as mar' mawquf)."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "The subject-matter of Surah Adh-Dhariyat, like its predecessor Surah Qaf, is mainly the Hereafter, Resurrection, Reckoning, Judgment, and Allah's reward and punishment. The first few verses contain an oath from Allah that the promise of Resurrection is true, and shall come to pass. In these verses Allah swears an oath by four phenomena, as follows:"
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "51-10-18",
+      "surahNumber": 51,
+      "verseRange": [
+        10,
+        18
+      ],
+      "title": "────────────────────────────────────────",
+      "juzNumber": 26,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5192/mode/2up",
+      "arabicText": "قُتِلَ ٱلْخَرَّٰصُونَ ۝١٠ ٱلَّذِينَ هُمْ فِى غَمْرَةٍ سَاهُونَ ۝١١ يَسْـَٔلُونَ أَيَّانَ يَوْمُ ٱلدِّينِ ۝١٢ يَوْمَ هُمْ عَلَى ٱلنَّارِ يُفْتَنُونَ ۝١٣ ذُوقُوا۟ فِتْنَتَكُمْ هَـٰذَا ٱلَّذِى كُنتُم بِهِۦ تَسْتَعْجِلُونَ ۝١٤ إِنَّ ٱلْمُتَّقِينَ فِى جَنَّـٰتٍ وَعُيُونٍ ۝١٥ ءَاخِذِينَ مَآ ءَاتَىٰهُمْ رَبُّهُمْ ۚ إِنَّهُمْ كَانُوا۟ قَبْلَ ذَٰلِكَ مُحْسِنِينَ ۝١٦ كَانُوا۟ قَلِيلًا مِّنَ ٱلَّيْلِ مَا يَهْجَعُونَ ۝١٧ وَبِٱلْأَسْحَارِ هُمْ يَسْتَغْفِرُونَ ۝١٨",
+      "translation": "Death upon those who make conjectures (against the true faith), ۝ - those who are drowned in ignorance, forgetful! ۝ They ask, “When shall be the Day of Recompense?” ۝ (It will be) the Day when they will be heated on the Fire, ۝ (and it will be said to them,) “Taste (the punishment of) your mischief. This is what you have been asking to be brought sooner.” ۝ The God-fearing (on the other hand) will be in gardens and springs, ۝ receiving what their Lord will have given to them. Indeed, prior to this, they were good in their deeds. ۝ They used to sleep little in the night; ۝ and in the hours before dawn they used to pray for forgiveness, ۝",
+      "phraseCards": [
+        {
+          "id": "51-10-card",
+          "verseNumber": 10,
+          "arabicPhrase": "قُتِلَ ٱلْخَرَّٰصُونَ",
+          "englishPhrase": "Death upon those who make conjectures (against the true faith),",
+          "vocabulary": [
+            {
+              "word": "قُتِلَ",
+              "root": "ق - ت - ل",
+              "meaning": "Cursed be",
+              "grammarNote": "Transliteration: qutila"
+            },
+            {
+              "word": "ٱلْخَرَّٰصُونَ",
+              "root": "خ - ر - ص",
+              "meaning": "the liars",
+              "grammarNote": "Transliteration: l-kharāṣūna"
+            }
+          ]
+        },
+        {
+          "id": "51-11-card",
+          "verseNumber": 11,
+          "arabicPhrase": "ٱلَّذِينَ هُمْ فِى غَمْرَةٍ سَاهُونَ",
+          "englishPhrase": "- those who are drowned in ignorance, forgetful!",
+          "vocabulary": [
+            {
+              "word": "ٱلَّذِينَ",
+              "root": "ل - ذ - ي",
+              "meaning": "Those who",
+              "grammarNote": "Transliteration: alladhīna"
+            },
+            {
+              "word": "هُمْ",
+              "root": "ه - م",
+              "meaning": "[they]",
+              "grammarNote": "Transliteration: hum"
+            },
+            {
+              "word": "فِى",
+              "root": "ف - ي",
+              "meaning": "(are) in",
+              "grammarNote": "Transliteration: fī"
+            },
+            {
+              "word": "غَمْرَةٍۢ",
+              "root": "غ - م - ر",
+              "meaning": "flood",
+              "grammarNote": "Transliteration: ghamratin"
+            },
+            {
+              "word": "سَاهُونَ",
+              "root": "س - ا - ه",
+              "meaning": "(of) heedlessness",
+              "grammarNote": "Transliteration: sāhūna"
+            }
+          ]
+        },
+        {
+          "id": "51-12-card",
+          "verseNumber": 12,
+          "arabicPhrase": "يَسْـَٔلُونَ أَيَّانَ يَوْمُ ٱلدِّينِ",
+          "englishPhrase": "They ask, “When shall be the Day of Recompense?”",
+          "vocabulary": [
+            {
+              "word": "يَسْـَٔلُونَ",
+              "root": "ي - س - ل",
+              "meaning": "They ask",
+              "grammarNote": "Transliteration: yasalūna"
+            },
+            {
+              "word": "أَيَّانَ",
+              "root": "ي - ا - ن",
+              "meaning": "When",
+              "grammarNote": "Transliteration: ayyāna"
+            },
+            {
+              "word": "يَوْمُ",
+              "root": "ي - و - م",
+              "meaning": "(is the) Day",
+              "grammarNote": "Transliteration: yawmu"
+            },
+            {
+              "word": "ٱلدِّينِ",
+              "root": "د - ي - ن",
+              "meaning": "(of) Judgment",
+              "grammarNote": "Transliteration: l-dīni"
+            }
+          ]
+        },
+        {
+          "id": "51-13-card",
+          "verseNumber": 13,
+          "arabicPhrase": "يَوْمَ هُمْ عَلَى ٱلنَّارِ يُفْتَنُونَ",
+          "englishPhrase": "(It will be) the Day when they will be heated on the Fire,",
+          "vocabulary": [
+            {
+              "word": "يَوْمَ",
+              "root": "ي - و - م",
+              "meaning": "A Day",
+              "grammarNote": "Transliteration: yawma"
+            },
+            {
+              "word": "هُمْ",
+              "root": "ه - م",
+              "meaning": "they",
+              "grammarNote": "Transliteration: hum"
+            },
+            {
+              "word": "عَلَى",
+              "root": "ع - ل - و",
+              "meaning": "over",
+              "grammarNote": "Transliteration: ʿalā"
+            },
+            {
+              "word": "ٱلنَّارِ",
+              "root": "ن - ا - ر",
+              "meaning": "the Fire",
+              "grammarNote": "Transliteration: l-nāri"
+            },
+            {
+              "word": "يُفْتَنُونَ",
+              "root": "ف - ت - ن",
+              "meaning": "will be tried",
+              "grammarNote": "Transliteration: yuf'tanūna"
+            }
+          ]
+        },
+        {
+          "id": "51-14-card",
+          "verseNumber": 14,
+          "arabicPhrase": "ذُوقُوا۟ فِتْنَتَكُمْ هَـٰذَا ٱلَّذِى كُنتُم بِهِۦ تَسْتَعْجِلُونَ",
+          "englishPhrase": "(and it will be said to them,) “Taste (the punishment of) your mischief. This is what you have been asking to be brought sooner.”",
+          "vocabulary": [
+            {
+              "word": "ذُوقُوا۟",
+              "root": "ذ - و - ق",
+              "meaning": "Taste",
+              "grammarNote": "Transliteration: dhūqū"
+            },
+            {
+              "word": "فِتْنَتَكُمْ",
+              "root": "ت - ن - ت",
+              "meaning": "your trial",
+              "grammarNote": "Transliteration: fit'natakum"
+            },
+            {
+              "word": "هَـٰذَا",
+              "root": "ه - ذ - ا",
+              "meaning": "This",
+              "grammarNote": "Transliteration: hādhā"
+            },
+            {
+              "word": "ٱلَّذِى",
+              "root": "ل - ذ - ي",
+              "meaning": "(is) what",
+              "grammarNote": "Transliteration: alladhī"
+            },
+            {
+              "word": "كُنتُم",
+              "root": "ك - ن - ت",
+              "meaning": "you were",
+              "grammarNote": "Transliteration: kuntum"
+            },
+            {
+              "word": "بِهِۦ",
+              "root": "ب - ه",
+              "meaning": "for it",
+              "grammarNote": "Transliteration: bihi"
+            },
+            {
+              "word": "تَسْتَعْجِلُونَ",
+              "root": "س - ت - ع",
+              "meaning": "seeking to hasten",
+              "grammarNote": "Transliteration: tastaʿjilūna"
+            }
+          ]
+        },
+        {
+          "id": "51-15-card",
+          "verseNumber": 15,
+          "arabicPhrase": "إِنَّ ٱلْمُتَّقِينَ فِى جَنَّـٰتٍ وَعُيُونٍ",
+          "englishPhrase": "The God-fearing (on the other hand) will be in gardens and springs,",
+          "vocabulary": [
+            {
+              "word": "إِنَّ",
+              "root": "ا - ن - ن",
+              "meaning": "Indeed",
+              "grammarNote": "Transliteration: inna"
+            },
+            {
+              "word": "ٱلْمُتَّقِينَ",
+              "root": "م - ت - ق",
+              "meaning": "the righteous",
+              "grammarNote": "Transliteration: l-mutaqīna"
+            },
+            {
+              "word": "فِى",
+              "root": "ف - ي",
+              "meaning": "(will be) in",
+              "grammarNote": "Transliteration: fī"
+            },
+            {
+              "word": "جَنَّـٰتٍۢ",
+              "root": "ج - ن - ت",
+              "meaning": "Gardens",
+              "grammarNote": "Transliteration: jannātin"
+            },
+            {
+              "word": "وَعُيُونٍ",
+              "root": "ع - ي - و",
+              "meaning": "and springs",
+              "grammarNote": "Transliteration: waʿuyūnin"
+            }
+          ]
+        },
+        {
+          "id": "51-16-card",
+          "verseNumber": 16,
+          "arabicPhrase": "ءَاخِذِينَ مَآ ءَاتَىٰهُمْ رَبُّهُمْ ۚ إِنَّهُمْ كَانُوا۟ قَبْلَ ذَٰلِكَ مُحْسِنِينَ",
+          "englishPhrase": "receiving what their Lord will have given to them. Indeed, prior to this, they were good in their deeds.",
+          "vocabulary": [
+            {
+              "word": "ءَاخِذِينَ",
+              "root": "ء - خ - ذ",
+              "meaning": "Taking",
+              "grammarNote": "Transliteration: ākhidhīna"
+            },
+            {
+              "word": "مَآ",
+              "root": "م - ا",
+              "meaning": "what",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "ءَاتَىٰهُمْ",
+              "root": "ء - ت - ي",
+              "meaning": "their Lord has given them",
+              "grammarNote": "Transliteration: ātāhum"
+            },
+            {
+              "word": "رَبُّهُمْ ۚ",
+              "root": "ر - ب - ب",
+              "meaning": "their Lord has given them",
+              "grammarNote": "Transliteration: rabbuhum"
+            },
+            {
+              "word": "إِنَّهُمْ",
+              "root": "ن - ه - م",
+              "meaning": "Indeed, they",
+              "grammarNote": "Transliteration: innahum"
+            },
+            {
+              "word": "كَانُوا۟",
+              "root": "ك - ا - ن",
+              "meaning": "were",
+              "grammarNote": "Transliteration: kānū"
+            },
+            {
+              "word": "قَبْلَ",
+              "root": "ق - ب - ل",
+              "meaning": "before",
+              "grammarNote": "Transliteration: qabla"
+            },
+            {
+              "word": "ذَٰلِكَ",
+              "root": "ذ - ل - ك",
+              "meaning": "that",
+              "grammarNote": "Transliteration: dhālika"
+            },
+            {
+              "word": "مُحْسِنِينَ",
+              "root": "ح - س - ن",
+              "meaning": "good-doers",
+              "grammarNote": "Transliteration: muḥ'sinīna"
+            }
+          ]
+        },
+        {
+          "id": "51-17-card",
+          "verseNumber": 17,
+          "arabicPhrase": "كَانُوا۟ قَلِيلًا مِّنَ ٱلَّيْلِ مَا يَهْجَعُونَ",
+          "englishPhrase": "They used to sleep little in the night;",
+          "vocabulary": [
+            {
+              "word": "كَانُوا۟",
+              "root": "ك - ا - ن",
+              "meaning": "They used to",
+              "grammarNote": "Transliteration: kānū"
+            },
+            {
+              "word": "قَلِيلًۭا",
+              "root": "ق - ل - ي",
+              "meaning": "little",
+              "grammarNote": "Transliteration: qalīlan"
+            },
+            {
+              "word": "مِّنَ",
+              "root": "م - ن",
+              "meaning": "of",
+              "grammarNote": "Transliteration: mina"
+            },
+            {
+              "word": "ٱلَّيْلِ",
+              "root": "ل - ي - ل",
+              "meaning": "the night",
+              "grammarNote": "Transliteration: al-layli"
+            },
+            {
+              "word": "مَا",
+              "root": "م - ا",
+              "meaning": "[what]",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "يَهْجَعُونَ",
+              "root": "ه - ج - ع",
+              "meaning": "sleep",
+              "grammarNote": "Transliteration: yahjaʿūna"
+            }
+          ]
+        },
+        {
+          "id": "51-18-card",
+          "verseNumber": 18,
+          "arabicPhrase": "وَبِٱلْأَسْحَارِ هُمْ يَسْتَغْفِرُونَ",
+          "englishPhrase": "and in the hours before dawn they used to pray for forgiveness,",
+          "vocabulary": [
+            {
+              "word": "وَبِٱلْأَسْحَارِ",
+              "root": "ب - ل - ا",
+              "meaning": "And in the hours before dawn",
+              "grammarNote": "Transliteration: wabil-asḥāri"
+            },
+            {
+              "word": "هُمْ",
+              "root": "ه - م",
+              "meaning": "they",
+              "grammarNote": "Transliteration: hum"
+            },
+            {
+              "word": "يَسْتَغْفِرُونَ",
+              "root": "س - ت - غ",
+              "meaning": "would ask forgiveness",
+              "grammarNote": "Transliteration: yastaghfirūna"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verses 10–16]\n\nقُتِلَ الْخَرَّ‌اصُونَ (Death upon those who make conjectures - 51:10). The expression kharrasun is the plural of kharras which means one who estimates or say things by conjecture. In this context the word refers to those stubborn and obstinate infidels who, without any reason or evidence, say discordant things about the Messenger ﷺ . Thus it would not be out of turn to interpret kharrasun as kadhdhabun, meaning 'the great liars' as they are condemned, denounced, cursed and imprecated (Mazhari) in this statement. After the mention of infidels, several verses that follow describe the qualities of the righteous people and the pleasant consequences of their righteousness.\n\n────────────────────────────────────────\n\n[Verse 17]\n\nRemaining Awake at Night for Voluntary Prayers\n\nكَانُوا قَلِيلًا مِّنَ اللَّيْلِ مَا يَهْجَعُونَ (They used to sleep little in the night,... 51:17). The imperfect verb yahja` un is derived from the infinitive huju' which means to sleep at night. The verse describes the quality of the righteous believers is that they spend their nights in voluntary worship of Allah. They sleep little at night and remain awake during the greater part of it. Ibn Jarir preferred this interpretation. Sayyidna Hasan Basri (رح) said: \"The righteous perform voluntary night prayers, and do not sleep during the night except a little.\" Sayyidna Ibn ` Abbas ؓ ، Qatadah, Mujahid (رح) and other leading scholars of Tafsir have taken the particle ma in the sense of negation, that is, grammatically they treat it as ma nafiyah or negative particle, meaning they spend a little part of every night awake, and not sleeping. They would worship Allah and perform voluntary prayers every night, even during a small part of the night. From this point of view, it includes all those people who pray to Allah during any part of the night - whether in the beginning, or in the middle, or at the end of it. Therefore, Sayyidna Anas Ibn Malik ؓ and ` Abul-` Aliyah said: \"They used to pray between Maghrib and ` Isha'.\" Imam Abu Ja'far Baqir said that this includes those people who do not sleep before ` Isha' prayer (Ibn Kathir).\n\nHasan Basri (رح) reports from Ahnaf Ibn Qais who used to say: \"When I compared my deeds with those of the inmates of Paradise, I found that they are a people who occupy a very high, lofty and elevated status; and they are a people whose deeds are incomparable and our deeds cannot match theirs, because they sleep little at nights and worship much. When I compared my deeds with those of the inmates of Hell, I found that they give the lie to Allah and His Holy Prophet ﷺ and are sceptical about the Hereafter [ from which Allah has protected us ]. Therefore, in comparison, our deeds match neither with those of the real inmates of Paradise, nor [ praise be to Allah ] with those of the inmates of Hell. Thus we learn that from the viewpoint of action, our position is what the Qur'an describes: ۔ خَلَطُوا عَمَلًا صَالِحًا وَآخَرَ‌ سَيِّئًا '...(They had mixed a good deed with another that was evil. - 9:102) Thus the best person amongst us is the one who would at least remain within the boundaries of this class of people.\"\n\n` Abd-ur-rahman Ibn Zaid Ibn Aslam says that a member of the tribe Banu Tamim said to my father: \"0 Abu 'Usamah, we do not find that quality in us which Allah mentions in describing the righteous, that is, كَانُوا قَلِيلًا مِّنَ اللَّيْلِ مَا يَهْجَعُونَ. They used to sleep little in the night,\" because our position is quite the contrary: قَلِیلاً مَّنَ الَّیلِ مَا نَقُومُ ' We are very little awake at night to worship Allah'. My father replied:\n\nطوبی لمن رقد اذا نعس و اتقی اللہ اذا استیقَظ\n\n'Good tidings for him who sleeps away when he feels sleepy and exercises righteousness when he is awake, that is, does not do any work that is contrary to Shari` ah.'\"\n\nIn other words, acceptance in the sight of Allah is not necessarily restricted to protracted waking hours at night for worship. If a person is impelled to sleep, and does not remain awake for long, but abstains from any sinful activities when awake, he is also worthy of felicitation.\n\n` Abdullah Ibn Salam ؓ reports from the Holy Prophet ﷺ who said:\n\nیٰٓاَیُّھَا النَّاس اَطعِموا الطَّعَامَ وَ صِلُوا الاَرحَامَ وَ افشُوا السَّلامَ وَ صَلُّوا بِالَّیلِ وَ اَلنَّاسُ نِیَامُ تَدخُلُوا الجَنَّۃَ بِسَلاَمِ ۔ (ابن کثیر)\n\n\"0 people, feed people, do good to kith and kin, greet each other with salam, pray at night while people are asleep, and you will enter Paradise in peace.\" (Ibn Kathir)\n\n────────────────────────────────────────\n\n[Verse 18]\n\nMerits of Seeking Forgiveness in the hours before dawn\n\nوَبِالْأَسْحَارِ‌ هُمْ يَسْتَغْفِرُ‌ونَ (and in the hours before dawn, they used to pray for forgiveness..., 51:18) The word ashar is the plural of sahar, and it refers to the latter sixth part of the night. This verse speaks of the significance of seeking forgiveness in the latter part of the night. Another verse [ 3:17] also speaks of the significance of seeking forgiveness at the last hours of the night thus: وَالْمُسْتَغْفِرِ‌ينَ بِالْأَسْحَارِ‌ (...and who seek forgiveness in pre-dawn hours. - 3:17) It is confirmed in the Sahih collections as well as others, from several Companions, that the Messenger of Allah ﷺ said:\n\n\"Allah, the Most High, descends each night to the lowest heaven when the last third of the night remains. He says: 'Is there anyone who is repenting, so that I may accept his repentance? Is there anyone seeking forgiveness, so that I may forgive him? Is there anyone asking of Me, so that I may grant him his request?\n\nHere it may be noted that in this verse Allah is describing the pre-dawn prayer of forgiveness of those righteous ones who, according to the preceding verse, are preoccupied for the major part of the night with the worship of Allah and sleep very little. Thus there seems to be no link between their previous description and their description of asking for forgiveness in this verse, because forgiveness is sought when there are sins. People who spent the entire night in worshipping Allah - what does it mean to seek forgiveness of sins? The answer to this question is that these people have the true appreciation of Allah's majesty, dignity and splendour, and they realise that there are shortcomings in their night-long worship. Therefore they seek Allah's forgiveness for failing to perform His worship as due. (Mazhari)",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Juristic Rulings & Shariah Injunctions (vv. 10–18)",
+          "content": "كَانُوا قَلِيلًا مِّنَ اللَّيْلِ مَا يَهْجَعُونَ (They used to sleep little in the night,... 51:17). The imperfect verb yahja` un is derived from the infinitive huju' which means to sleep at night. The verse describes the quality of the righteous believers is that they spend their nights in voluntary worship of Allah. They sleep little at night and remain awake during the greater part of it. Ibn Jarir preferred this interpretation. Sayyidna Hasan Basri (رح) said: \"The righteous perform voluntary night prayers, and do not sleep during the night except a little.\" Sayyidna Ibn ` Abbas ؓ ، Qatadah, Mujahid (رح) and other leading scholars of Tafsir have taken the particle ma in the sense of negation, that is, grammatically they treat it as ma nafiyah or negative particle, meaning they spend a little part of every night awake, and not sleeping. They would worship Allah and perform voluntary..."
+        },
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "Hasan Basri (رح) reports from Ahnaf Ibn Qais who used to say: \"When I compared my deeds with those of the inmates of Paradise, I found that they are a people who occupy a very high, lofty and elevated status; and they are a people whose deeds are incomparable and our deeds cannot match theirs, because they sleep little at nights and worship much. When I compared my deeds with those of the inmates of Hell, I found that they give the lie to Allah and His Holy Prophet ﷺ and are sceptical about the Hereafter [ from which Allah has protected us ]. Therefore, in comparison, our deeds match neither with those of the real inmates of Paradise, nor [ praise be to Allah ] with those of the inmates of Hell. Thus we learn that from the viewpoint of action, our position is what the Qur'an describes: ۔ خَلَطُوا عَمَلًا صَالِحًا وَآخَرَ‌ سَيِّئًا '...(They had mixed a good deed with another that was..."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "قُتِلَ الْخَرَّ‌اصُونَ (Death upon those who make conjectures - 51:10). The expression kharrasun is the plural of kharras which means one who estimates or say things by conjecture. In this context the word refers to those stubborn and obstinate infidels who, without any reason or evidence, say discordant things about the Messenger ﷺ . Thus it would not be out of turn to interpret kharrasun as kadhdhabun, meaning 'the great liars' as they are condemned, denounced, cursed and imprecated (Mazhari) in this statement. After the mention of infidels, several verses that follow describe the qualities of the righteous people and the pleasant consequences of their righteousness."
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "51-19-21",
+      "surahNumber": 51,
+      "verseRange": [
+        19,
+        21
+      ],
+      "title": "Special Guidance for Philanthropists",
+      "juzNumber": 26,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5192/mode/2up",
+      "arabicText": "وَفِىٓ أَمْوَٰلِهِمْ حَقٌّ لِّلسَّآئِلِ وَٱلْمَحْرُومِ ۝١٩ وَفِى ٱلْأَرْضِ ءَايَـٰتٌ لِّلْمُوقِنِينَ ۝٢٠ وَفِىٓ أَنفُسِكُمْ ۚ أَفَلَا تُبْصِرُونَ ۝٢١",
+      "translation": "and in their wealth, there was a right for one who asks and for one who is deprived. ۝ In the earth, there are signs for those who (seek truth to) believe, ۝ and in your own selves! So, do you not perceive? ۝",
+      "phraseCards": [
+        {
+          "id": "51-19-card",
+          "verseNumber": 19,
+          "arabicPhrase": "وَفِىٓ أَمْوَٰلِهِمْ حَقٌّ لِّلسَّآئِلِ وَٱلْمَحْرُومِ",
+          "englishPhrase": "and in their wealth, there was a right for one who asks and for one who is deprived.",
+          "vocabulary": [
+            {
+              "word": "وَفِىٓ",
+              "root": "و - ف - ي",
+              "meaning": "And in",
+              "grammarNote": "Transliteration: wafī"
+            },
+            {
+              "word": "أَمْوَٰلِهِمْ",
+              "root": "م - و - ل",
+              "meaning": "their wealth",
+              "grammarNote": "Transliteration: amwālihim"
+            },
+            {
+              "word": "حَقٌّۭ",
+              "root": "ح - ق",
+              "meaning": "(was the) right",
+              "grammarNote": "Transliteration: ḥaqqun"
+            },
+            {
+              "word": "لِّلسَّآئِلِ",
+              "root": "ا - ئ - ل",
+              "meaning": "(of) those who asked",
+              "grammarNote": "Transliteration: lilssāili"
+            },
+            {
+              "word": "وَٱلْمَحْرُومِ",
+              "root": "ح - ر - و",
+              "meaning": "and the deprived",
+              "grammarNote": "Transliteration: wal-maḥrūmi"
+            }
+          ]
+        },
+        {
+          "id": "51-20-card",
+          "verseNumber": 20,
+          "arabicPhrase": "وَفِى ٱلْأَرْضِ ءَايَـٰتٌ لِّلْمُوقِنِينَ",
+          "englishPhrase": "In the earth, there are signs for those who (seek truth to) believe,",
+          "vocabulary": [
+            {
+              "word": "وَفِى",
+              "root": "و - ف - ي",
+              "meaning": "And in",
+              "grammarNote": "Transliteration: wafī"
+            },
+            {
+              "word": "ٱلْأَرْضِ",
+              "root": "ا - ر - ض",
+              "meaning": "the earth",
+              "grammarNote": "Transliteration: l-arḍi"
+            },
+            {
+              "word": "ءَايَـٰتٌۭ",
+              "root": "ء - ي - ت",
+              "meaning": "(are) signs",
+              "grammarNote": "Transliteration: āyātun"
+            },
+            {
+              "word": "لِّلْمُوقِنِينَ",
+              "root": "و - ق - ن",
+              "meaning": "for those who are certain",
+              "grammarNote": "Transliteration: lil'mūqinīna"
+            }
+          ]
+        },
+        {
+          "id": "51-21-card",
+          "verseNumber": 21,
+          "arabicPhrase": "وَفِىٓ أَنفُسِكُمْ ۚ أَفَلَا تُبْصِرُونَ",
+          "englishPhrase": "and in your own selves! So, do you not perceive?",
+          "vocabulary": [
+            {
+              "word": "وَفِىٓ",
+              "root": "و - ف - ي",
+              "meaning": "And in",
+              "grammarNote": "Transliteration: wafī"
+            },
+            {
+              "word": "أَنفُسِكُمْ ۚ",
+              "root": "ن - ف - س",
+              "meaning": "yourselves",
+              "grammarNote": "Transliteration: anfusikum"
+            },
+            {
+              "word": "أَفَلَا",
+              "root": "ف - ل - ا",
+              "meaning": "Then will not",
+              "grammarNote": "Transliteration: afalā"
+            },
+            {
+              "word": "تُبْصِرُونَ",
+              "root": "ب - ص - ر",
+              "meaning": "you see",
+              "grammarNote": "Transliteration: tub'ṣirūna"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verse 19]\n\nSpecial Guidance for Philanthropists\n\nوَفِي أَمْوَالِهِمْ حَقٌّ لِّلسَّائِلِ وَالْمَحْرُ‌ومِ (and in their wealth, there was a right for the one who asks and the one who is deprived...51:19) The word sail means the poor or needy who begs others, that is, he expresses his needs to people who help him. The word mahrum also refers to a poor or needy, but who cannot express his needs from a sense of self-respect or a feeling of shame, and thus is deprived of people's help. In this verse another quality of the believers and the righteous is mentioned, that is, their quality of spending in charity in Allah's way. When spending, they do not only give to those who ask for help, but they also make it their responsibility to find out who are needy ones and do not disclose their needs to others.\n\nThe purpose of the verse is to show that the believers and the righteous do not only perform bodily worship, such as prayers and remaining awake at night, but they also play a major role in performing pecuniary worship, in that besides helping the people who beg they also look for, and help, those who out of self-respect do not express their needs to anyone. When mentioning this pecuniary worship, the expression used by the Qur'an is the following, وَفِي أَمْوَالِهِمْ حَقٌّ \"and in their wealth, there was a right\". It means that when they meet the needs of the poor, they do not deem it a favour shown to them, but they appreciate that the poor have a 'right' in the wealth Allah has blessed them with, and fulfilling one's right is not a favour; it is rather a duty and responsibility that one has to discharge.\n\n────────────────────────────────────────\n\n[Verse 20]\n\nAllah's Signs on the Earth and in Mankind\n\nوَفِي الْأَرْ‌ضِ آيَاتٌ لِّلْمُوقِنِينَ (And in the earth, there are signs for those who [ seek truth to ] believe,... 51:20). In the preceding verses in the first instance a description of the infidels and rejecters and their evil fate was given. As against those who flounder in the welter of wrong beliefs and evil deeds and deny the possibility of the Day of Judgment, the qualities of the believers and the righteous were subsequently given, and their elevated position was described. Now once again attention is drawn to those who deny the possibility of Judgment Day. They are invited to ponder on the signs of Allah on earth that testify to the might of the Creator and His boundless power, and thus the skeptics are advised to desist from denying the Judgment Day. In this way the statement is connected to the preceding statement in verse [ 8] \"You are involved in contradictory statement.\"\n\nTafsir Mazhari is of the view that this verse too describes the quality of the believers and the righteous. The word muqinin (those who have certainty of faith) refers to the same God-fearing people mentioned in an earlier verse. The sense is that these people keep pondering on the divine signs spread on earth and in their own beings, and it increases their belief. In another verse they are described as وَيَتَفَكَّرُ‌ونَ فِي خَلْقِ السَّمَاوَاتِ وَالْأَرْ‌ضِ \"...and ponder on the creation of the heavens and the earth...\". (3:191)\n\nAllah's signs on earth include what Allah has placed on the earth, the various plants, animals, valleys, mountains, deserts, rivers and oceans. He also created mankind with different languages, colours, intentions and abilities, and a variety among them, differences in the power of understanding and comprehension, their deeds, and ultimately earning happiness or misery. Allah put every organ in their bodies in its rightful place where they most need it to be.\n\n────────────────────────────────────────\n\n[Verse 21]\n\nThus Allah says: وَفِي أَنفُسِكُمْ أَفَلَا تُبْصِرُ‌ونَ (... and in your own selves! So, do you not perceive? ....51:21). Out of the innumerous signs of Allah's power which are present everywhere in the universe, including the heavenly and celestial beings and creatures, only those signs are referred to here which are available on earth, because they are very close to man's experience, and he resides and moves about among them. The present verse now speaks of man himself. Man is required to ponder on his own body, its limbs and organs. Every single part of the body testifies to the boundless Wisdom of Allah, and it will make him realize that his small being represents and encompasses almost all the divine signs that are scattered in the vast universe. That is why man is termed as 'the universe in miniature', because all types of creation are present in his existence. If a man thinks of all phases he has passed through right from his birth till his death, he may perceive the power of Allah Ta’ ala as if he discerns Him clearly.\n\nThe Development of the Sperm and Embryo in the Womb\n\nHuman microscopic sperm and egg is an amazing phenomenon. It is made up of foodstuff and tenuous particles from various parts of the world. If the sperm establishes itself in the mother's womb, then more material is added to it, and it changes into a red clot. It then changes and becomes a shapeless lump of flesh, like a piece of meat with no form or shape. Then out of this shapeless lump bones are fashioned; then the bones are clothed with flesh; and it starts to take on a form and shape, developing a head, arms, chest, stomach, thighs, legs, feet and all its members. A wonderful brain is placed under its skull in whose complicated layers lie all mental abilities. Thus equipping it, Allah sends an angel to it who breathes the soul into it. After the completion of its creation, it is brought into this world where he develops from infancy to full adulthood to old age. Then he gradually progresses from zero level of knowledge and consciousness to an intelligent, rational and active being. The human forms and shapes are so different that no two faces are identical in millions and billions of people even in a small area. Furthermore, there are differences in their temperaments, dispositions and habits. There is unity in this diversity. All this is the marvel of the perfect power of Allah who has neither partners nor rivals: فَتَبَارَ‌كَ اللَّـهُ أَحْسَنُ الْخَالِقِينَ \"So blessed is Allah, the Best Creator!\" (23:14)Man experiences all this not from outside himself, but within himself, day and night. Only a person who is absolutely blind and senseless will ever deny the existence of Allah. Therefore, at the conclusion of the verse, the Qur'an poses the rhetorical question: \"So, do you not perceive?\" (21) A person need not be very intelligent to understand the facts of life. If his sight is intact, he can arrive at the right conclusion.",
+      "subsections": [
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "وَفِي أَمْوَالِهِمْ حَقٌّ لِّلسَّائِلِ وَالْمَحْرُ‌ومِ (and in their wealth, there was a right for the one who asks and the one who is deprived...51:19) The word sail means the poor or needy who begs others, that is, he expresses his needs to people who help him. The word mahrum also refers to a poor or needy, but who cannot express his needs from a sense of self-respect or a feeling of shame, and thus is deprived of people's help. In this verse another quality of the believers and the righteous is mentioned, that is, their quality of spending in charity in Allah's way. When spending, they do not only give to those who ask for help, but they also make it their responsibility to find out who are needy ones and do not disclose their needs to others."
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "51-22-25",
+      "surahNumber": 51,
+      "verseRange": [
+        22,
+        25
+      ],
+      "title": "────────────────────────────────────────",
+      "juzNumber": 26,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5192/mode/2up",
+      "arabicText": "وَفِى ٱلسَّمَآءِ رِزْقُكُمْ وَمَا تُوعَدُونَ ۝٢٢ فَوَرَبِّ ٱلسَّمَآءِ وَٱلْأَرْضِ إِنَّهُۥ لَحَقٌّ مِّثْلَ مَآ أَنَّكُمْ تَنطِقُونَ ۝٢٣ هَلْ أَتَىٰكَ حَدِيثُ ضَيْفِ إِبْرَٰهِيمَ ٱلْمُكْرَمِينَ ۝٢٤ إِذْ دَخَلُوا۟ عَلَيْهِ فَقَالُوا۟ سَلَـٰمًا ۖ قَالَ سَلَـٰمٌ قَوْمٌ مُّنكَرُونَ ۝٢٥",
+      "translation": "And in the heavens, there is your sustenance and all that you have been promised. ۝ So, by the Lord of the heavens and the earth, it (the Day of Recompense) is a reality, as sure as the fact that you (can) speak. ۝ Has there come to you the story of the honoured guests of Ibrāhīm? ۝ When they (the angels in human form) entered unto him and said, “We greet you with Salām .” He said, “Salām on you.” (And he said to himself,) “(They are) unknown people.” ۝",
+      "phraseCards": [
+        {
+          "id": "51-22-card",
+          "verseNumber": 22,
+          "arabicPhrase": "وَفِى ٱلسَّمَآءِ رِزْقُكُمْ وَمَا تُوعَدُونَ",
+          "englishPhrase": "And in the heavens, there is your sustenance and all that you have been promised.",
+          "vocabulary": [
+            {
+              "word": "وَفِى",
+              "root": "و - ف - ي",
+              "meaning": "And in",
+              "grammarNote": "Transliteration: wafī"
+            },
+            {
+              "word": "ٱلسَّمَآءِ",
+              "root": "م - ا - ء",
+              "meaning": "the heaven",
+              "grammarNote": "Transliteration: l-samāi"
+            },
+            {
+              "word": "رِزْقُكُمْ",
+              "root": "ر - ز - ق",
+              "meaning": "(is) your provision",
+              "grammarNote": "Transliteration: riz'qukum"
+            },
+            {
+              "word": "وَمَا",
+              "root": "و - م - ا",
+              "meaning": "and what",
+              "grammarNote": "Transliteration: wamā"
+            },
+            {
+              "word": "تُوعَدُونَ",
+              "root": "و - ع - د",
+              "meaning": "you are promised",
+              "grammarNote": "Transliteration: tūʿadūna"
+            }
+          ]
+        },
+        {
+          "id": "51-23-card",
+          "verseNumber": 23,
+          "arabicPhrase": "فَوَرَبِّ ٱلسَّمَآءِ وَٱلْأَرْضِ إِنَّهُۥ لَحَقٌّ مِّثْلَ مَآ أَنَّكُمْ تَنطِقُونَ",
+          "englishPhrase": "So, by the Lord of the heavens and the earth, it (the Day of Recompense) is a reality, as sure as the fact that you (can) speak.",
+          "vocabulary": [
+            {
+              "word": "فَوَرَبِّ",
+              "root": "و - ر - ب",
+              "meaning": "Then by (the) Lord",
+              "grammarNote": "Transliteration: fawarabbi"
+            },
+            {
+              "word": "ٱلسَّمَآءِ",
+              "root": "م - ا - ء",
+              "meaning": "(of) the heaven",
+              "grammarNote": "Transliteration: l-samāi"
+            },
+            {
+              "word": "وَٱلْأَرْضِ",
+              "root": "ا - ر - ض",
+              "meaning": "and the earth",
+              "grammarNote": "Transliteration: wal-arḍi"
+            },
+            {
+              "word": "إِنَّهُۥ",
+              "root": "ا - ن - ه",
+              "meaning": "indeed, it",
+              "grammarNote": "Transliteration: innahu"
+            },
+            {
+              "word": "لَحَقٌّۭ",
+              "root": "ل - ح - ق",
+              "meaning": "(is) surely (the) truth",
+              "grammarNote": "Transliteration: laḥaqqun"
+            },
+            {
+              "word": "مِّثْلَ",
+              "root": "م - ث - ل",
+              "meaning": "(just) as",
+              "grammarNote": "Transliteration: mith'la"
+            },
+            {
+              "word": "مَآ",
+              "root": "م - ا",
+              "meaning": "[what]",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "أَنَّكُمْ",
+              "root": "ن - ك - م",
+              "meaning": "you",
+              "grammarNote": "Transliteration: annakum"
+            },
+            {
+              "word": "تَنطِقُونَ",
+              "root": "ن - ط - ق",
+              "meaning": "speak",
+              "grammarNote": "Transliteration: tanṭiqūna"
+            }
+          ]
+        },
+        {
+          "id": "51-24-card",
+          "verseNumber": 24,
+          "arabicPhrase": "هَلْ أَتَىٰكَ حَدِيثُ ضَيْفِ إِبْرَٰهِيمَ ٱلْمُكْرَمِينَ",
+          "englishPhrase": "Has there come to you the story of the honoured guests of Ibrāhīm?",
+          "vocabulary": [
+            {
+              "word": "هَلْ",
+              "root": "ه - ل",
+              "meaning": "Has",
+              "grammarNote": "Transliteration: hal"
+            },
+            {
+              "word": "أَتَىٰكَ",
+              "root": "ا - ت - ي",
+              "meaning": "reached you",
+              "grammarNote": "Transliteration: atāka"
+            },
+            {
+              "word": "حَدِيثُ",
+              "root": "ح - د - ي",
+              "meaning": "(the) narration",
+              "grammarNote": "Transliteration: ḥadīthu"
+            },
+            {
+              "word": "ضَيْفِ",
+              "root": "ض - ي - ف",
+              "meaning": "(of the) guests",
+              "grammarNote": "Transliteration: ḍayfi"
+            },
+            {
+              "word": "إِبْرَٰهِيمَ",
+              "root": "ب - ر - ه",
+              "meaning": "(of) Ibrahim",
+              "grammarNote": "Transliteration: ib'rāhīma"
+            },
+            {
+              "word": "ٱلْمُكْرَمِينَ",
+              "root": "ك - ر - م",
+              "meaning": "the honored",
+              "grammarNote": "Transliteration: l-muk'ramīna"
+            }
+          ]
+        },
+        {
+          "id": "51-25-card",
+          "verseNumber": 25,
+          "arabicPhrase": "إِذْ دَخَلُوا۟ عَلَيْهِ فَقَالُوا۟ سَلَـٰمًا ۖ قَالَ سَلَـٰمٌ قَوْمٌ مُّنكَرُونَ",
+          "englishPhrase": "When they (the angels in human form) entered unto him and said, “We greet you with Salām .” He said, “Salām on you.” (And he said to himself,) “(They are) unknown people.”",
+          "vocabulary": [
+            {
+              "word": "إِذْ",
+              "root": "ا - ذ",
+              "meaning": "When",
+              "grammarNote": "Transliteration: idh"
+            },
+            {
+              "word": "دَخَلُوا۟",
+              "root": "د - خ - ل",
+              "meaning": "they entered",
+              "grammarNote": "Transliteration: dakhalū"
+            },
+            {
+              "word": "عَلَيْهِ",
+              "root": "ع - ل - ي",
+              "meaning": "upon him",
+              "grammarNote": "Transliteration: ʿalayhi"
+            },
+            {
+              "word": "فَقَالُوا۟",
+              "root": "ق - ا - ل",
+              "meaning": "and said",
+              "grammarNote": "Transliteration: faqālū"
+            },
+            {
+              "word": "سَلَـٰمًۭا ۖ",
+              "root": "ل - م - ا",
+              "meaning": "Peace",
+              "grammarNote": "Transliteration: salāman"
+            },
+            {
+              "word": "قَالَ",
+              "root": "ق - ا - ل",
+              "meaning": "He said",
+              "grammarNote": "Transliteration: qāla"
+            },
+            {
+              "word": "سَلَـٰمٌۭ",
+              "root": "س - ل - م",
+              "meaning": "Peace",
+              "grammarNote": "Transliteration: salāmun"
+            },
+            {
+              "word": "قَوْمٌۭ",
+              "root": "ق - و - م",
+              "meaning": "a people",
+              "grammarNote": "Transliteration: qawmun"
+            },
+            {
+              "word": "مُّنكَرُونَ",
+              "root": "ن - ك - ر",
+              "meaning": "unknown",
+              "grammarNote": "Transliteration: munkarūna"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verse 22]\n\nوَفِي السَّمَاءِ رِ‌زْقُكُمْ وَمَا تُوعَدُونَ (And in the heavens, there is your sustenance and all that you have been promised.... 51:22). The plain and simple interpretation of this is that 'in heaven' here means what has been written in the Preserved Tablet (Al-Lauh-ul-Mahfuz). It is clear that man's sustenance, what has been promised to him and whatever its consequences will be - are all preserved in the Preserved Tablet. Sayyidna Abu Said Khudri ؓ reports that the Holy Messenger ﷺ said: \"Even if someone tries to avoid and run away from his designated sustenance, he will not succeed, because his sustenance will pursue him just as he cannot run away from his death\". (Qurtubi) Some scholars say that 'sustenance' here signifies \"rain\". In this case 'heaven' will not refer to the body, arch or vault of the sky. It refers to anything that hangs overhead and covers things in its shade, including the celestial atmosphere and clouds from where the rain falls. The expression 'all that you have been promised' refers to Paradise and its delights. Allah, the Pure and Exalted, knows best.\n\n────────────────────────────────────────\n\n[Verses 23–24]\n\nإِنَّهُ لَحَقٌّ مِّثْلَ مَا أَنَّكُمْ تَنطِقُونَ (...it [ the Day of Recompense ] is a reality, as sure as that you speak....51:23). It means that all of the matters relating to Judgment, Resurrection and Recompense that they have been promised shall certainly occur. Therefore, it is the truth, there being no doubt about it, so they should not doubt its coming, just as they do not doubt that they can speak. There are five physical sensations of perception: sight, hearing, tasting, feeling and smelling. Here 'speaking' has been singled out probably because the faculty of speech is the only one where there can be no trace of deception or illusion, whereas the other sensations, on account of ailments, can get contorted. Differences in hearing and seeing are known. In sickness the sensation of tasting gets reversed or distorted in some other way. Sometimes sweet things taste bitter and bitter things taste sweet. (Qurtubi)\n\n────────────────────────────────────────\n\n[Verse 25]\n\nComforting the Messenger of Allah\n\nفَقَالُوا سَلَامًا قَالَ سَلَامٌ (\"We greet you with salam.\" He said, \"Salam on you.\" 51:25). The angels greeted him with salaman in the accusative case, whereas Holy Prophet Ibrahim (علیہ السلام) responded to the greeting in the -nominative case thus: salamun. The nominative case in Arabic is a nominal sentence which carries the sense of greater strength, continuity and persistence. The Qur'anic injunction is that 'when you are greeted with a salutation, greet one better than it...', so Holy Prophet Ibrahim (علیہ السلام) the Friend of Allah chose a better reply, implementing Allah's command: reciprocating the greeting with the term salaman is stronger than the greeting using the term salaman.\n\nقَوْمٌ مُّنكَرُ‌ونَ (\"[ They are ] unknown people.\"... 51:25). The word munkar, the letter [م m ] carrying dammah and the letter [ ک k ] carrying fath means \"unknown\". As sin or sinful work is unknown in Islam, it is also referred to as munkar. The angels came to Holy Prophet Ibrahim (علیہ السلام) in the image of handsome young wonderfully graceful men; therefore he could not recognize them. He thought to himself that these are strangers and said to himself 'They are unknown to me'. Or it is possible that he might have mentioned this to the guests in the form of a question and the purpose might have been to find out who they were.",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Juristic Rulings & Shariah Injunctions (vv. 22–25)",
+          "content": "فَقَالُوا سَلَامًا قَالَ سَلَامٌ (\"We greet you with salam.\" He said, \"Salam on you.\" 51:25). The angels greeted him with salaman in the accusative case, whereas Holy Prophet Ibrahim (علیہ السلام) responded to the greeting in the -nominative case thus: salamun. The nominative case in Arabic is a nominal sentence which carries the sense of greater strength, continuity and persistence. The Qur'anic injunction is that 'when you are greeted with a salutation, greet one better than it...', so Holy Prophet Ibrahim (علیہ السلام) the Friend of Allah chose a better reply, implementing Allah's command: reciprocating the greeting with the term salaman is stronger than the greeting using the term salaman."
+        },
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "وَفِي السَّمَاءِ رِ‌زْقُكُمْ وَمَا تُوعَدُونَ (And in the heavens, there is your sustenance and all that you have been promised.... 51:22). The plain and simple interpretation of this is that 'in heaven' here means what has been written in the Preserved Tablet (Al-Lauh-ul-Mahfuz). It is clear that man's sustenance, what has been promised to him and whatever its consequences will be - are all preserved in the Preserved Tablet. Sayyidna Abu Said Khudri ؓ reports that the Holy Messenger ﷺ said: \"Even if someone tries to avoid and run away from his designated sustenance, he will not succeed, because his sustenance will pursue him just as he cannot run away from his death\". (Qurtubi) Some scholars say that 'sustenance' here signifies \"rain\". In this case 'heaven' will not refer to the body, arch or vault of the sky. It refers to anything that hangs overhead and covers things in its shade,..."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "إِنَّهُ لَحَقٌّ مِّثْلَ مَا أَنَّكُمْ تَنطِقُونَ (...it [ the Day of Recompense ] is a reality, as sure as that you speak....51:23). It means that all of the matters relating to Judgment, Resurrection and Recompense that they have been promised shall certainly occur. Therefore, it is the truth, there being no doubt about it, so they should not doubt its coming, just as they do not doubt that they can speak. There are five physical sensations of perception: sight, hearing, tasting, feeling and smelling. Here 'speaking' has been singled out probably because the faculty of speech is the only one where there can be no trace of deception or illusion, whereas the other sensations, on account of ailments, can get contorted. Differences in hearing and seeing are known. In sickness the sensation of tasting gets reversed or distorted in some other way. Sometimes sweet things taste bitter and..."
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "51-26-29",
+      "surahNumber": 51,
+      "verseRange": [
+        26,
+        29
+      ],
+      "title": "Rules of Entertaining Guests",
+      "juzNumber": 26,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5200/mode/2up",
+      "arabicText": "فَرَاغَ إِلَىٰٓ أَهْلِهِۦ فَجَآءَ بِعِجْلٍ سَمِينٍ ۝٢٦ فَقَرَّبَهُۥٓ إِلَيْهِمْ قَالَ أَلَا تَأْكُلُونَ ۝٢٧ فَأَوْجَسَ مِنْهُمْ خِيفَةً ۖ قَالُوا۟ لَا تَخَفْ ۖ وَبَشَّرُوهُ بِغُلَـٰمٍ عَلِيمٍ ۝٢٨ فَأَقْبَلَتِ ٱمْرَأَتُهُۥ فِى صَرَّةٍ فَصَكَّتْ وَجْهَهَا وَقَالَتْ عَجُوزٌ عَقِيمٌ ۝٢٩",
+      "translation": "Then he slipped off to his home and fetched a fattened calf. ۝ So he presented it before them (to eat, but being angels, they refrained.) He said, “Would you not eat?” ۝ So he felt some fear in his heart. They said, “Be not scared.” And they gave him the good news of (the birth of) a knowledgeable boy. ۝ So his wife came forward with a clamor, and slapped her own face and said, “(How can I have a child when I am) a barren old woman?” ۝",
+      "phraseCards": [
+        {
+          "id": "51-26-card",
+          "verseNumber": 26,
+          "arabicPhrase": "فَرَاغَ إِلَىٰٓ أَهْلِهِۦ فَجَآءَ بِعِجْلٍ سَمِينٍ",
+          "englishPhrase": "Then he slipped off to his home and fetched a fattened calf.",
+          "vocabulary": [
+            {
+              "word": "فَرَاغَ",
+              "root": "ر - ا - غ",
+              "meaning": "Then he went",
+              "grammarNote": "Transliteration: farāgha"
+            },
+            {
+              "word": "إِلَىٰٓ",
+              "root": "ا - ل - ي",
+              "meaning": "to",
+              "grammarNote": "Transliteration: ilā"
+            },
+            {
+              "word": "أَهْلِهِۦ",
+              "root": "ا - ه - ل",
+              "meaning": "his household",
+              "grammarNote": "Transliteration: ahlihi"
+            },
+            {
+              "word": "فَجَآءَ",
+              "root": "ج - ا - ء",
+              "meaning": "and came",
+              "grammarNote": "Transliteration: fajāa"
+            },
+            {
+              "word": "بِعِجْلٍۢ",
+              "root": "ع - ج - ل",
+              "meaning": "with a calf",
+              "grammarNote": "Transliteration: biʿij'lin"
+            },
+            {
+              "word": "سَمِينٍۢ",
+              "root": "م - ي - ن",
+              "meaning": "fat",
+              "grammarNote": "Transliteration: samīnin"
+            }
+          ]
+        },
+        {
+          "id": "51-27-card",
+          "verseNumber": 27,
+          "arabicPhrase": "فَقَرَّبَهُۥٓ إِلَيْهِمْ قَالَ أَلَا تَأْكُلُونَ",
+          "englishPhrase": "So he presented it before them (to eat, but being angels, they refrained.) He said, “Would you not eat?”",
+          "vocabulary": [
+            {
+              "word": "فَقَرَّبَهُۥٓ",
+              "root": "ق - ر - ب",
+              "meaning": "And he placed it near",
+              "grammarNote": "Transliteration: faqarrabahu"
+            },
+            {
+              "word": "إِلَيْهِمْ",
+              "root": "ي - ه - م",
+              "meaning": "[to] them",
+              "grammarNote": "Transliteration: ilayhim"
+            },
+            {
+              "word": "قَالَ",
+              "root": "ق - ا - ل",
+              "meaning": "he said",
+              "grammarNote": "Transliteration: qāla"
+            },
+            {
+              "word": "أَلَا",
+              "root": "ا - ل - ا",
+              "meaning": "Will not",
+              "grammarNote": "Transliteration: alā"
+            },
+            {
+              "word": "تَأْكُلُونَ",
+              "root": "ا - ك - ل",
+              "meaning": "you eat",
+              "grammarNote": "Transliteration: takulūna"
+            }
+          ]
+        },
+        {
+          "id": "51-28-card",
+          "verseNumber": 28,
+          "arabicPhrase": "فَأَوْجَسَ مِنْهُمْ خِيفَةً ۖ قَالُوا۟ لَا تَخَفْ ۖ وَبَشَّرُوهُ بِغُلَـٰمٍ عَلِيمٍ",
+          "englishPhrase": "So he felt some fear in his heart. They said, “Be not scared.” And they gave him the good news of (the birth of) a knowledgeable boy.",
+          "vocabulary": [
+            {
+              "word": "فَأَوْجَسَ",
+              "root": "و - ج - س",
+              "meaning": "Then he felt",
+              "grammarNote": "Transliteration: fa-awjasa"
+            },
+            {
+              "word": "مِنْهُمْ",
+              "root": "ن - ه - م",
+              "meaning": "from them",
+              "grammarNote": "Transliteration: min'hum"
+            },
+            {
+              "word": "خِيفَةًۭ ۖ",
+              "root": "خ - ي - ف",
+              "meaning": "a fear",
+              "grammarNote": "Transliteration: khīfatan"
+            },
+            {
+              "word": "قَالُوا۟",
+              "root": "ق - ا - ل",
+              "meaning": "They said",
+              "grammarNote": "Transliteration: qālū"
+            },
+            {
+              "word": "لَا",
+              "root": "ل - ا",
+              "meaning": "(Do) not",
+              "grammarNote": "Transliteration: lā"
+            },
+            {
+              "word": "تَخَفْ ۖ",
+              "root": "ت - خ - ف",
+              "meaning": "fear",
+              "grammarNote": "Transliteration: takhaf"
+            },
+            {
+              "word": "وَبَشَّرُوهُ",
+              "root": "ب - ش - ر",
+              "meaning": "and they gave him glad tidings",
+              "grammarNote": "Transliteration: wabasharūhu"
+            },
+            {
+              "word": "بِغُلَـٰمٍ",
+              "root": "غ - ل - م",
+              "meaning": "of a son",
+              "grammarNote": "Transliteration: bighulāmin"
+            },
+            {
+              "word": "عَلِيمٍۢ",
+              "root": "ع - ل - ي",
+              "meaning": "learned",
+              "grammarNote": "Transliteration: ʿalīmin"
+            }
+          ]
+        },
+        {
+          "id": "51-29-card",
+          "verseNumber": 29,
+          "arabicPhrase": "فَأَقْبَلَتِ ٱمْرَأَتُهُۥ فِى صَرَّةٍ فَصَكَّتْ وَجْهَهَا وَقَالَتْ عَجُوزٌ عَقِيمٌ",
+          "englishPhrase": "So his wife came forward with a clamor, and slapped her own face and said, “(How can I have a child when I am) a barren old woman?”",
+          "vocabulary": [
+            {
+              "word": "فَأَقْبَلَتِ",
+              "root": "ق - ب - ل",
+              "meaning": "Then came forward",
+              "grammarNote": "Transliteration: fa-aqbalati"
+            },
+            {
+              "word": "ٱمْرَأَتُهُۥ",
+              "root": "م - ر - ا",
+              "meaning": "his wife",
+              "grammarNote": "Transliteration: im'ra-atuhu"
+            },
+            {
+              "word": "فِى",
+              "root": "ف - ي",
+              "meaning": "with",
+              "grammarNote": "Transliteration: fī"
+            },
+            {
+              "word": "صَرَّةٍۢ",
+              "root": "ص - ر - ه",
+              "meaning": "a loud voice",
+              "grammarNote": "Transliteration: ṣarratin"
+            },
+            {
+              "word": "فَصَكَّتْ",
+              "root": "ص - ك - ت",
+              "meaning": "and struck",
+              "grammarNote": "Transliteration: faṣakkat"
+            },
+            {
+              "word": "وَجْهَهَا",
+              "root": "ج - ه - ه",
+              "meaning": "her face",
+              "grammarNote": "Transliteration: wajhahā"
+            },
+            {
+              "word": "وَقَالَتْ",
+              "root": "ق - ل - ت",
+              "meaning": "and she said",
+              "grammarNote": "Transliteration: waqālat"
+            },
+            {
+              "word": "عَجُوزٌ",
+              "root": "ع - ج - و",
+              "meaning": "An old woman",
+              "grammarNote": "Transliteration: ʿajūzun"
+            },
+            {
+              "word": "عَقِيمٌۭ",
+              "root": "ع - ق - ي",
+              "meaning": "barren",
+              "grammarNote": "Transliteration: ʿaqīmun"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verses 26–27]\n\nرَ‌اغَ إِلَىٰ أَهْلِهِ (Then he slipped off to his home - 51:26). Ragha is derived from rawgh which means to slip out quietly. In other words, Holy Prophet Ibrahim (علیہ السلام) discreetly went in the house in haste to arrange for meal for his guests, so that they do not sense it. Otherwise they would have stopped him.\n\nRules of Entertaining Guests\n\nIbn Kathir says that this verse indicates proper manners for entertaining guests: Holy Prophet Ibrahim (علیہ السلام) ، the host, did not first mention that he would make food for them. He slipped out quietly, and brought the food to his guests quickly, while they were unaware that it was being prepared for them. Rather, he discreetly had it prepared and placed before them. He prepared the best kind of food he had, a young, fat roasted calf. Moreover, he did not place the food far from them and invite them to come close to it to eat. Rather, he placed it close to them فَقَرَّ‌بَهُ إِلَيْهِمْ 'brought it close to them' and refrained from ordering them to eat. Instead he invited them politely, kindly and cordially to partake thus أَلَا تَأْكُلُونَ 'Would you not eat?' This statement in the form of a question is similar to one of us saying to a guest, 'Would you kindly partake of it - even if you are not hungry, at least for my sake?'\n\n────────────────────────────────────────\n\n[Verse 28]\n\nفَأَوْجَسَ مِنْهُمْ خِيفَةً (So he felt some fear in his heart...51:28). When the guests did not eat the food, the Holy Prophet Ibrahim (علیہ السلام) conceived fear of them. In those days it was the custom of the noble people to entertain the guests who were expected to accept the hospitality of the host. If they did not, the host would become apprehensive that there is some danger afoot - probably they are enemies who came to cause some kind of trouble for them. In those days, even the rogues and wrongdoers had the noble quality that they would not cause any harm to anyone whose food they had eaten. Hence refusing to eat was a sign of hostility or danger.\n\n────────────────────────────────────────\n\n[Verse 29]\n\nفَأَقْبَلَتِ امْرَ‌أَتُهُ فِي صَرَّ‌ةٍ (So his wife came forward with a clamour,...51:29). The word sarrah means vociferation or clamour or most vehement clamour of crying. Sarir is the sound of a pen when it is writing. When Sayyidah Sarah ؓ heard that the angels were giving good news to her husband Ibrahim (علیہ السلام) of the birth of a son, she thought that this news was as good to her as it was to her husband, for the son would be theirs, and therefore, they both were getting some good news. As a result, she involuntarily screamed loudly, she struck herself upon her forehead as women do when confronted with an amazing thing and said: and slapped her own face and said, عَجُوزٌ عَقِيمٌ \"A barren old woman?\" meaning 'How can I give birth while I am an old woman? And even when I was young I was barren and could not have children.' The angels replied that Allah has power over all things and therefore this would happen even so: \"This is how your Lord has said.\" Thus when Holy Prophet Ishaq (علیہ السلام) was born, Sayyidah Sarah ؓ was ninety-nine years old and Holy Prophet Ibrahim (علیہ السلام) was one hundred years old. (Qurtubi)",
+      "subsections": [
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "رَ‌اغَ إِلَىٰ أَهْلِهِ (Then he slipped off to his home - 51:26). Ragha is derived from rawgh which means to slip out quietly. In other words, Holy Prophet Ibrahim (علیہ السلام) discreetly went in the house in haste to arrange for meal for his guests, so that they do not sense it. Otherwise they would have stopped him."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "Ibn Kathir says that this verse indicates proper manners for entertaining guests: Holy Prophet Ibrahim (علیہ السلام) ، the host, did not first mention that he would make food for them. He slipped out quietly, and brought the food to his guests quickly, while they were unaware that it was being prepared for them. Rather, he discreetly had it prepared and placed before them. He prepared the best kind of food he had, a young, fat roasted calf. Moreover, he did not place the food far from them and invite them to come close to it to eat. Rather, he placed it close to them فَقَرَّ‌بَهُ إِلَيْهِمْ 'brought it close to them' and refrained from ordering them to eat. Instead he invited them politely, kindly and cordially to partake thus أَلَا تَأْكُلُونَ 'Would you not eat?' This statement in the form of a question is similar to one of us saying to a guest, 'Would you kindly partake of it - even..."
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "51-30-46",
+      "surahNumber": 51,
+      "verseRange": [
+        30,
+        46
+      ],
+      "title": "────────────────────────────────────────",
+      "juzNumber": 26,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5200/mode/2up",
+      "arabicText": "قَالُوا۟ كَذَٰلِكِ قَالَ رَبُّكِ ۖ إِنَّهُۥ هُوَ ٱلْحَكِيمُ ٱلْعَلِيمُ ۝٣٠ ۞ قَالَ فَمَا خَطْبُكُمْ أَيُّهَا ٱلْمُرْسَلُونَ ۝٣١ قَالُوٓا۟ إِنَّآ أُرْسِلْنَآ إِلَىٰ قَوْمٍ مُّجْرِمِينَ ۝٣٢ لِنُرْسِلَ عَلَيْهِمْ حِجَارَةً مِّن طِينٍ ۝٣٣ مُّسَوَّمَةً عِندَ رَبِّكَ لِلْمُسْرِفِينَ ۝٣٤ فَأَخْرَجْنَا مَن كَانَ فِيهَا مِنَ ٱلْمُؤْمِنِينَ ۝٣٥ فَمَا وَجَدْنَا فِيهَا غَيْرَ بَيْتٍ مِّنَ ٱلْمُسْلِمِينَ ۝٣٦ وَتَرَكْنَا فِيهَآ ءَايَةً لِّلَّذِينَ يَخَافُونَ ٱلْعَذَابَ ٱلْأَلِيمَ ۝٣٧ وَفِى مُوسَىٰٓ إِذْ أَرْسَلْنَـٰهُ إِلَىٰ فِرْعَوْنَ بِسُلْطَـٰنٍ مُّبِينٍ ۝٣٨ فَتَوَلَّىٰ بِرُكْنِهِۦ وَقَالَ سَـٰحِرٌ أَوْ مَجْنُونٌ ۝٣٩ فَأَخَذْنَـٰهُ وَجُنُودَهُۥ فَنَبَذْنَـٰهُمْ فِى ٱلْيَمِّ وَهُوَ مُلِيمٌ ۝٤٠ وَفِى عَادٍ إِذْ أَرْسَلْنَا عَلَيْهِمُ ٱلرِّيحَ ٱلْعَقِيمَ ۝٤١ مَا تَذَرُ مِن شَىْءٍ أَتَتْ عَلَيْهِ إِلَّا جَعَلَتْهُ كَٱلرَّمِيمِ ۝٤٢ وَفِى ثَمُودَ إِذْ قِيلَ لَهُمْ تَمَتَّعُوا۟ حَتَّىٰ حِينٍ ۝٤٣ فَعَتَوْا۟ عَنْ أَمْرِ رَبِّهِمْ فَأَخَذَتْهُمُ ٱلصَّـٰعِقَةُ وَهُمْ يَنظُرُونَ ۝٤٤ فَمَا ٱسْتَطَـٰعُوا۟ مِن قِيَامٍ وَمَا كَانُوا۟ مُنتَصِرِينَ ۝٤٥ وَقَوْمَ نُوحٍ مِّن قَبْلُ ۖ إِنَّهُمْ كَانُوا۟ قَوْمًا فَـٰسِقِينَ ۝٤٦",
+      "translation": "They said, “This is how your Lord has said. Surely, He is All-Wise, All-Knowing.” ۝ He (Ibrāhīm) said (to the angels), “Then, what is your mission O messengers?” ۝ They said, “We are sent to a guilty people, (i.e. the people of Sodom) ۝ so that we may send down upon them stones of clay, ۝ marked by your Lord for the transgressors.” ۝ So, We let the believers who were there to come out (from danger), ۝ but We did not find in it any Muslims, except one house. ۝ And We left in this (event) a sign (of deterrence) for those who fear the painful punishment. ۝ And (We left a similar sign) in (the story of) Mūsā, when We sent him to Fir‘aun (Pharaoh) with a clear proof. ۝ So he turned away along with his chiefs and said, “ (Mūsā is) a magician or a madman!” ۝ So We seized him and his army, and cast them into the sea, as he was of culpable behaviour. ۝ And (a similar sign was left) in (the story of) ‘Ād, when We sent upon them the wind that was barren (from any benefit); ۝ it spared nothing it came upon, but rendered it like a stuff smashed by decay. ۝ And (a similar sign was left) in (the story of) Thamūd, when it was said to them, “Enjoy yourselves for a while.” ۝ Then they rebelled against the command of your Lord; so the thunderbolt (of divine punishment) seized them, while they were looking on. ۝ Then they were neither able to stand (before the punishment), nor could they defend themselves. ۝ And (We have destroyed) the people of NūH even before; indeed they were a sinful people. ۝",
+      "phraseCards": [
+        {
+          "id": "51-30-card",
+          "verseNumber": 30,
+          "arabicPhrase": "قَالُوا۟ كَذَٰلِكِ قَالَ رَبُّكِ ۖ إِنَّهُۥ هُوَ ٱلْحَكِيمُ ٱلْعَلِيمُ",
+          "englishPhrase": "They said, “This is how your Lord has said. Surely, He is All-Wise, All-Knowing.”",
+          "vocabulary": [
+            {
+              "word": "قَالُوا۟",
+              "root": "ق - ا - ل",
+              "meaning": "They said",
+              "grammarNote": "Transliteration: qālū"
+            },
+            {
+              "word": "كَذَٰلِكِ",
+              "root": "ك - ذ - ل",
+              "meaning": "Thus",
+              "grammarNote": "Transliteration: kadhāliki"
+            },
+            {
+              "word": "قَالَ",
+              "root": "ق - ا - ل",
+              "meaning": "said",
+              "grammarNote": "Transliteration: qāla"
+            },
+            {
+              "word": "رَبُّكِ ۖ",
+              "root": "ر - ب - ب",
+              "meaning": "your Lord",
+              "grammarNote": "Transliteration: rabbuki"
+            },
+            {
+              "word": "إِنَّهُۥ",
+              "root": "ا - ن - ه",
+              "meaning": "Indeed, He",
+              "grammarNote": "Transliteration: innahu"
+            },
+            {
+              "word": "هُوَ",
+              "root": "ه - و",
+              "meaning": "[He]",
+              "grammarNote": "Transliteration: huwa"
+            },
+            {
+              "word": "ٱلْحَكِيمُ",
+              "root": "ح - ك - ي",
+              "meaning": "(is) the All-Wise",
+              "grammarNote": "Transliteration: l-ḥakīmu"
+            },
+            {
+              "word": "ٱلْعَلِيمُ",
+              "root": "ع - ل - ي",
+              "meaning": "the All-Knower",
+              "grammarNote": "Transliteration: l-ʿalīmu"
+            }
+          ]
+        },
+        {
+          "id": "51-31-card",
+          "verseNumber": 31,
+          "arabicPhrase": "۞ قَالَ فَمَا خَطْبُكُمْ أَيُّهَا ٱلْمُرْسَلُونَ",
+          "englishPhrase": "He (Ibrāhīm) said (to the angels), “Then, what is your mission O messengers?”",
+          "vocabulary": [
+            {
+              "word": "۞ قَالَ",
+              "root": "ق - ا - ل",
+              "meaning": "He said",
+              "grammarNote": "Transliteration: qāla"
+            },
+            {
+              "word": "فَمَا",
+              "root": "ف - م - ا",
+              "meaning": "Then what",
+              "grammarNote": "Transliteration: famā"
+            },
+            {
+              "word": "خَطْبُكُمْ",
+              "root": "خ - ط - ب",
+              "meaning": "(is) your mission",
+              "grammarNote": "Transliteration: khaṭbukum"
+            },
+            {
+              "word": "أَيُّهَا",
+              "root": "ي - ه - ا",
+              "meaning": "O messengers",
+              "grammarNote": "Transliteration: ayyuhā"
+            },
+            {
+              "word": "ٱلْمُرْسَلُونَ",
+              "root": "ر - س - ل",
+              "meaning": "O messengers",
+              "grammarNote": "Transliteration: l-mur'salūna"
+            }
+          ]
+        },
+        {
+          "id": "51-32-card",
+          "verseNumber": 32,
+          "arabicPhrase": "قَالُوٓا۟ إِنَّآ أُرْسِلْنَآ إِلَىٰ قَوْمٍ مُّجْرِمِينَ",
+          "englishPhrase": "They said, “We are sent to a guilty people, (i.e. the people of Sodom)",
+          "vocabulary": [
+            {
+              "word": "قَالُوٓا۟",
+              "root": "ق - ا - ل",
+              "meaning": "They said",
+              "grammarNote": "Transliteration: qālū"
+            },
+            {
+              "word": "إِنَّآ",
+              "root": "ا - ن - ا",
+              "meaning": "Indeed, we",
+              "grammarNote": "Transliteration: innā"
+            },
+            {
+              "word": "أُرْسِلْنَآ",
+              "root": "ر - س - ل",
+              "meaning": "[we] have been sent",
+              "grammarNote": "Transliteration: ur'sil'nā"
+            },
+            {
+              "word": "إِلَىٰ",
+              "root": "ا - ل - ي",
+              "meaning": "to",
+              "grammarNote": "Transliteration: ilā"
+            },
+            {
+              "word": "قَوْمٍۢ",
+              "root": "ق - و - م",
+              "meaning": "a people",
+              "grammarNote": "Transliteration: qawmin"
+            },
+            {
+              "word": "مُّجْرِمِينَ",
+              "root": "ج - ر - م",
+              "meaning": "criminal",
+              "grammarNote": "Transliteration: muj'rimīna"
+            }
+          ]
+        },
+        {
+          "id": "51-33-card",
+          "verseNumber": 33,
+          "arabicPhrase": "لِنُرْسِلَ عَلَيْهِمْ حِجَارَةً مِّن طِينٍ",
+          "englishPhrase": "so that we may send down upon them stones of clay,",
+          "vocabulary": [
+            {
+              "word": "لِنُرْسِلَ",
+              "root": "ر - س - ل",
+              "meaning": "That we may send down",
+              "grammarNote": "Transliteration: linur'sila"
+            },
+            {
+              "word": "عَلَيْهِمْ",
+              "root": "ع - ل - ي",
+              "meaning": "upon them",
+              "grammarNote": "Transliteration: ʿalayhim"
+            },
+            {
+              "word": "حِجَارَةًۭ",
+              "root": "ح - ج - ر",
+              "meaning": "stones",
+              "grammarNote": "Transliteration: ḥijāratan"
+            },
+            {
+              "word": "مِّن",
+              "root": "م - ن",
+              "meaning": "of",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "طِينٍۢ",
+              "root": "ط - ي - ن",
+              "meaning": "clay",
+              "grammarNote": "Transliteration: ṭīnin"
+            }
+          ]
+        },
+        {
+          "id": "51-34-card",
+          "verseNumber": 34,
+          "arabicPhrase": "مُّسَوَّمَةً عِندَ رَبِّكَ لِلْمُسْرِفِينَ",
+          "englishPhrase": "marked by your Lord for the transgressors.”",
+          "vocabulary": [
+            {
+              "word": "مُّسَوَّمَةً",
+              "root": "س - و - م",
+              "meaning": "Marked",
+              "grammarNote": "Transliteration: musawwamatan"
+            },
+            {
+              "word": "عِندَ",
+              "root": "ع - ن - د",
+              "meaning": "by your Lord",
+              "grammarNote": "Transliteration: ʿinda"
+            },
+            {
+              "word": "رَبِّكَ",
+              "root": "ر - ب - ب",
+              "meaning": "by your Lord",
+              "grammarNote": "Transliteration: rabbika"
+            },
+            {
+              "word": "لِلْمُسْرِفِينَ",
+              "root": "س - ر - ف",
+              "meaning": "for the transgressors",
+              "grammarNote": "Transliteration: lil'mus'rifīna"
+            }
+          ]
+        },
+        {
+          "id": "51-35-card",
+          "verseNumber": 35,
+          "arabicPhrase": "فَأَخْرَجْنَا مَن كَانَ فِيهَا مِنَ ٱلْمُؤْمِنِينَ",
+          "englishPhrase": "So, We let the believers who were there to come out (from danger),",
+          "vocabulary": [
+            {
+              "word": "فَأَخْرَجْنَا",
+              "root": "خ - ر - ج",
+              "meaning": "Then We brought out",
+              "grammarNote": "Transliteration: fa-akhrajnā"
+            },
+            {
+              "word": "مَن",
+              "root": "م - ن",
+              "meaning": "(those) who",
+              "grammarNote": "Transliteration: man"
+            },
+            {
+              "word": "كَانَ",
+              "root": "ك - ا - ن",
+              "meaning": "were",
+              "grammarNote": "Transliteration: kāna"
+            },
+            {
+              "word": "فِيهَا",
+              "root": "ي - ه - ا",
+              "meaning": "therein",
+              "grammarNote": "Transliteration: fīhā"
+            },
+            {
+              "word": "مِنَ",
+              "root": "م - ن",
+              "meaning": "of",
+              "grammarNote": "Transliteration: mina"
+            },
+            {
+              "word": "ٱلْمُؤْمِنِينَ",
+              "root": "ؤ - م - ن",
+              "meaning": "the believers",
+              "grammarNote": "Transliteration: l-mu'minīna"
+            }
+          ]
+        },
+        {
+          "id": "51-36-card",
+          "verseNumber": 36,
+          "arabicPhrase": "فَمَا وَجَدْنَا فِيهَا غَيْرَ بَيْتٍ مِّنَ ٱلْمُسْلِمِينَ",
+          "englishPhrase": "but We did not find in it any Muslims, except one house.",
+          "vocabulary": [
+            {
+              "word": "فَمَا",
+              "root": "ف - م - ا",
+              "meaning": "But not",
+              "grammarNote": "Transliteration: famā"
+            },
+            {
+              "word": "وَجَدْنَا",
+              "root": "ج - د - ن",
+              "meaning": "We found",
+              "grammarNote": "Transliteration: wajadnā"
+            },
+            {
+              "word": "فِيهَا",
+              "root": "ي - ه - ا",
+              "meaning": "therein",
+              "grammarNote": "Transliteration: fīhā"
+            },
+            {
+              "word": "غَيْرَ",
+              "root": "غ - ي - ر",
+              "meaning": "other than",
+              "grammarNote": "Transliteration: ghayra"
+            },
+            {
+              "word": "بَيْتٍۢ",
+              "root": "ب - ي - ت",
+              "meaning": "a house",
+              "grammarNote": "Transliteration: baytin"
+            },
+            {
+              "word": "مِّنَ",
+              "root": "م - ن",
+              "meaning": "of",
+              "grammarNote": "Transliteration: mina"
+            },
+            {
+              "word": "ٱلْمُسْلِمِينَ",
+              "root": "س - ل - م",
+              "meaning": "the Muslims",
+              "grammarNote": "Transliteration: l-mus'limīna"
+            }
+          ]
+        },
+        {
+          "id": "51-37-card",
+          "verseNumber": 37,
+          "arabicPhrase": "وَتَرَكْنَا فِيهَآ ءَايَةً لِّلَّذِينَ يَخَافُونَ ٱلْعَذَابَ ٱلْأَلِيمَ",
+          "englishPhrase": "And We left in this (event) a sign (of deterrence) for those who fear the painful punishment.",
+          "vocabulary": [
+            {
+              "word": "وَتَرَكْنَا",
+              "root": "ت - ر - ك",
+              "meaning": "And We left",
+              "grammarNote": "Transliteration: wataraknā"
+            },
+            {
+              "word": "فِيهَآ",
+              "root": "ي - ه - ا",
+              "meaning": "therein",
+              "grammarNote": "Transliteration: fīhā"
+            },
+            {
+              "word": "ءَايَةًۭ",
+              "root": "ء - ا - ي",
+              "meaning": "a Sign",
+              "grammarNote": "Transliteration: āyatan"
+            },
+            {
+              "word": "لِّلَّذِينَ",
+              "root": "ذ - ي - ن",
+              "meaning": "for those who",
+              "grammarNote": "Transliteration: lilladhīna"
+            },
+            {
+              "word": "يَخَافُونَ",
+              "root": "خ - ا - ف",
+              "meaning": "fear",
+              "grammarNote": "Transliteration: yakhāfūna"
+            },
+            {
+              "word": "ٱلْعَذَابَ",
+              "root": "ع - ذ - ب",
+              "meaning": "the punishment",
+              "grammarNote": "Transliteration: l-ʿadhāba"
+            },
+            {
+              "word": "ٱلْأَلِيمَ",
+              "root": "ل - ي - م",
+              "meaning": "the painful",
+              "grammarNote": "Transliteration: l-alīma"
+            }
+          ]
+        },
+        {
+          "id": "51-38-card",
+          "verseNumber": 38,
+          "arabicPhrase": "وَفِى مُوسَىٰٓ إِذْ أَرْسَلْنَـٰهُ إِلَىٰ فِرْعَوْنَ بِسُلْطَـٰنٍ مُّبِينٍ",
+          "englishPhrase": "And (We left a similar sign) in (the story of) Mūsā, when We sent him to Fir‘aun (Pharaoh) with a clear proof.",
+          "vocabulary": [
+            {
+              "word": "وَفِى",
+              "root": "و - ف - ي",
+              "meaning": "And in",
+              "grammarNote": "Transliteration: wafī"
+            },
+            {
+              "word": "مُوسَىٰٓ",
+              "root": "م - و - س",
+              "meaning": "Musa",
+              "grammarNote": "Transliteration: mūsā"
+            },
+            {
+              "word": "إِذْ",
+              "root": "ا - ذ",
+              "meaning": "when",
+              "grammarNote": "Transliteration: idh"
+            },
+            {
+              "word": "أَرْسَلْنَـٰهُ",
+              "root": "ر - س - ل",
+              "meaning": "We sent him",
+              "grammarNote": "Transliteration: arsalnāhu"
+            },
+            {
+              "word": "إِلَىٰ",
+              "root": "ا - ل - ي",
+              "meaning": "to",
+              "grammarNote": "Transliteration: ilā"
+            },
+            {
+              "word": "فِرْعَوْنَ",
+              "root": "ر - ع - و",
+              "meaning": "Firaun",
+              "grammarNote": "Transliteration: fir'ʿawna"
+            },
+            {
+              "word": "بِسُلْطَـٰنٍۢ",
+              "root": "ل - ط - ن",
+              "meaning": "with an authority",
+              "grammarNote": "Transliteration: bisul'ṭānin"
+            },
+            {
+              "word": "مُّبِينٍۢ",
+              "root": "ب - ي - ن",
+              "meaning": "clear",
+              "grammarNote": "Transliteration: mubīnin"
+            }
+          ]
+        },
+        {
+          "id": "51-39-card",
+          "verseNumber": 39,
+          "arabicPhrase": "فَتَوَلَّىٰ بِرُكْنِهِۦ وَقَالَ سَـٰحِرٌ أَوْ مَجْنُونٌ",
+          "englishPhrase": "So he turned away along with his chiefs and said, “ (Mūsā is) a magician or a madman!”",
+          "vocabulary": [
+            {
+              "word": "فَتَوَلَّىٰ",
+              "root": "ت - و - ل",
+              "meaning": "But he turned away",
+              "grammarNote": "Transliteration: fatawallā"
+            },
+            {
+              "word": "بِرُكْنِهِۦ",
+              "root": "ر - ك - ن",
+              "meaning": "with his supporters",
+              "grammarNote": "Transliteration: biruk'nihi"
+            },
+            {
+              "word": "وَقَالَ",
+              "root": "ق - ا - ل",
+              "meaning": "and said",
+              "grammarNote": "Transliteration: waqāla"
+            },
+            {
+              "word": "سَـٰحِرٌ",
+              "root": "س - ح - ر",
+              "meaning": "A magician",
+              "grammarNote": "Transliteration: sāḥirun"
+            },
+            {
+              "word": "أَوْ",
+              "root": "ا - و",
+              "meaning": "or",
+              "grammarNote": "Transliteration: aw"
+            },
+            {
+              "word": "مَجْنُونٌۭ",
+              "root": "م - ج - ن",
+              "meaning": "a madman",
+              "grammarNote": "Transliteration: majnūnun"
+            }
+          ]
+        },
+        {
+          "id": "51-40-card",
+          "verseNumber": 40,
+          "arabicPhrase": "فَأَخَذْنَـٰهُ وَجُنُودَهُۥ فَنَبَذْنَـٰهُمْ فِى ٱلْيَمِّ وَهُوَ مُلِيمٌ",
+          "englishPhrase": "So We seized him and his army, and cast them into the sea, as he was of culpable behaviour.",
+          "vocabulary": [
+            {
+              "word": "فَأَخَذْنَـٰهُ",
+              "root": "خ - ذ - ن",
+              "meaning": "So We took him",
+              "grammarNote": "Transliteration: fa-akhadhnāhu"
+            },
+            {
+              "word": "وَجُنُودَهُۥ",
+              "root": "ج - ن - و",
+              "meaning": "and his hosts",
+              "grammarNote": "Transliteration: wajunūdahu"
+            },
+            {
+              "word": "فَنَبَذْنَـٰهُمْ",
+              "root": "ب - ذ - ن",
+              "meaning": "and threw them",
+              "grammarNote": "Transliteration: fanabadhnāhum"
+            },
+            {
+              "word": "فِى",
+              "root": "ف - ي",
+              "meaning": "into",
+              "grammarNote": "Transliteration: fī"
+            },
+            {
+              "word": "ٱلْيَمِّ",
+              "root": "ل - ي - م",
+              "meaning": "the sea",
+              "grammarNote": "Transliteration: l-yami"
+            },
+            {
+              "word": "وَهُوَ",
+              "root": "و - ه - و",
+              "meaning": "while he",
+              "grammarNote": "Transliteration: wahuwa"
+            },
+            {
+              "word": "مُلِيمٌۭ",
+              "root": "ل - ي - م",
+              "meaning": "(was) blameworthy",
+              "grammarNote": "Transliteration: mulīmun"
+            }
+          ]
+        },
+        {
+          "id": "51-41-card",
+          "verseNumber": 41,
+          "arabicPhrase": "وَفِى عَادٍ إِذْ أَرْسَلْنَا عَلَيْهِمُ ٱلرِّيحَ ٱلْعَقِيمَ",
+          "englishPhrase": "And (a similar sign was left) in (the story of) ‘Ād, when We sent upon them the wind that was barren (from any benefit);",
+          "vocabulary": [
+            {
+              "word": "وَفِى",
+              "root": "و - ف - ي",
+              "meaning": "And in",
+              "grammarNote": "Transliteration: wafī"
+            },
+            {
+              "word": "عَادٍ",
+              "root": "ع - ا - د",
+              "meaning": "Aad",
+              "grammarNote": "Transliteration: ʿādin"
+            },
+            {
+              "word": "إِذْ",
+              "root": "ا - ذ",
+              "meaning": "when",
+              "grammarNote": "Transliteration: idh"
+            },
+            {
+              "word": "أَرْسَلْنَا",
+              "root": "ر - س - ل",
+              "meaning": "We sent",
+              "grammarNote": "Transliteration: arsalnā"
+            },
+            {
+              "word": "عَلَيْهِمُ",
+              "root": "ع - ل - ي",
+              "meaning": "against them",
+              "grammarNote": "Transliteration: ʿalayhimu"
+            },
+            {
+              "word": "ٱلرِّيحَ",
+              "root": "ر - ي - ح",
+              "meaning": "the wind",
+              "grammarNote": "Transliteration: l-rīḥa"
+            },
+            {
+              "word": "ٱلْعَقِيمَ",
+              "root": "ع - ق - ي",
+              "meaning": "the barren",
+              "grammarNote": "Transliteration: l-ʿaqīma"
+            }
+          ]
+        },
+        {
+          "id": "51-42-card",
+          "verseNumber": 42,
+          "arabicPhrase": "مَا تَذَرُ مِن شَىْءٍ أَتَتْ عَلَيْهِ إِلَّا جَعَلَتْهُ كَٱلرَّمِيمِ",
+          "englishPhrase": "it spared nothing it came upon, but rendered it like a stuff smashed by decay.",
+          "vocabulary": [
+            {
+              "word": "مَا",
+              "root": "م - ا",
+              "meaning": "Not",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "تَذَرُ",
+              "root": "ت - ذ - ر",
+              "meaning": "it left",
+              "grammarNote": "Transliteration: tadharu"
+            },
+            {
+              "word": "مِن",
+              "root": "م - ن",
+              "meaning": "any",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "شَىْءٍ",
+              "root": "ش - ي - ء",
+              "meaning": "thing",
+              "grammarNote": "Transliteration: shayin"
+            },
+            {
+              "word": "أَتَتْ",
+              "root": "ا - ت - ت",
+              "meaning": "it came",
+              "grammarNote": "Transliteration: atat"
+            },
+            {
+              "word": "عَلَيْهِ",
+              "root": "ع - ل - ي",
+              "meaning": "upon it",
+              "grammarNote": "Transliteration: ʿalayhi"
+            },
+            {
+              "word": "إِلَّا",
+              "root": "ا - ل - ا",
+              "meaning": "but",
+              "grammarNote": "Transliteration: illā"
+            },
+            {
+              "word": "جَعَلَتْهُ",
+              "root": "ج - ع - ل",
+              "meaning": "it made it",
+              "grammarNote": "Transliteration: jaʿalathu"
+            },
+            {
+              "word": "كَٱلرَّمِيمِ",
+              "root": "ر - م - ي",
+              "meaning": "like disintegrated ruins",
+              "grammarNote": "Transliteration: kal-ramīmi"
+            }
+          ]
+        },
+        {
+          "id": "51-43-card",
+          "verseNumber": 43,
+          "arabicPhrase": "وَفِى ثَمُودَ إِذْ قِيلَ لَهُمْ تَمَتَّعُوا۟ حَتَّىٰ حِينٍ",
+          "englishPhrase": "And (a similar sign was left) in (the story of) Thamūd, when it was said to them, “Enjoy yourselves for a while.”",
+          "vocabulary": [
+            {
+              "word": "وَفِى",
+              "root": "و - ف - ي",
+              "meaning": "And in",
+              "grammarNote": "Transliteration: wafī"
+            },
+            {
+              "word": "ثَمُودَ",
+              "root": "ث - م - و",
+              "meaning": "Thamud",
+              "grammarNote": "Transliteration: thamūda"
+            },
+            {
+              "word": "إِذْ",
+              "root": "ا - ذ",
+              "meaning": "when",
+              "grammarNote": "Transliteration: idh"
+            },
+            {
+              "word": "قِيلَ",
+              "root": "ق - ي - ل",
+              "meaning": "was said",
+              "grammarNote": "Transliteration: qīla"
+            },
+            {
+              "word": "لَهُمْ",
+              "root": "ل - ه - م",
+              "meaning": "to them",
+              "grammarNote": "Transliteration: lahum"
+            },
+            {
+              "word": "تَمَتَّعُوا۟",
+              "root": "م - ت - ع",
+              "meaning": "Enjoy (yourselves)",
+              "grammarNote": "Transliteration: tamattaʿū"
+            },
+            {
+              "word": "حَتَّىٰ",
+              "root": "ح - ت - ي",
+              "meaning": "for",
+              "grammarNote": "Transliteration: ḥattā"
+            },
+            {
+              "word": "حِينٍۢ",
+              "root": "ح - ي - ن",
+              "meaning": "a time",
+              "grammarNote": "Transliteration: ḥīnin"
+            }
+          ]
+        },
+        {
+          "id": "51-44-card",
+          "verseNumber": 44,
+          "arabicPhrase": "فَعَتَوْا۟ عَنْ أَمْرِ رَبِّهِمْ فَأَخَذَتْهُمُ ٱلصَّـٰعِقَةُ وَهُمْ يَنظُرُونَ",
+          "englishPhrase": "Then they rebelled against the command of your Lord; so the thunderbolt (of divine punishment) seized them, while they were looking on.",
+          "vocabulary": [
+            {
+              "word": "فَعَتَوْا۟",
+              "root": "ع - ت - و",
+              "meaning": "But they rebelled",
+              "grammarNote": "Transliteration: faʿataw"
+            },
+            {
+              "word": "عَنْ",
+              "root": "ع - ن",
+              "meaning": "against",
+              "grammarNote": "Transliteration: ʿan"
+            },
+            {
+              "word": "أَمْرِ",
+              "root": "ا - م - ر",
+              "meaning": "(the) Command",
+              "grammarNote": "Transliteration: amri"
+            },
+            {
+              "word": "رَبِّهِمْ",
+              "root": "ر - ب - ب",
+              "meaning": "(of) their Lord",
+              "grammarNote": "Transliteration: rabbihim"
+            },
+            {
+              "word": "فَأَخَذَتْهُمُ",
+              "root": "خ - ذ - ت",
+              "meaning": "so seized them",
+              "grammarNote": "Transliteration: fa-akhadhathumu"
+            },
+            {
+              "word": "ٱلصَّـٰعِقَةُ",
+              "root": "ص - ع - ق",
+              "meaning": "the thunderbolt",
+              "grammarNote": "Transliteration: l-ṣāʿiqatu"
+            },
+            {
+              "word": "وَهُمْ",
+              "root": "و - ه - م",
+              "meaning": "while they",
+              "grammarNote": "Transliteration: wahum"
+            },
+            {
+              "word": "يَنظُرُونَ",
+              "root": "ن - ظ - ر",
+              "meaning": "were looking",
+              "grammarNote": "Transliteration: yanẓurūna"
+            }
+          ]
+        },
+        {
+          "id": "51-45-card",
+          "verseNumber": 45,
+          "arabicPhrase": "فَمَا ٱسْتَطَـٰعُوا۟ مِن قِيَامٍ وَمَا كَانُوا۟ مُنتَصِرِينَ",
+          "englishPhrase": "Then they were neither able to stand (before the punishment), nor could they defend themselves.",
+          "vocabulary": [
+            {
+              "word": "فَمَا",
+              "root": "ف - م - ا",
+              "meaning": "Then not",
+              "grammarNote": "Transliteration: famā"
+            },
+            {
+              "word": "ٱسْتَطَـٰعُوا۟",
+              "root": "ط - ع - و",
+              "meaning": "they were able to",
+              "grammarNote": "Transliteration: is'taṭāʿū"
+            },
+            {
+              "word": "مِن",
+              "root": "م - ن",
+              "meaning": "[of]",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "قِيَامٍۢ",
+              "root": "ق - ي - م",
+              "meaning": "stand",
+              "grammarNote": "Transliteration: qiyāmin"
+            },
+            {
+              "word": "وَمَا",
+              "root": "و - م - ا",
+              "meaning": "and not",
+              "grammarNote": "Transliteration: wamā"
+            },
+            {
+              "word": "كَانُوا۟",
+              "root": "ك - ا - ن",
+              "meaning": "they could",
+              "grammarNote": "Transliteration: kānū"
+            },
+            {
+              "word": "مُنتَصِرِينَ",
+              "root": "ن - ت - ص",
+              "meaning": "help themselves",
+              "grammarNote": "Transliteration: muntaṣirīna"
+            }
+          ]
+        },
+        {
+          "id": "51-46-card",
+          "verseNumber": 46,
+          "arabicPhrase": "وَقَوْمَ نُوحٍ مِّن قَبْلُ ۖ إِنَّهُمْ كَانُوا۟ قَوْمًا فَـٰسِقِينَ",
+          "englishPhrase": "And (We have destroyed) the people of NūH even before; indeed they were a sinful people.",
+          "vocabulary": [
+            {
+              "word": "وَقَوْمَ",
+              "root": "ق - و - م",
+              "meaning": "And (the) people",
+              "grammarNote": "Transliteration: waqawma"
+            },
+            {
+              "word": "نُوحٍۢ",
+              "root": "ن - و - ح",
+              "meaning": "(of) Nuh",
+              "grammarNote": "Transliteration: nūḥin"
+            },
+            {
+              "word": "مِّن",
+              "root": "م - ن",
+              "meaning": "before",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "قَبْلُ ۖ",
+              "root": "ق - ب - ل",
+              "meaning": "before",
+              "grammarNote": "Transliteration: qablu"
+            },
+            {
+              "word": "إِنَّهُمْ",
+              "root": "ن - ه - م",
+              "meaning": "indeed, they",
+              "grammarNote": "Transliteration: innahum"
+            },
+            {
+              "word": "كَانُوا۟",
+              "root": "ك - ا - ن",
+              "meaning": "were",
+              "grammarNote": "Transliteration: kānū"
+            },
+            {
+              "word": "قَوْمًۭا",
+              "root": "ق - و - م",
+              "meaning": "a people",
+              "grammarNote": "Transliteration: qawman"
+            },
+            {
+              "word": "فَـٰسِقِينَ",
+              "root": "ق - ي - ن",
+              "meaning": "defiantly disobedient",
+              "grammarNote": "Transliteration: fāsiqīna"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verses 30–33]\n\nWhen, in the course of the conversation, Holy Prophet Ibrahim (علیہ السلام) discovered that the guests were angels, he asked them what was their mission and they replied that they had been sent to the people of Lut (علیہ السلام) to destroy them as a punishment for their unspeakable crime. They would be stoned to death, but not with large stones.\n\n────────────────────────────────────────\n\n[Verses 34–37]\n\nSmall pebbles of baked clay would be sent down upon them: مُّسَوَّمَةً عِندَ رَ‌بِّكَ \"marked, with your Lord, for the transgressors.\"... 51:34), that is, pebbles conspicuously marked by Allah. Some scholars say that each stone bore the name of the person with which he was to be destroyed, and if he ran in any particular direction, he was pursued by the same stone. Other verses say that these people were destroyed by Jibra'il's (علیہ السلام) turning their territory upside down. The two descriptions of the punishment are not mutually contradictory: Probably, the stoning incident took place first, and then the earth was turned upside down.\n\n────────────────────────────────────────\n\n[Verses 38–46]\n\nAfter the mention of the people of Lut (علیہ السلام) ، the people of Musa (علیہ السلام) ، Fir'aun and others are taken up briefly. When Musa (علیہ السلام) delivered the message of truth to Fir'aun, the latter reacted thus: فَتَوَلَّىٰ بِرُ‌كْنِهِ (So he turned away along with his chiefs,...51:39) The original word used for 'his chiefs' is rukn which means power. Here it is used to refer to his army and chiefs of his government. In the story of Lut (علیہ السلام) he has been mentioned saying, أَوْ آوِي إِلَىٰ رُ‌كْنٍ شَدِيدٍ (or that I had the backing of a strong group' The word rukn is used there in the same sense. (See Ma’ ariful Qur’ an, Vol. 4/p. 658, 661: '...or that I had the backing of some strong group...' )\n\nAfter this, the stories of the people of ` Ad, Thamud and Nuh (علیہم السلام) are told. These stories were narrated many times before.",
+      "subsections": [
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "When, in the course of the conversation, Holy Prophet Ibrahim (علیہ السلام) discovered that the guests were angels, he asked them what was their mission and they replied that they had been sent to the people of Lut (علیہ السلام) to destroy them as a punishment for their unspeakable crime. They would be stoned to death, but not with large stones."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "Small pebbles of baked clay would be sent down upon them: مُّسَوَّمَةً عِندَ رَ‌بِّكَ \"marked, with your Lord, for the transgressors.\"... 51:34), that is, pebbles conspicuously marked by Allah. Some scholars say that each stone bore the name of the person with which he was to be destroyed, and if he ran in any particular direction, he was pursued by the same stone. Other verses say that these people were destroyed by Jibra'il's (علیہ السلام) turning their territory upside down. The two descriptions of the punishment are not mutually contradictory: Probably, the stoning incident took place first, and then the earth was turned upside down."
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "51-47-56",
+      "surahNumber": 51,
+      "verseRange": [
+        47,
+        56
+      ],
+      "title": "Proofs of Allah's Oneness abound in the Creation of the Heavens and Earth",
+      "juzNumber": 27,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5205/mode/2up",
+      "arabicText": "وَٱلسَّمَآءَ بَنَيْنَـٰهَا بِأَيْي۟دٍ وَإِنَّا لَمُوسِعُونَ ۝٤٧ وَٱلْأَرْضَ فَرَشْنَـٰهَا فَنِعْمَ ٱلْمَـٰهِدُونَ ۝٤٨ وَمِن كُلِّ شَىْءٍ خَلَقْنَا زَوْجَيْنِ لَعَلَّكُمْ تَذَكَّرُونَ ۝٤٩ فَفِرُّوٓا۟ إِلَى ٱللَّهِ ۖ إِنِّى لَكُم مِّنْهُ نَذِيرٌ مُّبِينٌ ۝٥٠ وَلَا تَجْعَلُوا۟ مَعَ ٱللَّهِ إِلَـٰهًا ءَاخَرَ ۖ إِنِّى لَكُم مِّنْهُ نَذِيرٌ مُّبِينٌ ۝٥١ كَذَٰلِكَ مَآ أَتَى ٱلَّذِينَ مِن قَبْلِهِم مِّن رَّسُولٍ إِلَّا قَالُوا۟ سَاحِرٌ أَوْ مَجْنُونٌ ۝٥٢ أَتَوَاصَوْا۟ بِهِۦ ۚ بَلْ هُمْ قَوْمٌ طَاغُونَ ۝٥٣ فَتَوَلَّ عَنْهُمْ فَمَآ أَنتَ بِمَلُومٍ ۝٥٤ وَذَكِّرْ فَإِنَّ ٱلذِّكْرَىٰ تَنفَعُ ٱلْمُؤْمِنِينَ ۝٥٥ وَمَا خَلَقْتُ ٱلْجِنَّ وَٱلْإِنسَ إِلَّا لِيَعْبُدُونِ ۝٥٦",
+      "translation": "And the sky was built by Us with might; and indeed We are the expanders. ۝ And the earth was spread out by Us as a floor; so how well have We spread it out! ۝ And from every thing We have created pairs of twos, so that you may heed. ۝ So, flee to Allah. Indeed I am a plain warner sent by Him for you. ۝ And do not make up any other god along with Allah. Indeed I am a plain warner sent by Him for you. ۝ In similar way, no messenger came to those before them, but they said, “(He is) a magician or a madman.” ۝ Have they handed down (this saying) to each other as a legacy? Rather they are a rebellious people. ۝ So, turn away from them, for you are not blamed. ۝ And keep reminding, because reminding benefits the believers. ۝ I did not create the Jinns and the human beings except for the purpose that they should worship Me. ۝",
+      "phraseCards": [
+        {
+          "id": "51-47-card",
+          "verseNumber": 47,
+          "arabicPhrase": "وَٱلسَّمَآءَ بَنَيْنَـٰهَا بِأَيْي۟دٍ وَإِنَّا لَمُوسِعُونَ",
+          "englishPhrase": "And the sky was built by Us with might; and indeed We are the expanders.",
+          "vocabulary": [
+            {
+              "word": "وَٱلسَّمَآءَ",
+              "root": "م - ا - ء",
+              "meaning": "And the heaven",
+              "grammarNote": "Transliteration: wal-samāa"
+            },
+            {
+              "word": "بَنَيْنَـٰهَا",
+              "root": "ن - ي - ن",
+              "meaning": "We constructed it",
+              "grammarNote": "Transliteration: banaynāhā"
+            },
+            {
+              "word": "بِأَيْي۟دٍۢ",
+              "root": "ي - ي - د",
+              "meaning": "with strength",
+              "grammarNote": "Transliteration: bi-aydin"
+            },
+            {
+              "word": "وَإِنَّا",
+              "root": "ا - ن - ا",
+              "meaning": "and indeed, We",
+              "grammarNote": "Transliteration: wa-innā"
+            },
+            {
+              "word": "لَمُوسِعُونَ",
+              "root": "و - س - ع",
+              "meaning": "(are) surely (its) Expanders",
+              "grammarNote": "Transliteration: lamūsiʿūna"
+            }
+          ]
+        },
+        {
+          "id": "51-48-card",
+          "verseNumber": 48,
+          "arabicPhrase": "وَٱلْأَرْضَ فَرَشْنَـٰهَا فَنِعْمَ ٱلْمَـٰهِدُونَ",
+          "englishPhrase": "And the earth was spread out by Us as a floor; so how well have We spread it out!",
+          "vocabulary": [
+            {
+              "word": "وَٱلْأَرْضَ",
+              "root": "ا - ر - ض",
+              "meaning": "And the earth",
+              "grammarNote": "Transliteration: wal-arḍa"
+            },
+            {
+              "word": "فَرَشْنَـٰهَا",
+              "root": "ر - ش - ن",
+              "meaning": "We have spread it",
+              "grammarNote": "Transliteration: farashnāhā"
+            },
+            {
+              "word": "فَنِعْمَ",
+              "root": "ن - ع - م",
+              "meaning": "how excellent",
+              "grammarNote": "Transliteration: faniʿ'ma"
+            },
+            {
+              "word": "ٱلْمَـٰهِدُونَ",
+              "root": "م - ه - د",
+              "meaning": "(are) the Spreaders",
+              "grammarNote": "Transliteration: l-māhidūna"
+            }
+          ]
+        },
+        {
+          "id": "51-49-card",
+          "verseNumber": 49,
+          "arabicPhrase": "وَمِن كُلِّ شَىْءٍ خَلَقْنَا زَوْجَيْنِ لَعَلَّكُمْ تَذَكَّرُونَ",
+          "englishPhrase": "And from every thing We have created pairs of twos, so that you may heed.",
+          "vocabulary": [
+            {
+              "word": "وَمِن",
+              "root": "و - م - ن",
+              "meaning": "And of",
+              "grammarNote": "Transliteration: wamin"
+            },
+            {
+              "word": "كُلِّ",
+              "root": "ك - ل",
+              "meaning": "every",
+              "grammarNote": "Transliteration: kulli"
+            },
+            {
+              "word": "شَىْءٍ",
+              "root": "ش - ي - ء",
+              "meaning": "thing",
+              "grammarNote": "Transliteration: shayin"
+            },
+            {
+              "word": "خَلَقْنَا",
+              "root": "خ - ل - ق",
+              "meaning": "We have created",
+              "grammarNote": "Transliteration: khalaqnā"
+            },
+            {
+              "word": "زَوْجَيْنِ",
+              "root": "ز - و - ج",
+              "meaning": "pairs",
+              "grammarNote": "Transliteration: zawjayni"
+            },
+            {
+              "word": "لَعَلَّكُمْ",
+              "root": "ع - ل - ك",
+              "meaning": "so that you may",
+              "grammarNote": "Transliteration: laʿallakum"
+            },
+            {
+              "word": "تَذَكَّرُونَ",
+              "root": "ذ - ك - ر",
+              "meaning": "remember",
+              "grammarNote": "Transliteration: tadhakkarūna"
+            }
+          ]
+        },
+        {
+          "id": "51-50-card",
+          "verseNumber": 50,
+          "arabicPhrase": "فَفِرُّوٓا۟ إِلَى ٱللَّهِ ۖ إِنِّى لَكُم مِّنْهُ نَذِيرٌ مُّبِينٌ",
+          "englishPhrase": "So, flee to Allah. Indeed I am a plain warner sent by Him for you.",
+          "vocabulary": [
+            {
+              "word": "فَفِرُّوٓا۟",
+              "root": "ف - ر - و",
+              "meaning": "So flee",
+              "grammarNote": "Transliteration: fafirrū"
+            },
+            {
+              "word": "إِلَى",
+              "root": "ا - ل - ي",
+              "meaning": "to",
+              "grammarNote": "Transliteration: ilā"
+            },
+            {
+              "word": "ٱللَّهِ ۖ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah",
+              "grammarNote": "Transliteration: l-lahi"
+            },
+            {
+              "word": "إِنِّى",
+              "root": "ا - ن - ي",
+              "meaning": "indeed, I am",
+              "grammarNote": "Transliteration: innī"
+            },
+            {
+              "word": "لَكُم",
+              "root": "ل - ك - م",
+              "meaning": "to you",
+              "grammarNote": "Transliteration: lakum"
+            },
+            {
+              "word": "مِّنْهُ",
+              "root": "م - ن - ه",
+              "meaning": "from Him",
+              "grammarNote": "Transliteration: min'hu"
+            },
+            {
+              "word": "نَذِيرٌۭ",
+              "root": "ذ - ي - ر",
+              "meaning": "a warner",
+              "grammarNote": "Transliteration: nadhīrun"
+            },
+            {
+              "word": "مُّبِينٌۭ",
+              "root": "ب - ي - ن",
+              "meaning": "clear",
+              "grammarNote": "Transliteration: mubīnun"
+            }
+          ]
+        },
+        {
+          "id": "51-51-card",
+          "verseNumber": 51,
+          "arabicPhrase": "وَلَا تَجْعَلُوا۟ مَعَ ٱللَّهِ إِلَـٰهًا ءَاخَرَ ۖ إِنِّى لَكُم مِّنْهُ نَذِيرٌ مُّبِينٌ",
+          "englishPhrase": "And do not make up any other god along with Allah. Indeed I am a plain warner sent by Him for you.",
+          "vocabulary": [
+            {
+              "word": "وَلَا",
+              "root": "و - ل - ا",
+              "meaning": "And (do) not",
+              "grammarNote": "Transliteration: walā"
+            },
+            {
+              "word": "تَجْعَلُوا۟",
+              "root": "ج - ع - ل",
+              "meaning": "make",
+              "grammarNote": "Transliteration: tajʿalū"
+            },
+            {
+              "word": "مَعَ",
+              "root": "م - ع",
+              "meaning": "with",
+              "grammarNote": "Transliteration: maʿa"
+            },
+            {
+              "word": "ٱللَّهِ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah",
+              "grammarNote": "Transliteration: l-lahi"
+            },
+            {
+              "word": "إِلَـٰهًا",
+              "root": "ل - ه - ا",
+              "meaning": "god",
+              "grammarNote": "Transliteration: ilāhan"
+            },
+            {
+              "word": "ءَاخَرَ ۖ",
+              "root": "ء - خ - ر",
+              "meaning": "another",
+              "grammarNote": "Transliteration: ākhara"
+            },
+            {
+              "word": "إِنِّى",
+              "root": "ا - ن - ي",
+              "meaning": "Indeed, I am",
+              "grammarNote": "Transliteration: innī"
+            },
+            {
+              "word": "لَكُم",
+              "root": "ل - ك - م",
+              "meaning": "to you",
+              "grammarNote": "Transliteration: lakum"
+            },
+            {
+              "word": "مِّنْهُ",
+              "root": "م - ن - ه",
+              "meaning": "from Him",
+              "grammarNote": "Transliteration: min'hu"
+            },
+            {
+              "word": "نَذِيرٌۭ",
+              "root": "ذ - ي - ر",
+              "meaning": "a warner",
+              "grammarNote": "Transliteration: nadhīrun"
+            },
+            {
+              "word": "مُّبِينٌۭ",
+              "root": "ب - ي - ن",
+              "meaning": "clear",
+              "grammarNote": "Transliteration: mubīnun"
+            }
+          ]
+        },
+        {
+          "id": "51-52-card",
+          "verseNumber": 52,
+          "arabicPhrase": "كَذَٰلِكَ مَآ أَتَى ٱلَّذِينَ مِن قَبْلِهِم مِّن رَّسُولٍ إِلَّا قَالُوا۟ سَاحِرٌ أَوْ مَجْنُونٌ",
+          "englishPhrase": "In similar way, no messenger came to those before them, but they said, “(He is) a magician or a madman.”",
+          "vocabulary": [
+            {
+              "word": "كَذَٰلِكَ",
+              "root": "ك - ذ - ل",
+              "meaning": "Likewise",
+              "grammarNote": "Transliteration: kadhālika"
+            },
+            {
+              "word": "مَآ",
+              "root": "م - ا",
+              "meaning": "not",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "أَتَى",
+              "root": "ا - ت - ي",
+              "meaning": "came",
+              "grammarNote": "Transliteration: atā"
+            },
+            {
+              "word": "ٱلَّذِينَ",
+              "root": "ل - ذ - ي",
+              "meaning": "(to) those",
+              "grammarNote": "Transliteration: alladhīna"
+            },
+            {
+              "word": "مِن",
+              "root": "م - ن",
+              "meaning": "before them",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "قَبْلِهِم",
+              "root": "ق - ب - ل",
+              "meaning": "before them",
+              "grammarNote": "Transliteration: qablihim"
+            },
+            {
+              "word": "مِّن",
+              "root": "م - ن",
+              "meaning": "any",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "رَّسُولٍ",
+              "root": "ر - س - و",
+              "meaning": "Messenger",
+              "grammarNote": "Transliteration: rasūlin"
+            },
+            {
+              "word": "إِلَّا",
+              "root": "ا - ل - ا",
+              "meaning": "but",
+              "grammarNote": "Transliteration: illā"
+            },
+            {
+              "word": "قَالُوا۟",
+              "root": "ق - ا - ل",
+              "meaning": "they said",
+              "grammarNote": "Transliteration: qālū"
+            },
+            {
+              "word": "سَاحِرٌ",
+              "root": "ا - ح - ر",
+              "meaning": "A magician",
+              "grammarNote": "Transliteration: sāḥirun"
+            },
+            {
+              "word": "أَوْ",
+              "root": "ا - و",
+              "meaning": "or",
+              "grammarNote": "Transliteration: aw"
+            },
+            {
+              "word": "مَجْنُونٌ",
+              "root": "م - ج - ن",
+              "meaning": "a madman",
+              "grammarNote": "Transliteration: majnūnun"
+            }
+          ]
+        },
+        {
+          "id": "51-53-card",
+          "verseNumber": 53,
+          "arabicPhrase": "أَتَوَاصَوْا۟ بِهِۦ ۚ بَلْ هُمْ قَوْمٌ طَاغُونَ",
+          "englishPhrase": "Have they handed down (this saying) to each other as a legacy? Rather they are a rebellious people.",
+          "vocabulary": [
+            {
+              "word": "أَتَوَاصَوْا۟",
+              "root": "ت - و - ا",
+              "meaning": "Have they transmitted it to them",
+              "grammarNote": "Transliteration: atawāṣaw"
+            },
+            {
+              "word": "بِهِۦ ۚ",
+              "root": "ب - ه",
+              "meaning": "Have they transmitted it to them",
+              "grammarNote": "Transliteration: bihi"
+            },
+            {
+              "word": "بَلْ",
+              "root": "ب - ل",
+              "meaning": "Nay",
+              "grammarNote": "Transliteration: bal"
+            },
+            {
+              "word": "هُمْ",
+              "root": "ه - م",
+              "meaning": "they",
+              "grammarNote": "Transliteration: hum"
+            },
+            {
+              "word": "قَوْمٌۭ",
+              "root": "ق - و - م",
+              "meaning": "(are) a people",
+              "grammarNote": "Transliteration: qawmun"
+            },
+            {
+              "word": "طَاغُونَ",
+              "root": "ط - ا - غ",
+              "meaning": "transgressing",
+              "grammarNote": "Transliteration: ṭāghūna"
+            }
+          ]
+        },
+        {
+          "id": "51-54-card",
+          "verseNumber": 54,
+          "arabicPhrase": "فَتَوَلَّ عَنْهُمْ فَمَآ أَنتَ بِمَلُومٍ",
+          "englishPhrase": "So, turn away from them, for you are not blamed.",
+          "vocabulary": [
+            {
+              "word": "فَتَوَلَّ",
+              "root": "ت - و - ل",
+              "meaning": "So turn away",
+              "grammarNote": "Transliteration: fatawalla"
+            },
+            {
+              "word": "عَنْهُمْ",
+              "root": "ع - ن - ه",
+              "meaning": "from them",
+              "grammarNote": "Transliteration: ʿanhum"
+            },
+            {
+              "word": "فَمَآ",
+              "root": "ف - م - ا",
+              "meaning": "for not",
+              "grammarNote": "Transliteration: famā"
+            },
+            {
+              "word": "أَنتَ",
+              "root": "ا - ن - ت",
+              "meaning": "you",
+              "grammarNote": "Transliteration: anta"
+            },
+            {
+              "word": "بِمَلُومٍۢ",
+              "root": "ل - و - م",
+              "meaning": "(are) to be blamed",
+              "grammarNote": "Transliteration: bimalūmin"
+            }
+          ]
+        },
+        {
+          "id": "51-55-card",
+          "verseNumber": 55,
+          "arabicPhrase": "وَذَكِّرْ فَإِنَّ ٱلذِّكْرَىٰ تَنفَعُ ٱلْمُؤْمِنِينَ",
+          "englishPhrase": "And keep reminding, because reminding benefits the believers.",
+          "vocabulary": [
+            {
+              "word": "وَذَكِّرْ",
+              "root": "ذ - ك - ر",
+              "meaning": "And remind",
+              "grammarNote": "Transliteration: wadhakkir"
+            },
+            {
+              "word": "فَإِنَّ",
+              "root": "ف - ا - ن",
+              "meaning": "for indeed",
+              "grammarNote": "Transliteration: fa-inna"
+            },
+            {
+              "word": "ٱلذِّكْرَىٰ",
+              "root": "ذ - ك - ر",
+              "meaning": "the reminder",
+              "grammarNote": "Transliteration: l-dhik'rā"
+            },
+            {
+              "word": "تَنفَعُ",
+              "root": "ن - ف - ع",
+              "meaning": "benefits",
+              "grammarNote": "Transliteration: tanfaʿu"
+            },
+            {
+              "word": "ٱلْمُؤْمِنِينَ",
+              "root": "ؤ - م - ن",
+              "meaning": "the believers",
+              "grammarNote": "Transliteration: l-mu'minīna"
+            }
+          ]
+        },
+        {
+          "id": "51-56-card",
+          "verseNumber": 56,
+          "arabicPhrase": "وَمَا خَلَقْتُ ٱلْجِنَّ وَٱلْإِنسَ إِلَّا لِيَعْبُدُونِ",
+          "englishPhrase": "I did not create the Jinns and the human beings except for the purpose that they should worship Me.",
+          "vocabulary": [
+            {
+              "word": "وَمَا",
+              "root": "و - م - ا",
+              "meaning": "And not",
+              "grammarNote": "Transliteration: wamā"
+            },
+            {
+              "word": "خَلَقْتُ",
+              "root": "خ - ل - ق",
+              "meaning": "I have created",
+              "grammarNote": "Transliteration: khalaqtu"
+            },
+            {
+              "word": "ٱلْجِنَّ",
+              "root": "ل - ج - ن",
+              "meaning": "the jinn",
+              "grammarNote": "Transliteration: l-jina"
+            },
+            {
+              "word": "وَٱلْإِنسَ",
+              "root": "ا - ن - س",
+              "meaning": "and the mankind",
+              "grammarNote": "Transliteration: wal-insa"
+            },
+            {
+              "word": "إِلَّا",
+              "root": "ا - ل - ا",
+              "meaning": "except",
+              "grammarNote": "Transliteration: illā"
+            },
+            {
+              "word": "لِيَعْبُدُونِ",
+              "root": "ع - ب - د",
+              "meaning": "that they worship Me",
+              "grammarNote": "Transliteration: liyaʿbudūni"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verses 47–49]\n\nProofs of Allah's Oneness abound in the Creation of the Heavens and Earth\n\nThe preceding verses mentioned the reality of the Hereafter and the Judgment Day, and the punishment of those who denied the reality. The present set of verses reaffirm the perfect power of Allah, reminding us about the reality of the Day of Resurrection and allaying the doubt and suspicion of those who deny the reality. It proves the oneness of Allah and reiterates emphatically to believe in the Messenger ﷺ .\n\nبَنَيْنَاهَا بِأَيْدٍ وَإِنَّا لَمُوسِعُونَ (And the sky was built by Us with might, and indeed, We are the One who expands.... 51:47). The word aidin, according to Sayyidna Ibn ` Abbas ؓ ، means strength or power in this context.\n\n────────────────────────────────────────\n\n[Verses 50–55]\n\nفَفِرُّ‌وا إِلَى اللَّـهِ (So flee to Allah....51:50). Sayyidna Ibn ` Abbas ؓ said: \"It means: Flee from your sins and take shelter in Allah for repentance.\" Abu Bakr Warraq and Junaid Baghdadi رحمۃ اللہ علیہما said that the base self of man and the devil invite him to commit sins, and they deceive him. He needs to take refuge in Allah who will protect him against their evil. (Qurtubi)\n\n────────────────────────────────────────\n\n[Verse 56]\n\n[ 60]\n\nThe Purpose of Jinn's and Mankind's creation\n\nوَمَا خَلَقْتُ الْجِنَّ وَالْإِنسَ إِلَّا لِيَعْبُدُونِ (And I did not create the Jinns and the human beings except that they should worship Me.\"...51:56). This apparently may raise two questions: [ 1] If Allah has created a creature for a particular task, and it is His will that it should perform that task, rationally it is impossible for it to deviate from that task, because doing anything contrary to the will of Allah is inconceivable. [ 2] The purpose of jinn's and man's creation has been restricted to the worship of Allah whereas there are many other underlying reasons and benefits in their creation.\n\nScholars have made different approaches to solve these problems. Some say that this verse pertains to the believers only, that is, only believing jinn and believing mankind are created for worship and for no other task. It is obvious that the believers are more or less steadfast to worship. This is the view of Dahhak, Sufyan Thawri and others. According to one version of Sayyidna Ibn ` Abbas ؓ ، the word mu'minin does occur in the verse thus: وَمَا خَلَقْتُ الْجِنَّ وَالْإِنسَ مِنَ المُؤمِنِینَ إِلَّا لِيَعْبُدُونِ And I have not created the believing jinn and mankind except that they should worship Me'. This version supports the view that the verse is only in connection with the believers.\n\nAnother answer to the question, given by Moulana Ashraf ` Ali Thanawi (رح) is that: Allah has commanded all to worship, but at the same time He has equipped them with free will. Some of them exercised their God-given free will correctly and chose to worship Him, but others used their God-given free will incorrectly and deviated from worshipping Him. This is what Sayyidna Ali ؓ has said, as quoted by Baghawi. Tafsir Mazhari gives a plain and simple explication of this verse: Allah has equipped every jinn and man with the innate capacity to worship. Some use the capacity rightly and succeed, while others employ it wrongly in sinning and fulfilling their base emotions, and thus destroy it. The Messenger ﷺ is reported to have said:\n\nکُلُّ مَولُودِ یُّولَدُ عَلَی الفِطرَۃِ فَاَبَوَاہُ یُھَوِّدَانِہٖ اَو یُمَجِّسَانِہٖ\n\n\"Every child is born according to the fitrah but his parents [ cause him to deviate from the unadulterated propensity ] and turn him into a Jew or a Christian or a Magian.\"\n\nAccording to the majority of the scholars, fitrah here refers to the religion of Islam. Just as this Tradition tells us that every man is born with the natural capacity for Islam and true faith, but his parents adulterate and destroy that capacity, and put him on to the ways of disbelief, in the same way the phrase 'except that they should worship Me' could mean that every member of jinn and mankind has the natural, inborn capacity to worship. Allah, the Pure and Exalted, knows best.\n\nAnswer to the second question is that bringing any creation into being for the purpose of worship does not necessarily imply that they are unfit for other functions of life.",
+      "subsections": [
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "بَنَيْنَاهَا بِأَيْدٍ وَإِنَّا لَمُوسِعُونَ (And the sky was built by Us with might, and indeed, We are the One who expands.... 51:47). The word aidin, according to Sayyidna Ibn ` Abbas ؓ ، means strength or power in this context."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "The preceding verses mentioned the reality of the Hereafter and the Judgment Day, and the punishment of those who denied the reality. The present set of verses reaffirm the perfect power of Allah, reminding us about the reality of the Day of Resurrection and allaying the doubt and suspicion of those who deny the reality. It proves the oneness of Allah and reiterates emphatically to believe in the Messenger ﷺ ."
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "51-57-60",
+      "surahNumber": 51,
+      "verseRange": [
+        57,
+        60
+      ],
+      "title": "────────────────────────────────────────",
+      "juzNumber": 27,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5205/mode/2up",
+      "arabicText": "مَآ أُرِيدُ مِنْهُم مِّن رِّزْقٍ وَمَآ أُرِيدُ أَن يُطْعِمُونِ ۝٥٧ إِنَّ ٱللَّهَ هُوَ ٱلرَّزَّاقُ ذُو ٱلْقُوَّةِ ٱلْمَتِينُ ۝٥٨ فَإِنَّ لِلَّذِينَ ظَلَمُوا۟ ذَنُوبًا مِّثْلَ ذَنُوبِ أَصْحَـٰبِهِمْ فَلَا يَسْتَعْجِلُونِ ۝٥٩ فَوَيْلٌ لِّلَّذِينَ كَفَرُوا۟ مِن يَوْمِهِمُ ٱلَّذِى يُوعَدُونَ ۝٦٠",
+      "translation": "I do not want any sustenance from them, nor do I want them to feed Me. ۝ In fact, Allah is the All-Sustainer, Possessor of power, the Strong. ۝ So, those who did wrong will have their turn like the turn of their counterparts. So, they should not ask Me to hasten on. ۝ Woe, then, to those who disbelieve because of the Day of theirs that they are promised (for punishment). ۝",
+      "phraseCards": [
+        {
+          "id": "51-57-card",
+          "verseNumber": 57,
+          "arabicPhrase": "مَآ أُرِيدُ مِنْهُم مِّن رِّزْقٍ وَمَآ أُرِيدُ أَن يُطْعِمُونِ",
+          "englishPhrase": "I do not want any sustenance from them, nor do I want them to feed Me.",
+          "vocabulary": [
+            {
+              "word": "مَآ",
+              "root": "م - ا",
+              "meaning": "Not",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "أُرِيدُ",
+              "root": "ر - ي - د",
+              "meaning": "I want",
+              "grammarNote": "Transliteration: urīdu"
+            },
+            {
+              "word": "مِنْهُم",
+              "root": "ن - ه - م",
+              "meaning": "from them",
+              "grammarNote": "Transliteration: min'hum"
+            },
+            {
+              "word": "مِّن",
+              "root": "م - ن",
+              "meaning": "any",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "رِّزْقٍۢ",
+              "root": "ر - ز - ق",
+              "meaning": "provision",
+              "grammarNote": "Transliteration: riz'qin"
+            },
+            {
+              "word": "وَمَآ",
+              "root": "و - م - ا",
+              "meaning": "and not",
+              "grammarNote": "Transliteration: wamā"
+            },
+            {
+              "word": "أُرِيدُ",
+              "root": "ر - ي - د",
+              "meaning": "I want",
+              "grammarNote": "Transliteration: urīdu"
+            },
+            {
+              "word": "أَن",
+              "root": "ا - ن - ن",
+              "meaning": "that",
+              "grammarNote": "Transliteration: an"
+            },
+            {
+              "word": "يُطْعِمُونِ",
+              "root": "ط - ع - م",
+              "meaning": "they (should) feed Me",
+              "grammarNote": "Transliteration: yuṭ'ʿimūni"
+            }
+          ]
+        },
+        {
+          "id": "51-58-card",
+          "verseNumber": 58,
+          "arabicPhrase": "إِنَّ ٱللَّهَ هُوَ ٱلرَّزَّاقُ ذُو ٱلْقُوَّةِ ٱلْمَتِينُ",
+          "englishPhrase": "In fact, Allah is the All-Sustainer, Possessor of power, the Strong.",
+          "vocabulary": [
+            {
+              "word": "إِنَّ",
+              "root": "ا - ن - ن",
+              "meaning": "Indeed",
+              "grammarNote": "Transliteration: inna"
+            },
+            {
+              "word": "ٱللَّهَ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah",
+              "grammarNote": "Transliteration: l-laha"
+            },
+            {
+              "word": "هُوَ",
+              "root": "ه - و",
+              "meaning": "He",
+              "grammarNote": "Transliteration: huwa"
+            },
+            {
+              "word": "ٱلرَّزَّاقُ",
+              "root": "ر - ز - ق",
+              "meaning": "(is) the All-Provider",
+              "grammarNote": "Transliteration: l-razāqu"
+            },
+            {
+              "word": "ذُو",
+              "root": "ذ - و",
+              "meaning": "Possessor",
+              "grammarNote": "Transliteration: dhū"
+            },
+            {
+              "word": "ٱلْقُوَّةِ",
+              "root": "ق - و - ه",
+              "meaning": "(of) Power",
+              "grammarNote": "Transliteration: l-quwati"
+            },
+            {
+              "word": "ٱلْمَتِينُ",
+              "root": "ت - ي - ن",
+              "meaning": "the Strong",
+              "grammarNote": "Transliteration: l-matīnu"
+            }
+          ]
+        },
+        {
+          "id": "51-59-card",
+          "verseNumber": 59,
+          "arabicPhrase": "فَإِنَّ لِلَّذِينَ ظَلَمُوا۟ ذَنُوبًا مِّثْلَ ذَنُوبِ أَصْحَـٰبِهِمْ فَلَا يَسْتَعْجِلُونِ",
+          "englishPhrase": "So, those who did wrong will have their turn like the turn of their counterparts. So, they should not ask Me to hasten on.",
+          "vocabulary": [
+            {
+              "word": "فَإِنَّ",
+              "root": "ف - ا - ن",
+              "meaning": "So indeed",
+              "grammarNote": "Transliteration: fa-inna"
+            },
+            {
+              "word": "لِلَّذِينَ",
+              "root": "ذ - ي - ن",
+              "meaning": "for those who",
+              "grammarNote": "Transliteration: lilladhīna"
+            },
+            {
+              "word": "ظَلَمُوا۟",
+              "root": "ظ - ل - م",
+              "meaning": "do wrong",
+              "grammarNote": "Transliteration: ẓalamū"
+            },
+            {
+              "word": "ذَنُوبًۭا",
+              "root": "ذ - ن - و",
+              "meaning": "(is) a portion",
+              "grammarNote": "Transliteration: dhanūban"
+            },
+            {
+              "word": "مِّثْلَ",
+              "root": "م - ث - ل",
+              "meaning": "like",
+              "grammarNote": "Transliteration: mith'la"
+            },
+            {
+              "word": "ذَنُوبِ",
+              "root": "ذ - ن - و",
+              "meaning": "(the) portion",
+              "grammarNote": "Transliteration: dhanūbi"
+            },
+            {
+              "word": "أَصْحَـٰبِهِمْ",
+              "root": "ص - ح - ب",
+              "meaning": "(of) their companions",
+              "grammarNote": "Transliteration: aṣḥābihim"
+            },
+            {
+              "word": "فَلَا",
+              "root": "ف - ل - ا",
+              "meaning": "so let them not ask Me to hasten",
+              "grammarNote": "Transliteration: falā"
+            },
+            {
+              "word": "يَسْتَعْجِلُونِ",
+              "root": "س - ت - ع",
+              "meaning": "so let them not ask Me to hasten",
+              "grammarNote": "Transliteration: yastaʿjilūni"
+            }
+          ]
+        },
+        {
+          "id": "51-60-card",
+          "verseNumber": 60,
+          "arabicPhrase": "فَوَيْلٌ لِّلَّذِينَ كَفَرُوا۟ مِن يَوْمِهِمُ ٱلَّذِى يُوعَدُونَ",
+          "englishPhrase": "Woe, then, to those who disbelieve because of the Day of theirs that they are promised (for punishment).",
+          "vocabulary": [
+            {
+              "word": "فَوَيْلٌۭ",
+              "root": "و - ي - ل",
+              "meaning": "Then woe",
+              "grammarNote": "Transliteration: fawaylun"
+            },
+            {
+              "word": "لِّلَّذِينَ",
+              "root": "ذ - ي - ن",
+              "meaning": "to those who",
+              "grammarNote": "Transliteration: lilladhīna"
+            },
+            {
+              "word": "كَفَرُوا۟",
+              "root": "ك - ف - ر",
+              "meaning": "disbelieve",
+              "grammarNote": "Transliteration: kafarū"
+            },
+            {
+              "word": "مِن",
+              "root": "م - ن",
+              "meaning": "from",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "يَوْمِهِمُ",
+              "root": "ي - و - م",
+              "meaning": "their Day",
+              "grammarNote": "Transliteration: yawmihimu"
+            },
+            {
+              "word": "ٱلَّذِى",
+              "root": "ل - ذ - ي",
+              "meaning": "which",
+              "grammarNote": "Transliteration: alladhī"
+            },
+            {
+              "word": "يُوعَدُونَ",
+              "root": "و - ع - د",
+              "meaning": "they are promised",
+              "grammarNote": "Transliteration: yūʿadūna"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verses 57–58]\n\nمَا أُرِ‌يدُ مِنْهُم مِّن رِّ‌زْقٍ (I do not want any sustenance from them, nor do I want them to feed Me...51:57). It means that by creating jinn and mankind, Allah does not stand in need of them, so that they will have to produce sustenance for Him or for themselves or for any of His other creations or that they earn to feed Him. This has been stated according to the general trend of people. The most affluent of men buys a slave and spends on him not for nothing, but he has an underlying purpose: He expects the slaves to work for him, help him in his tasks, fulfill his needs and earn livelihood for his master. Allah is immaculate, pure and above all these things. In creating human beings, He does not profit or benefit anything.\n\n────────────────────────────────────────\n\n[Verses 59–60]\n\nThe word ذُنُوب dhanub in verse 59 is with lath on the letter [ dh ] which means a large bucket that is kept at the common wells of a locality for the purpose of drawing and filling water. A turn is designated for each of the persons using the large common bucket to draw out water from the well, so that he is conveniently able to fill it in his own private bucket in his turn. Thus the word here is employed in the sense of turn, share or portion. Hence it is translated above as follows: \"So, those who did wrong deserve a share (in the punishment) like the share of their companions.\" The verse purports to warn the disbelievers that the past communities were given an opportunity to work. When each of these communities did not take advantage of the opportunity in their respective time and persisted in their evil course, they were punished and destroyed. Likewise, the present pagans of Makkah are designated a time and opportunity. If they do not take advantage of the allocated time and opportunity and persist in their paganism, they will be punished in this world; otherwise the punishment of the Hereafter is most certain. They will thus meet with a fate similar to that of the opponents of former Prophets. Like them they will come to a sad end. This verse, in which the word dhanuban occurs, indicates that they will receive their due share of the torment, and it will surely come in due time; so they should not ask for it to be hastened on or rushed to them.\n\nAl-hamdulillah\n\nThe Commentary on\n\nSurah Adh-Dhariyat\n\nEnds here",
+      "subsections": [
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "مَا أُرِ‌يدُ مِنْهُم مِّن رِّ‌زْقٍ (I do not want any sustenance from them, nor do I want them to feed Me...51:57). It means that by creating jinn and mankind, Allah does not stand in need of them, so that they will have to produce sustenance for Him or for themselves or for any of His other creations or that they earn to feed Him. This has been stated according to the general trend of people. The most affluent of men buys a slave and spends on him not for nothing, but he has an underlying purpose: He expects the slaves to work for him, help him in his tasks, fulfill his needs and earn livelihood for his master. Allah is immaculate, pure and above all these things. In creating human beings, He does not profit or benefit anything."
+        }
+      ],
+      "curatedTerms": []
+    }
+  ]
+}

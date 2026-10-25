@@ -1,0 +1,2141 @@
+{
+  "number": 72,
+  "nameArabic": "الجن",
+  "nameTransliterated": "Al-Jinn",
+  "nameEnglish": "The Jinn",
+  "versesCount": 28,
+  "revelationType": "Makki",
+  "volumeNumber": 8,
+  "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5614/mode/2up",
+  "juz": [
+    29
+  ],
+  "bismillahPre": true,
+  "introductoryTafseer": "It seems necessary to know a few facts before the start of the study of the Surah, which are as follows:",
+  "historicalContext": {
+    "background": "Before the advent of the Holy Prophet ﷺ the devils used to go up to the heavens and eavesdrop on the conversations of the angels. After his advent, they were pelted with a piercing flame if they attempted to go up and eavesdrop. It is mentioned in Surah Al-Ahqaf that a group of jinn went up to the Holy Prophet to investigate the reason for this new phenomenon.",
+    "scholarlyReference": "Ma'ariful Qur'an by Mufti Muhammad Shafi, Volume 8 (Archive.org Leaf n5614)"
+  },
+  "sections": [
+    {
+      "id": "72-1-3",
+      "surahNumber": 72,
+      "verseRange": [
+        1,
+        3
+      ],
+      "title": "Preliminary Remarks",
+      "juzNumber": 29,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5615/mode/2up",
+      "arabicText": "قُلْ أُوحِىَ إِلَىَّ أَنَّهُ ٱسْتَمَعَ نَفَرٌ مِّنَ ٱلْجِنِّ فَقَالُوٓا۟ إِنَّا سَمِعْنَا قُرْءَانًا عَجَبًا ۝١ يَهْدِىٓ إِلَى ٱلرُّشْدِ فَـَٔامَنَّا بِهِۦ ۖ وَلَن نُّشْرِكَ بِرَبِّنَآ أَحَدًا ۝٢ وَأَنَّهُۥ تَعَـٰلَىٰ جَدُّ رَبِّنَا مَا ٱتَّخَذَ صَـٰحِبَةً وَلَا وَلَدًا ۝٣",
+      "translation": "Say, “It has been revealed to me that a group from Jinn has listened (to the Qur’ān), and said (to their people), ‘Indeed we have heard an amazing Recital (Qur’ān) ۝ that guides to the right way, so we have believed in it, and we will never associate a partner with our Lord.’ ۝ and (then the Jinns started talking to each other) that exalted is the Glory of our Lord; He has taken neither a wife, nor a son, ۝",
+      "phraseCards": [
+        {
+          "id": "72-1-card",
+          "verseNumber": 1,
+          "arabicPhrase": "قُلْ أُوحِىَ إِلَىَّ أَنَّهُ ٱسْتَمَعَ نَفَرٌ مِّنَ ٱلْجِنِّ فَقَالُوٓا۟ إِنَّا سَمِعْنَا قُرْءَانًا عَجَبًا",
+          "englishPhrase": "Say, “It has been revealed to me that a group from Jinn has listened (to the Qur’ān), and said (to their people), ‘Indeed we have heard an amazing Recital (Qur’ān)",
+          "vocabulary": [
+            {
+              "word": "قُلْ",
+              "root": "ق - ل",
+              "meaning": "Say",
+              "grammarNote": "Transliteration: qul"
+            },
+            {
+              "word": "أُوحِىَ",
+              "root": "ا - و - ح",
+              "meaning": "It has been revealed",
+              "grammarNote": "Transliteration: ūḥiya"
+            },
+            {
+              "word": "إِلَىَّ",
+              "root": "ا - ل - ي",
+              "meaning": "to me",
+              "grammarNote": "Transliteration: ilayya"
+            },
+            {
+              "word": "أَنَّهُ",
+              "root": "ا - ن - ه",
+              "meaning": "that",
+              "grammarNote": "Transliteration: annahu"
+            },
+            {
+              "word": "ٱسْتَمَعَ",
+              "root": "س - ت - م",
+              "meaning": "listened",
+              "grammarNote": "Transliteration: is'tamaʿa"
+            },
+            {
+              "word": "نَفَرٌۭ",
+              "root": "ن - ف - ر",
+              "meaning": "a group",
+              "grammarNote": "Transliteration: nafarun"
+            },
+            {
+              "word": "مِّنَ",
+              "root": "م - ن",
+              "meaning": "of",
+              "grammarNote": "Transliteration: mina"
+            },
+            {
+              "word": "ٱلْجِنِّ",
+              "root": "ل - ج - ن",
+              "meaning": "the jinn",
+              "grammarNote": "Transliteration: l-jini"
+            },
+            {
+              "word": "فَقَالُوٓا۟",
+              "root": "ق - ا - ل",
+              "meaning": "and they said",
+              "grammarNote": "Transliteration: faqālū"
+            },
+            {
+              "word": "إِنَّا",
+              "root": "ا - ن - ا",
+              "meaning": "Indeed, we",
+              "grammarNote": "Transliteration: innā"
+            },
+            {
+              "word": "سَمِعْنَا",
+              "root": "س - م - ع",
+              "meaning": "heard",
+              "grammarNote": "Transliteration: samiʿ'nā"
+            },
+            {
+              "word": "قُرْءَانًا",
+              "root": "ق - ر - ء",
+              "meaning": "a Quran",
+              "grammarNote": "Transliteration: qur'ānan"
+            },
+            {
+              "word": "عَجَبًۭا",
+              "root": "ع - ج - ب",
+              "meaning": "amazing",
+              "grammarNote": "Transliteration: ʿajaban"
+            }
+          ]
+        },
+        {
+          "id": "72-2-card",
+          "verseNumber": 2,
+          "arabicPhrase": "يَهْدِىٓ إِلَى ٱلرُّشْدِ فَـَٔامَنَّا بِهِۦ ۖ وَلَن نُّشْرِكَ بِرَبِّنَآ أَحَدًا",
+          "englishPhrase": "that guides to the right way, so we have believed in it, and we will never associate a partner with our Lord.’",
+          "vocabulary": [
+            {
+              "word": "يَهْدِىٓ",
+              "root": "ي - ه - د",
+              "meaning": "It guides",
+              "grammarNote": "Transliteration: yahdī"
+            },
+            {
+              "word": "إِلَى",
+              "root": "ا - ل - ي",
+              "meaning": "to",
+              "grammarNote": "Transliteration: ilā"
+            },
+            {
+              "word": "ٱلرُّشْدِ",
+              "root": "ر - ش - د",
+              "meaning": "the right way",
+              "grammarNote": "Transliteration: l-rush'di"
+            },
+            {
+              "word": "فَـَٔامَنَّا",
+              "root": "م - ن - ا",
+              "meaning": "so we believe",
+              "grammarNote": "Transliteration: faāmannā"
+            },
+            {
+              "word": "بِهِۦ ۖ",
+              "root": "ب - ه",
+              "meaning": "in it",
+              "grammarNote": "Transliteration: bihi"
+            },
+            {
+              "word": "وَلَن",
+              "root": "و - ل - ن",
+              "meaning": "and never",
+              "grammarNote": "Transliteration: walan"
+            },
+            {
+              "word": "نُّشْرِكَ",
+              "root": "ن - ش - ر",
+              "meaning": "we will associate",
+              "grammarNote": "Transliteration: nush'rika"
+            },
+            {
+              "word": "بِرَبِّنَآ",
+              "root": "ر - ب - ن",
+              "meaning": "with our Lord",
+              "grammarNote": "Transliteration: birabbinā"
+            },
+            {
+              "word": "أَحَدًۭا",
+              "root": "ح - د - ا",
+              "meaning": "anyone",
+              "grammarNote": "Transliteration: aḥadan"
+            }
+          ]
+        },
+        {
+          "id": "72-3-card",
+          "verseNumber": 3,
+          "arabicPhrase": "وَأَنَّهُۥ تَعَـٰلَىٰ جَدُّ رَبِّنَا مَا ٱتَّخَذَ صَـٰحِبَةً وَلَا وَلَدًا",
+          "englishPhrase": "and (then the Jinns started talking to each other) that exalted is the Glory of our Lord; He has taken neither a wife, nor a son,",
+          "vocabulary": [
+            {
+              "word": "وَأَنَّهُۥ",
+              "root": "ا - ن - ه",
+              "meaning": "And that He",
+              "grammarNote": "Transliteration: wa-annahu"
+            },
+            {
+              "word": "تَعَـٰلَىٰ",
+              "root": "ت - ع - ل",
+              "meaning": "Exalted is",
+              "grammarNote": "Transliteration: taʿālā"
+            },
+            {
+              "word": "جَدُّ",
+              "root": "ج - د",
+              "meaning": "(the) Majesty",
+              "grammarNote": "Transliteration: jaddu"
+            },
+            {
+              "word": "رَبِّنَا",
+              "root": "ر - ب - ب",
+              "meaning": "(of) our Lord",
+              "grammarNote": "Transliteration: rabbinā"
+            },
+            {
+              "word": "مَا",
+              "root": "م - ا",
+              "meaning": "not",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "ٱتَّخَذَ",
+              "root": "ت - خ - ذ",
+              "meaning": "He has taken",
+              "grammarNote": "Transliteration: ittakhadha"
+            },
+            {
+              "word": "صَـٰحِبَةًۭ",
+              "root": "ص - ح - ب",
+              "meaning": "a wife",
+              "grammarNote": "Transliteration: ṣāḥibatan"
+            },
+            {
+              "word": "وَلَا",
+              "root": "و - ل - ا",
+              "meaning": "and not",
+              "grammarNote": "Transliteration: walā"
+            },
+            {
+              "word": "وَلَدًۭا",
+              "root": "ل - د - ا",
+              "meaning": "a son",
+              "grammarNote": "Transliteration: waladan"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verses 1–2]\n\nCommentary\n\nPreliminary Remarks\n\nIt seems necessary to know a few facts before the start of the study of the Surah, which are as follows:\n\nFact [ 1]\n\nBefore the advent of the Holy Prophet ﷺ the devils used to go up to the heavens and eavesdrop on the conversations of the angels. After his advent, they were pelted with a piercing flame if they attempted to go up and eavesdrop. It is mentioned in Surah Al-Ahqaf that a group of jinn went up to the Holy Prophet to investigate the reason for this new phenomenon.\n\nFact [ 2]\n\nIt was customary in the Days of Ignorance that when people halted in a jungle or valley in the course of a journey, they uttered the following words:\n\nاعوذ بعزیز ھذا الودی من شر سفھاء قومہ\n\n\"I seek refuge in the leader of this valley from the foolish mischief-makers of his nation\" - believing that the leader of the valley (a Jinn) would protect them.\n\nFact [ 3]\n\nA terrible famine held Makkah in its grip for several years as a result of the Holy Prophet's ﷺ prayer.\n\nFact [ 4]\n\nWhen the Holy Prophet ﷺ called the pagans towards Islam, they opposed him tooth and nail. The first two incidents are taken from Tafsir Durr Manthur and the last two incidents are taken from Tafsir Ibn Kathir.\n\nنَفَرٌ‌ مِّنَ الْجِنِّ (...a group from Jinn....72:1). The word nafar is used for a group consisting of three to ten people. The Jinn referred to here are said to be a group of nine Jinns from a place called Nasibin.\n\nReality of Jinn\n\nJinn is one of the Divine creatures. They have body and soul. They, like human beings, have intellect and senses, but they are hidden from human eyes. This species of creation is called 'Jinn' because it literally means 'hidden' or 'invisible'. They, like human beings, are created from the four primal elements: dust, water, air and fire, but the element of fire predominates in them, whereas in man the element of dust predominates. They, like human beings, are males and females; and they, like human beings, marry and procreate. Apparently, the word shaitan [ pl. shayatin ] 'Shaitan' refers to the 'arrogant mischief-making Jinn'. The existence of Jinn and angels is established by conclusive and incontestable evidence in the Qur'an and Sunnah, the denial or rejection of which amounts to disbelieving the Qur'an. [ Tafsir Mazhari ].\n\nقُلْ أُوحِيَ إِلَيَّ Say, (It has been revealed to me 72:1). This shows that the Holy Prophet ﷺ did not see the group of Jinn who heard him recite the Qur'an. Allah informed him by the revelation of Surah Al-Jinn.\n\nCircumstances of Revelation\n\nSayyidna Ibn ` Abbas ؓ narrates, as recorded in Sahih of Bukhari, of Muslim, and in Tirmidhi and other collections, that Allah's Messenger ﷺ did not by deliberate design make the Jinn listen to the Qur'an, nor did he see them. The true story is that the Holy Prophet ﷺ ، with his Companions, was going to the marketplace of ` Ukaz. This incident took place at a time when the devils were barred from going to the skies and eavesdropping on the conversations of the angels by being pelted with piercing flames. When the Jinn realised that they were no longer free to eavesdrop, they discussed among themselves that the incident could not be coincidental. There must be a genuine reason for that. So they divided themselves into groups and each group went in different direction to investigate the cause of the new phenomenon. One of the groups arrived at a place called Nakhlah in Tihamah where Hijaz is situated. At that juncture, the Holy Prophet ﷺ was leading the Sahabah in Fajr salah and the Jinn had the opportunity to hear the Qur'an. When this group of Jinn heard the Qur'an, they listened to it very attentively and concluded on oath that it was the Qur'an that prevented them from eavesdropping in the heavens. Then they returned to their fellow Jinns and recounted to them the entire episode, which is mentioned in the following verse:\n\nفَقَالُوا إِنَّا سَمِعْنَا قُرْ‌آنًا عَجَبًا (...and said [ to their people ], Indeed we have heard an amazing Recital [ Qur'an ]....72:1). Allah informed His Messenger about the entire incident of the Jinn in the verses under discussion.\n\nAbu Talib's Death and the Holy Prophet's ﷺ Journey to Ta'if\n\nMost commentators say that after the death of Abu Talib the Holy Prophet ﷺ felt lonely, having no friend or supporter in Makkah. So, he undertook a journey to Ta'if where he approached Banu Thaqif for assistance against the hostility and persecution of his people. According to Muhammad Ibn Ishaq's narration, when the Holy Prophet ﷺ arrived in Ta'if, he approached the three brothers of Banu Thaqif. They were recognized as the leaders and honorable members of the tribe. The three brothers were ` Umair's sons, their names being ` Abd Yalil, Sa’ ud and Habib. They had a Quraishite lady in their house. Allah's Messenger ﷺ invited them to the call of Islam and mentioned about his people's hostility and persecution and asked for help. But they responded very harshly and did not speak to him about anything.\n\nAllah's Messenger ﷺ saw that these three people were the most respected leaders of Banu Thaqif, from whom he expected a favourable response, but he was disappointed. He said to them that if they did not wish to help him, they should at least keep his arrival and request for help confidential and not tell his people; because if they came to know about it, they would persecute him even more harshly. But the oppressors did not concede to this either. On the contrary, they let loose on him foolish hooligans, slaves and hoodlums, so that they may revile him and make violent noises in public places against him. When they made violent noises, more hoodlums and young violent criminal elements joined in. In order to save himself from the mischief of the hooligans and hoodlums, the Holy Prophet ﷺ took refuge in a vineyard which belonged to two brothers, namely ` Utbah and Shaibah. The brothers themselves were in the vineyard at the time. The hooligans and hoodlums left him and went back. The two brothers were watching him, and they also watched how violently the foolish people behaved towards him. Just then the Quraishite lady, who was in the house of the oppressors, came to the Holy Prophet ﷺ . He complained to her how her in-laws persecuted him.\n\nWhen the Holy Prophet ﷺ felt a bit settled in the vineyard, he prayed to Allah. The wordings of the supplication are unusual and on no other occasion such wordings are recorded:\n\nاللَّھُمَّ اِنِّی اَشکُوا الَیکَ ضُعفَ قُوَّتِی وَ قِلَّۃَ حِیلَتِی وَ ھَوَانِی عَلَی النَّاسِ وَ اَنتَ اَرحَمُ الرَّاحِمِینَ وَ اَنتَ رَبُّ المُستضعفِینَ فَاَنتَ رَبِّی اَلیٰ مَن تَکِلنِی اِلیٰ بَعِیدِ یَتَھَجَّمُنِی اَو اِلیٰ عَدُوِّ مَّلَّکتَہ اَمرِی اِن لَّم تَکُن سَاخِطاً عَلَیَّ فَلَآ اُبالِی وَ لٰکِنَّ عَافِیَتَکَ ھِیَ اَوسعُ لِی۔ اَعُوذُ بِنُورِ وَجھِکَ الَّذِیُ اَشرَقَت لَہُ الظُّلُمَاتُ وَ صَلُحَ عَلَیہِ اَمرُ الدُّنیَا وَ الاٰخِرَۃِ مِن ۔ (مظھری باختصار)\n\n\"0 Allah, I complain to you the weakness of my strength and the shortage of my options, and lack of respect for me in the sight of people. You are the Most Merciful of all, and You are the Cherisher and Sustainer of the weaklings. You are my Cherisher. To whom are You handing me over? - to a stranger who would attack me? Or to an enemy whom You have given control over me (so that he may do as he wishes)? If You are not angry with me, I do not care. Your caring about me is better (which I pray for). I seek refuge in the light of Your blessed Being which dispels all darkness and on the foundation of which all matters related to this world and the next world are set a right. If You send down Your wrath on us, our task is to exert ourselves until we gain Your good pleasure. And there is neither strength nor power except through You.\" [ condensed from Mazhari ].\n\nWhen Rabi` ah's sons ` Utbah and Shaibah saw this, they felt compassion for him in their heart. They called one of their Christian slaves, ` Addas by name, and asked him to break a bunch of grapes, place it in a plate and give it to that person and ask him to eat. Complying with the instructions, ` Addas kept the plate of grapes in front of the Holy Prophet ﷺ . He recited bismil-lah 'In the name of Allah' and stretched his hand towards it. ` Addas was watching all this and said: By Allah! this speech [ referring to the formula of basmalah ] is not used by the inhabitants of this city. The Holy Prophet ﷺ asked him as to where he was from and what his religion was. He replied that he was a Christian and hailed from Nineveh. Then the Holy Prophet ﷺ said to him that this means 'you are from the village of Yunus Ibn Matta علیہ السلام . He asked: \"What do you know about Yunus Ibn Matta.\" The Holy Prophet ﷺ replied: \"He was my brother. He was Allah's Prophet. I too am Allah's Prophet.\" At this, ` Addas fell to the Holy Prophet's ﷺ feet. He kissed the blessed head of the Holy Prophet ﷺ and his hands and legs. ` Utbah and Shaibah watched the whole incident. One of them said to the other: \"I hope he has not set our slave awry.\" When 'Addas returned to them, they asked him: \"What has happened? You were kissing his hands and feet?\" He replied: \"My masters, at this time there is no person better than he on the face of the earth. He has taught me something which none other than a Prophet can teach.\" They said: \"You miserable wretch, may it not happen that this man turns you away from your religion, because your religion in any case is better than his.\" When the Holy Prophet ﷺ was completely despaired of Thaqif’ s assistance, he returned from Ta'if to Makkah. On his way back, he halted at Nakhlah and towards the latter part of the night he performed salat-ut-tahajjud. The delegation of Jinns of Nasibin of Yemen had also gone there. They heard the Qur'an and embraced the faith. They went back to their people and recounted to them the whole incident which Allah has mentioned in the verses under comment. [ Mazhari ]\n\nA Jinn Companion of the Holy Prophet\n\nIbn Jauzi, in his book Sifat-us-Safwah, through his own chain of authorities, reports from Sahl Ibn ` Abdullah ؓ that he saw an old Jinn, in a place, who was performing salah in the direction of Ka'bah. He was wearing a woolen cloak that looked beautiful on him and in which he looked graceful. After he completed his prayer, Sayyidna Sahl ؓ greeted him. Replying to his greeting, he said: 'You seem to be admiring the beauty of this cloak. This cloak is on my body for seven hundred years. I have met Holy Prophet ` Isa (علیہ السلام) in this cloak, and in the same cloak I met Holy Prophet Muhammad ﷺ and I am from among those Jinns about whom Surah Al-Jinn was revealed.' According to the Hadith narratives that recount the incident of the 'Night of Jinn', (i.e. the night in which the Jinns visited the Holy Prophet ﷺ ، Sayyidna ` Abdullah Ibn Masud ؓ was with the Holy Prophet ﷺ ، and the Holy Prophet ﷺ met the Jinns in a valley near Makkah for the specific purpose of inviting them to the call of Islam and making them hear the Qur'an by deliberate design. Apparently, this incident occurred after the incident mentioned in Surah AI-Jinn. ` Allamah Khafaji has said that reliable Ahadith confirm that the Jinn delegations met the Holy Prophet ﷺ six times. Thus there is no contradiction between the two versions of the incident, because they are two separate incidents. The Holy Prophet ﷺ was not even aware of the incident of the Jinn's coming to him and listening to the Qur'an that is mentioned in Surah Jinn. He only learnt about it later through revelation. This incident happened at Nakhlah on his way back from Taif. The other narratives from which we gather that the Holy Prophet ﷺ met the Jinn by deliberate design in a valley near the city of Makkah to preach to them and make them hear the Qur'an - is a separate incident which took place after that.\n\n────────────────────────────────────────\n\n[Verse 3]\n\nوَأَنَّهُ تَعَالَىٰ جَدُّ رَ‌بِّنَا (and [ then the Jinns started talking to each other ] that exalted is the Glory of our Lord;....72:3). The word jadd means 'majesty/glory' used for Allah. Instead of saying .jadduhu' with a third person pronoun referring to Allah, the attributive name 'rabb' 'Lord' is expressly retained which indicates the exalted position of Allah. The Being who is the Cherisher and sustainer of His creation must, of necessity, occupy the lofty position. Commentators have discussed the grammatical conjunctive construction 'wa annahu' at length in this verse. It might be of no interest to the general readers.",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Juristic Rulings & Shariah Injunctions (vv. 1–3)",
+          "content": "Jinn is one of the Divine creatures. They have body and soul. They, like human beings, have intellect and senses, but they are hidden from human eyes. This species of creation is called 'Jinn' because it literally means 'hidden' or 'invisible'. They, like human beings, are created from the four primal elements: dust, water, air and fire, but the element of fire predominates in them, whereas in man the element of dust predominates. They, like human beings, are males and females; and they, like human beings, marry and procreate. Apparently, the word shaitan [ pl. shayatin ] 'Shaitan' refers to the 'arrogant mischief-making Jinn'. The existence of Jinn and angels is established by conclusive and incontestable evidence in the Qur'an and Sunnah, the denial or rejection of which amounts to disbelieving the Qur'an. [ Tafsir Mazhari ]."
+        },
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "Before the advent of the Holy Prophet ﷺ the devils used to go up to the heavens and eavesdrop on the conversations of the angels. After his advent, they were pelted with a piercing flame if they attempted to go up and eavesdrop. It is mentioned in Surah Al-Ahqaf that a group of jinn went up to the Holy Prophet to investigate the reason for this new phenomenon."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "It seems necessary to know a few facts before the start of the study of the Surah, which are as follows:"
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "72-4-7",
+      "surahNumber": 72,
+      "verseRange": [
+        4,
+        7
+      ],
+      "title": "────────────────────────────────────────",
+      "juzNumber": 29,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5615/mode/2up",
+      "arabicText": "وَأَنَّهُۥ كَانَ يَقُولُ سَفِيهُنَا عَلَى ٱللَّهِ شَطَطًا ۝٤ وَأَنَّا ظَنَنَّآ أَن لَّن تَقُولَ ٱلْإِنسُ وَٱلْجِنُّ عَلَى ٱللَّهِ كَذِبًا ۝٥ وَأَنَّهُۥ كَانَ رِجَالٌ مِّنَ ٱلْإِنسِ يَعُوذُونَ بِرِجَالٍ مِّنَ ٱلْجِنِّ فَزَادُوهُمْ رَهَقًا ۝٦ وَأَنَّهُمْ ظَنُّوا۟ كَمَا ظَنَنتُمْ أَن لَّن يَبْعَثَ ٱللَّهُ أَحَدًا ۝٧",
+      "translation": "and that the fools among us used to attribute to Allah extremely absurd things, ۝ and that we thought that the humans and the Jinn would never tell a lie about Allah, (therefore, we had followed them in shirk under this impression), ۝ and that some guys from human beings used to seek refuge with some guys of the Jinn, and thus they increased them (the Jinns) in arrogance, ۝ and that they (humans) thought as you (O Jinns) thought that Allah will never resurrect anyone, ۝",
+      "phraseCards": [
+        {
+          "id": "72-4-card",
+          "verseNumber": 4,
+          "arabicPhrase": "وَأَنَّهُۥ كَانَ يَقُولُ سَفِيهُنَا عَلَى ٱللَّهِ شَطَطًا",
+          "englishPhrase": "and that the fools among us used to attribute to Allah extremely absurd things,",
+          "vocabulary": [
+            {
+              "word": "وَأَنَّهُۥ",
+              "root": "ا - ن - ه",
+              "meaning": "And that he",
+              "grammarNote": "Transliteration: wa-annahu"
+            },
+            {
+              "word": "كَانَ",
+              "root": "ك - ا - ن",
+              "meaning": "used to",
+              "grammarNote": "Transliteration: kāna"
+            },
+            {
+              "word": "يَقُولُ",
+              "root": "ق - و - ل",
+              "meaning": "speak",
+              "grammarNote": "Transliteration: yaqūlu"
+            },
+            {
+              "word": "سَفِيهُنَا",
+              "root": "ف - ي - ه",
+              "meaning": "the foolish among us",
+              "grammarNote": "Transliteration: safīhunā"
+            },
+            {
+              "word": "عَلَى",
+              "root": "ع - ل - و",
+              "meaning": "against",
+              "grammarNote": "Transliteration: ʿalā"
+            },
+            {
+              "word": "ٱللَّهِ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah",
+              "grammarNote": "Transliteration: l-lahi"
+            },
+            {
+              "word": "شَطَطًۭا",
+              "root": "ش - ط - ط",
+              "meaning": "an excessive transgression",
+              "grammarNote": "Transliteration: shaṭaṭan"
+            }
+          ]
+        },
+        {
+          "id": "72-5-card",
+          "verseNumber": 5,
+          "arabicPhrase": "وَأَنَّا ظَنَنَّآ أَن لَّن تَقُولَ ٱلْإِنسُ وَٱلْجِنُّ عَلَى ٱللَّهِ كَذِبًا",
+          "englishPhrase": "and that we thought that the humans and the Jinn would never tell a lie about Allah, (therefore, we had followed them in shirk under this impression),",
+          "vocabulary": [
+            {
+              "word": "وَأَنَّا",
+              "root": "ا - ن - ا",
+              "meaning": "And that we",
+              "grammarNote": "Transliteration: wa-annā"
+            },
+            {
+              "word": "ظَنَنَّآ",
+              "root": "ظ - ن - ن",
+              "meaning": "thought",
+              "grammarNote": "Transliteration: ẓanannā"
+            },
+            {
+              "word": "أَن",
+              "root": "ا - ن - ن",
+              "meaning": "that",
+              "grammarNote": "Transliteration: an"
+            },
+            {
+              "word": "لَّن",
+              "root": "ل - ن",
+              "meaning": "never",
+              "grammarNote": "Transliteration: lan"
+            },
+            {
+              "word": "تَقُولَ",
+              "root": "ق - و - ل",
+              "meaning": "will say",
+              "grammarNote": "Transliteration: taqūla"
+            },
+            {
+              "word": "ٱلْإِنسُ",
+              "root": "ا - ن - س",
+              "meaning": "the men",
+              "grammarNote": "Transliteration: l-insu"
+            },
+            {
+              "word": "وَٱلْجِنُّ",
+              "root": "ل - ج - ن",
+              "meaning": "and the jinn",
+              "grammarNote": "Transliteration: wal-jinu"
+            },
+            {
+              "word": "عَلَى",
+              "root": "ع - ل - و",
+              "meaning": "against",
+              "grammarNote": "Transliteration: ʿalā"
+            },
+            {
+              "word": "ٱللَّهِ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah",
+              "grammarNote": "Transliteration: l-lahi"
+            },
+            {
+              "word": "كَذِبًۭا",
+              "root": "ك - ذ - ب",
+              "meaning": "any lie",
+              "grammarNote": "Transliteration: kadhiban"
+            }
+          ]
+        },
+        {
+          "id": "72-6-card",
+          "verseNumber": 6,
+          "arabicPhrase": "وَأَنَّهُۥ كَانَ رِجَالٌ مِّنَ ٱلْإِنسِ يَعُوذُونَ بِرِجَالٍ مِّنَ ٱلْجِنِّ فَزَادُوهُمْ رَهَقًا",
+          "englishPhrase": "and that some guys from human beings used to seek refuge with some guys of the Jinn, and thus they increased them (the Jinns) in arrogance,",
+          "vocabulary": [
+            {
+              "word": "وَأَنَّهُۥ",
+              "root": "ا - ن - ه",
+              "meaning": "And that",
+              "grammarNote": "Transliteration: wa-annahu"
+            },
+            {
+              "word": "كَانَ",
+              "root": "ك - ا - ن",
+              "meaning": "(there) were",
+              "grammarNote": "Transliteration: kāna"
+            },
+            {
+              "word": "رِجَالٌۭ",
+              "root": "ر - ج - ل",
+              "meaning": "men",
+              "grammarNote": "Transliteration: rijālun"
+            },
+            {
+              "word": "مِّنَ",
+              "root": "م - ن",
+              "meaning": "among",
+              "grammarNote": "Transliteration: mina"
+            },
+            {
+              "word": "ٱلْإِنسِ",
+              "root": "ا - ن - س",
+              "meaning": "mankind",
+              "grammarNote": "Transliteration: l-insi"
+            },
+            {
+              "word": "يَعُوذُونَ",
+              "root": "ع - و - ذ",
+              "meaning": "who sought refuge",
+              "grammarNote": "Transliteration: yaʿūdhūna"
+            },
+            {
+              "word": "بِرِجَالٍۢ",
+              "root": "ر - ج - ل",
+              "meaning": "in (the) men",
+              "grammarNote": "Transliteration: birijālin"
+            },
+            {
+              "word": "مِّنَ",
+              "root": "م - ن",
+              "meaning": "from",
+              "grammarNote": "Transliteration: mina"
+            },
+            {
+              "word": "ٱلْجِنِّ",
+              "root": "ل - ج - ن",
+              "meaning": "the jinn",
+              "grammarNote": "Transliteration: l-jini"
+            },
+            {
+              "word": "فَزَادُوهُمْ",
+              "root": "ز - د - و",
+              "meaning": "so they increased them",
+              "grammarNote": "Transliteration: fazādūhum"
+            },
+            {
+              "word": "رَهَقًۭا",
+              "root": "ر - ه - ق",
+              "meaning": "(in) burden",
+              "grammarNote": "Transliteration: rahaqan"
+            }
+          ]
+        },
+        {
+          "id": "72-7-card",
+          "verseNumber": 7,
+          "arabicPhrase": "وَأَنَّهُمْ ظَنُّوا۟ كَمَا ظَنَنتُمْ أَن لَّن يَبْعَثَ ٱللَّهُ أَحَدًا",
+          "englishPhrase": "and that they (humans) thought as you (O Jinns) thought that Allah will never resurrect anyone,",
+          "vocabulary": [
+            {
+              "word": "وَأَنَّهُمْ",
+              "root": "ن - ه - م",
+              "meaning": "And that they",
+              "grammarNote": "Transliteration: wa-annahum"
+            },
+            {
+              "word": "ظَنُّوا۟",
+              "root": "ظ - ن - و",
+              "meaning": "thought",
+              "grammarNote": "Transliteration: ẓannū"
+            },
+            {
+              "word": "كَمَا",
+              "root": "ك - م - ا",
+              "meaning": "as",
+              "grammarNote": "Transliteration: kamā"
+            },
+            {
+              "word": "ظَنَنتُمْ",
+              "root": "ظ - ن - ن",
+              "meaning": "you thought",
+              "grammarNote": "Transliteration: ẓanantum"
+            },
+            {
+              "word": "أَن",
+              "root": "ا - ن - ن",
+              "meaning": "that",
+              "grammarNote": "Transliteration: an"
+            },
+            {
+              "word": "لَّن",
+              "root": "ل - ن",
+              "meaning": "never",
+              "grammarNote": "Transliteration: lan"
+            },
+            {
+              "word": "يَبْعَثَ",
+              "root": "ب - ع - ث",
+              "meaning": "will raise",
+              "grammarNote": "Transliteration: yabʿatha"
+            },
+            {
+              "word": "ٱللَّهُ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah",
+              "grammarNote": "Transliteration: l-lahu"
+            },
+            {
+              "word": "أَحَدًۭا",
+              "root": "ح - د - ا",
+              "meaning": "anyone",
+              "grammarNote": "Transliteration: aḥadan"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verses 4–5]\n\nوَأَنَّهُ كَانَ يَقُولُ سَفِيهُنَا عَلَى اللَّـهِ شَطَطًا ﴿4﴾ وَأَنَّا ظَنَنَّا أَن لَّن تَقُولَ الْإِنسُ وَالْجِنُّ عَلَى اللَّـهِ كَذِبًا ﴿5﴾\n\n...and that the fools among us used to attribute to Allah extremely wrong things, and that we thought that the humans and the Jinn would never tell a lie about Allah, [ therefore, we had followed them in shirk under this impression ]. (72:5)\n\nThe word shatat means 'vile words, extravagant or exorbitant or enormous lies'. The word also means 'to transgress or act wrongfully, unjustly or exceed the legitimate bounds'. The believers from amongst Jinn used to put forward their excuse for being involved in disbelief and idolatry thus: The foolish people from amongst their nation uttered vile slander against Allah, whilst they did not think it possible for a human being or a Jinn to impute a lie to Allah. They were thus far caught up in the foolish people's vile words and committed kufr and shirk, but they had now heard the Qur'an and the reality had later opened up.\n\n────────────────────────────────────────\n\n[Verses 6–7]\n\nوَأَنَّهُ كَانَ رِ‌جَالٌ مِّنَ الْإِنسِ يَعُوذُونَ بِرِ‌جَالٍ مِّنَ الْجِنِّ فَزَادُوهُمْ رَ‌هَقًا ﴿6﴾\n\n(...and that some people from human beings used to seek refuge with some peoples of the Jinn, and thus they increased them (the Jinns) in arrogance, [ 72:6] '\n\nThis verse describes the situation that it was customary for people in the Days of Ignorance that when they halted in a valley in the course of a journey, they sought refuge in the Jinn leader of that valley from the foolish mischief-makers of his nation believing that the leader of the valley will protect them. This made the Jinn think that they are better than human beings. That is why, they seek refuge in their leader but this increased the wickedness of the Jinn.\n\nRafi` Ibn ` Umair's ؓ Islam on account of the Jinn\n\nMazhari cites in his Tafsir that it is reported in Hawatif-ul-Jinn through his chain of narrators on the authority of Sayyidna Said Ibn Jubair ؓ that the Holy Prophet's ﷺ Companion Rafi` Ibn ` Umair ؓ recounts an incident of his embracing the Islamic faith, thus:\n\n'One night I was travelling in a desert. Suddenly I was overcome by sleep. So, I alighted from my camel, and before I went off to sleep I uttered the following formula in keeping with the custom of my people:\n\nانِّی اعوذ بعظیم ھٰذا الوادی من الجنّ\n\n\"I seek refuge in the leader of the Jinn of this valley from the foolish mischief-makers of his nation.\"\n\nI saw in my dream that there is a sword in a person's hand who wants to place it on my camel's chest. I woke up in a shock and looked around in all directions, but found nothing. So, I said to myself that this was some Shaitanic nightmare. It was not a true dream and fell back into deep sleep and became completely oblivious to my surrounding. I experienced the same dream again. I got up and looked all around the camel, but found nothing. This time, however, I found the camel shivering. I went back to my place and slept away and saw the same dream. I awoke and found my camel tossing about restlessly. Then I saw a youngster in whose hand was a weapon. This was the same person whom I had seen attacking the camel the first time. I saw he was holding the hand of an old man who is stopping him from attacking the camel. Just then three wild zebras appeared. The old man said to the youngster, 'Choose any one of these zebras, and let go this man's camel.' The youngster took one of the zebras and took leave. The old man then looked at me and said, 'You fool, when you seek refuge in a valley, and you fear any danger from the jinn or devils, recite thus:'\n\nاعوذ باللہ ربِّ محمّد من ھول ھٰذا الوادی\n\n\"I seek refuge in Allah, the Lord of Muhammad, from the horrors of this valley. Do not seek refuge in any Jinn because that time is gone when human beings used to seek refuge in Jinn.\"'\n\nI asked him who that person was. He replied that he was the Arabian Holy Prophet ﷺ ، neither eastern nor western. He was raised with his Prophetic mission on a Monday. I asked him where he lived. He replied that he lived in Yathrib which is an area where dates grow abundantly. As soon as the morning dawned, I set for Madinah and urged my mount to move faster and faster until I reached Madinah. When the Holy Prophet ﷺ saw me, he recounted to me the entire episode before I could tell him anything. He invited me to the call of Islam and I embraced the Islamic faith.\n\nHaving narrated this story, Sayyidna Said Ibn Jubair ؓ said that the following verse was revealed in this connection. وَأَنَّهُ كَانَ رِ‌جَالٌ مِّنَ الْإِنسِ يَعُوذُونَ بِرِ‌جَالٍ مِّنَ الْجِنِّ (and that some people from human beings used to seek refuge with some people of the Jinn…72:6)",
+      "subsections": [
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "Mazhari cites in his Tafsir that it is reported in Hawatif-ul-Jinn through his chain of narrators on the authority of Sayyidna Said Ibn Jubair ؓ that the Holy Prophet's ﷺ Companion Rafi` Ibn ` Umair ؓ recounts an incident of his embracing the Islamic faith, thus:"
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "وَأَنَّهُ كَانَ يَقُولُ سَفِيهُنَا عَلَى اللَّـهِ شَطَطًا ﴿4﴾ وَأَنَّا ظَنَنَّا أَن لَّن تَقُولَ الْإِنسُ وَالْجِنُّ عَلَى اللَّـهِ كَذِبًا ﴿5﴾"
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "72-8-12",
+      "surahNumber": 72,
+      "verseRange": [
+        8,
+        12
+      ],
+      "title": "The Jinn Used to Go only up to the Clouds to Eavesdrop, Not to the Sky",
+      "juzNumber": 29,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5615/mode/2up",
+      "arabicText": "وَأَنَّا لَمَسْنَا ٱلسَّمَآءَ فَوَجَدْنَـٰهَا مُلِئَتْ حَرَسًا شَدِيدًا وَشُهُبًا ۝٨ وَأَنَّا كُنَّا نَقْعُدُ مِنْهَا مَقَـٰعِدَ لِلسَّمْعِ ۖ فَمَن يَسْتَمِعِ ٱلْـَٔانَ يَجِدْ لَهُۥ شِهَابًا رَّصَدًا ۝٩ وَأَنَّا لَا نَدْرِىٓ أَشَرٌّ أُرِيدَ بِمَن فِى ٱلْأَرْضِ أَمْ أَرَادَ بِهِمْ رَبُّهُمْ رَشَدًا ۝١٠ وَأَنَّا مِنَّا ٱلصَّـٰلِحُونَ وَمِنَّا دُونَ ذَٰلِكَ ۖ كُنَّا طَرَآئِقَ قِدَدًا ۝١١ وَأَنَّا ظَنَنَّآ أَن لَّن نُّعْجِزَ ٱللَّهَ فِى ٱلْأَرْضِ وَلَن نُّعْجِزَهُۥ هَرَبًا ۝١٢",
+      "translation": "and that we sought (to reach) the sky, but we found it filled with stern guards and flames, ۝ and that we used to sit at places therein to listen; but if one will (try to) listen now, he will find a flame in ambush for him, ۝ and that we do not know whether it is a bad end that is intended for those on earth, or their Lord has intended for them a right thing, ۝ and that some of us are (already) righteous, and some of us are otherwise, and we were on different ways; ۝ and that we have now believed that we can never frustrate Allah on the earth, nor can we baffle Him by escape, ۝",
+      "phraseCards": [
+        {
+          "id": "72-8-card",
+          "verseNumber": 8,
+          "arabicPhrase": "وَأَنَّا لَمَسْنَا ٱلسَّمَآءَ فَوَجَدْنَـٰهَا مُلِئَتْ حَرَسًا شَدِيدًا وَشُهُبًا",
+          "englishPhrase": "and that we sought (to reach) the sky, but we found it filled with stern guards and flames,",
+          "vocabulary": [
+            {
+              "word": "وَأَنَّا",
+              "root": "ا - ن - ا",
+              "meaning": "And that we",
+              "grammarNote": "Transliteration: wa-annā"
+            },
+            {
+              "word": "لَمَسْنَا",
+              "root": "س - ن - ا",
+              "meaning": "sought to touch",
+              "grammarNote": "Transliteration: lamasnā"
+            },
+            {
+              "word": "ٱلسَّمَآءَ",
+              "root": "م - ا - ء",
+              "meaning": "the heaven",
+              "grammarNote": "Transliteration: l-samāa"
+            },
+            {
+              "word": "فَوَجَدْنَـٰهَا",
+              "root": "و - ج - د",
+              "meaning": "but we found it",
+              "grammarNote": "Transliteration: fawajadnāhā"
+            },
+            {
+              "word": "مُلِئَتْ",
+              "root": "ل - ئ - ت",
+              "meaning": "filled (with)",
+              "grammarNote": "Transliteration: muli-at"
+            },
+            {
+              "word": "حَرَسًۭا",
+              "root": "ح - ر - س",
+              "meaning": "guards",
+              "grammarNote": "Transliteration: ḥarasan"
+            },
+            {
+              "word": "شَدِيدًۭا",
+              "root": "ش - د - ي",
+              "meaning": "severe",
+              "grammarNote": "Transliteration: shadīdan"
+            },
+            {
+              "word": "وَشُهُبًۭا",
+              "root": "ش - ه - ب",
+              "meaning": "and flaming fires",
+              "grammarNote": "Transliteration: washuhuban"
+            }
+          ]
+        },
+        {
+          "id": "72-9-card",
+          "verseNumber": 9,
+          "arabicPhrase": "وَأَنَّا كُنَّا نَقْعُدُ مِنْهَا مَقَـٰعِدَ لِلسَّمْعِ ۖ فَمَن يَسْتَمِعِ ٱلْـَٔانَ يَجِدْ لَهُۥ شِهَابًا رَّصَدًا",
+          "englishPhrase": "and that we used to sit at places therein to listen; but if one will (try to) listen now, he will find a flame in ambush for him,",
+          "vocabulary": [
+            {
+              "word": "وَأَنَّا",
+              "root": "ا - ن - ا",
+              "meaning": "And that we",
+              "grammarNote": "Transliteration: wa-annā"
+            },
+            {
+              "word": "كُنَّا",
+              "root": "ك - ن - ا",
+              "meaning": "used to",
+              "grammarNote": "Transliteration: kunnā"
+            },
+            {
+              "word": "نَقْعُدُ",
+              "root": "ق - ع - د",
+              "meaning": "sit",
+              "grammarNote": "Transliteration: naqʿudu"
+            },
+            {
+              "word": "مِنْهَا",
+              "root": "ن - ه - ا",
+              "meaning": "there in",
+              "grammarNote": "Transliteration: min'hā"
+            },
+            {
+              "word": "مَقَـٰعِدَ",
+              "root": "ق - ع - د",
+              "meaning": "positions",
+              "grammarNote": "Transliteration: maqāʿida"
+            },
+            {
+              "word": "لِلسَّمْعِ ۖ",
+              "root": "س - م - ع",
+              "meaning": "for hearing",
+              "grammarNote": "Transliteration: lilssamʿi"
+            },
+            {
+              "word": "فَمَن",
+              "root": "ف - م - ن",
+              "meaning": "but (he) who",
+              "grammarNote": "Transliteration: faman"
+            },
+            {
+              "word": "يَسْتَمِعِ",
+              "root": "س - ت - م",
+              "meaning": "listens",
+              "grammarNote": "Transliteration: yastamiʿi"
+            },
+            {
+              "word": "ٱلْـَٔانَ",
+              "root": "ل - ا - ن",
+              "meaning": "now",
+              "grammarNote": "Transliteration: l-āna"
+            },
+            {
+              "word": "يَجِدْ",
+              "root": "ي - ج - د",
+              "meaning": "will find",
+              "grammarNote": "Transliteration: yajid"
+            },
+            {
+              "word": "لَهُۥ",
+              "root": "ل - ه",
+              "meaning": "for him",
+              "grammarNote": "Transliteration: lahu"
+            },
+            {
+              "word": "شِهَابًۭا",
+              "root": "ش - ه - ب",
+              "meaning": "a flaming fire",
+              "grammarNote": "Transliteration: shihāban"
+            },
+            {
+              "word": "رَّصَدًۭا",
+              "root": "ر - ص - د",
+              "meaning": "waiting",
+              "grammarNote": "Transliteration: raṣadan"
+            }
+          ]
+        },
+        {
+          "id": "72-10-card",
+          "verseNumber": 10,
+          "arabicPhrase": "وَأَنَّا لَا نَدْرِىٓ أَشَرٌّ أُرِيدَ بِمَن فِى ٱلْأَرْضِ أَمْ أَرَادَ بِهِمْ رَبُّهُمْ رَشَدًا",
+          "englishPhrase": "and that we do not know whether it is a bad end that is intended for those on earth, or their Lord has intended for them a right thing,",
+          "vocabulary": [
+            {
+              "word": "وَأَنَّا",
+              "root": "ا - ن - ا",
+              "meaning": "And that we",
+              "grammarNote": "Transliteration: wa-annā"
+            },
+            {
+              "word": "لَا",
+              "root": "ل - ا",
+              "meaning": "not",
+              "grammarNote": "Transliteration: lā"
+            },
+            {
+              "word": "نَدْرِىٓ",
+              "root": "ن - د - ر",
+              "meaning": "we know",
+              "grammarNote": "Transliteration: nadrī"
+            },
+            {
+              "word": "أَشَرٌّ",
+              "root": "ا - ش - ر",
+              "meaning": "whether evil",
+              "grammarNote": "Transliteration: asharrun"
+            },
+            {
+              "word": "أُرِيدَ",
+              "root": "ر - ي - د",
+              "meaning": "is intended",
+              "grammarNote": "Transliteration: urīda"
+            },
+            {
+              "word": "بِمَن",
+              "root": "ب - م - ن",
+              "meaning": "for (those) who",
+              "grammarNote": "Transliteration: biman"
+            },
+            {
+              "word": "فِى",
+              "root": "ف - ي",
+              "meaning": "(are) in",
+              "grammarNote": "Transliteration: fī"
+            },
+            {
+              "word": "ٱلْأَرْضِ",
+              "root": "ا - ر - ض",
+              "meaning": "the earth",
+              "grammarNote": "Transliteration: l-arḍi"
+            },
+            {
+              "word": "أَمْ",
+              "root": "ا - م",
+              "meaning": "or",
+              "grammarNote": "Transliteration: am"
+            },
+            {
+              "word": "أَرَادَ",
+              "root": "ر - ا - د",
+              "meaning": "intends",
+              "grammarNote": "Transliteration: arāda"
+            },
+            {
+              "word": "بِهِمْ",
+              "root": "ب - ه - م",
+              "meaning": "for them",
+              "grammarNote": "Transliteration: bihim"
+            },
+            {
+              "word": "رَبُّهُمْ",
+              "root": "ر - ب - ب",
+              "meaning": "their Lord",
+              "grammarNote": "Transliteration: rabbuhum"
+            },
+            {
+              "word": "رَشَدًۭا",
+              "root": "ر - ش - د",
+              "meaning": "a right path",
+              "grammarNote": "Transliteration: rashadan"
+            }
+          ]
+        },
+        {
+          "id": "72-11-card",
+          "verseNumber": 11,
+          "arabicPhrase": "وَأَنَّا مِنَّا ٱلصَّـٰلِحُونَ وَمِنَّا دُونَ ذَٰلِكَ ۖ كُنَّا طَرَآئِقَ قِدَدًا",
+          "englishPhrase": "and that some of us are (already) righteous, and some of us are otherwise, and we were on different ways;",
+          "vocabulary": [
+            {
+              "word": "وَأَنَّا",
+              "root": "ا - ن - ا",
+              "meaning": "And that [we]",
+              "grammarNote": "Transliteration: wa-annā"
+            },
+            {
+              "word": "مِنَّا",
+              "root": "م - ن - ا",
+              "meaning": "among us",
+              "grammarNote": "Transliteration: minnā"
+            },
+            {
+              "word": "ٱلصَّـٰلِحُونَ",
+              "root": "ص - ل - ح",
+              "meaning": "(are) the righteous",
+              "grammarNote": "Transliteration: l-ṣāliḥūna"
+            },
+            {
+              "word": "وَمِنَّا",
+              "root": "م - ن - ا",
+              "meaning": "and among us",
+              "grammarNote": "Transliteration: waminnā"
+            },
+            {
+              "word": "دُونَ",
+              "root": "د - و - ن",
+              "meaning": "(are) other than",
+              "grammarNote": "Transliteration: dūna"
+            },
+            {
+              "word": "ذَٰلِكَ ۖ",
+              "root": "ذ - ل - ك",
+              "meaning": "that",
+              "grammarNote": "Transliteration: dhālika"
+            },
+            {
+              "word": "كُنَّا",
+              "root": "ك - ن - ا",
+              "meaning": "We",
+              "grammarNote": "Transliteration: kunnā"
+            },
+            {
+              "word": "طَرَآئِقَ",
+              "root": "ط - ر - ئ",
+              "meaning": "(are on) ways",
+              "grammarNote": "Transliteration: ṭarāiqa"
+            },
+            {
+              "word": "قِدَدًۭا",
+              "root": "ق - د - د",
+              "meaning": "different",
+              "grammarNote": "Transliteration: qidadan"
+            }
+          ]
+        },
+        {
+          "id": "72-12-card",
+          "verseNumber": 12,
+          "arabicPhrase": "وَأَنَّا ظَنَنَّآ أَن لَّن نُّعْجِزَ ٱللَّهَ فِى ٱلْأَرْضِ وَلَن نُّعْجِزَهُۥ هَرَبًا",
+          "englishPhrase": "and that we have now believed that we can never frustrate Allah on the earth, nor can we baffle Him by escape,",
+          "vocabulary": [
+            {
+              "word": "وَأَنَّا",
+              "root": "ا - ن - ا",
+              "meaning": "And that we",
+              "grammarNote": "Transliteration: wa-annā"
+            },
+            {
+              "word": "ظَنَنَّآ",
+              "root": "ظ - ن - ن",
+              "meaning": "[we] have become certain",
+              "grammarNote": "Transliteration: ẓanannā"
+            },
+            {
+              "word": "أَن",
+              "root": "ا - ن - ن",
+              "meaning": "that",
+              "grammarNote": "Transliteration: an"
+            },
+            {
+              "word": "لَّن",
+              "root": "ل - ن",
+              "meaning": "never",
+              "grammarNote": "Transliteration: lan"
+            },
+            {
+              "word": "نُّعْجِزَ",
+              "root": "ع - ج - ز",
+              "meaning": "we will cause failure",
+              "grammarNote": "Transliteration: nuʿ'jiza"
+            },
+            {
+              "word": "ٱللَّهَ",
+              "root": "أ - ل - ه",
+              "meaning": "(to) Allah",
+              "grammarNote": "Transliteration: l-laha"
+            },
+            {
+              "word": "فِى",
+              "root": "ف - ي",
+              "meaning": "in",
+              "grammarNote": "Transliteration: fī"
+            },
+            {
+              "word": "ٱلْأَرْضِ",
+              "root": "ا - ر - ض",
+              "meaning": "the earth",
+              "grammarNote": "Transliteration: l-arḍi"
+            },
+            {
+              "word": "وَلَن",
+              "root": "و - ل - ن",
+              "meaning": "and never",
+              "grammarNote": "Transliteration: walan"
+            },
+            {
+              "word": "نُّعْجِزَهُۥ",
+              "root": "ع - ج - ز",
+              "meaning": "we can escape Him",
+              "grammarNote": "Transliteration: nuʿ'jizahu"
+            },
+            {
+              "word": "هَرَبًۭا",
+              "root": "ه - ر - ب",
+              "meaning": "(by) flight",
+              "grammarNote": "Transliteration: haraban"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verses 8–9]\n\nوَأَنَّا لَمَسْنَا السَّمَاءَ فَوَجَدْنَاهَا مُلِئَتْ حَرَ‌سًا شَدِيدًا وَشُهُبًا (...and that we sought [ to reach ] the sky, but we found it filled with stern guards and flames....72:8). The word sama' is used in two different senses: 'sky' as well as 'cloud'. It would appear that here the word is used in the latter sense.\n\nThe Jinn Used to Go only up to the Clouds to Eavesdrop, Not to the Sky\n\nThe Jinn and the devils used to go up to the sky means that they used to go to the 'clouds', take up positions there to sit and eavesdrop. The proof of this is found in Sahih of Bukhari on the authority of Sayyidah ` A'ishah ؓ عنہا who reports:\n\nسمعت رسول اللہ ﷺ یقول ان الملایٔکۃ تنزل فی العَنَان و ھو السحاب فتذکر الامر الذی قضی فی السماء فتسترق الشّیاطین السمع فتسمعہ فتتوجّہ الی الکُھّان فیکذبون معھا مایٔۃ کذبۃ من عند انفسھم (اس مظھری)\n\n\" I have heard the Messenger of Allah say that the angels descended in the 'anan of sama' meaning the 'cloud'. There they discussed the decisions Allah has issued in the sky. The devils listened to their private conversations without them knowing about it and passed the information to the soothsayers, mixing it with a hundred lies from their side.\"' [ Mazhari ].\n\nA narration is record in Sahih of Bukhari on the authority of Sayyidna Abu Hurairah ؓ and in Muslim on the authority of Sayyidna Ibn ` Abbas رضی اللہ تعالیٰ عنہما to the following effect:\n\nWhen Allah issues an order in the sky, the angels flap their wings in readiness to obey the order. When the issuance of the order is over, they discuss among themselves. The devils eavesdrop on this discussion, and pass the information to the soothsayers, admixing it with many lies.\n\nThis Hadith apparently contradicts the narration of Sayyidah ` A'ishah ؓ but in actual fact, there is no conflict between the two narratives. This narrative does not prove that the devils go inside the sky to eavesdrop. Probably, when the order is issued in the first instance by Allah, it filters down to the angels from the upper level to the lower level, until the angels come down to the cloud where they discuss it. The devils steal the information from here as mentioned by Sayyidah ` A'ishah ؓ [ Mazhari ].\n\nAt any rate, before the advent of the Holy Prophet ﷺ the Jinn and devils had free access to the heavenly information. They used to position themselves in the cloud and eavesdrop on the conversations of the angels and pass the information to the soothsayers. At the advent of the Holy Prophet ﷺ ، there arose the need to protect the heavenly revelation. As a result, the access of devils to the upper region was stopped in such a way that if a devil attempted to go up, he would be repelled by piercing flames. This was the new phenomenon that excited the curiosity of the devils and Jinn and, dividing themselves into groups, they went to the east and to the west to investigate. One of the groups arrived at a place called Nakhlah where its members heard the Qur'an and embraced the faith of Islam as mentioned in Surah Al-Jinn.\n\nMeteors Existed Since the Inception of Time, but were not Used to Repel the Devils before the Advent of the Holy Prophet ﷺ . It happened only after his Advent\n\nA doubt that may arise here is that the existence of Meteors, which in common parlance are called inqidad-ul-kaukab the 'falling stars', is not a new phenomenon. This verse, however, indicates that they showed up to repel the devils as if they are new-age phenomena of the Holy Prophet ﷺ . In response, it may be stated that there is no denying that the meteors did exist since the inception of time and space before the advent of the Holy Prophet ﷺ ، and that there is no contradiction between what humanity experienced since the beginning of the world, scientific explanations and the Qur'anic statement. Philosophers and scientists explain that the meteors may originate from the earth or stars or disintegrating planets, and wander in space at enormous speeds and fall to the earth. Some fiery matter may arise from the surface of the earth and heat up at some point, or the speed of the meteors makes them glow and burn, or a flame emits from a star - and this may have habitually continued ever since. These flames, however, were not used to serve a particular purpose before the advent of the Holy Prophet ﷺ ; they were merely a natural phenomena. After the advent of the Holy Prophet ﷺ ، meteoric flames were used to serve the purpose of shooting the devils if they attempted to go up and listen furtively the conversation of the angels. See also Ma` ariful Qur’ an, Vol. 5/pp 303-305, under [ 15:17-18].\n\n────────────────────────────────────────\n\n[Verses 10–12]\n\nوَأَنَّا لَا نَدْرِ‌ي أَشَرٌّ‌ أُرِ‌يدَ بِمَن فِي الْأَرْ‌ضِ أَمْ أَرَ‌ادَ بِهِمْ رَ‌بُّهُمْ رَ‌شَدًا (and that we do not know whether it is a bad end that is intended for those on earth, or their Lord has intended for them a right thing,....72:10). The Jinn and devils were barred from having access to heavenly news. In this case it would be a punishment for the inhabitants of the earth. However, if Allah intends them to be rightly guided, He has barred the Jinn and Shaitan from having access to the heaven, so that they do not interfere with Divine revelation. Therefore, they expressed their reservations about this to the effect that they had no idea as to whether it was a bad end that was intended for the inhabitants of the earth or whether Allah intended them to be rightly guided.",
+      "subsections": [
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "The Jinn and the devils used to go up to the sky means that they used to go to the 'clouds', take up positions there to sit and eavesdrop. The proof of this is found in Sahih of Bukhari on the authority of Sayyidah ` A'ishah ؓ عنہا who reports:"
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "وَأَنَّا لَمَسْنَا السَّمَاءَ فَوَجَدْنَاهَا مُلِئَتْ حَرَ‌سًا شَدِيدًا وَشُهُبًا (...and that we sought [ to reach ] the sky, but we found it filled with stern guards and flames....72:8). The word sama' is used in two different senses: 'sky' as well as 'cloud'. It would appear that here the word is used in the latter sense."
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "72-13-24",
+      "surahNumber": 72,
+      "verseRange": [
+        13,
+        24
+      ],
+      "title": "────────────────────────────────────────",
+      "juzNumber": 29,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5615/mode/2up",
+      "arabicText": "وَأَنَّا لَمَّا سَمِعْنَا ٱلْهُدَىٰٓ ءَامَنَّا بِهِۦ ۖ فَمَن يُؤْمِنۢ بِرَبِّهِۦ فَلَا يَخَافُ بَخْسًا وَلَا رَهَقًا ۝١٣ وَأَنَّا مِنَّا ٱلْمُسْلِمُونَ وَمِنَّا ٱلْقَـٰسِطُونَ ۖ فَمَنْ أَسْلَمَ فَأُو۟لَـٰٓئِكَ تَحَرَّوْا۟ رَشَدًا ۝١٤ وَأَمَّا ٱلْقَـٰسِطُونَ فَكَانُوا۟ لِجَهَنَّمَ حَطَبًا ۝١٥ وَأَلَّوِ ٱسْتَقَـٰمُوا۟ عَلَى ٱلطَّرِيقَةِ لَأَسْقَيْنَـٰهُم مَّآءً غَدَقًا ۝١٦ لِّنَفْتِنَهُمْ فِيهِ ۚ وَمَن يُعْرِضْ عَن ذِكْرِ رَبِّهِۦ يَسْلُكْهُ عَذَابًا صَعَدًا ۝١٧ وَأَنَّ ٱلْمَسَـٰجِدَ لِلَّهِ فَلَا تَدْعُوا۟ مَعَ ٱللَّهِ أَحَدًا ۝١٨ وَأَنَّهُۥ لَمَّا قَامَ عَبْدُ ٱللَّهِ يَدْعُوهُ كَادُوا۟ يَكُونُونَ عَلَيْهِ لِبَدًا ۝١٩ قُلْ إِنَّمَآ أَدْعُوا۟ رَبِّى وَلَآ أُشْرِكُ بِهِۦٓ أَحَدًا ۝٢٠ قُلْ إِنِّى لَآ أَمْلِكُ لَكُمْ ضَرًّا وَلَا رَشَدًا ۝٢١ قُلْ إِنِّى لَن يُجِيرَنِى مِنَ ٱللَّهِ أَحَدٌ وَلَنْ أَجِدَ مِن دُونِهِۦ مُلْتَحَدًا ۝٢٢ إِلَّا بَلَـٰغًا مِّنَ ٱللَّهِ وَرِسَـٰلَـٰتِهِۦ ۚ وَمَن يَعْصِ ٱللَّهَ وَرَسُولَهُۥ فَإِنَّ لَهُۥ نَارَ جَهَنَّمَ خَـٰلِدِينَ فِيهَآ أَبَدًا ۝٢٣ حَتَّىٰٓ إِذَا رَأَوْا۟ مَا يُوعَدُونَ فَسَيَعْلَمُونَ مَنْ أَضْعَفُ نَاصِرًا وَأَقَلُّ عَدَدًا ۝٢٤",
+      "translation": "and that when we heard the Guiding Discourse, we believed in it; so if one believes in his Lord, he will have no fear of either any curtailment (in his reward) or any excess (in his punishment), ۝ and that some of us are Muslims, and some of us are unjust. Now, those who submitted to Islam have found out the right path, ۝ As for the unjust, they have become firewood for Hell.” ۝ “(And it is also revealed to me) that if they (the people of Makkah) had stood firm on the (right) way, We would have supplied water to them in abundance, ۝ so that We test them thereby; and if one turns away from the remembrance of his Lord, He will thrust him into a severe torment, ۝ and that masājid (mosques) belong to Allah; so, do not invoke anyone along with Allah, ۝ and that when Allah’s servant stood invoking Him, they almost rushed on him in crowds.” ۝ Say, “I invoke my Lord, and do not associate anyone with Him.” ۝ Say, “I possess no power to cause you any harm or bring you to a right way.” ۝ Say, “No one can ever save me from Allah, and I can never find a refuge save with Him. ۝ However, (I have been given power) of conveying (commands) from Allah, and His messages. The one who disobeys Allah and His Messenger, for him there is the fire of Hell, wherein such people will live forever. ۝ (The disbelievers will continue denying the truth and mock at it) until when they will see what they are promised, they will know whose supporters are weaker, and whose numbers are less. ۝",
+      "phraseCards": [
+        {
+          "id": "72-13-card",
+          "verseNumber": 13,
+          "arabicPhrase": "وَأَنَّا لَمَّا سَمِعْنَا ٱلْهُدَىٰٓ ءَامَنَّا بِهِۦ ۖ فَمَن يُؤْمِنۢ بِرَبِّهِۦ فَلَا يَخَافُ بَخْسًا وَلَا رَهَقًا",
+          "englishPhrase": "and that when we heard the Guiding Discourse, we believed in it; so if one believes in his Lord, he will have no fear of either any curtailment (in his reward) or any excess (in his punishment),",
+          "vocabulary": [
+            {
+              "word": "وَأَنَّا",
+              "root": "ا - ن - ا",
+              "meaning": "And that [we]",
+              "grammarNote": "Transliteration: wa-annā"
+            },
+            {
+              "word": "لَمَّا",
+              "root": "ل - م - ا",
+              "meaning": "when",
+              "grammarNote": "Transliteration: lammā"
+            },
+            {
+              "word": "سَمِعْنَا",
+              "root": "س - م - ع",
+              "meaning": "we heard",
+              "grammarNote": "Transliteration: samiʿ'nā"
+            },
+            {
+              "word": "ٱلْهُدَىٰٓ",
+              "root": "ه - د - ي",
+              "meaning": "the Guidance",
+              "grammarNote": "Transliteration: l-hudā"
+            },
+            {
+              "word": "ءَامَنَّا",
+              "root": "ء - ا - م",
+              "meaning": "we believed",
+              "grammarNote": "Transliteration: āmannā"
+            },
+            {
+              "word": "بِهِۦ ۖ",
+              "root": "ب - ه",
+              "meaning": "in it",
+              "grammarNote": "Transliteration: bihi"
+            },
+            {
+              "word": "فَمَن",
+              "root": "ف - م - ن",
+              "meaning": "And whoever",
+              "grammarNote": "Transliteration: faman"
+            },
+            {
+              "word": "يُؤْمِنۢ",
+              "root": "ؤ - م - ن",
+              "meaning": "believes",
+              "grammarNote": "Transliteration: yu'min"
+            },
+            {
+              "word": "بِرَبِّهِۦ",
+              "root": "ر - ب - ه",
+              "meaning": "in his Lord",
+              "grammarNote": "Transliteration: birabbihi"
+            },
+            {
+              "word": "فَلَا",
+              "root": "ف - ل - ا",
+              "meaning": "then not",
+              "grammarNote": "Transliteration: falā"
+            },
+            {
+              "word": "يَخَافُ",
+              "root": "خ - ا - ف",
+              "meaning": "he will fear",
+              "grammarNote": "Transliteration: yakhāfu"
+            },
+            {
+              "word": "بَخْسًۭا",
+              "root": "خ - س - ا",
+              "meaning": "any loss",
+              "grammarNote": "Transliteration: bakhsan"
+            },
+            {
+              "word": "وَلَا",
+              "root": "و - ل - ا",
+              "meaning": "and not",
+              "grammarNote": "Transliteration: walā"
+            },
+            {
+              "word": "رَهَقًۭا",
+              "root": "ر - ه - ق",
+              "meaning": "any burden",
+              "grammarNote": "Transliteration: rahaqan"
+            }
+          ]
+        },
+        {
+          "id": "72-14-card",
+          "verseNumber": 14,
+          "arabicPhrase": "وَأَنَّا مِنَّا ٱلْمُسْلِمُونَ وَمِنَّا ٱلْقَـٰسِطُونَ ۖ فَمَنْ أَسْلَمَ فَأُو۟لَـٰٓئِكَ تَحَرَّوْا۟ رَشَدًا",
+          "englishPhrase": "and that some of us are Muslims, and some of us are unjust. Now, those who submitted to Islam have found out the right path,",
+          "vocabulary": [
+            {
+              "word": "وَأَنَّا",
+              "root": "ا - ن - ا",
+              "meaning": "And that we",
+              "grammarNote": "Transliteration: wa-annā"
+            },
+            {
+              "word": "مِنَّا",
+              "root": "م - ن - ا",
+              "meaning": "among us",
+              "grammarNote": "Transliteration: minnā"
+            },
+            {
+              "word": "ٱلْمُسْلِمُونَ",
+              "root": "س - ل - م",
+              "meaning": "(are) Muslims",
+              "grammarNote": "Transliteration: l-mus'limūna"
+            },
+            {
+              "word": "وَمِنَّا",
+              "root": "م - ن - ا",
+              "meaning": "and among us",
+              "grammarNote": "Transliteration: waminnā"
+            },
+            {
+              "word": "ٱلْقَـٰسِطُونَ ۖ",
+              "root": "ق - س - ط",
+              "meaning": "(are) unjust",
+              "grammarNote": "Transliteration: l-qāsiṭūna"
+            },
+            {
+              "word": "فَمَنْ",
+              "root": "ف - م - ن",
+              "meaning": "And whoever",
+              "grammarNote": "Transliteration: faman"
+            },
+            {
+              "word": "أَسْلَمَ",
+              "root": "س - ل - م",
+              "meaning": "submits",
+              "grammarNote": "Transliteration: aslama"
+            },
+            {
+              "word": "فَأُو۟لَـٰٓئِكَ",
+              "root": "و - ل - ئ",
+              "meaning": "then those",
+              "grammarNote": "Transliteration: fa-ulāika"
+            },
+            {
+              "word": "تَحَرَّوْا۟",
+              "root": "ت - ح - ر",
+              "meaning": "have sought",
+              "grammarNote": "Transliteration: taḥarraw"
+            },
+            {
+              "word": "رَشَدًۭا",
+              "root": "ر - ش - د",
+              "meaning": "(the) right path",
+              "grammarNote": "Transliteration: rashadan"
+            }
+          ]
+        },
+        {
+          "id": "72-15-card",
+          "verseNumber": 15,
+          "arabicPhrase": "وَأَمَّا ٱلْقَـٰسِطُونَ فَكَانُوا۟ لِجَهَنَّمَ حَطَبًا",
+          "englishPhrase": "As for the unjust, they have become firewood for Hell.”",
+          "vocabulary": [
+            {
+              "word": "وَأَمَّا",
+              "root": "ا - م - ا",
+              "meaning": "And as for",
+              "grammarNote": "Transliteration: wa-ammā"
+            },
+            {
+              "word": "ٱلْقَـٰسِطُونَ",
+              "root": "ق - س - ط",
+              "meaning": "the unjust",
+              "grammarNote": "Transliteration: l-qāsiṭūna"
+            },
+            {
+              "word": "فَكَانُوا۟",
+              "root": "ك - ا - ن",
+              "meaning": "they will be",
+              "grammarNote": "Transliteration: fakānū"
+            },
+            {
+              "word": "لِجَهَنَّمَ",
+              "root": "ج - ه - ن",
+              "meaning": "for Hell",
+              "grammarNote": "Transliteration: lijahannama"
+            },
+            {
+              "word": "حَطَبًۭا",
+              "root": "ح - ط - ب",
+              "meaning": "firewood",
+              "grammarNote": "Transliteration: ḥaṭaban"
+            }
+          ]
+        },
+        {
+          "id": "72-16-card",
+          "verseNumber": 16,
+          "arabicPhrase": "وَأَلَّوِ ٱسْتَقَـٰمُوا۟ عَلَى ٱلطَّرِيقَةِ لَأَسْقَيْنَـٰهُم مَّآءً غَدَقًا",
+          "englishPhrase": "“(And it is also revealed to me) that if they (the people of Makkah) had stood firm on the (right) way, We would have supplied water to them in abundance,",
+          "vocabulary": [
+            {
+              "word": "وَأَلَّوِ",
+              "root": "ا - ل - و",
+              "meaning": "And that if",
+              "grammarNote": "Transliteration: wa-allawi"
+            },
+            {
+              "word": "ٱسْتَقَـٰمُوا۟",
+              "root": "ق - م - و",
+              "meaning": "they had remained",
+              "grammarNote": "Transliteration: is'taqāmū"
+            },
+            {
+              "word": "عَلَى",
+              "root": "ع - ل - و",
+              "meaning": "on",
+              "grammarNote": "Transliteration: ʿalā"
+            },
+            {
+              "word": "ٱلطَّرِيقَةِ",
+              "root": "ط - ر - ي",
+              "meaning": "the Way",
+              "grammarNote": "Transliteration: l-ṭarīqati"
+            },
+            {
+              "word": "لَأَسْقَيْنَـٰهُم",
+              "root": "ا - س - ق",
+              "meaning": "surely We (would) have given them to drink",
+              "grammarNote": "Transliteration: la-asqaynāhum"
+            },
+            {
+              "word": "مَّآءً",
+              "root": "م - ا - ء",
+              "meaning": "water",
+              "grammarNote": "Transliteration: māan"
+            },
+            {
+              "word": "غَدَقًۭا",
+              "root": "غ - د - ق",
+              "meaning": "(in) abundance",
+              "grammarNote": "Transliteration: ghadaqan"
+            }
+          ]
+        },
+        {
+          "id": "72-17-card",
+          "verseNumber": 17,
+          "arabicPhrase": "لِّنَفْتِنَهُمْ فِيهِ ۚ وَمَن يُعْرِضْ عَن ذِكْرِ رَبِّهِۦ يَسْلُكْهُ عَذَابًا صَعَدًا",
+          "englishPhrase": "so that We test them thereby; and if one turns away from the remembrance of his Lord, He will thrust him into a severe torment,",
+          "vocabulary": [
+            {
+              "word": "لِّنَفْتِنَهُمْ",
+              "root": "ف - ت - ن",
+              "meaning": "That We might test them",
+              "grammarNote": "Transliteration: linaftinahum"
+            },
+            {
+              "word": "فِيهِ ۚ",
+              "root": "ف - ي - ه",
+              "meaning": "therein",
+              "grammarNote": "Transliteration: fīhi"
+            },
+            {
+              "word": "وَمَن",
+              "root": "و - م - ن",
+              "meaning": "And whoever",
+              "grammarNote": "Transliteration: waman"
+            },
+            {
+              "word": "يُعْرِضْ",
+              "root": "ع - ر - ض",
+              "meaning": "turns away",
+              "grammarNote": "Transliteration: yuʿ'riḍ"
+            },
+            {
+              "word": "عَن",
+              "root": "ع - ن",
+              "meaning": "from",
+              "grammarNote": "Transliteration: ʿan"
+            },
+            {
+              "word": "ذِكْرِ",
+              "root": "ذ - ك - ر",
+              "meaning": "the Remembrance",
+              "grammarNote": "Transliteration: dhik'ri"
+            },
+            {
+              "word": "رَبِّهِۦ",
+              "root": "ر - ب - ه",
+              "meaning": "(of) his Lord",
+              "grammarNote": "Transliteration: rabbihi"
+            },
+            {
+              "word": "يَسْلُكْهُ",
+              "root": "س - ل - ك",
+              "meaning": "He will make him enter",
+              "grammarNote": "Transliteration: yasluk'hu"
+            },
+            {
+              "word": "عَذَابًۭا",
+              "root": "ع - ذ - ب",
+              "meaning": "a punishment",
+              "grammarNote": "Transliteration: ʿadhāban"
+            },
+            {
+              "word": "صَعَدًۭا",
+              "root": "ص - ع - د",
+              "meaning": "severe",
+              "grammarNote": "Transliteration: ṣaʿadan"
+            }
+          ]
+        },
+        {
+          "id": "72-18-card",
+          "verseNumber": 18,
+          "arabicPhrase": "وَأَنَّ ٱلْمَسَـٰجِدَ لِلَّهِ فَلَا تَدْعُوا۟ مَعَ ٱللَّهِ أَحَدًا",
+          "englishPhrase": "and that masājid (mosques) belong to Allah; so, do not invoke anyone along with Allah,",
+          "vocabulary": [
+            {
+              "word": "وَأَنَّ",
+              "root": "و - ا - ن",
+              "meaning": "And that",
+              "grammarNote": "Transliteration: wa-anna"
+            },
+            {
+              "word": "ٱلْمَسَـٰجِدَ",
+              "root": "س - ج - د",
+              "meaning": "the masjids",
+              "grammarNote": "Transliteration: l-masājida"
+            },
+            {
+              "word": "لِلَّهِ",
+              "root": "أ - ل - ه",
+              "meaning": "(are) for Allah",
+              "grammarNote": "Transliteration: lillahi"
+            },
+            {
+              "word": "فَلَا",
+              "root": "ف - ل - ا",
+              "meaning": "so (do) not",
+              "grammarNote": "Transliteration: falā"
+            },
+            {
+              "word": "تَدْعُوا۟",
+              "root": "ت - د - ع",
+              "meaning": "call",
+              "grammarNote": "Transliteration: tadʿū"
+            },
+            {
+              "word": "مَعَ",
+              "root": "م - ع",
+              "meaning": "with",
+              "grammarNote": "Transliteration: maʿa"
+            },
+            {
+              "word": "ٱللَّهِ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah",
+              "grammarNote": "Transliteration: l-lahi"
+            },
+            {
+              "word": "أَحَدًۭا",
+              "root": "ح - د - ا",
+              "meaning": "anyone",
+              "grammarNote": "Transliteration: aḥadan"
+            }
+          ]
+        },
+        {
+          "id": "72-19-card",
+          "verseNumber": 19,
+          "arabicPhrase": "وَأَنَّهُۥ لَمَّا قَامَ عَبْدُ ٱللَّهِ يَدْعُوهُ كَادُوا۟ يَكُونُونَ عَلَيْهِ لِبَدًا",
+          "englishPhrase": "and that when Allah’s servant stood invoking Him, they almost rushed on him in crowds.”",
+          "vocabulary": [
+            {
+              "word": "وَأَنَّهُۥ",
+              "root": "ا - ن - ه",
+              "meaning": "And that",
+              "grammarNote": "Transliteration: wa-annahu"
+            },
+            {
+              "word": "لَمَّا",
+              "root": "ل - م - ا",
+              "meaning": "when",
+              "grammarNote": "Transliteration: lammā"
+            },
+            {
+              "word": "قَامَ",
+              "root": "ق - ا - م",
+              "meaning": "stood up",
+              "grammarNote": "Transliteration: qāma"
+            },
+            {
+              "word": "عَبْدُ",
+              "root": "ع - ب - د",
+              "meaning": "(the) slave",
+              "grammarNote": "Transliteration: ʿabdu"
+            },
+            {
+              "word": "ٱللَّهِ",
+              "root": "أ - ل - ه",
+              "meaning": "(of) Allah",
+              "grammarNote": "Transliteration: l-lahi"
+            },
+            {
+              "word": "يَدْعُوهُ",
+              "root": "د - ع - و",
+              "meaning": "calling (upon) Him",
+              "grammarNote": "Transliteration: yadʿūhu"
+            },
+            {
+              "word": "كَادُوا۟",
+              "root": "ك - ا - د",
+              "meaning": "they almost",
+              "grammarNote": "Transliteration: kādū"
+            },
+            {
+              "word": "يَكُونُونَ",
+              "root": "ك - و - ن",
+              "meaning": "became",
+              "grammarNote": "Transliteration: yakūnūna"
+            },
+            {
+              "word": "عَلَيْهِ",
+              "root": "ع - ل - ي",
+              "meaning": "around him",
+              "grammarNote": "Transliteration: ʿalayhi"
+            },
+            {
+              "word": "لِبَدًۭا",
+              "root": "ب - د - ا",
+              "meaning": "a compacted mass",
+              "grammarNote": "Transliteration: libadan"
+            }
+          ]
+        },
+        {
+          "id": "72-20-card",
+          "verseNumber": 20,
+          "arabicPhrase": "قُلْ إِنَّمَآ أَدْعُوا۟ رَبِّى وَلَآ أُشْرِكُ بِهِۦٓ أَحَدًا",
+          "englishPhrase": "Say, “I invoke my Lord, and do not associate anyone with Him.”",
+          "vocabulary": [
+            {
+              "word": "قُلْ",
+              "root": "ق - ل",
+              "meaning": "Say",
+              "grammarNote": "Transliteration: qul"
+            },
+            {
+              "word": "إِنَّمَآ",
+              "root": "ن - م - ا",
+              "meaning": "Only",
+              "grammarNote": "Transliteration: innamā"
+            },
+            {
+              "word": "أَدْعُوا۟",
+              "root": "ا - د - ع",
+              "meaning": "I call upon",
+              "grammarNote": "Transliteration: adʿū"
+            },
+            {
+              "word": "رَبِّى",
+              "root": "ر - ب - ي",
+              "meaning": "my Lord",
+              "grammarNote": "Transliteration: rabbī"
+            },
+            {
+              "word": "وَلَآ",
+              "root": "و - ل - ا",
+              "meaning": "and not",
+              "grammarNote": "Transliteration: walā"
+            },
+            {
+              "word": "أُشْرِكُ",
+              "root": "ا - ش - ر",
+              "meaning": "I associate",
+              "grammarNote": "Transliteration: ush'riku"
+            },
+            {
+              "word": "بِهِۦٓ",
+              "root": "ب - ه",
+              "meaning": "with Him",
+              "grammarNote": "Transliteration: bihi"
+            },
+            {
+              "word": "أَحَدًۭا",
+              "root": "ح - د - ا",
+              "meaning": "anyone",
+              "grammarNote": "Transliteration: aḥadan"
+            }
+          ]
+        },
+        {
+          "id": "72-21-card",
+          "verseNumber": 21,
+          "arabicPhrase": "قُلْ إِنِّى لَآ أَمْلِكُ لَكُمْ ضَرًّا وَلَا رَشَدًا",
+          "englishPhrase": "Say, “I possess no power to cause you any harm or bring you to a right way.”",
+          "vocabulary": [
+            {
+              "word": "قُلْ",
+              "root": "ق - ل",
+              "meaning": "Say",
+              "grammarNote": "Transliteration: qul"
+            },
+            {
+              "word": "إِنِّى",
+              "root": "ا - ن - ي",
+              "meaning": "Indeed, I",
+              "grammarNote": "Transliteration: innī"
+            },
+            {
+              "word": "لَآ",
+              "root": "ل - ا",
+              "meaning": "(do) not",
+              "grammarNote": "Transliteration: lā"
+            },
+            {
+              "word": "أَمْلِكُ",
+              "root": "ا - م - ل",
+              "meaning": "possess",
+              "grammarNote": "Transliteration: amliku"
+            },
+            {
+              "word": "لَكُمْ",
+              "root": "ل - ك - م",
+              "meaning": "for you",
+              "grammarNote": "Transliteration: lakum"
+            },
+            {
+              "word": "ضَرًّۭا",
+              "root": "ض - ر - ا",
+              "meaning": "any harm",
+              "grammarNote": "Transliteration: ḍarran"
+            },
+            {
+              "word": "وَلَا",
+              "root": "و - ل - ا",
+              "meaning": "and not",
+              "grammarNote": "Transliteration: walā"
+            },
+            {
+              "word": "رَشَدًۭا",
+              "root": "ر - ش - د",
+              "meaning": "right path",
+              "grammarNote": "Transliteration: rashadan"
+            }
+          ]
+        },
+        {
+          "id": "72-22-card",
+          "verseNumber": 22,
+          "arabicPhrase": "قُلْ إِنِّى لَن يُجِيرَنِى مِنَ ٱللَّهِ أَحَدٌ وَلَنْ أَجِدَ مِن دُونِهِۦ مُلْتَحَدًا",
+          "englishPhrase": "Say, “No one can ever save me from Allah, and I can never find a refuge save with Him.",
+          "vocabulary": [
+            {
+              "word": "قُلْ",
+              "root": "ق - ل",
+              "meaning": "Say",
+              "grammarNote": "Transliteration: qul"
+            },
+            {
+              "word": "إِنِّى",
+              "root": "ا - ن - ي",
+              "meaning": "Indeed I",
+              "grammarNote": "Transliteration: innī"
+            },
+            {
+              "word": "لَن",
+              "root": "ل - ن",
+              "meaning": "never",
+              "grammarNote": "Transliteration: lan"
+            },
+            {
+              "word": "يُجِيرَنِى",
+              "root": "ج - ي - ر",
+              "meaning": "can protect me",
+              "grammarNote": "Transliteration: yujīranī"
+            },
+            {
+              "word": "مِنَ",
+              "root": "م - ن",
+              "meaning": "from",
+              "grammarNote": "Transliteration: mina"
+            },
+            {
+              "word": "ٱللَّهِ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah",
+              "grammarNote": "Transliteration: l-lahi"
+            },
+            {
+              "word": "أَحَدٌۭ",
+              "root": "ا - ح - د",
+              "meaning": "anyone",
+              "grammarNote": "Transliteration: aḥadun"
+            },
+            {
+              "word": "وَلَنْ",
+              "root": "و - ل - ن",
+              "meaning": "and never",
+              "grammarNote": "Transliteration: walan"
+            },
+            {
+              "word": "أَجِدَ",
+              "root": "ا - ج - د",
+              "meaning": "can I find",
+              "grammarNote": "Transliteration: ajida"
+            },
+            {
+              "word": "مِن",
+              "root": "م - ن",
+              "meaning": "from",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "دُونِهِۦ",
+              "root": "د - و - ن",
+              "meaning": "besides Him",
+              "grammarNote": "Transliteration: dūnihi"
+            },
+            {
+              "word": "مُلْتَحَدًا",
+              "root": "ل - ت - ح",
+              "meaning": "any refuge",
+              "grammarNote": "Transliteration: mul'taḥadan"
+            }
+          ]
+        },
+        {
+          "id": "72-23-card",
+          "verseNumber": 23,
+          "arabicPhrase": "إِلَّا بَلَـٰغًا مِّنَ ٱللَّهِ وَرِسَـٰلَـٰتِهِۦ ۚ وَمَن يَعْصِ ٱللَّهَ وَرَسُولَهُۥ فَإِنَّ لَهُۥ نَارَ جَهَنَّمَ خَـٰلِدِينَ فِيهَآ أَبَدًا",
+          "englishPhrase": "However, (I have been given power) of conveying (commands) from Allah, and His messages. The one who disobeys Allah and His Messenger, for him there is the fire of Hell, wherein such people will live forever.",
+          "vocabulary": [
+            {
+              "word": "إِلَّا",
+              "root": "ا - ل - ا",
+              "meaning": "But",
+              "grammarNote": "Transliteration: illā"
+            },
+            {
+              "word": "بَلَـٰغًۭا",
+              "root": "ل - غ - ا",
+              "meaning": "(the) notification",
+              "grammarNote": "Transliteration: balāghan"
+            },
+            {
+              "word": "مِّنَ",
+              "root": "م - ن",
+              "meaning": "from",
+              "grammarNote": "Transliteration: mina"
+            },
+            {
+              "word": "ٱللَّهِ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah",
+              "grammarNote": "Transliteration: l-lahi"
+            },
+            {
+              "word": "وَرِسَـٰلَـٰتِهِۦ ۚ",
+              "root": "ر - س - ل",
+              "meaning": "and His Messages",
+              "grammarNote": "Transliteration: warisālātihi"
+            },
+            {
+              "word": "وَمَن",
+              "root": "و - م - ن",
+              "meaning": "And whoever",
+              "grammarNote": "Transliteration: waman"
+            },
+            {
+              "word": "يَعْصِ",
+              "root": "ي - ع - ص",
+              "meaning": "disobeys",
+              "grammarNote": "Transliteration: yaʿṣi"
+            },
+            {
+              "word": "ٱللَّهَ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah",
+              "grammarNote": "Transliteration: l-laha"
+            },
+            {
+              "word": "وَرَسُولَهُۥ",
+              "root": "ر - س - و",
+              "meaning": "and His Messenger",
+              "grammarNote": "Transliteration: warasūlahu"
+            },
+            {
+              "word": "فَإِنَّ",
+              "root": "ف - ا - ن",
+              "meaning": "then indeed",
+              "grammarNote": "Transliteration: fa-inna"
+            },
+            {
+              "word": "لَهُۥ",
+              "root": "ل - ه",
+              "meaning": "for him",
+              "grammarNote": "Transliteration: lahu"
+            },
+            {
+              "word": "نَارَ",
+              "root": "ن - ا - ر",
+              "meaning": "(is the) Fire",
+              "grammarNote": "Transliteration: nāra"
+            },
+            {
+              "word": "جَهَنَّمَ",
+              "root": "ج - ه - ن",
+              "meaning": "(of) Hell",
+              "grammarNote": "Transliteration: jahannama"
+            },
+            {
+              "word": "خَـٰلِدِينَ",
+              "root": "خ - ل - د",
+              "meaning": "(they will) abide",
+              "grammarNote": "Transliteration: khālidīna"
+            },
+            {
+              "word": "فِيهَآ",
+              "root": "ي - ه - ا",
+              "meaning": "therein",
+              "grammarNote": "Transliteration: fīhā"
+            },
+            {
+              "word": "أَبَدًا",
+              "root": "ب - د - ا",
+              "meaning": "forever",
+              "grammarNote": "Transliteration: abadan"
+            }
+          ]
+        },
+        {
+          "id": "72-24-card",
+          "verseNumber": 24,
+          "arabicPhrase": "حَتَّىٰٓ إِذَا رَأَوْا۟ مَا يُوعَدُونَ فَسَيَعْلَمُونَ مَنْ أَضْعَفُ نَاصِرًا وَأَقَلُّ عَدَدًا",
+          "englishPhrase": "(The disbelievers will continue denying the truth and mock at it) until when they will see what they are promised, they will know whose supporters are weaker, and whose numbers are less.",
+          "vocabulary": [
+            {
+              "word": "حَتَّىٰٓ",
+              "root": "ح - ت - ي",
+              "meaning": "Until",
+              "grammarNote": "Transliteration: ḥattā"
+            },
+            {
+              "word": "إِذَا",
+              "root": "ا - ذ - ا",
+              "meaning": "when",
+              "grammarNote": "Transliteration: idhā"
+            },
+            {
+              "word": "رَأَوْا۟",
+              "root": "ر - و - ا",
+              "meaning": "they see",
+              "grammarNote": "Transliteration: ra-aw"
+            },
+            {
+              "word": "مَا",
+              "root": "م - ا",
+              "meaning": "what",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "يُوعَدُونَ",
+              "root": "و - ع - د",
+              "meaning": "they are promised",
+              "grammarNote": "Transliteration: yūʿadūna"
+            },
+            {
+              "word": "فَسَيَعْلَمُونَ",
+              "root": "ي - ع - ل",
+              "meaning": "then they will know",
+              "grammarNote": "Transliteration: fasayaʿlamūna"
+            },
+            {
+              "word": "مَنْ",
+              "root": "م - ن",
+              "meaning": "who",
+              "grammarNote": "Transliteration: man"
+            },
+            {
+              "word": "أَضْعَفُ",
+              "root": "ض - ع - ف",
+              "meaning": "(is) weaker",
+              "grammarNote": "Transliteration: aḍʿafu"
+            },
+            {
+              "word": "نَاصِرًۭا",
+              "root": "ص - ر - ا",
+              "meaning": "(in) helpers",
+              "grammarNote": "Transliteration: nāṣiran"
+            },
+            {
+              "word": "وَأَقَلُّ",
+              "root": "ا - ق - ل",
+              "meaning": "and fewer",
+              "grammarNote": "Transliteration: wa-aqallu"
+            },
+            {
+              "word": "عَدَدًۭا",
+              "root": "ع - د - د",
+              "meaning": "(in) number",
+              "grammarNote": "Transliteration: ʿadadan"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verses 13–17]\n\nفَمَن يُؤْمِن بِرَ‌بِّهِ فَلَا يَخَافُ بَخْسًا وَلَا رَ‌هَقًا (...so if one believes in his Lord, he will have no fear of either any curtailment [ in his reward ] or any excess [ in his punishment ]...72:13). The ward bakhs, with ba' carrying fatha ] and kha' carrying sukun, means 'to reduce the right' and the word rahaq means 'disgrace'. In other words, anyone who believes in Allah need fear neither curtailment in the reward of his good deeds, nor disgrace by excess in his punishment in the Hereafter.\n\n────────────────────────────────────────\n\n[Verses 18–24]\n\nوَأَنَّ الْمَسَاجِدَ لِلَّـهِ فَلَا تَدْعُوا مَعَ اللَّـهِ أَحَدًا (...and that masajid (mosques) belong to Allah; so, do not invoke anyone along with Allah....72:18). The word masajid is the plural of masjid. Here the word could be taken in its popular sense, that is, mosques or places of worship dedicated for the performance of prayers. In this case, it would mean that all mosques belong to Allah, dedicated to His sole worship and therefore we are not permitted to call on anyone else besides Allah, like the Jews and Christians commit shirk in their places of worship. In sum, the mosques must be kept clear of all false beliefs and vile deeds.\n\nThe word masajid could also have another sense. It could be the plural of masjad, with the letter jim carrying fath, in which case it would be masdar mimi 'infinitivity' and mean 'to prostrate or prostration'. The verse in this sense would signify that worship is reserved exclusively for Allah. It is not permitted to prostrate to anyone, because if he calls on anyone else for help, it is as though he is prostrating to him which must be avoided.",
+      "subsections": [
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "فَمَن يُؤْمِن بِرَ‌بِّهِ فَلَا يَخَافُ بَخْسًا وَلَا رَ‌هَقًا (...so if one believes in his Lord, he will have no fear of either any curtailment [ in his reward ] or any excess [ in his punishment ]...72:13). The ward bakhs, with ba' carrying fatha ] and kha' carrying sukun, means 'to reduce the right' and the word rahaq means 'disgrace'. In other words, anyone who believes in Allah need fear neither curtailment in the reward of his good deeds, nor disgrace by excess in his punishment in the Hereafter."
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "72-25-26",
+      "surahNumber": 72,
+      "verseRange": [
+        25,
+        26
+      ],
+      "title": "────────────────────────────────────────",
+      "juzNumber": 29,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5615/mode/2up",
+      "arabicText": "قُلْ إِنْ أَدْرِىٓ أَقَرِيبٌ مَّا تُوعَدُونَ أَمْ يَجْعَلُ لَهُۥ رَبِّىٓ أَمَدًا ۝٢٥ عَـٰلِمُ ٱلْغَيْبِ فَلَا يُظْهِرُ عَلَىٰ غَيْبِهِۦٓ أَحَدًا ۝٢٦",
+      "translation": "Say, “I do not know whether that which you are promised is near, or my Lord has appointed for it a distant term. ۝ (He is the) Knower of the Unseen. So He does not let anyone know the Unseen created by Him, ۝",
+      "phraseCards": [
+        {
+          "id": "72-25-card",
+          "verseNumber": 25,
+          "arabicPhrase": "قُلْ إِنْ أَدْرِىٓ أَقَرِيبٌ مَّا تُوعَدُونَ أَمْ يَجْعَلُ لَهُۥ رَبِّىٓ أَمَدًا",
+          "englishPhrase": "Say, “I do not know whether that which you are promised is near, or my Lord has appointed for it a distant term.",
+          "vocabulary": [
+            {
+              "word": "قُلْ",
+              "root": "ق - ل",
+              "meaning": "Say",
+              "grammarNote": "Transliteration: qul"
+            },
+            {
+              "word": "إِنْ",
+              "root": "ا - ن - ن",
+              "meaning": "Not",
+              "grammarNote": "Transliteration: in"
+            },
+            {
+              "word": "أَدْرِىٓ",
+              "root": "ا - د - ر",
+              "meaning": "I know",
+              "grammarNote": "Transliteration: adrī"
+            },
+            {
+              "word": "أَقَرِيبٌۭ",
+              "root": "ق - ر - ي",
+              "meaning": "whether is near",
+              "grammarNote": "Transliteration: aqarībun"
+            },
+            {
+              "word": "مَّا",
+              "root": "م - ا",
+              "meaning": "what",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "تُوعَدُونَ",
+              "root": "و - ع - د",
+              "meaning": "you are promised",
+              "grammarNote": "Transliteration: tūʿadūna"
+            },
+            {
+              "word": "أَمْ",
+              "root": "ا - م",
+              "meaning": "or (whether)",
+              "grammarNote": "Transliteration: am"
+            },
+            {
+              "word": "يَجْعَلُ",
+              "root": "ج - ع - ل",
+              "meaning": "will appoint",
+              "grammarNote": "Transliteration: yajʿalu"
+            },
+            {
+              "word": "لَهُۥ",
+              "root": "ل - ه",
+              "meaning": "for it",
+              "grammarNote": "Transliteration: lahu"
+            },
+            {
+              "word": "رَبِّىٓ",
+              "root": "ر - ب - ي",
+              "meaning": "my Lord",
+              "grammarNote": "Transliteration: rabbī"
+            },
+            {
+              "word": "أَمَدًا",
+              "root": "م - د - ا",
+              "meaning": "a (distant) term",
+              "grammarNote": "Transliteration: amadan"
+            }
+          ]
+        },
+        {
+          "id": "72-26-card",
+          "verseNumber": 26,
+          "arabicPhrase": "عَـٰلِمُ ٱلْغَيْبِ فَلَا يُظْهِرُ عَلَىٰ غَيْبِهِۦٓ أَحَدًا",
+          "englishPhrase": "(He is the) Knower of the Unseen. So He does not let anyone know the Unseen created by Him,",
+          "vocabulary": [
+            {
+              "word": "عَـٰلِمُ",
+              "root": "ع - ل - م",
+              "meaning": "(The) All-Knower",
+              "grammarNote": "Transliteration: ʿālimu"
+            },
+            {
+              "word": "ٱلْغَيْبِ",
+              "root": "غ - ي - ب",
+              "meaning": "(of) the unseen",
+              "grammarNote": "Transliteration: l-ghaybi"
+            },
+            {
+              "word": "فَلَا",
+              "root": "ف - ل - ا",
+              "meaning": "so not",
+              "grammarNote": "Transliteration: falā"
+            },
+            {
+              "word": "يُظْهِرُ",
+              "root": "ظ - ه - ر",
+              "meaning": "He reveals",
+              "grammarNote": "Transliteration: yuẓ'hiru"
+            },
+            {
+              "word": "عَلَىٰ",
+              "root": "ع - ل - و",
+              "meaning": "from",
+              "grammarNote": "Transliteration: ʿalā"
+            },
+            {
+              "word": "غَيْبِهِۦٓ",
+              "root": "غ - ي - ب",
+              "meaning": "His unseen",
+              "grammarNote": "Transliteration: ghaybihi"
+            },
+            {
+              "word": "أَحَدًا",
+              "root": "ح - د - ا",
+              "meaning": "(to) anyone",
+              "grammarNote": "Transliteration: aḥadan"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verse 25]\n\nRuling\n\nBy common consent of the scholars, prostration to anyone other Allah is totally forbidden. According to some scholars, it is tantamount to\n\nقُلْ إِنْ أَدْرِ‌ي أَقَرِ‌يبٌ مَّا تُوعَدُونَ أَمْ يَجْعَلُ لَهُ رَ‌بِّي أَمَدًا عَالِمُ الْغَيْبِ فَلَا يُظْهِرُ‌ عَلَىٰ غَيْبِهِ أَحَدًا\n\n(Say, I do not know whether that which you are promised is near, or my Lord has appointed for it a distant term. [ He is the ] Knower of the Unseen. So He does not let anyone know His Unseen....72:25-26)\n\nThe non-believers demanded that the Holy Prophet ﷺ should show them the exact time and date when the Resurrection will occur. In verse [ 25] he is enjoined to say to them that it was not for him to say when the threatened punishment would come, but come it must.\n\n────────────────────────────────────────\n\n[Verse 26]\n\nVerse [ 26] is the proof of the preceding verse. The Holy Prophet ﷺ does not know whether the promised day is close or whether a longer time is appointed for it, because Allah alone is the knower of the Unseen. That is His exclusive characteristics, and therefore He does not divulge His Unseen to anyone. The definite article alif lam in al-ghaib 'the Unseen' is grammatically referred to as alif lam for istighraq lil jins 'the article encompassing and indicating the entire genus' [ as stated in Ruh with reference to Radi, that is, He is Omniscient - knowing every species of the Unseen and all genera of the Unseen. In the idafah [ possessive case ] construction ghaibihi 'His Unseen', the possessive pronoun refers to 'Allah' and reinforces His predominance over the Unseen. Allah's knowledge comprehends and encompasses every infima species [ species of species ] and every summum genus [ genus of genera ] of His creation. This is a specialized attribute of Allah. He does not divulge His Unseen to anyone indiscriminately, so that he may store and retrieve the secrets of the unknown world as and when he wishes.\n\nThe purport of the verse under comment is to affirm the totality of Allah's knowledge of the Unseen so that He alone is fully aware of every particle of His creation, and to negate such total knowledge of the Unseen for anyone other than Allah. It was possible that an unintelligent person might surmise that the Holy Prophet ﷺ did not have any knowledge of the Unseen - so, how can he be a Messenger? Allah reveals to a Messenger thousands of secrets of the Unseen. Anyone to whom no revelation comes down cannot be a Prophet or a Messenger. Thus the following verse makes an exception:\n\nإِلَّا مَنِ ارْ‌تَضَىٰ مِن رَّ‌سُولٍ فَإِنَّهُ يَسْلُكُ مِن بَيْنِ يَدَيْهِ وَمِنْ خَلْفِهِ رَ‌صَدًا ﴿27﴾\n\n(...except a messenger whom He chooses [ to inform through revelation ], and then He appoints [ angels as ] watching guards before him and behind him, [ so that devils may not tamper with the divine revelation,].... 72:27)",
+      "subsections": [
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "The non-believers demanded that the Holy Prophet ﷺ should show them the exact time and date when the Resurrection will occur. In verse [ 25] he is enjoined to say to them that it was not for him to say when the threatened punishment would come, but come it must."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "By common consent of the scholars, prostration to anyone other Allah is totally forbidden. According to some scholars, it is tantamount to"
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "72-27-28",
+      "surahNumber": 72,
+      "verseRange": [
+        27,
+        28
+      ],
+      "title": "────────────────────────────────────────",
+      "juzNumber": 29,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5615/mode/2up",
+      "arabicText": "إِلَّا مَنِ ٱرْتَضَىٰ مِن رَّسُولٍ فَإِنَّهُۥ يَسْلُكُ مِنۢ بَيْنِ يَدَيْهِ وَمِنْ خَلْفِهِۦ رَصَدًا ۝٢٧ لِّيَعْلَمَ أَن قَدْ أَبْلَغُوا۟ رِسَـٰلَـٰتِ رَبِّهِمْ وَأَحَاطَ بِمَا لَدَيْهِمْ وَأَحْصَىٰ كُلَّ شَىْءٍ عَدَدًۢا ۝٢٨",
+      "translation": "except a messenger whom He chooses (to inform through revelation), and then He appoints (angels as) watching guards before him and behind him, (so that devils may not tamper with the divine revelation,) ۝ so that He knows that they (angels) have conveyed the messages of their Lord. And He has encompassed all that is with them, and has comprehensive knowledge of every thing by numbers. ۝",
+      "phraseCards": [
+        {
+          "id": "72-27-card",
+          "verseNumber": 27,
+          "arabicPhrase": "إِلَّا مَنِ ٱرْتَضَىٰ مِن رَّسُولٍ فَإِنَّهُۥ يَسْلُكُ مِنۢ بَيْنِ يَدَيْهِ وَمِنْ خَلْفِهِۦ رَصَدًا",
+          "englishPhrase": "except a messenger whom He chooses (to inform through revelation), and then He appoints (angels as) watching guards before him and behind him, (so that devils may not tamper with the divine revelation,)",
+          "vocabulary": [
+            {
+              "word": "إِلَّا",
+              "root": "ا - ل - ا",
+              "meaning": "Except",
+              "grammarNote": "Transliteration: illā"
+            },
+            {
+              "word": "مَنِ",
+              "root": "م - ن",
+              "meaning": "whom",
+              "grammarNote": "Transliteration: mani"
+            },
+            {
+              "word": "ٱرْتَضَىٰ",
+              "root": "ر - ت - ض",
+              "meaning": "He has approved",
+              "grammarNote": "Transliteration: ir'taḍā"
+            },
+            {
+              "word": "مِن",
+              "root": "م - ن",
+              "meaning": "of",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "رَّسُولٍۢ",
+              "root": "ر - س - و",
+              "meaning": "a Messenger",
+              "grammarNote": "Transliteration: rasūlin"
+            },
+            {
+              "word": "فَإِنَّهُۥ",
+              "root": "ا - ن - ه",
+              "meaning": "and indeed, He",
+              "grammarNote": "Transliteration: fa-innahu"
+            },
+            {
+              "word": "يَسْلُكُ",
+              "root": "ي - س - ل",
+              "meaning": "makes to march",
+              "grammarNote": "Transliteration: yasluku"
+            },
+            {
+              "word": "مِنۢ",
+              "root": "م - ن",
+              "meaning": "from",
+              "grammarNote": "Transliteration: min"
+            },
+            {
+              "word": "بَيْنِ",
+              "root": "ب - ي - ن",
+              "meaning": "before",
+              "grammarNote": "Transliteration: bayni"
+            },
+            {
+              "word": "يَدَيْهِ",
+              "root": "ي - د - ي",
+              "meaning": "him",
+              "grammarNote": "Transliteration: yadayhi"
+            },
+            {
+              "word": "وَمِنْ",
+              "root": "و - م - ن",
+              "meaning": "and from",
+              "grammarNote": "Transliteration: wamin"
+            },
+            {
+              "word": "خَلْفِهِۦ",
+              "root": "خ - ل - ف",
+              "meaning": "behind him",
+              "grammarNote": "Transliteration: khalfihi"
+            },
+            {
+              "word": "رَصَدًۭا",
+              "root": "ر - ص - د",
+              "meaning": "a guard",
+              "grammarNote": "Transliteration: raṣadan"
+            }
+          ]
+        },
+        {
+          "id": "72-28-card",
+          "verseNumber": 28,
+          "arabicPhrase": "لِّيَعْلَمَ أَن قَدْ أَبْلَغُوا۟ رِسَـٰلَـٰتِ رَبِّهِمْ وَأَحَاطَ بِمَا لَدَيْهِمْ وَأَحْصَىٰ كُلَّ شَىْءٍ عَدَدًۢا",
+          "englishPhrase": "so that He knows that they (angels) have conveyed the messages of their Lord. And He has encompassed all that is with them, and has comprehensive knowledge of every thing by numbers.",
+          "vocabulary": [
+            {
+              "word": "لِّيَعْلَمَ",
+              "root": "ع - ل - م",
+              "meaning": "That He may make evident",
+              "grammarNote": "Transliteration: liyaʿlama"
+            },
+            {
+              "word": "أَن",
+              "root": "ا - ن - ن",
+              "meaning": "that",
+              "grammarNote": "Transliteration: an"
+            },
+            {
+              "word": "قَدْ",
+              "root": "ق - د",
+              "meaning": "indeed",
+              "grammarNote": "Transliteration: qad"
+            },
+            {
+              "word": "أَبْلَغُوا۟",
+              "root": "ب - ل - غ",
+              "meaning": "they have conveyed",
+              "grammarNote": "Transliteration: ablaghū"
+            },
+            {
+              "word": "رِسَـٰلَـٰتِ",
+              "root": "ر - س - ل",
+              "meaning": "(the) Messages",
+              "grammarNote": "Transliteration: risālāti"
+            },
+            {
+              "word": "رَبِّهِمْ",
+              "root": "ر - ب - ب",
+              "meaning": "(of) their Lord",
+              "grammarNote": "Transliteration: rabbihim"
+            },
+            {
+              "word": "وَأَحَاطَ",
+              "root": "ح - ا - ط",
+              "meaning": "and He has encompassed",
+              "grammarNote": "Transliteration: wa-aḥāṭa"
+            },
+            {
+              "word": "بِمَا",
+              "root": "ب - م - ا",
+              "meaning": "what",
+              "grammarNote": "Transliteration: bimā"
+            },
+            {
+              "word": "لَدَيْهِمْ",
+              "root": "د - ي - ه",
+              "meaning": "(is) with them",
+              "grammarNote": "Transliteration: ladayhim"
+            },
+            {
+              "word": "وَأَحْصَىٰ",
+              "root": "ا - ح - ص",
+              "meaning": "and He takes account",
+              "grammarNote": "Transliteration: wa-aḥṣā"
+            },
+            {
+              "word": "كُلَّ",
+              "root": "ك - ل",
+              "meaning": "(of) all",
+              "grammarNote": "Transliteration: kulla"
+            },
+            {
+              "word": "شَىْءٍ",
+              "root": "ش - ي - ء",
+              "meaning": "things",
+              "grammarNote": "Transliteration: shayin"
+            },
+            {
+              "word": "عَدَدًۢا",
+              "root": "ع - د - د",
+              "meaning": "(in) number",
+              "grammarNote": "Transliteration: ʿadadan"
+            }
+          ]
+        }
+      ],
+      "commentary": "[Verse 27]\n\nDifference between 'Knowledge of the Unseen' and 'Reports of the Unseen Events'\n\nThe exception made here is the response to the doubt raised by unintelligent people. The negation of the total knowledge of the Unseen does not necessarily entail absolute negation of every unknown secret. For the office of risalah, a Messenger needs a certain amount of knowledge of unseen things which Allah grants him through revelation. When Allah sends down the revelation to His Holy Prophet ﷺ ، He sends it down under His special protection, and is completely secure against being distorted or tampered with by devils. First of all, the word rasul [ Messenger ] determines the type of knowledge granted to a Prophet or a Messenger. Evidently, it is the knowledge of the sacred laws and injunctions in its totality, and of the unseen events according to the exigency of time. The next statement states the heavily protected manner in which the unseen knowledge is granted. It is sent down through angels around whom are posted other angels as sentinels. This explanation clarifies the point that the exceptive sentence that affirms the unseen knowledge granted to a Holy Prophet ﷺ and a Messenger is a specialized unseen knowledge which is essential and relevant to the proper functioning of a Prophetic office.\n\nTechnically, this 'exception', in Arabic grammar, is referred to as istithna' munqati` which may be defined as the exceptive sentence in which the exception is severed from, or wholly different in kind from, the general description given before. In this sense, whilst the basic sentence negated total Unseen Knowledge in general terms for anyone besides Allah, the exceptive sentence does not affirm it. It merely affirms specialized acquaintance with some reports of the unseen events which the Qur'an frequently describes as anba'ul ghaib أَنبَاءِ الْغَيْبِ , thus, for instance:\n\nتِلْكَ مِنْ أَنبَاءِ الْغَيْبِ نُوحِيهَا إِلَيْكَ\n\n'These are some reports from the unseen [ events ] which We reveal to you. [ 11:49] '\n\nSome unintelligent people do not grasp the distinction between 'Knowledge of the Unseen' and 'reports of the unseen events'. As a result, they attempt to prove 'total knowledge of the Unseen' for the Prophets of Allah, especially for the Last Prophet ﷺ . They believe that the Holy Prophet ﷺ ، like Allah, is omniscient - having knowledge of every particle of the universe. This is clearly shirk - assigning to the Holy Prophet ﷺ the status of Godhead, God forbid! If any person discloses a secret to a friend of his, of which no one else has that piece of knowledge or information, such a friend cannot be described as omniscient. Likewise, Allah has granted thousands of pieces of information of the unseen world through revelation to His Holy Prophets ﷺ ، but it is not true to say that they are omniscient. The ignorant laity do not understand the difference between the concepts. When they are told that the Holy Prophet ﷺ is not omniscient, they understand this statement to imply that the Holy Prophet ﷺ [ God forbid!] did not have any information about anything unseen. No believer in the world ever holds such a belief, nor can he ever do so because if anyone does so the whole structure of nubuwwah and risalah would come crumbling down. It is not possible for any believer to behave in this way.\n\n────────────────────────────────────────\n\n[Verse 28]\n\nThe concluding part of the last verse says:\n\nوَأَحْصَىٰ كُلَّ شَيْءٍ عَدَدًا (...and has comprehensive knowledge of everything by numbers....72:28). In other words, Allah alone encompasses the perfect knowledge of everything and keeps a meticulous count of it. He has the knowledge of the exact number of particles in the mountains. He has the knowledge of the exact number of drops in all the oceans of the world. He has the knowledge of the exact number of drops in every rain. He alone has the knowledge of the exact number of leaves on all the trees in the world. Thus it is made clear that the totality of the knowledge of the Unseen is reserved exclusively for Allah, so that there should be no misunderstanding about the above 'exception' clause.\n\nThe question of the Unseen Knowledge is fully discussed under [ 27:65]\n\nقُل لَّا يَعْلَمُ مَن فِي السَّمَاوَاتِ وَالْأَرْ‌ضِ الْغَيْبَ إِلَّا اللَّـهُ\n\nSay, \"No one in the heavens and the earth has the knowledge of the Unseen except Allah.\" [ 27:65]",
+      "subsections": [
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "The exception made here is the response to the doubt raised by unintelligent people. The negation of the total knowledge of the Unseen does not necessarily entail absolute negation of every unknown secret. For the office of risalah, a Messenger needs a certain amount of knowledge of unseen things which Allah grants him through revelation. When Allah sends down the revelation to His Holy Prophet ﷺ ، He sends it down under His special protection, and is completely secure against being distorted or tampered with by devils. First of all, the word rasul [ Messenger ] determines the type of knowledge granted to a Prophet or a Messenger. Evidently, it is the knowledge of the sacred laws and injunctions in its totality, and of the unseen events according to the exigency of time. The next statement states the heavily protected manner in which the unseen knowledge is granted. It is sent down..."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "Technically, this 'exception', in Arabic grammar, is referred to as istithna' munqati` which may be defined as the exceptive sentence in which the exception is severed from, or wholly different in kind from, the general description given before. In this sense, whilst the basic sentence negated total Unseen Knowledge in general terms for anyone besides Allah, the exceptive sentence does not affirm it. It merely affirms specialized acquaintance with some reports of the unseen events which the Qur'an frequently describes as anba'ul ghaib أَنبَاءِ الْغَيْبِ , thus, for instance:"
+        }
+      ],
+      "curatedTerms": []
+    }
+  ]
+}

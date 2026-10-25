@@ -1,0 +1,819 @@
+{
+  "number": 82,
+  "nameArabic": "الانفطار",
+  "nameTransliterated": "Al-Infitar",
+  "nameEnglish": "The Cleaving",
+  "versesCount": 19,
+  "revelationType": "Makki",
+  "volumeNumber": 8,
+  "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5741/mode/2up",
+  "juz": [
+    30
+  ],
+  "bismillahPre": true,
+  "introductoryTafseer": "It is established through the hadith of Mi` raj that he is obeyed by other angels, because when he accompanied the Holy Prophet ﷺ to the sky and ordered the angels appointed on its doors to open them he was obeyed by them. That he is trust-worthy is too obvious to need a proof.",
+  "historicalContext": {
+    "background": "Some commentators, however, take the phrase 'honourable messenger' to refer to the Holy Prophet Muhammad \"and accordingly have made an attempt to take all the three qualities referring to the Holy Prophet ﷺ .",
+    "scholarlyReference": "Ma'ariful Qur'an by Mufti Muhammad Shafi, Volume 8 (Archive.org Leaf n5741)"
+  },
+  "sections": [
+    {
+      "id": "82-1-4",
+      "surahNumber": 82,
+      "verseRange": [
+        1,
+        4
+      ],
+      "title": "It is taught to him by one (angel) of strong faculties.[ 53:5)",
+      "juzNumber": 30,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5742/mode/2up",
+      "arabicText": "إِذَا ٱلسَّمَآءُ ٱنفَطَرَتْ ۝١ وَإِذَا ٱلْكَوَاكِبُ ٱنتَثَرَتْ ۝٢ وَإِذَا ٱلْبِحَارُ فُجِّرَتْ ۝٣ وَإِذَا ٱلْقُبُورُ بُعْثِرَتْ ۝٤",
+      "translation": "When the sky will be cleft asunder, ۝ and when the stars will disperse, ۝ and when the seas will be burst forth, ۝ and when the graves will be overturned, ۝",
+      "phraseCards": [
+        {
+          "id": "82-1-card",
+          "verseNumber": 1,
+          "arabicPhrase": "إِذَا ٱلسَّمَآءُ ٱنفَطَرَتْ",
+          "englishPhrase": "When the sky will be cleft asunder,",
+          "vocabulary": [
+            {
+              "word": "إِذَا",
+              "root": "ا - ذ - ا",
+              "meaning": "When",
+              "grammarNote": "Transliteration: idhā"
+            },
+            {
+              "word": "ٱلسَّمَآءُ",
+              "root": "م - ا - ء",
+              "meaning": "the sky",
+              "grammarNote": "Transliteration: l-samāu"
+            },
+            {
+              "word": "ٱنفَطَرَتْ",
+              "root": "ن - ف - ط",
+              "meaning": "(is) cleft asunder",
+              "grammarNote": "Transliteration: infaṭarat"
+            }
+          ]
+        },
+        {
+          "id": "82-2-card",
+          "verseNumber": 2,
+          "arabicPhrase": "وَإِذَا ٱلْكَوَاكِبُ ٱنتَثَرَتْ",
+          "englishPhrase": "and when the stars will disperse,",
+          "vocabulary": [
+            {
+              "word": "وَإِذَا",
+              "root": "ا - ذ - ا",
+              "meaning": "And when",
+              "grammarNote": "Transliteration: wa-idhā"
+            },
+            {
+              "word": "ٱلْكَوَاكِبُ",
+              "root": "ك - و - ك",
+              "meaning": "the stars",
+              "grammarNote": "Transliteration: l-kawākibu"
+            },
+            {
+              "word": "ٱنتَثَرَتْ",
+              "root": "ن - ت - ث",
+              "meaning": "scatter",
+              "grammarNote": "Transliteration: intatharat"
+            }
+          ]
+        },
+        {
+          "id": "82-3-card",
+          "verseNumber": 3,
+          "arabicPhrase": "وَإِذَا ٱلْبِحَارُ فُجِّرَتْ",
+          "englishPhrase": "and when the seas will be burst forth,",
+          "vocabulary": [
+            {
+              "word": "وَإِذَا",
+              "root": "ا - ذ - ا",
+              "meaning": "And when",
+              "grammarNote": "Transliteration: wa-idhā"
+            },
+            {
+              "word": "ٱلْبِحَارُ",
+              "root": "ب - ح - ر",
+              "meaning": "the seas",
+              "grammarNote": "Transliteration: l-biḥāru"
+            },
+            {
+              "word": "فُجِّرَتْ",
+              "root": "ج - ر - ت",
+              "meaning": "are made to gush forth",
+              "grammarNote": "Transliteration: fujjirat"
+            }
+          ]
+        },
+        {
+          "id": "82-4-card",
+          "verseNumber": 4,
+          "arabicPhrase": "وَإِذَا ٱلْقُبُورُ بُعْثِرَتْ",
+          "englishPhrase": "and when the graves will be overturned,",
+          "vocabulary": [
+            {
+              "word": "وَإِذَا",
+              "root": "ا - ذ - ا",
+              "meaning": "And when",
+              "grammarNote": "Transliteration: wa-idhā"
+            },
+            {
+              "word": "ٱلْقُبُورُ",
+              "root": "ق - ب - و",
+              "meaning": "the graves",
+              "grammarNote": "Transliteration: l-qubūru"
+            },
+            {
+              "word": "بُعْثِرَتْ",
+              "root": "ع - ث - ر",
+              "meaning": "are overturned",
+              "grammarNote": "Transliteration: buʿ'thirat"
+            }
+          ]
+        }
+      ],
+      "commentary": "إِنَّهُ لَقَوْلُ رَ‌سُولٍ كَرِ‌يمٍ ذِي قُوَّةٍ عِندَ ذِي الْعَرْ‌شِ مَكِينٍ (it [ the Qur'an ] is surely the word of a noble messenger [ Jibra'il ], the one possessing power and a high status with the Lord of the Throne...81:19-20). This is the subject of oath that affirms that Qur'an is the word brought by a noble messenger. Then three qualities are attributed to this noble messenger. The first quality is that he possesses power. The second quality is that he has high status and lofty rank with Allah, and he is obeyed in the upper realm. The third quality is that he is trusted, and there is no possibility of his committing any breach of trust or tampering with the message he conveys. The word 'noble messenger' obviously refers to the angel Jibra'il (علیہ السلام) because the word 'messenger' is used for angels as it is used for prophets, and all the three qualities attributed to the 'messenger' in the next verses are truly present in Jibra'il (علیہ السلام) . His being powerful is mentioned in Surah An-Najm in the following words;\n\nعَلَّمَهُ شَدِيدُ الْقُوَىٰ\n\nIt is taught to him by one (angel) of strong faculties.[ 53:5)\n\nIt is established through the hadith of Mi` raj that he is obeyed by other angels, because when he accompanied the Holy Prophet ﷺ to the sky and ordered the angels appointed on its doors to open them he was obeyed by them. That he is trust-worthy is too obvious to need a proof.\n\nSome commentators, however, take the phrase 'honourable messenger' to refer to the Holy Prophet Muhammad \"and accordingly have made an attempt to take all the three qualities referring to the Holy Prophet ﷺ .\n\nIn the next verses, the Holy Qur'an has mentioned the high status of the Holy Prophet ﷺ ، and has refuted the silly objections raised against him by the infidels.\n\n(And your companion [ Muhammad ﷺ ] madman....81:22) This is rebuttal to the foolish criticism of the enemies who said that Muhammad ﷺ is [ God forbid!] insane.\n\nوَلَقَدْ رَ‌آهُ بِالْأُفُقِ الْمُبِينِ (And he did see him [ Jibra'il (علیہ السلام) ] on the clear horizon. _81:23) In other words, Muhammad saw Jibra'il (علیہ السلام) on a clear horizon. A similar statement occurs in Surah An-Najm as follows:\n\nThe purpose of mentioning this is to show that the Holy Prophet ﷺ was well-acquainted with Jibra'il (علیہ السلام) the angel of revelation. He had seen him in his original shape. Therefore, there can be no room for doubt in the veracity of revelation he brings to him.\n\nAl-hamdulillah\n\nThe Commentary on\n\nSurah At-Takwir\n\nEnds here",
+      "subsections": [
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "It is established through the hadith of Mi` raj that he is obeyed by other angels, because when he accompanied the Holy Prophet ﷺ to the sky and ordered the angels appointed on its doors to open them he was obeyed by them. That he is trust-worthy is too obvious to need a proof."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "إِنَّهُ لَقَوْلُ رَ‌سُولٍ كَرِ‌يمٍ ذِي قُوَّةٍ عِندَ ذِي الْعَرْ‌شِ مَكِينٍ (it [ the Qur'an ] is surely the word of a noble messenger [ Jibra'il ], the one possessing power and a high status with the Lord of the Throne...81:19-20). This is the subject of oath that affirms that Qur'an is the word brought by a noble messenger. Then three qualities are attributed to this noble messenger. The first quality is that he possesses power. The second quality is that he has high status and lofty rank with Allah, and he is obeyed in the upper realm. The third quality is that he is trusted, and there is no possibility of his committing any breach of trust or tampering with the message he conveys. The word 'noble messenger' obviously refers to the angel Jibra'il (علیہ السلام) because the word 'messenger' is used for angels as it is used for prophets, and all the three qualities attributed to the..."
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "82-5-5",
+      "surahNumber": 82,
+      "verseRange": [
+        5,
+        5
+      ],
+      "title": "Then one will know what he sent ahead",
+      "juzNumber": 30,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5742/mode/2up",
+      "arabicText": "عَلِمَتْ نَفْسٌ مَّا قَدَّمَتْ وَأَخَّرَتْ ۝٥",
+      "translation": "then one will know what he sent ahead and what he left behind. ۝",
+      "phraseCards": [
+        {
+          "id": "82-5-card",
+          "verseNumber": 5,
+          "arabicPhrase": "عَلِمَتْ نَفْسٌ مَّا قَدَّمَتْ وَأَخَّرَتْ",
+          "englishPhrase": "then one will know what he sent ahead and what he left behind.",
+          "vocabulary": [
+            {
+              "word": "عَلِمَتْ",
+              "root": "ع - ل - م",
+              "meaning": "Will know",
+              "grammarNote": "Transliteration: ʿalimat"
+            },
+            {
+              "word": "نَفْسٌۭ",
+              "root": "ن - ف - س",
+              "meaning": "a soul",
+              "grammarNote": "Transliteration: nafsun"
+            },
+            {
+              "word": "مَّا",
+              "root": "م - ا",
+              "meaning": "what",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "قَدَّمَتْ",
+              "root": "ق - د - م",
+              "meaning": "it has sent forth",
+              "grammarNote": "Transliteration: qaddamat"
+            },
+            {
+              "word": "وَأَخَّرَتْ",
+              "root": "خ - ر - ت",
+              "meaning": "and left behind",
+              "grammarNote": "Transliteration: wa-akharat"
+            }
+          ]
+        }
+      ],
+      "commentary": "Commentary\n\nعَلِمَتْ نَفْسٌ مَّا قَدَّمَتْ وَأَخَّرَ‌تْ (...then one will know what he sent ahead and what he left behind....82:5) In the preceding verses [ 1-4] of the Surah, Allah depicts the scene of the Day of Judgment that when the sky splits, the stars fall, the seas are poured forth [ i.e. the fresh and salt water bodies will merge to form one mass of water ] and the graves are overturned [ i.e. corpses will emerge from their graves ], every soul shall come to know what it had sent ahead and what it had left behind. The phrase 'what he sent ahead' means the good or evil act which he has done in his life; and the phrase 'what he left behind' means what he failed to do or refrained from doing. It is also possible that 'what he sent ahead' refers to the acts he has done himself, and 'what he left behind' refers to the acts one has not done himself, but he has laid down a custom in the society. The Holy Prophet ﷺ is reported to have said: \"If anyone establishes a good tradition in Islam, he will have a reward for it and the equivalent of the rewards of those who act upon it after him, without theirs being diminished in any respect; but he who establishes a bad custom in Islam will bear the responsibility of it and the responsibility of those who act upon it after him, without theirs being diminished in any respect.\" This subject was dealt with earlier under the following verse: يُنَبَّأُ الْإِنسَانُ يَوْمَئِذٍ بِمَا قَدَّمَ وَأَخَّرَ 'Man will be informed of what he sent ahead and what he left behind. [ 75:13] '",
+      "subsections": [
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "عَلِمَتْ نَفْسٌ مَّا قَدَّمَتْ وَأَخَّرَ‌تْ (...then one will know what he sent ahead and what he left behind....82:5) In the preceding verses [ 1-4] of the Surah, Allah depicts the scene of the Day of Judgment that when the sky splits, the stars fall, the seas are poured forth [ i.e. the fresh and salt water bodies will merge to form one mass of water ] and the graves are overturned [ i.e. corpses will emerge from their graves ], every soul shall come to know what it had sent ahead and what it had left behind. The phrase 'what he sent ahead' means the good or evil act which he has done in his life; and the phrase 'what he left behind' means what he failed to do or refrained from doing. It is also possible that 'what he sent ahead' refers to the acts he has done himself, and 'what he left behind' refers to the acts one has not done himself, but he has laid down a custom in the society...."
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "82-6-7",
+      "surahNumber": 82,
+      "verseRange": [
+        6,
+        7
+      ],
+      "title": "Exegesis of Surah Al-Infitar, Verses 6–7",
+      "juzNumber": 30,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5742/mode/2up",
+      "arabicText": "يَـٰٓأَيُّهَا ٱلْإِنسَـٰنُ مَا غَرَّكَ بِرَبِّكَ ٱلْكَرِيمِ ۝٦ ٱلَّذِى خَلَقَكَ فَسَوَّىٰكَ فَعَدَلَكَ ۝٧",
+      "translation": "O man! What has deceived you about your Gracious Lord, ۝ who created you, then perfected you, then brought you in due proportion? ۝",
+      "phraseCards": [
+        {
+          "id": "82-6-card",
+          "verseNumber": 6,
+          "arabicPhrase": "يَـٰٓأَيُّهَا ٱلْإِنسَـٰنُ مَا غَرَّكَ بِرَبِّكَ ٱلْكَرِيمِ",
+          "englishPhrase": "O man! What has deceived you about your Gracious Lord,",
+          "vocabulary": [
+            {
+              "word": "يَـٰٓأَيُّهَا",
+              "root": "ي - ا - ي",
+              "meaning": "O",
+              "grammarNote": "Transliteration: yāayyuhā"
+            },
+            {
+              "word": "ٱلْإِنسَـٰنُ",
+              "root": "ن - س - ن",
+              "meaning": "man",
+              "grammarNote": "Transliteration: l-insānu"
+            },
+            {
+              "word": "مَا",
+              "root": "م - ا",
+              "meaning": "What",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "غَرَّكَ",
+              "root": "غ - ر - ك",
+              "meaning": "has deceived you",
+              "grammarNote": "Transliteration: gharraka"
+            },
+            {
+              "word": "بِرَبِّكَ",
+              "root": "ر - ب - ك",
+              "meaning": "concerning your Lord",
+              "grammarNote": "Transliteration: birabbika"
+            },
+            {
+              "word": "ٱلْكَرِيمِ",
+              "root": "ك - ر - ي",
+              "meaning": "the Most Noble",
+              "grammarNote": "Transliteration: l-karīmi"
+            }
+          ]
+        },
+        {
+          "id": "82-7-card",
+          "verseNumber": 7,
+          "arabicPhrase": "ٱلَّذِى خَلَقَكَ فَسَوَّىٰكَ فَعَدَلَكَ",
+          "englishPhrase": "who created you, then perfected you, then brought you in due proportion?",
+          "vocabulary": [
+            {
+              "word": "ٱلَّذِى",
+              "root": "ل - ذ - ي",
+              "meaning": "Who",
+              "grammarNote": "Transliteration: alladhī"
+            },
+            {
+              "word": "خَلَقَكَ",
+              "root": "خ - ل - ق",
+              "meaning": "created you",
+              "grammarNote": "Transliteration: khalaqaka"
+            },
+            {
+              "word": "فَسَوَّىٰكَ",
+              "root": "س - و - ي",
+              "meaning": "then fashioned you",
+              "grammarNote": "Transliteration: fasawwāka"
+            },
+            {
+              "word": "فَعَدَلَكَ",
+              "root": "ع - د - ل",
+              "meaning": "then balanced you",
+              "grammarNote": "Transliteration: faʿadalaka"
+            }
+          ]
+        }
+      ],
+      "commentary": "‌ يَا أَيُّهَا الْإِنسَانُ مَا غَرَّ‌كَ (0 man! at has deceived you about your Gracious Lord...82:6) The opening of the Surah mentions the violent events that will take place at the end of this worldly life, and the current set of verses reminds us of the inceptive stages of our creation. The sum total of the verses purport to say that if man had considered carefully, he would have believed in Allah and His Messenger ﷺ ، and he would not have deviated a hair's breadth from Divine injunctions, but he slumped into heedlessness and forgetfulness. In the present verse, he is reprimanded by a rhetorical question and by means of gentle remonstrance as to what has lured him away from His Gracious Lord, and led him to disobedience, despite he knows his beginning, and he knows his end.\n\nThe verse further goes on to remind man of the inceptive stages of his creation. First, it says: خَلَقَكَ فَسَوَّاكَ (who created you, then perfected you...82:7). The sense is that not only did Allah create man, but He also perfected his creation and proportioned his body, limbs and organs. Every limb and organ is well placed. The body, height, length and breadth of every limb are kept in harmony, symmetry and balance. Any deviation from the symmetrical construction of the human body, the organs will become dysfunctional. Then the verse says: فَعَدَلَكَ (...then brought you in due proportion?...82:7). Man is granted such symmetry, harmony and balance that no other animal in the world is granted to that degree. Along with physical and physiological symmetry and harmony, he has been granted well-balanced disposition, despite the fact that man is made up of opposing humours - blood, phlegm, black bile and yellow bile. Some are hot and others are cold, and yet the perfect wisdom of Allah prepared a well-balanced disposition. Thereafter a third characteristic is mentioned as follows:",
+      "subsections": [
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "‌ يَا أَيُّهَا الْإِنسَانُ مَا غَرَّ‌كَ (0 man! at has deceived you about your Gracious Lord...82:6) The opening of the Surah mentions the violent events that will take place at the end of this worldly life, and the current set of verses reminds us of the inceptive stages of our creation. The sum total of the verses purport to say that if man had considered carefully, he would have believed in Allah and His Messenger ﷺ ، and he would not have deviated a hair's breadth from Divine injunctions, but he slumped into heedlessness and forgetfulness. In the present verse, he is reprimanded by a rhetorical question and by means of gentle remonstrance as to what has lured him away from His Gracious Lord, and led him to disobedience, despite he knows his beginning, and he knows his end."
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "82-8-12",
+      "surahNumber": 82,
+      "verseRange": [
+        8,
+        12
+      ],
+      "title": "He composed you in whichever form He willed",
+      "juzNumber": 30,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5742/mode/2up",
+      "arabicText": "فِىٓ أَىِّ صُورَةٍ مَّا شَآءَ رَكَّبَكَ ۝٨ كَلَّا بَلْ تُكَذِّبُونَ بِٱلدِّينِ ۝٩ وَإِنَّ عَلَيْكُمْ لَحَـٰفِظِينَ ۝١٠ كِرَامًا كَـٰتِبِينَ ۝١١ يَعْلَمُونَ مَا تَفْعَلُونَ ۝١٢",
+      "translation": "He composed you in whichever form He willed. ۝ Never! (i.e. one should never be heedless towards him.) But you deny the Requital, ۝ while (appointed) over you there are watchers, ۝ who are noble, writers (of the deeds), ۝ who know whatever you do. ۝",
+      "phraseCards": [
+        {
+          "id": "82-8-card",
+          "verseNumber": 8,
+          "arabicPhrase": "فِىٓ أَىِّ صُورَةٍ مَّا شَآءَ رَكَّبَكَ",
+          "englishPhrase": "He composed you in whichever form He willed.",
+          "vocabulary": [
+            {
+              "word": "فِىٓ",
+              "root": "ف - ي",
+              "meaning": "In",
+              "grammarNote": "Transliteration: fī"
+            },
+            {
+              "word": "أَىِّ",
+              "root": "ا - ي",
+              "meaning": "whatever",
+              "grammarNote": "Transliteration: ayyi"
+            },
+            {
+              "word": "صُورَةٍۢ",
+              "root": "ص - و - ر",
+              "meaning": "form",
+              "grammarNote": "Transliteration: ṣūratin"
+            },
+            {
+              "word": "مَّا",
+              "root": "م - ا",
+              "meaning": "what",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "شَآءَ",
+              "root": "ش - ا - ء",
+              "meaning": "He willed",
+              "grammarNote": "Transliteration: shāa"
+            },
+            {
+              "word": "رَكَّبَكَ",
+              "root": "ر - ك - ب",
+              "meaning": "He assembled you",
+              "grammarNote": "Transliteration: rakkabaka"
+            }
+          ]
+        },
+        {
+          "id": "82-9-card",
+          "verseNumber": 9,
+          "arabicPhrase": "كَلَّا بَلْ تُكَذِّبُونَ بِٱلدِّينِ",
+          "englishPhrase": "Never! (i.e. one should never be heedless towards him.) But you deny the Requital,",
+          "vocabulary": [
+            {
+              "word": "كَلَّا",
+              "root": "ك - ل - ا",
+              "meaning": "Nay",
+              "grammarNote": "Transliteration: kallā"
+            },
+            {
+              "word": "بَلْ",
+              "root": "ب - ل",
+              "meaning": "But",
+              "grammarNote": "Transliteration: bal"
+            },
+            {
+              "word": "تُكَذِّبُونَ",
+              "root": "ك - ذ - ب",
+              "meaning": "you deny",
+              "grammarNote": "Transliteration: tukadhibūna"
+            },
+            {
+              "word": "بِٱلدِّينِ",
+              "root": "د - ي - ن",
+              "meaning": "the Judgment",
+              "grammarNote": "Transliteration: bil-dīni"
+            }
+          ]
+        },
+        {
+          "id": "82-10-card",
+          "verseNumber": 10,
+          "arabicPhrase": "وَإِنَّ عَلَيْكُمْ لَحَـٰفِظِينَ",
+          "englishPhrase": "while (appointed) over you there are watchers,",
+          "vocabulary": [
+            {
+              "word": "وَإِنَّ",
+              "root": "و - ا - ن",
+              "meaning": "And indeed",
+              "grammarNote": "Transliteration: wa-inna"
+            },
+            {
+              "word": "عَلَيْكُمْ",
+              "root": "ع - ل - ي",
+              "meaning": "over you",
+              "grammarNote": "Transliteration: ʿalaykum"
+            },
+            {
+              "word": "لَحَـٰفِظِينَ",
+              "root": "ح - ف - ظ",
+              "meaning": "(are) surely guardians",
+              "grammarNote": "Transliteration: laḥāfiẓīna"
+            }
+          ]
+        },
+        {
+          "id": "82-11-card",
+          "verseNumber": 11,
+          "arabicPhrase": "كِرَامًا كَـٰتِبِينَ",
+          "englishPhrase": "who are noble, writers (of the deeds),",
+          "vocabulary": [
+            {
+              "word": "كِرَامًۭا",
+              "root": "ك - ر - م",
+              "meaning": "Noble",
+              "grammarNote": "Transliteration: kirāman"
+            },
+            {
+              "word": "كَـٰتِبِينَ",
+              "root": "ك - ت - ب",
+              "meaning": "recording",
+              "grammarNote": "Transliteration: kātibīna"
+            }
+          ]
+        },
+        {
+          "id": "82-12-card",
+          "verseNumber": 12,
+          "arabicPhrase": "يَعْلَمُونَ مَا تَفْعَلُونَ",
+          "englishPhrase": "who know whatever you do.",
+          "vocabulary": [
+            {
+              "word": "يَعْلَمُونَ",
+              "root": "ع - ل - م",
+              "meaning": "They know",
+              "grammarNote": "Transliteration: yaʿlamūna"
+            },
+            {
+              "word": "مَا",
+              "root": "م - ا",
+              "meaning": "whatever",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "تَفْعَلُونَ",
+              "root": "ف - ع - ل",
+              "meaning": "you do",
+              "grammarNote": "Transliteration: tafʿalūna"
+            }
+          ]
+        }
+      ],
+      "commentary": "فِي أَيِّ صُورَ‌ةٍ مَّا شَاءَ رَ‌كَّبَكَ (He composed you in whichever form He willed....82:8). This is to indicate that since the basic structure of all human beings is the same, it was expected that the zillions of members of the human society would have shared the same shape, size and features, but the perfect mastery and the wonderful acumen of the Supreme Creator has created them so differently that each one of them has its own unique features that make him clearly distinct from all others, and no one is confused with another.\n\nHaving stated the creative acumen of the Great Creator, the verse states: يَا أَيُّهَا الْإِنسَانُ مَا غَرَّ‌كَ بِرَ‌بِّكَ الْكَرِ‌يمِ (0 man! What has deceived you about your Gracious Lord,...82:6). Allah has endowed man with such natural faculties and abilities that every limb and every joint of his body was enough to remind him of His Creator, and to make him obedient. But he is lured away from his gracious Lord, has forgotten Him and disobeyed Him. The question is: How did he forget his Lord, how did he become heedless of Him, and how is he lured away from his Lord? On this occasion, the adjective karim (Gracious) used for the 'Lord' points to the answer. The reason for such an ungrateful attitude is that Allah is Gracious and does not punish man immediately after his committing a sin. Rather, his sustenance, welfare and well-being, and worldly comforts [ and pleasures ] are not curtailed. He misinterprets Allah's magnanimity, and thus falls into deception. If man were to think rationally, he would adopt a grateful attitude and obedient behaviour, rather than adopting an ungrateful attitude and impudent behaviour. Sayyidna Hasan Al-Basri (رح) says:\n\nکم من مغرور تحت السّتر و ھو لا یشعر\n\n'How many humans are there whose faults are put [ by Allah ] under cover, (i.e. He did not disgrace them), yet they do not appreciate (and are deluded by His grace.'",
+      "subsections": [
+        {
+          "type": "asbab",
+          "title": "Revelation Context & Prophetic Traditions",
+          "content": "Having stated the creative acumen of the Great Creator, the verse states: يَا أَيُّهَا الْإِنسَانُ مَا غَرَّ‌كَ بِرَ‌بِّكَ الْكَرِ‌يمِ (0 man! What has deceived you about your Gracious Lord,...82:6). Allah has endowed man with such natural faculties and abilities that every limb and every joint of his body was enough to remind him of His Creator, and to make him obedient. But he is lured away from his gracious Lord, has forgotten Him and disobeyed Him. The question is: How did he forget his Lord, how did he become heedless of Him, and how is he lured away from his Lord? On this occasion, the adjective karim (Gracious) used for the 'Lord' points to the answer. The reason for such an ungrateful attitude is that Allah is Gracious and does not punish man immediately after his committing a sin. Rather, his sustenance, welfare and well-being, and worldly comforts [ and pleasures ] are not..."
+        },
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "فِي أَيِّ صُورَ‌ةٍ مَّا شَاءَ رَ‌كَّبَكَ (He composed you in whichever form He willed....82:8). This is to indicate that since the basic structure of all human beings is the same, it was expected that the zillions of members of the human society would have shared the same shape, size and features, but the perfect mastery and the wonderful acumen of the Supreme Creator has created them so differently that each one of them has its own unique features that make him clearly distinct from all others, and no one is confused with another."
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "82-13-15",
+      "surahNumber": 82,
+      "verseRange": [
+        13,
+        15
+      ],
+      "title": "Surely the righteous will be in bliss, and",
+      "juzNumber": 30,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5742/mode/2up",
+      "arabicText": "إِنَّ ٱلْأَبْرَارَ لَفِى نَعِيمٍ ۝١٣ وَإِنَّ ٱلْفُجَّارَ لَفِى جَحِيمٍ ۝١٤ يَصْلَوْنَهَا يَوْمَ ٱلدِّينِ ۝١٥",
+      "translation": "Surely the righteous will be in bliss, ۝ and the sinners in Hell, ۝ in which they will enter on the Day of Requital, ۝",
+      "phraseCards": [
+        {
+          "id": "82-13-card",
+          "verseNumber": 13,
+          "arabicPhrase": "إِنَّ ٱلْأَبْرَارَ لَفِى نَعِيمٍ",
+          "englishPhrase": "Surely the righteous will be in bliss,",
+          "vocabulary": [
+            {
+              "word": "إِنَّ",
+              "root": "ا - ن - ن",
+              "meaning": "Indeed",
+              "grammarNote": "Transliteration: inna"
+            },
+            {
+              "word": "ٱلْأَبْرَارَ",
+              "root": "ب - ر - ا",
+              "meaning": "the righteous",
+              "grammarNote": "Transliteration: l-abrāra"
+            },
+            {
+              "word": "لَفِى",
+              "root": "ل - ف - ي",
+              "meaning": "(will be) surely in",
+              "grammarNote": "Transliteration: lafī"
+            },
+            {
+              "word": "نَعِيمٍۢ",
+              "root": "ع - ي - م",
+              "meaning": "bliss",
+              "grammarNote": "Transliteration: naʿīmin"
+            }
+          ]
+        },
+        {
+          "id": "82-14-card",
+          "verseNumber": 14,
+          "arabicPhrase": "وَإِنَّ ٱلْفُجَّارَ لَفِى جَحِيمٍ",
+          "englishPhrase": "and the sinners in Hell,",
+          "vocabulary": [
+            {
+              "word": "وَإِنَّ",
+              "root": "و - ا - ن",
+              "meaning": "And indeed",
+              "grammarNote": "Transliteration: wa-inna"
+            },
+            {
+              "word": "ٱلْفُجَّارَ",
+              "root": "ف - ج - ر",
+              "meaning": "the wicked",
+              "grammarNote": "Transliteration: l-fujāra"
+            },
+            {
+              "word": "لَفِى",
+              "root": "ل - ف - ي",
+              "meaning": "(will be) surely in",
+              "grammarNote": "Transliteration: lafī"
+            },
+            {
+              "word": "جَحِيمٍۢ",
+              "root": "ج - ح - ي",
+              "meaning": "Hellfire",
+              "grammarNote": "Transliteration: jaḥīmin"
+            }
+          ]
+        },
+        {
+          "id": "82-15-card",
+          "verseNumber": 15,
+          "arabicPhrase": "يَصْلَوْنَهَا يَوْمَ ٱلدِّينِ",
+          "englishPhrase": "in which they will enter on the Day of Requital,",
+          "vocabulary": [
+            {
+              "word": "يَصْلَوْنَهَا",
+              "root": "ص - ل - و",
+              "meaning": "They will burn (in) it",
+              "grammarNote": "Transliteration: yaṣlawnahā"
+            },
+            {
+              "word": "يَوْمَ",
+              "root": "ي - و - م",
+              "meaning": "(on the) Day",
+              "grammarNote": "Transliteration: yawma"
+            },
+            {
+              "word": "ٱلدِّينِ",
+              "root": "د - ي - ن",
+              "meaning": "(of) the Judgment",
+              "grammarNote": "Transliteration: l-dīni"
+            }
+          ]
+        }
+      ],
+      "commentary": "إِنَّ الْأَبْرَ‌ارَ‌ لَفِي نَعِيمٍ وَإِنَّ الْفُجَّارَ‌ لَفِي جَحِيمٍ (Surely the righteous will be in bliss, and surely the sinners will be in Hell,...82:13-14). These two statements are connected with verse [ 5] above: عَلِمَتْ نَفْسٌ مَّا قَدَّمَتْ وَأَخَّرَ‌تْ 'then one will know what he sent ahead and what he left behind. [ 5] '\n\nThe verse informs us that each person, on the Day of Reckoning, will know what he has done, and what will be the consequences of his deeds. The present verse says that the righteous will be in perfect bliss, while the sinners will be in a Blazing Fire of Hell.",
+      "subsections": [
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "إِنَّ الْأَبْرَ‌ارَ‌ لَفِي نَعِيمٍ وَإِنَّ الْفُجَّارَ‌ لَفِي جَحِيمٍ (Surely the righteous will be in bliss, and surely the sinners will be in Hell,...82:13-14). These two statements are connected with verse [ 5] above: عَلِمَتْ نَفْسٌ مَّا قَدَّمَتْ وَأَخَّرَ‌تْ 'then one will know what he sent ahead and what he left behind. [ 5] '"
+        }
+      ],
+      "curatedTerms": []
+    },
+    {
+      "id": "82-16-19",
+      "surahNumber": 82,
+      "verseRange": [
+        16,
+        19
+      ],
+      "title": "The Commentary on",
+      "juzNumber": 30,
+      "revelationType": "Makki",
+      "volumeNumber": 8,
+      "archivePageUrl": "https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n5742/mode/2up",
+      "arabicText": "وَمَا هُمْ عَنْهَا بِغَآئِبِينَ ۝١٦ وَمَآ أَدْرَىٰكَ مَا يَوْمُ ٱلدِّينِ ۝١٧ ثُمَّ مَآ أَدْرَىٰكَ مَا يَوْمُ ٱلدِّينِ ۝١٨ يَوْمَ لَا تَمْلِكُ نَفْسٌ لِّنَفْسٍ شَيْـًٔا ۖ وَٱلْأَمْرُ يَوْمَئِذٍ لِّلَّهِ ۝١٩",
+      "translation": "and they will not (be able to) keep away from it. ۝ And what may let you know what the Day of Requital is? ۝ Again, what may let you know what the Day of Requital is? ۝ A Day when no one will have power to do any thing for another! And command, on that Day, will belong to Allah (alone). ۝",
+      "phraseCards": [
+        {
+          "id": "82-16-card",
+          "verseNumber": 16,
+          "arabicPhrase": "وَمَا هُمْ عَنْهَا بِغَآئِبِينَ",
+          "englishPhrase": "and they will not (be able to) keep away from it.",
+          "vocabulary": [
+            {
+              "word": "وَمَا",
+              "root": "و - م - ا",
+              "meaning": "And not",
+              "grammarNote": "Transliteration: wamā"
+            },
+            {
+              "word": "هُمْ",
+              "root": "ه - م",
+              "meaning": "they",
+              "grammarNote": "Transliteration: hum"
+            },
+            {
+              "word": "عَنْهَا",
+              "root": "ع - ن - ه",
+              "meaning": "from it",
+              "grammarNote": "Transliteration: ʿanhā"
+            },
+            {
+              "word": "بِغَآئِبِينَ",
+              "root": "غ - ئ - ب",
+              "meaning": "(will be) absent",
+              "grammarNote": "Transliteration: bighāibīna"
+            }
+          ]
+        },
+        {
+          "id": "82-17-card",
+          "verseNumber": 17,
+          "arabicPhrase": "وَمَآ أَدْرَىٰكَ مَا يَوْمُ ٱلدِّينِ",
+          "englishPhrase": "And what may let you know what the Day of Requital is?",
+          "vocabulary": [
+            {
+              "word": "وَمَآ",
+              "root": "و - م - ا",
+              "meaning": "And what",
+              "grammarNote": "Transliteration: wamā"
+            },
+            {
+              "word": "أَدْرَىٰكَ",
+              "root": "د - ر - ي",
+              "meaning": "can make you know",
+              "grammarNote": "Transliteration: adrāka"
+            },
+            {
+              "word": "مَا",
+              "root": "م - ا",
+              "meaning": "what",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "يَوْمُ",
+              "root": "ي - و - م",
+              "meaning": "(is the) Day",
+              "grammarNote": "Transliteration: yawmu"
+            },
+            {
+              "word": "ٱلدِّينِ",
+              "root": "د - ي - ن",
+              "meaning": "(of) the Judgment",
+              "grammarNote": "Transliteration: l-dīni"
+            }
+          ]
+        },
+        {
+          "id": "82-18-card",
+          "verseNumber": 18,
+          "arabicPhrase": "ثُمَّ مَآ أَدْرَىٰكَ مَا يَوْمُ ٱلدِّينِ",
+          "englishPhrase": "Again, what may let you know what the Day of Requital is?",
+          "vocabulary": [
+            {
+              "word": "ثُمَّ",
+              "root": "ث - م",
+              "meaning": "Then",
+              "grammarNote": "Transliteration: thumma"
+            },
+            {
+              "word": "مَآ",
+              "root": "م - ا",
+              "meaning": "what",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "أَدْرَىٰكَ",
+              "root": "د - ر - ي",
+              "meaning": "can make you know",
+              "grammarNote": "Transliteration: adrāka"
+            },
+            {
+              "word": "مَا",
+              "root": "م - ا",
+              "meaning": "what",
+              "grammarNote": "Transliteration: mā"
+            },
+            {
+              "word": "يَوْمُ",
+              "root": "ي - و - م",
+              "meaning": "(is the) Day",
+              "grammarNote": "Transliteration: yawmu"
+            },
+            {
+              "word": "ٱلدِّينِ",
+              "root": "د - ي - ن",
+              "meaning": "(of) the Judgment",
+              "grammarNote": "Transliteration: l-dīni"
+            }
+          ]
+        },
+        {
+          "id": "82-19-card",
+          "verseNumber": 19,
+          "arabicPhrase": "يَوْمَ لَا تَمْلِكُ نَفْسٌ لِّنَفْسٍ شَيْـًٔا ۖ وَٱلْأَمْرُ يَوْمَئِذٍ لِّلَّهِ",
+          "englishPhrase": "A Day when no one will have power to do any thing for another! And command, on that Day, will belong to Allah (alone).",
+          "vocabulary": [
+            {
+              "word": "يَوْمَ",
+              "root": "ي - و - م",
+              "meaning": "(The) Day",
+              "grammarNote": "Transliteration: yawma"
+            },
+            {
+              "word": "لَا",
+              "root": "ل - ا",
+              "meaning": "not",
+              "grammarNote": "Transliteration: lā"
+            },
+            {
+              "word": "تَمْلِكُ",
+              "root": "ت - م - ل",
+              "meaning": "will have power",
+              "grammarNote": "Transliteration: tamliku"
+            },
+            {
+              "word": "نَفْسٌۭ",
+              "root": "ن - ف - س",
+              "meaning": "a soul",
+              "grammarNote": "Transliteration: nafsun"
+            },
+            {
+              "word": "لِّنَفْسٍۢ",
+              "root": "ن - ف - س",
+              "meaning": "for a soul",
+              "grammarNote": "Transliteration: linafsin"
+            },
+            {
+              "word": "شَيْـًۭٔا ۖ",
+              "root": "ش - ي - ا",
+              "meaning": "anything",
+              "grammarNote": "Transliteration: shayan"
+            },
+            {
+              "word": "وَٱلْأَمْرُ",
+              "root": "ا - م - ر",
+              "meaning": "and the Command",
+              "grammarNote": "Transliteration: wal-amru"
+            },
+            {
+              "word": "يَوْمَئِذٍۢ",
+              "root": "و - م - ئ",
+              "meaning": "that Day",
+              "grammarNote": "Transliteration: yawma-idhin"
+            },
+            {
+              "word": "لِّلَّهِ",
+              "root": "أ - ل - ه",
+              "meaning": "(will be) with Allah",
+              "grammarNote": "Transliteration: lillahi"
+            }
+          ]
+        }
+      ],
+      "commentary": "وَمَا هُمْ عَنْهَا بِغَائِبِينَ (and they will not [ be able to ] keep away from it...82:16) The inmates of Hell will never be able to get away from it, because the torment will be eternal, as the concluding verse of the Surah asserts: لَا تَمْلِكُ نَفْسٌ لِّنَفْسٍ شَيْئًا (A Day when no one [ with his own free will in the Plain of Gathering ] will have power to do anything for another! ). This does not negate intercession, because that will not happen with one's own free will, unless Allah grants permission to someone to intercede on someone's behalf, and then accepts the intercession. And all matters, on that Day, will belong to Allah (alone). [ 19] ' Allah knows best! Al-hamdulillah\n\nThe Commentary on\n\nSurah Al-Infitar\n\nEnds here",
+      "subsections": [
+        {
+          "type": "insights",
+          "title": "Exegetical & Spiritual Insights from Ma'ariful Qur'an",
+          "content": "وَمَا هُمْ عَنْهَا بِغَائِبِينَ (and they will not [ be able to ] keep away from it...82:16) The inmates of Hell will never be able to get away from it, because the torment will be eternal, as the concluding verse of the Surah asserts: لَا تَمْلِكُ نَفْسٌ لِّنَفْسٍ شَيْئًا (A Day when no one [ with his own free will in the Plain of Gathering ] will have power to do anything for another! ). This does not negate intercession, because that will not happen with one's own free will, unless Allah grants permission to someone to intercede on someone's behalf, and then accepts the intercession. And all matters, on that Day, will belong to Allah (alone). [ 19] ' Allah knows best! Al-hamdulillah"
+        }
+      ],
+      "curatedTerms": []
+    }
+  ]
+}
