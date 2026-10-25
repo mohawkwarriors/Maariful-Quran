@@ -27,6 +27,7 @@ function ReaderApp() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
   const [isRootExplorerOpen, setIsRootExplorerOpen] = useState(false);
+  const [pendingScrollSectionId, setPendingScrollSectionId] = useState<string | null>(null);
   const readingContainerRef = useRef<HTMLDivElement>(null);
 
   // Initialize Theme from localStorage with immediate default fallback
@@ -348,7 +349,7 @@ function ReaderApp() {
         <NavigationTree
           surahs={manifest?.surahs || []}
           activeSurahNumber={activeSurahNumber}
-          activeSectionId={activeSectionId}
+          activeSectionId={activeSectionId || currentSection?.id || null}
           onSelectSurah={handleSelectSurah}
           onSelectSection={handleSelectSection}
           isOpenMobile={isMobileNavOpen}

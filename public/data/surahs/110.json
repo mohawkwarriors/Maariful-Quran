@@ -1,0 +1,152 @@
+{
+  "number": 110,
+  "nameArabic": "النصر",
+  "nameTransliterated": "An-Nasr",
+  "nameEnglish": "The Divine Support",
+  "versesCount": 3,
+  "revelationType": "Madani",
+  "juz": [
+    30
+  ],
+  "bismillahPre": true,
+  "introductoryTafseer": "Surah An-Nasr was the final complete chapter of the Holy Quran revealed to the Prophet Muhammad (ﷺ). Known also as Surah At-Tawdi' (The Farewell Chapter), it heralded the impending completion of the prophetic mission on earth and the peaceful conquest of Makkah.",
+  "historicalContext": {
+    "background": "Revealed during the Farewell Pilgrimage (Hajjat al-Wada') in Mina, Ibn Abbas and Umar ibn al-Khattab recognized its subtle spiritual undertone: when people enter the faith of God in vast multitudes and victory is fulfilled, the earthly mission of the Prophet has reached its sublime climax, signaling his imminent departure to the Exalted Companion (Ar-Rafiq al-A'la)."
+  },
+  "sections": [
+    {
+      "id": "110-1-3",
+      "surahNumber": 110,
+      "verseRange": [
+        1,
+        3
+      ],
+      "title": "The Final Victory of Faith, Universal Praise & Seeking Forgiveness",
+      "juzNumber": 30,
+      "revelationType": "Madani",
+      "arabicText": "إِذَا جَاءَ نَصْرُ اللَّهِ وَالْفَتْحُ ۝ وَرَأَيْتَ النَّاسَ يَدْخُلُونَ فِي دِينِ اللَّهِ أَفْوَاجًا ۝ فَسَبِّحْ بِحَمْدِ رَبِّكَ وَاسْتَغْفِرْهُ ۚ إِنَّهُ كَانَ تَوَّابًا ۝",
+      "translation": "When the [Nasr] (help) of Allah arrives and the [Fath] (conquest) ۝ And you see humanity entering the religion of Allah in [Afwaj] (multitudes) ۝ Then glorify with the praise of your Lord and seek His forgiveness. Indeed, He is ever [Tawwab] (accepting of repentance). ۝",
+      "phraseCards": [
+        {
+          "id": "110-card-1",
+          "verseNumber": 1,
+          "arabicPhrase": "إِذَا جَاءَ نَصْرُ اللَّهِ وَالْفَتْحُ",
+          "englishPhrase": "When there arrives the help of Allah and the victory",
+          "vocabulary": [
+            {
+              "word": "إِذَا جَاءَ",
+              "root": "ج - ي - أ",
+              "meaning": "When there arrives",
+              "grammarNote": "Conditional particle + Verb"
+            },
+            {
+              "word": "نَصْرُ اللَّهِ",
+              "root": "ن - ص - ر",
+              "meaning": "The divine aid of Allah",
+              "grammarNote": "Construct genitive noun"
+            },
+            {
+              "word": "وَالْفَتْحُ",
+              "root": "ف - ت - ح",
+              "meaning": "And the conquest (of Makkah)",
+              "grammarNote": "Definite noun"
+            }
+          ]
+        },
+        {
+          "id": "110-card-2",
+          "verseNumber": 2,
+          "arabicPhrase": "يَدْخُلُونَ فِي دِينِ اللَّهِ أَفْوَاجًا",
+          "englishPhrase": "Entering into the religion of Allah in multitudes",
+          "vocabulary": [
+            {
+              "word": "يَدْخُلُونَ",
+              "root": "د - خ - ل",
+              "meaning": "They enter continuously",
+              "grammarNote": "Imperfect plural verb"
+            },
+            {
+              "word": "فِي دِينِ اللَّهِ",
+              "root": "د - ي - ن",
+              "meaning": "Into the faith of Allah",
+              "grammarNote": "Preposition + Genitive"
+            },
+            {
+              "word": "أَفْوَاجًا",
+              "root": "ف - و - ج",
+              "meaning": "In massive crowds / legions",
+              "grammarNote": "Plural adverbial accusative"
+            }
+          ]
+        },
+        {
+          "id": "110-card-3",
+          "verseNumber": 3,
+          "arabicPhrase": "فَسَبِّحْ بِحَمْدِ رَبِّكَ وَاسْتَغْفِرْهُ",
+          "englishPhrase": "Then celebrate praise of your Lord and ask forgiveness",
+          "vocabulary": [
+            {
+              "word": "فَسَبِّحْ",
+              "root": "س - ب - ح",
+              "meaning": "Glorify above all defect",
+              "grammarNote": "Imperative verb"
+            },
+            {
+              "word": "بِحَمْدِ رَبِّكَ",
+              "root": "ح - م - د",
+              "meaning": "With praise of your Lord",
+              "grammarNote": "Preposition + Noun"
+            },
+            {
+              "word": "وَاسْتَغْفِرْهُ",
+              "root": "غ - ف - ر",
+              "meaning": "And ask Him for forgiveness",
+              "grammarNote": "Imperative verb + Object pronoun"
+            }
+          ]
+        }
+      ],
+      "commentary": "In Ma'ariful Qur'an, Mufti Muhammad Shafi explains the profound prophetic etiquette (Adab) taught in this surah: When worldly rulers conquer a city or accomplish great deeds, they indulge in hubris, victory parades, and self-congratulation. In contrast, the Prophet of Islam entered Makkah with his head bowed so low in humility upon his mount that his beard almost touched the saddle, reciting praise of God.\n\nIslam teaches that the climax of every monumental success—whether completing a lifetime of devotion, winning a righteous struggle, or concluding the daily Salah—must be sealed with Tasbih (glorifying God), Tahmid (thanking Him for enabling the accomplishment), and Istighfar (seeking forgiveness for any shortcomings in honoring the majesty of the Divine). Following the descent of this surah, Aisha narrates that the Prophet repeatedly recited in his bowing and prostrations: 'Subhanaka Allahumma Rabbana wa bihamdika, Allahumma ighfir li' (Glory be to You, O Allah our Lord, and all praise; O Allah, forgive me).",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Sunnah Rulings on Tasbih and Istighfar upon Completing Deeds",
+          "content": "Mufti Muhammad Shafi notes that it is an established Sunnah to conclude every act of worship with Istighfar (seeking forgiveness), acknowledging that no creature can ever worship the Creator with the perfection He deserves. This is why a Muslim recites 'Astaghfirullah' three times immediately after completing the obligatory prayer."
+        },
+        {
+          "type": "insights",
+          "title": "The Spiritual Discernment of Ibn Abbas and Umar",
+          "content": "Sahih al-Bukhari relates that Caliph Umar summoned the senior elders of Badr along with the young Ibn Abbas. When Umar asked for the interpretation of this surah, the elders replied: 'Allah commands us to thank Him when victory comes.' Umar asked Ibn Abbas, who replied: 'It was the sign of the approaching death of the Messenger of Allah.' Umar affirmed: 'I know of it nothing other than what you have said.'"
+        }
+      ],
+      "curatedTerms": [
+        {
+          "term": "Nasr",
+          "arabicWord": "نَصْر",
+          "arabicRoot": "ن - ص - ر (N-S-R)",
+          "literalMeaning": "Decisive aid, victorious backing, and rescue.",
+          "relatedWords": [
+            "Nasir (Helper)",
+            "Mansur (Victorious)",
+            "Istinsar (Seeking aid)"
+          ],
+          "theologicalContext": "Divine intervention granting ultimate victory to righteous endurance against overwhelming odds.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 8, Surah An-Nasr"
+        },
+        {
+          "term": "Fath",
+          "arabicWord": "فَتْح",
+          "arabicRoot": "ف - ت - ح (F-T-H)",
+          "literalMeaning": "To open; a decisive conquest that opens hearts and gates.",
+          "relatedWords": [
+            "Fattah (The Supreme Opener)",
+            "Fatihah (Opening chapter)",
+            "Maftuh (Open)"
+          ],
+          "theologicalContext": "Specifically the peaceful Conquest of Makkah in 8 AH, which opened Arabia to monotheism without bloodshed or vengeance.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 8, Surah An-Nasr"
+        }
+      ]
+    }
+  ]
+}

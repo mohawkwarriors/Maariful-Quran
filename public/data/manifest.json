@@ -16,8 +16,22 @@
       "sectionsCount": 2,
       "thematicSummary": "The quintessence of the Holy Qur'an, embodying praise of Allah, affirmation of His sovereign Lordship and mercy, and the quintessential prayer for guidance along the Straight Path.",
       "sectionsPreview": [
-        { "id": "1-1-4", "verseRange": [1, 4], "title": "Praise of Allah, Sovereign Grace & Day of Retribution" },
-        { "id": "1-5-7", "verseRange": [5, 7], "title": "Exclusive Devotion, Seeking Aid & The Straight Path" }
+        {
+          "id": "1-1-4",
+          "verseRange": [
+            1,
+            4
+          ],
+          "title": "Praise of Allah, Sovereign Grace & Day of Retribution"
+        },
+        {
+          "id": "1-5-7",
+          "verseRange": [
+            5,
+            7
+          ],
+          "title": "Exclusive Devotion, Seeking Aid & The Straight Path"
+        }
       ]
     },
     {
@@ -30,16 +44,81 @@
       "orderOfRevelation": 87,
       "juzStart": 1,
       "juzEnd": 3,
-      "sectionsCount": 7,
+      "sectionsCount": 9,
       "thematicSummary": "The longest chapter covering the tripartite division of humanity, covenantal history with Bani Isra'il, the appointment of Adam, legal rulings on fasting, pilgrimage, marriage, and total prohibition of Riba.",
       "sectionsPreview": [
-        { "id": "2-1-5", "verseRange": [1, 5], "title": "The Qualities of the Muttaqin (The God-Fearing)" },
-        { "id": "2-6-7", "verseRange": [6, 7], "title": "The State of Obstinate Disbelief & The Sealed Hearts" },
-        { "id": "2-8-20", "verseRange": [8, 20], "title": "The Traits and Psychological Traps of the Hypocrites" },
-        { "id": "2-21-29", "verseRange": [21, 29], "title": "Universal Call to Monotheism & Cosmic Signs of Creation" },
-        { "id": "2-30-39", "verseRange": [30, 39], "title": "The Primordial Covenant & Appointment of Adam as Vicegerent" },
-        { "id": "2-183-187", "verseRange": [183, 187], "title": "Injunctions on Fasting (Siyam) & The Sanctity of Ramadan" },
-        { "id": "2-275-281", "verseRange": [275, 281], "title": "The Total Prohibition of Usury (Riba) & Economic Justice" }
+        {
+          "id": "2-1-5",
+          "verseRange": [
+            1,
+            5
+          ],
+          "title": "The Qualities of the Muttaqin (The God-Fearing)"
+        },
+        {
+          "id": "2-6-7",
+          "verseRange": [
+            6,
+            7
+          ],
+          "title": "The State of Obstinate Disbelief & The Sealed Hearts"
+        },
+        {
+          "id": "2-8-20",
+          "verseRange": [
+            8,
+            20
+          ],
+          "title": "The Traits and Psychological Traps of the Hypocrites"
+        },
+        {
+          "id": "2-21-29",
+          "verseRange": [
+            21,
+            29
+          ],
+          "title": "Universal Call to Monotheism & Cosmic Signs of Creation"
+        },
+        {
+          "id": "2-30-39",
+          "verseRange": [
+            30,
+            39
+          ],
+          "title": "The Primordial Covenant & Appointment of Adam as Vicegerent"
+        },
+        {
+          "id": "2-183-187",
+          "verseRange": [
+            183,
+            187
+          ],
+          "title": "Injunctions on Fasting (Siyam) & The Sanctity of Ramadan"
+        },
+        {
+          "id": "2-255-257",
+          "verseRange": [
+            255,
+            257
+          ],
+          "title": "Ayat al-Kursi (The Throne Verse) & Freedom of Conscience"
+        },
+        {
+          "id": "2-275-281",
+          "verseRange": [
+            275,
+            281
+          ],
+          "title": "The Total Prohibition of Usury (Riba) & Economic Justice"
+        },
+        {
+          "id": "2-284-286",
+          "verseRange": [
+            284,
+            286
+          ],
+          "title": "Amanar-Rasul: The Concluding Supplication of Mercy & Divine Ease"
+        }
       ]
     },
     {
@@ -55,8 +134,22 @@
       "sectionsCount": 4,
       "thematicSummary": "Affirmation of Tawhid against Trinitarian dogma, birth of Maryam and 'Isa, the Battle of Uhud, and steadfast devotion to the rope of Allah.",
       "sectionsPreview": [
-        { "id": "3-1-9", "verseRange": [1, 9], "title": "Definitive (Muhkam) and Allegorical (Mutashabih) Verses" },
-        { "id": "3-102-105", "verseRange": [102, 105], "title": "Holding Fast to the Rope of Allah & Mutual Brotherhood" }
+        {
+          "id": "3-1-9",
+          "verseRange": [
+            1,
+            9
+          ],
+          "title": "Definitive (Muhkam) and Allegorical (Mutashabih) Verses"
+        },
+        {
+          "id": "3-102-105",
+          "verseRange": [
+            102,
+            105
+          ],
+          "title": "Holding Fast to the Rope of Allah & Mutual Brotherhood"
+        }
       ]
     },
     {
@@ -72,7 +165,14 @@
       "sectionsCount": 3,
       "thematicSummary": "Protection of orphans and widows, precise laws of estate inheritance (Mawarith), sanctity of marriage contracts, and social equity.",
       "sectionsPreview": [
-        { "id": "4-1-6", "verseRange": [1, 6], "title": "Sanctity of the Human Soul & Protection of Orphans' Wealth" }
+        {
+          "id": "4-1-6",
+          "verseRange": [
+            1,
+            6
+          ],
+          "title": "Sanctity of the Human Soul & Protection of Orphans' Wealth"
+        }
       ]
     },
     {
@@ -88,7 +188,14 @@
       "sectionsCount": 3,
       "thematicSummary": "Fulfillment of covenants, dietary and ritual purification rulings, prohibition of intoxicants and gambling, and the disciples' table spread.",
       "sectionsPreview": [
-        { "id": "5-1-5", "verseRange": [1, 5], "title": "Fulfillment of Treaties & Halal Sanctity" }
+        {
+          "id": "5-1-5",
+          "verseRange": [
+            1,
+            5
+          ],
+          "title": "Fulfillment of Treaties & Halal Sanctity"
+        }
       ]
     },
     {
@@ -260,8 +367,22 @@
       "sectionsCount": 4,
       "thematicSummary": "Protection against the trials of Dajjal through four parables: the Youth of the Cave (Faith), Two Gardens (Wealth), Musa & Khidr (Knowledge), and Dhul-Qarnayn (Power).",
       "sectionsPreview": [
-        { "id": "18-1-8", "verseRange": [1, 8], "title": "Praise of Allah for the Incorruptible Scripture & Warnings" },
-        { "id": "18-9-26", "verseRange": [9, 26], "title": "The Companions of the Cave (Ashab al-Kahf) & Divine Sanctuary" }
+        {
+          "id": "18-1-8",
+          "verseRange": [
+            1,
+            8
+          ],
+          "title": "Praise of Allah for the Incorruptible Scripture & Warnings"
+        },
+        {
+          "id": "18-9-26",
+          "verseRange": [
+            9,
+            26
+          ],
+          "title": "The Companions of the Cave (Ashab al-Kahf) & Divine Sanctuary"
+        }
       ]
     },
     {
@@ -495,11 +616,17 @@
       "orderOfRevelation": 41,
       "juzStart": 22,
       "juzEnd": 23,
-      "sectionsCount": 3,
+      "sectionsCount": 1,
       "thematicSummary": "The 'Heart of the Qur'an' addressing prophetic truth, the Town's envoys and Habib the carpenter, cosmic celestial mechanics, and resurrection of dry bones.",
       "sectionsPreview": [
-        { "id": "36-1-12", "verseRange": [1, 12], "title": "The Oath by the Wise Quran & The Mission of the Messenger" },
-        { "id": "36-33-44", "verseRange": [33, 44], "title": "Signs of Resurrecting Barren Earth, Night and Orbiting Spheres" }
+        {
+          "id": "36-1-12",
+          "verseRange": [
+            1,
+            12
+          ],
+          "title": "The Oath by the Wise Quran & The Prophetic Mission"
+        }
       ]
     },
     {
@@ -555,6 +682,604 @@
       "thematicSummary": "First of the Hawamim surahs; Allah's forgiveness and severe reckoning, the secret Believer in Pharaoh's court pleading for Musa."
     },
     {
+      "number": 41,
+      "nameArabic": "فصلت",
+      "nameTransliterated": "Fussilat",
+      "nameEnglish": "Explained in Detail",
+      "versesCount": 54,
+      "revelationType": "Makki",
+      "orderOfRevelation": 61,
+      "juzStart": 24,
+      "juzEnd": 25,
+      "sectionsCount": 1,
+      "thematicSummary": "Exposition on divine revelation, cosmic signs in creation, and the steadfast perseverance required in calling humanity to Allah.",
+      "sectionsPreview": [
+        {
+          "id": "41-1-54",
+          "verseRange": [
+            1,
+            54
+          ],
+          "title": "Detailed Revelation & Cosmic Manifestations"
+        }
+      ]
+    },
+    {
+      "number": 42,
+      "nameArabic": "الشورى",
+      "nameTransliterated": "Ash-Shura",
+      "nameEnglish": "Consultation",
+      "versesCount": 53,
+      "revelationType": "Makki",
+      "orderOfRevelation": 62,
+      "juzStart": 25,
+      "juzEnd": 25,
+      "sectionsCount": 1,
+      "thematicSummary": "Unity of divine message, ethical conduct of the community based on consultation (Shura), and absolute divine transcendence.",
+      "sectionsPreview": [
+        {
+          "id": "42-1-53",
+          "verseRange": [
+            1,
+            53
+          ],
+          "title": "Divine Oneness, Revelation & The Principle of Consultation"
+        }
+      ]
+    },
+    {
+      "number": 43,
+      "nameArabic": "الزخرف",
+      "nameTransliterated": "Az-Zukhruf",
+      "nameEnglish": "The Gold Adornments",
+      "versesCount": 89,
+      "revelationType": "Makki",
+      "orderOfRevelation": 63,
+      "juzStart": 25,
+      "juzEnd": 25,
+      "sectionsCount": 1,
+      "thematicSummary": "Contrast between fleeting worldly vanity (gold and adornments) and everlasting heavenly honors, rebutting false deities and polytheistic conjecture.",
+      "sectionsPreview": [
+        {
+          "id": "43-1-89",
+          "verseRange": [
+            1,
+            89
+          ],
+          "title": "Truth of Revelation vs. Material Adornment"
+        }
+      ]
+    },
+    {
+      "number": 44,
+      "nameArabic": "الدخان",
+      "nameTransliterated": "Ad-Dukhan",
+      "nameEnglish": "The Smoke",
+      "versesCount": 59,
+      "revelationType": "Makki",
+      "orderOfRevelation": 64,
+      "juzStart": 25,
+      "juzEnd": 25,
+      "sectionsCount": 1,
+      "thematicSummary": "The blessed night of revelation, warning of retribution symbolized by impending cosmic smoke, and the demise of Pharaoh's tyranny.",
+      "sectionsPreview": [
+        {
+          "id": "44-1-59",
+          "verseRange": [
+            1,
+            59
+          ],
+          "title": "The Blessed Night & The Warning of Smoke"
+        }
+      ]
+    },
+    {
+      "number": 45,
+      "nameArabic": "الجاثية",
+      "nameTransliterated": "Al-Jathiyah",
+      "nameEnglish": "The Kneeling",
+      "versesCount": 37,
+      "revelationType": "Makki",
+      "orderOfRevelation": 65,
+      "juzStart": 25,
+      "juzEnd": 25,
+      "sectionsCount": 1,
+      "thematicSummary": "Signs of Allah in heavens and earth, rebuke of materialistic skepticism, and the scene of all nations kneeling before the divine tribunal.",
+      "sectionsPreview": [
+        {
+          "id": "45-1-37",
+          "verseRange": [
+            1,
+            37
+          ],
+          "title": "Cosmic Evidences & The Gathering of All Nations"
+        }
+      ]
+    },
+    {
+      "number": 46,
+      "nameArabic": "الأحقاف",
+      "nameTransliterated": "Al-Ahqaf",
+      "nameEnglish": "The Sand Dunes",
+      "versesCount": 35,
+      "revelationType": "Makki",
+      "orderOfRevelation": 66,
+      "juzStart": 26,
+      "juzEnd": 26,
+      "sectionsCount": 1,
+      "thematicSummary": "The reality of resurrection, filial duty to parents, the warning delivered to the people of 'Ad in the dunes, and the faith of listening jinn.",
+      "sectionsPreview": [
+        {
+          "id": "46-1-35",
+          "verseRange": [
+            1,
+            35
+          ],
+          "title": "Filial Piety, The People of 'Ad & Steadfast Patience"
+        }
+      ]
+    },
+    {
+      "number": 47,
+      "nameArabic": "محمد",
+      "nameTransliterated": "Muhammad",
+      "nameEnglish": "The Prophet Muhammad",
+      "versesCount": 38,
+      "revelationType": "Madani",
+      "orderOfRevelation": 95,
+      "juzStart": 26,
+      "juzEnd": 26,
+      "sectionsCount": 1,
+      "thematicSummary": "Delineation between belief and disbelief, ethical rules of combat and treatment of captives, and the spiritual hypocrisy hindering righteous sacrifice.",
+      "sectionsPreview": [
+        {
+          "id": "47-1-38",
+          "verseRange": [
+            1,
+            38
+          ],
+          "title": "Righteous Endeavor, The Garden & Overcoming Hypocrisy"
+        }
+      ]
+    },
+    {
+      "number": 48,
+      "nameArabic": "الفتح",
+      "nameTransliterated": "Al-Fath",
+      "nameEnglish": "The Victory",
+      "versesCount": 29,
+      "revelationType": "Madani",
+      "orderOfRevelation": 111,
+      "juzStart": 26,
+      "juzEnd": 26,
+      "sectionsCount": 1,
+      "thematicSummary": "Celebrating the Treaty of Hudaybiyyah as a clear moral victory, divine reassurance (Sakinah) to believers, and the nobility of the Prophet's companions.",
+      "sectionsPreview": [
+        {
+          "id": "48-1-29",
+          "verseRange": [
+            1,
+            29
+          ],
+          "title": "The Manifest Victory & The Pledge of Ridwan"
+        }
+      ]
+    },
+    {
+      "number": 49,
+      "nameArabic": "الحجرات",
+      "nameTransliterated": "Al-Hujurat",
+      "nameEnglish": "The Inner Chambers",
+      "versesCount": 18,
+      "revelationType": "Madani",
+      "orderOfRevelation": 106,
+      "juzStart": 26,
+      "juzEnd": 26,
+      "sectionsCount": 1,
+      "thematicSummary": "The constitutional ethics of the Muslim community: reverence before the Prophet, verifying news, brotherly reconciliation, prohibiting backbiting, and human universal equality under Taqwa.",
+      "sectionsPreview": [
+        {
+          "id": "49-1-18",
+          "verseRange": [
+            1,
+            18
+          ],
+          "title": "Social Ethics, Brotherly Harmony & Universal Equality"
+        }
+      ]
+    },
+    {
+      "number": 50,
+      "nameArabic": "ق",
+      "nameTransliterated": "Qaf",
+      "nameEnglish": "The Letter Qaf",
+      "versesCount": 45,
+      "revelationType": "Makki",
+      "orderOfRevelation": 34,
+      "juzStart": 26,
+      "juzEnd": 26,
+      "sectionsCount": 1,
+      "thematicSummary": "Majestic contemplation of creation and bodily resurrection, divine intimacy closer than the jugular vein, the recording angels, and the trumpet of judgment.",
+      "sectionsPreview": [
+        {
+          "id": "50-1-45",
+          "verseRange": [
+            1,
+            45
+          ],
+          "title": "Divine Omniscience, The Jugular Vein & The Inevitable Hour"
+        }
+      ]
+    },
+    {
+      "number": 51,
+      "nameArabic": "الذاريات",
+      "nameTransliterated": "Adh-Dhariyat",
+      "nameEnglish": "The Winnowing Winds",
+      "versesCount": 60,
+      "revelationType": "Makki",
+      "orderOfRevelation": 67,
+      "juzStart": 26,
+      "juzEnd": 27,
+      "sectionsCount": 1,
+      "thematicSummary": "Oaths by cosmological forces confirming judgment, the visitation of angels to Ibrahim, and the overarching purpose of jinn and mankind: to worship Allah alone.",
+      "sectionsPreview": [
+        {
+          "id": "51-1-60",
+          "verseRange": [
+            1,
+            60
+          ],
+          "title": "The Certain Promise & The Purpose of Creation"
+        }
+      ]
+    },
+    {
+      "number": 52,
+      "nameArabic": "الطور",
+      "nameTransliterated": "At-Tur",
+      "nameEnglish": "The Mount",
+      "versesCount": 49,
+      "revelationType": "Makki",
+      "orderOfRevelation": 76,
+      "juzStart": 27,
+      "juzEnd": 27,
+      "sectionsCount": 1,
+      "thematicSummary": "Solemn oaths by Mount Sinai and the Inhabited House (Al-Bayt al-Ma'mur), the bliss of the righteous joined by their families in Paradise, and refuting skeptical accusations.",
+      "sectionsPreview": [
+        {
+          "id": "52-1-49",
+          "verseRange": [
+            1,
+            49
+          ],
+          "title": "Oaths of Certainty & The Delights of the Righteous"
+        }
+      ]
+    },
+    {
+      "number": 53,
+      "nameArabic": "النجم",
+      "nameTransliterated": "An-Najm",
+      "nameEnglish": "The Star",
+      "versesCount": 62,
+      "revelationType": "Makki",
+      "orderOfRevelation": 23,
+      "juzStart": 27,
+      "juzEnd": 27,
+      "sectionsCount": 1,
+      "thematicSummary": "The supreme celestial vision of the Prophet during the Ascension (Mi'raj) at the Lote Tree of the Utmost Boundary (Sidrat al-Muntaha), and the futility of polytheistic idolatry.",
+      "sectionsPreview": [
+        {
+          "id": "53-1-62",
+          "verseRange": [
+            1,
+            62
+          ],
+          "title": "The Heavenly Vision & The Farthest Lote Tree"
+        }
+      ]
+    },
+    {
+      "number": 54,
+      "nameArabic": "القمر",
+      "nameTransliterated": "Al-Qamar",
+      "nameEnglish": "The Moon",
+      "versesCount": 55,
+      "revelationType": "Makki",
+      "orderOfRevelation": 37,
+      "juzStart": 27,
+      "juzEnd": 27,
+      "sectionsCount": 1,
+      "thematicSummary": "The miraculous cleaving of the moon, warnings from ancient destroyed civilizations, and the fourfold refrain: 'And We have indeed made the Quran easy for remembrance.'",
+      "sectionsPreview": [
+        {
+          "id": "54-1-55",
+          "verseRange": [
+            1,
+            55
+          ],
+          "title": "The Splitting of the Moon & The Ease of Divine Counsel"
+        }
+      ]
+    },
+    {
+      "number": 55,
+      "nameArabic": "الرحمن",
+      "nameTransliterated": "Ar-Rahman",
+      "nameEnglish": "The All-Merciful",
+      "versesCount": 78,
+      "revelationType": "Madani",
+      "orderOfRevelation": 97,
+      "juzStart": 27,
+      "juzEnd": 27,
+      "sectionsCount": 1,
+      "thematicSummary": "A rhythmic choral masterpiece enumerating cosmic favors and paradisiacal wonders, punctuated thirty-one times by: 'Which of the favors of your Lord will you twain deny?'",
+      "sectionsPreview": [
+        {
+          "id": "55-1-78",
+          "verseRange": [
+            1,
+            78
+          ],
+          "title": "Cosmic Bounties, Dual Creation & Everlasting Paradise"
+        }
+      ]
+    },
+    {
+      "number": 56,
+      "nameArabic": "الواقعة",
+      "nameTransliterated": "Al-Waqi'ah",
+      "nameEnglish": "The Inevitable",
+      "versesCount": 96,
+      "revelationType": "Makki",
+      "orderOfRevelation": 46,
+      "juzStart": 27,
+      "juzEnd": 27,
+      "sectionsCount": 1,
+      "thematicSummary": "The cataclysm of the Last Day dividing humankind into three classes: the Foremost in Faith (Al-Sabiqun), the Companions of the Right, and the Companions of the Left.",
+      "sectionsPreview": [
+        {
+          "id": "56-1-96",
+          "verseRange": [
+            1,
+            96
+          ],
+          "title": "The Three Categories of Humanity on the Day of Judgment"
+        }
+      ]
+    },
+    {
+      "number": 57,
+      "nameArabic": "الحديد",
+      "nameTransliterated": "Al-Hadid",
+      "nameEnglish": "The Iron",
+      "versesCount": 29,
+      "revelationType": "Madani",
+      "orderOfRevelation": 94,
+      "juzStart": 27,
+      "juzEnd": 27,
+      "sectionsCount": 1,
+      "thematicSummary": "The supreme attributes of Allah, spending in times of difficulty vs ease, the light of believers on the Day of Judgment, and the creation of iron containing mighty power and human benefit.",
+      "sectionsPreview": [
+        {
+          "id": "57-1-29",
+          "verseRange": [
+            1,
+            29
+          ],
+          "title": "The Transcendent Names, The Inner Light & The Utility of Iron"
+        }
+      ]
+    },
+    {
+      "number": 58,
+      "nameArabic": "المجادلة",
+      "nameTransliterated": "Al-Mujadilah",
+      "nameEnglish": "The Pleading Woman",
+      "versesCount": 22,
+      "revelationType": "Madani",
+      "orderOfRevelation": 105,
+      "juzStart": 28,
+      "juzEnd": 28,
+      "sectionsCount": 1,
+      "thematicSummary": "Divine hearing answering the petition of a wronged woman, nullifying pagan domestic oppression (Zihar), and condemning conspiratorial whispers.",
+      "sectionsPreview": [
+        {
+          "id": "58-1-22",
+          "verseRange": [
+            1,
+            22
+          ],
+          "title": "The Heard Petition, Legal Reform & The Party of Allah"
+        }
+      ]
+    },
+    {
+      "number": 59,
+      "nameArabic": "الحشر",
+      "nameTransliterated": "Al-Hashr",
+      "nameEnglish": "The Exile",
+      "versesCount": 24,
+      "revelationType": "Madani",
+      "orderOfRevelation": 101,
+      "juzStart": 28,
+      "juzEnd": 28,
+      "sectionsCount": 1,
+      "thematicSummary": "The exile of Banu Nadir, ethical distribution of community resources (Fay'), selfless fraternal sacrifice of the Ansar, and the sublime Beautiful Names of Allah.",
+      "sectionsPreview": [
+        {
+          "id": "59-1-24",
+          "verseRange": [
+            1,
+            24
+          ],
+          "title": "Sovereign Justice, Social Equity & The Most Beautiful Names"
+        }
+      ]
+    },
+    {
+      "number": 60,
+      "nameArabic": "الممتحنة",
+      "nameTransliterated": "Al-Mumtahanah",
+      "nameEnglish": "The Tested Woman",
+      "versesCount": 13,
+      "revelationType": "Madani",
+      "orderOfRevelation": 91,
+      "juzStart": 28,
+      "juzEnd": 28,
+      "sectionsCount": 1,
+      "thematicSummary": "Principles of foreign relations and alliances, examining migrating believing women, and the exemplary detachment of Prophet Ibrahim.",
+      "sectionsPreview": [
+        {
+          "id": "60-1-13",
+          "verseRange": [
+            1,
+            13
+          ],
+          "title": "Ethical Alliances, Examination of Faith & The Abrahamic Standard"
+        }
+      ]
+    },
+    {
+      "number": 61,
+      "nameArabic": "الصف",
+      "nameTransliterated": "As-Saff",
+      "nameEnglish": "The Battle Array",
+      "versesCount": 14,
+      "revelationType": "Madani",
+      "orderOfRevelation": 109,
+      "juzStart": 28,
+      "juzEnd": 28,
+      "sectionsCount": 1,
+      "thematicSummary": "Rebuking discrepancies between profession and practice, unified alignment in righteousness, and the supreme trade: faith and striving for forgiveness and triumph.",
+      "sectionsPreview": [
+        {
+          "id": "61-1-14",
+          "verseRange": [
+            1,
+            14
+          ],
+          "title": "Unity of Conviction & The Supreme Profitable Commerce"
+        }
+      ]
+    },
+    {
+      "number": 62,
+      "nameArabic": "الجمعة",
+      "nameTransliterated": "Al-Jumu'ah",
+      "nameEnglish": "The Congregation",
+      "versesCount": 11,
+      "revelationType": "Madani",
+      "orderOfRevelation": 110,
+      "juzStart": 28,
+      "juzEnd": 28,
+      "sectionsCount": 1,
+      "thematicSummary": "The prophetic mission among the unlettered, the parable of carrying scripture without understanding, and the imperative duty of the Friday congregational prayer.",
+      "sectionsPreview": [
+        {
+          "id": "62-1-11",
+          "verseRange": [
+            1,
+            11
+          ],
+          "title": "The Prophetic Purification & The Sanctity of Friday Prayer"
+        }
+      ]
+    },
+    {
+      "number": 63,
+      "nameArabic": "المنافقون",
+      "nameTransliterated": "Al-Munafiqun",
+      "nameEnglish": "The Hypocrites",
+      "versesCount": 11,
+      "revelationType": "Madani",
+      "orderOfRevelation": 104,
+      "juzStart": 28,
+      "juzEnd": 28,
+      "sectionsCount": 1,
+      "thematicSummary": "Unmasking the oaths of hypocrites, the psychological barrier of arrogance, and warnings against allowing wealth and children to distract from Allah's remembrance.",
+      "sectionsPreview": [
+        {
+          "id": "63-1-11",
+          "verseRange": [
+            1,
+            11
+          ],
+          "title": "The Duplicity of Hypocrisy & Urgent Preparedness for Death"
+        }
+      ]
+    },
+    {
+      "number": 64,
+      "nameArabic": "التغابن",
+      "nameTransliterated": "At-Taghabun",
+      "nameEnglish": "The Mutual Loss",
+      "versesCount": 18,
+      "revelationType": "Madani",
+      "orderOfRevelation": 108,
+      "juzStart": 28,
+      "juzEnd": 28,
+      "sectionsCount": 1,
+      "thematicSummary": "Universal glorification of God, the Day of Mutual Disillusion where true gain and loss are revealed, and cultivating family harmony through forbearance and charity.",
+      "sectionsPreview": [
+        {
+          "id": "64-1-18",
+          "verseRange": [
+            1,
+            18
+          ],
+          "title": "The Day of Mutual Reckoning & Household Forbearance"
+        }
+      ]
+    },
+    {
+      "number": 65,
+      "nameArabic": "الطلاق",
+      "nameTransliterated": "At-Talaq",
+      "nameEnglish": "Divorce",
+      "versesCount": 12,
+      "revelationType": "Madani",
+      "orderOfRevelation": 99,
+      "juzStart": 28,
+      "juzEnd": 28,
+      "sectionsCount": 1,
+      "thematicSummary": "Juristic guidelines for divorce, calculating the waiting period ('iddah), equitable maintenance, and the famous promise of ease following hardship for those of Taqwa.",
+      "sectionsPreview": [
+        {
+          "id": "65-1-12",
+          "verseRange": [
+            1,
+            12
+          ],
+          "title": "Equitable Marital Dissolution & Divine Deliverance in Hardship"
+        }
+      ]
+    },
+    {
+      "number": 66,
+      "nameArabic": "التحريم",
+      "nameTransliterated": "At-Tahrim",
+      "nameEnglish": "The Prohibition",
+      "versesCount": 12,
+      "revelationType": "Madani",
+      "orderOfRevelation": 107,
+      "juzStart": 28,
+      "juzEnd": 28,
+      "sectionsCount": 1,
+      "thematicSummary": "Domestic sensitivities in the prophetic household, the duty to shield one's family from spiritual destruction, and contrasting archetypes of righteous and rebellious women.",
+      "sectionsPreview": [
+        {
+          "id": "66-1-12",
+          "verseRange": [
+            1,
+            12
+          ],
+          "title": "Domestic Integrity, Sincere Repentance & Exemplary Faith"
+        }
+      ]
+    },
+    {
       "number": 67,
       "nameArabic": "الملك",
       "nameTransliterated": "Al-Mulk",
@@ -564,10 +1289,1029 @@
       "orderOfRevelation": 77,
       "juzStart": 29,
       "juzEnd": 29,
-      "sectionsCount": 2,
+      "sectionsCount": 1,
       "thematicSummary": "The protector from the punishment of the grave; creation of life and death as a test of deeds, flawless celestial architecture, and sustenance.",
       "sectionsPreview": [
-        { "id": "67-1-5", "verseRange": [1, 5], "title": "Blessed Sovereignty, Flawless Creation & Seven Heavens" }
+        {
+          "id": "67-1-12",
+          "verseRange": [
+            1,
+            12
+          ],
+          "title": "The Purpose of Life and Death & The Flawless Cosmic Architecture"
+        }
+      ]
+    },
+    {
+      "number": 68,
+      "nameArabic": "القلم",
+      "nameTransliterated": "Al-Qalam",
+      "nameEnglish": "The Pen",
+      "versesCount": 52,
+      "revelationType": "Makki",
+      "orderOfRevelation": 2,
+      "juzStart": 29,
+      "juzEnd": 29,
+      "sectionsCount": 1,
+      "thematicSummary": "Oath by the Pen and written knowledge vindicating the Prophet's exalted moral character, the parable of the blighted orchard owners, and patience exemplified by Prophet Yunus.",
+      "sectionsPreview": [
+        {
+          "id": "68-1-52",
+          "verseRange": [
+            1,
+            52
+          ],
+          "title": "The Exalted Moral Standard & The Parable of the Blighted Orchard"
+        }
+      ]
+    },
+    {
+      "number": 69,
+      "nameArabic": "الحاقة",
+      "nameTransliterated": "Al-Haqqah",
+      "nameEnglish": "The Indubitable",
+      "versesCount": 52,
+      "revelationType": "Makki",
+      "orderOfRevelation": 78,
+      "juzStart": 29,
+      "juzEnd": 29,
+      "sectionsCount": 1,
+      "thematicSummary": "The undeniable reality of the resurrection, historical destruction of ancient deniers, the presenting of the cosmic record into the right or left hand, and confirmation of Quranic integrity.",
+      "sectionsPreview": [
+        {
+          "id": "69-1-52",
+          "verseRange": [
+            1,
+            52
+          ],
+          "title": "The Indubitable Hour & The Receiving of the Book"
+        }
+      ]
+    },
+    {
+      "number": 70,
+      "nameArabic": "المعارج",
+      "nameTransliterated": "Al-Ma'arij",
+      "nameEnglish": "The Ascending Stairways",
+      "versesCount": 44,
+      "revelationType": "Makki",
+      "orderOfRevelation": 79,
+      "juzStart": 29,
+      "juzEnd": 29,
+      "sectionsCount": 1,
+      "thematicSummary": "The ascending ways to the Divine, the nature of a Day spanning fifty thousand years, the human psychological cycle of fretfulness and stinginess, and the virtues of the steadfast in prayer.",
+      "sectionsPreview": [
+        {
+          "id": "70-1-44",
+          "verseRange": [
+            1,
+            44
+          ],
+          "title": "The Celestial Ascents & The Character of the Prayerful"
+        }
+      ]
+    },
+    {
+      "number": 71,
+      "nameArabic": "نوح",
+      "nameTransliterated": "Nuh",
+      "nameEnglish": "Prophet Noah",
+      "versesCount": 28,
+      "revelationType": "Makki",
+      "orderOfRevelation": 71,
+      "juzStart": 29,
+      "juzEnd": 29,
+      "sectionsCount": 1,
+      "thematicSummary": "Noah's tireless multi-century summons to monotheism by night and day, seeking forgiveness for bountiful rain and prosperity, and his concluding prayer for all believing men and women.",
+      "sectionsPreview": [
+        {
+          "id": "71-1-28",
+          "verseRange": [
+            1,
+            28
+          ],
+          "title": "The Tireless Prophetic Call & The Virtues of Istighfar"
+        }
+      ]
+    },
+    {
+      "number": 72,
+      "nameArabic": "الجن",
+      "nameTransliterated": "Al-Jinn",
+      "nameEnglish": "The Jinn",
+      "versesCount": 28,
+      "revelationType": "Makki",
+      "orderOfRevelation": 40,
+      "juzStart": 29,
+      "juzEnd": 29,
+      "sectionsCount": 1,
+      "thematicSummary": "The jinn's awe upon hearing the wondrous recitation of the Quran, their renunciation of polytheism, and the affirmation that places of worship belong exclusively to Allah.",
+      "sectionsPreview": [
+        {
+          "id": "72-1-28",
+          "verseRange": [
+            1,
+            28
+          ],
+          "title": "The Listening of the Jinn & Pure Devotion in the Mosques"
+        }
+      ]
+    },
+    {
+      "number": 73,
+      "nameArabic": "المزمل",
+      "nameTransliterated": "Al-Muzzammil",
+      "nameEnglish": "The Enwrapped One",
+      "versesCount": 20,
+      "revelationType": "Makki",
+      "orderOfRevelation": 3,
+      "juzStart": 29,
+      "juzEnd": 29,
+      "sectionsCount": 1,
+      "thematicSummary": "Command to stand in contemplative night prayer (Tahajjud), reciting the Quran in slow measured tones (Tartil) to bear the weight of divine revelation.",
+      "sectionsPreview": [
+        {
+          "id": "73-1-20",
+          "verseRange": [
+            1,
+            20
+          ],
+          "title": "The Vigil of Night Prayer & Measured Recitation"
+        }
+      ]
+    },
+    {
+      "number": 74,
+      "nameArabic": "المدثر",
+      "nameTransliterated": "Al-Muddaththir",
+      "nameEnglish": "The Cloaked One",
+      "versesCount": 56,
+      "revelationType": "Makki",
+      "orderOfRevelation": 4,
+      "juzStart": 29,
+      "juzEnd": 29,
+      "sectionsCount": 1,
+      "thematicSummary": "The inaugural command to arise and warn humanity, purify garments, shun pollution, and the solemn reckoning in the Fire of Saqar.",
+      "sectionsPreview": [
+        {
+          "id": "74-1-56",
+          "verseRange": [
+            1,
+            56
+          ],
+          "title": "The Mandate to Arise & The Reality of Saqar"
+        }
+      ]
+    },
+    {
+      "number": 75,
+      "nameArabic": "القيامة",
+      "nameTransliterated": "Al-Qiyamah",
+      "nameEnglish": "The Resurrection",
+      "versesCount": 40,
+      "revelationType": "Makki",
+      "orderOfRevelation": 31,
+      "juzStart": 29,
+      "juzEnd": 29,
+      "sectionsCount": 1,
+      "thematicSummary": "Oaths by the Day of Resurrection and the self-reproaching conscience (An-Nafs al-Lawwamah), reconstructing human fingertips, and the radiant faces gazing upon their Lord.",
+      "sectionsPreview": [
+        {
+          "id": "75-1-40",
+          "verseRange": [
+            1,
+            40
+          ],
+          "title": "The Reproaching Soul & Gazing upon the Divine Countenance"
+        }
+      ]
+    },
+    {
+      "number": 76,
+      "nameArabic": "الإنسان",
+      "nameTransliterated": "Al-Insan",
+      "nameEnglish": "Humanity",
+      "versesCount": 31,
+      "revelationType": "Madani",
+      "orderOfRevelation": 98,
+      "juzStart": 29,
+      "juzEnd": 29,
+      "sectionsCount": 1,
+      "thematicSummary": "The origin of humanity from an intertwined drop, feeding the destitute, orphan, and captive solely for the sake of Allah, and the immortal gardens of camphor and ginger.",
+      "sectionsPreview": [
+        {
+          "id": "76-1-31",
+          "verseRange": [
+            1,
+            31
+          ],
+          "title": "Feeding the Needy & The Delights of the Righteous"
+        }
+      ]
+    },
+    {
+      "number": 77,
+      "nameArabic": "المرسلات",
+      "nameTransliterated": "Al-Mursalat",
+      "nameEnglish": "Those Sent Forth",
+      "versesCount": 50,
+      "revelationType": "Makki",
+      "orderOfRevelation": 33,
+      "juzStart": 29,
+      "juzEnd": 29,
+      "sectionsCount": 1,
+      "thematicSummary": "Oaths by the emissary winds of divine judgment, cosmic dissolution on the Day of Decision, punctuated ten times by: 'Woe on that Day to the deniers!'",
+      "sectionsPreview": [
+        {
+          "id": "77-1-50",
+          "verseRange": [
+            1,
+            50
+          ],
+          "title": "The Emissary Winds & The Day of Final Decision"
+        }
+      ]
+    },
+    {
+      "number": 78,
+      "nameArabic": "النبأ",
+      "nameTransliterated": "An-Naba'",
+      "nameEnglish": "The Great Tiding",
+      "versesCount": 40,
+      "revelationType": "Makki",
+      "orderOfRevelation": 80,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "The monumental inquiry regarding resurrection, cosmic stabilizers (mountains, sleep, celestial lamps), and the solemn Day when angels stand in ranks.",
+      "sectionsPreview": [
+        {
+          "id": "78-1-40",
+          "verseRange": [
+            1,
+            40
+          ],
+          "title": "The Great Tiding & The Gathering of All Creation"
+        }
+      ]
+    },
+    {
+      "number": 79,
+      "nameArabic": "النازعات",
+      "nameTransliterated": "An-Nazi'at",
+      "nameEnglish": "Those Who Extract",
+      "versesCount": 46,
+      "revelationType": "Makki",
+      "orderOfRevelation": 81,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "Oaths by the angels extracting souls, the downfall of Pharaoh's haughtiness, and the Great Overwhelming Event (At-Tammah al-Kubra).",
+      "sectionsPreview": [
+        {
+          "id": "79-1-46",
+          "verseRange": [
+            1,
+            46
+          ],
+          "title": "The Extraction of Souls & The Overwhelming Calamity"
+        }
+      ]
+    },
+    {
+      "number": 80,
+      "nameArabic": "عبس",
+      "nameTransliterated": "'Abasa",
+      "nameEnglish": "He Frowned",
+      "versesCount": 42,
+      "revelationType": "Makki",
+      "orderOfRevelation": 24,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "Divine admonition regarding the sincere blind seeker Ibn Umm Maktum, the universal value of humble truth-seeking, and the Deafening Blast of the Last Day.",
+      "sectionsPreview": [
+        {
+          "id": "80-1-42",
+          "verseRange": [
+            1,
+            42
+          ],
+          "title": "The Sincere Seeker of Light & The Deafening Blast"
+        }
+      ]
+    },
+    {
+      "number": 81,
+      "nameArabic": "التكوير",
+      "nameTransliterated": "At-Takwir",
+      "nameEnglish": "The Enfolding",
+      "versesCount": 29,
+      "revelationType": "Makki",
+      "orderOfRevelation": 7,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "The enfolding of the sun, falling of stars, boiling of oceans, accountability for the buried infant daughter, and the noble station of Archangel Jibril.",
+      "sectionsPreview": [
+        {
+          "id": "81-1-29",
+          "verseRange": [
+            1,
+            29
+          ],
+          "title": "Cosmic Dissolution & The Trustworthy Angelic Messenger"
+        }
+      ]
+    },
+    {
+      "number": 82,
+      "nameArabic": "الانفطار",
+      "nameTransliterated": "Al-Infitar",
+      "nameEnglish": "The Cleaving",
+      "versesCount": 19,
+      "revelationType": "Makki",
+      "orderOfRevelation": 82,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "The cleaving of heaven, scattering of stars, what deluded human beings concerning their Generous Lord, and the recording scribe angels.",
+      "sectionsPreview": [
+        {
+          "id": "82-1-19",
+          "verseRange": [
+            1,
+            19
+          ],
+          "title": "The Splitting Sky & The Noble Recording Angels"
+        }
+      ]
+    },
+    {
+      "number": 83,
+      "nameArabic": "المطففين",
+      "nameTransliterated": "Al-Mutaffifin",
+      "nameEnglish": "The Defrauders",
+      "versesCount": 36,
+      "revelationType": "Makki",
+      "orderOfRevelation": 86,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "Condemnation of economic dishonesty and fraudulent weights, the ledger of the corrupt in Sijjin vs the ledger of the righteous in 'Illiyyun.",
+      "sectionsPreview": [
+        {
+          "id": "83-1-36",
+          "verseRange": [
+            1,
+            36
+          ],
+          "title": "Economic Fraud, Sijjin & The Lofty Station of 'Illiyyun"
+        }
+      ]
+    },
+    {
+      "number": 84,
+      "nameArabic": "الانشقاق",
+      "nameTransliterated": "Al-Inshiqaq",
+      "nameEnglish": "The Splitting Open",
+      "versesCount": 25,
+      "revelationType": "Makki",
+      "orderOfRevelation": 83,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "The sky obeying its Lord in splitting, humanity's arduous labor progressing toward its Lord, and the receiving of records from right or behind the back.",
+      "sectionsPreview": [
+        {
+          "id": "84-1-25",
+          "verseRange": [
+            1,
+            25
+          ],
+          "title": "The Obedient Heavens & Humanity's Encounter with its Lord"
+        }
+      ]
+    },
+    {
+      "number": 85,
+      "nameArabic": "البروج",
+      "nameTransliterated": "Al-Buruj",
+      "nameEnglish": "The Constellations",
+      "versesCount": 22,
+      "revelationType": "Makki",
+      "orderOfRevelation": 27,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "The martyrdom of the People of the Ditch (Ashab al-Ukhdud) who perished for their faith, divine retribution against tyrants, and the Preserved Tablet (Lawh Mahfuz).",
+      "sectionsPreview": [
+        {
+          "id": "85-1-22",
+          "verseRange": [
+            1,
+            22
+          ],
+          "title": "Steadfast Faith in Persecution & The Preserved Tablet"
+        }
+      ]
+    },
+    {
+      "number": 86,
+      "nameArabic": "الطارق",
+      "nameTransliterated": "At-Tariq",
+      "nameEnglish": "The Night-Comer",
+      "versesCount": 17,
+      "revelationType": "Makki",
+      "orderOfRevelation": 36,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "The piercing star of the night, human biological origin from an emitted fluid, the Day when innermost secrets are laid bare, and the decisive nature of the Quran.",
+      "sectionsPreview": [
+        {
+          "id": "86-1-17",
+          "verseRange": [
+            1,
+            17
+          ],
+          "title": "The Piercing Star, Innermost Secrets & The Decisive Word"
+        }
+      ]
+    },
+    {
+      "number": 87,
+      "nameArabic": "الأعلى",
+      "nameTransliterated": "Al-A'la",
+      "nameEnglish": "The Most High",
+      "versesCount": 19,
+      "revelationType": "Makki",
+      "orderOfRevelation": 8,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "Glorifying the Most High Lord who created and proportioned, divine ease in memorizing the Quran, purifying the soul, and continuity with the scrolls of Ibrahim and Musa.",
+      "sectionsPreview": [
+        {
+          "id": "87-1-19",
+          "verseRange": [
+            1,
+            19
+          ],
+          "title": "Glorification of the Most High & The Primordial Scrolls"
+        }
+      ]
+    },
+    {
+      "number": 88,
+      "nameArabic": "الغاشية",
+      "nameTransliterated": "Al-Ghashiyah",
+      "nameEnglish": "The Overwhelming Event",
+      "versesCount": 26,
+      "revelationType": "Makki",
+      "orderOfRevelation": 68,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "The overwhelming Last Day, contrasting downcast weary faces with radiant joyful souls in lofty gardens, and contemplation of camels, sky, mountains, and earth.",
+      "sectionsPreview": [
+        {
+          "id": "88-1-26",
+          "verseRange": [
+            1,
+            26
+          ],
+          "title": "Downcast vs. Joyful Faces & Natural Contemplation"
+        }
+      ]
+    },
+    {
+      "number": 89,
+      "nameArabic": "الفجر",
+      "nameTransliterated": "Al-Fajr",
+      "nameEnglish": "The Dawn",
+      "versesCount": 30,
+      "revelationType": "Makki",
+      "orderOfRevelation": 10,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "Oaths by the sacred dawn and ten nights of Dhu al-Hijjah, historic destruction of Iram and Thamud, societal neglect of orphans and inheritance, and the Tranquil Soul (An-Nafs al-Mutma'innah).",
+      "sectionsPreview": [
+        {
+          "id": "89-1-30",
+          "verseRange": [
+            1,
+            30
+          ],
+          "title": "The Sacred Nights, Human Testing & The Tranquil Soul"
+        }
+      ]
+    },
+    {
+      "number": 90,
+      "nameArabic": "البلد",
+      "nameTransliterated": "Al-Balad",
+      "nameEnglish": "The City",
+      "versesCount": 20,
+      "revelationType": "Makki",
+      "orderOfRevelation": 35,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "Oath by the sanctuary city of Makkah, humanity created in continuous struggle, and ascending the steep uphill road (Al-'Aqabah): freeing slaves and feeding hungry relatives in famine.",
+      "sectionsPreview": [
+        {
+          "id": "90-1-20",
+          "verseRange": [
+            1,
+            20
+          ],
+          "title": "The Sacred City & Scaling the Steep Uphill Road of Charity"
+        }
+      ]
+    },
+    {
+      "number": 91,
+      "nameArabic": "الشمس",
+      "nameTransliterated": "Ash-Shams",
+      "nameEnglish": "The Sun",
+      "versesCount": 15,
+      "revelationType": "Makki",
+      "orderOfRevelation": 26,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "Eleven consecutive oaths by cosmic phenomena and the proportioned human soul: true success lies in its spiritual purification (Tazkiyah) and failure in its corruption.",
+      "sectionsPreview": [
+        {
+          "id": "91-1-15",
+          "verseRange": [
+            1,
+            15
+          ],
+          "title": "The Eleven Cosmic Oaths & The Purification of the Soul"
+        }
+      ]
+    },
+    {
+      "number": 92,
+      "nameArabic": "الليل",
+      "nameTransliterated": "Al-Layl",
+      "nameEnglish": "The Night",
+      "versesCount": 21,
+      "revelationType": "Makki",
+      "orderOfRevelation": 9,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "Contrasting human pursuits: the one who gives, fears God, and verifies righteousness is eased toward bliss; while the miserly skeptic is eased toward ruin.",
+      "sectionsPreview": [
+        {
+          "id": "92-1-21",
+          "verseRange": [
+            1,
+            21
+          ],
+          "title": "Diverse Strivings & The Easing Toward Ultimate Bliss"
+        }
+      ]
+    },
+    {
+      "number": 93,
+      "nameArabic": "الضحى",
+      "nameTransliterated": "Ad-Duha",
+      "nameEnglish": "The Morning Light",
+      "versesCount": 11,
+      "revelationType": "Makki",
+      "orderOfRevelation": 11,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "Divine solace comforting the Prophet after an intermission in revelation: your Lord has neither forsaken nor hated you; the hereafter is better than the beginning; shelter the orphan and proclaim divine bounty.",
+      "sectionsPreview": [
+        {
+          "id": "93-1-11",
+          "verseRange": [
+            1,
+            11
+          ],
+          "title": "Divine Solace, The Morning Brightness & Proclaiming Grace"
+        }
+      ]
+    },
+    {
+      "number": 94,
+      "nameArabic": "الشرح",
+      "nameTransliterated": "Ash-Sharh",
+      "nameEnglish": "The Opening Up",
+      "versesCount": 8,
+      "revelationType": "Makki",
+      "orderOfRevelation": 12,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "The miraculous expansion of the Prophet's breast, lifting the burdensome weight from his back, elevating his remembrance, and the divine promise: with hardship comes ease.",
+      "sectionsPreview": [
+        {
+          "id": "94-1-8",
+          "verseRange": [
+            1,
+            8
+          ],
+          "title": "Expansion of the Breast, Exalted Renown & Ease in Hardship"
+        }
+      ]
+    },
+    {
+      "number": 95,
+      "nameArabic": "التين",
+      "nameTransliterated": "At-Tin",
+      "nameEnglish": "The Fig",
+      "versesCount": 8,
+      "revelationType": "Makki",
+      "orderOfRevelation": 28,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "Oaths by the Fig, Olive, Mount Sinai, and the secure city of Makkah: humankind created in the finest aesthetic and moral proportion (Ahsani Taqweem), preserved only by faith and righteous deeds.",
+      "sectionsPreview": [
+        {
+          "id": "95-1-8",
+          "verseRange": [
+            1,
+            8
+          ],
+          "title": "The Best of Statues & Preservation through Faith"
+        }
+      ]
+    },
+    {
+      "number": 96,
+      "nameArabic": "العلق",
+      "nameTransliterated": "Al-'Alaq",
+      "nameEnglish": "The Clinging Clot",
+      "versesCount": 19,
+      "revelationType": "Makki",
+      "orderOfRevelation": 1,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "The very first verses revealed at Cave Hira: 'Read in the name of your Lord who created', education by the Pen, warning against human insolence, and prostrating to draw near to Allah.",
+      "sectionsPreview": [
+        {
+          "id": "96-1-19",
+          "verseRange": [
+            1,
+            19
+          ],
+          "title": "The Dawn of Revelation, Sacred Literacy & Prostrating Near"
+        }
+      ]
+    },
+    {
+      "number": 97,
+      "nameArabic": "القدر",
+      "nameTransliterated": "Al-Qadr",
+      "nameEnglish": "The Night of Decree",
+      "versesCount": 5,
+      "revelationType": "Makki",
+      "orderOfRevelation": 25,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "The monumental descent of the Quran on the Night of Power (Laylat al-Qadr), a night of peace and angelic descent more virtuous than a thousand months.",
+      "sectionsPreview": [
+        {
+          "id": "97-1-5",
+          "verseRange": [
+            1,
+            5
+          ],
+          "title": "The Night of Power, Thousand Months & Angelic Descent"
+        }
+      ]
+    },
+    {
+      "number": 98,
+      "nameArabic": "البينة",
+      "nameTransliterated": "Al-Bayyinah",
+      "nameEnglish": "The Clear Evidence",
+      "versesCount": 8,
+      "revelationType": "Madani",
+      "orderOfRevelation": 100,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "The clear evidence brought by the Prophet reciting purified scriptures, the core imperative of sincere monotheistic worship and prayer, and the best of all creation (Khayr al-Bariyyah).",
+      "sectionsPreview": [
+        {
+          "id": "98-1-8",
+          "verseRange": [
+            1,
+            8
+          ],
+          "title": "The Clear Proof, Sincere Worship & The Best of Creation"
+        }
+      ]
+    },
+    {
+      "number": 99,
+      "nameArabic": "الزلزلة",
+      "nameTransliterated": "Az-Zalzalah",
+      "nameEnglish": "The Quake",
+      "versesCount": 8,
+      "revelationType": "Madani",
+      "orderOfRevelation": 93,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "The cataclysmic final earthquake of the earth, yielding its burdens, and the exacting scrutiny where an atom's weight of good or evil will be seen.",
+      "sectionsPreview": [
+        {
+          "id": "99-1-8",
+          "verseRange": [
+            1,
+            8
+          ],
+          "title": "The Final Earthquake & The Atom's Weight of Reckoning"
+        }
+      ]
+    },
+    {
+      "number": 100,
+      "nameArabic": "العاديات",
+      "nameTransliterated": "Al-'Adiyat",
+      "nameEnglish": "The War Horses",
+      "versesCount": 11,
+      "revelationType": "Makki",
+      "orderOfRevelation": 14,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "Dramatic oath by galloping steed charging at dawn and striking sparks of fire, exposing human ingratitude and passionate love for wealth, followed by the resurrection of the graves.",
+      "sectionsPreview": [
+        {
+          "id": "100-1-11",
+          "verseRange": [
+            1,
+            11
+          ],
+          "title": "The Charging Steeds, Human Ingratitude & Secrets of the Breast"
+        }
+      ]
+    },
+    {
+      "number": 101,
+      "nameArabic": "القارعة",
+      "nameTransliterated": "Al-Qari'ah",
+      "nameEnglish": "The Calamity",
+      "versesCount": 11,
+      "revelationType": "Makki",
+      "orderOfRevelation": 30,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "The terrifying Striking Calamity when people will be like scattered moths and mountains like carded wool, weighing deeds upon the divine balance.",
+      "sectionsPreview": [
+        {
+          "id": "101-1-11",
+          "verseRange": [
+            1,
+            11
+          ],
+          "title": "The Striking Calamity & The Weighed Scales of Action"
+        }
+      ]
+    },
+    {
+      "number": 102,
+      "nameArabic": "التكاثر",
+      "nameTransliterated": "At-Takathur",
+      "nameEnglish": "Vying in Increase",
+      "versesCount": 8,
+      "revelationType": "Makki",
+      "orderOfRevelation": 16,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "Severe condemnation of rivalry in worldly accumulation that diverts humanity until they visit the graves, and the ultimate interrogation concerning worldly pleasures.",
+      "sectionsPreview": [
+        {
+          "id": "102-1-8",
+          "verseRange": [
+            1,
+            8
+          ],
+          "title": "The Rivalry of Material Accumulation & The Interrogation of Pleasures"
+        }
+      ]
+    },
+    {
+      "number": 103,
+      "nameArabic": "العصر",
+      "nameTransliterated": "Al-'Asr",
+      "nameEnglish": "The Declining Day",
+      "versesCount": 3,
+      "revelationType": "Makki",
+      "orderOfRevelation": 13,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "A profound three-verse declaration: oath by the token of Time that all humanity is in loss, except those who believe, perform righteous deeds, and enjoin truth and patience.",
+      "sectionsPreview": [
+        {
+          "id": "103-1-3",
+          "verseRange": [
+            1,
+            3
+          ],
+          "title": "The Token of Time, Universal Loss & The Four Pillars of Salvation"
+        }
+      ]
+    },
+    {
+      "number": 104,
+      "nameArabic": "الهمزة",
+      "nameTransliterated": "Al-Humazah",
+      "nameEnglish": "The Scandalmonger",
+      "versesCount": 9,
+      "revelationType": "Makki",
+      "orderOfRevelation": 32,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "Woe to every backbiter and slanderer who hoards wealth imagining it confers immortality, cast into the Crushing Fire (Al-Hutamah) vaulted upon lofty columns.",
+      "sectionsPreview": [
+        {
+          "id": "104-1-9",
+          "verseRange": [
+            1,
+            9
+          ],
+          "title": "The Slanderer, Materialistic Delusion & The Crushing Fire"
+        }
+      ]
+    },
+    {
+      "number": 105,
+      "nameArabic": "الفيل",
+      "nameTransliterated": "Al-Fil",
+      "nameEnglish": "The Elephant",
+      "versesCount": 5,
+      "revelationType": "Makki",
+      "orderOfRevelation": 19,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "The miraculous defense of the Holy Ka'bah against the invading army of Abraha and his war elephants through flights of birds (Ababil) casting baked stones.",
+      "sectionsPreview": [
+        {
+          "id": "105-1-5",
+          "verseRange": [
+            1,
+            5
+          ],
+          "title": "The Miraculous Defense of the Ka'bah & The Birds in Flocks"
+        }
+      ]
+    },
+    {
+      "number": 106,
+      "nameArabic": "قريش",
+      "nameTransliterated": "Quraysh",
+      "nameEnglish": "The Tribe of Quraysh",
+      "versesCount": 4,
+      "revelationType": "Makki",
+      "orderOfRevelation": 29,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "Calling the Quraysh to gratitude for divine preservation of their seasonal winter and summer trade caravans, commanding worship of the Lord of this Sacred House.",
+      "sectionsPreview": [
+        {
+          "id": "106-1-4",
+          "verseRange": [
+            1,
+            4
+          ],
+          "title": "The Caravans of Security & Worship of the Lord of the House"
+        }
+      ]
+    },
+    {
+      "number": 107,
+      "nameArabic": "الماعون",
+      "nameTransliterated": "Al-Ma'un",
+      "nameEnglish": "Small Kindnesses",
+      "versesCount": 7,
+      "revelationType": "Makki",
+      "orderOfRevelation": 17,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "Exposing the false religionist: repulsing orphans, failing to urge feeding the poor, heedless prayer performed for ostentation, and withholding basic neighboring kindnesses.",
+      "sectionsPreview": [
+        {
+          "id": "107-1-7",
+          "verseRange": [
+            1,
+            7
+          ],
+          "title": "Social Callousness, Ostentatious Prayer & Small Kindnesses"
+        }
+      ]
+    },
+    {
+      "number": 108,
+      "nameArabic": "الكوثر",
+      "nameTransliterated": "Al-Kawthar",
+      "nameEnglish": "Abundance",
+      "versesCount": 3,
+      "revelationType": "Makki",
+      "orderOfRevelation": 15,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "Divine solace bestowing the Heavenly Pool of Abundance (Al-Kawthar) upon the Prophet, commanding sacrificial devotion, and declaring his hostile mocker cut off from posterity.",
+      "sectionsPreview": [
+        {
+          "id": "108-1-3",
+          "verseRange": [
+            1,
+            3
+          ],
+          "title": "The Celestial Fountain of Abundance & Sacrificial Devotion"
+        }
+      ]
+    },
+    {
+      "number": 109,
+      "nameArabic": "الكافرون",
+      "nameTransliterated": "Al-Kafirun",
+      "nameEnglish": "The Disbelievers",
+      "versesCount": 6,
+      "revelationType": "Makki",
+      "orderOfRevelation": 18,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "The decisive proclamation of theological uncompromising clarity: 'I worship not what you worship... Unto you is your moral path, and unto me is my religion.'",
+      "sectionsPreview": [
+        {
+          "id": "109-1-6",
+          "verseRange": [
+            1,
+            6
+          ],
+          "title": "The Decisive Monotheistic Dissociation & Theological Clarity"
+        }
+      ]
+    },
+    {
+      "number": 110,
+      "nameArabic": "النصر",
+      "nameTransliterated": "An-Nasr",
+      "nameEnglish": "Divine Support",
+      "versesCount": 3,
+      "revelationType": "Madani",
+      "orderOfRevelation": 114,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "The final complete surah revealed: the arrival of divine aid and victory, people entering the faith in multitudes, and concluding in praise and seeking forgiveness.",
+      "sectionsPreview": [
+        {
+          "id": "110-1-3",
+          "verseRange": [
+            1,
+            3
+          ],
+          "title": "The Final Victory of Faith, Universal Praise & Seeking Forgiveness"
+        }
+      ]
+    },
+    {
+      "number": 111,
+      "nameArabic": "المسد",
+      "nameTransliterated": "Al-Masad",
+      "nameEnglish": "Palm Fiber",
+      "versesCount": 5,
+      "revelationType": "Makki",
+      "orderOfRevelation": 6,
+      "juzStart": 30,
+      "juzEnd": 30,
+      "sectionsCount": 1,
+      "thematicSummary": "The historic ruin of Abu Lahab and his wife's active malice against the Prophet, warning of the futility of wealth and lineage against divine justice.",
+      "sectionsPreview": [
+        {
+          "id": "111-1-5",
+          "verseRange": [
+            1,
+            5
+          ],
+          "title": "The Ruin of Arrogance & The Accountability of Injustice"
+        }
       ]
     },
     {
@@ -583,7 +2327,14 @@
       "sectionsCount": 1,
       "thematicSummary": "Equal to one-third of the Quran; absolute definition of pure Tawhid: Allah is One, the Eternal Refuge, Unbegotten and Unbegetting.",
       "sectionsPreview": [
-        { "id": "112-1-4", "verseRange": [1, 4], "title": "Absolute Oneness, As-Samad & Incomparability" }
+        {
+          "id": "112-1-4",
+          "verseRange": [
+            1,
+            4
+          ],
+          "title": "Absolute Oneness, As-Samad & Incomparability"
+        }
       ]
     },
     {
@@ -599,7 +2350,14 @@
       "sectionsCount": 1,
       "thematicSummary": "Seeking refuge with the Lord of daybreak from external perils: the darkness of night, secret witchcraft blowers, and malignant envy.",
       "sectionsPreview": [
-        { "id": "113-1-5", "verseRange": [1, 5], "title": "Refuge from Creation Perils, Darkness, Sorcery & Envy" }
+        {
+          "id": "113-1-5",
+          "verseRange": [
+            1,
+            5
+          ],
+          "title": "Seeking Invincible Refuge in the Lord of the Splitting Dawn"
+        }
       ]
     },
     {
@@ -615,7 +2373,14 @@
       "sectionsCount": 1,
       "thematicSummary": "Seeking refuge with the Sovereign King and God of humanity from the stealthy internal whisperer (Al-Waswas Al-Khannas).",
       "sectionsPreview": [
-        { "id": "114-1-6", "verseRange": [1, 6], "title": "Refuge in the Sovereign Lord from Insidious Whisperers" }
+        {
+          "id": "114-1-6",
+          "verseRange": [
+            1,
+            6
+          ],
+          "title": "Refuge in the Sovereign Lord from Insidious Whisperers"
+        }
       ]
     }
   ]

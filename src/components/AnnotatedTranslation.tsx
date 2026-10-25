@@ -3,11 +3,13 @@ import { CuratedTerm } from '../types/quran';
 import { TermPopover } from './TermPopover';
 
 interface AnnotatedTranslationProps {
-  text: string;
+  text?: string;
   curatedTerms?: CuratedTerm[];
 }
 
 export const AnnotatedTranslation: React.FC<AnnotatedTranslationProps> = ({ text, curatedTerms = [] }) => {
+  if (!text) return null;
+
   // Matches words inside brackets, e.g. "[Muttaqin]" or "[Sirat al-Mustaqim]"
   const regex = /\[(.*?)\]/g;
   const parts: React.ReactNode[] = [];

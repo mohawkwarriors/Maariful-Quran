@@ -5,7 +5,11 @@
   "nameEnglish": "The Cow",
   "versesCount": 286,
   "revelationType": "Madani",
-  "juz": [1, 2, 3],
+  "juz": [
+    1,
+    2,
+    3
+  ],
   "bismillahPre": true,
   "introductoryTafseer": "Surah Al-Baqarah is the longest and most comprehensive chapter in the Holy Qur'an, revealed in Madinah over several years. Mufti Muhammad Shafi remarks in Ma'ariful Qur'an that this chapter establishes the complete legislative, social, moral, and economic architecture of the fledgling Muslim community. It opens with the classification of human nature into three archetypes: sincere believers (Muttaqin), obstinate deniers (Kuffar), and deceitful hypocrites (Munafiqin).",
   "historicalContext": {
@@ -15,7 +19,10 @@
     {
       "id": "2-1-5",
       "surahNumber": 2,
-      "verseRange": [1, 5],
+      "verseRange": [
+        1,
+        5
+      ],
       "title": "The Qualities of the Muttaqin (The God-Fearing)",
       "juzNumber": 1,
       "revelationType": "Madani",
@@ -28,7 +35,12 @@
           "arabicPhrase": "الم",
           "englishPhrase": "Alif, Lam, Meem.",
           "vocabulary": [
-            { "word": "الم", "root": "حروف مقطعة", "meaning": "Alif, Lam, Meem", "grammarNote": "Isolated letters whose inner divine secrets are entrusted to Allah alone." }
+            {
+              "word": "الم",
+              "root": "حروف مقطعة",
+              "meaning": "Alif, Lam, Meem",
+              "grammarNote": "Isolated letters whose inner divine secrets are entrusted to Allah alone."
+            }
           ]
         },
         {
@@ -37,12 +49,42 @@
           "arabicPhrase": "ذَٰلِكَ الْكِتَابُ لَا رَيْبَ ۛ فِيهِ ۛ هُدًى لِّلْمُتَّقِينَ",
           "englishPhrase": "That is the Book about which there is no doubt, a guidance for those conscious of Allah.",
           "vocabulary": [
-            { "word": "ذَٰلِكَ", "root": "ذ-و", "meaning": "That (lofty Book)", "grammarNote": "Distal demonstrative pronoun used for sublime glorification (li al-ta'dhim)." },
-            { "word": "الْكِتَابُ", "root": "ك-ت-ب", "meaning": "The Book", "grammarNote": "The ultimate written scripture, guarded upon the Preserved Tablet." },
-            { "word": "لَا رَيْبَ", "root": "ر-ي-ب", "meaning": "No doubt", "grammarNote": "Absolute negation of category (la li-nafy al-jins)." },
-            { "word": "فِيهِ", "root": "ف-ي", "meaning": "Therein", "grammarNote": "Prepositional phrase denoting certainty within the scripture." },
-            { "word": "هُدًى", "root": "ه-د-ي", "meaning": "A guidance", "grammarNote": "Masdar used rhetorically to signify embodiment of pure guidance." },
-            { "word": "لِّلْمُتَّقِينَ", "root": "و-ق-ي", "meaning": "For the God-conscious", "grammarNote": "Active participle derived from وقاية (Wiqayah): placing a shield against divine displeasure." }
+            {
+              "word": "ذَٰلِكَ",
+              "root": "ذ-و",
+              "meaning": "That (lofty Book)",
+              "grammarNote": "Distal demonstrative pronoun used for sublime glorification (li al-ta'dhim)."
+            },
+            {
+              "word": "الْكِتَابُ",
+              "root": "ك-ت-ب",
+              "meaning": "The Book",
+              "grammarNote": "The ultimate written scripture, guarded upon the Preserved Tablet."
+            },
+            {
+              "word": "لَا رَيْبَ",
+              "root": "ر-ي-ب",
+              "meaning": "No doubt",
+              "grammarNote": "Absolute negation of category (la li-nafy al-jins)."
+            },
+            {
+              "word": "فِيهِ",
+              "root": "ف-ي",
+              "meaning": "Therein",
+              "grammarNote": "Prepositional phrase denoting certainty within the scripture."
+            },
+            {
+              "word": "هُدًى",
+              "root": "ه-د-ي",
+              "meaning": "A guidance",
+              "grammarNote": "Masdar used rhetorically to signify embodiment of pure guidance."
+            },
+            {
+              "word": "لِّلْمُتَّقِينَ",
+              "root": "و-ق-ي",
+              "meaning": "For the God-conscious",
+              "grammarNote": "Active participle derived from وقاية (Wiqayah): placing a shield against divine displeasure."
+            }
           ]
         },
         {
@@ -51,14 +93,54 @@
           "arabicPhrase": "الَّذِينَ يُؤْمِنُونَ بِالْغَيْبِ وَيُقِيمُونَ الصَّلَاةَ وَمِمَّا رَزَقْنَاهُمْ يُنفِقُونَ",
           "englishPhrase": "Who believe in the Unseen, establish prayer, and spend out of what We have provided them.",
           "vocabulary": [
-            { "word": "الَّذِينَ", "root": "ل-ذ-ي", "meaning": "Those who", "grammarNote": "Relative pronoun introducing the essential traits of true believers." },
-            { "word": "يُؤْمِنُونَ", "root": "ا-م-ن", "meaning": "Believe", "grammarNote": "Derived from إيمان (Iman): unhesitating heart-conviction coupled with oral confession." },
-            { "word": "بِالْغَيْبِ", "root": "غ-ي-ب", "meaning": "In the Unseen", "grammarNote": "Derived from غيب (Ghayb): all truths beyond sensory perception including Allah, angels, and the Hereafter." },
-            { "word": "وَيُقِيمُونَ", "root": "ق-و-م", "meaning": "And establish", "grammarNote": "Derived from إقامة (Iqamah): performing prayer with inner devotion, timeliness, and outward perfection." },
-            { "word": "الصَّلَاةَ", "root": "ص-ل-و", "meaning": "The prayer", "grammarNote": "Derived from صلاة (Salah): supplication, the foremost pillar of servitude connecting the servant to his Lord." },
-            { "word": "وَمِمَّا", "root": "م-ن", "meaning": "And from what", "grammarNote": "Expressing that all provisions originate from Allah's generosity." },
-            { "word": "رَزَقْنَاهُمْ", "root": "ر-ز-ق", "meaning": "We provided them", "grammarNote": "Divine provision encompassing wealth, health, and intellect." },
-            { "word": "يُنفِقُونَ", "root": "ن-ف-ق", "meaning": "They spend", "grammarNote": "Derived from إنفاق (Infaq): spending wealth, encompassing both obligatory زكاة (Zakah) and voluntary charity (Sadaqah)." }
+            {
+              "word": "الَّذِينَ",
+              "root": "ل-ذ-ي",
+              "meaning": "Those who",
+              "grammarNote": "Relative pronoun introducing the essential traits of true believers."
+            },
+            {
+              "word": "يُؤْمِنُونَ",
+              "root": "ا-م-ن",
+              "meaning": "Believe",
+              "grammarNote": "Derived from إيمان (Iman): unhesitating heart-conviction coupled with oral confession."
+            },
+            {
+              "word": "بِالْغَيْبِ",
+              "root": "غ-ي-ب",
+              "meaning": "In the Unseen",
+              "grammarNote": "Derived from غيب (Ghayb): all truths beyond sensory perception including Allah, angels, and the Hereafter."
+            },
+            {
+              "word": "وَيُقِيمُونَ",
+              "root": "ق-و-م",
+              "meaning": "And establish",
+              "grammarNote": "Derived from إقامة (Iqamah): performing prayer with inner devotion, timeliness, and outward perfection."
+            },
+            {
+              "word": "الصَّلَاةَ",
+              "root": "ص-ل-و",
+              "meaning": "The prayer",
+              "grammarNote": "Derived from صلاة (Salah): supplication, the foremost pillar of servitude connecting the servant to his Lord."
+            },
+            {
+              "word": "وَمِمَّا",
+              "root": "م-ن",
+              "meaning": "And from what",
+              "grammarNote": "Expressing that all provisions originate from Allah's generosity."
+            },
+            {
+              "word": "رَزَقْنَاهُمْ",
+              "root": "ر-ز-ق",
+              "meaning": "We provided them",
+              "grammarNote": "Divine provision encompassing wealth, health, and intellect."
+            },
+            {
+              "word": "يُنفِقُونَ",
+              "root": "ن-ف-ق",
+              "meaning": "They spend",
+              "grammarNote": "Derived from إنفاق (Infaq): spending wealth, encompassing both obligatory زكاة (Zakah) and voluntary charity (Sadaqah)."
+            }
           ]
         },
         {
@@ -67,14 +149,54 @@
           "arabicPhrase": "وَالَّذِينَ يُؤْمِنُونَ بِمَا أُنزِلَ إِلَيْكَ وَمَا أُنزِلَ مِن قَبْلِكَ وَبِالْآخِرَةِ هُمْ يُوقِنُونَ",
           "englishPhrase": "And who believe in what has been sent down to you and what was sent down before you, and in the Hereafter they possess unshakable certainty.",
           "vocabulary": [
-            { "word": "وَالَّذِينَ", "root": "ل-ذ-ي", "meaning": "And who", "grammarNote": "Connecting the subsequent attributes of the righteous believers." },
-            { "word": "يُؤْمِنُونَ", "root": "ا-م-ن", "meaning": "Believe", "grammarNote": "Wholeheartedly affirming divine revelations without discrimination." },
-            { "word": "بِمَا أُنزِلَ", "root": "ن-ز-ل", "meaning": "In what was revealed", "grammarNote": "Passive voice highlighting the divine descent of scripture." },
-            { "word": "إِلَيْكَ", "root": "ا-ل-ي", "meaning": "To you (O Prophet)", "grammarNote": "Addressing the Messenger of Allah Muhammad (peace be upon him)." },
-            { "word": "وَمَا أُنزِلَ", "root": "ن-ز-ل", "meaning": "And what was revealed", "grammarNote": "Referring to previous scriptures: Tawrah, Injil, Zabur, and scrolls." },
-            { "word": "مِن قَبْلِكَ", "root": "ق-ب-ل", "meaning": "Before you", "grammarNote": "To the ancient prophets across the ages." },
-            { "word": "وَبِالْآخِرَةِ", "root": "ا-خ-ر", "meaning": "And in Hereafter", "grammarNote": "The ultimate Day of Resurrection, Reckoning, and Retribution." },
-            { "word": "هُمْ يُوقِنُونَ", "root": "ي-ق-ن", "meaning": "They have certainty", "grammarNote": "Yaqin denotes unshakable certainty untainted by conjecture." }
+            {
+              "word": "وَالَّذِينَ",
+              "root": "ل-ذ-ي",
+              "meaning": "And who",
+              "grammarNote": "Connecting the subsequent attributes of the righteous believers."
+            },
+            {
+              "word": "يُؤْمِنُونَ",
+              "root": "ا-م-ن",
+              "meaning": "Believe",
+              "grammarNote": "Wholeheartedly affirming divine revelations without discrimination."
+            },
+            {
+              "word": "بِمَا أُنزِلَ",
+              "root": "ن-ز-ل",
+              "meaning": "In what was revealed",
+              "grammarNote": "Passive voice highlighting the divine descent of scripture."
+            },
+            {
+              "word": "إِلَيْكَ",
+              "root": "ا-ل-ي",
+              "meaning": "To you (O Prophet)",
+              "grammarNote": "Addressing the Messenger of Allah Muhammad (peace be upon him)."
+            },
+            {
+              "word": "وَمَا أُنزِلَ",
+              "root": "ن-ز-ل",
+              "meaning": "And what was revealed",
+              "grammarNote": "Referring to previous scriptures: Tawrah, Injil, Zabur, and scrolls."
+            },
+            {
+              "word": "مِن قَبْلِكَ",
+              "root": "ق-ب-ل",
+              "meaning": "Before you",
+              "grammarNote": "To the ancient prophets across the ages."
+            },
+            {
+              "word": "وَبِالْآخِرَةِ",
+              "root": "ا-خ-ر",
+              "meaning": "And in Hereafter",
+              "grammarNote": "The ultimate Day of Resurrection, Reckoning, and Retribution."
+            },
+            {
+              "word": "هُمْ يُوقِنُونَ",
+              "root": "ي-ق-ن",
+              "meaning": "They have certainty",
+              "grammarNote": "Yaqin denotes unshakable certainty untainted by conjecture."
+            }
           ]
         },
         {
@@ -83,12 +205,42 @@
           "arabicPhrase": "أُولَٰئِكَ عَلَىٰ هُدًى مِّن رَّبِّهِمْ ۖ وَأُولَٰئِكَ هُمُ الْمُفْلِحُونَ",
           "englishPhrase": "Those are firmly guided by their Lord, and they are the triumphant.",
           "vocabulary": [
-            { "word": "أُولَٰئِكَ", "root": "ا-ل-ي", "meaning": "Those are", "grammarNote": "Demonstrative pronoun honoring their lofty spiritual rank." },
-            { "word": "عَلَىٰ هُدًى", "root": "ه-د-ي", "meaning": "Upon guidance", "grammarNote": "The preposition 'ala expresses being firmly mounted upon truth." },
-            { "word": "مِّن رَّبِّهِمْ", "root": "ر-ب-ب", "meaning": "From their Lord", "grammarNote": "Bestowed directly by the Sustainer and Nourisher." },
-            { "word": "وَأُولَٰئِكَ", "root": "ا-ل-ي", "meaning": "And those", "grammarNote": "Reiteration emphasizing their exclusive state." },
-            { "word": "هُمُ", "root": "ه-م", "meaning": "They are", "grammarNote": "Pronoun of exclusivity (Damir al-Fasl)." },
-            { "word": "الْمُفْلِحُونَ", "root": "ف-ل-ح", "meaning": "The successful ones", "grammarNote": "Attaining every desired eternal good and saved from all peril." }
+            {
+              "word": "أُولَٰئِكَ",
+              "root": "ا-ل-ي",
+              "meaning": "Those are",
+              "grammarNote": "Demonstrative pronoun honoring their lofty spiritual rank."
+            },
+            {
+              "word": "عَلَىٰ هُدًى",
+              "root": "ه-د-ي",
+              "meaning": "Upon guidance",
+              "grammarNote": "The preposition 'ala expresses being firmly mounted upon truth."
+            },
+            {
+              "word": "مِّن رَّبِّهِمْ",
+              "root": "ر-ب-ب",
+              "meaning": "From their Lord",
+              "grammarNote": "Bestowed directly by the Sustainer and Nourisher."
+            },
+            {
+              "word": "وَأُولَٰئِكَ",
+              "root": "ا-ل-ي",
+              "meaning": "And those",
+              "grammarNote": "Reiteration emphasizing their exclusive state."
+            },
+            {
+              "word": "هُمُ",
+              "root": "ه-م",
+              "meaning": "They are",
+              "grammarNote": "Pronoun of exclusivity (Damir al-Fasl)."
+            },
+            {
+              "word": "الْمُفْلِحُونَ",
+              "root": "ف-ل-ح",
+              "meaning": "The successful ones",
+              "grammarNote": "Attaining every desired eternal good and saved from all peril."
+            }
           ]
         }
       ],
@@ -132,7 +284,10 @@
     {
       "id": "2-6-7",
       "surahNumber": 2,
-      "verseRange": [6, 7],
+      "verseRange": [
+        6,
+        7
+      ],
       "title": "The State of Obstinate Disbelief & The Sealed Hearts",
       "juzNumber": 1,
       "revelationType": "Madani",
@@ -145,7 +300,12 @@
           "arabicPhrase": "إِنَّ الَّذِينَ كَفَرُوا سَوَاءٌ عَلَيْهِمْ أَأَنذَرْتَهُمْ أَمْ لَمْ تُنذِرْهُمْ",
           "englishPhrase": "As for those who persist in disbelief, it is equal to them whether you admonish them or not,",
           "vocabulary": [
-            { "word": "كَفَرُوا", "root": "ك-ف-ر", "meaning": "They covered / rejected the truth", "grammarNote": "Derived from كفر (Kufr): literally to bury or conceal, signifying actively burying the innate light of فطرة (Fitrah)." }
+            {
+              "word": "كَفَرُوا",
+              "root": "ك-ف-ر",
+              "meaning": "They covered / rejected the truth",
+              "grammarNote": "Derived from كفر (Kufr): literally to bury or conceal, signifying actively burying the innate light of فطرة (Fitrah)."
+            }
           ]
         },
         {
@@ -154,8 +314,18 @@
           "arabicPhrase": "خَتَمَ اللَّهُ عَلَىٰ قُلُوبِهِمْ وَعَلَىٰ سَمْعِهِمْ",
           "englishPhrase": "Allah has placed a seal over their hearts and their ears,",
           "vocabulary": [
-            { "word": "خَتَمَ", "root": "خ-ت-م", "meaning": "He sealed / stamped closed", "grammarNote": "Derived from ختم (Khatm): stamping a wax seal closed, metaphor for spiritual desensitization resulting from repeated willful rebellion." },
-            { "word": "غِشَاوَةٌ", "root": "غ-ش-و", "meaning": "A covering / cataract veil", "grammarNote": "Derived from غشاوة (Ghishawah): a dense cataract veil, representing spiritual blindness preventing moral discernment." }
+            {
+              "word": "خَتَمَ",
+              "root": "خ-ت-م",
+              "meaning": "He sealed / stamped closed",
+              "grammarNote": "Derived from ختم (Khatm): stamping a wax seal closed, metaphor for spiritual desensitization resulting from repeated willful rebellion."
+            },
+            {
+              "word": "غِشَاوَةٌ",
+              "root": "غ-ش-و",
+              "meaning": "A covering / cataract veil",
+              "grammarNote": "Derived from غشاوة (Ghishawah): a dense cataract veil, representing spiritual blindness preventing moral discernment."
+            }
           ]
         }
       ],
@@ -222,7 +392,10 @@
     {
       "id": "2-8-20",
       "surahNumber": 2,
-      "verseRange": [8, 20],
+      "verseRange": [
+        8,
+        20
+      ],
       "title": "The Traits and Psychological Traps of the Hypocrites",
       "juzNumber": 1,
       "revelationType": "Madani",
@@ -235,7 +408,12 @@
           "arabicPhrase": "وَمِنَ النَّاسِ مَن يَقُولُ آمَنَّا بِاللَّهِ وَبِالْيَوْمِ الْآخِرِ وَمَا هُم بِمُؤْمِنِينَ",
           "englishPhrase": "And among people are those who say, 'We have believed in Allah and the Last Day', yet they are not believers.",
           "vocabulary": [
-            { "word": "الْمُنَافِقُونَ", "root": "ن-ف-ق", "meaning": "The Hypocrites", "grammarNote": "Derived from نفق (Nafaq): a subterranean burrow with two exits, symbolizing inward duplicity." }
+            {
+              "word": "الْمُنَافِقُونَ",
+              "root": "ن-ف-ق",
+              "meaning": "The Hypocrites",
+              "grammarNote": "Derived from نفق (Nafaq): a subterranean burrow with two exits, symbolizing inward duplicity."
+            }
           ]
         },
         {
@@ -244,7 +422,12 @@
           "arabicPhrase": "فِي قُلُوبِهِم مَّرَضٌ فَزَادَهُمُ اللَّهُ مَرَضًا",
           "englishPhrase": "In their hearts is a sickness, so Allah increased their sickness.",
           "vocabulary": [
-            { "word": "مَّرَضٌ", "root": "م-ر-ض", "meaning": "Spiritual ailment / malice", "grammarNote": "Derived from مرض (Marad): chronic illness, referring to doubts, jealousy, and duplicity festering in the psyche." }
+            {
+              "word": "مَّرَضٌ",
+              "root": "م-ر-ض",
+              "meaning": "Spiritual ailment / malice",
+              "grammarNote": "Derived from مرض (Marad): chronic illness, referring to doubts, jealousy, and duplicity festering in the psyche."
+            }
           ]
         }
       ],
@@ -291,7 +474,10 @@
     {
       "id": "2-21-29",
       "surahNumber": 2,
-      "verseRange": [21, 29],
+      "verseRange": [
+        21,
+        29
+      ],
       "title": "Universal Call to Monotheism & Cosmic Signs of Creation",
       "juzNumber": 1,
       "revelationType": "Madani",
@@ -304,7 +490,12 @@
           "arabicPhrase": "يَا أَيُّهَا النَّاسُ اعْبُدُوا رَبَّكُمُ",
           "englishPhrase": "O mankind, worship your Lord,",
           "vocabulary": [
-            { "word": "النَّاسُ", "root": "ن-و-س", "meaning": "Humanity universally", "grammarNote": "First universal command in the Quranic arrangement, directed to all humans." }
+            {
+              "word": "النَّاسُ",
+              "root": "ن-و-س",
+              "meaning": "Humanity universally",
+              "grammarNote": "First universal command in the Quranic arrangement, directed to all humans."
+            }
           ]
         },
         {
@@ -313,7 +504,12 @@
           "arabicPhrase": "فَلَا تَجْعَلُوا لِلَّهِ أَندَادًا وَأَنتُمْ تَعْلَمُونَ",
           "englishPhrase": "So do not set up equals or rivals with Allah while you know full well.",
           "vocabulary": [
-            { "word": "أَندَادًا", "root": "ن-د-د", "meaning": "Peers, rivals, equals", "grammarNote": "Plural of Nidd: someone claimed to possess independent divine authority." }
+            {
+              "word": "أَندَادًا",
+              "root": "ن-د-د",
+              "meaning": "Peers, rivals, equals",
+              "grammarNote": "Plural of Nidd: someone claimed to possess independent divine authority."
+            }
           ]
         }
       ],
@@ -336,9 +532,163 @@
       ]
     },
     {
+      "id": "2-30-39",
+      "surahNumber": 2,
+      "verseRange": [
+        30,
+        39
+      ],
+      "title": "The Primordial Covenant & Appointment of Adam as Vicegerent",
+      "juzNumber": 1,
+      "revelationType": "Madani",
+      "arabicText": "وَإِذْ قَالَ رَبُّكَ لِلْمَلَائِكَةِ إِنِّي جَاعِلٌ فِي الْأَرْضِ خَلِيفَةً ۖ قَالُوا أَتَجْعَلُ فِيهَا مَن يُفْسِدُ فِيهَا وَيَسْفِكُ الدِّمَاءَ وَنَحْنُ نُسَبِّحُ بِحَمْدِكَ وَنُقَدِّسُ لَكَ ۖ قَالَ إِنِّي أَعْلَمُ مَا لَا تَعْلَمُونَ ۝ وَعَلَّمَ آدَمَ الْأَسْمَاءَ كُلَّهَا ثُمَّ عَرَضَهُمْ عَلَى الْمَلَائِكَةِ فَقَالَ أَنبِئُونِي بِأَسْمَاءِ هَٰؤُلَاءِ إِن كُنتُمْ صَادِقِينَ ۝ قَالُوا سُبْحَانَكَ لَا عِلْمَ لَنَا إِلَّا مَا عَلَّمْتَنَا ۖ إِنَّكَ أَنتَ الْعَلِيمُ الْحَكِيمُ ۝ قَالَ يَا آدَمُ أَنبِئْهُم بِأَسْمَائِهِمْ ۖ فَلَمَّا أَنبَأَهُم بِأَسْمَائِهِمْ قَالَ أَلَمْ أَقُل لَّكُمْ إِنِّي أَعْلَمُ غَيْبَ السَّمَاوَاتِ وَالْأَرْضِ وَأَعْلَمُ مَا تُبْدُونَ وَمَا كُنتُمْ تَكْتُمُونَ ۝ وَإِذْ قُلْنَا لِلْمَلَائِكَةِ اسْجُدُوا لِآدَمَ فَسَجَدُوا إِلَّا إِبْلِيسَ أَبَىٰ وَاسْتَكْبَرَ وَكَانَ مِنَ الْكَافِرِينَ ۝",
+      "translation": "And remember when your Lord said to the angels: 'Indeed, I will place upon the earth a [Khalifah] (vicegerent).' They said: 'Will You place therein those who spread [Fasad] (corruption) and shed blood, while we celebrate Your praise and sanctify You?' He said: 'Indeed, I know that which you do not know.' ۝ And He taught Adam the names of all things, then He displayed them to the angels and said: 'Inform Me of the names of these, if you are truthful.' ۝ They said: 'Glory be to You! We have no knowledge except what You have taught us. Indeed, You are the All-Knowing, the All-Wise.' ۝ He said: 'O Adam, inform them of their names.' And when he had informed them of their names, He said: 'Did I not say to you that I know the [Ghayb] (unseen realities) of the heavens and the earth, and I know what you reveal and what you have concealed?' ۝ And remember when We said to the angels: 'Prostrate before Adam'; and they prostrated, except [Iblis]. He refused, waxed arrogant, and was of the disbelievers. ۝",
+      "phraseCards": [
+        {
+          "id": "2-card-30-1",
+          "verseNumber": 30,
+          "arabicPhrase": "إِنِّي جَاعِلٌ فِي الْأَرْضِ خَلِيفَةً",
+          "englishPhrase": "Indeed, I am making upon the earth a vicegerent",
+          "vocabulary": [
+            {
+              "word": "إِنِّي",
+              "root": "حرف توكيد",
+              "meaning": "Indeed I am",
+              "grammarNote": "Inna + pronoun"
+            },
+            {
+              "word": "جَاعِلٌ",
+              "root": "ج - ع - ل",
+              "meaning": "One who appoints / establishes",
+              "grammarNote": "Active participle"
+            },
+            {
+              "word": "فِي الْأَرْضِ",
+              "root": "أ - ر - ض",
+              "meaning": "Upon the earth",
+              "grammarNote": "Preposition + Noun"
+            },
+            {
+              "word": "خَلِيفَةً",
+              "root": "خ - ل - ف",
+              "meaning": "A vicegerent / deputy",
+              "grammarNote": "Noun of rank"
+            }
+          ]
+        },
+        {
+          "id": "2-card-31-1",
+          "verseNumber": 31,
+          "arabicPhrase": "وَعَلَّمَ آدَمَ الْأَسْمَاءَ كُلَّهَا",
+          "englishPhrase": "And He taught Adam all the names",
+          "vocabulary": [
+            {
+              "word": "وَعَلَّمَ",
+              "root": "ع - ل - م",
+              "meaning": "And He taught",
+              "grammarNote": "Form II intensive verb"
+            },
+            {
+              "word": "آدَمَ",
+              "root": "أ - د - م",
+              "meaning": "Adam (human father)",
+              "grammarNote": "Proper noun"
+            },
+            {
+              "word": "الْأَسْمَاءَ",
+              "root": "س - م - و",
+              "meaning": "The names / properties",
+              "grammarNote": "Plural noun"
+            },
+            {
+              "word": "كُلَّهَا",
+              "root": "ك - ل - ل",
+              "meaning": "All of them completely",
+              "grammarNote": "Emphasis noun"
+            }
+          ]
+        },
+        {
+          "id": "2-card-34-1",
+          "verseNumber": 34,
+          "arabicPhrase": "اسْجُدُوا لِآدَمَ فَسَجَدُوا إِلَّا إِبْلِيسَ",
+          "englishPhrase": "Prostrate to Adam; so they prostrated except Iblis",
+          "vocabulary": [
+            {
+              "word": "اسْجُدُوا",
+              "root": "س - ج - د",
+              "meaning": "Prostrate in reverence",
+              "grammarNote": "Imperative verb plural"
+            },
+            {
+              "word": "فَسَجَدُوا",
+              "root": "س - ج - د",
+              "meaning": "So they all prostrated",
+              "grammarNote": "Past tense verb plural"
+            },
+            {
+              "word": "إِلَّا",
+              "root": "حرف استثناء",
+              "meaning": "Except",
+              "grammarNote": "Particle of exception"
+            },
+            {
+              "word": "إِبْلِيسَ",
+              "root": "ب - ل - س",
+              "meaning": "Iblis (the Devil)",
+              "grammarNote": "Proper noun"
+            }
+          ]
+        }
+      ],
+      "commentary": "In Ma'ariful Qur'an, Mufti Muhammad Shafi provides a masterclass on the theological meaning of 'Khilafah' (Vicegerency). Man was not created merely as another biological creature, but as the representative of divine justice and moral agency on earth. The query of the angels was not motivated by envy or objection, but by innocent perplexity: knowing that earthly creatures endowed with desire and anger tend toward corruption and bloodshed, they sought to understand the divine wisdom in this appointment.\n\nAllah demonstrated human superiority over the angels not through sheer ritual devotion (in which angels are ceaselessly absorbed), but through 'Ilm al-Asma''—the intellectual capacity to conceptualize, perceive the inner properties of created realities, and deduce knowledge. When Iblis refused the divine command to prostrate, his rebellion stemmed from 'Kibr' (arrogance) and false rational analogy ('Qiyas Fasid'), claiming superiority based on his fiery origin versus Adam's clay origin. Mufti Shafi notes that intellectual arrogance is far more dangerous than carnal weakness, as it seals the heart against repentance.",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Jurisprudential Rulings: The Types of Prostration (Sajdah)",
+          "content": "Mufti Shafi clarifies the strict Hanafi consensus: The Sajdah commanded to Adam was 'Sajdat at-Tahiyyah' (prostration of honor and greeting), which was permissible in earlier dispensations but definitively abrogated (Mansukh) in the Shariah of Muhammad (ﷺ). In Islamic law, any physical prostration directed toward anyone other than Allah is strictly prohibited (Haram); if performed with the intention of divine worship, it constitutes absolute disbelief (Kufr)."
+        },
+        {
+          "type": "insights",
+          "title": "The Nature of Knowledge ('Ilm al-Asma') as Human Distinction",
+          "content": "Ma'ariful Qur'an highlights that human beings were bestowed with an expansive cognitive intellect capable of understanding abstract names, scientific laws, linguistic grammar, and metaphysical realities. This unique divine gift of comprehensive knowledge is the foundation of moral responsibility (Taklif) and moral accountability on the Day of Judgment."
+        }
+      ],
+      "curatedTerms": [
+        {
+          "term": "Khalifah",
+          "arabicWord": "خَلِيفَة",
+          "arabicRoot": "خ - ل - ف (Kh-L-F)",
+          "literalMeaning": "One who succeeds, represents, or executes authority on behalf of a sovereign.",
+          "relatedWords": [
+            "Khilafah (Vicegerency)",
+            "Khulafa (Successors)",
+            "Istikhlaf (Appointment)"
+          ],
+          "theologicalContext": "Humanity's sacred role as moral stewards on earth, tasked with establishing justice, upholding divine covenants, and cultivating creation.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 1, Surah Al-Baqarah"
+        },
+        {
+          "term": "Iblis",
+          "arabicWord": "إِبْلِيس",
+          "arabicRoot": "ب - ل - س (B-L-S)",
+          "literalMeaning": "One who has despaired of all good; totally extinguished of hope.",
+          "relatedWords": [
+            "Iblas (Despondency)",
+            "Mublisun (Those confounded in grief)"
+          ],
+          "theologicalContext": "The chief adversary of humanity who was originally among the exalted ranks of the Jinn, cast down due to stubborn arrogance and pride.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 1, Surah Al-Baqarah"
+        }
+      ]
+    },
+    {
       "id": "2-183-187",
       "surahNumber": 2,
-      "verseRange": [183, 187],
+      "verseRange": [
+        183,
+        187
+      ],
       "title": "Injunctions on Fasting (Siyam) & The Sanctity of Ramadan",
       "juzNumber": 2,
       "revelationType": "Madani",
@@ -351,7 +701,12 @@
           "arabicPhrase": "كُتِبَ عَلَيْكُمُ الصِّيَامُ كَمَا كُتِبَ عَلَى الَّذِينَ مِن قَبْلِكُمْ",
           "englishPhrase": "Fasting is ordained for you as it was ordained for those before you,",
           "vocabulary": [
-            { "word": "الصِّيَامُ", "root": "ص-و-م", "meaning": "To abstain / restrain", "grammarNote": "Linguistically to refrain; in Shariah, abstaining from food, drink, and sexual intimacy from dawn to sunset with intention." }
+            {
+              "word": "الصِّيَامُ",
+              "root": "ص-و-م",
+              "meaning": "To abstain / restrain",
+              "grammarNote": "Linguistically to refrain; in Shariah, abstaining from food, drink, and sexual intimacy from dawn to sunset with intention."
+            }
           ]
         },
         {
@@ -360,7 +715,12 @@
           "arabicPhrase": "شَهْرُ رَمَضَانَ الَّذِي أُنزِلَ فِيهِ الْقُرْآنُ",
           "englishPhrase": "The month of Ramadan in which the Qur'an was sent down,",
           "vocabulary": [
-            { "word": "رَمَضَانَ", "root": "ر-م-ض", "meaning": "Scorching heat / cleansing fire", "grammarNote": "So named because it burns away sins through worship and hunger." }
+            {
+              "word": "رَمَضَانَ",
+              "root": "ر-م-ض",
+              "meaning": "Scorching heat / cleansing fire",
+              "grammarNote": "So named because it burns away sins through worship and hunger."
+            }
           ]
         }
       ],
@@ -383,9 +743,150 @@
       ]
     },
     {
+      "id": "2-255-257",
+      "surahNumber": 2,
+      "verseRange": [
+        255,
+        257
+      ],
+      "title": "Ayat al-Kursi (The Throne Verse) & Freedom of Conscience",
+      "juzNumber": 3,
+      "revelationType": "Madani",
+      "arabicText": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ ۝ لَا إِكْرَاهَ فِي الدِّينِ ۖ قَد تَّبَيَّنَ الرُّشْدُ مِنَ الْغَيِّ ۚ فَمَن يَكْفُرْ بِالطَّاغُوتِ وَيُؤْمِن بِاللَّهِ فَقَدِ اسْتَمْسَكَ بِالْعُرْوَةِ الْوُثْقَىٰ لَا انفِصَامَ لَهَا ۗ وَاللَّهُ سَمِيعٌ عَلِيمٌ ۝ اللَّهُ وَلِيُّ الَّذِينَ آمَنُوا يُخْرِجُهُم مِّنَ الظُّلُمَاتِ إِلَى النُّورِ ۖ وَالَّذِينَ كَفَرُوا أَوْلِيَاؤُهُمُ الطَّاغُوتُ يُخْرِجُونَهُم مِّنَ النُّورِ إِلَى الظُّلُمَاتِ ۗ أُولَٰئِكَ أَصْحَابُ النَّارِ ۖ هُمْ فِيهَا خَالِدُونَ ۝",
+      "translation": "Allah! There is no deity except Him, the [Hayy] (Ever-Living), the [Qayyum] (Self-Subsisting Sustainer of all existence). Neither drowsiness overtakes Him nor sleep. To Him belongs whatever is in the heavens and whatever is on the earth. Who is it that can intercede with Him except by His permission? He knows what is before them and what is behind them, and they encompass not a thing of His knowledge except for what He wills. His [Kursi] (Throne) encompasses the heavens and the earth, and their preservation tires Him not. And He is the Most High, the Supreme. ۝ There is no compulsion in religion. Verily, righteousness has stood out distinctly from error. Whoever disbelieves in [Taghut] and believes in Allah has grasped the firmest handhold that never breaks. And Allah is Hearing and Knowing. ۝ Allah is the Guardian of those who believe. He brings them out from darknesses into the light. And those who disbelieve, their guardians are [Taghut]; they take them out of the light into darknesses. Those are the companions of the Fire; they will abide eternally therein. ۝",
+      "phraseCards": [
+        {
+          "id": "2-card-255-1",
+          "verseNumber": 255,
+          "arabicPhrase": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ",
+          "englishPhrase": "Allah! There is no deity except Him, the Ever-Living, the Sustainer",
+          "vocabulary": [
+            {
+              "word": "اللَّهُ",
+              "root": "أ - ل - ه",
+              "meaning": "Allah, the Singular God",
+              "grammarNote": "Proper name of Divinity"
+            },
+            {
+              "word": "الْحَيُّ",
+              "root": "ح - ي - ي",
+              "meaning": "The Ever-Living whose life has no beginning or end",
+              "grammarNote": "Divine attribute"
+            },
+            {
+              "word": "الْقَيُّومُ",
+              "root": "ق - و - م",
+              "meaning": "The Self-Subsisting by whom all things subsist",
+              "grammarNote": "Intensive Form Fa'yool"
+            }
+          ]
+        },
+        {
+          "id": "2-card-255-2",
+          "verseNumber": 255,
+          "arabicPhrase": "وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ",
+          "englishPhrase": "His Throne encompasses the heavens and the earth",
+          "vocabulary": [
+            {
+              "word": "وَسِعَ",
+              "root": "و - س - ع",
+              "meaning": "Vastly embraced and contained",
+              "grammarNote": "Past tense verb"
+            },
+            {
+              "word": "كُرْسِيُّهُ",
+              "root": "ك - ر - س",
+              "meaning": "His Footstool / Seat of Sovereignty",
+              "grammarNote": "Noun + Possessive suffix"
+            },
+            {
+              "word": "السَّمَاوَاتِ",
+              "root": "س - م - و",
+              "meaning": "The heavens and skies",
+              "grammarNote": "Plural accusative noun"
+            },
+            {
+              "word": "وَالْأَرْضَ",
+              "root": "أ - ر - ض",
+              "meaning": "And the earth",
+              "grammarNote": "Conjunction + Noun"
+            }
+          ]
+        },
+        {
+          "id": "2-card-256-1",
+          "verseNumber": 256,
+          "arabicPhrase": "لَا إِكْرَاهَ فِي الدِّينِ",
+          "englishPhrase": "There is no compulsion in religion",
+          "vocabulary": [
+            {
+              "word": "لَا",
+              "root": "لا النافية للجنس",
+              "meaning": "Absolute negation (No)",
+              "grammarNote": "Categorical negative particle"
+            },
+            {
+              "word": "إِكْرَاهَ",
+              "root": "ك - ر - ه",
+              "meaning": "Compulsion / coercion / forcing",
+              "grammarNote": "Verbal noun (Masdar)"
+            },
+            {
+              "word": "فِي الدِّينِ",
+              "root": "د - ي - ن",
+              "meaning": "In faith, religion and conviction",
+              "grammarNote": "Preposition + Noun"
+            }
+          ]
+        }
+      ],
+      "commentary": "Ayat al-Kursi is universally acknowledged in prophetic hadith as the greatest single verse of the Holy Qur'an (Ayat al-A'zam). In Ma'ariful Qur'an, Mufti Muhammad Shafi explains that this single verse contains ten distinct, interconnected sentences of pure theological monotheism (Tawhid), establishing Allah's absolute self-sufficiency, eternal life, cosmic sovereignty, effortless governance, and transcendent majesty.\n\nThe verse pairs 'Al-Hayy' (The Ever-Living) and 'Al-Qayyum' (The All-Sustaining), which classical scholars identify as Al-Ism al-A'zam (The Supreme Name). The majesty of this verse is immediately followed by the golden constitutional principle of Islam: 'La ikraha fid-Deen' (There is no compulsion in religion). Faith is a conviction of the heart; compelling someone by physical force produces nothing but hollow hypocrisy (Nifaq), which Islam completely rejects.",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Constitutional Rulings on Freedom of Faith & Prohibiting Forced Conversions",
+          "content": "Mufti Muhammad Shafi explains the classical Hanafi interpretation of 'La ikraha fid-Deen': It is strictly impermissible in Islamic jurisprudence to force non-Muslims to accept Islam through physical coercion, economic intimidation, or legal penalty. Ibn Abbas narrates that when certain Ansar parents wished to force their children to convert to Islam, this verse was revealed to prohibit any such compulsion."
+        },
+        {
+          "type": "insights",
+          "title": "The Meaning of Kursi (The Throne / Footstool)",
+          "content": "Citing classical scholars including Ibn Abbas and Imam Abu Hanifah, Ma'ariful Qur'an explains that the Kursi signifies the vastness of divine authority, cosmic governance, and power. Compared to the Throne of Majesty (Al-'Arsh), the Kursi is like a small ring cast into an endless desert, demonstrating the unimaginable grandeur of the Creator."
+        }
+      ],
+      "curatedTerms": [
+        {
+          "term": "Kursi",
+          "arabicWord": "كُرْسِيّ",
+          "arabicRoot": "ك - ر - س (K-R-S)",
+          "literalMeaning": "A seat of authority; footstool of transcendent sovereignty.",
+          "relatedWords": [
+            "Karasa (To establish firmly)",
+            "Mukarras (Solidly founded)"
+          ],
+          "theologicalContext": "Metaphor for Allah's all-encompassing knowledge, royal sovereignty, and effortlessly sustained dominion over the cosmos.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 1, Ayat al-Kursi"
+        },
+        {
+          "term": "Taghut",
+          "arabicWord": "طَاغُوت",
+          "arabicRoot": "ط - غ - ي (T-Gh-Y)",
+          "literalMeaning": "Transgression; anything that exceeds boundaries of righteousness.",
+          "relatedWords": [
+            "Tughyan (Tyranny)",
+            "Taghiyah (Despot)"
+          ],
+          "theologicalContext": "Any entity, false ideology, despot, or idol that is worshipped, obeyed, or revered in place of or in defiance of Allah.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 1, Surah Al-Baqarah"
+        }
+      ]
+    },
+    {
       "id": "2-275-281",
       "surahNumber": 2,
-      "verseRange": [275, 281],
+      "verseRange": [
+        275,
+        281
+      ],
       "title": "The Total Prohibition of Usury (Riba) & Economic Justice",
       "juzNumber": 3,
       "revelationType": "Madani",
@@ -398,8 +899,18 @@
           "arabicPhrase": "وَأَحَلَّ اللَّهُ الْبَيْعَ وَحَرَّمَ الرِّبَا",
           "englishPhrase": "Whereas Allah has permitted trade and forbidden usury.",
           "vocabulary": [
-            { "word": "الْبَيْعَ", "root": "ب-ي-ع", "meaning": "Trade, commerce, bilateral exchange", "grammarNote": "Mutual exchange of value involving risk and productive labor." },
-            { "word": "الرِّبَا", "root": "ر-ب-و", "meaning": "Surplus, unearned gain, interest", "grammarNote": "Any stipulated excess without legitimate countervalue in loan contracts." }
+            {
+              "word": "الْبَيْعَ",
+              "root": "ب-ي-ع",
+              "meaning": "Trade, commerce, bilateral exchange",
+              "grammarNote": "Mutual exchange of value involving risk and productive labor."
+            },
+            {
+              "word": "الرِّبَا",
+              "root": "ر-ب-و",
+              "meaning": "Surplus, unearned gain, interest",
+              "grammarNote": "Any stipulated excess without legitimate countervalue in loan contracts."
+            }
           ]
         }
       ],
@@ -418,6 +929,124 @@
           "literalMeaning": "Increase, surplus, addition.",
           "theologicalContext": "Any conditional or contractual excess charged on a debt without providing an equivalent countervalue (Iwad) in exchange.",
           "volumeReference": "Ma'ariful Qur'an, Vol. 1, p. 642"
+        }
+      ]
+    },
+    {
+      "id": "2-284-286",
+      "surahNumber": 2,
+      "verseRange": [
+        284,
+        286
+      ],
+      "title": "Amanar-Rasul: The Concluding Supplication of Mercy & Divine Ease",
+      "juzNumber": 3,
+      "revelationType": "Madani",
+      "arabicText": "لِّلَّهِ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ وَإِن تُبْدُوا مَا فِي أَنفُسِكُمْ أَوْ تُخْفُوهُ يُحَاسِبْكُم بِهِ اللَّهُ ۖ فَيَغْفِرُ لِمَن يَشَاءُ وَيُعَذِّبُ مَن يَشَاءُ ۗ وَاللَّهُ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ ۝ آمَنَ الرَّسُولُ بِمَا أُنزِلَ إِلَيْهِ مِن رَّبِّهِ وَالْمُؤْمِنُونَ ۚ كُلٌّ آمَنَ بِاللَّهِ وَمَلَائِكَتِهِ وَكُتُبِهِ وَرُسُلِهِ لَا نُفَرِّقُ بَيْنَ أَحَدٍ مِّن رُّسُلِهِ ۚ وَقَالُوا سَمِعْنَا وَأَطَعْنَا ۖ غُفْرَانَكَ رَبَّنَا وَإِلَيْكَ الْمَصِيرُ ۝ لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا ۚ لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا اكْتَسَبَتْ ۗ رَبَّنَا لَا تُؤَاخِذْنَا إِن نَّسِينَا أَوْ أَخْطَأْنَا ۚ رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِن قَبْلِنَا ۚ رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ ۖ وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا ۚ أَنتَ مَوْلَانَا فَانصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ ۝",
+      "translation": "To Allah belongs whatever is in the heavens and whatever is in the earth. Whether you disclose what is in your minds or conceal it, Allah will bring you to account for it. Then He will forgive whom He wills and punish whom He wills, and Allah is over all things competent. ۝ The Messenger has believed in what was revealed to him from his Lord, and so have the believers. All of them have believed in Allah, His angels, His scriptures, and His messengers, saying: 'We make no distinction between any of His messengers.' And they say: 'We hear and we obey. Grant us Your forgiveness, our Lord, and to You is the final destination.' ۝ Allah burdens not a soul beyond its capacity. It will have the consequence of what good it has gained, and it will bear the consequence of what evil it has earned. 'Our Lord, do not impose blame upon us if we forget or fall into error. Our Lord, and lay not upon us an [Isr] (oppressive burden) like that which You laid upon those before us. Our Lord, and burden us not with that which we have no ability to bear. And pardon us, and forgive us, and have mercy upon us. You are our Protector, so give us victory over the disbelieving people.' ۝",
+      "phraseCards": [
+        {
+          "id": "2-card-285-1",
+          "verseNumber": 285,
+          "arabicPhrase": "سَمِعْنَا وَأَطَعْنَا غُفْرَانَكَ رَبَّنَا",
+          "englishPhrase": "We hear and we obey; grant us Your forgiveness, our Lord",
+          "vocabulary": [
+            {
+              "word": "سَمِعْنَا",
+              "root": "س - م - ع",
+              "meaning": "We have heard with understanding",
+              "grammarNote": "Past tense verb plural"
+            },
+            {
+              "word": "وَأَطَعْنَا",
+              "root": "ط - و - ع",
+              "meaning": "And we have sincerely obeyed",
+              "grammarNote": "Past tense verb plural"
+            },
+            {
+              "word": "غُفْرَانَكَ",
+              "root": "غ - ف - ر",
+              "meaning": "We seek Your shielding forgiveness",
+              "grammarNote": "Verbal noun + suffix"
+            },
+            {
+              "word": "رَبَّنَا",
+              "root": "ر - ب - ب",
+              "meaning": "Our Lord and Nurturer",
+              "grammarNote": "Vocative noun"
+            }
+          ]
+        },
+        {
+          "id": "2-card-286-1",
+          "verseNumber": 286,
+          "arabicPhrase": "لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا",
+          "englishPhrase": "Allah burdens not a soul beyond its capacity",
+          "vocabulary": [
+            {
+              "word": "لَا يُكَلِّفُ",
+              "root": "ك - ل - ف",
+              "meaning": "He does not burden / obligate",
+              "grammarNote": "Negative imperfect verb"
+            },
+            {
+              "word": "نَفْسًا",
+              "root": "ن - ف - س",
+              "meaning": "Any soul / human person",
+              "grammarNote": "Indefinite accusative noun"
+            },
+            {
+              "word": "إِلَّا",
+              "root": "حرف استثناء",
+              "meaning": "Except",
+              "grammarNote": "Particle of exception"
+            },
+            {
+              "word": "وُسْعَهَا",
+              "root": "و - س - ع",
+              "meaning": "Its natural capacity and ability",
+              "grammarNote": "Noun + Possessive suffix"
+            }
+          ]
+        }
+      ],
+      "commentary": "These concluding verses of Surah Al-Baqarah (Amanar-Rasul) were bestowed upon the Prophet (ﷺ) during the Night of Ascension (Al-Isra' wal-Mi'raj) directly from beneath the divine Throne. In Ma'ariful Qur'an, Mufti Muhammad Shafi recounts that when verse 284 was first revealed ('Whether you disclose what is in your minds or conceal it, Allah will bring you to account'), the Companions wept bitterly, fearing that passing involuntary thoughts (Waswasah) would condemn them. The Prophet instructed them to declare with complete submission: 'Sami'na wa Ata'na' (We hear and we obey).\n\nUpon their total, unreserved surrender, Allah revealed the immortal consolation: 'La yukallifullahu nafsan illa wus'aha' (Allah burdens not a soul beyond its capacity). Unintended involuntary whispers of the mind are divinely excused; human beings are held accountable only for what they intentionally earn and harbor. The chapter culminates in the most comprehensive prayer of the Quran, asking for forgiveness for unintentional mistakes, protection against unbearable burdens, and ultimate spiritual triumph.",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Moral & Legal Accountability: Involuntary Thoughts vs. Intentional Harboring",
+          "content": "Mufti Muhammad Shafi elaborates on the psychological rulings of Islamic jurisprudence: Passing stray thoughts (Khatarat and Wasawis) that drift into the human mind without intention or enjoyment are completely pardoned by Allah and incur no sin. Sin is contracted only when an individual intentionally cultivates, embraces, and resolves to execute the prohibited thought (Azm and Niyyah)."
+        },
+        {
+          "type": "asbab",
+          "title": "Occasion of Revelation: The Relieving of the Sahabah's Distress",
+          "content": "Imam Muslim records that the Sahabah knelt before the Prophet in tears, lamenting: 'We have been tasked with deeds we can bear—prayer, fasting, charity. But this verse holds us accountable for the secrets of our hearts which we cannot control!' The Prophet counseled complete submission. When their hearts submitted, Allah revealed the final relief in verse 286."
+        }
+      ],
+      "curatedTerms": [
+        {
+          "term": "Wus'",
+          "arabicWord": "وُسْع",
+          "arabicRoot": "و - س - ع (W-S-') ",
+          "literalMeaning": "Ample capacity, ease, and natural ability.",
+          "relatedWords": [
+            "Wasi' (All-Encompassing)",
+            "Ittisa' (Spaciousness)"
+          ],
+          "theologicalContext": "The golden principle that divine legislation is calibrated precisely within human spiritual and physical endurance, without undue hardship.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 1, Surah Al-Baqarah"
+        },
+        {
+          "term": "Isr",
+          "arabicWord": "إِصْر",
+          "arabicRoot": "أ - ص - ر (A-S-R)",
+          "literalMeaning": "A heavy, binding fetter or burdensome chain.",
+          "relatedWords": [
+            "Asara (To bind)",
+            "Isarah (Bondage)"
+          ],
+          "theologicalContext": "Severe ceremonial penances and harsh trials placed upon earlier rebellious nations, mercifully lifted from the Ummah of Muhammad (ﷺ).",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 1, Surah Al-Baqarah"
         }
       ]
     }

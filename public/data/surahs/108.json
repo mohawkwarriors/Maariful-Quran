@@ -1,0 +1,145 @@
+{
+  "number": 108,
+  "nameArabic": "الكوثر",
+  "nameTransliterated": "Al-Kawthar",
+  "nameEnglish": "The Abundance",
+  "versesCount": 3,
+  "revelationType": "Makki",
+  "juz": [
+    30
+  ],
+  "bismillahPre": true,
+  "introductoryTafseer": "Surah Al-Kawthar is the shortest chapter of the Holy Quran in word count, yet an inexhaustible ocean of divine consolation. In Ma'ariful Qur'an, Mufti Muhammad Shafi details how this surah was revealed to reassure the Holy Prophet (ﷺ) against the cruel taunts of the pagan nobility of Makkah following the passing of his infant son.",
+  "historicalContext": {
+    "background": "When the Prophet's infant son Al-Qasim passed away in Makkah, the haughty pagan chieftain Al-'As ibn Wa'il and his confederates mocked the Prophet, proclaiming: 'Muhammad is Abtar (cut off without male posterity; his name and mission will perish with him)!' Heartbroken by their cruelty, the Prophet received this heavenly declaration from Allah bestowing upon him Al-Kawthar (the celestial fountain of infinite goodness and eternal renown) and declaring his detractors severed from all good."
+  },
+  "sections": [
+    {
+      "id": "108-1-3",
+      "surahNumber": 108,
+      "verseRange": [
+        1,
+        3
+      ],
+      "title": "The Celestial Fountain of Abundance & Sacrificial Devotion",
+      "juzNumber": 30,
+      "revelationType": "Makki",
+      "arabicText": "إِنَّا أَعْطَيْنَاكَ الْكَوْثَرَ ۝ فَصَلِّ لِرَبِّكَ وَانْحَرْ ۝ إِنَّ شَانِئَكَ هُوَ الْأَبْتَرُ ۝",
+      "translation": "Indeed, We have granted you [Al-Kawthar] (the Abundant Good) ۝ So pray to your Lord and sacrifice (in [Nahr]) ۝ Indeed, your enemy is the one who is [Abtar] (severed from all posterity and blessing). ۝",
+      "phraseCards": [
+        {
+          "id": "108-card-1",
+          "verseNumber": 1,
+          "arabicPhrase": "إِنَّا أَعْطَيْنَاكَ الْكَوْثَرَ",
+          "englishPhrase": "Indeed, We have granted you the Abundant Good",
+          "vocabulary": [
+            {
+              "word": "إِنَّا",
+              "root": "حرف توكيد",
+              "meaning": "Indeed We have",
+              "grammarNote": "Inna + Majestic plural pronoun"
+            },
+            {
+              "word": "أَعْطَيْنَاكَ",
+              "root": "ع - ط - و",
+              "meaning": "We have permanently bestowed upon you",
+              "grammarNote": "Past verb + Object pronoun"
+            },
+            {
+              "word": "الْكَوْثَرَ",
+              "root": "ك - ث - ر",
+              "meaning": "The boundless abundance of all goodness",
+              "grammarNote": "Intensive Form Faw'al"
+            }
+          ]
+        },
+        {
+          "id": "108-card-2",
+          "verseNumber": 2,
+          "arabicPhrase": "فَصَلِّ لِرَبِّكَ وَانْحَرْ",
+          "englishPhrase": "So pray unto your Lord and sacrifice",
+          "vocabulary": [
+            {
+              "word": "فَصَلِّ",
+              "root": "ص - ل - و",
+              "meaning": "So pray exclusively",
+              "grammarNote": "Imperative verb"
+            },
+            {
+              "word": "لِرَبِّكَ",
+              "root": "ر - ب - ب",
+              "meaning": "For your Lord alone",
+              "grammarNote": "Preposition + Noun + Pronoun"
+            },
+            {
+              "word": "وَانْحَرْ",
+              "root": "ن - ح - ر",
+              "meaning": "And perform the ritual sacrifice (Nahr)",
+              "grammarNote": "Imperative verb"
+            }
+          ]
+        },
+        {
+          "id": "108-card-3",
+          "verseNumber": 3,
+          "arabicPhrase": "إِنَّ شَانِئَكَ هُوَ الْأَبْتَرُ",
+          "englishPhrase": "Indeed, your mocker is the one cut off",
+          "vocabulary": [
+            {
+              "word": "شَانِئَكَ",
+              "root": "ش - ن - أ",
+              "meaning": "Your hostile enemy / hater",
+              "grammarNote": "Active participle + suffix"
+            },
+            {
+              "word": "الْأَبْتَرُ",
+              "root": "ب - ت - ر",
+              "meaning": "Severed of lineage, memory, and good",
+              "grammarNote": "Definite superlative noun"
+            }
+          ]
+        }
+      ],
+      "commentary": "In Ma'ariful Qur'an, Mufti Muhammad Shafi explains that the linguistic pattern of 'Al-Kawthar' is the intensive measure 'Faw'al' derived from 'Kathrah' (plenty), denoting inexhaustible abundance in every dimension: the sublime Quran, Prophethood, intercession on Judgment Day, the celestial Fountain (Hawd al-Kawthar) whose waters are whiter than milk and sweeter than honey, an enormous community of billions of followers across history, and eternal renown.\n\nIn return for this supreme favor, Allah commands two supreme forms of worship: Salah (devoting the body and soul in pure prayer to Allah alone, repudiating the idolaters' corrupted prayers) and Nahr (sacrificing wealth through sacrificial animals slaughtered purely in Allah's name, repudiating pagan sacrifices offered to false idols). Today, the mockers of Makkah are remembered only with ignominy, while the blessed name of Muhammad (ﷺ) is proclaimed from minarets across every timezone on earth billions of times every day.",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Jurisprudential Rulings: The Obligation of Udhiyyah (Sacrifice on Eid al-Adha)",
+          "content": "Mufti Muhammad Shafi examines the Hanafi juristic deduction from 'fa-salli li-rabbika wanhar': The command 'Wanhar' establishes the legal obligation (Wajib) of performing the animal sacrifice (Udhiyyah / Qurbani) on Eid al-Adha for every Muslim possessing the requisite threshold of financial affordability (Nisab)."
+        },
+        {
+          "type": "insights",
+          "title": "Prophetic Fulfilment: True Posterity vs. Earthly Pedigree",
+          "content": "Ma'ariful Qur'an highlights the profound irony of divine history: the Quraysh measured immortality by male offspring who would inherit desert dust. Allah granted Muhammad (ﷺ) a spiritual family that spans all centuries, races, and geography, rendering his name beloved to more human hearts than any figure in human history."
+        }
+      ],
+      "curatedTerms": [
+        {
+          "term": "Al-Kawthar",
+          "arabicWord": "الْكَوْثَر",
+          "arabicRoot": "ك - ث - ر (K-Th-R)",
+          "literalMeaning": "The extreme abundance of goodness, blessing, and perpetual grace.",
+          "relatedWords": [
+            "Kathir (Much)",
+            "Kathrah (Abundance)",
+            "Takathur (Rivalry in increase)"
+          ],
+          "theologicalContext": "Both the specific heavenly river and fountain in Paradise granted to the Prophet, and the comprehensive spiritual gifts bestowed upon him.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 8, Surah Al-Kawthar"
+        },
+        {
+          "term": "Abtar",
+          "arabicWord": "الْأَبْتَر",
+          "arabicRoot": "ب - ت - ر (B-T-R)",
+          "literalMeaning": "Having the tail severed; totally cut off from progeny, legacy, and good.",
+          "relatedWords": [
+            "Batara (To sever completely)",
+            "Batr (Amputation)"
+          ],
+          "theologicalContext": "Divine decree confirming that the adversaries of divine truth will leave no enduring blessed trace in history or the hereafter.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 8, Surah Al-Kawthar"
+        }
+      ]
+    }
+  ]
+}

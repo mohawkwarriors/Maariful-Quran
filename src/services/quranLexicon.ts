@@ -684,7 +684,11 @@ export function getWordDeepDive(word: string, fallbackMeaning?: string, fallback
     const keyStripped = stripArabicDiacritics(key);
     const keyStem = getArabicStem(key);
 
-    if (stripped === keyStripped || stem === keyStem || stripped.includes(keyStripped) || keyStripped.includes(stripped)) {
+    // Exact stripped match or exact stem match for meaningful word stems (>= 3 chars)
+    if (
+      stripped === keyStripped ||
+      (stem.length >= 3 && keyStem.length >= 3 && stem === keyStem)
+    ) {
       return {
         ...data,
         word: cleanWord, // preserve exact vocalized spelling from Quran text

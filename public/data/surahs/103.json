@@ -1,0 +1,146 @@
+{
+  "number": 103,
+  "nameArabic": "العصر",
+  "nameTransliterated": "Al-'Asr",
+  "nameEnglish": "The Declining Day",
+  "versesCount": 3,
+  "revelationType": "Makki",
+  "juz": [
+    30
+  ],
+  "bismillahPre": true,
+  "introductoryTafseer": "Surah Al-'Asr is an unmatched marvel of Quranic brevity and comprehensive wisdom. Imam ash-Shafi'i famously remarked: 'If people were to reflect upon this Surah alone, it would suffice them.' In Ma'ariful Qur'an, Mufti Muhammad Shafi explains that this short three-verse chapter delineates the absolute constitutional formula for human success and eternal salvation.",
+  "historicalContext": {
+    "background": "Revealed in Makkah during the early prophetic ministry, Surah Al-'Asr addressed the pagan Arabian preoccupation with worldly pride, ancestral bragging, and ephemeral trade profits. Tabarani records that whenever two companions of the Prophet met, they would not part until one recited Surah Al-'Asr to the other, followed by offering peace, serving as a constant reminder of time's rapid flight and the four pillars of salvation."
+  },
+  "sections": [
+    {
+      "id": "103-1-3",
+      "surahNumber": 103,
+      "verseRange": [
+        1,
+        3
+      ],
+      "title": "The Token of Time, Universal Loss & The Four Pillars of Salvation",
+      "juzNumber": 30,
+      "revelationType": "Makki",
+      "arabicText": "وَالْعَصْرِ ۝ إِنَّ الْإِنسَانَ لَفِي خُسْرٍ ۝ إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَتَوَاصَوْا بِالْحَقِّ وَتَوَاصَوْا بِالصَّبْرِ ۝",
+      "translation": "By the token of [Asr] (Time through the ages) ۝ Verily, humanity is in [Khusr] (utter spiritual loss) ۝ Except those who believe, perform [Salihat] (righteous deeds), and mutually enjoin the [Haqq] (truth), and mutually enjoin [Sabr] (steadfast forbearance). ۝",
+      "phraseCards": [
+        {
+          "id": "103-card-1",
+          "verseNumber": 1,
+          "arabicPhrase": "وَالْعَصْرِ",
+          "englishPhrase": "By the declining time through the ages",
+          "vocabulary": [
+            {
+              "word": "وَالْعَصْرِ",
+              "root": "ع - ص - ر",
+              "meaning": "Time / late afternoon / the epoch of ages",
+              "grammarNote": "Oath particle + Genitive noun"
+            }
+          ]
+        },
+        {
+          "id": "103-card-2",
+          "verseNumber": 2,
+          "arabicPhrase": "إِنَّ الْإِنسَانَ لَفِي خُسْرٍ",
+          "englishPhrase": "Indeed, mankind is in profound loss",
+          "vocabulary": [
+            {
+              "word": "إِنَّ",
+              "root": "حرف توكيد",
+              "meaning": "Verily / indeed",
+              "grammarNote": "Emphatic particle"
+            },
+            {
+              "word": "الْإِنسَانَ",
+              "root": "أ - ن - س",
+              "meaning": "Humankind as a generic whole",
+              "grammarNote": "Generic noun"
+            },
+            {
+              "word": "لَفِي",
+              "root": "لام التوكيد + في",
+              "meaning": "Surely engulfed in",
+              "grammarNote": "Emphatic Lam + Preposition"
+            },
+            {
+              "word": "خُسْرٍ",
+              "root": "خ - س - ر",
+              "meaning": "Depreciation / total bankruptcy",
+              "grammarNote": "Indefinite noun"
+            }
+          ]
+        },
+        {
+          "id": "103-card-3",
+          "verseNumber": 3,
+          "arabicPhrase": "إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ",
+          "englishPhrase": "Except those who believe and do righteous deeds",
+          "vocabulary": [
+            {
+              "word": "إِلَّا",
+              "root": "أداة استثناء",
+              "meaning": "Except / save",
+              "grammarNote": "Exception particle"
+            },
+            {
+              "word": "آمَنُوا",
+              "root": "أ - م - ن",
+              "meaning": "They attained firm faith",
+              "grammarNote": "Plural past verb"
+            },
+            {
+              "word": "وَتَوَاصَوْا",
+              "root": "و - ص - ي",
+              "meaning": "And they mutually counselled and exhorted",
+              "grammarNote": "Reciprocal Form VI verb"
+            }
+          ]
+        }
+      ],
+      "commentary": "In Ma'ariful Qur'an, Mufti Muhammad Shafi elaborates on why Allah takes an oath by 'Al-'Asr' (Time). Human lifespan is an individual's sole trading capital; each passing second is an irreplaceable portion of life evaporating away. A classical scholar noted: 'I understood the meaning of Surah Al-'Asr from an ice-seller in the market who cried out: Have mercy on a man whose capital is melting away!' If one does not exchange this melting capital for everlasting spiritual assets, life culminates in total spiritual bankruptcy.\n\nSalvation is strictly contingent upon four interrelated criteria: 1) Iman (correct orthodox faith), 2) 'Amal Salih (virtuous deeds strictly conforming to the Sunnah), 3) Tawasi bil-Haqq (active social and moral engagement enjoining truth, justice, and faith), and 4) Tawasi bis-Sabr (mutually enjoining patience and perseverance in facing trials). Mufti Shafi notes that personal righteousness alone is insufficient; one must actively contribute to the moral preservation of society.",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Legal Duty of Enjoining Good & Communal Preservation (Amr bil-Ma'ruf)",
+          "content": "Mufti Muhammad Shafi explains that 'Tawasi bil-Haqq' establishes the juristic obligation of 'Amr bil-Ma'ruf wa Nahy 'an al-Munkar' (enjoining virtue and forbidding vice). While formal state enforcement belongs to legitimate authorities, every Muslim is under a personal moral obligation within their household and circle of influence to advise with gentleness, wisdom, and sincerity."
+        },
+        {
+          "type": "insights",
+          "title": "The Fourfold Inseparable Structure of Salvation",
+          "content": "Ma'ariful Qur'an stresses that these four conditions are an indivisible chain: Iman is the root, righteous deeds are the trunk, enjoining truth is the flourishing branches, and patience is the protective bark that preserves the entire tree through the blizzards of adversity."
+        }
+      ],
+      "curatedTerms": [
+        {
+          "term": "Asr",
+          "arabicWord": "الْعَصْر",
+          "arabicRoot": "ع - ص - ر (A-S-R)",
+          "literalMeaning": "To squeeze out; time as a concentrated distillation of ages.",
+          "relatedWords": [
+            "'Asir (Juice squeezed out)",
+            "'Asr (Afternoon era)",
+            "Mu'sirat (Rain clouds)"
+          ],
+          "theologicalContext": "Oath by the relentless passage of time witnessing the rise and fall of civilizations, proving that unguided materialism ends in ruin.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 8, Surah Al-'Asr"
+        },
+        {
+          "term": "Khusr",
+          "arabicWord": "خُسْر",
+          "arabicRoot": "خ - س - ر (Kh-S-R)",
+          "literalMeaning": "Diminution, commercial deficit, capital loss, and ultimate bankruptcy.",
+          "relatedWords": [
+            "Khasirah (He suffered loss)",
+            "Khasarat (Damages)",
+            "Akhsarun (Greatest losers)"
+          ],
+          "theologicalContext": "The catastrophic loss of the hereafter where human lifespan is squandered on temporary vanity without spiritual investment.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 8, Surah Al-'Asr"
+        }
+      ]
+    }
+  ]
+}

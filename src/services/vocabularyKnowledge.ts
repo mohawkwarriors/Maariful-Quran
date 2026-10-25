@@ -226,4 +226,103 @@ export const VOCABULARY_KNOWLEDGE: Record<string, Partial<CuratedTerm>> = {
       'The balanced tradition of Islam revealed in the Qur\'an and lived by the Prophet, avoiding theological excess (Ghuluw) and spiritual apathy (Tafrit).',
     volumeReference: "Ma'ariful Qur'an, Vol. 1, p. 76",
   },
+  falaq: {
+    term: 'Al-Falaq (الفلق)',
+    arabicRoot: 'ف-ل-ق (F-L-Q)',
+    literalMeaning: 'The cleaving of dawn; the bursting forth of light through darkness.',
+    relatedWords: ['Faliq (cleaver of seeds)', 'Infilaq (daybreak)', 'Falq (fissure)'],
+    theologicalContext:
+      "Allah's cosmic power to dispel any suffocation, evil, or oppression by bursting forth the radiant morning of relief.",
+    volumeReference: "Ma'ariful Qur'an, Vol. 8, p. 910",
+  },
+  ghasiq: {
+    term: 'Al-Ghasiq (الغاسق)',
+    arabicRoot: 'غ-س-ق (Gh-S-Q)',
+    literalMeaning: 'Intense nocturnal gloom and darkness when it completely settles.',
+    relatedWords: ['Ghasaq (twilight / nightfall)', 'Ighsaq (deepening shadow)'],
+    theologicalContext:
+      'The cloak of darkness during which malevolent forces, crime, and predators emerge under cover of obscurity.',
+    volumeReference: "Ma'ariful Qur'an, Vol. 8, p. 912",
+  },
+  naffathat: {
+    term: 'An-Naffathat (النفاثات)',
+    arabicRoot: 'ن-ف-ث (N-F-Th)',
+    literalMeaning: 'Those who blow with fine saliva upon knots.',
+    relatedWords: ['Nafath (gentle breath with moisture)', 'Nafthah (spiritual breath)'],
+    theologicalContext:
+      'Occult practitioners and sorcerers who knot cords while chanting incantations to channel demonic harm.',
+    volumeReference: "Ma'ariful Qur'an, Vol. 8, p. 913",
+  },
+  hasad: {
+    term: 'Al-Hasad (الحسد)',
+    arabicRoot: 'ح-س-د (Ḥ-S-D)',
+    literalMeaning: 'Destructive envy; burning desire for another to lose their blessings.',
+    relatedWords: ['Hasid (envier)', 'Mahsud (the envied)', 'Tahad (mutual spite)'],
+    theologicalContext:
+      'A toxic spiritual malady protesting divine wisdom by resenting blessings bestowed upon fellow humans.',
+    volumeReference: "Ma'ariful Qur'an, Vol. 8, p. 914",
+  },
+  khalifah: {
+    term: 'Khalifah (خليفة)',
+    arabicRoot: 'خ-ل-ف (Kh-L-F)',
+    literalMeaning: 'A vicegerent, deputy, or successor executing delegated authority.',
+    relatedWords: ['Khilafah (stewardship)', 'Khulafa (successors)', 'Istikhlaf (entrustment)'],
+    theologicalContext:
+      'Humanity\'s role as moral trustees on earth, charged with establishing justice and divine covenants.',
+    volumeReference: "Ma'ariful Qur'an, Vol. 1, p. 182",
+  },
+  kursi: {
+    term: 'Al-Kursi (الكرسي)',
+    arabicRoot: 'ك-ر-س (K-R-S)',
+    literalMeaning: 'Throne, footstool of power, and seat of supreme sovereignty.',
+    relatedWords: ['Karasa (established solidly)', 'Mukarras (firmly founded)'],
+    theologicalContext:
+      "The vast seat of divine dominion encompassing the heavens and earth, symbolizing Allah's effortless governance.",
+    volumeReference: "Ma'ariful Qur'an, Vol. 1, p. 608",
+  },
+  taghut: {
+    term: 'At-Taghut (الطاغوت)',
+    arabicRoot: 'ط-غ-ي (Ṭ-Gh-Y)',
+    literalMeaning: 'Transgression; that which exceeds boundaries of righteousness.',
+    relatedWords: ['Tughyan (tyranny)', 'Taghiyah (despot)', 'Tagha (exceeded all bounds)'],
+    theologicalContext:
+      'Any idol, tyrannical system, or demonic entity worshipped or obeyed in rebellion against the Creator.',
+    volumeReference: "Ma'ariful Qur'an, Vol. 1, p. 614",
+  },
+  asr: {
+    term: 'Al-\'Asr (العصر)',
+    arabicRoot: "ع-ص-ر ('A-Ṣ-R)",
+    literalMeaning: 'Time through the ages; the declining hours of late afternoon.',
+    relatedWords: ['\'Asir (squeezed juice)', '\'Asr (epoch)', 'Mu\'sirat (rain clouds)'],
+    theologicalContext:
+      'The irreplaceable capital of human lifespan that drains away second by second toward the eternal reckoning.',
+    volumeReference: "Ma'ariful Qur'an, Vol. 8, p. 865",
+  },
+  kawthar: {
+    term: 'Al-Kawthar (الكوثر)',
+    arabicRoot: 'ك-ث-ر (K-Th-R)',
+    literalMeaning: 'Inexhaustible abundance of goodness, blessing, and perpetual grace.',
+    relatedWords: ['Kathir (abundant)', 'Kathrah (plenty)', 'Takathur (amassing wealth)'],
+    theologicalContext:
+      'The celestial fountain in Paradise and the limitless spiritual and temporal bounties granted to Prophet Muhammad.',
+    volumeReference: "Ma'ariful Qur'an, Vol. 8, p. 880",
+  },
+  nasr: {
+    term: 'An-Nasr (النصر)',
+    arabicRoot: 'ن-ص-ر (N-Ṣ-R)',
+    literalMeaning: 'Decisive divine assistance, victory, and succor.',
+    relatedWords: ['Nasir (protector)', 'Mansur (victorious)', 'Nusrah (support)'],
+    theologicalContext:
+      'Divine intervention granting ultimate victory to steadfast truth over overwhelming worldly odds.',
+    volumeReference: "Ma'ariful Qur'an, Vol. 8, p. 888",
+  },
+  mulk: {
+    term: 'Al-Mulk (الملك)',
+    arabicRoot: 'م-ل-ك (M-L-K)',
+    literalMeaning: 'Sovereign ownership, royal dominion, and absolute authority.',
+    relatedWords: ['Malik (Supreme King)', 'Malik (Master)', 'Malakut (celestial kingdom)'],
+    theologicalContext:
+      "Allah's undivided and eternal dominion over every realm, creature, and motion in existence.",
+    volumeReference: "Ma'ariful Qur'an, Vol. 8, p. 490",
+  },
 };

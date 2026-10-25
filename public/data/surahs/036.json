@@ -1,0 +1,159 @@
+{
+  "number": 36,
+  "nameArabic": "يس",
+  "nameTransliterated": "Ya-Sin",
+  "nameEnglish": "Ya-Sin",
+  "versesCount": 83,
+  "revelationType": "Makki",
+  "juz": [
+    22,
+    23
+  ],
+  "bismillahPre": true,
+  "introductoryTafseer": "Surah Ya-Sin is celebrated in prophetic traditions as 'Qalb al-Qur'an' (The Heart of the Quran). In Ma'ariful Qur'an, Mufti Muhammad Shafi expounds on why this chapter holds this supreme status: just as the heart is the central life-giving organ of the body, Surah Ya-Sin pulsatingly infuses the three foundational pillars of Islamic faith—Tawhid (Divine Monotheism), Risalah (Prophethood), and Akhirah (The Resurrection)—with unmatched eloquence and compelling proofs.",
+  "historicalContext": {
+    "background": "Revealed in Makkah when the pagan leaders outrightly rejected the messengership of Muhammad (ﷺ) and mocked the notion that decayed bones could be brought back to life. Ubayy ibn Khalaf took a crumbling ancient human bone, ground it to dust in his hands, and blew it into the Prophet's face, asking: 'Who can revive this after it has rotted?' Verses 77-83 descended with an invincible rational reply: 'Say: He will revive them who produced them the first time!'"
+  },
+  "sections": [
+    {
+      "id": "36-1-12",
+      "surahNumber": 36,
+      "verseRange": [
+        1,
+        12
+      ],
+      "title": "The Oath by the Wise Quran & The Prophetic Mission",
+      "juzNumber": 22,
+      "revelationType": "Makki",
+      "arabicText": "يس ۝ وَالْقُرْآنِ الْحَكِيمِ ۝ إِنَّكَ لَمِنَ الْمُرْسَلِينَ ۝ عَلَىٰ صِرَاطٍ مُّسْتَقِيمٍ ۝ تَنزِيلَ الْعَزِيزِ الرَّحِيمِ ۝ لِتُنذِرَ قَوْمًا مَّا أُنذِرَ آبَاؤُهُمْ فَهُمْ غَافِلُونَ ۝ لَقَدْ حَقَّ الْقَوْلُ عَلَىٰ أَكْثَرِهِمْ فَهُمْ لَا يُؤْمِنُونَ ۝ إِنَّا جَعَلْنَا فِي أَعْنَاقِهِمْ أَغْلَالًا فَهِيَ إِلَى الْأَذْقَانِ فَهُم مُّقْمَحُونَ ۝ وَجَعَلْنَا مِن بَيْنِ أَيْدِيهِمْ سَدًّا وَمِنْ خَلْفِهِمْ سَدًّا فَأَغْشَيْنَاهُمْ فَهُمْ لَا يُبْصِرُونَ ۝ وَسَوَاءٌ عَلَيْهِمْ أَأَنذَرْتَهُمْ أَمْ لَمْ تُنذِرْهُمْ لَا يُؤْمِنُونَ ۝ إِنَّمَا تُنذِرُ مَنِ اتَّبَعَ الذِّكْرَ وَخَشِيَ الرَّحْمَٰنَ بِالْغَيْبِ ۖ فَبَشِّرْهُ بِمَغْفِرَةٍ وَأَجْرٍ كَرِيمٍ ۝ إِنَّا نَحْنُ نُحْيِي الْمَوْتَىٰ وَنَكْتُبُ مَا قَدَّمُوا وَآثَارَهُمْ ۚ وَكُلَّ شَيْءٍ أَحْصَيْنَاهُ فِي إِمَامٍ مُّبِينٍ ۝",
+      "translation": "Ya-Sin ۝ By the [Hakim] (Wise) Quran ۝ Indeed, you are of the messengers ۝ Upon a [Sirat] Mustaqim (Straight Path) ۝ A revelation of the Exalted in Might, the Merciful ۝ That you may warn a people whose forefathers were not warned, so they are heedless. ۝ Indeed, the decree has come into effect against most of them, so they will not believe. ۝ Indeed, We have put shackles on their necks up to their chins, so their heads are forced upward. ۝ And We have put before them a barrier and behind them a barrier and covered them so they cannot see. ۝ And it is all the same to them whether you warn them or do not warn them; they will not believe. ۝ You can only warn one who follows the message and fears the [Rahman] in the [Ghayb] (unseen). So give him good tidings of forgiveness and a noble reward. ۝ Indeed, it is We who bring the dead to life and record what they have put forth and what they left behind; and all things We have enumerated in a [Imam] Mubin (Clear Register). ۝",
+      "phraseCards": [
+        {
+          "id": "36-card-1",
+          "verseNumber": 1,
+          "arabicPhrase": "يس وَالْقُرْآنِ الْحَكِيمِ",
+          "englishPhrase": "Ya-Sin. By the Wise Quran",
+          "vocabulary": [
+            {
+              "word": "يس",
+              "root": "حروف مقطعة",
+              "meaning": "Ya-Sin (Mystic letters / Address to the Master of humanity)",
+              "grammarNote": "Isolated letters"
+            },
+            {
+              "word": "وَالْقُرْآنِ",
+              "root": "ق - ر - أ",
+              "meaning": "By the recitation / scripture",
+              "grammarNote": "Oath particle + Noun"
+            },
+            {
+              "word": "الْحَكِيمِ",
+              "root": "ح - ك - م",
+              "meaning": "Full of divine wisdom and definitive truth",
+              "grammarNote": "Adjective"
+            }
+          ]
+        },
+        {
+          "id": "36-card-3",
+          "verseNumber": 3,
+          "arabicPhrase": "إِنَّكَ لَمِنَ الْمُرْسَلِينَ",
+          "englishPhrase": "Indeed you are of the Messengers",
+          "vocabulary": [
+            {
+              "word": "إِنَّكَ",
+              "root": "حرف توكيد",
+              "meaning": "Indeed you are",
+              "grammarNote": "Inna + Pronoun"
+            },
+            {
+              "word": "لَمِنَ",
+              "root": "لام التوكيد + من",
+              "meaning": "Surely from among",
+              "grammarNote": "Emphatic Lam + Preposition"
+            },
+            {
+              "word": "الْمُرْسَلِينَ",
+              "root": "ر - س - ل",
+              "meaning": "The divinely sent Messengers",
+              "grammarNote": "Plural passive participle"
+            }
+          ]
+        },
+        {
+          "id": "36-card-12",
+          "verseNumber": 12,
+          "arabicPhrase": "إِنَّا نَحْنُ نُحْيِي الْمَوْتَىٰ وَنَكْتُبُ مَا قَدَّمُوا وَآثَارَهُمْ",
+          "englishPhrase": "We give life to the dead and record their deeds and their lingering footprints",
+          "vocabulary": [
+            {
+              "word": "نُحْيِي",
+              "root": "ح - ي - ي",
+              "meaning": "We bestow life",
+              "grammarNote": "First person imperfect verb"
+            },
+            {
+              "word": "الْمَوْتَىٰ",
+              "root": "م - و - ت",
+              "meaning": "The dead",
+              "grammarNote": "Plural noun"
+            },
+            {
+              "word": "وَنَكْتُبُ",
+              "root": "ك - ت - ب",
+              "meaning": "And We record / register",
+              "grammarNote": "Imperfect verb"
+            },
+            {
+              "word": "وَآثَارَهُمْ",
+              "root": "أ - ث - ر",
+              "meaning": "And their surviving footprints / legacy",
+              "grammarNote": "Plural noun + Pronoun"
+            }
+          ]
+        }
+      ],
+      "commentary": "In Ma'ariful Qur'an, Mufti Muhammad Shafi explains the profound theological oaths in the opening of Surah Ya-Sin: Allah takes an oath by the Quran described as 'Al-Hakim' (Wise)—possessing perfection of wisdom, pristine balance, and immunity from contradiction—to confirm the messengership of Muhammad (ﷺ). The pagans questioned his mission; Allah Himself stepped forth as the supreme witness.\n\nVerse 12 contains a momentous ethical principle: 'We record what they put forth (their direct deeds) AND their Athar (their footprints, legacies, and residual consequences).' Mufti Shafi notes that human actions do not end with physical death; whatever enduring good a person initiates (such as establishing a school, writing beneficial books, endowing water wells, or training righteous children) continues to earn rewards in their grave until the Day of Resurrection. Conversely, whoever invents a corrupt custom or disseminates evil bears the compounded sin of everyone influenced by it.",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Rulings on the Enduring Footprints of Deeds (Athar) & Sadaqah Jariyah",
+          "content": "Mufti Muhammad Shafi elaborates on 'wa naktubu ma qaddamu wa atharahum': When the Banu Salimah wished to relocate closer to the Prophet's Mosque in Madinah leaving their distant quarters, the Prophet told them: 'O Banu Salimah, stay in your homes; your footsteps to the mosque are being recorded as Athar!' This verse forms the legal foundation for Sadaqah Jariyah (continuous charity) in Islamic jurisprudence."
+        },
+        {
+          "type": "insights",
+          "title": "Why Ya-Sin is the 'Heart of the Quran'",
+          "content": "Ma'ariful Qur'an relates that the Prophet (ﷺ) said: 'Everything has a heart, and the heart of the Quran is Ya-Sin.' Because the vitality of the physical body depends upon the pumping heart, the vitality of a believer's faith depends upon vivid conviction in resurrection, divine accountability, and following the prophetic guidance so masterfully captured in Ya-Sin."
+        }
+      ],
+      "curatedTerms": [
+        {
+          "term": "Athar",
+          "arabicWord": "آثَار",
+          "arabicRoot": "أ - ث - ر (A-Th-R)",
+          "literalMeaning": "Footprints, relics, tracks, lingering impressions, and legacies.",
+          "relatedWords": [
+            "Athar (Trace / Tradition)",
+            "Atharah (Remnant of knowledge)",
+            "Ithar (Altruistic preference)"
+          ],
+          "theologicalContext": "All indirect and enduring consequences of an individual's deeds—beneficial or harmful—that outlive their physical life on earth.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 7, Surah Ya-Sin"
+        },
+        {
+          "term": "Imam",
+          "arabicWord": "إِمَام",
+          "arabicRoot": "أ - م - م (A-M-M)",
+          "literalMeaning": "A guide, leader, blueprint, or master ledger.",
+          "relatedWords": [
+            "Ummah (Community)",
+            "Umm (Mother)",
+            "Imamah (Leadership)"
+          ],
+          "theologicalContext": "The Preserved Tablet (Al-Lawh al-Mahfuz) in which every occurrence, action, and breath is comprehensively registered.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 7, Surah Ya-Sin"
+        }
+      ]
+    }
+  ]
+}

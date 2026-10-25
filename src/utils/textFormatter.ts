@@ -16,6 +16,7 @@ export const ARABIC_TERM_REGISTRY: Record<string, ArabicTermMapping> = {
   wiqayah: { arabic: 'وقاية', transliteration: 'Wiqayah', definition: 'placing a protective shield against harm' },
   taqwa: { arabic: 'تقوى', transliteration: 'Taqwa', definition: 'God-consciousness and pious vigilance' },
   muttaqin: { arabic: 'المتقين', transliteration: 'Al-Muttaqin', definition: 'those who shield themselves with piety' },
+  muttaqin_bare: { arabic: 'المتقين', transliteration: 'Muttaqin', definition: 'those who shield themselves with piety' },
   kufr: { arabic: 'كفر', transliteration: 'Kufr', definition: 'to cover, conceal, or bury the truth' },
   kaffar: { arabic: 'كفار', transliteration: 'Kaffar', definition: 'one who stubbornly buries the truth' },
   kafaru: { arabic: 'كفروا', transliteration: 'Kafaru', definition: 'they willfully rejected and concealed the truth' },
@@ -25,6 +26,7 @@ export const ARABIC_TERM_REGISTRY: Record<string, ArabicTermMapping> = {
   nifaq: { arabic: 'نفاق', transliteration: 'Nifaq', definition: 'subterranean duplicity / outward hypocrisy' },
   munafiq: { arabic: 'منافق', transliteration: 'Munafiq', definition: 'hypocrite who enters through one door and exits another' },
   munafiqin: { arabic: 'المنافقين', transliteration: 'Al-Munafiqin', definition: 'the hypocrites' },
+  munafiqin_bare: { arabic: 'المنافقين', transliteration: 'Munafiqin', definition: 'the hypocrites' },
   marad: { arabic: 'مرض', transliteration: 'Marad', definition: 'chronic spiritual ailment and moral decay' },
   andad: { arabic: 'أنداد', transliteration: 'Andad', definition: 'rival peers, counterfeits, and false deities' },
   nidd: { arabic: 'ند', transliteration: 'Nidd', definition: 'an equal or rival partner' },
@@ -61,28 +63,30 @@ export function formatArabicEnglishInsight(text: string): string {
   let result = text;
 
   // Process longer phrases first to prevent partial replacements
-  const sortedKeys = Object.keys(ARABIC_TERM_REGISTRY).sort((a, b) => b.length - a.length);
+  const sortedKeys = Object.keys(ARABIC_TERM_REGISTRY).sort(
+    (a, b) => ARABIC_TERM_REGISTRY[b].transliteration.length - ARABIC_TERM_REGISTRY[a].transliteration.length
+  );
 
   for (const key of sortedKeys) {
     const entry = ARABIC_TERM_REGISTRY[key];
     const trans = entry.transliteration;
     const arabic = entry.arabic;
-
-    // Pattern matches:
-    // "derived from Wiqayah" or "Wiqayah: definition" or "from Wiqayah"
-    // But avoids touching text that already has Arabic preceding or enclosing it
     const escapedTrans = trans.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
 
-    // If already preceded by the Arabic word, skip
-    const alreadyFormattedRegex = new RegExp(`${arabic}\\s*\\(${escapedTrans}\\)`, 'i');
-    if (alreadyFormattedRegex.test(result)) {
-      continue;
-    }
+    // Replace terms enclosed in parentheses like "(Taqwa)" where Arabic is not already present
+    const parenRegex = new RegExp(`(?<![\\u0600-\\u06FF]\\s*)\\(\\s*${escapedTrans}\\s*\\)`, 'gi');
+    result = result.replace(parenRegex, `${arabic} (${trans})`);
 
-    // Match word boundaries: e.g. " Wiqayah" or "(Wiqayah)" or "from Wiqayah:"
-    const termRegex = new RegExp(`(?<![\u0600-\u06FF\\w])${escapedTrans}(?![\u0600-\u06FF\\w])`, 'gi');
-
-    result = result.replace(termRegex, `${arabic} (${trans})`);
+    // Replace standalone occurrences not already preceded by Arabic text or open paren
+    const standaloneRegex = new RegExp(`(?<![\\u0600-\\u06FF]\\s*(?:\\()?)(?<![\\w\\u0600-\\u06FF])${escapedTrans}(?![\\w\\u0600-\\u06FF])`, 'gi');
+    result = result.replace(standaloneRegex, (match, offset, fullStr) => {
+      // Check if preceded by Arabic characters within the last 15 chars
+      const preceding = fullStr.substring(Math.max(0, offset - 15), offset);
+      if (/[\u0600-\u06FF]/.test(preceding)) {
+        return match;
+      }
+      return `${arabic} (${trans})`;
+    });
   }
 
   return result;

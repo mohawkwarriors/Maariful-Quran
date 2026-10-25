@@ -1,0 +1,141 @@
+{
+  "number": 113,
+  "nameArabic": "الفلق",
+  "nameTransliterated": "Al-Falaq",
+  "nameEnglish": "The Daybreak",
+  "versesCount": 5,
+  "revelationType": "Makki",
+  "juz": [30],
+  "bismillahPre": true,
+  "introductoryTafseer": "Surah Al-Falaq, paired with Surah An-Nas, constitutes the 'Mu'awwidhatayn' (the Twin Surahs of Divine Refuge). Revealed to deliver believers from all unseen, physical, psychic, and metaphysical perils, Mufti Muhammad Shafi notes in Ma'ariful Qur'an that these two chapters provide the ultimate spiritual armory against cosmic evil, malevolent occult practices, nocturnal terrors, and the destructive poison of envy.",
+  "historicalContext": {
+    "background": "According to authentic traditions documented by Imam al-Bukhari, Imam Muslim, and extensively cited in Ma'ariful Qur'an, Surah Al-Falaq descended when the Prophet (ﷺ) was afflicted with severe physical distress caused by occult sorcery enacted by the Jewish conspirator Labid ibn al-A'sam and his daughters, who tied eleven knots upon combings of the Prophet's hair and cast them into the deep well of Dharwan. Archangel Jibril descended with these two surahs comprising eleven verses corresponding to the eleven knots. As each verse was recited, a knot untied and a sensation of profound lightness and total healing was restored, establishing these chapters as an eternal protection for all humanity."
+  },
+  "sections": [
+    {
+      "id": "113-1-5",
+      "surahNumber": 113,
+      "verseRange": [1, 5],
+      "title": "Seeking Invincible Refuge in the Lord of the Splitting Dawn",
+      "juzNumber": 30,
+      "revelationType": "Makki",
+      "arabicText": "قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ ۝ مِن شَرِّ مَا خَلَقَ ۝ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ ۝ وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ ۝ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ ۝",
+      "translation": "Say: 'I seek refuge in the Lord of the [Falaq] (the Daybreak) ۝ From the evil of whatever He has created ۝ And from the evil of the [Ghasiq] (darkness) when it settles in ۝ And from the evil of the [Naffathat] (blowers upon knots) ۝ And from the evil of the [Hasid] (envier) when he practices [Hasad] (destructive envy).' ۝",
+      "phraseCards": [
+        {
+          "id": "113-card-1",
+          "verseNumber": 1,
+          "arabicPhrase": "قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ",
+          "englishPhrase": "Say: I seek refuge in the Lord of the Daybreak",
+          "vocabulary": [
+            { "word": "قُلْ", "root": "ق - و - ل", "meaning": "Say / proclaim", "grammarNote": "Imperative verb" },
+            { "word": "أَعُوذُ", "root": "ع - و - ذ", "meaning": "I seek protective refuge", "grammarNote": "First person imperfect verb" },
+            { "word": "بِرَبِّ", "root": "ر - ب - ب", "meaning": "In the Lord, Sustainer & Nurturer", "grammarNote": "Preposition + Genitive noun" },
+            { "word": "الْفَلَقِ", "root": "ف - ل - ق", "meaning": "The daybreak / cleaving of the dawn", "grammarNote": "Definite noun in genitive" }
+          ]
+        },
+        {
+          "id": "113-card-2",
+          "verseNumber": 2,
+          "arabicPhrase": "مِن شَرِّ مَا خَلَقَ",
+          "englishPhrase": "From the evil of whatever He has created",
+          "vocabulary": [
+            { "word": "مِن", "root": "حرف جر", "meaning": "From", "grammarNote": "Preposition" },
+            { "word": "شَرِّ", "root": "ش - ر - ر", "meaning": "The evil / harmful peril", "grammarNote": "Noun" },
+            { "word": "مَا", "root": "اسم موصول", "meaning": "Whatever / that which", "grammarNote": "Relative pronoun" },
+            { "word": "خَلَقَ", "root": "خ - ل - ق", "meaning": "He created", "grammarNote": "Third person perfect verb" }
+          ]
+        },
+        {
+          "id": "113-card-3",
+          "verseNumber": 3,
+          "arabicPhrase": "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ",
+          "englishPhrase": "And from the evil of darkness when it settles in",
+          "vocabulary": [
+            { "word": "غَاسِقٍ", "root": "غ - س - ق", "meaning": "Intense darkness / the gloomy night", "grammarNote": "Active participle" },
+            { "word": "إِذَا", "root": "ظرف زمان", "meaning": "When / whenever", "grammarNote": "Temporal adverb" },
+            { "word": "وَقَبَ", "root": "و - ق - ب", "meaning": "It completely engulfs and penetrates", "grammarNote": "Past tense verb" }
+          ]
+        },
+        {
+          "id": "113-card-4",
+          "verseNumber": 4,
+          "arabicPhrase": "وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ",
+          "englishPhrase": "And from the evil of the blowers upon knots",
+          "vocabulary": [
+            { "word": "النَّفَّاثَاتِ", "root": "ن - ف - ث", "meaning": "The women who blow with saliva", "grammarNote": "Intensive plural participle" },
+            { "word": "فِي", "root": "حرف جر", "meaning": "In / into", "grammarNote": "Preposition" },
+            { "word": "الْعُقَدِ", "root": "ع - ق - د", "meaning": "The knots / bindings", "grammarNote": "Plural noun" }
+          ]
+        },
+        {
+          "id": "113-card-5",
+          "verseNumber": 5,
+          "arabicPhrase": "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ",
+          "englishPhrase": "And from the evil of an envier when he envies",
+          "vocabulary": [
+            { "word": "حَاسِدٍ", "root": "ح - س - د", "meaning": "An envier burning with malice", "grammarNote": "Active participle" },
+            { "word": "إِذَا", "root": "ظرف زمان", "meaning": "When", "grammarNote": "Temporal adverb" },
+            { "word": "حَسَدَ", "root": "ح - س - د", "meaning": "He harbors or acts upon his envy", "grammarNote": "Past tense verb" }
+          ]
+        }
+      ],
+      "commentary": "In Ma'ariful Qur'an, Mufti Muhammad Shafi explains that commencing this prayer with 'Rabb al-Falaq' (the Lord of the Daybreak) is steeped in deep spiritual wisdom. Just as Allah possesses the supreme cosmic power to cleave the pitch-black darkness of the night with the brilliant dawn of day, He is uniquely capable of dispelling any dark affliction, sorcery, depression, or malice that envelops the servant's life.\n\nThe surah begins broadly with seeking protection from 'the evil of whatever He has created' (including fierce beasts, micro-pathogens, venomous creatures, and rebellious spirits), before focusing on three distinct, lethal perils: nocturnal darkness (when malevolent entities roam), occult spells (tied knots charged with spiritual harm), and malignant envy (Hasad). Mufti Shafi emphasizes that envy is the first sin committed in heaven (by Iblis against Adam) and the first on earth (by Qabil against Habil). True protection from these subtle metaphysical poisons cannot be secured through material weapons; it demands total, unwavering reliance upon the singular Creator.",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Legal Rulings on Ruqyah, Talismans & Occult Cures",
+          "content": "Mufti Muhammad Shafi articulates the classical Hanafi consensus regarding spiritual healing (Ruqyah): Using Quranic verses, the names of Allah, and authentic prophetic supplications is entirely lawful and commendable (Sunnah), as evidenced by the Prophet's regular recitation of the Mu'awwidhatayn before sleep. Conversely, using unintelligible incantations, numerological charms, or occult amulets invoking spirits is strictly impermissible (Haram) and borders on Shirk (associating partners with Allah)."
+        },
+        {
+          "type": "asbab",
+          "title": "Occasion of Revelation: The Sorcery of Labid ibn al-A'sam",
+          "content": "Documented in Sahih al-Bukhari, when the Prophet (ﷺ) was afflicted with severe physical malaise due to the sorcery of Labid ibn al-A'sam and his daughters who buried eleven knots in the well of Dharwan, Archangel Jibril descended with Surah Al-Falaq and Surah An-Nas (eleven verses in total). With each verse recited, a knot severed until the Prophet rose as though freed from chains."
+        },
+        {
+          "type": "insights",
+          "title": "The Poison of Hasad (Destructive Envy) vs. Ghibtah (Benign Aspiration)",
+          "content": "Ma'ariful Qur'an distinguishes between 'Hasad' (wishing that another's blessing be revoked, which is a major spiritual disease and sinful rebellion against divine allocation) and 'Ghibtah' (admiration and wishing to attain similar virtue without desiring loss for the other, which is praiseworthy). The verse specifically conditions refuge upon 'when he envies' (idha hasad), because envy hidden in the heart harms only the envier until it manifests in action, speech, or the evil eye (Ayn)."
+        }
+      ],
+      "curatedTerms": [
+        {
+          "term": "Falaq",
+          "arabicWord": "الْفَلَق",
+          "arabicRoot": "ف - ل - ق (F-L-Q)",
+          "literalMeaning": "The cleaving or bursting forth of dawn; the splitting of seeds into plant life.",
+          "relatedWords": ["Faliq (Cleaver)", "Falq (Fissure)", "Infilaq (Daybreak)"],
+          "theologicalContext": "Signifies Allah's absolute power to dispel suffocating darkness and distress with the radiant morning of divine relief and salvation.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 8, Surah Al-Falaq"
+        },
+        {
+          "term": "Ghasiq",
+          "arabicWord": "غَاسِق",
+          "arabicRoot": "غ - س - ق (Gh-S-Q)",
+          "literalMeaning": "Intense gloom, nocturnal darkness, or the sinking of the full moon.",
+          "relatedWords": ["Ghasaq (Twilight / Nightfall)", "Ighsaq (Darkening)"],
+          "theologicalContext": "The cloak of night during which predatory instincts, malevolent spirits, and criminal harms are unleashed under cover of obscurity.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 8, Surah Al-Falaq"
+        },
+        {
+          "term": "Naffathat",
+          "arabicWord": "النَّفَّاثَات",
+          "arabicRoot": "ن - ف - ث (N-F-Th)",
+          "literalMeaning": "Those who blow repeatedly with light saliva upon bindings.",
+          "relatedWords": ["Nafath (Spitting slightly)", "Nafthah (A gentle blow)"],
+          "theologicalContext": "Refers specifically to occult practitioners and sorceresses who knot threads while chanting incantations to channel psychic and demonic harm.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 8, Surah Al-Falaq"
+        },
+        {
+          "term": "Hasad",
+          "arabicWord": "حَسَد",
+          "arabicRoot": "ح - س - د (H-S-D)",
+          "literalMeaning": "Peeling away; destructive envy burning with malice toward another's blessings.",
+          "relatedWords": ["Hasid (Envier)", "Mahsud (The envied person)", "Tahad (Mutual animosity)"],
+          "theologicalContext": "A venomous spiritual malady whereby an individual desires the elimination of divine gifts bestowed upon others, fundamentally protesting Allah's wisdom.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 8, Surah Al-Falaq"
+        }
+      ]
+    }
+  ]
+}

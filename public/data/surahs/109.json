@@ -1,0 +1,133 @@
+{
+  "number": 109,
+  "nameArabic": "الكافرون",
+  "nameTransliterated": "Al-Kafirun",
+  "nameEnglish": "The Disbelievers",
+  "versesCount": 6,
+  "revelationType": "Makki",
+  "juz": [
+    30
+  ],
+  "bismillahPre": true,
+  "introductoryTafseer": "Surah Al-Kafirun is known in prophetic tradition as 'Surat al-Bara'ah' (The Chapter of Absolute Disavowal). In Ma'ariful Qur'an, Mufti Muhammad Shafi explains that this surah established the eternal boundary separating pure monotheism (Tawhid) from all syncretic compromises with idolatry.",
+  "historicalContext": {
+    "background": "Documented by Ibn Ishaq and Tabari, the leaders of Quraysh—including Walid ibn al-Mughirah, Umayyah ibn Khalaf, and Al-'As ibn Wa'il—approached the Prophet (ﷺ) with a diplomatic compromise: 'O Muhammad! Worship our gods (Al-Lat and Al-'Uzza) for one year, and we will worship your God for one year, so we may share in whatever good each has.' Instantly, Allah revealed this uncompromising repudiation: monotheistic truth cannot be hybridized with falsehood."
+  },
+  "sections": [
+    {
+      "id": "109-1-6",
+      "surahNumber": 109,
+      "verseRange": [
+        1,
+        6
+      ],
+      "title": "The Decisive Monotheistic Dissociation & Theological Clarity",
+      "juzNumber": 30,
+      "revelationType": "Makki",
+      "arabicText": "قُلْ يَا أَيُّهَا الْكَافِرُونَ ۝ لَا أَعْبُدُ مَا تَعْبُدُونَ ۝ وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ ۝ وَلَا أَنَا عَابِدٌ مَّا عَبَدتُّمْ ۝ وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ ۝ لَكُمْ دِينُكُمْ وَلِيَ دِينِ ۝",
+      "translation": "Say: 'O you [Kafirun] (disbelievers)! ۝ I worship not what you worship ۝ Nor do you worship what I worship ۝ Nor will I ever worship what you have worshipped ۝ Nor will you ever worship what I worship ۝ Unto you is your religion, and unto me is my religion.' ۝",
+      "phraseCards": [
+        {
+          "id": "109-card-1",
+          "verseNumber": 1,
+          "arabicPhrase": "قُلْ يَا أَيُّهَا الْكَافِرُونَ",
+          "englishPhrase": "Say: O you who disbelieve",
+          "vocabulary": [
+            {
+              "word": "قُلْ",
+              "root": "ق - و - ل",
+              "meaning": "Proclaim openly",
+              "grammarNote": "Imperative verb"
+            },
+            {
+              "word": "يَا أَيُّهَا",
+              "root": "أداة نداء",
+              "meaning": "O you (all)",
+              "grammarNote": "Vocative particle"
+            },
+            {
+              "word": "الْكَافِرُونَ",
+              "root": "ك - ف - ر",
+              "meaning": "The disbelievers / deniers of truth",
+              "grammarNote": "Plural masculine noun"
+            }
+          ]
+        },
+        {
+          "id": "109-card-2",
+          "verseNumber": 2,
+          "arabicPhrase": "لَا أَعْبُدُ مَا تَعْبُدُونَ",
+          "englishPhrase": "I do not worship what you worship",
+          "vocabulary": [
+            {
+              "word": "لَا أَعْبُدُ",
+              "root": "ع - ب - د",
+              "meaning": "I do not worship / serve",
+              "grammarNote": "Negative imperfect verb"
+            },
+            {
+              "word": "مَا تَعْبُدُونَ",
+              "root": "ع - ب - د",
+              "meaning": "What you worship of false idols",
+              "grammarNote": "Relative pronoun + verb"
+            }
+          ]
+        },
+        {
+          "id": "109-card-6",
+          "verseNumber": 6,
+          "arabicPhrase": "لَكُمْ دِينُكُمْ وَلِيَ دِينِ",
+          "englishPhrase": "For you is your religion, and for me is my religion",
+          "vocabulary": [
+            {
+              "word": "لَكُمْ",
+              "root": "شبه جملة",
+              "meaning": "Unto you belongs",
+              "grammarNote": "Preposition + Pronoun"
+            },
+            {
+              "word": "دِينُكُمْ",
+              "root": "د - ي - ن",
+              "meaning": "Your way of life and idolatry",
+              "grammarNote": "Noun + Possessive pronoun"
+            },
+            {
+              "word": "وَلِيَ دِينِ",
+              "root": "د - ي - ن",
+              "meaning": "And unto me belongs my pure faith",
+              "grammarNote": "Conjunction + Preposition + Noun"
+            }
+          ]
+        }
+      ],
+      "commentary": "In Ma'ariful Qur'an, Mufti Muhammad Shafi addresses the apparent repetition between verses 2-3 and 4-5. Classical rhetoricians and exegetes explain that the first set ('La a'budu ma ta'budun') negates the PRESENT act of worship, while the second set ('Wa la ana 'abidun ma 'abadtum') negates the FUTURE orientation and essence of worship. It declares: Neither am I worshipping your idols now, nor will it ever be my nature or practice in the future to worship them.\n\nThe concluding proclamation, 'Lakum deenukum wa liya deen' (To you be your religion, and to me my religion), is not an endorsement of polytheism, but an absolute disassociation (Bara'ah). It means: If you persist in idolatry, you will bear its catastrophic consequences, while I adhere purely to the monotheistic truth of my Creator.",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Sunnah Rulings: Recitation in Sunnah Prayers of Fajr and Maghrib",
+          "content": "Mufti Muhammad Shafi notes that it is a strongly confirmed Sunnah (Sunnah Mu'akkadah) to recite Surah Al-Kafirun in the first unit and Surah Al-Ikhlas in the second unit of the two Sunnah cycles before Fajr, the two Sunnah cycles after Maghrib, the Tawaf prayer, and the Witr prayer, uniting the declaration of disassociation from falsehood with the declaration of pure Tawhid."
+        },
+        {
+          "type": "insights",
+          "title": "Rejection of Religious Syncretism and Compromise of Truth",
+          "content": "Ma'ariful Qur'an observes that while Islam commands benevolence, justice, and fair treatment toward all human beings regardless of creed, it strictly forbids diluting theological truth or participating in polytheistic rites under the guise of interfaith syncretism."
+        }
+      ],
+      "curatedTerms": [
+        {
+          "term": "Deen",
+          "arabicWord": "دِين",
+          "arabicRoot": "د - ي - ن (D-Y-N)",
+          "literalMeaning": "Recompense, obedience, way of life, and comprehensive conviction.",
+          "relatedWords": [
+            "Dayn (Debt)",
+            "Dayyan (The Supreme Judge)",
+            "Madinah (City of civilization)"
+          ],
+          "theologicalContext": "The holistic framework of faith, worship, and moral existence that governs a human being's relationship with the Creator and creation.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 8, Surah Al-Kafirun"
+        }
+      ]
+    }
+  ]
+}
