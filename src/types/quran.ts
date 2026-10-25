@@ -38,6 +38,7 @@ export interface ThematicSection {
   surahNumber: number;
   verseRange: [number, number];
   title: string;
+  summary?: string;
   juzNumber: number;
   revelationType: 'Makki' | 'Madani';
   volumeNumber?: number;
@@ -68,6 +69,7 @@ export interface SurahManifestItem {
     id: string;
     verseRange: [number, number];
     title: string;
+    summary?: string;
   }[];
 }
 

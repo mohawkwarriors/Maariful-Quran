@@ -30,15 +30,16 @@ export function generateClientFallbackSurah(surahNumber: number, surahName?: str
   const juz = meta ? Array.from({ length: meta.juzEnd - meta.juzStart + 1 }, (_, i) => meta.juzStart + i) : [1];
   const summary = meta?.thematicSummary || `Authentic exegesis of Surah ${nameTrans} according to Ma'ariful Qur'an by Mufti Muhammad Shafi.`;
 
-  const previews: { id: string; verseRange: [number, number]; title: string }[] = meta?.sectionsPreview && meta.sectionsPreview.length > 0
-    ? (meta.sectionsPreview as { id: string; verseRange: [number, number]; title: string }[])
-    : [{ id: `${surahNumber}-1-${versesCount}`, verseRange: [1, versesCount] as [number, number], title: `Thematic Exegesis of Surah ${nameTrans}` }];
+  const previews: { id: string; verseRange: [number, number]; title: string; summary?: string }[] = meta?.sectionsPreview && meta.sectionsPreview.length > 0
+    ? (meta.sectionsPreview as { id: string; verseRange: [number, number]; title: string; summary?: string }[])
+    : [{ id: `${surahNumber}-1-${versesCount}`, verseRange: [1, versesCount] as [number, number], title: `Thematic Exegesis of Surah ${nameTrans}`, summary }];
 
   const sections: ThematicSection[] = previews.map((sec) => ({
     id: sec.id,
     surahNumber,
     verseRange: [sec.verseRange[0], sec.verseRange[1]] as [number, number],
     title: sec.title,
+    summary: sec.summary,
     juzNumber: meta?.juzStart || 1,
     revelationType,
     arabicText: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ ۝',
@@ -186,7 +187,7 @@ export class QuranSearchEngine {
       if (surah.sectionsPreview) {
         surah.sectionsPreview.forEach((sec) => {
           const secDocId = `section-${surah.number}-${sec.id}`;
-          const secContent = `${surah.nameTransliterated} ${sec.title} Verses ${sec.verseRange[0]}-${sec.verseRange[1]}`;
+          const secContent = `${surah.nameTransliterated} ${sec.title} ${sec.summary || ''} Verses ${sec.verseRange[0]}-${sec.verseRange[1]}`;
           this.sectionIndex.add(secDocId, secContent);
           this.lookupMap.set(secDocId, {
             id: secDocId,
@@ -196,7 +197,7 @@ export class QuranSearchEngine {
             sectionId: sec.id,
             verseRange: sec.verseRange,
             title: sec.title,
-            snippet: `Surah ${surah.nameTransliterated} • Verses ${sec.verseRange[0]}–${sec.verseRange[1]}`,
+            snippet: sec.summary || `Surah ${surah.nameTransliterated} • Verses ${sec.verseRange[0]}–${sec.verseRange[1]}`,
           });
         });
       }

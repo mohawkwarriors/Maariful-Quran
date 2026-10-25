@@ -422,6 +422,11 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
           <h2 className="text-xl sm:text-2xl md:text-3xl font-serif-heading font-semibold text-[#1C1917] dark:text-[#F3F4F6] tracking-tight">
             {section.title}
           </h2>
+          {section.summary && (
+            <p className="mt-1.5 text-sm sm:text-[15px] text-stone-600 dark:text-stone-400 leading-relaxed max-w-3xl">
+              {section.summary}
+            </p>
+          )}
         </div>
 
         <div className="flex items-center gap-2 shrink-0 mt-1">

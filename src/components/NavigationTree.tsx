@@ -27,6 +27,7 @@ interface NavigationTreeProps {
     id: string;
     verseRange: [number, number];
     title: string;
+    summary?: string;
   }[];
   bookmark?: BookmarkRecord | null;
   bookmarks?: BookmarkRecord[];
@@ -537,9 +538,22 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
                               <span className="text-[#596B8E] dark:text-[#788BB3] font-mono font-medium shrink-0 mt-0.5 text-[11px]">
                                 [{sec.verseRange[0]}–{sec.verseRange[1]}]
                               </span>
-                              <span className="text-xs line-clamp-2 leading-snug">
-                                {sec.title}
-                              </span>
+                              <div className="min-w-0 flex-1 space-y-0.5">
+                                <div className="text-xs font-semibold leading-snug line-clamp-2">
+                                  {sec.title}
+                                </div>
+                                {sec.summary && (
+                                  <div
+                                    className={`text-[11px] leading-snug line-clamp-2 font-normal ${
+                                      isSecActive
+                                        ? 'text-[#CD7743]/85 dark:text-[#E08955]/85'
+                                        : 'text-stone-500 dark:text-stone-400'
+                                    }`}
+                                  >
+                                    {sec.summary}
+                                  </div>
+                                )}
+                              </div>
                             </div>
                             {isSecBookmarked && (
                               <Bookmark className="w-3.5 h-3.5 fill-[#CD7743] text-[#CD7743] shrink-0 mt-0.5" />

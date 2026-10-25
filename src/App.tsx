@@ -361,6 +361,7 @@ function ReaderApp() {
               id: s.id,
               verseRange: s.verseRange,
               title: s.title,
+              summary: s.summary,
             })) || []
           }
           bookmark={bookmarks[0] || null}
