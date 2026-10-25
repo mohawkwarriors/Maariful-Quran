@@ -14,13 +14,13 @@ export const SurahHero: React.FC<SurahHeroProps> = ({ surah }) => {
   };
 
   return (
-    <div className="pt-5 pb-8 px-4 sm:px-8 border-b border-[#E8E5DF] dark:border-[#2E2E33] bg-[#FDFCFB] dark:bg-[#1C1C20] text-center space-y-4">
-      {/* Very Top Header Row: 3-column flex layout ensuring zero text overlap at any screen width */}
+    <div className="pt-6 pb-8 px-4 sm:px-8 border-b border-[#E8E5DF] dark:border-[#2E2E33] bg-[#FDFCFB] dark:bg-[#1C1C20] text-center flex flex-col items-center">
+      {/* 1. Very Top Row: 3-column flex layout ensuring zero text overlap at any screen width */}
       <div className="w-full max-w-4xl xl:max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 min-h-[34px]">
         {/* Left balance spacer on desktop to keep metadata centered */}
         <div className="hidden md:block w-32 shrink-0 pointer-events-none" aria-hidden="true" />
 
-        {/* Centered Metadata (In normal document flow so it cannot be collided with or overlapped) */}
+        {/* Centered Metadata */}
         <div className="flex items-center justify-center flex-wrap gap-2 text-xs uppercase font-medium tracking-widest text-[#596B8E] dark:text-[#788BB3] text-center">
           <span>{surah.revelationType}</span>
           <span aria-hidden="true">·</span>
@@ -51,17 +51,17 @@ export const SurahHero: React.FC<SurahHeroProps> = ({ surah }) => {
         </div>
       </div>
 
-      {/* Surah Titles with explicit vertical clearance for Arabic diacritics */}
-      <div className="flex flex-col items-center justify-center pt-2">
+      {/* 2. Surah Titles: Even 24px margin from metadata row */}
+      <div className="mt-6 flex flex-col items-center justify-center">
         <h1
           dir="rtl"
-          className="font-quran text-4xl sm:text-5xl md:text-6xl text-[#111827] dark:text-[#F9FAFB] leading-[1.8] sm:leading-[1.9] tracking-normal block select-text overflow-visible py-1.5"
+          className="font-quran text-4xl sm:text-5xl md:text-6xl text-[#111827] dark:text-[#F9FAFB] leading-[1.3] sm:leading-[1.35] tracking-normal block select-text overflow-visible"
         >
           سورة {surah.nameArabic}
         </h1>
 
-        {/* Centered Transliteration and English Meaning with clean margin preventing glyph overlap */}
-        <div className="flex items-center gap-2 sm:gap-2.5 flex-wrap justify-center text-center mt-3 pt-1">
+        {/* Centered Transliteration and English Meaning closely grouped with title */}
+        <div className="flex items-center gap-2 sm:gap-2.5 flex-wrap justify-center text-center mt-3">
           <span className="text-xl sm:text-2xl font-serif-heading font-medium text-[#CD7743] dark:text-[#E08955] tracking-wide">
             {surah.nameTransliterated}
           </span>
@@ -72,25 +72,27 @@ export const SurahHero: React.FC<SurahHeroProps> = ({ surah }) => {
         </div>
       </div>
 
-      {/* Bismillah Calligraphy: Ample padding and leading so diacritics never touch borders */}
+      {/* 3. Bismillah Calligraphy: Even 24px margin from titles */}
       {surah.bismillahPre && (
-        <div className="pt-2 flex justify-center">
+        <div className="mt-6 flex justify-center">
           <div
             dir="rtl"
-            className="font-quran text-2xl sm:text-3xl md:text-4xl leading-[2.1] sm:leading-[2.2] text-[#CD7743] dark:text-[#E08955] inline-block px-8 sm:px-12 py-3.5 sm:py-4 rounded-2xl bg-[#CD7743]/8 dark:bg-[#CD7743]/15 border border-[#CD7743]/30 dark:border-[#CD7743]/40 shadow-2xs overflow-visible select-text"
+            className="font-quran text-2xl sm:text-3xl md:text-4xl leading-[1.8] sm:leading-[1.9] text-[#CD7743] dark:text-[#E08955] inline-block px-8 sm:px-12 py-3 rounded-2xl bg-[#CD7743]/8 dark:bg-[#CD7743]/15 border border-[#CD7743]/30 dark:border-[#CD7743]/40 shadow-2xs overflow-visible select-text"
           >
             بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
           </div>
         </div>
       )}
 
-      {/* Background Section (combining Overview and Historical Circumstances) */}
-      <SurahHistoricalContext
-        overview={surah.introductoryTafseer}
-        context={historicalContext}
-        surahNumber={surah.number}
-        surahName={surah.nameTransliterated}
-      />
+      {/* 4. Background Section: Even 24px margin from Bismillah */}
+      <div className="w-full mt-6">
+        <SurahHistoricalContext
+          overview={surah.introductoryTafseer}
+          context={historicalContext}
+          surahNumber={surah.number}
+          surahName={surah.nameTransliterated}
+        />
+      </div>
     </div>
   );
 };
