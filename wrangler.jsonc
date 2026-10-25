@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "maariful",
+  "name": "maariful-quran",
   "compatibility_date": "2026-10-24",
   "assets": {
     "directory": "./dist",
