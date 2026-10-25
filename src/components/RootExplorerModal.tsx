@@ -86,6 +86,7 @@ export const RootExplorerModal: React.FC<RootExplorerModalProps> = ({
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
+              aria-label="Search Quranic roots by Arabic or English"
               placeholder="Search roots by Arabic or English (e.g. ك-ت-ب, K-T-B, mercy, book)..."
               className="w-full pl-9 pr-3 py-1.5 rounded-lg border border-stone-200 dark:border-stone-700/80 bg-white dark:bg-[#25252A] text-xs text-stone-900 dark:text-stone-100 placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-[#CD7743]/40"
             />

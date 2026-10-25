@@ -53,6 +53,25 @@ export const ARABIC_TERM_REGISTRY: Record<string, ArabicTermMapping> = {
   falah: { arabic: 'فلاح', transliteration: 'Falah', definition: 'ultimate triumph and everlasting salvation in Paradise' },
 };
 
+// Pre-compile and pre-sort term replacement rules once at module level
+const PRECOMPILED_RULES = Object.keys(ARABIC_TERM_REGISTRY)
+  .sort((a, b) => ARABIC_TERM_REGISTRY[b].transliteration.length - ARABIC_TERM_REGISTRY[a].transliteration.length)
+  .map((key) => {
+    const entry = ARABIC_TERM_REGISTRY[key];
+    const trans = entry.transliteration;
+    const arabic = entry.arabic;
+    const escapedTrans = trans.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+    return {
+      arabic,
+      trans,
+      replacement: `${arabic} (${trans})`,
+      parenRegex: new RegExp(`(?<![\\u0600-\\u06FF]\\s*)\\(\\s*${escapedTrans}\\s*\\)`, 'gi'),
+      standaloneRegex: new RegExp(`(?<![\\u0600-\\u06FF]\\s*(?:\\()?)(?<![\\w\\u0600-\\u06FF])${escapedTrans}(?![\\w\\u0600-\\u06FF])`, 'gi'),
+    };
+  });
+
+const formattedInsightCache = new Map<string, string>();
+
 /**
  * Replaces standalone occurrences of recognized English transliterated terms with
  * Arabic text + (English transliteration), ensuring no double-formatting.
@@ -60,34 +79,28 @@ export const ARABIC_TERM_REGISTRY: Record<string, ArabicTermMapping> = {
 export function formatArabicEnglishInsight(text: string): string {
   if (!text) return text;
 
+  const cached = formattedInsightCache.get(text);
+  if (cached !== undefined) return cached;
+
   let result = text;
 
-  // Process longer phrases first to prevent partial replacements
-  const sortedKeys = Object.keys(ARABIC_TERM_REGISTRY).sort(
-    (a, b) => ARABIC_TERM_REGISTRY[b].transliteration.length - ARABIC_TERM_REGISTRY[a].transliteration.length
-  );
-
-  for (const key of sortedKeys) {
-    const entry = ARABIC_TERM_REGISTRY[key];
-    const trans = entry.transliteration;
-    const arabic = entry.arabic;
-    const escapedTrans = trans.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+  for (let i = 0; i < PRECOMPILED_RULES.length; i++) {
+    const rule = PRECOMPILED_RULES[i];
 
     // Replace terms enclosed in parentheses like "(Taqwa)" where Arabic is not already present
-    const parenRegex = new RegExp(`(?<![\\u0600-\\u06FF]\\s*)\\(\\s*${escapedTrans}\\s*\\)`, 'gi');
-    result = result.replace(parenRegex, `${arabic} (${trans})`);
+    result = result.replace(rule.parenRegex, rule.replacement);
 
     // Replace standalone occurrences not already preceded by Arabic text or open paren
-    const standaloneRegex = new RegExp(`(?<![\\u0600-\\u06FF]\\s*(?:\\()?)(?<![\\w\\u0600-\\u06FF])${escapedTrans}(?![\\w\\u0600-\\u06FF])`, 'gi');
-    result = result.replace(standaloneRegex, (match, offset, fullStr) => {
+    result = result.replace(rule.standaloneRegex, (match, offset, fullStr) => {
       // Check if preceded by Arabic characters within the last 15 chars
       const preceding = fullStr.substring(Math.max(0, offset - 15), offset);
       if (/[\u0600-\u06FF]/.test(preceding)) {
         return match;
       }
-      return `${arabic} (${trans})`;
+      return rule.replacement;
     });
   }
 
+  formattedInsightCache.set(text, result);
   return result;
 }

@@ -664,6 +664,29 @@ export function getArabicStem(text: string): string {
   return s;
 }
 
+// Pre-indexed lexicon cache for instant O(1) diacritics and stem lookups
+interface IndexedLexiconEntry {
+  key: string;
+  keyStripped: string;
+  keyStem: string;
+  data: WordDeepDiveData;
+}
+
+let indexedLexicon: IndexedLexiconEntry[] | null = null;
+function getIndexedLexicon(): IndexedLexiconEntry[] {
+  if (!indexedLexicon) {
+    indexedLexicon = Object.entries(QURAN_LEXICON).map(([key, data]) => ({
+      key,
+      keyStripped: stripArabicDiacritics(key),
+      keyStem: getArabicStem(key),
+      data,
+    }));
+  }
+  return indexedLexicon;
+}
+
+const deepDiveMemoCache = new Map<string, WordDeepDiveData>();
+
 /**
  * Intelligent helper to extract or synthesize deep-dive data for any word
  * Guarantees that EVERY word receives full, consistent sections including
@@ -671,28 +694,35 @@ export function getArabicStem(text: string): string {
  */
 export function getWordDeepDive(word: string, fallbackMeaning?: string, fallbackRoot?: string, fallbackGrammar?: string): WordDeepDiveData {
   const cleanWord = word.trim().replace(/[.,;!?،]/g, '');
+  const cacheKey = `${cleanWord}|${fallbackMeaning || ''}|${fallbackRoot || ''}|${fallbackGrammar || ''}`;
+  const cached = deepDiveMemoCache.get(cacheKey);
+  if (cached) return cached;
+
   const stripped = stripArabicDiacritics(cleanWord);
   const stem = getArabicStem(cleanWord);
 
   // 1. Exact match in lexicon
   if (QURAN_LEXICON[cleanWord]) {
-    return QURAN_LEXICON[cleanWord];
+    const res = QURAN_LEXICON[cleanWord];
+    deepDiveMemoCache.set(cacheKey, res);
+    return res;
   }
 
-  // 2. Normalized diacritics & stem match
-  for (const [key, data] of Object.entries(QURAN_LEXICON)) {
-    const keyStripped = stripArabicDiacritics(key);
-    const keyStem = getArabicStem(key);
-
+  // 2. Normalized diacritics & stem match using pre-indexed entries
+  const entries = getIndexedLexicon();
+  for (let i = 0; i < entries.length; i++) {
+    const entry = entries[i];
     // Exact stripped match or exact stem match for meaningful word stems (>= 3 chars)
     if (
-      stripped === keyStripped ||
-      (stem.length >= 3 && keyStem.length >= 3 && stem === keyStem)
+      stripped === entry.keyStripped ||
+      (stem.length >= 3 && entry.keyStem.length >= 3 && stem === entry.keyStem)
     ) {
-      return {
-        ...data,
+      const res: WordDeepDiveData = {
+        ...entry.data,
         word: cleanWord, // preserve exact vocalized spelling from Quran text
       };
+      deepDiveMemoCache.set(cacheKey, res);
+      return res;
     }
   }
 
@@ -700,7 +730,7 @@ export function getWordDeepDive(word: string, fallbackMeaning?: string, fallback
   const rootStr = fallbackRoot || 'Triliteral Root';
   const cleanTransliteration = fallbackMeaning ? fallbackMeaning.split(/\s+/).slice(0, 3).join(' ') : 'Quranic Term';
 
-  return {
+  const synthesized: WordDeepDiveData = {
     word: cleanWord,
     transliteration: cleanTransliteration,
     partOfSpeech: fallbackGrammar || 'Quranic Vocabulary (مفردات قرآنية)',
@@ -738,6 +768,9 @@ export function getWordDeepDive(word: string, fallbackMeaning?: string, fallback
     ],
     tafseerNote: fallbackGrammar || `Explicated in Ma'ariful Qur'an by Mufti Muhammad Shafi with attention to classical Hanafi jurisprudence and spiritual wisdom.`
   };
+
+  deepDiveMemoCache.set(cacheKey, synthesized);
+  return synthesized;
 }
 
 export interface LexiconRootSummary {

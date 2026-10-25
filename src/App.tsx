@@ -134,14 +134,14 @@ function ReaderApp() {
 
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const sectionId = entry.target.getAttribute('data-section-id');
-            if (sectionId) {
-              setActiveSectionId(sectionId);
-            }
+        const visibleEntries = entries.filter((e) => e.isIntersecting);
+        if (visibleEntries.length > 0) {
+          visibleEntries.sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+          const sectionId = visibleEntries[0].target.getAttribute('data-section-id');
+          if (sectionId) {
+            setActiveSectionId(sectionId);
           }
-        });
+        }
       },
       {
         root: null, // viewport
@@ -208,18 +208,12 @@ function ReaderApp() {
     };
   }, [surahData, isSurahLoading, viewMode, activeSurahNumber]);
 
-  // Handle section jumping
+  // Handle section jumping with race-free pending section scrolling
   const handleSelectSection = (sectionId: string, targetSurahNumber?: number) => {
     if (targetSurahNumber && targetSurahNumber !== activeSurahNumber) {
+      setPendingScrollSectionId(sectionId);
       setActiveSurahNumber(targetSurahNumber);
       setScrollProgress(0);
-      setTimeout(() => {
-        const el = document.getElementById(sectionId);
-        if (el) {
-          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          setActiveSectionId(sectionId);
-        }
-      }, 300);
       return;
     }
 
@@ -230,9 +224,26 @@ function ReaderApp() {
     }
   };
 
+  // Scroll to pending section once Surah data finishes loading into the DOM
+  useEffect(() => {
+    if (!pendingScrollSectionId || !surahData || surahData.number !== activeSurahNumber) return;
+
+    const timer = setTimeout(() => {
+      const el = document.getElementById(pendingScrollSectionId);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        setActiveSectionId(pendingScrollSectionId);
+      }
+      setPendingScrollSectionId(null);
+    }, 80);
+
+    return () => clearTimeout(timer);
+  }, [surahData, pendingScrollSectionId, activeSurahNumber]);
+
   const handleSelectSurah = (num: number) => {
     setActiveSurahNumber(num);
     setActiveSectionId(null);
+    setPendingScrollSectionId(null);
     setScrollProgress(0);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -261,15 +272,7 @@ function ReaderApp() {
 
   // Handle jumping to a specific topic reference across Surahs
   const handleSelectTopicReference = (ref: TopicReference) => {
-    if (ref.surahNumber !== activeSurahNumber) {
-      setActiveSurahNumber(ref.surahNumber);
-      setScrollProgress(0);
-      setTimeout(() => {
-        handleSelectSection(ref.sectionId, ref.surahNumber);
-      }, 350);
-    } else {
-      handleSelectSection(ref.sectionId);
-    }
+    handleSelectSection(ref.sectionId, ref.surahNumber);
   };
 
   const handleSelectRootWord = (word: string) => {
@@ -332,14 +335,7 @@ function ReaderApp() {
 
   // Resume reading from a bookmark
   const handleResumeBookmark = (b: BookmarkRecord) => {
-    if (b.surahNumber !== activeSurahNumber) {
-      setActiveSurahNumber(b.surahNumber);
-      setTimeout(() => {
-        handleSelectSection(b.sectionId);
-      }, 300);
-    } else {
-      handleSelectSection(b.sectionId);
-    }
+    handleSelectSection(b.sectionId, b.surahNumber);
   };
 
   return (
@@ -398,7 +394,7 @@ function ReaderApp() {
           scrollProgress={scrollProgress}
           isSidebarCollapsed={isSidebarCollapsed}
           onToggleSidebar={() => setIsSidebarCollapsed((prev) => !prev)}
-
+          onOpenRootExplorer={() => setIsRootExplorerOpen(true)}
         />
 
         {/* Reading Canvas Container: Uniform layout width regardless of sidebar collapse */}
@@ -480,7 +476,7 @@ function ReaderApp() {
 
       {/* Quranic Triliteral Root Explorer Modal */}
       <RootExplorerModal
-        isOpen={false}
+        isOpen={isRootExplorerOpen}
         onClose={() => setIsRootExplorerOpen(false)}
         onSelectWord={handleSelectRootWord}
       />

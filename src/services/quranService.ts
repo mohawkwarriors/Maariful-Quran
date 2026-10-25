@@ -11,7 +11,7 @@ export interface ManifestResponse {
 export const DATA_CACHE_KEY = '20261025-v2';
 
 export async function fetchManifest(): Promise<ManifestResponse> {
-  const res = await fetch(`/data/manifest.json?v=${DATA_CACHE_KEY}`, { cache: 'no-cache' });
+  const res = await fetch(`/data/manifest.json?v=${DATA_CACHE_KEY}`);
   if (!res.ok) {
     throw new Error('Failed to load Quran manifest');
   }
@@ -112,7 +112,7 @@ export async function fetchSurah(surahNumber: number, surahName?: string): Promi
   const padded = String(surahNumber).padStart(3, '0');
   
   try {
-    const res = await fetch(`/data/surahs/${padded}.json?v=${DATA_CACHE_KEY}`, { cache: 'no-cache' });
+    const res = await fetch(`/data/surahs/${padded}.json?v=${DATA_CACHE_KEY}`);
     if (res.ok) {
       return await res.json();
     }

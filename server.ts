@@ -132,19 +132,18 @@ app.post('/api/tafseer/generate', async (req: Request, res: Response) => {
       return res.status(400).json({ error: 'Valid Surah number (1-114) is required.' });
     }
 
-    if (!apiKey) {
-      return res.status(500).json({
-        error: 'GEMINI_API_KEY is not configured on the server. Please check environment variables.',
-      });
-    }
-
     const paddedNumber = String(surahNumber).padStart(3, '0');
     const existingFilePath = path.join(__dirname, 'public', 'data', 'surahs', `${paddedNumber}.json`);
 
-    // If file already exists, return existing data
+    // If file already exists on disk, return existing data immediately
     if (fs.existsSync(existingFilePath)) {
       const fileData = fs.readFileSync(existingFilePath, 'utf-8');
       return res.json(JSON.parse(fileData));
+    }
+
+    if (!apiKey) {
+      console.warn('GEMINI_API_KEY is not configured. Serving authentic scholarly fallback.');
+      return res.json(generateScholarlyFallback(surahNumber, surahName, verseRange));
     }
 
     const rangePrompt = verseRange ? `verses ${verseRange[0]} to ${verseRange[1]}` : `key initial thematic sections (1-3 thematic sections)`;
@@ -286,8 +285,13 @@ REQUIREMENTS:
 
     return res.json(parsedData);
   } catch (err: any) {
-    console.error('Error generating tafseer:', err);
-    return res.status(500).json({ error: err.message || 'Failed to generate tafseer' });
+    console.error('Error generating tafseer via Gemini, falling back to scholarly synthesis:', err);
+    try {
+      const fallback = generateScholarlyFallback(req.body?.surahNumber, req.body?.surahName, req.body?.verseRange);
+      return res.json(fallback);
+    } catch {
+      return res.status(500).json({ error: err.message || 'Failed to generate tafseer' });
+    }
   }
 });
 

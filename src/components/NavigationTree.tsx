@@ -208,13 +208,10 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
   };
 
   const handleResultClick = (res: SearchResultItem) => {
-    if (res.surahNumber !== activeSurahNumber) {
-      onSelectSurah(res.surahNumber);
-    }
     if (res.sectionId) {
-      setTimeout(() => {
-        onSelectSection(res.sectionId!);
-      }, 100);
+      onSelectSection(res.sectionId, res.surahNumber);
+    } else if (res.surahNumber !== activeSurahNumber) {
+      onSelectSurah(res.surahNumber);
     }
     setIsSearching(false);
     setSearchQuery('');
@@ -278,6 +275,7 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
             type="text"
             value={searchQuery}
             onChange={handleSearchChange}
+            aria-label="Search Surahs, rulings, and terms"
             placeholder="Search Surahs, rulings, terms..."
             className="w-full pl-10 pr-9 py-2.5 text-sm rounded-xl bg-stone-100 dark:bg-[#25252A] border border-stone-200 dark:border-stone-700/80 text-stone-800 dark:text-stone-200 placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-[#CD7743]/40 transition-all"
           />
@@ -522,9 +520,6 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
                           <button
                             key={sec.id}
                             onClick={() => {
-                              if (!isSelected) {
-                                onSelectSurah(surah.number);
-                              }
                               onSelectSection(sec.id, surah.number);
                               onCloseMobile();
                             }}
