@@ -393,7 +393,7 @@ function ReaderApp() {
           scrollProgress={scrollProgress}
           isSidebarCollapsed={isSidebarCollapsed}
           onToggleSidebar={() => setIsSidebarCollapsed((prev) => !prev)}
-          onOpenRootExplorer={() => setIsRootExplorerOpen(true)}
+
         />
 
         {/* Reading Canvas Container: Uniform layout width regardless of sidebar collapse */}
@@ -475,7 +475,7 @@ function ReaderApp() {
 
       {/* Quranic Triliteral Root Explorer Modal */}
       <RootExplorerModal
-        isOpen={isRootExplorerOpen}
+        isOpen={false}
         onClose={() => setIsRootExplorerOpen(false)}
         onSelectWord={handleSelectRootWord}
       />

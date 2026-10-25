@@ -51,8 +51,7 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
   onRemoveBookmark,
 }) => {
   const allBookmarks = bookmarks.length > 0 ? bookmarks : bookmark ? [bookmark] : [];
-  const [navTab, setNavTab] = useState<'surah' | 'volume' | 'juz' | 'theme'>('surah');
-  const [volExpandedMap, setVolExpandedMap] = useState<Record<number, boolean>>({});
+  const [navTab, setNavTab] = useState<'surah' | 'juz' | 'theme'>('surah');
   const [selectedTopicCategory, setSelectedTopicCategory] = useState<string>('all');
   const [expandedTopics, setExpandedTopics] = useState<Record<string, boolean>>({});
   const [searchQuery, setSearchQuery] = useState('');
@@ -114,50 +113,6 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
     return map;
   }, [surahs]);
 
-  const VOLUME_METADATA: Record<number, { title: string; subtitle: string; archiveLeaf: number }> = {
-    1: { title: 'Volume 1', subtitle: 'Al-Fatihah (1) – Al-Baqarah (2)', archiveLeaf: 81 },
-    2: { title: 'Volume 2', subtitle: "Ali 'Imran (3) – An-Nisa' (4)", archiveLeaf: 773 },
-    3: { title: 'Volume 3', subtitle: "Al-Ma'idah (5) – Al-A'raf (7)", archiveLeaf: 1432 },
-    4: { title: 'Volume 4', subtitle: 'Al-Anfal (8) – Hud (11)', archiveLeaf: 2238 },
-    5: { title: 'Volume 5', subtitle: 'Yusuf (12) – Al-Kahf (18)', archiveLeaf: 2812 },
-    6: { title: 'Volume 6', subtitle: 'Maryam (19) – Ar-Rum (30)', archiveLeaf: 3485 },
-    7: { title: 'Volume 7', subtitle: 'Luqman (31) – Al-Ahqaf (46)', archiveLeaf: 4245 },
-    8: { title: 'Volume 8', subtitle: 'Muhammad (47) – An-Nas (114)', archiveLeaf: 5050 },
-  };
-
-  const getSurahVol = (s: SurahManifestItem): number => {
-    if (s.volumeNumber) return s.volumeNumber;
-    if (s.number <= 2) return 1;
-    if (s.number <= 4) return 2;
-    if (s.number <= 7) return 3;
-    if (s.number <= 11) return 4;
-    if (s.number <= 18) return 5;
-    if (s.number <= 30) return 6;
-    if (s.number <= 46) return 7;
-    return 8;
-  };
-
-  const volumeMap = useMemo(() => {
-    const map = new Map<number, SurahManifestItem[]>();
-    for (let v = 1; v <= 8; v++) map.set(v, []);
-    surahs.forEach((s) => {
-      const v = getSurahVol(s);
-      const list = map.get(v) || [];
-      list.push(s);
-      map.set(v, list);
-    });
-    return map;
-  }, [surahs]);
-
-  const isVolExpanded = (volNum: number): boolean => {
-    if (volExpandedMap[volNum] !== undefined) return volExpandedMap[volNum];
-    const currentSurah = surahs.find((s) => s.number === activeSurahNumber);
-    return currentSurah ? getSurahVol(currentSurah) === volNum : volNum === 1;
-  };
-
-  const toggleVolExpand = (volNum: number) => {
-    setVolExpandedMap((prev) => ({ ...prev, [volNum]: !isVolExpanded(volNum) }));
-  };
 
   // Filter thematic topics by category and search query
   const filteredTopics = useMemo(() => {
@@ -278,7 +233,7 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
               role="img"
             >
               <rect width="32" height="32" rx="8" fill="#CD7743" />
-              <path d="M 19.03 15.41 L 17.91 15.4 Q 16.34 15.4 15.13 15.66 Q 13.92 15.93 13.92 16.27 Q 14.25 17.31 14.52 18.21 Q 14.78 19.11 14.78 19.92 Q 14.78 20.5 14.66 20.87 Q 14.54 21.23 14.23 21.65 Q 14.13 20.52 13.8 19.27 Q 13.69 18.84 13.25 17.43 Q 12.97 16.56 12.97 16.27 Q 12.97 15.87 13.19 15.27 Q 13.37 14.78 13.61 14.4 Q 13.88 13.97 14.57 13.72 Q 15.25 13.47 16.65 13.32 Q 15.96 12.36 15.45 12.36 Q 15.22 12.36 15.03 12.53 Q 14.83 12.7 14.38 13.28 L 13.97 13.08 Q 14.35 11.76 14.9 11.05 Q 15.45 10.35 16.12 10.35 Q 16.69 10.35 17.4 11.01 Q 18.1 11.67 19.03 13.07 Z" fill="#FFFFFF" />
+              <path d="M 19.48 15.32 L 18.2 15.31 Q 16.39 15.31 15 15.61 Q 13.61 15.92 13.61 16.31 Q 13.99 17.51 14.3 18.54 Q 14.6 19.58 14.6 20.51 Q 14.6 21.18 14.46 21.6 Q 14.32 22.01 13.96 22.5 Q 13.85 21.2 13.47 19.76 Q 13.34 19.27 12.84 17.64 Q 12.52 16.64 12.52 16.31 Q 12.52 15.85 12.77 15.16 Q 12.98 14.6 13.25 14.16 Q 13.56 13.67 14.36 13.38 Q 15.14 13.09 16.75 12.92 Q 15.95 11.81 15.37 11.81 Q 15.1 11.81 14.88 12.01 Q 14.65 12.21 14.14 12.87 L 13.67 12.64 Q 14.1 11.12 14.74 10.31 Q 15.37 9.5 16.14 9.5 Q 16.79 9.5 17.61 10.26 Q 18.42 11.02 19.48 12.63 Z" fill="#FFFFFF" />
             </svg>
             <div>
               <span className="font-serif-heading font-bold text-lg text-stone-900 dark:text-stone-100 tracking-tight">
@@ -430,18 +385,6 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
             <span>Surah</span>
           </button>
           <button
-            onClick={() => setNavTab('volume')}
-            className={`flex-1 flex items-center justify-center gap-1 py-2 rounded-lg transition-all cursor-pointer ${
-              navTab === 'volume'
-                ? 'bg-white dark:bg-[#1B1B1E] text-stone-900 dark:text-stone-100 shadow-xs font-semibold'
-                : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200'
-            }`}
-            title="Browse by the 8 Volumes of Ma'ariful Qur'an"
-          >
-            <Layers className="w-3.5 h-3.5" />
-            <span>8 Vols</span>
-          </button>
-          <button
             onClick={() => setNavTab('juz')}
             className={`flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg transition-all cursor-pointer ${
               navTab === 'juz'
@@ -569,9 +512,6 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
                   {/* Expanded Thematic Sections Sub-Tray */}
                   {isExpanded && sectionsToDisplay.length > 0 && (
                     <div className="border-t border-stone-100 dark:border-stone-800/80 bg-stone-50/70 dark:bg-[#1A1A1E]/70 p-2 sm:p-2.5 space-y-1.5">
-                      <div className="flex items-center justify-between text-[10px] uppercase tracking-wider font-semibold text-[#596B8E] dark:text-[#788BB3] px-1 pb-0.5">
-                        <span>Thematic Sections ({sectionsToDisplay.length})</span>
-                      </div>
                       {sectionsToDisplay.map((sec) => {
                         const isSecActive = isSelected && activeSectionId === sec.id;
                         const isSecBookmarked = allBookmarks.some(
@@ -604,127 +544,6 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
                             {isSecBookmarked && (
                               <Bookmark className="w-3.5 h-3.5 fill-[#CD7743] text-[#CD7743] shrink-0 mt-0.5" />
                             )}
-                          </button>
-                        );
-                      })}
-                    </div>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-        ) : navTab === 'volume' ? (
-          /* ================= 1B. 8 VOLUMES OF MA'ARIFUL QUR'AN ================= */
-          <div className="space-y-2 pb-6">
-            <div className="flex items-center justify-between px-1.5 pt-0.5 pb-1 text-xs text-stone-500 dark:text-stone-400">
-              <span className="font-medium text-stone-600 dark:text-stone-300">8 Volumes (Complete Set)</span>
-              <a
-                href="https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n1/mode/2up"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[11px] font-medium text-[#CD7743] dark:text-[#E08955] hover:underline"
-              >
-                Full Archive PDF ↗
-              </a>
-            </div>
-            {Array.from(volumeMap.entries()).map(([volNum, surahList]) => {
-              const isVolActive = surahList.some((s) => s.number === activeSurahNumber);
-              const isExpanded = isVolExpanded(volNum);
-              const vMeta = VOLUME_METADATA[volNum];
-
-              return (
-                <div
-                  key={`vol-${volNum}`}
-                  className={`rounded-xl border overflow-hidden transition-all shadow-2xs ${
-                    isVolActive
-                      ? 'border-[#CD7743]/45 dark:border-[#CD7743]/50 bg-white dark:bg-[#202025] ring-1 ring-[#CD7743]/20'
-                      : 'border-stone-200/80 dark:border-stone-800/80 bg-white dark:bg-[#202025]'
-                  }`}
-                >
-                  <button
-                    type="button"
-                    onClick={() => toggleVolExpand(volNum)}
-                    className={`w-full text-left p-3 sm:p-3.5 flex items-center justify-between gap-2.5 transition-colors cursor-pointer ${
-                      isVolActive
-                        ? 'bg-[#CD7743]/8 dark:bg-[#CD7743]/15'
-                        : 'hover:bg-stone-50/80 dark:hover:bg-[#25252B]'
-                    }`}
-                  >
-                    <div className="flex items-center gap-2.5 min-w-0 flex-1">
-                      <span
-                        className={`font-mono text-xs font-semibold px-2 py-0.5 rounded shrink-0 ${
-                          isVolActive
-                            ? 'bg-[#CD7743] text-white'
-                            : 'bg-stone-100 dark:bg-[#2A2A30] text-stone-600 dark:text-stone-300'
-                        }`}
-                      >
-                        Vol. {volNum}
-                      </span>
-                      <div className="min-w-0 flex-1 truncate">
-                        <div className="text-sm font-semibold text-stone-900 dark:text-stone-100 truncate">
-                          {vMeta.subtitle}
-                        </div>
-                        <div className="text-xs text-stone-500 dark:text-stone-400 truncate mt-0.5">
-                          <span className="text-[#596B8E] dark:text-[#788BB3] font-medium">
-                            {surahList.length} {surahList.length === 1 ? 'Surah' : 'Surahs'}
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="flex items-center gap-1.5 shrink-0 pl-1">
-                      {isExpanded ? (
-                        <ChevronDown className="w-4 h-4 text-[#CD7743] dark:text-[#E08955]" />
-                      ) : (
-                        <ChevronRight className="w-4 h-4 text-stone-400" />
-                      )}
-                    </div>
-                  </button>
-
-                  {isExpanded && (
-                    <div className="border-t border-stone-100 dark:border-stone-800/80 bg-stone-50/70 dark:bg-[#1A1A1E]/70 p-2 sm:p-2.5 space-y-1.5">
-                      <div className="flex items-center justify-between text-[10px] uppercase tracking-wider font-semibold text-[#596B8E] dark:text-[#788BB3] px-1 pb-0.5">
-                        <span>Surahs in Volume {volNum}</span>
-                        <a
-                          href={`https://archive.org/details/MaarifulQuranEnglsih8Volumes/page/n${vMeta.archiveLeaf}/mode/2up`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-[#CD7743] dark:text-[#E08955] hover:underline lowercase font-medium"
-                        >
-                          open vol. {volNum} scan ↗
-                        </a>
-                      </div>
-                      {surahList.map((s) => {
-                        const isSurahSelected = s.number === activeSurahNumber;
-                        return (
-                          <button
-                            key={`vol-${volNum}-surah-${s.number}`}
-                            onClick={() => {
-                              onSelectSurah(s.number);
-                              onCloseMobile();
-                            }}
-                            className={`w-full text-left p-2 rounded-lg border transition-all flex items-center justify-between gap-2 group cursor-pointer ${
-                              isSurahSelected
-                                ? 'bg-[#CD7743]/15 dark:bg-[#CD7743]/25 border-[#CD7743]/50 text-[#CD7743] dark:text-[#E08955] font-semibold shadow-2xs'
-                                : 'bg-white dark:bg-[#222227] hover:bg-[#CD7743]/10 dark:hover:bg-[#CD7743]/15 border-stone-200/60 dark:border-stone-700/60 text-stone-700 dark:text-stone-300'
-                            }`}
-                          >
-                            <div className="flex items-center gap-2 min-w-0 flex-1">
-                              <span className="font-mono text-[11px] font-semibold text-stone-400 shrink-0">
-                                {String(s.number).padStart(3, '0')}
-                              </span>
-                              <div className="truncate">
-                                <span className="text-xs font-semibold text-stone-900 dark:text-stone-100">
-                                  {s.nameTransliterated}
-                                </span>
-                                <span className="text-[11px] text-stone-400 ml-1.5">
-                                  ({s.versesCount} v · {s.sectionsCount} sec)
-                                </span>
-                              </div>
-                            </div>
-                            <span className="font-quran text-sm text-stone-500 shrink-0">
-                              {s.nameArabic}
-                            </span>
                           </button>
                         );
                       })}

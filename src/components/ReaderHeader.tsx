@@ -100,14 +100,6 @@ export const ReaderHeader: React.FC<ReaderHeaderProps> = ({
         )}
 
         <div className="flex items-center gap-2 text-xs sm:text-sm truncate">
-          <svg
-            viewBox="0 0 32 32"
-            className="w-6 h-6 rounded-md shadow-2xs shrink-0 hidden sm:inline select-none"
-            aria-hidden="true"
-          >
-            <rect width="32" height="32" rx="8" fill="#CD7743" />
-            <path d="M 19.03 15.41 L 17.91 15.4 Q 16.34 15.4 15.13 15.66 Q 13.92 15.93 13.92 16.27 Q 14.25 17.31 14.52 18.21 Q 14.78 19.11 14.78 19.92 Q 14.78 20.5 14.66 20.87 Q 14.54 21.23 14.23 21.65 Q 14.13 20.52 13.8 19.27 Q 13.69 18.84 13.25 17.43 Q 12.97 16.56 12.97 16.27 Q 12.97 15.87 13.19 15.27 Q 13.37 14.78 13.61 14.4 Q 13.88 13.97 14.57 13.72 Q 15.25 13.47 16.65 13.32 Q 15.96 12.36 15.45 12.36 Q 15.22 12.36 15.03 12.53 Q 14.83 12.7 14.38 13.28 L 13.97 13.08 Q 14.35 11.76 14.9 11.05 Q 15.45 10.35 16.12 10.35 Q 16.69 10.35 17.4 11.01 Q 18.1 11.67 19.03 13.07 Z" fill="#FFFFFF" />
-          </svg>
           <span className="font-semibold text-stone-900 dark:text-stone-100 truncate">
             {surahNumber}. {surahName}
           </span>
