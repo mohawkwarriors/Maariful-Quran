@@ -1,0 +1,85 @@
+{
+  "number": 112,
+  "nameArabic": "الإخلاص",
+  "nameTransliterated": "Al-Ikhlas",
+  "nameEnglish": "Sincerity / The Purity of Faith",
+  "versesCount": 4,
+  "revelationType": "Makki",
+  "juz": [30],
+  "bismillahPre": true,
+  "introductoryTafseer": "Surah Al-Ikhlas is described by the Holy Prophet as equivalent to one-third of the entire Qur'an. Mufti Muhammad Shafi explains in Ma'ariful Qur'an that the themes of the Qur'an resolve into three pillars: Tawhid (Monotheism), Risalah (Prophethood), and Akhirah (The Afterlife). This surah presents the quintessential theological definition of Tawhid, eradicating all forms of anthropomorphism, polytheism, and trinitarian philosophies.",
+  "sections": [
+    {
+      "id": "112-1-4",
+      "surahNumber": 112,
+      "verseRange": [1, 4],
+      "title": "Absolute Oneness, As-Samad & Incomparability",
+      "juzNumber": 30,
+      "revelationType": "Makki",
+      "arabicText": "قُلْ هُوَ اللَّهُ أَحَدٌ ۝١ اللَّهُ الصَّمَدُ ۝٢ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝٣ وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ ۝٤",
+      "translation": "Say: 'He is Allah, the [Ahad] (The Absolutely One and Indivisible). Allah, [As-Samad] (The Eternal, Self-Sufficient Refuge upon whom all depend). He neither begets nor is He begotten. And there is none comparable or equal unto Him.'",
+      "phraseCards": [
+        {
+          "id": "112-1-phrase-1",
+          "verseNumber": 1,
+          "arabicPhrase": "قُلْ هُوَ اللَّهُ أَحَدٌ",
+          "englishPhrase": "Proclaim: He is Allah, the Single and Unique.",
+          "vocabulary": [
+            { "word": "أَحَدٌ", "root": "و-ح-د", "meaning": "Indivisible One", "grammarNote": "Ahad differs from Wahid; Ahad signifies an absolute unity that cannot be divided, multiplied, or conceived as having parts." }
+          ]
+        },
+        {
+          "id": "112-2-phrase-1",
+          "verseNumber": 2,
+          "arabicPhrase": "اللَّهُ الصَّمَدُ",
+          "englishPhrase": "Allah, the Eternal, Independent Haven for all.",
+          "vocabulary": [
+            { "word": "الصَّمَدُ", "root": "ص-م-د", "meaning": "The Self-Sufficient Refuge", "grammarNote": "The Master to whom all resort in need, who has neither internal cavity nor dependence upon sustenance." }
+          ]
+        },
+        {
+          "id": "112-3-phrase-1",
+          "verseNumber": 3,
+          "arabicPhrase": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
+          "englishPhrase": "He neither begot any offspring, nor was He begotten of anything,",
+          "vocabulary": [
+            { "word": "لَمْ يَلِدْ", "root": "و-ل-د", "meaning": "Did not beget", "grammarNote": "Refutation of pagans claiming angels are Allah's daughters and Christians claiming divine sonship." }
+          ]
+        },
+        {
+          "id": "112-4-phrase-1",
+          "verseNumber": 4,
+          "arabicPhrase": "وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ",
+          "englishPhrase": "and never has there been anyone comparable or equal to Him.",
+          "vocabulary": [
+            { "word": "كُفُوًا", "root": "ك-ف-ء", "meaning": "Peer, match, counterpart", "grammarNote": "Absolute transcendence over any resemblance in essence, attributes, or actions." }
+          ]
+        }
+      ],
+      "commentary": "Mufti Shafi writes that when the polytheists of Makkah asked the Prophet: 'Trace for us the ancestry and genealogy of your Lord! Is He made of gold, silver, or iron?', Allah revealed this sublime declaration.\n\nThe divine attribute 'As-Samad' is a comprehensive reality. Ibn Abbas elucidated that it denotes the Master whose nobility is consummate, whose majesty is supreme, whose forbearance is boundless, and whose independence is absolute. Everything in the cosmos is utterly destitute before Him, while He is self-subsisting without need of food, companion, or protector.\n\n'Lam yalid wa lam yulad' definitively rejects biological or metaphysical offspring, refuting polytheistic mythologies and trinitarian claims.",
+      "subsections": [
+        {
+          "type": "asbab",
+          "title": "The Polytheists' Question on Divine Lineage",
+          "content": "Narrated by Imam Ahmad, the pagans came to the Messenger of Allah demanding: 'O Muhammad, describe the nature and composition of your Lord!' This surah settled the discussion with an ontological definition of divine transcendence (Tanzih)."
+        }
+      ],
+      "curatedTerms": [
+        {
+          "term": "Ahad",
+          "arabicRoot": "و-ح-د",
+          "literalMeaning": "The Unique, Sole, and Indivisible.",
+          "theologicalContext": "Denotes singularity without composition; unlike 'Wahid' which can head a numerical series, 'Ahad' negates any pluralization or constituent parts.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 8, p. 892"
+        },
+        {
+          "term": "Samad",
+          "arabicRoot": "ص-م-د",
+          "literalMeaning": "The solid, unshakable haven to whom everyone turns.",
+          "theologicalContext": "The Lord who is entirely self-sufficient, requiring neither nourishment nor progeny, while sustaining every contingent existence.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 8, p. 895"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "number": 1,
+  "nameArabic": "الفاتحة",
+  "nameTransliterated": "Al-Fatihah",
+  "nameEnglish": "The Opening",
+  "versesCount": 7,
+  "revelationType": "Makki",
+  "juz": [1],
+  "bismillahPre": false,
+  "introductoryTafseer": "Surah Al-Fatihah is known as Umm al-Kitab (the Mother of the Book) and Sab' al-Mathani (the Seven Oft-Repeated Verses). In Ma'ariful Qur'an, Mufti Muhammad Shafi explains that this surah encapsulates the entire essence of the Holy Qur'an: affirming pure monotheism (Tawhid), sovereign grace, the certainty of the Day of Judgment, human servitude ('Ubudiyyah), and supplication for divine guidance along the Straight Path.",
+  "historicalContext": {
+    "background": "Revealed in the earliest dawn of Prophethood in Makkah al-Mukarramah following the initial solitary verses of Surah al-'Alaq and Surah al-Muddaththir, Surah Al-Fatihah descended in its entirety to establish the essential devotional dialogue for the newly instituted daily Salah. Classical exegesis in Ma'ariful Qur'an, citing Imam al-Bayhaqi and al-Wahidi in Asbab al-Nuzul, records that whenever the Holy Prophet (ﷺ) walked through Makkah, he heard a heavenly voice calling his name. Upon the counsel of Waraqah ibn Nawfal to stand steadfast, Archangel Jibril manifested and proclaimed: 'Say: Bismillahir-Rahmanir-Rahim. Al-Hamdu lillahi Rabbil-'Alamin...', communicating the seven oft-repeated verses as the opening of the Holy Book—a sacred prayer later reaffirmed upon the redirection of the Qiblah toward the Ka'bah."
+  },
+  "sections": [
+    {
+      "id": "1-1-4",
+      "surahNumber": 1,
+      "verseRange": [1, 4],
+      "title": "Praise of Allah, Sovereign Grace & Day of Retribution",
+      "juzNumber": 1,
+      "revelationType": "Makki",
+      "arabicText": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ ۝١ الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ ۝٢ الرَّحْمَٰنِ الرَّحِيمِ ۝٣ مَالِكِ يَوْمِ الدِّينِ ۝٤",
+      "translation": "In the name of Allah, the [Rahman] (All-Beneficent), the [Rahim] (All-Merciful). All praise belongs exclusively to Allah, the [Rabb] (Lord and Cherisher) of all the worlds. The All-Beneficent, the All-Merciful. Master and Sovereign Ruler of the Day of Recompense.",
+      "phraseCards": [
+        {
+          "id": "1-1-phrase-1",
+          "verseNumber": 1,
+          "arabicPhrase": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+          "englishPhrase": "In the name of Allah, the All-Beneficent, the All-Merciful.",
+          "vocabulary": [
+            { "word": "بِسْمِ", "root": "س-م-و", "meaning": "In the name of", "grammarNote": "Prepositional phrase expressing seeking blessing and commencement." },
+            { "word": "اللَّهِ", "root": "ا-ل-ه", "meaning": "Allah, the Supreme Deity", "grammarNote": "Proper name of the Divine Being, inherently singular and incomparable." },
+            { "word": "الرَّحْمَٰنِ", "root": "ر-ح-م", "meaning": "The All-Beneficent", "grammarNote": "Fa'lan measure denoting vastness and surging intensity of mercy." },
+            { "word": "الرَّحِيمِ", "root": "ر-ح-م", "meaning": "The All-Merciful", "grammarNote": "Fa'il measure denoting permanent, perpetual continuity of mercy." }
+          ]
+        },
+        {
+          "id": "1-2-phrase-1",
+          "verseNumber": 2,
+          "arabicPhrase": "الْحَمْدُ لِلَّهِ",
+          "englishPhrase": "All praise belongs exclusively to Allah,",
+          "vocabulary": [
+            { "word": "الْحَمْدُ", "root": "ح-م-د", "meaning": "Universal praise and gratitude", "grammarNote": "Definite article al- denotes total inclusiveness (istighraq)." },
+            { "word": "لِلَّهِ", "root": "ا-ل-ه", "meaning": "For Allah alone", "grammarNote": "Lam al-ikhtisas indicating exclusive possession." }
+          ]
+        },
+        {
+          "id": "1-2-phrase-2",
+          "verseNumber": 2,
+          "arabicPhrase": "رَبِّ الْعَالَمِينَ",
+          "englishPhrase": "Lord and Sustainer of all existence.",
+          "vocabulary": [
+            { "word": "رَبِّ", "root": "ر-ب-ب", "meaning": "Lord, Sustainer, Evolver", "grammarNote": "One who brings every creation gradually to its perfection." },
+            { "word": "الْعَالَمِينَ", "root": "ع-ل-م", "meaning": "All realms of creation", "grammarNote": "Plural of 'Alam, encompassing spiritual, celestial, and terrestrial worlds." }
+          ]
+        },
+        {
+          "id": "1-3-phrase-1",
+          "verseNumber": 3,
+          "arabicPhrase": "الرَّحْمَٰنِ الرَّحِيمِ",
+          "englishPhrase": "The All-Beneficent, the Ever-Merciful.",
+          "vocabulary": [
+            { "word": "الرَّحْمَٰنِ", "root": "ر-ح-م", "meaning": "Encompassing cosmic mercy", "grammarNote": "Extends to both believer and denier in this worldly abode." },
+            { "word": "الرَّحِيمِ", "root": "ر-ح-م", "meaning": "Specialized eternal mercy", "grammarNote": "Specifically reserved for righteous believers in the Hereafter." }
+          ]
+        },
+        {
+          "id": "1-4-phrase-1",
+          "verseNumber": 4,
+          "arabicPhrase": "مَالِكِ يَوْمِ الدِّينِ",
+          "englishPhrase": "Sovereign Ruler of the Day of Recompense.",
+          "vocabulary": [
+            { "word": "مَالِكِ", "root": "م-ل-ك", "meaning": "Master, Owner, Sovereign", "grammarNote": "Can be recited as Malik (Master) or Malik (King), both authentic mutawatir readings." },
+            { "word": "يَوْمِ", "root": "ي-و-م", "meaning": "Day / Epoch", "grammarNote": "Refers to the epoch of Reckoning where earthly illusions terminate." },
+            { "word": "الدِّينِ", "root": "د-ي-ن", "meaning": "Recompense, Judgment, Account", "grammarNote": "Derived from Danah, to requite precisely according to deeds." }
+          ]
+        }
+      ],
+      "commentary": "Mufti Muhammad Shafi begins the exegesis by elucidating the profound theological distinction between Hamd (praise) and Shukr (thanksgiving). Hamd is unconditional adoration offered to Allah for His intrinsic sublime attributes as well as His favors, whereas Shukr is gratitude offered specifically in return for a granted favor. Thus, Hamd is far more comprehensive.\n\nThe Divine Name 'Rabb' conveys the gradual rearing and nurturing of things from their inception toward their ultimate state of completion. In creating the universe, Allah did not merely initiate it and abandon it to mechanization; He actively nourishes every atom across every celestial and microcosmic domain ('Alamin).\n\nBy following 'Rabb al-'Alamin' immediately with 'Ar-Rahman Ar-Rahim', the text ensures that human awe of the divine majesty is instantly balanced with intimate trust in His boundless compassion. Finally, 'Maliki Yawm id-Din' establishes divine accountability. Although Allah is the Master of every single instant, He singles out the Day of Retribution because on that Day all deceptive earthly claims to power and ownership will vanish into nothingness, leaving His absolute sovereignty manifest to all creation.",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Recitation of Bismillah & Basmalah Rulings",
+          "content": "According to the Hanafi school of jurisprudence adopted by Mufti Shafi, Bismillah is an independent verse of the Qur'an revealed for separation between surahs, though not an internal verse of Surah Al-Fatihah itself. Hence, in congregation, the Imam recites it softly (sirran). In contrast, the Shafi'i school treats Bismillah as verse 1 of Al-Fatihah. It is Sunnah Mu'akkadah to pronounce Bismillah before every lawful endeavor."
+        },
+        {
+          "type": "insights",
+          "title": "Dual Reading: Malik versus Malik",
+          "content": "Both vocalizations ('Malik' meaning Master/Owner, and 'Malik' meaning Sovereign Monarch) are authentic recurrent (Mutawatir) recitations. A king may possess sovereignty over subjects without owning their personal chattels, and an owner may possess goods without sovereign authority over men. By combining both nuances, the Qur'an proclaims that Allah is simultaneously the absolute Owner of every being and the Sovereign King holding supreme jurisdiction."
+        }
+      ],
+      "curatedTerms": [
+        {
+          "term": "Rahman",
+          "arabicRoot": "ر-ح-م",
+          "literalMeaning": "Vast, overwhelming, intrinsic mercy.",
+          "theologicalContext": "Denotes an active state of intense benevolence encompassing all created beings, whether believers or unbelievers, in worldly sustenance.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 1, p. 43"
+        },
+        {
+          "term": "Rahim",
+          "arabicRoot": "ر-ح-م",
+          "literalMeaning": "Enduring, continuous, specialized mercy.",
+          "theologicalContext": "Denotes an abiding attribute of grace bestowed especially upon righteous believers in the eternal life of the Hereafter.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 1, p. 46"
+        },
+        {
+          "term": "Rabb",
+          "arabicRoot": "ر-ب-ب",
+          "literalMeaning": "The Evolver, Sustainer, and Caregiver who nurtures to perfection.",
+          "theologicalContext": "A divine name inapplicable to any created being except when qualified. Expresses constant providential oversight.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 1, p. 55"
+        }
+      ]
+    },
+    {
+      "id": "1-5-7",
+      "surahNumber": 1,
+      "verseRange": [5, 7],
+      "title": "Exclusive Devotion, Seeking Aid & The Straight Path",
+      "juzNumber": 1,
+      "revelationType": "Makki",
+      "arabicText": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ ۝٥ اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ ۝٦ صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ ۝٧",
+      "translation": "You alone do we worship ('[Ibadah]'), and from You alone do we solicit help ([Isti'anah]). Guide us to the [Sirat al-Mustaqim] (the Straight and Level Path). The path of those upon whom You have bestowed Your favor, not of those who have evoked Your wrath ([Maghdub]), nor of those who have strayed into errancy ([Dallin]).",
+      "phraseCards": [
+        {
+          "id": "1-5-phrase-1",
+          "verseNumber": 5,
+          "arabicPhrase": "إِيَّاكَ نَعْبُدُ",
+          "englishPhrase": "You alone do we worship and obey,",
+          "vocabulary": [
+            { "word": "إِيَّاكَ", "root": "ا-ي-ي", "meaning": "You exclusively", "grammarNote": "Fronted pronoun of exclusivity (hasr), signifying rejection of polytheism." },
+            { "word": "نَعْبُدُ", "root": "ع-ب-د", "meaning": "We worship / serve", "grammarNote": "First-person plural verb signifying the brotherhood of believers praying collectively." }
+          ]
+        },
+        {
+          "id": "1-5-phrase-2",
+          "verseNumber": 5,
+          "arabicPhrase": "وَإِيَّاكَ نَسْتَعِينُ",
+          "englishPhrase": "and You alone do we beseech for ultimate assistance.",
+          "vocabulary": [
+            { "word": "نَسْتَعِينُ", "root": "ع-و-ن", "meaning": "We solicit divine help", "grammarNote": "Istif'al pattern indicating earnest seeking of divine enablement (Tawfiq)." }
+          ]
+        },
+        {
+          "id": "1-6-phrase-1",
+          "verseNumber": 6,
+          "arabicPhrase": "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ",
+          "englishPhrase": "Guide us firmly along the Straight Path,",
+          "vocabulary": [
+            { "word": "اهْدِنَا", "root": "ه-د-ي", "meaning": "Guide us / Show us", "grammarNote": "Imperative of supplication implying both guidance of showing (irshad) and leading to the destination (tawfiq)." },
+            { "word": "الصِّرَاطَ", "root": "ص-ر-ط", "meaning": "The wide, clear highway", "grammarNote": "Signifies an unambiguous main road without treacherous crossroads." },
+            { "word": "الْمُسْتَقِيمَ", "root": "ق-و-م", "meaning": "Straight, erect, unswerving", "grammarNote": "Participle meaning the shortest distance between origin and divine acceptance." }
+          ]
+        },
+        {
+          "id": "1-7-phrase-1",
+          "verseNumber": 7,
+          "arabicPhrase": "صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ",
+          "englishPhrase": "The path of those upon whom You have showered Your grace,",
+          "vocabulary": [
+            { "word": "أَنْعَمْتَ", "root": "ن-ع-م", "meaning": "You bestowed favor", "grammarNote": "Direct attribution of grace to Allah, honoring the prophets, truthful, martyrs, and righteous." }
+          ]
+        },
+        {
+          "id": "1-7-phrase-2",
+          "verseNumber": 7,
+          "arabicPhrase": "غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ",
+          "englishPhrase": "not of those who incurred wrath, nor of those who lost the way.",
+          "vocabulary": [
+            { "word": "الْمَغْضُوبِ", "root": "غ-ض-ب", "meaning": "Those who earned anger", "grammarNote": "Passive participle indicating those who knew the truth but wilfully defied it." },
+            { "word": "الضَّالِّينَ", "root": "ض-ل-ل", "meaning": "Those who have gone astray", "grammarNote": "Those who abandoned knowledge and fell into superstitious innovations." }
+          ]
+        }
+      ],
+      "commentary": "Mufti Shafi notes that the transition from third-person description ('All praise belongs to Allah...') to second-person direct address ('You alone do we worship...') represents the rhetorical device of Iltifat (grammatical apostrophe). After the believer contemplates the majestic attributes of the Creator, he is drawn into direct, intimate communion with Him.\n\nFurthermore, 'Iyyaka na'budu' (worship) precedes 'Iyyaka nasta'in' (seeking aid) because fulfilling the rights of the Lord takes precedence over petitioning for personal needs. Moreover, genuine human obedience cannot be performed without divine enablement (Tawfiq).\n\nThe definition of 'The Straight Path' is anchored not in abstract philosophical hypotheses, but in living human exemplars: 'The path of those upon whom You have bestowed Your favor'. The Qur'an identifies them in Surah An-Nisa (4:69) as four noble categories: the Prophets (Nabiyyin), the Truthful (Siddiqin), the Martyrs (Shuhada), and the Righteous (Salihin). This demonstrates that Islam cannot be grasped through isolated book-reading alone; it requires association with living righteous guides.\n\nFinally, 'Al-Maghdub 'alayhim' refers canonically to those who had knowledge but defied it through arrogance and malice, whereas 'Ad-Dallin' refers to those who lacked sound knowledge and wandered into errancy through theological excess.",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Pronouncing 'Amin' after Al-Fatihah",
+          "content": "Saying 'Amin' at the conclusion of Surah Al-Fatihah is a confirmed Sunnah for both the Imam, the followers (Muqtadi), and the lone worshipper (Munfarid). It means: 'O Allah, accept our supplication.' In the Hanafi school, it is said in a subdued whisper (bi al-ikhafat), whereas in the Shafi'i and Hanbali schools, it is recited aloud in loud prayers."
+        },
+        {
+          "type": "insights",
+          "title": "The Etiquette of Supplication (Du'a)",
+          "content": "Surah Al-Fatihah teaches the supreme etiquette of petitioning Allah: begin by extolling His praise, declare one's absolute servitude and helplessness, and only then present one's request for the loftiest of all gifts—spiritual rectitude on the Straight Path."
+        }
+      ],
+      "curatedTerms": [
+        {
+          "term": "Ibadah",
+          "arabicRoot": "ع-ب-د",
+          "literalMeaning": "Extreme submission accompanied by supreme love and reverence.",
+          "theologicalContext": "Refers to the totality of words and deeds, inward and outward, beloved to Allah, rendered exclusively for His pleasure.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 1, p. 68"
+        },
+        {
+          "term": "Sirat al-Mustaqim",
+          "arabicRoot": "ص-ر-ط / ق-و-م",
+          "literalMeaning": "The even, unwavering, and clear highway.",
+          "theologicalContext": "The authentic tradition of Islam as modeled by the Holy Prophet and preserved by his companions without deviation toward excess (ghuluw) or negligence (tafrit).",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 1, p. 76"
+        },
+        {
+          "term": "Maghdub",
+          "arabicRoot": "غ-ض-ب",
+          "literalMeaning": "Those who have brought upon themselves wrath.",
+          "theologicalContext": "Specifically those who recognized prophetic evidence but rejected it out of tribal jealousy, worldly greed, or stubborn arrogance.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 1, p. 82"
+        },
+        {
+          "term": "Dallin",
+          "arabicRoot": "ض-ل-ل",
+          "literalMeaning": "Those who have wandered off the true track.",
+          "theologicalContext": "Those who acted without authentic knowledge, inventing speculative doctrines and monastic extremes that corrupted true monotheism.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 1, p. 84"
+        }
+      ]
+    }
+  ]
+}

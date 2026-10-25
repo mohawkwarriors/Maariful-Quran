@@ -1,0 +1,8 @@
+{
+  "name": "Ma'ariful Qur'an Interactive Reader",
+  "description": "An interactive digital exegesis of Ma'ariful Qur'an by Mufti Muhammad Shafi with KFGQPC Uthmanic Arabic typography, dual block/combined views, curated theological vocabulary popovers, and thematic navigation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

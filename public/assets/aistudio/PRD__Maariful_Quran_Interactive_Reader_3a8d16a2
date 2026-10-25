@@ -1,0 +1,96 @@
+﻿Product Requirement Document (PRD): Maariful Quran Interactive Reader
+Status: Approved for Implementation
+Author: AI Principal Architect & Solution Lead
+Target Execution Agent: Senior Full-Stack Engineer / Autonomous Implementation Agent
+
+
+1. Executive Summary & Core Objective
+Problem Statement
+Maariful Quran (by Mufti Muhammad Shafi) is a monumental 8-volume Islamic exegesis. Current digital formats are restricted to cumbersome multi-thousand-page PDFs or legacy web platforms suffering from poor searchability, disjointed verse grouping, unrefined Arabic typography, and severe browser lag when loading lengthy chapters.
+
+
+Target Value Proposition
+A lightning-fast, static, React-based desktop web reader that organizes the tafseer into thematic sections. It pairs the official King Fahd Complex Arabic script with English commentary, offering dual view modes (Standard Block and Combined phrase-by-phrase), curated vocabulary popovers, and an eye-comfort reading palette.
+
+
+Success Criteria
+* Initial page load to interactive read state in under 350ms.
+* Maintain 60fps continuous scrolling with 0ms visual stutter on massive chapters (e.g., Surah Al-Baqarah's 286 verses).
+* 100% accurate rendering of Uthmanic Medina script ligatures and diacritics via KFGQPC web fonts.
+
+
+2. Personas & Primary User Journeys
+Persona
+	Trigger Scenario
+	Primary Action / Flow
+	Expected Outcome
+	Daily Student / Researcher
+	Needs rulings on a specific topic (e.g., Riba, Inheritance).
+	Types topic into universal search bar in Left Pane -> selects snippet preview.
+	Immediate smooth scroll directly to the exact Tafseer section with the ruling highlighted.
+	Continuous Reader
+	Reading an entire Surah sequentially for reflection.
+	Opens Surah Al-Baqarah -> reads through continuous right pane -> checks left tree for progress.
+	Uninterrupted reading flow; left tree automatically highlights active thematic section via scroll-spy.
+	Arabic Language Learner
+	Studying Quranic vocabulary alongside Tafseer context.
+	Toggles header to Combined View -> hovers over underlined terms (e.g., Ghayb).
+	Views stacked phrase cards for word mapping; reads concise root breakdown and theological context in pop-up.
+	
+
+3. Explicit Boundaries & Non-Goals
+In-Scope (Must Have)
+* 2-Pane UI: Left navigation tree (Surahs 1–114, Ajza' 1–30, thematic section accordions) + Right continuous reading canvas.
+* Typography: Web font integration for KFGQPC Uthmanic Script HAFS.
+* Dual Display Modes: Instant toggle between Block View (traditional Mushaf block + translation) and Combined View (Quranic-style stacked phrase-by-phrase cards).
+* Curated Term Definitions: Dotted underline on high-impact theological/legal terms with popover tooltip (hover on desktop, tap on mobile).
+* Sub-Section Margin Accents: Visual accent borders and pill tags for Injunctions & Rulings (Ahkam), Occasion of Revelation (Asbab al-Nuzul), and Key Insights.
+* Eye-Comfort Themes: Warm cream parchment (#F8F7F4) and slate charcoal (#18181A) with a spring-sliding pill switch.
+* Performance Optimization: Use native CSS content-visibility: auto to prevent DOM bloat on massive chapters.
+* State Management: React Query (TanStack Query) for fetching and caching chunked Surah JSON files.
+
+
+Explicit Non-Goals (Strictly Out of Scope for V1)
+* Audio recitation playback or verse-sync audio trackers.
+* User accounts, server databases, cloud synchronization, or social commenting systems.
+* Dynamic font size adjustment sliders (typography sizes and line heights are fixed to optimal defaults).
+* React Virtualization (windowing) for the reading pane (rejected to preserve native browser Ctrl+F search).
+
+
+4. UI/UX Layout & Component Architecture
++-----------------------------------+-------------------------------------------------------------------------+
+| LEFT PANE (Width: ~340px Fixed)   | RIGHT READING CANVAS (Fluid width, max text container: ~760px)          |
++-----------------------------------+-------------------------------------------------------------------------+
+| [ Search Surahs, topics, text... ]| [ Surah Al-Baqarah • Verses 1–5 ]       [ Block | Combined ]  [ ☀️ 〇 🌙 ]|
+|                                   | (Sticky Reader Header with Breadcrumb, Mode Switch, and Theme Pill)     |
+| [ By Surah (1-114) ] [ By Juz ]   +-------------------------------------------------------------------------+
+|-----------------------------------|                                                                         |
+| ▼ 002. Al-Baqarah                 | # The Qualities of the Muttaqin (The God-Fearing)                       |
+|   ├─ [1-5]   The Muttaqin [ACTIVE]|   Surah 2 : Verses 1–5 • Juz 1 • Medinan                                |
+|   ├─ [6-7]   Disbelief & Seals    |                                                                         |
+|   ├─ [8-20]  The Hypocrites       | ----------------------------- ARABIC BLOCK ---------------------------- |
+|   └─ [21-29] Call to Monotheism   | ذَٰلِكَ الْكِتَابُ لَا رَيْبَ ۛ فِيهِ ۛ هُدًى لِّلْمُتَّقِينَ ...                        |
+| ▶ 003. Ali 'Imran                 | (KFGQPC Uthmanic Script, font-size: 26px, line-height: 2.2)             |
+| ▶ 004. An-Nisa'                   |                                                                         |
+|                                   | -------------------------- TRANSLATION BLOCK -------------------------- |
+|                                   | This is the Book about which there is no doubt, a guidance for the      |
+|                                   | [Muttaqin]... (with subtle dotted underline for popover)                |
+|                                   |                                                                         |
+|                                   | ------------------------- TAFSEER COMMENTARY -------------------------- |
+|                                   | Letters like Alif, Lam, Meem are mystic letters known as Huruf...       |
+|                                   |                                                                         |
+|                                   | ┃ [TAG: Injunctions & Rulings]                                          |
+|                                   | ┃ The root of Taqwa signifies safeguarding oneself against harm...      |
+|                                   |                                                                         |
++-----------------------------------+-------------------------------------------------------------------------+
+
+
+
+5. Technical Stack & Implementation Contracts
+* Core Framework: React (via Vite or Next.js static export).
+* Styling: Tailwind CSS.
+* UI Primitives: Radix UI or shadcn/ui (for accessible tooltips/popovers and accordion trees).
+* Data Fetching: @tanstack/react-query to fetch static JSON files from /public/data/.
+* Search: minisearch or flexsearch running client-side against a pre-compiled manifest.json.
+* Scroll Tracking: Native IntersectionObserver attached to <section> tags with rootMargin: "-20% 0px -70% 0px" to trigger active state in the Left Pane.
+* Rendering Optimization: All <TafseerSection> components must apply content-visibility: auto; contain-intrinsic-size: auto 800px; to ensure fast initial paint times on large Surahs while preserving Ctrl+F capability.

@@ -1,0 +1,425 @@
+{
+  "number": 2,
+  "nameArabic": "البقرة",
+  "nameTransliterated": "Al-Baqarah",
+  "nameEnglish": "The Cow",
+  "versesCount": 286,
+  "revelationType": "Madani",
+  "juz": [1, 2, 3],
+  "bismillahPre": true,
+  "introductoryTafseer": "Surah Al-Baqarah is the longest and most comprehensive chapter in the Holy Qur'an, revealed in Madinah over several years. Mufti Muhammad Shafi remarks in Ma'ariful Qur'an that this chapter establishes the complete legislative, social, moral, and economic architecture of the fledgling Muslim community. It opens with the classification of human nature into three archetypes: sincere believers (Muttaqin), obstinate deniers (Kuffar), and deceitful hypocrites (Munafiqin).",
+  "historicalContext": {
+    "background": "Revealed across the formative Madani period following the historic Migration (Hijrah) from Makkah to Yathrib, Surah Al-Baqarah provided the constitutional, legal, and spiritual architecture for the newly established Muslim commonwealth. Mufti Muhammad Shafi notes in Ma'ariful Qur'an that its descent addressed the complex political and social dynamics of an autonomous community: responding to theological challenges and inquiries posed by the scholarly Jewish leadership of Madinah, guiding believers through the momentous change of the Qiblah from Jerusalem to the Ka'bah in Rajab 2 AH, legislating the pillars of Ramadan fasting, Hajj, and civic contracts, and concluding with the definitive prohibition of usury (Riba) and commercial exploitation revealed shortly before the Prophet's (ﷺ) passing."
+  },
+  "sections": [
+    {
+      "id": "2-1-5",
+      "surahNumber": 2,
+      "verseRange": [1, 5],
+      "title": "The Qualities of the Muttaqin (The God-Fearing)",
+      "juzNumber": 1,
+      "revelationType": "Madani",
+      "arabicText": "الم ۝١ ذَٰلِكَ الْكِتَابُ لَا رَيْبَ ۛ فِيهِ ۛ هُدًى لِّلْمُتَّقِينَ ۝٢ الَّذِينَ يُؤْمِنُونَ بِالْغَيْبِ وَيُقِيمُونَ الصَّلَاةَ وَمِمَّا رَزَقْنَاهُمْ يُنفِقُونَ ۝٣ وَالَّذِينَ يُؤْمِنُونَ بِمَا أُنزِلَ إِلَيْكَ وَمَا أُنزِلَ مِن قَبْلِكَ وَبِالْآخِرَةِ هُمْ يُوقِنُونَ ۝٤ أُولَٰئِكَ عَلَىٰ هُدًى مِّن رَّبِّهِمْ ۖ وَأُولَٰئِكَ هُمُ الْمُفْلِحُونَ ۝٥",
+      "translation": "Alif, Lam, Meem. That is the Book about which there is no doubt, a guidance for the [Muttaqin] (the God-Fearing). Those who believe in the [Ghayb] (the Unseen realm), establish [Salah] (prescribed prayer), and out of what We have provided them, spend generously. And who believe in what has been sent down to you and what was sent down before you, and in the Hereafter they possess unshakable certainty. Those are on true guidance from their Lord, and those are the triumphant.",
+      "phraseCards": [
+        {
+          "id": "2-1-phrase-1",
+          "verseNumber": 1,
+          "arabicPhrase": "الم",
+          "englishPhrase": "Alif, Lam, Meem.",
+          "vocabulary": [
+            { "word": "الم", "root": "حروف مقطعة", "meaning": "Alif, Lam, Meem", "grammarNote": "Isolated letters whose inner divine secrets are entrusted to Allah alone." }
+          ]
+        },
+        {
+          "id": "2-2-phrase-1",
+          "verseNumber": 2,
+          "arabicPhrase": "ذَٰلِكَ الْكِتَابُ لَا رَيْبَ ۛ فِيهِ ۛ هُدًى لِّلْمُتَّقِينَ",
+          "englishPhrase": "That is the Book about which there is no doubt, a guidance for those conscious of Allah.",
+          "vocabulary": [
+            { "word": "ذَٰلِكَ", "root": "ذ-و", "meaning": "That (lofty Book)", "grammarNote": "Distal demonstrative pronoun used for sublime glorification (li al-ta'dhim)." },
+            { "word": "الْكِتَابُ", "root": "ك-ت-ب", "meaning": "The Book", "grammarNote": "The ultimate written scripture, guarded upon the Preserved Tablet." },
+            { "word": "لَا رَيْبَ", "root": "ر-ي-ب", "meaning": "No doubt", "grammarNote": "Absolute negation of category (la li-nafy al-jins)." },
+            { "word": "فِيهِ", "root": "ف-ي", "meaning": "Therein", "grammarNote": "Prepositional phrase denoting certainty within the scripture." },
+            { "word": "هُدًى", "root": "ه-د-ي", "meaning": "A guidance", "grammarNote": "Masdar used rhetorically to signify embodiment of pure guidance." },
+            { "word": "لِّلْمُتَّقِينَ", "root": "و-ق-ي", "meaning": "For the God-conscious", "grammarNote": "Active participle derived from وقاية (Wiqayah): placing a shield against divine displeasure." }
+          ]
+        },
+        {
+          "id": "2-3-phrase-1",
+          "verseNumber": 3,
+          "arabicPhrase": "الَّذِينَ يُؤْمِنُونَ بِالْغَيْبِ وَيُقِيمُونَ الصَّلَاةَ وَمِمَّا رَزَقْنَاهُمْ يُنفِقُونَ",
+          "englishPhrase": "Who believe in the Unseen, establish prayer, and spend out of what We have provided them.",
+          "vocabulary": [
+            { "word": "الَّذِينَ", "root": "ل-ذ-ي", "meaning": "Those who", "grammarNote": "Relative pronoun introducing the essential traits of true believers." },
+            { "word": "يُؤْمِنُونَ", "root": "ا-م-ن", "meaning": "Believe", "grammarNote": "Derived from إيمان (Iman): unhesitating heart-conviction coupled with oral confession." },
+            { "word": "بِالْغَيْبِ", "root": "غ-ي-ب", "meaning": "In the Unseen", "grammarNote": "Derived from غيب (Ghayb): all truths beyond sensory perception including Allah, angels, and the Hereafter." },
+            { "word": "وَيُقِيمُونَ", "root": "ق-و-م", "meaning": "And establish", "grammarNote": "Derived from إقامة (Iqamah): performing prayer with inner devotion, timeliness, and outward perfection." },
+            { "word": "الصَّلَاةَ", "root": "ص-ل-و", "meaning": "The prayer", "grammarNote": "Derived from صلاة (Salah): supplication, the foremost pillar of servitude connecting the servant to his Lord." },
+            { "word": "وَمِمَّا", "root": "م-ن", "meaning": "And from what", "grammarNote": "Expressing that all provisions originate from Allah's generosity." },
+            { "word": "رَزَقْنَاهُمْ", "root": "ر-ز-ق", "meaning": "We provided them", "grammarNote": "Divine provision encompassing wealth, health, and intellect." },
+            { "word": "يُنفِقُونَ", "root": "ن-ف-ق", "meaning": "They spend", "grammarNote": "Derived from إنفاق (Infaq): spending wealth, encompassing both obligatory زكاة (Zakah) and voluntary charity (Sadaqah)." }
+          ]
+        },
+        {
+          "id": "2-4-phrase-1",
+          "verseNumber": 4,
+          "arabicPhrase": "وَالَّذِينَ يُؤْمِنُونَ بِمَا أُنزِلَ إِلَيْكَ وَمَا أُنزِلَ مِن قَبْلِكَ وَبِالْآخِرَةِ هُمْ يُوقِنُونَ",
+          "englishPhrase": "And who believe in what has been sent down to you and what was sent down before you, and in the Hereafter they possess unshakable certainty.",
+          "vocabulary": [
+            { "word": "وَالَّذِينَ", "root": "ل-ذ-ي", "meaning": "And who", "grammarNote": "Connecting the subsequent attributes of the righteous believers." },
+            { "word": "يُؤْمِنُونَ", "root": "ا-م-ن", "meaning": "Believe", "grammarNote": "Wholeheartedly affirming divine revelations without discrimination." },
+            { "word": "بِمَا أُنزِلَ", "root": "ن-ز-ل", "meaning": "In what was revealed", "grammarNote": "Passive voice highlighting the divine descent of scripture." },
+            { "word": "إِلَيْكَ", "root": "ا-ل-ي", "meaning": "To you (O Prophet)", "grammarNote": "Addressing the Messenger of Allah Muhammad (peace be upon him)." },
+            { "word": "وَمَا أُنزِلَ", "root": "ن-ز-ل", "meaning": "And what was revealed", "grammarNote": "Referring to previous scriptures: Tawrah, Injil, Zabur, and scrolls." },
+            { "word": "مِن قَبْلِكَ", "root": "ق-ب-ل", "meaning": "Before you", "grammarNote": "To the ancient prophets across the ages." },
+            { "word": "وَبِالْآخِرَةِ", "root": "ا-خ-ر", "meaning": "And in Hereafter", "grammarNote": "The ultimate Day of Resurrection, Reckoning, and Retribution." },
+            { "word": "هُمْ يُوقِنُونَ", "root": "ي-ق-ن", "meaning": "They have certainty", "grammarNote": "Yaqin denotes unshakable certainty untainted by conjecture." }
+          ]
+        },
+        {
+          "id": "2-5-phrase-1",
+          "verseNumber": 5,
+          "arabicPhrase": "أُولَٰئِكَ عَلَىٰ هُدًى مِّن رَّبِّهِمْ ۖ وَأُولَٰئِكَ هُمُ الْمُفْلِحُونَ",
+          "englishPhrase": "Those are firmly guided by their Lord, and they are the triumphant.",
+          "vocabulary": [
+            { "word": "أُولَٰئِكَ", "root": "ا-ل-ي", "meaning": "Those are", "grammarNote": "Demonstrative pronoun honoring their lofty spiritual rank." },
+            { "word": "عَلَىٰ هُدًى", "root": "ه-د-ي", "meaning": "Upon guidance", "grammarNote": "The preposition 'ala expresses being firmly mounted upon truth." },
+            { "word": "مِّن رَّبِّهِمْ", "root": "ر-ب-ب", "meaning": "From their Lord", "grammarNote": "Bestowed directly by the Sustainer and Nourisher." },
+            { "word": "وَأُولَٰئِكَ", "root": "ا-ل-ي", "meaning": "And those", "grammarNote": "Reiteration emphasizing their exclusive state." },
+            { "word": "هُمُ", "root": "ه-م", "meaning": "They are", "grammarNote": "Pronoun of exclusivity (Damir al-Fasl)." },
+            { "word": "الْمُفْلِحُونَ", "root": "ف-ل-ح", "meaning": "The successful ones", "grammarNote": "Attaining every desired eternal good and saved from all peril." }
+          ]
+        }
+      ],
+      "commentary": "Mufti Muhammad Shafi notes that the opening letters 'Alif, Lam, Meem' belong to the category of Huruf Muqatta'at (abbreviated letters). The majority of the Companions and early exegetes adopted the stance of Tawqid: their inner secrets are entrusted to Allah, serving as a reminder of human intellect's finite horizon when approaching infinite divine speech.\n\nNext, 'Dhalika' (That) is a distal demonstrative pronoun. Although the Qur'an was immediately present before the listeners, the distant pronoun is employed to convey transcendent majesty and lofty station (li al-ta'dhim). 'La rayba fih' indicates that the text possesses such luminous internal evidence that no rational mind investigating it sincerely could entertain authentic skepticism.\n\nWhy is the Book designated specifically as 'a guidance for the Muttaqin' when it was sent for all humanity? Mufti Shafi explains that while the Qur'an is universally offered to all mankind, none truly benefit from its light except those who possess Taqwa—the inner readiness to fear spiritual ruin and honor moral truth. The root of Taqwa (Wiqayah) means to erect a defensive shield between oneself and harm. In Shariah, it signifies shielding oneself against Allah's displeasure by obeying His commands and avoiding His prohibitions.\n\nThe essential five traits of the Muttaqin are then outlined: (1) faith in the Unseen (al-Ghayb); (2) establishing regular prayer (Iqamat as-Salah); (3) charity from divine provisions (Infaq); (4) faith in all previous scriptures (Tawrah, Injil, Zabur) without discrimination; and (5) unshakeable certainty in the Hereafter (Yaqin bi al-Akhirah).",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Injunctions on Taqwa & Sincerity",
+          "content": "Taqwa is not a passive inward emotion; it is an active legal and behavioral standard. Jurists derive that an individual cannot be termed a Muttaqi if they persist in major sins (Kaba'ir) or neglect obligatory duties (Fara'id). Sincerity in charitable spending requires that the wealth expended be legitimately earned (Halal), as Allah is pure and accepts only what is pure."
+        },
+        {
+          "type": "insights",
+          "title": "The Meaning of 'Belief in the Unseen' (Al-Ghayb)",
+          "content": "Ghayb refers to reality that cannot be grasped by the five physical senses or arrived at purely by independent empirical measurement, yet is firmly proven through infallible prophetic report (al-Khabar as-Sadiq). Believing only in what the eye can see reduces man to animal sensation; affirming the unseen elevates man into metaphysical maturity."
+        }
+      ],
+      "curatedTerms": [
+        {
+          "term": "Muttaqin",
+          "arabicRoot": "و-ق-ي",
+          "literalMeaning": "Those who take a shield against danger.",
+          "theologicalContext": "Those who protect themselves from the wrath of Allah by fulfilling His commands and abstaining from His prohibitions.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 1, p. 104"
+        },
+        {
+          "term": "Ghayb",
+          "arabicRoot": "غ-ي-ب",
+          "literalMeaning": "That which is hidden or absent from physical sensation.",
+          "theologicalContext": "The celestial and metaphysical realities verified by revelation, including Allah's essence and attributes, the angelic realm, Paradise, Hell, and the Resurrection.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 1, p. 110"
+        },
+        {
+          "term": "Salah",
+          "arabicRoot": "ص-ل-و",
+          "literalMeaning": "Supplication and connection.",
+          "theologicalContext": "The designated ritual worship prescribed five times daily, embodying the highest physical and spiritual expression of human servitude.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 1, p. 116"
+        }
+      ]
+    },
+    {
+      "id": "2-6-7",
+      "surahNumber": 2,
+      "verseRange": [6, 7],
+      "title": "The State of Obstinate Disbelief & The Sealed Hearts",
+      "juzNumber": 1,
+      "revelationType": "Madani",
+      "arabicText": "إِنَّ الَّذِينَ كَفَرُوا سَوَاءٌ عَلَيْهِمْ أَأَنذَرْتَهُمْ أَمْ لَمْ تُنذِرْهُمْ لَا يُؤْمِنُونَ ۝٦ خَتَمَ اللَّهُ عَلَىٰ قُلُوبِهِمْ وَعَلَىٰ سَمْعِهِمْ ۖ وَعَلَىٰ أَبْصَارِهِمْ غِشَاوَةٌ ۖ وَلَهُمْ عَذَابٌ عَظِيمٌ ۝٧",
+      "translation": "Indeed, those who disbelieve ([Kaffar])—it is all the same to them whether you warn them or do not warn them; they will not believe. Allah has set a seal upon their hearts and upon their hearing, and over their vision is a veil ([Ghishawah]); and for them is an immense punishment.",
+      "phraseCards": [
+        {
+          "id": "2-6-phrase-1",
+          "verseNumber": 6,
+          "arabicPhrase": "إِنَّ الَّذِينَ كَفَرُوا سَوَاءٌ عَلَيْهِمْ أَأَنذَرْتَهُمْ أَمْ لَمْ تُنذِرْهُمْ",
+          "englishPhrase": "As for those who persist in disbelief, it is equal to them whether you admonish them or not,",
+          "vocabulary": [
+            { "word": "كَفَرُوا", "root": "ك-ف-ر", "meaning": "They covered / rejected the truth", "grammarNote": "Derived from كفر (Kufr): literally to bury or conceal, signifying actively burying the innate light of فطرة (Fitrah)." }
+          ]
+        },
+        {
+          "id": "2-7-phrase-1",
+          "verseNumber": 7,
+          "arabicPhrase": "خَتَمَ اللَّهُ عَلَىٰ قُلُوبِهِمْ وَعَلَىٰ سَمْعِهِمْ",
+          "englishPhrase": "Allah has placed a seal over their hearts and their ears,",
+          "vocabulary": [
+            { "word": "خَتَمَ", "root": "خ-ت-م", "meaning": "He sealed / stamped closed", "grammarNote": "Derived from ختم (Khatm): stamping a wax seal closed, metaphor for spiritual desensitization resulting from repeated willful rebellion." },
+            { "word": "غِشَاوَةٌ", "root": "غ-ش-و", "meaning": "A covering / cataract veil", "grammarNote": "Derived from غشاوة (Ghishawah): a dense cataract veil, representing spiritual blindness preventing moral discernment." }
+          ]
+        }
+      ],
+      "commentary": "In Ma'ariful Qur'an, Mufti Shafi addresses an important theological question regarding predestination and responsibility: If Allah has sealed their hearts, why are they held culpable for their disbelief?\n\nThe sealing (Khatm) is not an arbitrary act initiated prior to human choice; rather, it is the natural divine law governing moral consequence. When a human being deliberately, repeatedly, and obstinately rejects the light of truth in favor of arrogance, Allah causes their faculty of perception to harden as a consequence of their own persistent defiance. Just as a mirror exposed to soot repeatedly becomes completely encrusted until it can no longer reflect light, an obstinate soul creates its own spiritual blindness.\n\nFurthermore, this verse specifically refers to incorrigible ringleaders of disbelief whose inner defiance reached the point of no return (such as Abu Jahl and Abu Lahab), reassuring the Holy Prophet that their rejection was due to their malice, not any flaw in his prophetic delivery.",
+      "subsections": [
+        {
+          "type": "insights",
+          "title": "The Progressive Stages of Spiritual Blindness",
+          "content": "A Hadith in Sahih al-Bukhari explains that when a servant commits a sin, a black spot appears on his heart. If he repents, it is polished clean; but if he persists, the blackness spreads until it encompasses the entire heart—this is the 'Ran' (corrosion) mentioned in Surah Al-Mutaffifin and the 'Khatm' (sealing) mentioned here."
+        }
+      ],
+      "curatedTerms": [
+        {
+          "term": "Kaffar",
+          "arabicRoot": "ك-ف-ر (K-F-R)",
+          "literalMeaning": "To cover, conceal, or bury (linguistically: a farmer who buries seed in dark soil; theologically: willfully concealing the evident truth).",
+          "relatedWords": [
+            "Kafir (disbeliever / one who conceals truth)",
+            "Kufr (active rejection of truth)",
+            "Kaffarah (prescribed expiation that conceals / wipes out sins)",
+            "Kuffar (farmers who bury seed / deniers)"
+          ],
+          "theologicalContext": "In Ma'ariful Qur'an, Mufti Muhammad Shafi explains that Kufr here refers to deliberate, stubborn persistence in burying the truth after divine guidance and moral conscience have been made abundantly clear. The linguistic root conveys concealing something evident, showing that rejection of truth is an active suppression of one's innate God-consciousness (فطرة / Fitrah).",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 1, p. 128-132"
+        },
+        {
+          "term": "Kufr",
+          "arabicRoot": "ك-ف-ر (K-F-R)",
+          "literalMeaning": "To cover, conceal, or bury the light of truth.",
+          "relatedWords": [
+            "Kafir (disbeliever / one who conceals truth)",
+            "Kaffar (obstinate denier)",
+            "Kaffarah (expiation)"
+          ],
+          "theologicalContext": "Denial of any fundamental article of faith or rejection of the divine message after clear proof has been made manifest.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 1, p. 128"
+        },
+        {
+          "term": "Ghishawah",
+          "arabicRoot": "غ-ش-و (Gh-Sh-W)",
+          "literalMeaning": "An opaque cataract, dense veil, or membrane covering perception.",
+          "relatedWords": [
+            "Ghashiya (it engulfed / covered)",
+            "Yaghsha (he covers)",
+            "Al-Ghashiyah (The Overwhelming Event)"
+          ],
+          "theologicalContext": "Mufti Shafi points out a subtle grammatical nuance: while the seal is placed on hearts and ears, the vision is covered by a 'Ghishawah' (veil), indicating that their sensory perception remains physically intact yet spiritually blinded to moral signs through willful obstinacy.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 1, p. 135"
+        },
+        {
+          "term": "Khatm",
+          "arabicRoot": "خ-ت-م (Kh-T-M)",
+          "literalMeaning": "To imprint a wax seal, stamp firmly closed, or finalize.",
+          "relatedWords": [
+            "Khatam (seal / signet ring)",
+            "Khatam an-Nabiyyin (Seal of the Prophets)",
+            "Khitam (closing seal)"
+          ],
+          "theologicalContext": "Mufti Shafi explains that this sealing is the natural divine law of moral consequences: persistent rejection of truth darkens the spiritual receptor until it loses the capacity to receive guidance, like soot encrusting a mirror until it can no longer reflect light.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 1, p. 133"
+        }
+      ]
+    },
+    {
+      "id": "2-8-20",
+      "surahNumber": 2,
+      "verseRange": [8, 20],
+      "title": "The Traits and Psychological Traps of the Hypocrites",
+      "juzNumber": 1,
+      "revelationType": "Madani",
+      "arabicText": "وَمِنَ النَّاسِ مَن يَقُولُ آمَنَّا بِاللَّهِ وَبِالْيَوْمِ الْآخِرِ وَمَا هُم بِمُؤْمِنِينَ ۝٨ يُخَادِعُونَ اللَّهَ وَالَّذِينَ آمَنُوا وَمَا يَخْدَعُونَ إِلَّا أَنفُسَهُمْ وَمَا يَشْعُرُونَ ۝٩ فِي قُلُوبِهِم مَّرَضٌ فَزَادَهُمُ اللَّهُ مَرَضًا ۖ وَلَهُمْ عَذَابٌ أَلِيمٌ بِمَا كَانُوا يَكْذِبُونَ ۝١٠",
+      "translation": "And among humanity are some who say, 'We believe in Allah and the Last Day,' but they are not true believers. They seek to deceive Allah and those who believe, yet they deceive none but themselves, though they perceive it not. In their hearts is a spiritual disease ([Marad]), so Allah has increased their disease; and for them is a painful torment because of their persistent lying.",
+      "phraseCards": [
+        {
+          "id": "2-8-phrase-1",
+          "verseNumber": 8,
+          "arabicPhrase": "وَمِنَ النَّاسِ مَن يَقُولُ آمَنَّا بِاللَّهِ وَبِالْيَوْمِ الْآخِرِ وَمَا هُم بِمُؤْمِنِينَ",
+          "englishPhrase": "And among people are those who say, 'We have believed in Allah and the Last Day', yet they are not believers.",
+          "vocabulary": [
+            { "word": "الْمُنَافِقُونَ", "root": "ن-ف-ق", "meaning": "The Hypocrites", "grammarNote": "Derived from نفق (Nafaq): a subterranean burrow with two exits, symbolizing inward duplicity." }
+          ]
+        },
+        {
+          "id": "2-10-phrase-1",
+          "verseNumber": 10,
+          "arabicPhrase": "فِي قُلُوبِهِم مَّرَضٌ فَزَادَهُمُ اللَّهُ مَرَضًا",
+          "englishPhrase": "In their hearts is a sickness, so Allah increased their sickness.",
+          "vocabulary": [
+            { "word": "مَّرَضٌ", "root": "م-ر-ض", "meaning": "Spiritual ailment / malice", "grammarNote": "Derived from مرض (Marad): chronic illness, referring to doubts, jealousy, and duplicity festering in the psyche." }
+          ]
+        }
+      ],
+      "commentary": "Mufti Muhammad Shafi explains that the third group—the Hypocrites (Munafiqin)—poses a far greater danger to society than open disbelievers. A known adversary can be guarded against, but a hidden fifth column sabotages trust from within.\n\nThe Qur'an paints their psychological anatomy: they claim that their compromise and opportunism constitute 'peacemaking' (Islah), while in reality it generates social discord (Fasad). When urged to believe with the unreserved devotion of the sincere Companions, they sneer: 'Shall we believe as the simple-minded fools have believed?'\n\nThe passage concludes with two evocative parables: (1) The fire-kindler in darkness whose light is stripped away, leaving him in terrified blackness; and (2) The thundercloud storm where flashing lightning momentarily illuminates their path, causing them to stumble forward, only to freeze when darkness envelops them again.",
+      "subsections": [
+        {
+          "type": "asbab",
+          "title": "Occasion of Revelation: Abdullah ibn Ubayy",
+          "content": "These verses were revealed concerning Abdullah ibn Ubayy ibn Salul and his conspirators in Madinah. Prior to the Prophet's arrival, Ibn Ubayy was poised to be crowned king of Madinah. When Islam unified Aws and Khazraj, his royal aspirations collapsed, cultivating deep-seated envy that drove him to profess outward Islam while secretly undermining the Muslims."
+        },
+        {
+          "type": "ahkam",
+          "title": "Legal Treatment of Outward Hypocrisy",
+          "content": "In Islamic jurisprudence, judgment is based on the outward confession (Nahnun nahkumu bi al-zawahir). The Holy Prophet did not execute known hypocrites so that opponents could not allege 'Muhammad slaughters his own companions.' However, in the Hereafter, their punishment is in the lowest abyss of the Fire (al-dark al-asfal min an-nar)."
+        }
+      ],
+      "curatedTerms": [
+        {
+          "term": "Marad",
+          "arabicRoot": "م-ر-ض (M-R-D)",
+          "literalMeaning": "Chronic sickness, imbalance, corruption, or moral decay.",
+          "relatedWords": [
+            "Marid (sick person)",
+            "Mumarrid (healer / caregiver)",
+            "Tamarrud (disorder / insubordination)"
+          ],
+          "theologicalContext": "Refers to spiritual ailments festering in the psyche of hypocrites—chiefly jealousy, skepticism, and moral cowardice. As they persist in malicious plotting against truth, Allah permits their inner malice to swell as a consequence of their own deceit.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 1, p. 144"
+        },
+        {
+          "term": "Nifaq",
+          "arabicRoot": "ن-ف-ق (N-F-Q)",
+          "literalMeaning": "Duplicity; professing one thing while concealing its opposite.",
+          "relatedWords": [
+            "Munafiq (hypocrite)",
+            "Nafaq (subterranean burrow)",
+            "Infaq (spending wealth)"
+          ],
+          "theologicalContext": "Divided into doctrinal hypocrisy (Nifaq I'tiqadi, which expels from Islam) and behavioral hypocrisy (Nifaq 'Amali, lying, betraying trusts, and breaking promises).",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 1, p. 142"
+        }
+      ]
+    },
+    {
+      "id": "2-21-29",
+      "surahNumber": 2,
+      "verseRange": [21, 29],
+      "title": "Universal Call to Monotheism & Cosmic Signs of Creation",
+      "juzNumber": 1,
+      "revelationType": "Madani",
+      "arabicText": "يَا أَيُّهَا النَّاسُ اعْبُدُوا رَبَّكُمُ الَّذِي خَلَقَكُمْ وَالَّذِينَ مِن قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُونَ ۝٢١ الَّذِي جَعَلَ لَكُمُ الْأَرْضَ فِرَاشًا وَالسَّمَاءَ بِنَاءً وَأَنزَلَ مِنَ السَّمَاءِ مَاءً فَأَخْرَجَ بِهِ مِنَ الثَّمَرَاتِ رِزْقًا لَّكُمْ ۖ فَلَا تَجْعَلُوا لِلَّهِ أَندَادًا وَأَنتُمْ تَعْلَمُونَ ۝٢٢",
+      "translation": "O mankind! Worship your Lord who created you and those who came before you, that you may attain [Taqwa]. He who made the earth a resting bed for you and the sky a canopy, and sent down rain from the heavens, bringing forth fruits as sustenance for your survival. So do not set up rivals ([Andad]) alongside Allah while you know.",
+      "phraseCards": [
+        {
+          "id": "2-21-phrase-1",
+          "verseNumber": 21,
+          "arabicPhrase": "يَا أَيُّهَا النَّاسُ اعْبُدُوا رَبَّكُمُ",
+          "englishPhrase": "O mankind, worship your Lord,",
+          "vocabulary": [
+            { "word": "النَّاسُ", "root": "ن-و-س", "meaning": "Humanity universally", "grammarNote": "First universal command in the Quranic arrangement, directed to all humans." }
+          ]
+        },
+        {
+          "id": "2-22-phrase-1",
+          "verseNumber": 22,
+          "arabicPhrase": "فَلَا تَجْعَلُوا لِلَّهِ أَندَادًا وَأَنتُمْ تَعْلَمُونَ",
+          "englishPhrase": "So do not set up equals or rivals with Allah while you know full well.",
+          "vocabulary": [
+            { "word": "أَندَادًا", "root": "ن-د-د", "meaning": "Peers, rivals, equals", "grammarNote": "Plural of Nidd: someone claimed to possess independent divine authority." }
+          ]
+        }
+      ],
+      "commentary": "Mufti Shafi points out that this is the very first explicit commandment (Amr) in the entire sequence of the Holy Qur'an: 'O mankind, worship your Lord!' After classifying the categories of humanity in the preceding twenty verses, the divine speech issues a compassionate, universal invitation to all human beings without distinction of race or era.\n\nThe rationale for exclusive worship is derived from creation: He who originated you from non-existence, stabilized the earth as an expansive floor, vaulted the cosmos above as a protective canopy, and orchestrated the hydrological cycle to yield vegetation is uniquely entitled to worship. Setting up 'Andad' (idols, intermediaries, or sovereign rivals) is irrational when those entities created nothing.",
+      "subsections": [
+        {
+          "type": "insights",
+          "title": "The First Commandment of the Qur'an",
+          "content": "The sequencing of the Qur'an holds profound pedagogical wisdom: before presenting specific prohibitions and ritual requirements, the fundamental bedrock of Tawhid is established as the sole legitimate ground for human devotion."
+        }
+      ],
+      "curatedTerms": [
+        {
+          "term": "Andad",
+          "arabicRoot": "ن-د-د",
+          "literalMeaning": "Rivals, counterparts, equal partners.",
+          "theologicalContext": "Ascribing divine attributes of creation, intercession, legislation, or unconditional obedience to any entity other than Allah.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 1, p. 182"
+        }
+      ]
+    },
+    {
+      "id": "2-183-187",
+      "surahNumber": 2,
+      "verseRange": [183, 187],
+      "title": "Injunctions on Fasting (Siyam) & The Sanctity of Ramadan",
+      "juzNumber": 2,
+      "revelationType": "Madani",
+      "arabicText": "يَا أَيُّهَا الَّذِينَ آمَنُوا كُتِبَ عَلَيْكُمُ الصِّيَامُ كَمَا كُتِبَ عَلَى الَّذِينَ مِن قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُونَ ۝١٨٣ أَيَّامًا مَّعْدُودَاتٍ ۚ فَمَن كَانَ مِنكُم مَّرِيضًا أَوْ عَلَىٰ سَفَرٍ فَعِدَّةٌ مِّنْ أَيَّامٍ أُخَرَ ۝١٨٤ شَهْرُ رَمَضَانَ الَّذِي أُنزِلَ فِيهِ الْقُرْآنُ هُدًى لِّلنَّاسِ وَبَيِّنَاتٍ مِّنَ الْهُدَىٰ وَالْفُرْقَانِ ۝١٨٥",
+      "translation": "O you who believe! Fasting ([Siyam]) is prescribed upon you as it was prescribed upon those before you, that you may attain [Taqwa]. Fasting is for a numbered count of days; but whoever among you is sick or on a journey, then an equal count of other days. The month of Ramadan is that in which the Qur'an was revealed as guidance for mankind and clear proofs of guidance and the Criterion...",
+      "phraseCards": [
+        {
+          "id": "2-183-phrase-1",
+          "verseNumber": 183,
+          "arabicPhrase": "كُتِبَ عَلَيْكُمُ الصِّيَامُ كَمَا كُتِبَ عَلَى الَّذِينَ مِن قَبْلِكُمْ",
+          "englishPhrase": "Fasting is ordained for you as it was ordained for those before you,",
+          "vocabulary": [
+            { "word": "الصِّيَامُ", "root": "ص-و-م", "meaning": "To abstain / restrain", "grammarNote": "Linguistically to refrain; in Shariah, abstaining from food, drink, and sexual intimacy from dawn to sunset with intention." }
+          ]
+        },
+        {
+          "id": "2-185-phrase-1",
+          "verseNumber": 185,
+          "arabicPhrase": "شَهْرُ رَمَضَانَ الَّذِي أُنزِلَ فِيهِ الْقُرْآنُ",
+          "englishPhrase": "The month of Ramadan in which the Qur'an was sent down,",
+          "vocabulary": [
+            { "word": "رَمَضَانَ", "root": "ر-م-ض", "meaning": "Scorching heat / cleansing fire", "grammarNote": "So named because it burns away sins through worship and hunger." }
+          ]
+        }
+      ],
+      "commentary": "Mufti Shafi writes in Ma'ariful Qur'an that fasting is a spiritual institution common to all prophetic dispensations. Its supreme objective is formulated in the closing phrase: 'La'allakum tattaqun' (that you may acquire Taqwa). Fasting restrains animal passions, breaks the pride of the lower self (Nafs), and cultivates empathy for the destitute.\n\nFurthermore, the legislation incorporates compassionate exemptions: travelers and the ill may postpone their fasts, elderly individuals with chronic infirmity may offer redemption (Fidya), and missed days must be made up sequentially or separately before the next Ramadan.",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Legal Rulings (Ahkam) of Fasting, Travel & Illness",
+          "content": "The sickness permitting breaking the fast is that which is exacerbated by fasting or where delay in recovery is genuinely feared based on medical counsel. A travel distance of 48 Shar'i miles (approx. 77km) qualifies as Safar permitting concession. The intention (Niyyah) must be formed before dawn for each day of Ramadan."
+        }
+      ],
+      "curatedTerms": [
+        {
+          "term": "Siyam",
+          "arabicRoot": "ص-و-م",
+          "literalMeaning": "Absolute restraint and abstention.",
+          "theologicalContext": "Abstinence from food, drink, and marital relations from dawn (Subh Sadiq) to sunset with the explicit spiritual intention of pleasing Allah.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 1, p. 448"
+        }
+      ]
+    },
+    {
+      "id": "2-275-281",
+      "surahNumber": 2,
+      "verseRange": [275, 281],
+      "title": "The Total Prohibition of Usury (Riba) & Economic Justice",
+      "juzNumber": 3,
+      "revelationType": "Madani",
+      "arabicText": "الَّذِينَ يَأْكُلُونَ الرِّبَا لَا يَقُومُونَ إِلَّا كَمَا يَقُومُ الَّذِي يَتَخَبَّطُهُ الشَّيْطَانُ مِنَ الْمَسِّ ۚ ذَٰلِكَ بِأَنَّهُمْ قَالُوا إِنَّمَا الْبَيْعُ مِثْلُ الرِّبَا ۗ وَأَحَلَّ اللَّهُ الْبَيْعَ وَحَرَّمَ الرِّبَا ۝٢٧٥ يَمْحَقُ اللَّهُ الرِّبَا وَيُرْبِي الصَّدَقَاتِ ۗ وَاللَّهُ لَا يُحِبُّ كُلَّ كَفَّارٍ أَثِيمٍ ۝٢٧٦",
+      "translation": "Those who consume [Riba] (usury and exploitative interest) will not rise on the Day of Resurrection except as one confounded by Satan's touch into madness rises. That is because they claim: 'Trade is just like usury!' But Allah has permitted legitimate trade ([Bay']) and strictly prohibited usury. Allah blights usury with destruction and nourishes charity with growth...",
+      "phraseCards": [
+        {
+          "id": "2-275-phrase-1",
+          "verseNumber": 275,
+          "arabicPhrase": "وَأَحَلَّ اللَّهُ الْبَيْعَ وَحَرَّمَ الرِّبَا",
+          "englishPhrase": "Whereas Allah has permitted trade and forbidden usury.",
+          "vocabulary": [
+            { "word": "الْبَيْعَ", "root": "ب-ي-ع", "meaning": "Trade, commerce, bilateral exchange", "grammarNote": "Mutual exchange of value involving risk and productive labor." },
+            { "word": "الرِّبَا", "root": "ر-ب-و", "meaning": "Surplus, unearned gain, interest", "grammarNote": "Any stipulated excess without legitimate countervalue in loan contracts." }
+          ]
+        }
+      ],
+      "commentary": "Mufti Muhammad Shafi authored one of the most seminal modern treatises on Islamic economics, comprehensively incorporated into Ma'ariful Qur'an at this juncture. He refutes the capitalist conflation between commercial profit and usurious interest.\n\nIn lawful trade (Bay'), both parties engage in mutual exchange where profit is coupled with commercial risk, enterprise, and market fluctuation. In usury (Riba), the lender offloads all risk onto the borrower, demanding guaranteed capital return plus predetermined growth regardless of whether the venture profits or fails. This generates wealth concentration, systemic debt traps, and economic paralysis.\n\nFurthermore, Allah declares war against those who persist in usury: 'Take notice of war from Allah and His Messenger!' No other sin in the Qur'an receives such an ultimatum.",
+      "subsections": [
+        {
+          "type": "ahkam",
+          "title": "Comprehensive Legal Definition of Riba",
+          "content": "Riba is divided by classical jurists into Riba an-Nasi'ah (interest on loans or delayed debt settlement) and Riba al-Fadl (inequality in the spot exchange of identical commodities like gold for gold or dates for dates). Any loan contract where a debtor is required to repay more than the principal amount constitutes forbidden Riba."
+        }
+      ],
+      "curatedTerms": [
+        {
+          "term": "Riba",
+          "arabicRoot": "ر-ب-و",
+          "literalMeaning": "Increase, surplus, addition.",
+          "theologicalContext": "Any conditional or contractual excess charged on a debt without providing an equivalent countervalue (Iwad) in exchange.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 1, p. 642"
+        }
+      ]
+    }
+  ]
+}

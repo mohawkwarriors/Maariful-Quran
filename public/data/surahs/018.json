@@ -1,0 +1,61 @@
+{
+  "number": 18,
+  "nameArabic": "الكهف",
+  "nameTransliterated": "Al-Kahf",
+  "nameEnglish": "The Cave",
+  "versesCount": 110,
+  "revelationType": "Makki",
+  "juz": [15, 16],
+  "bismillahPre": true,
+  "introductoryTafseer": "Surah Al-Kahf is a central Makkan surah whose Friday recitation is commended by the Holy Prophet as providing an illuminating light from one Friday to the next, and granting spiritual immunity against the tribulations of Dajjal (the Antichrist). In Ma'ariful Qur'an, Mufti Muhammad Shafi explains that the surah addresses four profound trials through four archetypal parables: the Trial of Faith (Ashab al-Kahf), the Trial of Wealth (the Owner of Two Gardens), the Trial of Knowledge (Musa and Khidr), and the Trial of Sovereign Power (Dhul-Qarnayn).",
+  "sections": [
+    {
+      "id": "18-1-8",
+      "surahNumber": 18,
+      "verseRange": [1, 8],
+      "title": "Praise of Allah for the Incorruptible Scripture & Warnings",
+      "juzNumber": 15,
+      "revelationType": "Makki",
+      "arabicText": "الْحَمْدُ لِلَّهِ الَّذِي أَنزَلَ عَلَىٰ عَبْدِهِ الْكِتَابَ وَلَمْ يَجْعَل لَّهُ عِوَجًا ۜ ۝١ قَيِّمًا لِّيُنذِرَ بَأْسًا شَدِيدًا مِّن لَّدُنْهُ وَيُبَشِّرَ الْمُؤْمِنِينَ الَّذِينَ يَعْمَلُونَ الصَّالِحَاتِ أَنَّ لَهُمْ أَجْرًا حَسَنًا ۝٢ مَّاكِثِينَ فِيهِ أَبَدًا ۝٣ وَيُنذِرَ الَّذِينَ قَالُوا اتَّخَذَ اللَّهُ وَلَدًا ۝٤",
+      "translation": "All praise belongs to Allah who sent down upon His servant the Book, and did not place therein any crookedness or deviation (['Iwaj]). An upright and unerring criterion ([Qayyim]), to warn of a severe retribution from His presence and give glad tidings to the believers who perform righteous works that they will have a gracious reward...",
+      "phraseCards": [
+        {
+          "id": "18-1-phrase-1",
+          "verseNumber": 1,
+          "arabicPhrase": "الْحَمْدُ لِلَّهِ الَّذِي أَنزَلَ عَلَىٰ عَبْدِهِ الْكِتَابَ",
+          "englishPhrase": "Praise be to Allah who revealed to His servant the Scripture,",
+          "vocabulary": [
+            { "word": "عَبْدِهِ", "root": "ع-ب-د", "meaning": "His chosen servant", "grammarNote": "Honoring Prophet Muhammad with the title of servitude at the moment of highest revelation." }
+          ]
+        },
+        {
+          "id": "18-1-phrase-2",
+          "verseNumber": 1,
+          "arabicPhrase": "وَلَمْ يَجْعَل لَّهُ عِوَجًا ۜ قَيِّمًا",
+          "englishPhrase": "and allowed no deviousness therein, straight and unswerving.",
+          "vocabulary": [
+            { "word": "عِوَجًا", "root": "ع-و-ج", "meaning": "Crookedness, inconsistency, flaw", "grammarNote": "Total absence of internal contradiction, ambiguity, or doctrinal deviation." },
+            { "word": "قَيِّمًا", "root": "ق-و-م", "meaning": "Straightforward guardian / upright", "grammarNote": "Not only straight in itself, but an upright stabilizer guarding previous scriptures." }
+          ]
+        }
+      ],
+      "commentary": "Mufti Shafi points out the remarkable rhetorical beauty in pairing 'wa lam yaj'al lahu 'iwaja' (did not make in it any crookedness) with 'Qayyiman' (upright and straight). Something may be theoretically straight yet lacking the strength to straighten others; the Qur'an is described as both flawless in its own narrative and active in establishing rectitude for human society.",
+      "subsections": [
+        {
+          "type": "asbab",
+          "title": "The Polytheists' Challenge Prompted by Jewish Rabbis",
+          "content": "The Quraysh dispatched Nadr ibn al-Harith to the Jewish rabbis of Madinah to inquire about tests of prophethood. The rabbis instructed: 'Ask him about the young men who fled in antiquity, about the wanderer who reached east and west, and about the nature of the Spirit (Ruh).' Surah Al-Kahf answered these questions with historical precision."
+        }
+      ],
+      "curatedTerms": [
+        {
+          "term": "Iwaj",
+          "arabicRoot": "ع-و-ج",
+          "literalMeaning": "Bend, distortion, irregularity.",
+          "theologicalContext": "Freedom of the Quran from any internal discrepancy or subjective bias.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 5, p. 556"
+        }
+      ]
+    }
+  ]
+}

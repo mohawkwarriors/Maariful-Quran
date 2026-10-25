@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+/* Configure manual class-based dark mode for Tailwind CSS v4 */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-accent: #CD7743;
+  --color-tertiary: #596B8E;
+  --color-backup-brown: #5F4B3E;
+  --color-backup-teal: #4C7971;
+}
+
+:root {
+  --accent: #CD7743;
+  --accent-hover: #b86432;
+  --accent-light: rgba(205, 119, 67, 0.12);
+  --accent-border: rgba(205, 119, 67, 0.35);
+
+  --tertiary: #596B8E;
+  --tertiary-hover: #485774;
+  --tertiary-light: rgba(89, 107, 142, 0.12);
+  --tertiary-border: rgba(89, 107, 142, 0.35);
+
+  --backup-brown: #5F4B3E;
+  --backup-brown-light: rgba(95, 75, 62, 0.12);
+  --backup-brown-border: rgba(95, 75, 62, 0.35);
+
+  --backup-teal: #4C7971;
+  --backup-teal-light: rgba(76, 121, 113, 0.12);
+  --backup-teal-border: rgba(76, 121, 113, 0.35);
+}
+
+.dark {
+  --accent: #DB8552;
+  --accent-hover: #e59564;
+  --accent-light: rgba(219, 133, 82, 0.18);
+  --accent-border: rgba(219, 133, 82, 0.4);
+
+  --tertiary: #7587AC;
+  --tertiary-hover: #899abf;
+  --tertiary-light: rgba(117, 135, 172, 0.18);
+  --tertiary-border: rgba(117, 135, 172, 0.4);
+
+  --backup-brown: #8C7262;
+  --backup-brown-light: rgba(140, 114, 98, 0.18);
+  --backup-brown-border: rgba(140, 114, 98, 0.4);
+
+  --backup-teal: #639C92;
+  --backup-teal-light: rgba(99, 156, 146, 0.18);
+  --backup-teal-border: rgba(99, 156, 146, 0.4);
+}
+
+/* Color Palette Utility Classes */
+.text-accent { color: var(--accent); }
+.bg-accent { background-color: var(--accent); }
+.border-accent { border-color: var(--accent-border); }
+.bg-accent-light { background-color: var(--accent-light); }
+
+.text-tertiary { color: var(--tertiary); }
+.bg-tertiary { background-color: var(--tertiary); }
+.border-tertiary { border-color: var(--tertiary-border); }
+.bg-tertiary-light { background-color: var(--tertiary-light); }
+
+.text-backup-brown { color: var(--backup-brown); }
+.bg-backup-brown { background-color: var(--backup-brown); }
+.border-backup-brown { border-color: var(--backup-brown-border); }
+.bg-backup-brown-light { background-color: var(--backup-brown-light); }
+
+.text-backup-teal { color: var(--backup-teal); }
+.bg-backup-teal { background-color: var(--backup-teal); }
+.border-backup-teal { border-color: var(--backup-teal-border); }
+.bg-backup-teal-light { background-color: var(--backup-teal-light); }
+
+@font-face {
+  font-family: 'KFGQPC Uthmanic Script HAFS';
+  src: url('https://cdn.jsdelivr.net/gh/mustafa0x/quran-fonts@master/fonts/KFGQPC%20Uthmanic%20Script%20HAFS.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/gh/mustafa0x/quran-fonts@master/fonts/KFGQPC%20Uthmanic%20Script%20HAFS.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-quran {
+  font-family: 'KFGQPC Uthmanic Script HAFS', 'Amiri Quran', 'Scheherazade New', 'Amiri', serif;
+}
+
+.font-serif-heading {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-reader {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* PRD Section 5: Native content-visibility for 60fps smooth scrolling with 0 stutter on large chapters */
+.tafseer-section-optimized {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 800px;
+}
+
+/* Eye-comfort custom scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.4);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.7);
+}

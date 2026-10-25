@@ -1,0 +1,62 @@
+{
+  "number": 114,
+  "nameArabic": "الناس",
+  "nameTransliterated": "An-Nas",
+  "nameEnglish": "Mankind",
+  "versesCount": 6,
+  "revelationType": "Makki",
+  "juz": [30],
+  "bismillahPre": true,
+  "introductoryTafseer": "Surah An-Nas forms the concluding seal of the Holy Qur'an together with Surah Al-Falaq, collectively designated as Al-Mu'awwidhatayn (The Twin Surahs of Divine Refuge). Mufti Muhammad Shafi notes in Ma'ariful Qur'an that whereas Surah Al-Falaq seeks protection against external calamities of the material and occult worlds, Surah An-Nas seeks protection against the far more lethal spiritual peril: insidious whispers (Waswasah) aimed at corrupting human faith and intention.",
+  "sections": [
+    {
+      "id": "114-1-6",
+      "surahNumber": 114,
+      "verseRange": [1, 6],
+      "title": "Refuge in the Sovereign Lord from Insidious Whisperers",
+      "juzNumber": 30,
+      "revelationType": "Makki",
+      "arabicText": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ ۝١ مَلِكِ النَّاسِ ۝٢ إِلَٰهِ النَّاسِ ۝٣ مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ ۝٤ الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ ۝٥ مِنَ الْجِنَّةِ وَالنَّاسِ ۝٦",
+      "translation": "Say: 'I seek refuge with the [Rabb] (Lord and Cherisher) of mankind. The Sovereign King of mankind. The True God and Object of Worship of mankind. From the malice of the retreating whisperer ([Al-Waswas Al-Khannas]), who casts insidious suggestions into the hearts of mankind—from among jinn and men.'",
+      "phraseCards": [
+        {
+          "id": "114-1-phrase-1",
+          "verseNumber": 1,
+          "arabicPhrase": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
+          "englishPhrase": "Say: I seek sanctuary with the Lord and Evolver of humanity,",
+          "vocabulary": [
+            { "word": "أَعُوذُ", "root": "ع-و-ذ", "meaning": "I take refuge / seek haven", "grammarNote": "Fleeing from danger to an almighty protector." },
+            { "word": "النَّاسِ", "root": "ن-و-س", "meaning": "Mankind", "grammarNote": "Singled out here because humanity is the specific target of demonic sabotage." }
+          ]
+        },
+        {
+          "id": "114-4-phrase-1",
+          "verseNumber": 4,
+          "arabicPhrase": "مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ",
+          "englishPhrase": "from the evil of the covert whisperer who slinks away,",
+          "vocabulary": [
+            { "word": "الْوَسْوَاسِ", "root": "و-س-و-س", "meaning": "The incessant whisperer", "grammarNote": "Repetitive onomatopoeic root denoting soft, repeated insidious prompting." },
+            { "word": "الْخَنَّاسِ", "root": "خ-ن-س", "meaning": "The one who shrinks back and retreats", "grammarNote": "Satan retreats whenever the servant engages in the Dhikr (remembrance) of Allah." }
+          ]
+        }
+      ],
+      "commentary": "Mufti Muhammad Shafi explains why three divine attributes—Rabb (Sustainer), Malik (King), and Ilah (God)—are invoked sequentially before naming the single threat being repelled. This teaches the gravity of spiritual health: physical injury harms worldly life, but seduced loss of faith leads to eternal perdition.\n\n'Al-Khannas' is Satan's defining trait: whenever a servant remembers Allah, Satan shrinks, retreats, and withers; but the moment human vigilance lapses, he lunges forward to whisper doubts, pride, and despair.\n\nCrucially, the final verse clarifies: 'from among jinn and men'. Demonic whispers come not only from unseen spirits, but also from corrupt human companions, cynical writers, and toxic influencers who glamorize vice and sow doubt.",
+      "subsections": [
+        {
+          "type": "insights",
+          "title": "Remembrance (Dhikr) as the Unbreakable Fortress",
+          "content": "Ibn Abbas stated: 'Satan is crouched upon the heart of the son of Adam. When he remembers Allah, Satan cowers and slinks away (Khanasa); but when he becomes heedless, he casts whispered poison.' Hence, the antidote to Waswasah is constant, conscious remembrance."
+        }
+      ],
+      "curatedTerms": [
+        {
+          "term": "Waswasah",
+          "arabicRoot": "و-س-و-س",
+          "literalMeaning": "A faint, repetitive rustle or whisper.",
+          "theologicalContext": "Subtle promptings directed at human psychology urging toward doubt, vanity, procrastination in good deeds, and despair in divine mercy.",
+          "volumeReference": "Ma'ariful Qur'an, Vol. 8, p. 918"
+        }
+      ]
+    }
+  ]
+}
