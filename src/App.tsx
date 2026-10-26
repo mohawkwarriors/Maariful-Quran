@@ -27,8 +27,20 @@ function ReaderApp() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
   const [isRootExplorerOpen, setIsRootExplorerOpen] = useState(false);
+  const [rootExplorerInitialRoot, setRootExplorerInitialRoot] = useState<string | null>(null);
   const [pendingScrollSectionId, setPendingScrollSectionId] = useState<string | null>(null);
   const readingContainerRef = useRef<HTMLDivElement>(null);
+
+  // Listen for direct root navigation events from Word Explore cards or curated term popovers
+  useEffect(() => {
+    const handleOpenRoot = (e: Event) => {
+      const customEvent = e as CustomEvent<{ root?: string }>;
+      setRootExplorerInitialRoot(customEvent.detail?.root || null);
+      setIsRootExplorerOpen(true);
+    };
+    window.addEventListener('open-root-explorer', handleOpenRoot);
+    return () => window.removeEventListener('open-root-explorer', handleOpenRoot);
+  }, []);
 
   // Initialize Theme from localStorage with immediate default fallback
   const [theme, setTheme] = useState<'parchment' | 'charcoal'>(() => {
@@ -477,7 +489,11 @@ function ReaderApp() {
       {/* Quranic Triliteral Root Explorer Modal */}
       <RootExplorerModal
         isOpen={isRootExplorerOpen}
-        onClose={() => setIsRootExplorerOpen(false)}
+        onClose={() => {
+          setIsRootExplorerOpen(false);
+          setRootExplorerInitialRoot(null);
+        }}
+        initialRoot={rootExplorerInitialRoot}
         onSelectWord={handleSelectRootWord}
       />
     </div>

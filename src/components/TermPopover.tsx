@@ -1,10 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
 import * as Popover from '@radix-ui/react-popover';
-import { BookOpen, X, Layers } from 'lucide-react';
+import { BookOpen, X, Layers, ArrowUpRight } from 'lucide-react';
 import { CuratedTerm } from '../types/quran';
 import { VOCABULARY_KNOWLEDGE } from '../services/vocabularyKnowledge';
 import { getWordDeepDive } from '../services/quranLexicon';
 import { formatArabicEnglishInsight } from '../utils/textFormatter';
+import { triggerOpenRootExplorer } from '../lib/utils';
 
 interface TermPopoverProps {
   termText: string;
@@ -124,9 +125,18 @@ export const TermPopover: React.FC<TermPopoverProps> = ({ termText, termData }) 
                   {effectiveData.term}
                 </span>
                 {effectiveData.arabicRoot && (
-                  <span className="text-[11px] px-2 py-0.5 rounded-md bg-[#5F4B3E]/10 dark:bg-[#5F4B3E]/20 text-[#5F4B3E] dark:text-[#8C7262] font-mono font-medium border border-[#5F4B3E]/30">
-                    Root: {effectiveData.arabicRoot}
-                  </span>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setOpen(false);
+                      triggerOpenRootExplorer(effectiveData.arabicRoot);
+                    }}
+                    className="inline-flex items-center gap-1 text-[11px] px-2.5 py-0.5 rounded-md bg-[#5F4B3E]/10 dark:bg-[#5F4B3E]/20 text-[#5F4B3E] dark:text-[#8C7262] font-mono font-medium border border-[#5F4B3E]/30 hover:bg-[#5F4B3E]/20 hover:border-[#5F4B3E]/50 transition-all cursor-pointer group/root"
+                    title={`Click to explore triliteral root ${effectiveData.arabicRoot} in Root Explorer`}
+                  >
+                    <span>Root: {effectiveData.arabicRoot}</span>
+                    <ArrowUpRight className="w-3 h-3 opacity-60 group-hover/root:opacity-100 group-hover/root:translate-x-0.5 group-hover/root:-translate-y-0.5 transition-transform" />
+                  </button>
                 )}
               </div>
 

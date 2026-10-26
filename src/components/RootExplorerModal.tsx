@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import {
   getAllLexiconRoots,
   LexiconRootSummary,
@@ -10,17 +10,39 @@ interface RootExplorerModalProps {
   isOpen: boolean;
   onClose: () => void;
   onSelectWord?: (word: string) => void;
+  initialRoot?: string | null;
 }
 
 export const RootExplorerModal: React.FC<RootExplorerModalProps> = ({
   isOpen,
   onClose,
   onSelectWord,
+  initialRoot,
 }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedRoot, setSelectedRoot] = useState<LexiconRootSummary | null>(null);
 
   const allRoots = useMemo(() => getAllLexiconRoots(), []);
+
+  useEffect(() => {
+    if (initialRoot && isOpen) {
+      // Normalize target root (e.g. "ن - ز - ل (N-Z-L)" -> "نزل")
+      const cleanTarget = initialRoot.replace(/[^\w\u0600-\u06FF]/g, '').toLowerCase();
+      const matched = allRoots.find((r) => {
+        const cleanR = r.root.replace(/[^\w\u0600-\u06FF]/g, '').toLowerCase();
+        return cleanR.includes(cleanTarget) || cleanTarget.includes(cleanR);
+      });
+      if (matched) {
+        setSelectedRoot(matched);
+        setSearchQuery(matched.root);
+      } else {
+        setSearchQuery(initialRoot);
+      }
+    } else if (!isOpen) {
+      setSearchQuery('');
+      setSelectedRoot(null);
+    }
+  }, [initialRoot, allRoots, isOpen]);
 
   const filteredRoots = useMemo(() => {
     if (!searchQuery.trim()) return allRoots;
@@ -173,7 +195,7 @@ export const RootExplorerModal: React.FC<RootExplorerModalProps> = ({
                         <div className="flex items-center gap-3">
                           <span
                             dir="rtl"
-                            className="font-quran text-xl sm:text-2xl text-[#CD7743] dark:text-[#E08955] leading-none"
+                            className="font-quran text-xl sm:text-2xl text-[#CD7743] dark:text-[#E08955] leading-[1.4] sm:leading-[1.5] inline-block px-1"
                           >
                             {w.word}
                           </span>
