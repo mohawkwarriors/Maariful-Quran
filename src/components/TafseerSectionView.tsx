@@ -474,6 +474,7 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
             <AnnotatedTranslation
               text={section.translation}
               curatedTerms={section.curatedTerms}
+              verseRange={section.verseRange}
             />
           </div>
 
