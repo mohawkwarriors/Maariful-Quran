@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import * as Popover from '@radix-ui/react-popover';
-import { X, BookOpen, Layers, Star, Compass, ArrowRight, ArrowUpRight } from 'lucide-react';
+import { X, BookOpen, Layers, Star, Compass, ArrowUpRight } from 'lucide-react';
 import { WordDeepDiveData } from '../services/quranLexicon';
-import { formatArabicEnglishInsight } from '../utils/textFormatter';
+import { formatArabicEnglishInsight, parseRootDisplay } from '../utils/textFormatter';
 import { triggerOpenRootExplorer, cn } from '../lib/utils';
 
 interface WordDeepDiveModalProps {
@@ -81,17 +81,34 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
               </span>
             )}
 
-            {data.root && (
-              <button
-                type="button"
-                onClick={() => handleRootClick(data.root)}
-                className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md font-mono text-[11px] font-semibold bg-[#5F4B3E]/10 dark:bg-[#5F4B3E]/20 text-[#5F4B3E] dark:text-[#8C7262] border border-[#5F4B3E]/30 hover:bg-[#5F4B3E]/20 hover:border-[#5F4B3E]/50 transition-all cursor-pointer group/root shrink-0 shadow-2xs"
-                title={`Click to explore triliteral root ${data.root} in Root Explorer`}
-              >
-                <span>Root: {data.root}</span>
-                <ArrowUpRight className="w-3 h-3 text-[#5F4B3E] dark:text-[#8C7262] opacity-70 group-hover/root:opacity-100 group-hover/root:translate-x-0.5 group-hover/root:-translate-y-0.5 transition-transform" />
-              </button>
-            )}
+            {data.root && (() => {
+              const parsedRoot = parseRootDisplay(data.root);
+              if (!parsedRoot) return null;
+              return (
+                <button
+                  type="button"
+                  onClick={() => handleRootClick(data.root)}
+                  className="inline-flex items-center gap-1.5 sm:gap-2 px-2.5 py-1 rounded-lg bg-[#5F4B3E]/8 dark:bg-[#5F4B3E]/18 border border-[#5F4B3E]/25 hover:border-[#CD7743]/50 hover:bg-[#CD7743]/10 dark:hover:bg-[#CD7743]/20 transition-all cursor-pointer group shrink-0 shadow-2xs"
+                  title={`Click to explore root ${data.root} in Root Explorer`}
+                >
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-stone-400 dark:text-stone-500">
+                    Root
+                  </span>
+                  <span
+                    dir="rtl"
+                    className="font-quran text-[15px] sm:text-[16px] text-[#CD7743] dark:text-[#E08955] leading-none px-1.5 py-0.5 rounded-md bg-white dark:bg-[#1E1E23] border border-stone-200/70 dark:border-stone-700/60 shadow-3xs select-text"
+                  >
+                    {parsedRoot.arabic}
+                  </span>
+                  {parsedRoot.latin && (
+                    <span className="font-mono text-[11px] font-semibold text-stone-600 dark:text-stone-300">
+                      ({parsedRoot.latin})
+                    </span>
+                  )}
+                  <ArrowUpRight className="w-3.5 h-3.5 text-stone-400 dark:text-stone-500 group-hover:text-[#CD7743] dark:group-hover:text-[#E08955] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+                </button>
+              );
+            })()}
           </div>
 
           <button
@@ -144,21 +161,9 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
       {/* 4. Related Words from Same Root (Tier 2: Clean Sub-Card Grid with Generous Arabic Line Height) */}
       {data.relatedWords && data.relatedWords.length > 0 && (
         <div className="space-y-2">
-          <div className="text-[10px] font-semibold uppercase tracking-wider text-[#596B8E] dark:text-[#788BB3] flex items-center justify-between">
-            <div className="flex items-center gap-1.5">
-              <Layers className="w-3.5 h-3.5 text-[#596B8E] dark:text-[#788BB3]" />
-              <span>Related Words (Same Root)</span>
-            </div>
-            {data.root && (
-              <button
-                type="button"
-                onClick={() => handleRootClick(data.root)}
-                className="text-[10px] font-semibold text-[#CD7743] hover:text-[#b86432] dark:hover:text-[#f09a68] cursor-pointer flex items-center gap-0.5 transition-colors"
-              >
-                <span>Root Explorer</span>
-                <ArrowRight className="w-2.5 h-2.5" />
-              </button>
-            )}
+          <div className="text-[10px] font-semibold uppercase tracking-wider text-[#596B8E] dark:text-[#788BB3] flex items-center gap-1.5">
+            <Layers className="w-3.5 h-3.5 text-[#596B8E] dark:text-[#788BB3]" />
+            <span>Related Words (Same Root)</span>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             {data.relatedWords.slice(0, 4).map((rw, rwIdx) => (

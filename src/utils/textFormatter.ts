@@ -104,3 +104,27 @@ export function formatArabicEnglishInsight(text: string): string {
   formattedInsightCache.set(text, result);
   return result;
 }
+
+export interface ParsedRoot {
+  arabic: string;
+  latin: string | null;
+}
+
+/**
+ * Parses root strings like "ه - د - ي (H-D-Y)" into distinct Arabic letters and Latin transliteration
+ */
+export function parseRootDisplay(rootStr?: string): ParsedRoot | null {
+  if (!rootStr) return null;
+  const trimmed = rootStr.trim();
+  const match = trimmed.match(/^(.*?)\s*\((.*?)\)$/);
+  if (match) {
+    return {
+      arabic: match[1].trim(),
+      latin: match[2].trim(),
+    };
+  }
+  return {
+    arabic: trimmed,
+    latin: null,
+  };
+}

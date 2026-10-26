@@ -4,7 +4,7 @@ import { BookOpen, X, Layers, ArrowUpRight } from 'lucide-react';
 import { CuratedTerm } from '../types/quran';
 import { VOCABULARY_KNOWLEDGE } from '../services/vocabularyKnowledge';
 import { getWordDeepDive } from '../services/quranLexicon';
-import { formatArabicEnglishInsight } from '../utils/textFormatter';
+import { formatArabicEnglishInsight, parseRootDisplay } from '../utils/textFormatter';
 import { triggerOpenRootExplorer } from '../lib/utils';
 
 interface TermPopoverProps {
@@ -124,20 +124,37 @@ export const TermPopover: React.FC<TermPopoverProps> = ({ termText, termData }) 
                 <span className="font-serif-heading font-bold text-lg text-[#CD7743] dark:text-[#E08955]">
                   {effectiveData.term}
                 </span>
-                {effectiveData.arabicRoot && (
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setOpen(false);
-                      triggerOpenRootExplorer(effectiveData.arabicRoot);
-                    }}
-                    className="inline-flex items-center gap-1 text-[11px] px-2.5 py-0.5 rounded-md bg-[#5F4B3E]/10 dark:bg-[#5F4B3E]/20 text-[#5F4B3E] dark:text-[#8C7262] font-mono font-medium border border-[#5F4B3E]/30 hover:bg-[#5F4B3E]/20 hover:border-[#5F4B3E]/50 transition-all cursor-pointer group/root"
-                    title={`Click to explore triliteral root ${effectiveData.arabicRoot} in Root Explorer`}
-                  >
-                    <span>Root: {effectiveData.arabicRoot}</span>
-                    <ArrowUpRight className="w-3 h-3 opacity-60 group-hover/root:opacity-100 group-hover/root:translate-x-0.5 group-hover/root:-translate-y-0.5 transition-transform" />
-                  </button>
-                )}
+                {effectiveData.arabicRoot && (() => {
+                  const parsed = parseRootDisplay(effectiveData.arabicRoot);
+                  if (!parsed) return null;
+                  return (
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setOpen(false);
+                        triggerOpenRootExplorer(effectiveData.arabicRoot);
+                      }}
+                      className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-lg bg-[#5F4B3E]/8 dark:bg-[#5F4B3E]/18 border border-[#5F4B3E]/25 hover:border-[#CD7743]/50 hover:bg-[#CD7743]/10 dark:hover:bg-[#CD7743]/20 transition-all cursor-pointer group shrink-0 shadow-2xs"
+                      title={`Click to explore root ${effectiveData.arabicRoot} in Root Explorer`}
+                    >
+                      <span className="text-[9.5px] font-bold uppercase tracking-wider text-stone-400 dark:text-stone-500">
+                        Root
+                      </span>
+                      <span
+                        dir="rtl"
+                        className="font-quran text-[14px] sm:text-[15px] text-[#CD7743] dark:text-[#E08955] leading-none px-1.5 py-0.5 rounded-md bg-white dark:bg-[#1E1E23] border border-stone-200/70 dark:border-stone-700/60 shadow-3xs select-text"
+                      >
+                        {parsed.arabic}
+                      </span>
+                      {parsed.latin && (
+                        <span className="font-mono text-[10.5px] font-semibold text-stone-600 dark:text-stone-300">
+                          ({parsed.latin})
+                        </span>
+                      )}
+                      <ArrowUpRight className="w-3 h-3 text-stone-400 dark:text-stone-500 group-hover:text-[#CD7743] dark:group-hover:text-[#E08955] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+                    </button>
+                  );
+                })()}
               </div>
 
               {/* 2. Meaning */}
