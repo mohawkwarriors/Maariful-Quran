@@ -72,12 +72,12 @@ export const SurahHero: React.FC<SurahHeroProps> = ({ surah }) => {
         </div>
       </div>
 
-      {/* 3. Bismillah Calligraphy: Even 24px margin from titles */}
+      {/* 3. Bismillah Calligraphy: Optically centered with ample descender clearance to prevent border overhang */}
       {surah.bismillahPre && (
-        <div className="mt-6 flex justify-center">
+        <div className="mt-6 flex justify-center w-full">
           <div
             dir="rtl"
-            className="font-quran text-2xl sm:text-3xl md:text-4xl leading-[1.8] sm:leading-[1.9] text-[#CD7743] dark:text-[#E08955] inline-block px-8 sm:px-12 py-3 rounded-2xl bg-[#CD7743]/8 dark:bg-[#CD7743]/15 border border-[#CD7743]/30 dark:border-[#CD7743]/40 shadow-2xs overflow-visible select-text"
+            className="font-quran text-2xl sm:text-3xl md:text-4xl text-[#CD7743] dark:text-[#E08955] inline-flex items-center justify-center text-center px-10 sm:px-16 pt-4 pb-6 sm:pt-5 sm:pb-7 rounded-2xl bg-[#CD7743]/8 dark:bg-[#CD7743]/15 border border-[#CD7743]/30 dark:border-[#CD7743]/40 shadow-2xs overflow-visible select-text leading-[2.0] sm:leading-[2.2] tracking-wide"
           >
             بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
           </div>
