@@ -166,7 +166,7 @@ export const TermPopover: React.FC<TermPopoverProps> = ({ termText, termData }) 
                 {effectiveData.relatedWords.map((word, idx) => (
                   <span
                     key={`rel-${idx}`}
-                    className="text-[11px] px-2 py-0.5 rounded-md bg-white dark:bg-[#28282E] text-stone-700 dark:text-stone-300 border border-stone-200/70 dark:border-stone-700/60"
+                    className="text-[11px] px-2.5 py-1 leading-relaxed rounded-md bg-white dark:bg-[#28282E] text-stone-700 dark:text-stone-300 border border-stone-200/70 dark:border-stone-700/60 inline-flex items-center"
                   >
                     {word}
                   </span>
