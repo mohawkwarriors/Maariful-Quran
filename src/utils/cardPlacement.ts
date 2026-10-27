@@ -4,7 +4,14 @@ import { QuoteType } from '../components/TafseerQuoteCard';
 export type RawCommentaryBlock =
   | { type: 'verse-heading'; raw: string }
   | { type: 'subheading'; content: string }
-  | { type: 'quote'; quoteType: QuoteType; content: string }
+  | {
+      type: 'quote';
+      quoteType: QuoteType;
+      content: string;
+      arabic?: string;
+      english?: string;
+      source?: string;
+    }
   | { type: 'text'; content: string };
 
 export type CommentaryBlock =

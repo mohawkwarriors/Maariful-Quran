@@ -5,7 +5,7 @@ import { WordDeepDiveModal } from './WordDeepDiveModal';
 import { getWordDeepDive } from '../services/quranLexicon';
 import { TafseerStudyCard, StudyCardType } from './TafseerStudyCard';
 import { TafseerQuoteCard, QuoteType } from './TafseerQuoteCard';
-import { interleaveStudyCards } from '../utils/cardPlacement';
+import { interleaveStudyCards, RawCommentaryBlock } from '../utils/cardPlacement';
 import { ChevronDown, ChevronUp, Bookmark, ArrowUpRight } from 'lucide-react';
 
 interface TafseerSectionViewProps {
@@ -428,12 +428,7 @@ const TafseerCommentaryBlock: React.FC<{
     if (!commentary) return [];
 
     const rawParagraphs = splitIntoParagraphs(commentary);
-    const blocks: Array<
-      | { type: 'verse-heading'; raw: string }
-      | { type: 'subheading'; content: string }
-      | { type: 'quote'; quoteType: QuoteType; content: string }
-      | { type: 'text'; content: string }
-    > = [];
+    const blocks: RawCommentaryBlock[] = [];
 
     const duaRegex =
       /((?:(?:(?:The\s+)?Prayer\s+for\s+[^\n]+|Du['’`]?a\s+(?:for|when|after|before)\s+[^\n]+|Supplication\s+(?:for|of)\s+[^\n]+)\n(?:[^\n]*?(?:taught|teaches|instructs|pray|supplicat)[^\n]*:\s*\n)?(?:[\u0600-\u06FF\s]+\n)?[“"][^”"\n]+[”"]|[^\n]*?(?:taught\s+(?:man|us|the\s+believers|Muslims)\s+(?:what\s+to\s+pray|how\s+to\s+pray|this\s+prayer|this\s+du['’`]?a|a\s+special\s+du['’`]?a)|teaches\s+Muslims\s+to\s+make\s+a\s+special\s+du['’`]?a|supplicated\s+(?:with\s+these\s+words|in\s+these\s+words)|used\s+to\s+make\s+this\s+(?:prayer|du['’`]?a))[^\n]*:\s*\n(?:[\u0600-\u06FF\s]+\n)?[“"][^”"\n]+[”"]|(?:رَ‌?بَّنَا|اللَّهُمَّ|رَبِّ)[\u0600-\u06FF\s،]+\n[“"][^”"\n]+[”"]))/gi;
@@ -585,7 +580,9 @@ const TafseerCommentaryBlock: React.FC<{
 
       // 6. Qur'an Scripture citation quote within exegesis
       const isQuranQuote =
-        /["“][^"”]{15,}["”]\s*\(\d+:\s*\d+\)/.test(t) && t.length < 400;
+        (/["“][^"”]{10,}["”]\s*\(\d+:\s*\d+\)/.test(t) ||
+          (/^\s*["“]/.test(t) && /\(\d+:\s*\d+\)/.test(t))) &&
+        t.length < 500;
 
       if (isQuranQuote) {
         return [{ type: 'quote', quoteType: 'quran', content: t }];
@@ -595,12 +592,17 @@ const TafseerCommentaryBlock: React.FC<{
       return [{ type: 'text', content: t }];
     };
 
-    for (const para of rawParagraphs) {
-      const trimmed = para.trim();
-      if (!trimmed) continue;
+    let i = 0;
+    while (i < rawParagraphs.length) {
+      const trimmed = rawParagraphs[i].trim();
+      if (!trimmed) {
+        i++;
+        continue;
+      }
 
       // Filter out redundant raw ASCII divider lines like ────────────────────────────────────────
       if (/^[─\-_=~*]{3,}$/.test(trimmed)) {
+        i++;
         continue;
       }
 
@@ -610,10 +612,39 @@ const TafseerCommentaryBlock: React.FC<{
           type: 'verse-heading',
           raw: trimmed,
         });
+        i++;
         continue;
       }
 
+      // Check if trimmed is predominantly Arabic (e.g. Qur'an Ayah or Hadith citation)
+      // and followed by an English translation or citation in the next paragraph
+      const arMatches = (trimmed.match(/[\u0600-\u06FF]/g) || []).length;
+      const latinMatches = (trimmed.match(/[a-zA-Z]/g) || []).length;
+      const isArabic = arMatches >= 6 && latinMatches <= 4 && trimmed.length < 600;
+
+      if (isArabic && i + 1 < rawParagraphs.length) {
+        const nextPara = rawParagraphs[i + 1].trim();
+        const isNextHeading = /^\[\s*Verses?/i.test(nextPara) || isSubheading(nextPara);
+        const hasCite = /\(\d+:\s*\d+\)/.test(nextPara);
+        const hasQuotes = /["“][^"”]{5,}["”]/.test(nextPara) || nextPara.startsWith('"') || nextPara.startsWith('“');
+        const isShortTrans = nextPara.length < 500 && !isNextHeading;
+
+        if (!isNextHeading && (hasCite || hasQuotes || isShortTrans)) {
+          const isHadith = /(?:Prophet|Hadith|Tradition|Bukhari|Muslim|Messenger)/i.test(nextPara);
+          blocks.push({
+            type: 'quote',
+            quoteType: isHadith ? 'hadith' : 'quran',
+            arabic: trimmed,
+            english: nextPara,
+            content: `${trimmed}\n\n${nextPara}`,
+          });
+          i += 2;
+          continue;
+        }
+      }
+
       blocks.push(...processParagraph(trimmed));
+      i++;
     }
 
     return blocks;
@@ -676,6 +707,9 @@ const TafseerCommentaryBlock: React.FC<{
                   key={`cq-${idx}`}
                   type={block.quoteType}
                   rawText={block.content}
+                  arabic={block.arabic}
+                  english={block.english}
+                  source={block.source}
                 />
               );
             }

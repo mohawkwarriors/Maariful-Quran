@@ -1,11 +1,13 @@
 import React from 'react';
-import { BookOpen, Quote, Sparkles, Scale } from 'lucide-react';
+import { BookOpen, Quote, Sparkles } from 'lucide-react';
 
 export type QuoteType = 'hadith' | 'scholar' | 'quran' | 'dua';
 
 export interface TafseerQuoteCardProps {
   type: QuoteType;
-  rawText: string;
+  rawText?: string;
+  arabic?: string;
+  english?: string;
   source?: string;
 }
 
@@ -14,7 +16,7 @@ const formatCitationLabel = (text: string): string | null => {
   if (!match) return null;
   const raw = match[1].trim();
 
-  // Check surah:verse like (38:27) or (2:220)
+  // Check surah:verse like (38:27) or (2:220) or (64:2)
   const verseMatch = raw.match(/^(\d+)\s*:\s*(\d+)$/);
   if (verseMatch) {
     return `Surah ${verseMatch[1]}:${verseMatch[2]}`;
@@ -42,17 +44,20 @@ const formatCitationLabel = (text: string): string | null => {
 export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
   type,
   rawText,
+  arabic,
+  english,
   source,
 }) => {
-  const detectedCitation = formatCitationLabel(rawText) || source;
+  const fullText = [rawText, english, arabic].filter(Boolean).join(' ');
+  const detectedCitation = formatCitationLabel(fullText) || source;
 
   // Determine if this is a Hadith Qudsi (where Allah speaks in the first person)
   const isHadithQudsi =
     type === 'hadith' &&
-    (/Allah\s+(?:has\s+)?said|Allah\s+says/i.test(rawText) ||
-      rawText.toLowerCase().includes('mazhari'));
+    (/Allah\s+(?:has\s+)?said|Allah\s+says/i.test(fullText) ||
+      fullText.toLowerCase().includes('mazhari'));
 
-  // Determine badge styling based on quote type
+  // Determine badge and border styling based on quote type (thin border all around)
   const theme = React.useMemo(() => {
     switch (type) {
       case 'hadith':
@@ -61,7 +66,7 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
           badgeTitle: isHadithQudsi ? 'Hadith Qudsi · Sacred Tradition' : 'Prophetic Tradition · Hadith',
           badgeClasses: 'text-[#CD7743] dark:text-[#E08955]',
           badgeBgClasses: 'bg-[#CD7743]/10 dark:bg-[#CD7743]/20',
-          borderAccent: 'border-l-[#CD7743] dark:border-l-[#E08955]',
+          borderClasses: 'border-[#CD7743]/30 dark:border-[#E08955]/35 hover:border-[#CD7743]/50',
           defaultSource: 'Recorded in Prophetic Traditions',
         };
       case 'scholar':
@@ -70,7 +75,7 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
           badgeTitle: 'Classical Authority · Scholarly Quote',
           badgeClasses: 'text-[#596B8E] dark:text-[#788BB3]',
           badgeBgClasses: 'bg-[#596B8E]/10 dark:bg-[#596B8E]/20',
-          borderAccent: 'border-l-[#596B8E] dark:border-l-[#788BB3]',
+          borderClasses: 'border-[#596B8E]/30 dark:border-[#788BB3]/35 hover:border-[#596B8E]/50',
           defaultSource: "Ma'ariful Qur'an Classical Exegesis",
         };
       case 'quran':
@@ -79,7 +84,7 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
           badgeTitle: "Qur'anic Scripture Citation",
           badgeClasses: 'text-[#4C7971] dark:text-[#639C92]',
           badgeBgClasses: 'bg-[#4C7971]/10 dark:bg-[#4C7971]/20',
-          borderAccent: 'border-l-[#4C7971] dark:border-l-[#639C92]',
+          borderClasses: 'border-[#4C7971]/30 dark:border-[#639C92]/35 hover:border-[#4C7971]/50',
           defaultSource: 'The Holy Qur’an',
         };
       case 'dua':
@@ -88,7 +93,7 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
           badgeTitle: "Supplication & Prayer · Du'a",
           badgeClasses: 'text-[#2D7266] dark:text-[#4AA291]',
           badgeBgClasses: 'bg-[#2D7266]/10 dark:bg-[#2D7266]/20',
-          borderAccent: 'border-l-[#2D7266] dark:border-l-[#4AA291]',
+          borderClasses: 'border-[#2D7266]/30 dark:border-[#4AA291]/35 hover:border-[#2D7266]/50',
           defaultSource: "Qur'anic Supplication & Prophetic Du'a",
         };
     }
@@ -96,21 +101,41 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
 
   const IconComponent = theme.icon;
 
-  // Split lines to detect structured hadith dialogue turns (Arabic + English + Divine response)
-  const lines = React.useMemo(() => {
-    return rawText
+  // Extract separate Arabic and English segments if not directly provided
+  const { arabicText, englishText } = React.useMemo(() => {
+    if (arabic || english) {
+      return { arabicText: arabic, englishText: english };
+    }
+
+    const textToAnalyze = rawText || '';
+    const textLines = textToAnalyze.split('\n').map((l) => l.trim()).filter(Boolean);
+    const arLines: string[] = [];
+    const enLines: string[] = [];
+
+    for (const l of textLines) {
+      const arCount = (l.match(/[\u0600-\u06FF]/g) || []).length;
+      const enCount = (l.match(/[a-zA-Z]/g) || []).length;
+      if (arCount >= 4 && arCount > enCount) {
+        arLines.push(l);
+      } else {
+        enLines.push(l);
+      }
+    }
+
+    return {
+      arabicText: arLines.length > 0 ? arLines.join('\n') : undefined,
+      englishText: enLines.length > 0 ? enLines.join('\n') : textToAnalyze,
+    };
+  }, [arabic, english, rawText]);
+
+  // Dua parsing for structured supplications
+  const parsedDua = React.useMemo(() => {
+    if (type !== 'dua') return null;
+
+    const sourceLines = (rawText || `${arabic || ''}\n${english || ''}`)
       .split('\n')
       .map((l) => l.trim())
       .filter(Boolean);
-  }, [rawText]);
-
-  const hasArabicLines = React.useMemo(() => {
-    return lines.some((l) => /[\u0600-\u06FF]{4,}/.test(l));
-  }, [lines]);
-
-  // Dua parsing for supplications and prayers
-  const parsedDua = React.useMemo(() => {
-    if (type !== 'dua') return null;
 
     let title: string | null = null;
     let leadIn: string | null = null;
@@ -118,9 +143,8 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
     const prayerQuotes: string[] = [];
     const generalLines: string[] = [];
 
-    let currentLines = [...lines];
+    let currentLines = [...sourceLines];
 
-    // Detect if first line is a title like "The Prayer for Guidance" or "Du'a for ..."
     if (
       currentLines.length > 0 &&
       /^(?:(?:The\s+)?Prayer\s+for|Du['’`]?a\s+|Supplication\s+)/i.test(currentLines[0]) &&
@@ -132,14 +156,14 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
     }
 
     for (const l of currentLines) {
-      const isArabic = /[\u0600-\u06FF]{4,}/.test(l);
+      const isAr = /[\u0600-\u06FF]{4,}/.test(l);
       const isQuote = /^[“"][^”"]+[”"]$/.test(l) || /^[“"]/.test(l);
       const isLeadIn =
         /(?:taught|teaches|instructs|pray|supplicat|last\s+three\s+verses|prayer\s+on\s+the\s+part\s+of\s+man)[^:]*:\s*$/i.test(
           l
         );
 
-      if (isArabic) {
+      if (isAr) {
         arabicLines.push(l);
       } else if (isQuote) {
         prayerQuotes.push(l);
@@ -150,7 +174,6 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
       }
     }
 
-    // If no explicit leadIn was flagged but generalLines exist before quotes
     if (!leadIn && generalLines.length > 0 && (prayerQuotes.length > 0 || arabicLines.length > 0)) {
       leadIn = generalLines.join(' ');
       generalLines.length = 0;
@@ -163,11 +186,11 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
       prayerQuotes,
       generalLines,
     };
-  }, [type, lines]);
+  }, [type, rawText, arabic, english]);
 
   return (
     <div
-      className={`not-prose my-5 rounded-2xl bg-[#FCFAF7] dark:bg-[#1E1E23] border border-[#ECE5DA] dark:border-[#2C2C32] border-l-[3.5px] ${theme.borderAccent} p-4 sm:p-5 shadow-2xs space-y-3 transition-all select-text`}
+      className={`not-prose my-5 rounded-2xl bg-[#FCFAF7] dark:bg-[#1E1E23] border ${theme.borderClasses} p-4 sm:p-5 shadow-2xs space-y-3.5 transition-all select-text`}
     >
       {/* Header bar with category badge and citation source */}
       <div className="flex items-center justify-between gap-2 border-b border-stone-100 dark:border-stone-800/80 pb-2.5">
@@ -224,53 +247,30 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
             ) : null}
           </div>
         </div>
-      ) : hasArabicLines ? (
-        <div className="space-y-2 pt-0.5">
-          {lines.map((line, idx) => {
-            const isArabic = /[\u0600-\u06FF]{4,}/.test(line);
-            const isDialogueSpeaker =
-              /^(?:Allah\s+says|The\s+Holy\s+Prophet\s*(?:\([^)]+\))?\s*continued|When\s+(?:the\s+servant|he)\s+says):/i.test(
-                line
-              );
-
-            if (isArabic) {
-              return (
-                <div
-                  key={`quote-line-${idx}`}
-                  dir="rtl"
-                  className="font-quran text-xl sm:text-2xl text-[#CD7743] dark:text-[#E08955] text-right leading-loose select-text py-0.5"
-                >
-                  {line}
-                </div>
-              );
-            }
-
-            if (isDialogueSpeaker) {
-              return (
-                <div
-                  key={`quote-line-${idx}`}
-                  className="font-reader text-[14.5px] sm:text-[15.5px] leading-relaxed text-stone-800 dark:text-stone-200 pl-3 border-l-2 border-[#CD7743]/40 dark:border-[#E08955]/40 my-1 py-0.5"
-                >
-                  {line}
-                </div>
-              );
-            }
-
-            // Translation or description line
-            return (
-              <div
-                key={`quote-line-${idx}`}
-                className="font-reader italic text-[14px] sm:text-[15px] leading-relaxed text-stone-600 dark:text-stone-400 pl-1"
-              >
-                {line}
-              </div>
-            );
-          })}
-        </div>
       ) : (
-        /* Regular Single or Multi-sentence Quote */
-        <div className="font-reader text-[15px] sm:text-[16px] leading-[1.8] text-stone-800 dark:text-stone-200 italic whitespace-pre-line pl-1 select-text">
-          {rawText}
+        /* Scripture, Hadith, or Scholar Card with Arabic + English */
+        <div className="space-y-3 pt-0.5">
+          {/* Arabic Scripture / Hadith text */}
+          {arabicText && (
+            <div
+              dir="rtl"
+              className="font-quran text-xl sm:text-[23px] text-[#1C1917] dark:text-[#F5F5F4] text-right leading-[2.1] select-text py-0.5"
+            >
+              {arabicText}
+            </div>
+          )}
+
+          {/* Subtle separator between Arabic and English if both are present */}
+          {arabicText && englishText && (
+            <div className="border-t border-stone-200/50 dark:border-stone-800/50 my-1" />
+          )}
+
+          {/* English Translation / Scholarly Quotation */}
+          {englishText && (
+            <div className="font-reader italic text-[15px] sm:text-[16px] leading-[1.8] text-stone-800 dark:text-stone-200 select-text whitespace-pre-line">
+              {englishText}
+            </div>
+          )}
         </div>
       )}
 
