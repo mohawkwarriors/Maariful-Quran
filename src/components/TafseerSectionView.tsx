@@ -4,6 +4,7 @@ import { AnnotatedTranslation } from './AnnotatedTranslation';
 import { WordDeepDiveModal } from './WordDeepDiveModal';
 import { getWordDeepDive } from '../services/quranLexicon';
 import { TafseerStudyCard, StudyCardType } from './TafseerStudyCard';
+import { TafseerQuoteCard, QuoteType } from './TafseerQuoteCard';
 import { ChevronDown, ChevronUp, Bookmark, ArrowUpRight } from 'lucide-react';
 
 interface TafseerSectionViewProps {
@@ -184,78 +185,81 @@ const TafseerVerseHeading: React.FC<{
   return (
     <div
       id={`tafseer-verse-${primaryNum}`}
-      className="not-prose relative flex items-center gap-3.5 my-7 first:mt-1 first:mb-5 select-none group"
+      className="not-prose my-6 first:mt-1 first:mb-5 select-none w-full"
     >
-      {/* Left ornamental hairline divider with warm amber gradient fade */}
-      <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#CD7743]/20 to-[#CD7743]/45 dark:via-[#CD7743]/30 dark:to-[#CD7743]/55" />
-
-      {/* Center Interactive Verse Badge */}
       <button
         type="button"
         onClick={handleClick}
-        className="inline-flex items-center gap-2.5 sm:gap-3 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-xl bg-[#FCFAF7] dark:bg-[#1E1E23] border border-[#ECE5DA] dark:border-[#38332C] hover:border-[#CD7743]/50 dark:hover:border-[#CD7743]/60 shadow-2xs hover:shadow-xs transition-all cursor-pointer group/badge"
+        className="w-full flex items-center justify-between gap-3 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl bg-[#FCFAF7]/50 dark:bg-[#1E1E23]/35 border border-[#ECE5DA]/40 dark:border-[#38332C]/40 hover:border-[#CD7743]/35 dark:hover:border-[#CD7743]/45 hover:bg-[#FAF6F0]/80 dark:hover:bg-[#232329]/60 transition-all cursor-pointer group/badge text-left"
         title={`Click to jump to Verse ${primaryNum} in the text`}
         aria-label={`Jump to ${displayTitle}`}
       >
-        {/* Simplified Islamic 8-Pointed Star Rosette with Numeral */}
-        <div className="relative inline-flex items-center justify-center w-7 h-7 sm:w-7.5 sm:h-7.5 shrink-0 transition-transform group-hover/badge:scale-110">
-          <svg
-            viewBox="0 0 40 40"
-            className="absolute inset-0 w-full h-full text-[#CD7743] dark:text-[#E08955] drop-shadow-2xs"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <polygon
-              points="20,1.5 25.66,6.33 33.08,6.92 33.67,14.34 38.5,20 33.67,25.66 33.08,33.08 25.66,33.67 20,38.5 14.34,33.67 6.92,33.08 6.33,25.66 1.5,20 6.33,14.34 6.92,6.92 14.34,6.33"
-              fill="currentColor"
-              fillOpacity="0.08"
-              stroke="currentColor"
-              strokeWidth="1.4"
-              strokeLinejoin="round"
-            />
-            <circle
-              cx="20"
-              cy="20"
-              r="13"
-              stroke="currentColor"
-              strokeWidth="1"
-              fill="currentColor"
-              fillOpacity="0.04"
-            />
-          </svg>
-          <span
-            className="relative z-10 flex items-center justify-center font-bold text-[#CD7743] dark:text-[#E08955] leading-none select-none font-sans"
-            style={{
-              fontSize: primaryNum >= 100 ? '9.5px' : primaryNum >= 10 ? '11px' : '12px',
-              letterSpacing: primaryNum >= 100 ? '-0.5px' : 'normal',
-              transform: 'translateY(0.5px)',
-            }}
-          >
-            {primaryNum}
-          </span>
-        </div>
-
-        {/* Verse Title & Optional Preview Snippet */}
-        <div className="flex items-baseline gap-2 text-left min-w-0">
-          <span className="font-serif-heading text-[15px] sm:text-[17px] font-bold text-stone-900 dark:text-stone-100 tracking-wide group-hover/badge:text-[#CD7743] dark:group-hover/badge:text-[#E08955] transition-colors shrink-0">
-            {displayTitle}
-          </span>
-
-          {verseSnippet && (
-            <span
-              className="hidden md:inline-block text-xs sm:text-[13px] text-stone-500 dark:text-stone-400 italic font-reader truncate max-w-[220px] lg:max-w-[340px]"
-              title={verseSnippet}
+        {/* Left Side: Rosette + Title + Translation Snippet (Biased to Left in Line with Text) */}
+        <div className="flex items-center gap-2.5 sm:gap-3 min-w-0 flex-1">
+          {/* Simplified Islamic 8-Pointed Star Rosette with Numeral */}
+          <div className="relative inline-flex items-center justify-center w-7 h-7 sm:w-7.5 sm:h-7.5 shrink-0 transition-transform group-hover/badge:scale-105">
+            <svg
+              viewBox="0 0 40 40"
+              className="absolute inset-0 w-full h-full text-[#CD7743] dark:text-[#E08955] drop-shadow-2xs"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              · "{verseSnippet}"
+              <polygon
+                points="20,1.5 25.66,6.33 33.08,6.92 33.67,14.34 38.5,20 33.67,25.66 33.08,33.08 25.66,33.67 20,38.5 14.34,33.67 6.92,33.08 6.33,25.66 1.5,20 6.33,14.34 6.92,6.92 14.34,6.33"
+                fill="currentColor"
+                fillOpacity="0.08"
+                stroke="currentColor"
+                strokeWidth="1.4"
+                strokeLinejoin="round"
+              />
+              <circle
+                cx="20"
+                cy="20"
+                r="13"
+                stroke="currentColor"
+                strokeWidth="1"
+                fill="currentColor"
+                fillOpacity="0.04"
+              />
+            </svg>
+            <span
+              className="relative z-10 flex items-center justify-center font-bold text-[#CD7743] dark:text-[#E08955] leading-none select-none font-sans"
+              style={{
+                fontSize: primaryNum >= 100 ? '9.5px' : primaryNum >= 10 ? '11px' : '12px',
+                letterSpacing: primaryNum >= 100 ? '-0.5px' : 'normal',
+                transform: 'translateY(0.5px)',
+              }}
+            >
+              {primaryNum}
             </span>
-          )}
+          </div>
+
+          {/* Verse Title & Translation Snippet */}
+          <div className="flex items-baseline gap-2 text-left min-w-0 flex-1">
+            <span className="font-serif-heading text-[16px] sm:text-[17.5px] font-bold text-stone-900 dark:text-stone-100 tracking-wide group-hover/badge:text-[#CD7743] dark:group-hover/badge:text-[#E08955] transition-colors shrink-0">
+              {displayTitle}
+            </span>
+
+            {verseSnippet && (
+              <span
+                className="text-xs sm:text-[13.5px] text-stone-500 dark:text-stone-400 italic font-reader truncate max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl"
+                title={verseSnippet}
+              >
+                · "{verseSnippet}"
+              </span>
+            )}
+          </div>
         </div>
 
-        <ArrowUpRight className="w-3.5 h-3.5 text-stone-400 dark:text-stone-500 opacity-0 group-hover/badge:opacity-100 group-hover/badge:text-[#CD7743] dark:group-hover/badge:text-[#E08955] transition-all -ml-1 shrink-0" />
-      </button>
+        {/* Trailing hairline extending across remaining width */}
+        <div className="h-px flex-1 bg-gradient-to-r from-[#CD7743]/20 via-[#CD7743]/10 to-transparent mx-2 hidden md:block max-w-[120px]" />
 
-      {/* Right ornamental hairline divider with warm amber gradient fade */}
-      <div className="h-px flex-1 bg-gradient-to-l from-transparent via-[#CD7743]/20 to-[#CD7743]/45 dark:via-[#CD7743]/30 dark:to-[#CD7743]/55" />
+        {/* Right side Jump icon / hint */}
+        <div className="flex items-center gap-1 text-[11px] font-reader text-stone-400 dark:text-stone-500 opacity-60 group-hover/badge:opacity-100 group-hover/badge:text-[#CD7743] dark:group-hover/badge:text-[#E08955] transition-all shrink-0">
+          <span className="hidden sm:inline">Jump to verse</span>
+          <ArrowUpRight className="w-3.5 h-3.5 group-hover/badge:translate-x-0.5 group-hover/badge:-translate-y-0.5 transition-transform" />
+        </div>
+      </button>
     </div>
   );
 };
@@ -283,15 +287,135 @@ const TafseerCommentaryBlock: React.FC<{
     return map;
   }, [versesData]);
 
-  // Parse commentary paragraphs and replace raw [Verse X] with scholarly headings
+  // Parse commentary paragraphs and replace raw [Verse X], Hadith quotes, and scholar citations
   const parsedCommentaryBlocks = React.useMemo(() => {
     if (!commentary) return [];
 
     const rawParagraphs = commentary.split(/\n\s*\n/);
     const blocks: Array<
       | { type: 'verse-heading'; raw: string }
+      | { type: 'quote'; quoteType: QuoteType; content: string }
       | { type: 'text'; content: string }
     > = [];
+
+    const duaRegex =
+      /((?:(?:(?:The\s+)?Prayer\s+for\s+[^\n]+|Du['’`]?a\s+(?:for|when|after|before)\s+[^\n]+|Supplication\s+(?:for|of)\s+[^\n]+)\n(?:[^\n]*?(?:taught|teaches|instructs|pray|supplicat)[^\n]*:\s*\n)?(?:[\u0600-\u06FF\s]+\n)?[“"][^”"\n]+[”"]|[^\n]*?(?:taught\s+(?:man|us|the\s+believers|Muslims)\s+(?:what\s+to\s+pray|how\s+to\s+pray|this\s+prayer|this\s+du['’`]?a|a\s+special\s+du['’`]?a)|teaches\s+Muslims\s+to\s+make\s+a\s+special\s+du['’`]?a|supplicated\s+(?:with\s+these\s+words|in\s+these\s+words)|used\s+to\s+make\s+this\s+(?:prayer|du['’`]?a))[^\n]*:\s*\n(?:[\u0600-\u06FF\s]+\n)?[“"][^”"\n]+[”"]|(?:رَ‌?بَّنَا|اللَّهُمَّ|رَبِّ)[\u0600-\u06FF\s،]+\n[“"][^”"\n]+[”"]))/gi;
+
+    const hadithRegex =
+      /((?:The\s+Sahih\s+of\s+[A-Za-z]+|According\s+to\s+a\s+hadith|In\s+a\s+hadith|The\s+Holy\s+Prophet\s*(?:\([^)]+\))?\s*(?:said|has\s+said|continued|reported))[^\n]*:[\s\S]*?\([a-zA-Z\s`'-]+\))/gi;
+
+    const processParagraph = (
+      textToProcess: string
+    ): Array<
+      | { type: 'quote'; quoteType: QuoteType; content: string }
+      | { type: 'text'; content: string }
+    > => {
+      const t = textToProcess.trim();
+      if (!t) return [];
+
+      // 1. Check if Dua / Supplication exists (embedded or multi-line)
+      duaRegex.lastIndex = 0;
+      const duaMatch = duaRegex.exec(t);
+      if (duaMatch) {
+        const matchStart = duaMatch.index;
+        const matchEnd = matchStart + duaMatch[0].length;
+        const before = t.slice(0, matchStart).trim();
+        const duaContent = duaMatch[0].trim();
+        const after = t.slice(matchEnd).trim();
+
+        const result: Array<
+          | { type: 'quote'; quoteType: QuoteType; content: string }
+          | { type: 'text'; content: string }
+        > = [];
+
+        if (before) {
+          result.push(...processParagraph(before));
+        }
+        result.push({
+          type: 'quote',
+          quoteType: 'dua',
+          content: duaContent,
+        });
+        if (after) {
+          result.push(...processParagraph(after));
+        }
+        return result;
+      }
+
+      // 2. Check if a structured Hadith is embedded in the text
+      hadithRegex.lastIndex = 0;
+      const hadithMatch = hadithRegex.exec(t);
+      if (hadithMatch) {
+        const matchStart = hadithMatch.index;
+        const matchEnd = matchStart + hadithMatch[0].length;
+        const before = t.slice(0, matchStart).trim();
+        const hadithContent = hadithMatch[0].trim();
+        const after = t.slice(matchEnd).trim();
+
+        const result: Array<
+          | { type: 'quote'; quoteType: QuoteType; content: string }
+          | { type: 'text'; content: string }
+        > = [];
+
+        if (before) {
+          result.push(...processParagraph(before));
+        }
+        result.push({
+          type: 'quote',
+          quoteType: 'hadith',
+          content: hadithContent,
+        });
+        if (after) {
+          result.push(...processParagraph(after));
+        }
+        return result;
+      }
+
+      // 3. Standalone Hadith Quote
+      const isStandaloneHadith =
+        /^(?:(?:The\s+)?Sahih\s+(?:of\s+)?(?:Muslim|Bukhari|al-Bukhari)|(?:In\s+a\s+|According\s+to\s+a\s+)?(?:Hadith|Tradition)\b|The\s+Holy\s+Prophet\s*(?:\([^)]+\)|ﷺ)?\s*(?:said|has\s+said|continued|reported)|The\s+Messenger\s+of\s+Allah\s*(?:\([^)]+\)|ﷺ)?\s*(?:said|has\s+said))\b/i.test(
+          t
+        ) && (/[:"“]/.test(t) || /Allah\s+says:/i.test(t));
+
+      if (isStandaloneHadith) {
+        return [{ type: 'quote', quoteType: 'hadith', content: t }];
+      }
+
+      // 4. Standalone Dua Quote
+      const isStandaloneDua =
+        /^(?:(?:The\s+)?Prayer\s+for\s+|Du['’`]?a\s+(?:for|when|after|before)\s+|Supplication\s+(?:for|of)\s+)/i.test(
+          t
+        ) && (/[“"]/.test(t) || /[\u0600-\u06FF]{4,}/.test(t));
+
+      if (isStandaloneDua) {
+        return [{ type: 'quote', quoteType: 'dua', content: t }];
+      }
+
+      // 5. Scholar / Classical Exegete Quote
+      const isScholar =
+        /^(?:Imam\s+(?:Razi|Abu\s+Hanifah|Shafi|Malik|al-Ghazali|al-Qurtubi|al-Baghawi|Ibn\s+Kathir)|The\s+famous\s+commentator\s+(?:al-Suyuti|Qurtubi|Razi)|According\s+to\s+(?:the\s+great\s+commentator|the\s+well-known\s+commentator|Imam\s+Abu\s+Hanifah|al-Suyuti|Qurtubi|Ibn\s+Kathir|Muqatil|Ibn\s+Abbas)|Al-Qurtubi\s+remarks)\b/i.test(
+          t
+        ) &&
+        /(?:says|said|writes|explains|states|remarks|notes|postulated)\b|[:"]/i.test(
+          t
+        ) &&
+        t.length < 650;
+
+      if (isScholar) {
+        return [{ type: 'quote', quoteType: 'scholar', content: t }];
+      }
+
+      // 6. Qur'an Scripture citation quote within exegesis
+      const isQuranQuote =
+        /["“][^"”]{15,}["”]\s*\(\d+:\s*\d+\)/.test(t) && t.length < 400;
+
+      if (isQuranQuote) {
+        return [{ type: 'quote', quoteType: 'quran', content: t }];
+      }
+
+      // 7. Regular prose text
+      return [{ type: 'text', content: t }];
+    };
 
     for (const para of rawParagraphs) {
       const trimmed = para.trim();
@@ -308,12 +432,10 @@ const TafseerCommentaryBlock: React.FC<{
           type: 'verse-heading',
           raw: trimmed,
         });
-      } else {
-        blocks.push({
-          type: 'text',
-          content: trimmed,
-        });
+        continue;
       }
+
+      blocks.push(...processParagraph(trimmed));
     }
 
     return blocks;
@@ -355,6 +477,17 @@ const TafseerCommentaryBlock: React.FC<{
                 />
               );
             }
+
+            if (block.type === 'quote') {
+              return (
+                <TafseerQuoteCard
+                  key={`cq-${idx}`}
+                  type={block.quoteType}
+                  rawText={block.content}
+                />
+              );
+            }
+
             return (
               <p key={`cp-${idx}`} className="leading-[1.85] whitespace-pre-line">
                 {block.content}
