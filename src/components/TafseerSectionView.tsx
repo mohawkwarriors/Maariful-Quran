@@ -5,6 +5,7 @@ import { WordDeepDiveModal } from './WordDeepDiveModal';
 import { getWordDeepDive } from '../services/quranLexicon';
 import { TafseerStudyCard, StudyCardType } from './TafseerStudyCard';
 import { TafseerQuoteCard, QuoteType } from './TafseerQuoteCard';
+import { interleaveStudyCards } from '../utils/cardPlacement';
 import { ChevronDown, ChevronUp, Bookmark, ArrowUpRight } from 'lucide-react';
 
 interface TafseerSectionViewProps {
@@ -618,6 +619,11 @@ const TafseerCommentaryBlock: React.FC<{
     return blocks;
   }, [commentary]);
 
+  // Interleave Fiqh (Ahkam), Asbab al-Nuzul, and Spiritual Insights cards throughout the section's commentary
+  const commentaryBlocks = React.useMemo(() => {
+    return interleaveStudyCards(parsedCommentaryBlocks, subsections);
+  }, [parsedCommentaryBlocks, subsections]);
+
   return (
     <div className="space-y-5 pt-2">
       {/* Header bar without toggle */}
@@ -639,34 +645,10 @@ const TafseerCommentaryBlock: React.FC<{
         />
       )}
 
-      {/* Baked-in Fiqh (Ahkam), Spiritual Insights & Asbab al-Nuzul Cards */}
-      {subsections && subsections.length > 0 && (
-        <div className="space-y-3 pt-1">
-          <div className="flex items-center justify-between gap-2 border-b border-stone-200/70 dark:border-stone-800/80 pb-1.5">
-            <span className="text-xs font-semibold uppercase tracking-wider text-[#5F4B3E] dark:text-[#8C7262]">
-              Jurisprudence (Fiqh) & Key Injunctions
-            </span>
-            <span className="text-xs text-stone-400 dark:text-stone-500 font-reader">
-              Essential Study Cards
-            </span>
-          </div>
-          <div className={`grid grid-cols-1 ${subsections.length > 1 ? 'md:grid-cols-2' : ''} gap-4`}>
-            {subsections.map((sub, sIdx) => (
-              <TafseerStudyCard
-                key={`sub-top-${sIdx}`}
-                type={sub.type as StudyCardType}
-                title={sub.title}
-                content={sub.content}
-              />
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* Full Commentary Flow */}
+      {/* Full Commentary Flow with Inlined Topical Study Cards */}
       <div className="space-y-6">
         <div className="text-[16px] sm:text-[17px] leading-[1.85] text-[#292524] dark:text-[#D6D3D1] space-y-4 font-reader">
-          {parsedCommentaryBlocks.map((block, idx) => {
+          {commentaryBlocks.map((block, idx) => {
             if (block.type === 'verse-heading') {
               const { primaryNum } = parseVerseMarker(block.raw);
               const snippet = verseSnippetMap.get(primaryNum);
@@ -698,6 +680,18 @@ const TafseerCommentaryBlock: React.FC<{
               );
             }
 
+            if (block.type === 'study-card') {
+              return (
+                <div key={`cstudy-${idx}-${block.card.title}`} className="my-6">
+                  <TafseerStudyCard
+                    type={block.card.type as StudyCardType}
+                    title={block.card.title}
+                    content={block.card.content}
+                  />
+                </div>
+              );
+            }
+
             return (
               <p key={`cp-${idx}`} className="leading-[1.85] whitespace-pre-line">
                 {block.content}
@@ -705,23 +699,6 @@ const TafseerCommentaryBlock: React.FC<{
             );
           })}
         </div>
-
-        {/* Companion study cards below full commentary: Ahkam, Insights, Asbab al-Nuzul */}
-        {subsections && subsections.length > 0 && (
-          <div className="space-y-4 pt-3 border-t border-stone-200/70 dark:border-stone-800/80">
-            <div className="text-xs font-semibold uppercase tracking-wider text-stone-400 dark:text-stone-500">
-              Key Injunctions & Insights
-            </div>
-            {subsections.map((sub, sIdx) => (
-              <TafseerStudyCard
-                key={`sub-full-${sIdx}`}
-                type={sub.type as StudyCardType}
-                title={sub.title}
-                content={sub.content}
-              />
-            ))}
-          </div>
-        )}
       </div>
     </div>
   );
