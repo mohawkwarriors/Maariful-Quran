@@ -268,9 +268,9 @@ const TafseerVerseHeading: React.FC<{
 const isSubheading = (line: string): boolean => {
   const l = line.trim();
   if (!l) return false;
-  // Exclude verse markers, horizontal dividers, pure Arabic lines
+  // Exclude verse markers, horizontal dividers, banner dividers, pure Arabic lines
   if (/^\[\s*Verses?/i.test(l)) return false;
-  if (/^[─\-_=~*]{3,}$/.test(l)) return false;
+  if (/^[─\-_=~*]{3,}$/.test(l) || /^───.*───$/.test(l)) return false;
   if (/^[\u0600-\u06FF\s]+$/.test(l)) return false;
 
   // Length constraint: Subheadings are concise titles, between 3 and 65 characters
@@ -279,8 +279,11 @@ const isSubheading = (line: string): boolean => {
   // Dialogue or quotation marks indicate quotes or speech, not section titles
   if (/[“"”]/.test(l)) return false;
 
-  // Sentences or citations ending in punctuation
-  if (/[.,;—–\-)\]]$/.test(l)) return false;
+  // Sentences or citations ending in terminal punctuation
+  if (/[.,;—–\-)\]!]$/.test(l)) return false;
+
+  // Numbered or lettered list items: e.g. "1. ", "a) "
+  if (/^\d+\.\s+/.test(l) || /^[a-z]\)\s+/i.test(l)) return false;
 
   // If ending with a colon, exclude common lead-in phrases
   if (l.endsWith(':')) {
@@ -293,11 +296,16 @@ const isSubheading = (line: string): boolean => {
     }
   }
 
-  // Heading should start with a capital letter or digit (e.g., "The First...", "1. ")
-  if (!/^[A-Z0-9]/.test(l)) return false;
+  // Heading should start with a capital letter
+  if (!/^[A-Z]/.test(l)) return false;
 
-  // Exclude common standalone sentence connectors / pronouns
-  if (/^(?:he|she|it|they|we|and|or|but|in short|for example|on the other hand)$/i.test(l)) {
+  // Exclude common standalone sentence connectors / pronouns / book colophon boilerplate
+  if (
+    /^(?:he|she|it|they|we|and|or|but|in short|for example|on the other hand|commentary:?|note:?|al-?hamdulillah|ends here)$/i.test(
+      l
+    ) ||
+    /^(?:The Commentary on|Surah [A-Za-z\s`'-]+ ends here|Question:|Answer:)/i.test(l)
+  ) {
     return false;
   }
 
@@ -647,7 +655,23 @@ const TafseerCommentaryBlock: React.FC<{
       i++;
     }
 
-    return blocks;
+    // Defensive coalescing pass: prevent back-to-back blank subheadings
+    const cleanedBlocks: RawCommentaryBlock[] = [];
+    for (let k = 0; k < blocks.length; k++) {
+      const curr = blocks[k];
+      const prev = cleanedBlocks[cleanedBlocks.length - 1];
+
+      if (curr.type === 'subheading' && prev && prev.type === 'subheading') {
+        const isContinuation =
+          /^(?:or|and|to|of|for|in|with)\b/i.test(curr.content) || /^[a-z]/.test(curr.content);
+        const separator = isContinuation ? ' ' : ' — ';
+        prev.content = `${prev.content.replace(/[:—–-]$/, '')}${separator}${curr.content}`;
+      } else {
+        cleanedBlocks.push(curr);
+      }
+    }
+
+    return cleanedBlocks;
   }, [commentary]);
 
   // Interleave Fiqh (Ahkam), Asbab al-Nuzul, and Spiritual Insights cards throughout the section's commentary
