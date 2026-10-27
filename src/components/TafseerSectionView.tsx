@@ -639,6 +639,30 @@ const TafseerCommentaryBlock: React.FC<{
         />
       )}
 
+      {/* Baked-in Fiqh (Ahkam), Spiritual Insights & Asbab al-Nuzul Cards */}
+      {subsections && subsections.length > 0 && (
+        <div className="space-y-3 pt-1">
+          <div className="flex items-center justify-between gap-2 border-b border-stone-200/70 dark:border-stone-800/80 pb-1.5">
+            <span className="text-xs font-semibold uppercase tracking-wider text-[#5F4B3E] dark:text-[#8C7262]">
+              Jurisprudence (Fiqh) & Key Injunctions
+            </span>
+            <span className="text-xs text-stone-400 dark:text-stone-500 font-reader">
+              Essential Study Cards
+            </span>
+          </div>
+          <div className={`grid grid-cols-1 ${subsections.length > 1 ? 'md:grid-cols-2' : ''} gap-4`}>
+            {subsections.map((sub, sIdx) => (
+              <TafseerStudyCard
+                key={`sub-top-${sIdx}`}
+                type={sub.type as StudyCardType}
+                title={sub.title}
+                content={sub.content}
+              />
+            ))}
+          </div>
+        </div>
+      )}
+
       {/* Full Commentary Flow */}
       <div className="space-y-6">
         <div className="text-[16px] sm:text-[17px] leading-[1.85] text-[#292524] dark:text-[#D6D3D1] space-y-4 font-reader">
