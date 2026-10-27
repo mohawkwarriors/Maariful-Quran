@@ -322,6 +322,83 @@ const TafseerSubheading: React.FC<{ title: string }> = ({ title }) => {
   );
 };
 
+const splitIntoParagraphs = (commentary: string): string[] => {
+  if (!commentary) return [];
+
+  const initialChunks = commentary.split(/\n\s*\n/);
+  const result: string[] = [];
+
+  for (const chunk of initialChunks) {
+    const trimmed = chunk.trim();
+    if (!trimmed) continue;
+
+    const lines = trimmed.split('\n').map((l) => l.trim()).filter(Boolean);
+    if (lines.length <= 1) {
+      result.push(trimmed);
+      continue;
+    }
+
+    let currentPara: string[] = [];
+    for (const line of lines) {
+      if (currentPara.length === 0) {
+        currentPara.push(line);
+        continue;
+      }
+
+      const prevLine = currentPara[currentPara.length - 1];
+
+      const isSub = isSubheading(line) || isSubheading(prevLine);
+      const isVerseMarker = /^\[\s*Verses?/i.test(line) || /^\[\s*Verses?/i.test(prevLine);
+      const isDivider = /^[─\-_=~*]{3,}$/.test(line) || /^[─\-_=~*]{3,}$/.test(prevLine);
+      const isQuoteLine = /^[“"]/.test(line) || /^[“"]/.test(prevLine);
+      const isArabicLine = /^[\u0600-\u06FF\s]+$/.test(line) || /^[\u0600-\u06FF\s]+$/.test(prevLine);
+      const isNumberedItem = /^\d+\.\s+/.test(line);
+
+      const isPrevTerminated = /[.?!”")'\]:—–-]$/.test(prevLine);
+      const isCurrCapital = /^[A-Z0-9“"‘'\[]/.test(line);
+
+      if (
+        isSub ||
+        isVerseMarker ||
+        isDivider ||
+        isQuoteLine ||
+        isArabicLine ||
+        isNumberedItem ||
+        (isPrevTerminated && isCurrCapital)
+      ) {
+        result.push(currentPara.join('\n'));
+        currentPara = [line];
+      } else {
+        currentPara.push(line);
+      }
+    }
+
+    if (currentPara.length > 0) {
+      result.push(currentPara.join('\n'));
+    }
+  }
+
+  // Break dense monolithic paragraphs (> 950 chars) at clear topic transition sentences
+  const finalParas: string[] = [];
+  for (const p of result) {
+    if (p.length > 950 && !p.includes('\n')) {
+      const subparts = p.split(
+        /(?<=[.?!])\s+(?=(?:This goes to prove|But, in order to guard against|Secondly,|The other doctrinal point|On the other hand,|In short,|To sum up,|In view of this|In fact, such Muslims))\b/
+      );
+      if (subparts.length > 1) {
+        for (const sp of subparts) {
+          const sTrim = sp.trim();
+          if (sTrim) finalParas.push(sTrim);
+        }
+        continue;
+      }
+    }
+    finalParas.push(p);
+  }
+
+  return finalParas;
+};
+
 const TafseerCommentaryBlock: React.FC<{
   commentary: string;
   sectionSummary?: string;
@@ -349,7 +426,7 @@ const TafseerCommentaryBlock: React.FC<{
   const parsedCommentaryBlocks = React.useMemo(() => {
     if (!commentary) return [];
 
-    const rawParagraphs = commentary.split(/\n\s*\n/);
+    const rawParagraphs = splitIntoParagraphs(commentary);
     const blocks: Array<
       | { type: 'verse-heading'; raw: string }
       | { type: 'subheading'; content: string }
