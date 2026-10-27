@@ -7,6 +7,7 @@ interface TafseerStudyCardProps {
   type: StudyCardType;
   title?: string;
   badgeLabel?: string;
+  summary?: string;
   content?: string;
   points?: string[];
   footerSource?: string;
@@ -20,56 +21,56 @@ interface ThemeConfig {
   defaultFooter: string;
   containerClasses: string;
   borderClasses: string;
-  stripeClasses: string;
   badgeClasses: string;
   badgeBgClasses: string;
   dotClasses: string;
+  ringClasses: string;
 }
 
 const CARD_THEMES: Record<StudyCardType, ThemeConfig> = {
   takeaways: {
     icon: Sparkles,
-    defaultBadge: 'Key Theological & Moral Takeaways',
-    defaultFooter: "Distilled from Ma'ariful Qur'an",
-    containerClasses: 'bg-[#CD7743]/5 dark:bg-[#CD7743]/10',
-    borderClasses: 'border-[#CD7743]/30 dark:border-[#CD7743]/40',
-    stripeClasses: 'bg-[#CD7743] dark:bg-[#E08955]',
+    defaultBadge: 'Summary & Key Takeaways',
+    defaultFooter: "Ma'ariful Qur'an · Core Synthesis",
+    containerClasses: 'bg-white dark:bg-[#1E1E23]',
+    borderClasses: 'border-[#EBE6DC] dark:border-[#2C2C32] hover:border-[#CD7743]/40 dark:hover:border-[#CD7743]/50',
     badgeClasses: 'text-[#CD7743] dark:text-[#E08955]',
-    badgeBgClasses: 'bg-[#CD7743]/15 dark:bg-[#CD7743]/20',
+    badgeBgClasses: 'bg-[#CD7743]/10 dark:bg-[#CD7743]/20',
     dotClasses: 'bg-[#CD7743] dark:bg-[#E08955]',
+    ringClasses: 'ring-[#CD7743]/20',
   },
   ahkam: {
     icon: Scale,
     defaultBadge: 'Injunctions & Rulings (Ahkam)',
     defaultFooter: "Jurisprudential Rulings · Ma'ariful Qur'an",
-    containerClasses: 'bg-[#5F4B3E]/5 dark:bg-[#5F4B3E]/12',
-    borderClasses: 'border-[#5F4B3E]/30 dark:border-[#8C7262]/40',
-    stripeClasses: 'bg-[#5F4B3E] dark:bg-[#8C7262]',
+    containerClasses: 'bg-white dark:bg-[#1E1E23]',
+    borderClasses: 'border-[#EBE6DC] dark:border-[#2C2C32] hover:border-[#5F4B3E]/40 dark:hover:border-[#8C7262]/50',
     badgeClasses: 'text-[#5F4B3E] dark:text-[#8C7262]',
-    badgeBgClasses: 'bg-[#5F4B3E]/15 dark:bg-[#5F4B3E]/20',
+    badgeBgClasses: 'bg-[#5F4B3E]/10 dark:bg-[#5F4B3E]/20',
     dotClasses: 'bg-[#5F4B3E] dark:bg-[#8C7262]',
+    ringClasses: 'ring-[#5F4B3E]/20',
   },
   insights: {
     icon: Lightbulb,
-    defaultBadge: 'Key Insight / Subtle Point',
+    defaultBadge: 'Exegetical & Spiritual Insights',
     defaultFooter: "Contemplative Insights · Ma'ariful Qur'an",
-    containerClasses: 'bg-[#596B8E]/5 dark:bg-[#596B8E]/12',
-    borderClasses: 'border-[#596B8E]/30 dark:border-[#7587AC]/40',
-    stripeClasses: 'bg-[#596B8E] dark:bg-[#7587AC]',
+    containerClasses: 'bg-white dark:bg-[#1E1E23]',
+    borderClasses: 'border-[#EBE6DC] dark:border-[#2C2C32] hover:border-[#596B8E]/40 dark:hover:border-[#7587AC]/50',
     badgeClasses: 'text-[#596B8E] dark:text-[#7587AC]',
-    badgeBgClasses: 'bg-[#596B8E]/15 dark:bg-[#596B8E]/20',
+    badgeBgClasses: 'bg-[#596B8E]/10 dark:bg-[#596B8E]/20',
     dotClasses: 'bg-[#596B8E] dark:text-[#7587AC]',
+    ringClasses: 'ring-[#596B8E]/20',
   },
   asbab: {
     icon: History,
     defaultBadge: 'Occasion of Revelation (Asbab al-Nuzul)',
     defaultFooter: "Historical Circumstances · Ma'ariful Qur'an",
-    containerClasses: 'bg-[#4C7971]/5 dark:bg-[#4C7971]/12',
-    borderClasses: 'border-[#4C7971]/30 dark:border-[#639C92]/40',
-    stripeClasses: 'bg-[#4C7971] dark:bg-[#639C92]',
+    containerClasses: 'bg-white dark:bg-[#1E1E23]',
+    borderClasses: 'border-[#EBE6DC] dark:border-[#2C2C32] hover:border-[#4C7971]/40 dark:hover:border-[#639C92]/50',
     badgeClasses: 'text-[#4C7971] dark:text-[#639C92]',
-    badgeBgClasses: 'bg-[#4C7971]/15 dark:bg-[#4C7971]/20',
+    badgeBgClasses: 'bg-[#4C7971]/10 dark:bg-[#4C7971]/20',
     dotClasses: 'bg-[#4C7971] dark:bg-[#639C92]',
+    ringClasses: 'ring-[#4C7971]/20',
   },
 };
 
@@ -77,6 +78,7 @@ export const TafseerStudyCard: React.FC<TafseerStudyCardProps> = ({
   type,
   title,
   badgeLabel,
+  summary,
   content,
   points,
   footerSource,
@@ -88,36 +90,43 @@ export const TafseerStudyCard: React.FC<TafseerStudyCardProps> = ({
 
   return (
     <div
-      className={`relative p-5 sm:p-6 rounded-2xl border ${theme.borderClasses} ${theme.containerClasses} shadow-2xs space-y-3.5 transition-all overflow-hidden select-text`}
+      className={`relative p-4 sm:p-5 rounded-2xl border ${theme.borderClasses} ${theme.containerClasses} shadow-2xs space-y-3.5 transition-all select-text`}
     >
-      {/* Left colored accent bar giving consistent card-like anchor */}
-      <div className={`absolute left-0 top-0 bottom-0 w-1.5 ${theme.stripeClasses}`} />
-
-      {/* Header bar with icon and category badge */}
-      <div className="flex items-center justify-between gap-2 pl-1.5">
-        <div className="flex items-center gap-2">
+      {/* Header bar with icon, category badge, and exegesis source context */}
+      <div className="flex items-center justify-between gap-2 border-b border-stone-100 dark:border-stone-800/80 pb-3">
+        <div className="flex items-center gap-2.5">
           <div className={`p-1.5 rounded-lg ${theme.badgeBgClasses} shrink-0`}>
-            <IconComponent className={`w-3.5 h-3.5 ${theme.badgeClasses}`} />
+            <IconComponent className={`w-4 h-4 ${theme.badgeClasses}`} />
           </div>
           <span className={`text-xs font-semibold uppercase tracking-wider ${theme.badgeClasses}`}>
             {badgeLabel || theme.defaultBadge}
           </span>
         </div>
+        <span className="text-[11px] font-reader text-stone-400 dark:text-stone-500 hidden sm:inline">
+          {footerSource || theme.defaultFooter}
+        </span>
       </div>
+
+      {/* Thematic Synthesis / Executive Summary Block (if present) */}
+      {summary && (
+        <div className="p-3 sm:p-3.5 rounded-xl bg-[#FCFAF7] dark:bg-[#25252A] border border-[#ECE5DA] dark:border-[#38332C] text-[15px] sm:text-[15.5px] font-reader text-[#292524] dark:text-[#D6D3D1] leading-relaxed italic">
+          "{summary}"
+        </div>
+      )}
 
       {/* Title if present (e.g., Ahkam rulings title, Insight title) */}
       {title && (
-        <h4 className="font-serif-heading font-semibold text-lg sm:text-[19px] text-stone-900 dark:text-stone-100 tracking-tight pl-1.5">
+        <h4 className="font-serif-heading font-semibold text-lg sm:text-[19px] text-stone-900 dark:text-stone-100 tracking-tight">
           {title}
         </h4>
       )}
 
       {/* Bullet points for takeaways */}
       {points && points.length > 0 && (
-        <ul className="space-y-2.5 pl-1.5 text-[15px] sm:text-[15.5px] text-stone-800 dark:text-stone-200 leading-relaxed font-reader">
+        <ul className="space-y-2.5 text-[15px] sm:text-[15.5px] text-stone-700 dark:text-stone-300 leading-relaxed font-reader">
           {points.map((pt, idx) => (
-            <li key={`card-pt-${idx}`} className="flex items-start gap-3">
-              <span className={`w-1.5 h-1.5 rounded-full ${theme.dotClasses} shrink-0 mt-2.5`} />
+            <li key={`card-pt-${idx}`} className="flex items-start gap-2.5">
+              <span className={`w-1.5 h-1.5 rounded-full ${theme.dotClasses} shrink-0 mt-2 ring-2 ${theme.ringClasses}`} />
               <span>{pt}</span>
             </li>
           ))}
@@ -126,24 +135,26 @@ export const TafseerStudyCard: React.FC<TafseerStudyCardProps> = ({
 
       {/* Narrative body for Ahkam, Insights, Asbab */}
       {content && (
-        <div className="pl-1.5 text-[15px] sm:text-[16px] leading-relaxed text-stone-800 dark:text-stone-200 font-reader whitespace-pre-line">
+        <div className="text-[15px] sm:text-[16px] leading-[1.8] text-stone-800 dark:text-stone-200 font-reader whitespace-pre-line">
           {content}
         </div>
       )}
 
-      {/* Card Footer matching all card variants */}
-      <div className="pt-2.5 pl-1.5 border-t border-stone-200/60 dark:border-stone-800/80 flex items-center justify-between text-xs text-stone-500 dark:text-stone-400 font-reader">
-        <span>{footerSource || theme.defaultFooter}</span>
-        {onActionClick && actionText && (
+      {/* Mobile/Action footer if action is present or small screen footer */}
+      {onActionClick && actionText && (
+        <div className="pt-2 border-t border-stone-100 dark:border-stone-800/80 flex items-center justify-between text-xs font-reader">
+          <span className="sm:hidden text-stone-400 dark:text-stone-500">
+            {footerSource || theme.defaultFooter}
+          </span>
           <button
             type="button"
             onClick={onActionClick}
-            className={`${theme.badgeClasses} hover:underline font-medium cursor-pointer transition-colors`}
+            className={`${theme.badgeClasses} hover:underline font-medium cursor-pointer transition-colors ml-auto`}
           >
             {actionText}
           </button>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 };

@@ -4,7 +4,7 @@ import { AnnotatedTranslation } from './AnnotatedTranslation';
 import { WordDeepDiveModal } from './WordDeepDiveModal';
 import { getWordDeepDive } from '../services/quranLexicon';
 import { TafseerStudyCard, StudyCardType } from './TafseerStudyCard';
-import { ChevronDown, ChevronUp, Bookmark, BookOpen, Sparkles } from 'lucide-react';
+import { ChevronDown, ChevronUp, Bookmark, ArrowUpRight } from 'lucide-react';
 
 interface TafseerSectionViewProps {
   section: ThematicSection;
@@ -149,97 +149,237 @@ const WordItem: React.FC<WordItemProps> = ({ word, meaning, root, grammarNote })
   );
 };
 
+const parseVerseMarker = (raw: string) => {
+  const match = raw.match(/^\[\s*(Verses?)\s*([\d\s\-–—,and]+)\s*\]$/i);
+  if (!match) return { isPlural: false, displayTitle: raw, primaryNum: 1 };
+
+  const isPlural = match[1].toLowerCase().startsWith('verses');
+  const rangeText = match[2].trim();
+  const firstNumMatch = rangeText.match(/\d+/);
+  const primaryNum = firstNumMatch ? parseInt(firstNumMatch[0], 10) : 1;
+  const displayTitle = isPlural ? `Verses ${rangeText}` : `Verse ${rangeText}`;
+
+  return { isPlural, displayTitle, primaryNum };
+};
+
+const TafseerVerseHeading: React.FC<{
+  label: string;
+  verseSnippet?: string;
+}> = ({ label, verseSnippet }) => {
+  const { displayTitle, primaryNum } = parseVerseMarker(label);
+
+  const handleClick = () => {
+    const targetEl =
+      document.getElementById(`verse-card-${primaryNum}`) ||
+      document.getElementById('translation-block');
+    if (targetEl) {
+      targetEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      targetEl.classList.add('ring-2', 'ring-[#CD7743]/60', 'transition-all');
+      setTimeout(() => {
+        targetEl.classList.remove('ring-2', 'ring-[#CD7743]/60');
+      }, 1800);
+    }
+  };
+
+  return (
+    <div
+      id={`tafseer-verse-${primaryNum}`}
+      className="not-prose relative flex items-center gap-3.5 my-7 first:mt-1 first:mb-5 select-none group"
+    >
+      {/* Left ornamental hairline divider with warm amber gradient fade */}
+      <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#CD7743]/20 to-[#CD7743]/45 dark:via-[#CD7743]/30 dark:to-[#CD7743]/55" />
+
+      {/* Center Interactive Verse Badge */}
+      <button
+        type="button"
+        onClick={handleClick}
+        className="inline-flex items-center gap-2.5 sm:gap-3 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-xl bg-[#FCFAF7] dark:bg-[#1E1E23] border border-[#ECE5DA] dark:border-[#38332C] hover:border-[#CD7743]/50 dark:hover:border-[#CD7743]/60 shadow-2xs hover:shadow-xs transition-all cursor-pointer group/badge"
+        title={`Click to jump to Verse ${primaryNum} in the text`}
+        aria-label={`Jump to ${displayTitle}`}
+      >
+        {/* Simplified Islamic 8-Pointed Star Rosette with Numeral */}
+        <div className="relative inline-flex items-center justify-center w-7 h-7 sm:w-7.5 sm:h-7.5 shrink-0 transition-transform group-hover/badge:scale-110">
+          <svg
+            viewBox="0 0 40 40"
+            className="absolute inset-0 w-full h-full text-[#CD7743] dark:text-[#E08955] drop-shadow-2xs"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <polygon
+              points="20,1.5 25.66,6.33 33.08,6.92 33.67,14.34 38.5,20 33.67,25.66 33.08,33.08 25.66,33.67 20,38.5 14.34,33.67 6.92,33.08 6.33,25.66 1.5,20 6.33,14.34 6.92,6.92 14.34,6.33"
+              fill="currentColor"
+              fillOpacity="0.08"
+              stroke="currentColor"
+              strokeWidth="1.4"
+              strokeLinejoin="round"
+            />
+            <circle
+              cx="20"
+              cy="20"
+              r="13"
+              stroke="currentColor"
+              strokeWidth="1"
+              fill="currentColor"
+              fillOpacity="0.04"
+            />
+          </svg>
+          <span
+            className="relative z-10 flex items-center justify-center font-bold text-[#CD7743] dark:text-[#E08955] leading-none select-none font-sans"
+            style={{
+              fontSize: primaryNum >= 100 ? '9.5px' : primaryNum >= 10 ? '11px' : '12px',
+              letterSpacing: primaryNum >= 100 ? '-0.5px' : 'normal',
+              transform: 'translateY(0.5px)',
+            }}
+          >
+            {primaryNum}
+          </span>
+        </div>
+
+        {/* Verse Title & Optional Preview Snippet */}
+        <div className="flex items-baseline gap-2 text-left min-w-0">
+          <span className="font-serif-heading text-[15px] sm:text-[17px] font-bold text-stone-900 dark:text-stone-100 tracking-wide group-hover/badge:text-[#CD7743] dark:group-hover/badge:text-[#E08955] transition-colors shrink-0">
+            {displayTitle}
+          </span>
+
+          {verseSnippet && (
+            <span
+              className="hidden md:inline-block text-xs sm:text-[13px] text-stone-500 dark:text-stone-400 italic font-reader truncate max-w-[220px] lg:max-w-[340px]"
+              title={verseSnippet}
+            >
+              · "{verseSnippet}"
+            </span>
+          )}
+        </div>
+
+        <ArrowUpRight className="w-3.5 h-3.5 text-stone-400 dark:text-stone-500 opacity-0 group-hover/badge:opacity-100 group-hover/badge:text-[#CD7743] dark:group-hover/badge:text-[#E08955] transition-all -ml-1 shrink-0" />
+      </button>
+
+      {/* Right ornamental hairline divider with warm amber gradient fade */}
+      <div className="h-px flex-1 bg-gradient-to-l from-transparent via-[#CD7743]/20 to-[#CD7743]/45 dark:via-[#CD7743]/30 dark:to-[#CD7743]/55" />
+    </div>
+  );
+};
+
 const TafseerCommentaryBlock: React.FC<{
   commentary: string;
+  sectionSummary?: string;
   summaryPoints: string[];
   subsections?: SubSection[];
-  tafseerTab: 'summary' | 'full';
-  onTabChange: (tab: 'summary' | 'full') => void;
-}> = ({ commentary, summaryPoints, subsections, tafseerTab, onTabChange }) => {
+  versesData?: Array<{
+    vNum: number;
+    verseTranslation?: string;
+  }>;
+}> = ({ commentary, sectionSummary, summaryPoints, subsections, versesData }) => {
+  // Quick lookup for verse English translations from versesData
+  const verseSnippetMap = React.useMemo(() => {
+    const map = new Map<number, string>();
+    if (versesData) {
+      versesData.forEach((vd) => {
+        if (vd.verseTranslation) {
+          map.set(vd.vNum, vd.verseTranslation);
+        }
+      });
+    }
+    return map;
+  }, [versesData]);
+
+  // Parse commentary paragraphs and replace raw [Verse X] with scholarly headings
+  const parsedCommentaryBlocks = React.useMemo(() => {
+    if (!commentary) return [];
+
+    const rawParagraphs = commentary.split(/\n\s*\n/);
+    const blocks: Array<
+      | { type: 'verse-heading'; raw: string }
+      | { type: 'text'; content: string }
+    > = [];
+
+    for (const para of rawParagraphs) {
+      const trimmed = para.trim();
+      if (!trimmed) continue;
+
+      // Filter out redundant raw ASCII divider lines like ────────────────────────────────────────
+      if (/^[─\-_=~*]{3,}$/.test(trimmed)) {
+        continue;
+      }
+
+      // Check if this paragraph is a verse heading like [Verse 1] or [Verses 4–5]
+      if (/^\[\s*Verses?\s*[\d\s\-–—,and]+\s*\]$/i.test(trimmed)) {
+        blocks.push({
+          type: 'verse-heading',
+          raw: trimmed,
+        });
+      } else {
+        blocks.push({
+          type: 'text',
+          content: trimmed,
+        });
+      }
+    }
+
+    return blocks;
+  }, [commentary]);
+
   return (
-    <div className="space-y-4 pt-2">
+    <div className="space-y-5 pt-2">
+      {/* Header bar without toggle */}
       <div className="flex items-center justify-between flex-wrap gap-2 border-b border-stone-200 dark:border-stone-800 pb-2">
         <span className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-[#CD7743] dark:text-[#E08955]">
           Tafseer
         </span>
-
-        {/* Layered Switcher: Summary vs Full Commentary */}
-        <div className="flex items-center p-0.5 rounded-lg bg-stone-100 dark:bg-[#25252A] text-xs font-medium border border-stone-200/60 dark:border-stone-700/60">
-          <button
-            type="button"
-            onClick={() => onTabChange('summary')}
-            className={`px-2.5 py-1 rounded-md transition-all cursor-pointer flex items-center gap-1.5 ${
-              tafseerTab === 'summary'
-                ? 'bg-white dark:bg-[#1E1E23] text-stone-900 dark:text-stone-100 shadow-2xs font-semibold'
-                : 'text-stone-500 hover:text-stone-800 dark:hover:text-stone-200'
-            }`}
-          >
-            <Sparkles className="w-3.5 h-3.5 text-[#CD7743]" />
-            <span>Summary & Key Takeaways</span>
-          </button>
-          <button
-            type="button"
-            onClick={() => onTabChange('full')}
-            className={`px-2.5 py-1 rounded-md transition-all cursor-pointer flex items-center gap-1.5 ${
-              tafseerTab === 'full'
-                ? 'bg-white dark:bg-[#1E1E23] text-stone-900 dark:text-stone-100 shadow-2xs font-semibold'
-                : 'text-stone-500 hover:text-stone-800 dark:hover:text-stone-200'
-            }`}
-          >
-            <BookOpen className="w-3.5 h-3.5" />
-            <span>Full Commentary</span>
-          </button>
-        </div>
+        <span className="text-xs text-stone-400 dark:text-stone-500 font-reader">
+          Ma'ariful Qur'an Commentary
+        </span>
       </div>
 
-      {tafseerTab === 'summary' ? (
-        <div className="space-y-4">
-          {/* Key Theological & Moral Takeaways Card */}
-          <TafseerStudyCard
-            type="takeaways"
-            points={summaryPoints}
-            onActionClick={() => onTabChange('full')}
-            actionText="Read Full Commentary →"
-          />
-
-          {/* Subsections: Ahkam, Insights, Asbab al-Nuzul sharing the exact same card design with distinct colors */}
-          {subsections && subsections.length > 0 && (
-            <div className="space-y-4 pt-1">
-              {subsections.map((sub, sIdx) => (
-                <TafseerStudyCard
-                  key={`sub-sum-${sIdx}`}
-                  type={sub.type as StudyCardType}
-                  title={sub.title}
-                  content={sub.content}
-                />
-              ))}
-            </div>
-          )}
-        </div>
-      ) : (
-        <div className="space-y-6">
-          <div className="prose dark:prose-invert max-w-none text-[16px] sm:text-[17px] leading-[1.85] text-[#292524] dark:text-[#D6D3D1] space-y-4 font-reader whitespace-pre-line">
-            {commentary}
-          </div>
-
-          {/* Companion study cards below full commentary with same unified design and distinct colors */}
-          {subsections && subsections.length > 0 && (
-            <div className="space-y-4 pt-3 border-t border-stone-200/70 dark:border-stone-800/80">
-              <div className="text-xs font-semibold uppercase tracking-wider text-stone-400 dark:text-stone-500">
-                Key Injunctions & Insights
-              </div>
-              {subsections.map((sub, sIdx) => (
-                <TafseerStudyCard
-                  key={`sub-full-${sIdx}`}
-                  type={sub.type as StudyCardType}
-                  title={sub.title}
-                  content={sub.content}
-                />
-              ))}
-            </div>
-          )}
-        </div>
+      {/* Baked-in Key Takeaways Card */}
+      {(sectionSummary || (summaryPoints && summaryPoints.length > 0)) && (
+        <TafseerStudyCard
+          type="takeaways"
+          summary={sectionSummary}
+          points={summaryPoints}
+        />
       )}
+
+      {/* Full Commentary Flow */}
+      <div className="space-y-6">
+        <div className="text-[16px] sm:text-[17px] leading-[1.85] text-[#292524] dark:text-[#D6D3D1] space-y-4 font-reader">
+          {parsedCommentaryBlocks.map((block, idx) => {
+            if (block.type === 'verse-heading') {
+              const { primaryNum } = parseVerseMarker(block.raw);
+              const snippet = verseSnippetMap.get(primaryNum);
+              return (
+                <TafseerVerseHeading
+                  key={`cvh-${idx}-${block.raw}`}
+                  label={block.raw}
+                  verseSnippet={snippet}
+                />
+              );
+            }
+            return (
+              <p key={`cp-${idx}`} className="leading-[1.85] whitespace-pre-line">
+                {block.content}
+              </p>
+            );
+          })}
+        </div>
+
+        {/* Companion study cards below full commentary: Ahkam, Insights, Asbab al-Nuzul */}
+        {subsections && subsections.length > 0 && (
+          <div className="space-y-4 pt-3 border-t border-stone-200/70 dark:border-stone-800/80">
+            <div className="text-xs font-semibold uppercase tracking-wider text-stone-400 dark:text-stone-500">
+              Key Injunctions & Insights
+            </div>
+            {subsections.map((sub, sIdx) => (
+              <TafseerStudyCard
+                key={`sub-full-${sIdx}`}
+                type={sub.type as StudyCardType}
+                title={sub.title}
+                content={sub.content}
+              />
+            ))}
+          </div>
+        )}
+      </div>
     </div>
   );
 };
@@ -252,7 +392,6 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
   onToggleBookmark,
 }) => {
   const [isSectionCollapsed, setIsSectionCollapsed] = useState(false);
-  const [tafseerTab, setTafseerTab] = useState<'summary' | 'full'>('full');
 
   // Distill key takeaways and wisdom points for quick summary mode
   const summaryPoints = React.useMemo(() => {
@@ -260,7 +399,12 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
     const paragraphs = section.commentary
       .split(/\n\s*\n/)
       .map((p) => p.trim())
-      .filter((p) => p.length > 25);
+      .filter(
+        (p) =>
+          p.length > 25 &&
+          !p.startsWith('[Verse') &&
+          !/^[─\-_=~*]{3,}$/.test(p)
+      );
 
     if (paragraphs.length <= 1) {
       const sentences = section.commentary
@@ -467,7 +611,7 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
           </div>
 
           {/* Translation Block */}
-          <div className="p-4 sm:p-6 rounded-2xl bg-white/80 dark:bg-[#202024]/80 border border-[#EBE7DF] dark:border-[#2B2B30] shadow-2xs">
+          <div id="translation-block" className="p-4 sm:p-6 rounded-2xl bg-white/80 dark:bg-[#202024]/80 border border-[#EBE7DF] dark:border-[#2B2B30] shadow-2xs scroll-mt-24">
             <div className="text-xs font-semibold uppercase tracking-wider text-stone-400 dark:text-stone-500 mb-2">
               Translation
             </div>
@@ -478,13 +622,13 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
             />
           </div>
 
-          {/* Tafseer Commentary Block with Layered Tabs and Unified Study Cards */}
+          {/* Tafseer Commentary Block with Baked-in Key Takeaways and Unified Study Cards */}
           <TafseerCommentaryBlock
             commentary={section.commentary}
+            sectionSummary={section.summary}
             summaryPoints={summaryPoints}
             subsections={section.subsections}
-            tafseerTab={tafseerTab}
-            onTabChange={setTafseerTab}
+            versesData={versesData}
           />
         </div>
       ) : (
@@ -496,7 +640,8 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
             {versesData.map(({ vNum, words, verseTranslation }) => (
               <div
                 key={`verse-card-${vNum}`}
-                className="p-2 sm:p-3 rounded-xl bg-white dark:bg-[#1E1E23] border border-[#EBE6DC] dark:border-[#2C2C32] shadow-2xs space-y-1.5 transition-all"
+                id={`verse-card-${vNum}`}
+                className="p-2 sm:p-3 rounded-xl bg-white dark:bg-[#1E1E23] border border-[#EBE6DC] dark:border-[#2C2C32] shadow-2xs space-y-1.5 transition-all scroll-mt-24"
               >
                 {/* Flowing Word-by-Word Units (Always Arabic RTL order) with Islamic Rosette Ayah Indicator at end */}
                 <div
@@ -548,14 +693,14 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
             ))}
           </div>
 
-          {/* Tafseer Commentary Block with Layered Tabs and Unified Study Cards */}
+          {/* Tafseer Commentary Block with Baked-in Key Takeaways and Unified Study Cards */}
           <div className="pt-4 border-t border-[#E8E5DF] dark:border-[#2E2E33]">
             <TafseerCommentaryBlock
               commentary={section.commentary}
+              sectionSummary={section.summary}
               summaryPoints={summaryPoints}
               subsections={section.subsections}
-              tafseerTab={tafseerTab}
-              onTabChange={setTafseerTab}
+              versesData={versesData}
             />
           </div>
         </div>
