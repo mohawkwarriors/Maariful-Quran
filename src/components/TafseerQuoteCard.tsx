@@ -1,5 +1,6 @@
 import React from 'react';
 import { BookOpen, Quote, Sparkles } from 'lucide-react';
+import { parseQuranCitation } from '../utils/quranCitation';
 
 export type QuoteType = 'hadith' | 'scholar' | 'quran' | 'dua';
 
@@ -12,14 +13,15 @@ export interface TafseerQuoteCardProps {
 }
 
 const formatCitationLabel = (text: string): string | null => {
-  const match = text.match(/\(([^)]+)\)\s*$/);
+  const match = text.match(/\(([^)]+)\)\s*[."”']*\s*$/);
   if (!match) return null;
   const raw = match[1].trim();
 
-  // Check surah:verse like (38:27) or (2:220) or (64:2)
-  const verseMatch = raw.match(/^(\d+)\s*:\s*(\d+)$/);
+  // Check surah:verse like (38:27) or (2:220) or (64:2) or (87:1-2)
+  const verseMatch = raw.match(/^(\d+)\s*:\s*(\d+)(?:\s*[-–—]\s*(\d+))?$/);
   if (verseMatch) {
-    return `Surah ${verseMatch[1]}:${verseMatch[2]}`;
+    const range = verseMatch[3] ? `${verseMatch[2]}–${verseMatch[3]}` : verseMatch[2];
+    return `Surah ${verseMatch[1]}:${range}`;
   }
 
   const lower = raw.toLowerCase();
@@ -51,6 +53,12 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
   const fullText = [rawText, english, arabic].filter(Boolean).join(' ');
   const detectedCitation = formatCitationLabel(fullText) || source;
 
+  // Extract structured Qur'an citation if this is a Qur'anic scripture card
+  const quranCitation = React.useMemo(() => {
+    if (type !== 'quran') return null;
+    return parseQuranCitation([rawText, english, arabic, source].filter(Boolean).join(' '));
+  }, [type, rawText, english, arabic, source]);
+
   // Determine if this is a Hadith Qudsi (where Allah speaks in the first person)
   const isHadithQudsi =
     type === 'hadith' &&
@@ -81,7 +89,7 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
       case 'quran':
         return {
           icon: BookOpen,
-          badgeTitle: "Qur'anic Scripture Citation",
+          badgeTitle: quranCitation ? quranCitation.badgeLabel : "Qur'an · Holy Scripture",
           badgeClasses: 'text-[#4C7971] dark:text-[#639C92]',
           badgeBgClasses: 'bg-[#4C7971]/10 dark:bg-[#4C7971]/20',
           borderClasses: 'border-[#4C7971]/30 dark:border-[#639C92]/35 hover:border-[#4C7971]/50',
@@ -97,7 +105,7 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
           defaultSource: "Qur'anic Supplication & Prophetic Du'a",
         };
     }
-  }, [type, isHadithQudsi]);
+  }, [type, isHadithQudsi, quranCitation]);
 
   const IconComponent = theme.icon;
 
@@ -203,10 +211,19 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
           </span>
         </div>
 
-        {detectedCitation && (
-          <span className="text-xs font-reader font-medium text-stone-500 dark:text-stone-400">
-            {detectedCitation}
-          </span>
+        {/* Right header citation: Display Surah name for Quran cards, or detected citation for Hadith/Scholar */}
+        {type === 'quran' ? (
+          quranCitation?.surahName ? (
+            <span className="text-xs font-reader font-medium text-stone-500 dark:text-stone-400">
+              Surah {quranCitation.surahName}
+            </span>
+          ) : null
+        ) : (
+          detectedCitation && (
+            <span className="text-xs font-reader font-medium text-stone-500 dark:text-stone-400">
+              {detectedCitation}
+            </span>
+          )
         )}
       </div>
 
@@ -276,7 +293,11 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
 
       {/* Subtle Citation Footer */}
       <div className="pt-2 border-t border-stone-100 dark:border-stone-800/80 flex items-center justify-between text-xs text-stone-400 dark:text-stone-500 font-reader">
-        <span>{detectedCitation || theme.defaultSource}</span>
+        <span>
+          {type === 'quran'
+            ? quranCitation?.fullCitation || detectedCitation || theme.defaultSource
+            : detectedCitation || theme.defaultSource}
+        </span>
       </div>
     </div>
   );

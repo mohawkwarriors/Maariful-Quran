@@ -580,8 +580,8 @@ const TafseerCommentaryBlock: React.FC<{
 
       // 6. Qur'an Scripture citation quote within exegesis
       const isQuranQuote =
-        (/["“][^"”]{10,}["”]\s*\(\d+:\s*\d+\)/.test(t) ||
-          (/^\s*["“]/.test(t) && /\(\d+:\s*\d+\)/.test(t))) &&
+        (/["“][^"”]{10,}["”]\s*\(\d+:\s*\d+(?:[-–—]\d+)?\)/.test(t) ||
+          (/^\s*["“]/.test(t) && /\(\d+:\s*\d+(?:[-–—]\d+)?\)/.test(t))) &&
         t.length < 500;
 
       if (isQuranQuote) {
@@ -625,7 +625,7 @@ const TafseerCommentaryBlock: React.FC<{
       if (isArabic && i + 1 < rawParagraphs.length) {
         const nextPara = rawParagraphs[i + 1].trim();
         const isNextHeading = /^\[\s*Verses?/i.test(nextPara) || isSubheading(nextPara);
-        const hasCite = /\(\d+:\s*\d+\)/.test(nextPara);
+        const hasCite = /\(\d+:\s*\d+(?:[-–—]\d+)?\)/.test(nextPara);
         const hasQuotes = /["“][^"”]{5,}["”]/.test(nextPara) || nextPara.startsWith('"') || nextPara.startsWith('“');
         const isShortTrans = nextPara.length < 500 && !isNextHeading;
 
