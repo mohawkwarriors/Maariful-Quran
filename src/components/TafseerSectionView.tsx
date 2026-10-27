@@ -186,16 +186,16 @@ const TafseerVerseHeading: React.FC<{
   return (
     <div
       id={`tafseer-verse-${primaryNum}`}
-      className="not-prose my-6 first:mt-1 first:mb-5 select-none w-full"
+      className="not-prose pt-7 pb-2.5 first:pt-2 first:mb-4 select-none w-full border-b border-[#ECE5DA]/70 dark:border-[#38332C]/70 group/badge"
     >
       <button
         type="button"
         onClick={handleClick}
-        className="w-full flex items-center justify-between gap-3 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl bg-[#FCFAF7]/50 dark:bg-[#1E1E23]/35 border border-[#ECE5DA]/40 dark:border-[#38332C]/40 hover:border-[#CD7743]/35 dark:hover:border-[#CD7743]/45 hover:bg-[#FAF6F0]/80 dark:hover:bg-[#232329]/60 transition-all cursor-pointer group/badge text-left"
+        className="w-full flex items-center justify-between gap-3 text-left transition-all cursor-pointer"
         title={`Click to jump to Verse ${primaryNum} in the text`}
         aria-label={`Jump to ${displayTitle}`}
       >
-        {/* Left Side: Rosette + Title + Translation Snippet (Biased to Left in Line with Text) */}
+        {/* Left Side: Rosette + Title + Translation Snippet (Flushed with Text Margin) */}
         <div className="flex items-center gap-2.5 sm:gap-3 min-w-0 flex-1">
           {/* Simplified Islamic 8-Pointed Star Rosette with Numeral */}
           <div className="relative inline-flex items-center justify-center w-7 h-7 sm:w-7.5 sm:h-7.5 shrink-0 transition-transform group-hover/badge:scale-105">
@@ -237,7 +237,7 @@ const TafseerVerseHeading: React.FC<{
 
           {/* Verse Title & Translation Snippet */}
           <div className="flex items-baseline gap-2 text-left min-w-0 flex-1">
-            <span className="font-serif-heading text-[16px] sm:text-[17.5px] font-bold text-stone-900 dark:text-stone-100 tracking-wide group-hover/badge:text-[#CD7743] dark:group-hover/badge:text-[#E08955] transition-colors shrink-0">
+            <span className="font-serif-heading text-[16.5px] sm:text-[18px] font-bold text-stone-900 dark:text-stone-100 tracking-wide group-hover/badge:text-[#CD7743] dark:group-hover/badge:text-[#E08955] transition-colors shrink-0">
               {displayTitle}
             </span>
 
