@@ -264,6 +264,64 @@ const TafseerVerseHeading: React.FC<{
   );
 };
 
+const isSubheading = (line: string): boolean => {
+  const l = line.trim();
+  if (!l) return false;
+  // Exclude verse markers, horizontal dividers, pure Arabic lines
+  if (/^\[\s*Verses?/i.test(l)) return false;
+  if (/^[─\-_=~*]{3,}$/.test(l)) return false;
+  if (/^[\u0600-\u06FF\s]+$/.test(l)) return false;
+
+  // Length constraint: Subheadings are concise titles, between 3 and 65 characters
+  if (l.length < 3 || l.length > 65) return false;
+
+  // Dialogue or quotation marks indicate quotes or speech, not section titles
+  if (/[“"”]/.test(l)) return false;
+
+  // Sentences or citations ending in punctuation
+  if (/[.,;—–\-)\]]$/.test(l)) return false;
+
+  // If ending with a colon, exclude common lead-in phrases
+  if (l.endsWith(':')) {
+    if (
+      /\b(?:says|said|find|reports|writes|reads|follows|following|continued|recited|example|namely|short|poet|words|verse)\b/i.test(
+        l
+      )
+    ) {
+      return false;
+    }
+  }
+
+  // Heading should start with a capital letter or digit (e.g., "The First...", "1. ")
+  if (!/^[A-Z0-9]/.test(l)) return false;
+
+  // Exclude common standalone sentence connectors / pronouns
+  if (/^(?:he|she|it|they|we|and|or|but|in short|for example|on the other hand)$/i.test(l)) {
+    return false;
+  }
+
+  return true;
+};
+
+const TafseerSubheading: React.FC<{ title: string }> = ({ title }) => {
+  return (
+    <div className="not-prose pt-8 sm:pt-9 pb-2 first:pt-1 group/subhead select-text">
+      <div className="flex items-center gap-2.5 sm:gap-3">
+        {/* Warm amber book-spine accent pill */}
+        <div className="w-1.5 h-4.5 sm:h-5 rounded-full bg-[#CD7743] dark:bg-[#E08955] shrink-0" />
+
+        {/* Sub-section Header Title */}
+        <h3 className="font-serif-heading font-bold text-[17.5px] sm:text-[19px] md:text-[20px] text-stone-900 dark:text-stone-100 tracking-wide leading-snug">
+          {title}
+        </h3>
+      </div>
+
+      {/* Subtle hairline gradient dividing line */}
+      <div className="h-px bg-gradient-to-r from-[#CD7743]/25 via-stone-200/40 dark:via-stone-800/50 to-transparent mt-2.5 max-w-xl" />
+    </div>
+  );
+};
+
 const TafseerCommentaryBlock: React.FC<{
   commentary: string;
   sectionSummary?: string;
@@ -294,6 +352,7 @@ const TafseerCommentaryBlock: React.FC<{
     const rawParagraphs = commentary.split(/\n\s*\n/);
     const blocks: Array<
       | { type: 'verse-heading'; raw: string }
+      | { type: 'subheading'; content: string }
       | { type: 'quote'; quoteType: QuoteType; content: string }
       | { type: 'text'; content: string }
     > = [];
@@ -307,6 +366,7 @@ const TafseerCommentaryBlock: React.FC<{
     const processParagraph = (
       textToProcess: string
     ): Array<
+      | { type: 'subheading'; content: string }
       | { type: 'quote'; quoteType: QuoteType; content: string }
       | { type: 'text'; content: string }
     > => {
@@ -324,6 +384,7 @@ const TafseerCommentaryBlock: React.FC<{
         const after = t.slice(matchEnd).trim();
 
         const result: Array<
+          | { type: 'subheading'; content: string }
           | { type: 'quote'; quoteType: QuoteType; content: string }
           | { type: 'text'; content: string }
         > = [];
@@ -353,6 +414,7 @@ const TafseerCommentaryBlock: React.FC<{
         const after = t.slice(matchEnd).trim();
 
         const result: Array<
+          | { type: 'subheading'; content: string }
           | { type: 'quote'; quoteType: QuoteType; content: string }
           | { type: 'text'; content: string }
         > = [];
@@ -371,7 +433,45 @@ const TafseerCommentaryBlock: React.FC<{
         return result;
       }
 
-      // 3. Standalone Hadith Quote
+      // 3. Check Subheadings within this text segment
+      const lines = t.split('\n');
+      if (lines.length === 1 && isSubheading(lines[0])) {
+        return [{ type: 'subheading', content: lines[0].trim() }];
+      }
+
+      if (lines.some((l) => isSubheading(l))) {
+        const result: Array<
+          | { type: 'subheading'; content: string }
+          | { type: 'quote'; quoteType: QuoteType; content: string }
+          | { type: 'text'; content: string }
+        > = [];
+
+        let currentLines: string[] = [];
+        for (const line of lines) {
+          if (isSubheading(line)) {
+            if (currentLines.length > 0) {
+              const seg = currentLines.join('\n').trim();
+              if (seg) {
+                result.push(...processParagraph(seg));
+              }
+              currentLines = [];
+            }
+            result.push({ type: 'subheading', content: line.trim() });
+          } else {
+            currentLines.push(line);
+          }
+        }
+
+        if (currentLines.length > 0) {
+          const seg = currentLines.join('\n').trim();
+          if (seg) {
+            result.push(...processParagraph(seg));
+          }
+        }
+        return result;
+      }
+
+      // 4. Standalone Hadith Quote
       const isStandaloneHadith =
         /^(?:(?:The\s+)?Sahih\s+(?:of\s+)?(?:Muslim|Bukhari|al-Bukhari)|(?:In\s+a\s+|According\s+to\s+a\s+)?(?:Hadith|Tradition)\b|The\s+Holy\s+Prophet\s*(?:\([^)]+\)|ﷺ)?\s*(?:said|has\s+said|continued|reported)|The\s+Messenger\s+of\s+Allah\s*(?:\([^)]+\)|ﷺ)?\s*(?:said|has\s+said))\b/i.test(
           t
@@ -474,6 +574,15 @@ const TafseerCommentaryBlock: React.FC<{
                   key={`cvh-${idx}-${block.raw}`}
                   label={block.raw}
                   verseSnippet={snippet}
+                />
+              );
+            }
+
+            if (block.type === 'subheading') {
+              return (
+                <TafseerSubheading
+                  key={`csub-${idx}-${block.content.slice(0, 20)}`}
+                  title={block.content}
                 />
               );
             }
