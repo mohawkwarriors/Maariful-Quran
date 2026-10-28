@@ -1,6 +1,6 @@
 import React from 'react';
 import { BookOpen, Quote, Sparkles } from 'lucide-react';
-import { parseQuranCitation } from '../utils/quranCitation';
+import { parseQuranCitation, formatQuranCitationFooter } from '../utils/quranCitation';
 import { parseHadithCitation } from '../utils/hadithCitation';
 
 export type QuoteType = 'hadith' | 'scholar' | 'quran' | 'dua';
@@ -11,6 +11,9 @@ export interface TafseerQuoteCardProps {
   arabic?: string;
   english?: string;
   source?: string;
+  surahNumber?: number;
+  surahName?: string;
+  verseNumber?: number | string;
 }
 
 const formatCitationLabel = (text: string): string | null => {
@@ -21,8 +24,14 @@ const formatCitationLabel = (text: string): string | null => {
   // Check surah:verse like (38:27) or (2:220) or (64:2) or (87:1-2)
   const verseMatch = raw.match(/^(\d+)\s*:\s*(\d+)(?:\s*[-–—]\s*(\d+))?$/);
   if (verseMatch) {
-    const range = verseMatch[3] ? `${verseMatch[2]}–${verseMatch[3]}` : verseMatch[2];
-    return `Surah ${verseMatch[1]}:${range}`;
+    const sNum = parseInt(verseMatch[1], 10);
+    const vStart = parseInt(verseMatch[2], 10);
+    const vEnd = verseMatch[3] ? parseInt(verseMatch[3], 10) : undefined;
+    return formatQuranCitationFooter({
+      surahNumber: sNum,
+      verseStart: vStart,
+      verseEnd: vEnd,
+    });
   }
 
   const lower = raw.toLowerCase();
@@ -50,6 +59,9 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
   arabic,
   english,
   source,
+  surahNumber,
+  surahName,
+  verseNumber,
 }) => {
   const fullText = [rawText, english, arabic].filter(Boolean).join(' ');
   const detectedCitation = formatCitationLabel(fullText) || source;
@@ -102,11 +114,13 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
       case 'quran':
         return {
           icon: BookOpen,
-          badgeTitle: quranCitation ? quranCitation.badgeLabel : "Qur'an · Holy Scripture",
+          badgeTitle: "Qur'an",
           badgeClasses: 'text-[#4C7971] dark:text-[#639C92]',
           badgeBgClasses: 'bg-[#4C7971]/10 dark:bg-[#4C7971]/20',
           borderClasses: 'border-[#4C7971]/30 dark:border-[#639C92]/35 hover:border-[#4C7971]/50',
-          defaultSource: 'The Holy Qur’an',
+          defaultSource: surahNumber
+            ? formatQuranCitationFooter({ surahNumber, surahName })
+            : 'The Holy Qur’an',
         };
       case 'dua':
         return {
@@ -118,7 +132,7 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
           defaultSource: "Qur'anic Supplication & Prophetic Du'a",
         };
     }
-  }, [type, isHadithQudsi, quranCitation, hadithCitation, detectedCitation]);
+  }, [type, isHadithQudsi, hadithCitation, detectedCitation, surahNumber, surahName]);
 
   const IconComponent = theme.icon;
 
@@ -224,14 +238,8 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
           </span>
         </div>
 
-        {/* Right header citation: Display Surah name for Quran cards, or clean source when not already in badge */}
-        {type === 'quran' ? (
-          quranCitation?.surahName ? (
-            <span className="text-xs font-reader font-medium text-stone-500 dark:text-stone-400">
-              Surah {quranCitation.surahName}
-            </span>
-          ) : null
-        ) : type === 'hadith' ? (
+        {/* Right header citation: clean source when not already in badge */}
+        {type === 'quran' ? null : type === 'hadith' ? (
           !hadithCitation?.sourceName && detectedCitation ? (
             <span className="text-xs font-reader font-medium text-stone-500 dark:text-stone-400">
               {detectedCitation}
@@ -314,7 +322,14 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
       <div className="pt-2 border-t border-stone-100 dark:border-stone-800/80 flex items-center justify-between text-xs text-stone-400 dark:text-stone-500 font-reader">
         <span>
           {type === 'quran'
-            ? quranCitation?.fullCitation || detectedCitation || theme.defaultSource
+            ? quranCitation?.fullCitation ||
+              (surahNumber
+                ? typeof verseNumber === 'number'
+                  ? formatQuranCitationFooter({ surahNumber, surahName, verseStart: verseNumber })
+                  : typeof verseNumber === 'string'
+                  ? formatQuranCitationFooter({ surahNumber, surahName, verseRangeStr: verseNumber })
+                  : formatQuranCitationFooter({ surahNumber, surahName })
+                : detectedCitation || theme.defaultSource)
             : type === 'hadith'
             ? hadithCitation?.fullCitation || detectedCitation || theme.defaultSource
             : detectedCitation || theme.defaultSource}

@@ -125,6 +125,156 @@ export const SURAH_TRANSLITERATED_NAMES: Record<number, string> = {
 };
 
 /**
+ * Normalizes Arabic text by removing tashkeel (diacritics), tatweel,
+ * Quranic stop/sajdah marks, zero-width characters (ZWNJ, ZWJ), and
+ * normalizing Alef and Yeh variations for reliable text matching.
+ */
+export function normalizeArabicText(text?: string | null): string {
+  if (!text) return '';
+  return text
+    // Strip Zero-width characters (ZWNJ \u200C, ZWJ \u200D, ZWS \u200B, BOM \uFEFF)
+    .replace(/[\u200B-\u200D\uFEFF]/g, '')
+    // Strip Tatweel
+    .replace(/\u0640/g, '')
+    // Strip Tashkeel (harakat & dagger alif)
+    .replace(/[\u064B-\u065F\u0670]/g, '')
+    // Strip Quranic annotation signs, waqf symbols, small vowels & marks
+    .replace(/[\u06D6-\u06ED\u06DF\u06E0\u06E2\u06E3\u06E5\u06E6]/g, '')
+    // Normalize Alef variations (إ, أ, آ, ٱ) -> ا
+    .replace(/[إأآٱ]/g, 'ا')
+    // Normalize Alif Maqsura (ى) and Yeh (ي) -> ي
+    .replace(/[ىي]/g, 'ي')
+    // Normalize Teh Marbuta (ة) -> ه
+    .replace(/ة/g, 'ه')
+    // Remove Quranic punctuation and symbols (ۖ, ۗ, ۚ, ۛ, ۜ, ۞, ۟, ۠, ۡ) and ASCII symbols/whitespace
+    .replace(/[ۖۗۚۛۜ۞۟۠ۡ\s\.,;:!?"'()\[\]{}–—\-]+/g, '');
+}
+
+/**
+ * Formats a clean, standard Qur'an citation for badges or card footers.
+ * e.g. "Surah Al-Baqarah, Ayah 5 (2:5)" or "Surah At-Taghabun, Ayat 1–5 (64:1–5)"
+ */
+export function formatQuranCitationFooter(params: {
+  surahNumber: number;
+  surahName?: string;
+  verseStart?: number;
+  verseEnd?: number;
+  verseRangeStr?: string;
+}): string {
+  const { surahNumber, surahName, verseStart, verseEnd, verseRangeStr } = params;
+  const name = surahName || SURAH_TRANSLITERATED_NAMES[surahNumber] || `Surah ${surahNumber}`;
+  const prefix = name.startsWith('Surah') ? name : `Surah ${name}`;
+
+  if (verseStart !== undefined && verseStart !== null) {
+    if (verseEnd !== undefined && verseEnd !== null && verseEnd !== verseStart) {
+      return `${prefix}, Ayat ${verseStart}–${verseEnd} (${surahNumber}:${verseStart}–${verseEnd})`;
+    }
+    return `${prefix}, Ayah ${verseStart} (${surahNumber}:${verseStart})`;
+  }
+
+  if (verseRangeStr) {
+    const cleanRange = String(verseRangeStr).replace(/\s+/g, '');
+    if (cleanRange.includes('-') || cleanRange.includes('–')) {
+      const parts = cleanRange.split(/[-–]/);
+      return `${prefix}, Ayat ${parts[0]}–${parts[1]} (${surahNumber}:${parts[0]}–${parts[1]})`;
+    }
+    return `${prefix}, Ayah ${cleanRange} (${surahNumber}:${cleanRange})`;
+  }
+
+  return `${prefix} (${surahNumber})`;
+}
+
+/**
+ * Matches an Arabic or English quote from commentary against the
+ * section's phrase cards to determine the exact Ayah number.
+ */
+export function matchAyahFromSection(
+  arabicText?: string | null,
+  englishText?: string | null,
+  phraseCards?: Array<{ arabicPhrase?: string; englishPhrase?: string; verseNumber?: number }> | null
+): number | null {
+  if (!phraseCards || phraseCards.length === 0) return null;
+
+  const normArabicQuote = normalizeArabicText(arabicText);
+  if (normArabicQuote && normArabicQuote.length >= 4) {
+    // 1. Exact equality match
+    for (const card of phraseCards) {
+      if (!card.arabicPhrase) continue;
+      const normCard = normalizeArabicText(card.arabicPhrase);
+      if (normArabicQuote === normCard && card.verseNumber) {
+        return card.verseNumber;
+      }
+    }
+
+    // 2. Substring match with minimum meaningful length (>= 10 characters)
+    let bestMatchVerse: number | null = null;
+    let maxMatchLen = 0;
+
+    for (const card of phraseCards) {
+      if (!card.arabicPhrase) continue;
+      const normCard = normalizeArabicText(card.arabicPhrase);
+      if (!normCard) continue;
+
+      const isSub =
+        (normCard.length >= 10 && normArabicQuote.includes(normCard)) ||
+        (normArabicQuote.length >= 10 && normCard.includes(normArabicQuote));
+
+      if (isSub) {
+        const matchLen = Math.min(normCard.length, normArabicQuote.length);
+        if (matchLen > maxMatchLen && card.verseNumber) {
+          maxMatchLen = matchLen;
+          bestMatchVerse = card.verseNumber;
+        }
+      }
+    }
+
+    if (bestMatchVerse) {
+      return bestMatchVerse;
+    }
+  }
+
+  // 3. Fallback: English translation word matching
+  if (englishText && englishText.trim().length >= 10) {
+    const cleanQuote = englishText
+      .toLowerCase()
+      .replace(/[^a-z0-9\s]/g, ' ')
+      .split(/\s+/)
+      .filter((w) => w.length > 3);
+
+    if (cleanQuote.length > 0) {
+      const quoteWordSet = new Set(cleanQuote);
+      let bestMatchVerse: number | null = null;
+      let maxOverlap = 0;
+
+      for (const card of phraseCards) {
+        if (!card.englishPhrase) continue;
+        const cardWords = card.englishPhrase
+          .toLowerCase()
+          .replace(/[^a-z0-9\s]/g, ' ')
+          .split(/\s+/)
+          .filter((w) => w.length > 3);
+
+        let overlap = 0;
+        for (const w of cardWords) {
+          if (quoteWordSet.has(w)) overlap++;
+        }
+
+        if (overlap >= 4 && overlap > maxOverlap && card.verseNumber) {
+          maxOverlap = overlap;
+          bestMatchVerse = card.verseNumber;
+        }
+      }
+
+      if (bestMatchVerse) {
+        return bestMatchVerse;
+      }
+    }
+  }
+
+  return null;
+}
+
+/**
  * Extracts and formats a Qur'anic citation (e.g. "(64:2)", "(87:1-2)", "(Surah Al-Baqarah, 2:220)", "Surah 64:2").
  */
 export function parseQuranCitation(text?: string | null): ParsedQuranCitation | null {
@@ -151,8 +301,6 @@ export function parseQuranCitation(text?: string | null): ParsedQuranCitation | 
   }
 
   const surahName = SURAH_TRANSLITERATED_NAMES[surahNumber];
-  const verseRangeStr =
-    verseEnd && verseEnd !== verseStart ? `${verseStart}–${verseEnd}` : `${verseStart}`;
 
   // Standard citation title for badges: "Qur'an · Surah 64, Ayah 2" (or "Ayat 1–2")
   const badgeLabel =
@@ -160,9 +308,12 @@ export function parseQuranCitation(text?: string | null): ParsedQuranCitation | 
       ? `Qur'an · Surah ${surahNumber}, Ayat ${verseStart}–${verseEnd}`
       : `Qur'an · Surah ${surahNumber}, Ayah ${verseStart}`;
 
-  const fullCitation = surahName
-    ? `Surah ${surahName} (${surahNumber}:${verseRangeStr})`
-    : `Surah ${surahNumber}:${verseRangeStr}`;
+  const fullCitation = formatQuranCitationFooter({
+    surahNumber,
+    surahName,
+    verseStart,
+    verseEnd,
+  });
 
   return {
     surahNumber,

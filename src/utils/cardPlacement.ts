@@ -11,6 +11,7 @@ export type RawCommentaryBlock =
       arabic?: string;
       english?: string;
       source?: string;
+      verseNumber?: number | string;
     }
   | { type: 'text'; content: string };
 

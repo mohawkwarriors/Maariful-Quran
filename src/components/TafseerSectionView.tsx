@@ -5,6 +5,7 @@ import { WordDeepDiveModal } from './WordDeepDiveModal';
 import { getWordDeepDive } from '../services/quranLexicon';
 import { TafseerStudyCard, StudyCardType } from './TafseerStudyCard';
 import { TafseerQuoteCard, QuoteType } from './TafseerQuoteCard';
+import { SURAH_TRANSLITERATED_NAMES, matchAyahFromSection } from '../utils/quranCitation';
 import { interleaveStudyCards, RawCommentaryBlock } from '../utils/cardPlacement';
 import { ChevronDown, ChevronUp, Bookmark, ArrowUpRight } from 'lucide-react';
 
@@ -417,7 +418,21 @@ const TafseerCommentaryBlock: React.FC<{
     vNum: number;
     verseTranslation?: string;
   }>;
-}> = ({ commentary, sectionSummary, summaryPoints, subsections, versesData }) => {
+  surahNumber?: number;
+  surahName?: string;
+  verseRange?: [number, number];
+  phraseCards?: PhraseCard[];
+}> = ({
+  commentary,
+  sectionSummary,
+  summaryPoints,
+  subsections,
+  versesData,
+  surahNumber,
+  surahName,
+  verseRange,
+  phraseCards,
+}) => {
   // Quick lookup for verse English translations from versesData
   const verseSnippetMap = React.useMemo(() => {
     const map = new Map<number, string>();
@@ -437,6 +452,7 @@ const TafseerCommentaryBlock: React.FC<{
 
     const rawParagraphs = splitIntoParagraphs(commentary);
     const blocks: RawCommentaryBlock[] = [];
+    let currentVerseHeadingNumber: number | null = null;
 
     const duaRegex =
       /((?:(?:(?:The\s+)?Prayer\s+for\s+[^\n]+|Du['’`]?a\s+(?:for|when|after|before)\s+[^\n]+|Supplication\s+(?:for|of)\s+[^\n]+)\n(?:[^\n]*?(?:taught|teaches|instructs|pray|supplicat)[^\n]*:\s*\n)?(?:[\u0600-\u06FF\s]+\n)?[“"][^”"\n]+[”"]|[^\n]*?(?:taught\s+(?:man|us|the\s+believers|Muslims)\s+(?:what\s+to\s+pray|how\s+to\s+pray|this\s+prayer|this\s+du['’`]?a|a\s+special\s+du['’`]?a)|teaches\s+Muslims\s+to\s+make\s+a\s+special\s+du['’`]?a|supplicated\s+(?:with\s+these\s+words|in\s+these\s+words)|used\s+to\s+make\s+this\s+(?:prayer|du['’`]?a))[^\n]*:\s*\n(?:[\u0600-\u06FF\s]+\n)?[“"][^”"\n]+[”"]|(?:رَ‌?بَّنَا|اللَّهُمَّ|رَبِّ)[\u0600-\u06FF\s،]+\n[“"][^”"\n]+[”"]))/gi;
@@ -444,13 +460,7 @@ const TafseerCommentaryBlock: React.FC<{
     const hadithRegex =
       /((?:The\s+Sahih\s+of\s+[A-Za-z]+|According\s+to\s+a\s+hadith|In\s+a\s+hadith|The\s+Holy\s+Prophet\s*(?:\([^)]+\))?\s*(?:said|has\s+said|continued|reported))[^\n]*:[\s\S]*?\([a-zA-Z\s`'-]+\))/gi;
 
-    const processParagraph = (
-      textToProcess: string
-    ): Array<
-      | { type: 'subheading'; content: string }
-      | { type: 'quote'; quoteType: QuoteType; content: string }
-      | { type: 'text'; content: string }
-    > => {
+    const processParagraph = (textToProcess: string): RawCommentaryBlock[] => {
       const t = textToProcess.trim();
       if (!t) return [];
 
@@ -464,11 +474,7 @@ const TafseerCommentaryBlock: React.FC<{
         const duaContent = duaMatch[0].trim();
         const after = t.slice(matchEnd).trim();
 
-        const result: Array<
-          | { type: 'subheading'; content: string }
-          | { type: 'quote'; quoteType: QuoteType; content: string }
-          | { type: 'text'; content: string }
-        > = [];
+        const result: RawCommentaryBlock[] = [];
 
         if (before) {
           result.push(...processParagraph(before));
@@ -494,11 +500,7 @@ const TafseerCommentaryBlock: React.FC<{
         const hadithContent = hadithMatch[0].trim();
         const after = t.slice(matchEnd).trim();
 
-        const result: Array<
-          | { type: 'subheading'; content: string }
-          | { type: 'quote'; quoteType: QuoteType; content: string }
-          | { type: 'text'; content: string }
-        > = [];
+        const result: RawCommentaryBlock[] = [];
 
         if (before) {
           result.push(...processParagraph(before));
@@ -521,11 +523,7 @@ const TafseerCommentaryBlock: React.FC<{
       }
 
       if (lines.some((l) => isSubheading(l))) {
-        const result: Array<
-          | { type: 'subheading'; content: string }
-          | { type: 'quote'; quoteType: QuoteType; content: string }
-          | { type: 'text'; content: string }
-        > = [];
+        const result: RawCommentaryBlock[] = [];
 
         let currentLines: string[] = [];
         for (const line of lines) {
@@ -593,7 +591,12 @@ const TafseerCommentaryBlock: React.FC<{
         t.length < 500;
 
       if (isQuranQuote) {
-        return [{ type: 'quote', quoteType: 'quran', content: t }];
+        const matched = matchAyahFromSection(undefined, t, phraseCards);
+        const resolvedVerse =
+          matched ??
+          currentVerseHeadingNumber ??
+          (verseRange ? (verseRange[0] === verseRange[1] ? verseRange[0] : `${verseRange[0]}–${verseRange[1]}`) : undefined);
+        return [{ type: 'quote', quoteType: 'quran', content: t, verseNumber: resolvedVerse }];
       }
 
       // 7. Regular prose text
@@ -616,6 +619,8 @@ const TafseerCommentaryBlock: React.FC<{
 
       // Check if this paragraph is a verse heading like [Verse 1] or [Verses 4–5]
       if (/^\[\s*Verses?\s*[\d\s\-–—,and]+\s*\]$/i.test(trimmed)) {
+        const { primaryNum } = parseVerseMarker(trimmed);
+        currentVerseHeadingNumber = primaryNum;
         blocks.push({
           type: 'verse-heading',
           raw: trimmed,
@@ -639,12 +644,22 @@ const TafseerCommentaryBlock: React.FC<{
 
         if (!isNextHeading && (hasCite || hasQuotes || isShortTrans)) {
           const isHadith = /(?:Prophet|Hadith|Tradition|Bukhari|Muslim|Messenger)/i.test(nextPara);
+          const quoteType: QuoteType = isHadith ? 'hadith' : 'quran';
+          let verseNumber: number | string | undefined = undefined;
+          if (quoteType === 'quran') {
+            const matched = matchAyahFromSection(trimmed, nextPara, phraseCards);
+            verseNumber =
+              matched ??
+              currentVerseHeadingNumber ??
+              (verseRange ? (verseRange[0] === verseRange[1] ? verseRange[0] : `${verseRange[0]}–${verseRange[1]}`) : undefined);
+          }
           blocks.push({
             type: 'quote',
-            quoteType: isHadith ? 'hadith' : 'quran',
+            quoteType,
             arabic: trimmed,
             english: nextPara,
             content: `${trimmed}\n\n${nextPara}`,
+            verseNumber,
           });
           i += 2;
           continue;
@@ -672,7 +687,7 @@ const TafseerCommentaryBlock: React.FC<{
     }
 
     return cleanedBlocks;
-  }, [commentary]);
+  }, [commentary, phraseCards, verseRange]);
 
   // Interleave Fiqh (Ahkam), Asbab al-Nuzul, and Spiritual Insights cards throughout the section's commentary
   const commentaryBlocks = React.useMemo(() => {
@@ -734,6 +749,9 @@ const TafseerCommentaryBlock: React.FC<{
                   arabic={block.arabic}
                   english={block.english}
                   source={block.source}
+                  surahNumber={surahNumber}
+                  surahName={surahName}
+                  verseNumber={block.verseNumber}
                 />
               );
             }
@@ -770,6 +788,7 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
   onToggleBookmark,
 }) => {
   const [isSectionCollapsed, setIsSectionCollapsed] = useState(false);
+  const surahName = SURAH_TRANSLITERATED_NAMES[section.surahNumber];
 
   // Distill key takeaways and wisdom points for quick summary mode
   const summaryPoints = React.useMemo(() => {
@@ -1007,6 +1026,10 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
             summaryPoints={summaryPoints}
             subsections={section.subsections}
             versesData={versesData}
+            surahNumber={section.surahNumber}
+            surahName={surahName}
+            verseRange={section.verseRange}
+            phraseCards={section.phraseCards}
           />
         </div>
       ) : (
@@ -1079,6 +1102,10 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
               summaryPoints={summaryPoints}
               subsections={section.subsections}
               versesData={versesData}
+              surahNumber={section.surahNumber}
+              surahName={surahName}
+              verseRange={section.verseRange}
+              phraseCards={section.phraseCards}
             />
           </div>
         </div>
