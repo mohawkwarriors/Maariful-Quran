@@ -5,7 +5,7 @@ import { WordDeepDiveModal } from './WordDeepDiveModal';
 import { getWordDeepDive } from '../services/quranLexicon';
 import { TafseerStudyCard, StudyCardType } from './TafseerStudyCard';
 import { TafseerQuoteCard, QuoteType } from './TafseerQuoteCard';
-import { SURAH_TRANSLITERATED_NAMES, matchAyahFromSection } from '../utils/quranCitation';
+import { SURAH_TRANSLITERATED_NAMES, matchAyahFromSection, parseQuranCitation } from '../utils/quranCitation';
 import { interleaveStudyCards, RawCommentaryBlock } from '../utils/cardPlacement';
 import { ChevronDown, ChevronUp, Bookmark, ArrowUpRight } from 'lucide-react';
 
@@ -643,7 +643,12 @@ const TafseerCommentaryBlock: React.FC<{
         const isShortTrans = nextPara.length < 500 && !isNextHeading;
 
         if (!isNextHeading && (hasCite || hasQuotes || isShortTrans)) {
-          const isHadith = /(?:Prophet|Hadith|Tradition|Bukhari|Muslim|Messenger)/i.test(nextPara);
+          const isQuranCite = hasCite || Boolean(parseQuranCitation(nextPara));
+          const isHadith =
+            !isQuranCite &&
+            /(?:(?:In\s+a\s+|According\s+to\s+a\s+)?(?:hadith|tradition)\b|the\s+Holy\s+Prophet\s*(?:\([^)]+\)|ﷺ)?\s*(?:said|has\s+said|reported|narrat|relat)|The\s+Messenger\s+of\s+Allah\s*(?:\([^)]+\)|ﷺ)?\s*(?:said|has\s+said)|bukhari|muslim|tirmidhi|abu\s+dawud|ibn\s+majah|nasa['’`]?i|ahmad|bayhaqi)/i.test(
+              nextPara
+            );
           const quoteType: QuoteType = isHadith ? 'hadith' : 'quran';
           let verseNumber: number | string | undefined = undefined;
           if (quoteType === 'quran') {

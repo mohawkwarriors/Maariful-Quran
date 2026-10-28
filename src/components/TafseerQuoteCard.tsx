@@ -98,7 +98,11 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
           badgeClasses: 'text-[#CD7743] dark:text-[#E08955]',
           badgeBgClasses: 'bg-[#CD7743]/10 dark:bg-[#CD7743]/20',
           borderClasses: 'border-[#CD7743]/30 dark:border-[#E08955]/35 hover:border-[#CD7743]/50',
-          defaultSource: hadithCitation?.fullCitation || 'Recorded in Prophetic Traditions',
+          defaultSource:
+            hadithCitation?.fullCitation ||
+            (isHadithQudsi
+              ? 'Words of Allah (Hadith Qudsi) · The Holy Prophet ﷺ'
+              : 'The Holy Prophet ﷺ · Prophetic Hadith'),
         };
       case 'scholar':
         return {
