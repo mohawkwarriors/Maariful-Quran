@@ -33,6 +33,13 @@ export interface CuratedTerm {
   volumeReference?: string;
 }
 
+export interface FootnoteItem {
+  id: number;
+  text: string;
+  author?: string;
+  anchorText?: string;
+}
+
 export interface ThematicSection {
   id: string;
   surahNumber: number;
@@ -49,6 +56,7 @@ export interface ThematicSection {
   commentary: string;
   subsections: SubSection[];
   curatedTerms?: CuratedTerm[];
+  footnotes?: FootnoteItem[];
 }
 
 export interface SurahManifestItem {

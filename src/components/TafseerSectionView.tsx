@@ -1,10 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { ThematicSection, PhraseCard, SubSection } from '../types/quran';
+import { ThematicSection, PhraseCard, SubSection, FootnoteItem } from '../types/quran';
 import { AnnotatedTranslation } from './AnnotatedTranslation';
 import { WordDeepDiveModal } from './WordDeepDiveModal';
 import { getWordDeepDive } from '../services/quranLexicon';
 import { TafseerStudyCard, StudyCardType } from './TafseerStudyCard';
 import { TafseerQuoteCard, QuoteType } from './TafseerQuoteCard';
+import { renderContentWithFootnotes, FootnotesSection } from './FootnotePopover';
 import { SURAH_TRANSLITERATED_NAMES, matchAyahFromSection, parseQuranCitation } from '../utils/quranCitation';
 import { interleaveStudyCards, RawCommentaryBlock } from '../utils/cardPlacement';
 import { ChevronDown, ChevronUp, Bookmark, ArrowUpRight } from 'lucide-react';
@@ -422,6 +423,8 @@ const TafseerCommentaryBlock: React.FC<{
   surahName?: string;
   verseRange?: [number, number];
   phraseCards?: PhraseCard[];
+  footnotes?: FootnoteItem[];
+  sectionId?: string;
 }> = ({
   commentary,
   sectionSummary,
@@ -432,6 +435,8 @@ const TafseerCommentaryBlock: React.FC<{
   surahName,
   verseRange,
   phraseCards,
+  footnotes,
+  sectionId,
 }) => {
   // Quick lookup for verse English translations from versesData
   const verseSnippetMap = React.useMemo(() => {
@@ -775,11 +780,14 @@ const TafseerCommentaryBlock: React.FC<{
 
             return (
               <p key={`cp-${idx}`} className="leading-[1.85] whitespace-pre-line">
-                {block.content}
+                {renderContentWithFootnotes(block.content, footnotes, sectionId)}
               </p>
             );
           })}
         </div>
+
+        {/* Scholarly Footnotes Section */}
+        <FootnotesSection footnotes={footnotes} sectionId={sectionId} />
       </div>
     </div>
   );
@@ -1035,6 +1043,8 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
             surahName={surahName}
             verseRange={section.verseRange}
             phraseCards={section.phraseCards}
+            footnotes={section.footnotes}
+            sectionId={section.id}
           />
         </div>
       ) : (
@@ -1111,6 +1121,8 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
               surahName={surahName}
               verseRange={section.verseRange}
               phraseCards={section.phraseCards}
+              footnotes={section.footnotes}
+              sectionId={section.id}
             />
           </div>
         </div>
