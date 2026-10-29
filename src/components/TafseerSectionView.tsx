@@ -136,43 +136,8 @@ const TafseerVerseHeading: React.FC<{
       >
         {/* Left Side: Rosette + Title + Translation Snippet (Flushed with Text Margin) */}
         <div className="flex items-center gap-2.5 sm:gap-3 min-w-0 flex-1">
-          {/* Simplified Islamic 8-Pointed Star Rosette with Numeral */}
-          <div className="relative inline-flex items-center justify-center w-7 h-7 sm:w-7.5 sm:h-7.5 shrink-0 transition-transform group-hover/badge:scale-105">
-            <svg
-              viewBox="0 0 40 40"
-              className="absolute inset-0 w-full h-full text-[#CD7743] dark:text-[#E08955] drop-shadow-2xs"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <polygon
-                points="20,1.5 25.66,6.33 33.08,6.92 33.67,14.34 38.5,20 33.67,25.66 33.08,33.08 25.66,33.67 20,38.5 14.34,33.67 6.92,33.08 6.33,25.66 1.5,20 6.33,14.34 6.92,6.92 14.34,6.33"
-                fill="currentColor"
-                fillOpacity="0.08"
-                stroke="currentColor"
-                strokeWidth="1.4"
-                strokeLinejoin="round"
-              />
-              <circle
-                cx="20"
-                cy="20"
-                r="13"
-                stroke="currentColor"
-                strokeWidth="1"
-                fill="currentColor"
-                fillOpacity="0.04"
-              />
-            </svg>
-            <span
-              className="relative z-10 flex items-center justify-center font-bold text-[#CD7743] dark:text-[#E08955] leading-none select-none font-sans"
-              style={{
-                fontSize: primaryNum >= 100 ? '9.5px' : primaryNum >= 10 ? '11px' : '12px',
-                letterSpacing: primaryNum >= 100 ? '-0.5px' : 'normal',
-                transform: 'translateY(0.5px)',
-              }}
-            >
-              {primaryNum}
-            </span>
-          </div>
+          {/* Authentic Uthmanic Ayah End Marker */}
+          <AyahEndMarker vNum={primaryNum} size="sm" className="group-hover/badge:scale-110 !mx-0" />
 
           {/* Verse Title & Translation Snippet */}
           <div className="flex items-baseline gap-2 text-left min-w-0 flex-1">
