@@ -16,37 +16,34 @@ const toArabicNumeral = (num: number): string => {
 };
 
 /**
- * Authentic Classical Uthmanic Ayah End Medallion (علامة نهاية الآية).
- * Modeled after the genuine King Fahd Complex Quranic medallion:
- * - Concentric circular medallion framing the verse number
- * - Classical side finials (ornate ear crests on horizontal axis)
- * - Top and bottom ornamental apex crowns
- * - Mathematically centered Eastern Arabic numerals that align across all screen resolutions and fonts.
+ * Geometric Islamic 8-Pointed Star Rosette (Rub el Hizb Motif).
+ * Uses explicit SVG geometry with mathematically centered concentric circles and Eastern Arabic numerals,
+ * ensuring flawless vertical and horizontal centering inside both English paragraphs and Arabic words.
  */
 export const AyahEndMarker: React.FC<AyahMarkerProps> = ({
   vNum,
   className = '',
   size = 'md',
 }) => {
-  // Proportional dimensional scale & font sizing for numerals
+  // Proportional sizing & vertical alignment calibrated to text baselines
   const dimensions =
     size === 'sm'
       ? {
-          box: 'w-[23px] h-[23px]',
-          numSize: vNum >= 100 ? '9px' : vNum >= 10 ? '10.5px' : '11.5px',
+          box: 'w-[22px] h-[22px]',
+          numSize: vNum >= 100 ? '9px' : vNum >= 10 ? '10px' : '11px',
           margin: 'mx-1',
           verticalAlign: '-0.15em',
         }
       : size === 'lg'
       ? {
-          box: 'w-[36px] h-[36px] sm:w-[40px] sm:h-[40px]',
-          numSize: vNum >= 100 ? '12.5px' : vNum >= 10 ? '14.5px' : '16px',
+          box: 'w-[38px] h-[38px] sm:w-[42px] sm:h-[42px]',
+          numSize: vNum >= 100 ? '13px' : vNum >= 10 ? '15.5px' : '17.5px',
           margin: 'mx-2',
           verticalAlign: 'middle',
         }
       : {
-          box: 'w-[27px] h-[27px]',
-          numSize: vNum >= 100 ? '10px' : vNum >= 10 ? '11.5px' : '13px',
+          box: 'w-[28px] h-[28px]',
+          numSize: vNum >= 100 ? '10.5px' : vNum >= 10 ? '12px' : '13.5px',
           margin: 'mx-1.5',
           verticalAlign: 'middle',
         };
@@ -61,88 +58,37 @@ export const AyahEndMarker: React.FC<AyahMarkerProps> = ({
         lineHeight: 1,
       }}
     >
-      {/* Precision Uthmanic Ayah Medallion Vector */}
+      {/* Precision 8-Pointed Star Rosette vector */}
       <svg
-        viewBox="0 0 44 44"
+        viewBox="0 0 40 40"
         className="absolute inset-0 w-full h-full text-[#CD7743] dark:text-[#E08955] drop-shadow-2xs overflow-visible"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        {/* Outer Circular Rim */}
-        <circle
-          cx="22"
-          cy="22"
-          r="15"
+        {/* Unified 8-pointed Islamic Star perimeter */}
+        <polygon
+          points="20,1.5 25.66,6.33 33.08,6.92 33.67,14.34 38.5,20 33.67,25.66 33.08,33.08 25.66,33.67 20,38.5 14.34,33.67 6.92,33.08 6.33,25.66 1.5,20 6.33,14.34 6.92,6.92 14.34,6.33"
+          fill="currentColor"
+          fillOpacity="0.07"
           stroke="currentColor"
           strokeWidth="1.3"
-          fill="currentColor"
-          fillOpacity="0.06"
-        />
-
-        {/* Inner Concentric Beaded Frame */}
-        <circle
-          cx="22"
-          cy="22"
-          r="12.2"
-          stroke="currentColor"
-          strokeWidth="0.9"
-          strokeDasharray="2.5 1.5"
-          fill="currentColor"
-          fillOpacity="0.03"
-        />
-
-        {/* Left Side Finial / Ear (Classic Uthmanic horizontal ornament) */}
-        <path
-          d="M 7,22 C 3.5,22 1.5,20.5 1.5,22 C 1.5,23.5 3.5,22 7,22 Z"
-          stroke="currentColor"
-          strokeWidth="1.2"
           strokeLinejoin="round"
-          fill="currentColor"
         />
-        <path
-          d="M 7,22 C 4.5,19.5 2,20.5 1.5,22 C 2,23.5 4.5,24.5 7,22 Z"
+        {/* Inner concentric circular frame */}
+        <circle
+          cx="20"
+          cy="20"
+          r="13"
           stroke="currentColor"
           strokeWidth="1"
           fill="currentColor"
-          fillOpacity="0.12"
+          fillOpacity="0.04"
         />
-        <circle cx="2" cy="22" r="1.1" fill="currentColor" />
-
-        {/* Right Side Finial / Ear */}
-        <path
-          d="M 37,22 C 39.5,19.5 42,20.5 42.5,22 C 42,23.5 39.5,24.5 37,22 Z"
-          stroke="currentColor"
-          strokeWidth="1"
-          fill="currentColor"
-          fillOpacity="0.12"
-        />
-        <circle cx="42" cy="22" r="1.1" fill="currentColor" />
-
-        {/* Top Ornamental Apex Crown */}
-        <path
-          d="M 22,7 C 20.5,4.5 21,2 22,1.5 C 23,2 23.5,4.5 22,7 Z"
-          stroke="currentColor"
-          strokeWidth="1"
-          fill="currentColor"
-          fillOpacity="0.15"
-        />
-        <circle cx="22" cy="2" r="1.1" fill="currentColor" />
-
-        {/* Bottom Ornamental Apex Crown */}
-        <path
-          d="M 22,37 C 20.5,39.5 21,42 22,42.5 C 23,42 23.5,39.5 22,37 Z"
-          stroke="currentColor"
-          strokeWidth="1"
-          fill="currentColor"
-          fillOpacity="0.15"
-        />
-        <circle cx="22" cy="42" r="1.1" fill="currentColor" />
-
-        {/* Four Subtle Corner Accent Points (45-degree diagonals) */}
-        <circle cx="11.5" cy="11.5" r="0.9" fill="currentColor" />
-        <circle cx="32.5" cy="11.5" r="0.9" fill="currentColor" />
-        <circle cx="11.5" cy="32.5" r="0.9" fill="currentColor" />
-        <circle cx="32.5" cy="32.5" r="0.9" fill="currentColor" />
+        {/* 4 cardinal alignment dots */}
+        <circle cx="20" cy="4" r="1.1" fill="currentColor" />
+        <circle cx="20" cy="36" r="1.1" fill="currentColor" />
+        <circle cx="4" cy="20" r="1.1" fill="currentColor" />
+        <circle cx="36" cy="20" r="1.1" fill="currentColor" />
       </svg>
 
       {/* Dead-center Eastern Arabic Numeral */}
@@ -163,4 +109,3 @@ export const AyahEndMarker: React.FC<AyahMarkerProps> = ({
 };
 
 export { toArabicNumeral };
-
