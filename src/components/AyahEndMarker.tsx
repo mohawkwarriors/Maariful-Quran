@@ -32,13 +32,15 @@ export const AyahEndMarker: React.FC<AyahMarkerProps> = ({
   // - 'sm' for English translation body text (seamless baseline inline flow)
   // - 'md' for standard standalone markers
   // - 'lg' for inline word-by-word Arabic flow (matches 28px-32px Arabic font)
-  const sizeStyles =
+  const sizeStyles: React.CSSProperties =
     size === 'sm'
       ? {
-          fontSize: '1.45em',
-          margin: '0 0.35rem',
+          fontSize: '1.25em',
+          margin: '0 0.3rem',
           lineHeight: '1',
-          verticalAlign: '-0.12em',
+          verticalAlign: 'baseline',
+          position: 'relative',
+          top: '0.12em',
         }
       : size === 'lg'
       ? {
@@ -48,7 +50,7 @@ export const AyahEndMarker: React.FC<AyahMarkerProps> = ({
           verticalAlign: 'middle',
         }
       : {
-          fontSize: '1.6em',
+          fontSize: '1.5em',
           margin: '0 0.4rem',
           lineHeight: '1',
           verticalAlign: 'middle',
