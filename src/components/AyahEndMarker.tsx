@@ -37,7 +37,7 @@ export const AyahEndMarker: React.FC<AyahMarkerProps> = ({
       ? {
           fontSize: '1.25em',
           margin: '0 0.35rem',
-          verticalAlign: '-0.02em',
+          verticalAlign: '0.12em',
         }
       : size === 'lg'
       ? {
