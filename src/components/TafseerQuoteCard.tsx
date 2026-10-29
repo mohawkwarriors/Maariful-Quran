@@ -2,6 +2,7 @@ import React from 'react';
 import { BookOpen, Quote, Sparkles } from 'lucide-react';
 import { parseQuranCitation, formatQuranCitationFooter } from '../utils/quranCitation';
 import { parseHadithCitation } from '../utils/hadithCitation';
+import { parseScholarCitation } from '../utils/scholarCitation';
 
 export type QuoteType = 'hadith' | 'scholar' | 'quran' | 'dua';
 
@@ -84,6 +85,12 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
     return parseHadithCitation(fullText, isHadithQudsi, source);
   }, [type, fullText, isHadithQudsi, source]);
 
+  // Extract structured Classical Authority citation if this is a Scholar card
+  const scholarCitation = React.useMemo(() => {
+    if (type !== 'scholar') return null;
+    return parseScholarCitation(fullText, source);
+  }, [type, fullText, source]);
+
   // Determine badge and border styling based on quote type (thin border all around)
   const theme = React.useMemo(() => {
     switch (type) {
@@ -107,13 +114,11 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
       case 'scholar':
         return {
           icon: Quote,
-          badgeTitle: detectedCitation
-            ? `Scholar · ${detectedCitation}`
-            : 'Classical Authority · Scholarly Quote',
+          badgeTitle: 'Classical Authority',
           badgeClasses: 'text-[#596B8E] dark:text-[#788BB3]',
           badgeBgClasses: 'bg-[#596B8E]/10 dark:bg-[#596B8E]/20',
           borderClasses: 'border-[#596B8E]/30 dark:border-[#788BB3]/35 hover:border-[#596B8E]/50',
-          defaultSource: "Ma'ariful Qur'an Classical Exegesis",
+          defaultSource: scholarCitation?.fullCitation || "Ma'ariful Qur'an Classical Exegesis",
         };
       case 'quran':
         return {
@@ -136,7 +141,7 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
           defaultSource: "Qur'anic Supplication & Prophetic Du'a",
         };
     }
-  }, [type, isHadithQudsi, hadithCitation, detectedCitation, surahNumber, surahName]);
+  }, [type, isHadithQudsi, hadithCitation, scholarCitation, surahNumber, surahName]);
 
   const IconComponent = theme.icon;
 
@@ -339,6 +344,8 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
                 : detectedCitation || theme.defaultSource)
             : type === 'hadith'
             ? hadithCitation?.fullCitation || detectedCitation || theme.defaultSource
+            : type === 'scholar'
+            ? scholarCitation?.fullCitation || detectedCitation || theme.defaultSource
             : detectedCitation || theme.defaultSource}
         </span>
       </div>
