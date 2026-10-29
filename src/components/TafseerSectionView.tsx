@@ -691,11 +691,14 @@ const TafseerCommentaryBlock: React.FC<{
       </div>
 
       {/* Baked-in Key Takeaways Card */}
-      {(sectionSummary || (summaryPoints && summaryPoints.length > 0)) && (
+      {summaryPoints && summaryPoints.length > 0 && (
         <TafseerStudyCard
           type="takeaways"
-          summary={sectionSummary}
-          points={summaryPoints}
+          points={
+            sectionSummary && !summaryPoints.includes(sectionSummary)
+              ? [sectionSummary, ...summaryPoints]
+              : summaryPoints
+          }
         />
       )}
 

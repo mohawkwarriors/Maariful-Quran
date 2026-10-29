@@ -108,11 +108,11 @@ export const TafseerStudyCard: React.FC<TafseerStudyCardProps> = ({
         </div>
       </div>
 
-      {/* Thematic Synthesis / Executive Summary Block (if present) */}
-      {summary && (
-        <div className={`p-3 sm:p-3.5 rounded-xl bg-white/70 dark:bg-black/20 border ${theme.dividerClasses} text-[15px] sm:text-[15.5px] font-reader text-[#292524] dark:text-[#D6D3D1] leading-relaxed`}>
+      {/* Summary note / lead paragraph (if present and no bullet points) */}
+      {summary && (!points || points.length === 0) && (
+        <p className="text-[15px] sm:text-[15.5px] font-reader text-[#292524] dark:text-[#D6D3D1] leading-relaxed">
           {summary.replace(/^["“”']+|["“”']+$/g, '')}
-        </div>
+        </p>
       )}
 
       {/* Specific section title if present and not redundant with card badge */}
