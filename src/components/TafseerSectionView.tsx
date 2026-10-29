@@ -5,9 +5,11 @@ import { WordDeepDiveModal } from './WordDeepDiveModal';
 import { getWordDeepDive } from '../services/quranLexicon';
 import { TafseerStudyCard, StudyCardType } from './TafseerStudyCard';
 import { TafseerQuoteCard, QuoteType } from './TafseerQuoteCard';
+import { StoryDialogueCard } from './StoryDialogueCard';
 import { renderContentWithFootnotes, FootnotesSection } from './FootnotePopover';
 import { SURAH_TRANSLITERATED_NAMES, matchAyahFromSection, parseQuranCitation } from '../utils/quranCitation';
 import { interleaveStudyCards, RawCommentaryBlock } from '../utils/cardPlacement';
+import { matchStoryDialogueSequence } from '../utils/storyDialogue';
 import { ChevronDown, ChevronUp, Bookmark, ArrowUpRight } from 'lucide-react';
 
 interface TafseerSectionViewProps {
@@ -622,6 +624,17 @@ const TafseerCommentaryBlock: React.FC<{
         continue;
       }
 
+      // Check if this starts an extended historical storytelling exchange (e.g. Abu Hazim and the Caliph)
+      const storyMatch = matchStoryDialogueSequence(rawParagraphs, i);
+      if (storyMatch) {
+        blocks.push({
+          type: 'story-dialogue',
+          group: storyMatch.group,
+        });
+        i += storyMatch.matchedCount;
+        continue;
+      }
+
       // Check if this paragraph is a verse heading like [Verse 1] or [Verses 4–5]
       if (/^\[\s*Verses?\s*[\d\s\-–—,and]+\s*\]$/i.test(trimmed)) {
         const { primaryNum } = parseVerseMarker(trimmed);
@@ -762,6 +775,17 @@ const TafseerCommentaryBlock: React.FC<{
                   surahNumber={surahNumber}
                   surahName={surahName}
                   verseNumber={block.verseNumber}
+                />
+              );
+            }
+
+            if (block.type === 'story-dialogue') {
+              return (
+                <StoryDialogueCard
+                  key={`cdialogue-${idx}`}
+                  contextIntro={block.group.contextIntro}
+                  sourceAuthority={block.group.sourceAuthority}
+                  turns={block.group.turns}
                 />
               );
             }

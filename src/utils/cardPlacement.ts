@@ -1,5 +1,6 @@
 import { SubSection } from '../types/quran';
 import { QuoteType } from '../components/TafseerQuoteCard';
+import { StoryDialogueGroup } from './storyDialogue';
 
 export type RawCommentaryBlock =
   | { type: 'verse-heading'; raw: string }
@@ -13,6 +14,7 @@ export type RawCommentaryBlock =
       source?: string;
       verseNumber?: number | string;
     }
+  | { type: 'story-dialogue'; group: StoryDialogueGroup }
   | { type: 'text'; content: string };
 
 export type CommentaryBlock =
