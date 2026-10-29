@@ -199,8 +199,7 @@ export function parseHadithCitation(
   const sourceName = extractHadithSourceName(text, explicitSource);
   const narrator = extractHadithNarrator(text);
 
-  const prefix = isQudsi ? 'Hadith Qudsi' : 'Hadith';
-  const badgeLabel = sourceName ? `${prefix} · ${sourceName}` : prefix;
+  const badgeLabel = isQudsi ? 'Hadith Qudsi' : 'Hadith';
 
   let fullCitation: string;
   if (isQudsi) {
@@ -217,11 +216,11 @@ export function parseHadithCitation(
     if (narrator && sourceName) {
       fullCitation = `${narrator} · ${sourceName}`;
     } else if (sourceName) {
-      fullCitation = `The Holy Prophet ﷺ · ${sourceName}`;
+      fullCitation = sourceName;
     } else if (narrator) {
       fullCitation = `${narrator} · Prophetic Hadith`;
     } else {
-      fullCitation = 'The Holy Prophet ﷺ · Prophetic Hadith';
+      fullCitation = 'Prophetic Hadith';
     }
   }
 

@@ -161,11 +161,29 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
       }
     }
 
+    let cleanedEn = enLines.length > 0 ? enLines.join('\n') : textToAnalyze;
+
+    // For hadith and scholar quotes, strip trailing parenthetical citations like (Ibn Kathir), (Bukhari), etc.
+    // since they are already displayed cleanly in the footer citation
+    if (type === 'hadith' || type === 'scholar') {
+      cleanedEn = cleanedEn.replace(
+        /\s*\((?:See\s+|Recorded\s+by\s+|Narrated\s+by\s+)?[^)]+\)\s*[."”']*\s*$/i,
+        (match) => {
+          // If the match ends with closing quote or period, preserve the sentence punctuation
+          if (/[."”']/.test(match)) {
+            const punct = match.match(/[."”']+$/);
+            return punct ? punct[0] : '';
+          }
+          return '';
+        }
+      );
+    }
+
     return {
       arabicText: arLines.length > 0 ? arLines.join('\n') : undefined,
-      englishText: enLines.length > 0 ? enLines.join('\n') : textToAnalyze,
+      englishText: cleanedEn,
     };
-  }, [arabic, english, rawText]);
+  }, [arabic, english, rawText, type]);
 
   // Dua parsing for structured supplications
   const parsedDua = React.useMemo(() => {
@@ -242,20 +260,12 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
           </span>
         </div>
 
-        {/* Right header citation: clean source when not already in badge */}
-        {type === 'quran' ? null : type === 'hadith' ? (
-          !hadithCitation?.sourceName && detectedCitation ? (
-            <span className="text-xs font-reader font-medium text-stone-500 dark:text-stone-400">
-              {detectedCitation}
-            </span>
-          ) : null
-        ) : (
-          detectedCitation && (
-            <span className="text-xs font-reader font-medium text-stone-500 dark:text-stone-400">
-              {detectedCitation}
-            </span>
-          )
-        )}
+        {/* Right header citation: clean source for scholar quotes */}
+        {type === 'scholar' && detectedCitation ? (
+          <span className="text-xs font-reader font-medium text-stone-500 dark:text-stone-400">
+            {detectedCitation}
+          </span>
+        ) : null}
       </div>
 
       {/* Dua Supplication Body */}
