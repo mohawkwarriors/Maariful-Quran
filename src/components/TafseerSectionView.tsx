@@ -1055,7 +1055,7 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
                       return (
                         <div
                           key={`word-end-${vNum}`}
-                          className="inline-flex items-center gap-1 sm:gap-1.5 shrink-0"
+                          className="inline-flex items-center gap-1.5 sm:gap-2 shrink-0 self-center"
                         >
                           <WordItem
                             key={`word-${vNum}-${wIdx}`}
@@ -1064,7 +1064,9 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
                             root={item.root}
                             grammarNote={item.grammarNote}
                           />
-                          <AyahEndMarker vNum={vNum} />
+                          <div className="flex flex-col items-center justify-center self-stretch pb-6 sm:pb-7">
+                            <AyahEndMarker vNum={vNum} size="lg" />
+                          </div>
                         </div>
                       );
                     }
@@ -1078,7 +1080,11 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
                       />
                     );
                   })}
-                  {words.length === 0 && <AyahEndMarker vNum={vNum} />}
+                  {words.length === 0 && (
+                    <div className="flex items-center justify-center py-2">
+                      <AyahEndMarker vNum={vNum} size="lg" />
+                    </div>
+                  )}
                 </div>
 
                 {/* Compact Cohesive English Translation (Centered) */}

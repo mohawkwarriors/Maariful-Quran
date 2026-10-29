@@ -26,11 +26,12 @@ export const AyahEndMarker: React.FC<AyahMarkerProps> = ({
   size = 'md',
 }) => {
   // Dimension definitions for pixel-perfect centering and proportional scaling
+  // 'inline': specifically proportioned to sit beside the Arabic word block (min-h-[48px..52px], font size 26px-31px)
   const dimensions =
     size === 'sm'
       ? { box: 'w-[23px] h-[23px]', numSize: vNum >= 100 ? '9px' : vNum >= 10 ? '10.5px' : '12px', margin: 'mx-1' }
       : size === 'lg'
-      ? { box: 'w-[36px] h-[36px]', numSize: vNum >= 100 ? '12px' : vNum >= 10 ? '14px' : '16px', margin: 'mx-2' }
+      ? { box: 'w-[38px] h-[38px] sm:w-[42px] sm:h-[42px]', numSize: vNum >= 100 ? '13px' : vNum >= 10 ? '15.5px' : '17.5px', margin: 'mx-2' }
       : { box: 'w-[28px] h-[28px]', numSize: vNum >= 100 ? '10.5px' : vNum >= 10 ? '12px' : '13.5px', margin: 'mx-1.5' };
 
   return (
