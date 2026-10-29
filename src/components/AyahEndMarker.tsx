@@ -16,78 +16,54 @@ const toArabicNumeral = (num: number): string => {
 };
 
 /**
- * Geometric Islamic 8-Pointed Star Rosette (Rub el Hizb Motif).
- * Uses explicit SVG geometry with mathematically centered concentric circles and Eastern Arabic numerals,
- * ensuring flawless vertical and horizontal centering inside both English paragraphs and Arabic words.
+ * Authentic Classical Uthmanic Ayah End Marker (علامة نهاية الآية - U+06DD).
+ * Uses the genuine Quranic font glyph and ligature (۝ + Eastern Arabic numerals)
+ * from the King Fahd Complex Uthmanic script font, ensuring identical design, ornamentation,
+ * and proportions as the full Arabic Quran block.
  */
 export const AyahEndMarker: React.FC<AyahMarkerProps> = ({
   vNum,
   className = '',
   size = 'md',
 }) => {
-  // Dimension definitions for pixel-perfect centering and proportional scaling
-  // 'inline': specifically proportioned to sit beside the Arabic word block (min-h-[48px..52px], font size 26px-31px)
-  const dimensions =
+  const arabicNum = toArabicNumeral(vNum);
+
+  // Proportional sizing calibrated to font em heights:
+  // - 'sm' for English translation body text (seamless baseline inline flow)
+  // - 'md' for standard standalone markers
+  // - 'lg' for inline word-by-word Arabic flow (matches 28px-32px Arabic font)
+  const sizeStyles =
     size === 'sm'
-      ? { box: 'w-[23px] h-[23px]', numSize: vNum >= 100 ? '9px' : vNum >= 10 ? '10.5px' : '12px', margin: 'mx-1' }
+      ? {
+          fontSize: '1.45em',
+          margin: '0 0.35rem',
+          lineHeight: '1',
+          verticalAlign: '-0.12em',
+        }
       : size === 'lg'
-      ? { box: 'w-[38px] h-[38px] sm:w-[42px] sm:h-[42px]', numSize: vNum >= 100 ? '13px' : vNum >= 10 ? '15.5px' : '17.5px', margin: 'mx-2' }
-      : { box: 'w-[28px] h-[28px]', numSize: vNum >= 100 ? '10.5px' : vNum >= 10 ? '12px' : '13.5px', margin: 'mx-1.5' };
+      ? {
+          fontSize: '1.9em',
+          margin: '0 0.5rem',
+          lineHeight: '1',
+          verticalAlign: 'middle',
+        }
+      : {
+          fontSize: '1.6em',
+          margin: '0 0.4rem',
+          lineHeight: '1',
+          verticalAlign: 'middle',
+        };
 
   return (
     <span
-      className={`relative inline-flex items-center justify-center shrink-0 select-none ${dimensions.box} ${dimensions.margin} ${className} transition-transform hover:scale-105 cursor-default`}
+      dir="rtl"
+      className={`font-quran inline-flex items-center justify-center select-none text-[#CD7743] dark:text-[#E08955] transition-transform hover:scale-105 cursor-default shrink-0 ${className}`}
       title={`Ayah ${vNum}`}
       aria-label={`Ayah ${vNum}`}
-      style={{
-        verticalAlign: 'middle',
-      }}
+      style={sizeStyles}
     >
-      {/* Precision 8-Pointed Star Rosette vector */}
-      <svg
-        viewBox="0 0 40 40"
-        className="absolute inset-0 w-full h-full text-[#CD7743] dark:text-[#E08955] drop-shadow-2xs"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        {/* Unified 8-pointed Islamic Star perimeter */}
-        <polygon
-          points="20,1.5 25.66,6.33 33.08,6.92 33.67,14.34 38.5,20 33.67,25.66 33.08,33.08 25.66,33.67 20,38.5 14.34,33.67 6.92,33.08 6.33,25.66 1.5,20 6.33,14.34 6.92,6.92 14.34,6.33"
-          fill="currentColor"
-          fillOpacity="0.07"
-          stroke="currentColor"
-          strokeWidth="1.3"
-          strokeLinejoin="round"
-        />
-        {/* Inner concentric circular frame */}
-        <circle
-          cx="20"
-          cy="20"
-          r="13"
-          stroke="currentColor"
-          strokeWidth="1"
-          fill="currentColor"
-          fillOpacity="0.04"
-        />
-        {/* 4 cardinal alignment dots */}
-        <circle cx="20" cy="4" r="1.1" fill="currentColor" />
-        <circle cx="20" cy="36" r="1.1" fill="currentColor" />
-        <circle cx="4" cy="20" r="1.1" fill="currentColor" />
-        <circle cx="36" cy="20" r="1.1" fill="currentColor" />
-      </svg>
-
-      {/* Dead-center Eastern Arabic Numeral */}
-      <span
-        dir="rtl"
-        className="relative z-10 flex items-center justify-center text-center font-bold text-[#CD7743] dark:text-[#E08955] leading-none select-none"
-        style={{
-          fontFamily: "'Amiri', 'Scheherazade New', serif",
-          fontSize: dimensions.numSize,
-          letterSpacing: vNum >= 100 ? '-0.4px' : 'normal',
-          transform: 'translateY(-0.5px)',
-        }}
-      >
-        {toArabicNumeral(vNum)}
+      <span className="leading-none whitespace-nowrap">
+        {'\u06dd'}{arabicNum}
       </span>
     </span>
   );

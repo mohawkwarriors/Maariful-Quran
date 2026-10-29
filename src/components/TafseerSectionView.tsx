@@ -1067,7 +1067,7 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
                             root={item.root}
                             grammarNote={item.grammarNote}
                           />
-                          <div className="flex flex-col items-center justify-center self-stretch pb-6 sm:pb-7">
+                          <div className="flex flex-col items-center justify-center self-stretch pb-5 sm:pb-6">
                             <AyahEndMarker vNum={vNum} size="lg" />
                           </div>
                         </div>
