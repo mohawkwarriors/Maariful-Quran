@@ -591,7 +591,33 @@ const TafseerCommentaryBlock: React.FC<{
         return [{ type: 'quote', quoteType: 'scholar', content: t }];
       }
 
-      // 6. Qur'an Scripture citation quote within exegesis
+      // 6. Embedded Qur'an Scripture citation with lead-in commentary prose
+      const arIdx = t.search(/[\u0600-\u06FF]/);
+      const refMatch = t.match(/\((\d+:\d+(?:[-–—]\d+)?)\)\s*$/);
+      if (arIdx > 0 && refMatch && t.length < 800) {
+        const lead = t.slice(0, arIdx).trim().replace(/^["“]+|["”:\s]+$/g, '').trim();
+        const rest = t.slice(arIdx, refMatch.index).trim();
+        const quoteMatch = rest.match(/["“]([^"”]+)["”]/) || rest.match(/'([^']+)'/);
+
+        if (quoteMatch && lead.length >= 8) {
+          const arabic = rest.slice(0, quoteMatch.index).trim().replace(/[:：\s"“']+$/, '');
+          const english = quoteMatch[1].trim();
+          const ref = refMatch[1].trim();
+
+          const result: RawCommentaryBlock[] = [{ type: 'text', content: `${lead}:` }];
+          result.push({
+            type: 'quote',
+            quoteType: 'quran',
+            arabic,
+            english,
+            content: `${arabic}\n\n"${english}" (${ref})`,
+            verseNumber: ref,
+          });
+          return result;
+        }
+      }
+
+      // 7. Qur'an Scripture citation quote within exegesis
       const isQuranQuote =
         (/["“][^"”]{10,}["”]\s*\(\d+:\s*\d+(?:[-–—]\d+)?\)/.test(t) ||
           (/^\s*["“]/.test(t) && /\(\d+:\s*\d+(?:[-–—]\d+)?\)/.test(t))) &&
@@ -606,7 +632,7 @@ const TafseerCommentaryBlock: React.FC<{
         return [{ type: 'quote', quoteType: 'quran', content: t, verseNumber: resolvedVerse }];
       }
 
-      // 7. Regular prose text
+      // 8. Regular prose text
       return [{ type: 'text', content: t }];
     };
 

@@ -80,7 +80,7 @@ export function matchStoryDialogueSequence(
     const refMatch = raw.match(/\((\d+:\d+(?:[-–—]\d+)?)\)\s*$/);
 
     if (arIdx !== -1 && refMatch) {
-      const leadIn = raw.slice(0, arIdx).trim().replace(/^["“]+|["”:\s]+$/g, '').trim();
+      const leadInRaw = raw.slice(0, arIdx).trim().replace(/^["“]+|["”:\s]+$/g, '').trim();
       const rest = raw.slice(arIdx, refMatch.index).trim();
       const quoteMatch = rest.match(/["“]([^"”]+)["”]/);
 
@@ -96,9 +96,25 @@ export function matchStoryDialogueSequence(
         ? formatQuranCitationFooter(parsedCite)
         : `Qur'an (${ref})`;
 
+      // Separate conversational speech from the recitation prompt
+      let speech = '';
+      let leadIn = '';
+
+      const recitationPromptMatch = leadInRaw.match(
+        /(?:(?:And\s+)?(?:he\s+)?recited\s+(?:this\s+verse\s+of\s+the\s+Holy\s+Qur'an|another\s+verse|the\s+verse)|Here\s+is\s+the\s+verse)/i
+      );
+
+      if (recitationPromptMatch) {
+        const promptIdx = recitationPromptMatch.index!;
+        speech = leadInRaw.slice(0, promptIdx).trim();
+        leadIn = leadInRaw.slice(promptIdx).trim();
+      } else {
+        leadIn = leadInRaw;
+      }
+
       turns.push({
         speaker,
-        speech: '',
+        speech,
         leadIn: leadIn || undefined,
         ayah: {
           arabic,
