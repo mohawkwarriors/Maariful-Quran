@@ -31,8 +31,8 @@ interface ThemeConfig {
 const CARD_THEMES: Record<StudyCardType, ThemeConfig> = {
   takeaways: {
     icon: Sparkles,
-    defaultBadge: 'Summary & Key Takeaways',
-    defaultFooter: "Ma'ariful Qur'an · Core Synthesis",
+    defaultBadge: 'Summary',
+    defaultFooter: '',
     containerClasses: 'bg-[#CD7743]/[0.06] dark:bg-[#CD7743]/[0.09]',
     borderClasses: 'border-[#CD7743]/35 dark:border-[#E08955]/35 hover:border-[#CD7743]/55 dark:hover:border-[#E08955]/55',
     dividerClasses: 'border-[#CD7743]/15 dark:border-[#CD7743]/20',
@@ -107,15 +107,17 @@ export const TafseerStudyCard: React.FC<TafseerStudyCardProps> = ({
             {badgeLabel || theme.defaultBadge}
           </span>
         </div>
-        <span className="text-[11px] font-reader text-stone-400 dark:text-stone-500 hidden sm:inline">
-          {footerSource || theme.defaultFooter}
-        </span>
+        {(footerSource || theme.defaultFooter) && (
+          <span className="text-[11px] font-reader text-stone-400 dark:text-stone-500 hidden sm:inline">
+            {footerSource || theme.defaultFooter}
+          </span>
+        )}
       </div>
 
       {/* Thematic Synthesis / Executive Summary Block (if present) */}
       {summary && (
-        <div className={`p-3 sm:p-3.5 rounded-xl bg-white/70 dark:bg-black/20 border ${theme.dividerClasses} text-[15px] sm:text-[15.5px] font-reader text-[#292524] dark:text-[#D6D3D1] leading-relaxed italic`}>
-          "{summary}"
+        <div className={`p-3 sm:p-3.5 rounded-xl bg-white/70 dark:bg-black/20 border ${theme.dividerClasses} text-[15px] sm:text-[15.5px] font-reader text-[#292524] dark:text-[#D6D3D1] leading-relaxed`}>
+          {summary.replace(/^["“”']+|["“”']+$/g, '')}
         </div>
       )}
 
