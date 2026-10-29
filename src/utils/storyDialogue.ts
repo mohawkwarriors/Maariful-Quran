@@ -80,7 +80,7 @@ export function matchStoryDialogueSequence(
     const refMatch = raw.match(/\((\d+:\d+(?:[-–—]\d+)?)\)\s*$/);
 
     if (arIdx !== -1 && refMatch) {
-      const leadInRaw = raw.slice(0, arIdx).trim().replace(/^["“]+|["”:\s]+$/g, '').trim();
+      let leadInRaw = raw.slice(0, arIdx).trim().replace(/^["“]+|["”:\s]+$/g, '').trim();
       const rest = raw.slice(arIdx, refMatch.index).trim();
       const quoteMatch = rest.match(/["“]([^"”]+)["”]/);
 
@@ -96,26 +96,39 @@ export function matchStoryDialogueSequence(
         ? formatQuranCitationFooter(parsedCite)
         : `Qur'an (${ref})`;
 
-      // Separate conversational speech from the recitation prompt
-      let speech = '';
-      let leadIn = '';
+      // Clean redundant speaker prefixes (e.g. avoid "Abu Hazim: Abu Hazim recited...")
+      leadInRaw = leadInRaw.replace(/^(?:Abu\s+Hazim|The\s+Caliph|Said\s+Abu\s+Hazim|Said\s+the\s+Caliph)\s+/i, '').trim();
 
+      let speech = '';
       const recitationPromptMatch = leadInRaw.match(
         /(?:(?:And\s+)?(?:he\s+)?recited\s+(?:this\s+verse\s+of\s+the\s+Holy\s+Qur'an|another\s+verse|the\s+verse)|Here\s+is\s+the\s+verse)/i
       );
 
       if (recitationPromptMatch) {
         const promptIdx = recitationPromptMatch.index!;
-        speech = leadInRaw.slice(0, promptIdx).trim();
-        leadIn = leadInRaw.slice(promptIdx).trim();
+        const prePrompt = leadInRaw.slice(0, promptIdx).trim();
+        const prompt = leadInRaw.slice(promptIdx).trim();
+
+        if (prePrompt) {
+          speech = `${prePrompt} ${prompt}`;
+        } else {
+          speech = prompt;
+        }
       } else {
-        leadIn = leadInRaw;
+        speech = leadInRaw;
+      }
+
+      // Ensure proper capitalization and colon ending for conversational lead-in
+      if (speech) {
+        speech = speech.charAt(0).toUpperCase() + speech.slice(1);
+        if (!speech.endsWith(':') && !speech.endsWith('.')) {
+          speech += ':';
+        }
       }
 
       turns.push({
         speaker,
         speech,
-        leadIn: leadIn || undefined,
         ayah: {
           arabic,
           english,

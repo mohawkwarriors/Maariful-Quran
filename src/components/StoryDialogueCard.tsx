@@ -67,7 +67,7 @@ export const StoryDialogueCard: React.FC<StoryDialogueCardProps> = ({
               {/* Recited Scripture Block: Clean, subtle indentation with zero box borders */}
               {turn.ayah && (
                 <div className="my-3 pl-4 sm:pl-5 border-l-2 border-[#4C7971]/60 dark:border-[#639C92]/60 py-1 space-y-2">
-                  {turn.leadIn && (
+                  {turn.leadIn && !turn.speech && (
                     <p className="text-[14px] text-stone-600 dark:text-stone-400 italic">
                       {turn.leadIn}
                     </p>
