@@ -6,6 +6,7 @@ import { getWordDeepDive } from '../services/quranLexicon';
 import { TafseerStudyCard, StudyCardType } from './TafseerStudyCard';
 import { TafseerQuoteCard, QuoteType } from './TafseerQuoteCard';
 import { StoryDialogueCard } from './StoryDialogueCard';
+import { AyahEndMarker } from './AyahEndMarker';
 import { renderContentWithFootnotes, FootnotesSection } from './FootnotePopover';
 import { SURAH_TRANSLITERATED_NAMES, matchAyahFromSection, parseQuranCitation } from '../utils/quranCitation';
 import { interleaveStudyCards, RawCommentaryBlock } from '../utils/cardPlacement';
@@ -26,72 +27,6 @@ interface WordItemProps {
   root?: string;
   grammarNote?: string;
 }
-
-const toArabicNumeral = (num: number): string => {
-  const arabicDigits = ['٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩'];
-  return num
-    .toString()
-    .split('')
-    .map((d) => arabicDigits[parseInt(d, 10)] ?? d)
-    .join('');
-};
-
-const AyahEndMarker: React.FC<{ vNum: number }> = ({ vNum }) => {
-  return (
-    <div
-      className="relative inline-flex items-center justify-center shrink-0 self-center mx-1.5 sm:mx-2 select-none w-[32px] h-[32px] sm:w-[36px] sm:h-[36px] transition-transform hover:scale-105"
-      title={`Ayah ${vNum}`}
-      aria-label={`Ayah ${vNum}`}
-    >
-      {/* Simplified, Elegant Islamic 8-Pointed Star Rosette (Rub el Hizb Motif) */}
-      <svg
-        viewBox="0 0 40 40"
-        className="absolute inset-0 w-full h-full text-[#CD7743] dark:text-[#E08955] drop-shadow-2xs"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        {/* Unified 8-pointed Islamic Star perimeter */}
-        <polygon
-          points="20,1.5 25.66,6.33 33.08,6.92 33.67,14.34 38.5,20 33.67,25.66 33.08,33.08 25.66,33.67 20,38.5 14.34,33.67 6.92,33.08 6.33,25.66 1.5,20 6.33,14.34 6.92,6.92 14.34,6.33"
-          fill="currentColor"
-          fillOpacity="0.06"
-          stroke="currentColor"
-          strokeWidth="1.2"
-          strokeLinejoin="round"
-        />
-        {/* Inner concentric ring framing the numeral */}
-        <circle
-          cx="20"
-          cy="20"
-          r="13"
-          stroke="currentColor"
-          strokeWidth="1"
-          fill="currentColor"
-          fillOpacity="0.04"
-        />
-        {/* 4 subtle cardinal ornament accents */}
-        <circle cx="20" cy="4" r="1.1" fill="currentColor" />
-        <circle cx="20" cy="36" r="1.1" fill="currentColor" />
-        <circle cx="4" cy="20" r="1.1" fill="currentColor" />
-        <circle cx="36" cy="20" r="1.1" fill="currentColor" />
-      </svg>
-
-      {/* Dead-Center Eastern Arabic Numeral with tailored font-size for triple digits */}
-      <span
-        dir="rtl"
-        className="relative z-10 flex items-center justify-center text-center font-bold text-[#CD7743] dark:text-[#E08955] leading-none select-none"
-        style={{
-          fontFamily: "'Amiri', 'Scheherazade New', serif",
-          fontSize: vNum >= 100 ? '11.5px' : vNum >= 10 ? '13px' : '15px',
-          letterSpacing: vNum >= 100 ? '-0.4px' : 'normal',
-          transform: 'translateY(-0.5px)',
-        }}
-      >
-        {toArabicNumeral(vNum)}
-      </span>
-    </div>
-  );
-};
 
 const WordItem: React.FC<WordItemProps> = ({ word, meaning, root, grammarNote }) => {
   const [open, setOpen] = useState(false);
