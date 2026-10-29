@@ -142,7 +142,7 @@ export const TermPopover: React.FC<TermPopoverProps> = ({ termText, termData }) 
                       </span>
                       <span
                         dir="rtl"
-                        className="font-quran text-[14px] sm:text-[15px] text-[#CD7743] dark:text-[#E08955] leading-none px-1.5 py-0.5 rounded-md bg-white dark:bg-[#1E1E23] border border-stone-200/70 dark:border-stone-700/60 shadow-3xs select-text"
+                        className="font-quran text-[14px] sm:text-[15px] text-[#CD7743] dark:text-[#E08955] leading-normal select-text inline-flex items-center justify-center"
                       >
                         {parsed.arabic}
                       </span>
