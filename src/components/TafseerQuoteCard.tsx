@@ -249,7 +249,7 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
     <div
       className={`not-prose my-5 rounded-2xl bg-[#FCFAF7] dark:bg-[#1E1E23] border ${theme.borderClasses} p-4 sm:p-5 shadow-2xs space-y-3.5 transition-all select-text`}
     >
-      {/* Header bar with category badge and citation source */}
+      {/* Header bar with category badge */}
       <div className="flex items-center justify-between gap-2 border-b border-stone-100 dark:border-stone-800/80 pb-2.5">
         <div className="flex items-center gap-2">
           <div className={`p-1.5 rounded-lg ${theme.badgeBgClasses} shrink-0`}>
@@ -259,13 +259,6 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
             {theme.badgeTitle}
           </span>
         </div>
-
-        {/* Right header citation: clean source for scholar quotes */}
-        {type === 'scholar' && detectedCitation ? (
-          <span className="text-xs font-reader font-medium text-stone-500 dark:text-stone-400">
-            {detectedCitation}
-          </span>
-        ) : null}
       </div>
 
       {/* Dua Supplication Body */}

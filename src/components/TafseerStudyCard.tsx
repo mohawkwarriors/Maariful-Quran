@@ -18,7 +18,6 @@ interface TafseerStudyCardProps {
 interface ThemeConfig {
   icon: LucideIcon;
   defaultBadge: string;
-  defaultFooter: string;
   containerClasses: string;
   borderClasses: string;
   dividerClasses: string;
@@ -32,7 +31,6 @@ const CARD_THEMES: Record<StudyCardType, ThemeConfig> = {
   takeaways: {
     icon: Sparkles,
     defaultBadge: 'Summary',
-    defaultFooter: '',
     containerClasses: 'bg-[#CD7743]/[0.06] dark:bg-[#CD7743]/[0.09]',
     borderClasses: 'border-[#CD7743]/35 dark:border-[#E08955]/35 hover:border-[#CD7743]/55 dark:hover:border-[#E08955]/55',
     dividerClasses: 'border-[#CD7743]/15 dark:border-[#CD7743]/20',
@@ -44,7 +42,6 @@ const CARD_THEMES: Record<StudyCardType, ThemeConfig> = {
   ahkam: {
     icon: Scale,
     defaultBadge: 'Injunctions & Rulings (Ahkam)',
-    defaultFooter: "Jurisprudential Rulings · Ma'ariful Qur'an",
     containerClasses: 'bg-[#5F4B3E]/[0.06] dark:bg-[#5F4B3E]/[0.09]',
     borderClasses: 'border-[#5F4B3E]/35 dark:border-[#8C7262]/35 hover:border-[#5F4B3E]/55 dark:hover:border-[#8C7262]/55',
     dividerClasses: 'border-[#5F4B3E]/15 dark:border-[#5F4B3E]/20',
@@ -56,7 +53,6 @@ const CARD_THEMES: Record<StudyCardType, ThemeConfig> = {
   insights: {
     icon: Lightbulb,
     defaultBadge: 'Exegetical & Spiritual Insights',
-    defaultFooter: "Contemplative Insights · Ma'ariful Qur'an",
     containerClasses: 'bg-[#596B8E]/[0.06] dark:bg-[#596B8E]/[0.09]',
     borderClasses: 'border-[#596B8E]/35 dark:border-[#7587AC]/35 hover:border-[#596B8E]/55 dark:hover:border-[#7587AC]/55',
     dividerClasses: 'border-[#596B8E]/15 dark:border-[#596B8E]/20',
@@ -68,7 +64,6 @@ const CARD_THEMES: Record<StudyCardType, ThemeConfig> = {
   asbab: {
     icon: History,
     defaultBadge: 'Occasion of Revelation (Asbab al-Nuzul)',
-    defaultFooter: "Historical Circumstances · Ma'ariful Qur'an",
     containerClasses: 'bg-[#4C7971]/[0.06] dark:bg-[#4C7971]/[0.09]',
     borderClasses: 'border-[#4C7971]/35 dark:border-[#639C92]/35 hover:border-[#4C7971]/55 dark:hover:border-[#639C92]/55',
     dividerClasses: 'border-[#4C7971]/15 dark:border-[#4C7971]/20',
@@ -93,11 +88,15 @@ export const TafseerStudyCard: React.FC<TafseerStudyCardProps> = ({
   const theme = CARD_THEMES[type] || CARD_THEMES.takeaways;
   const IconComponent = theme.icon;
 
+  // Suppress titles that merely repeat the card type / badge or generic boilerplate
+  const isRedundantTitle = !title ||
+    /^(?:Revelation Context & Prophetic Traditions|Historical Context & Occasion of Revelation|Occasion of Revelation|Asbab al-Nuzul|Exegetical & Spiritual Insights from Ma'ariful Qur'an|Summary & Key Takeaways|Key Takeaways|Summary)$/i.test(title.trim());
+
   return (
     <div
       className={`relative p-4 sm:p-5 rounded-2xl border ${theme.borderClasses} ${theme.containerClasses} shadow-2xs space-y-3.5 transition-all select-text`}
     >
-      {/* Header bar with icon, category badge, and exegesis source context */}
+      {/* Header bar with icon and category badge */}
       <div className={`flex items-center justify-between gap-2 border-b ${theme.dividerClasses} pb-3`}>
         <div className="flex items-center gap-2.5">
           <div className={`p-1.5 rounded-lg ${theme.badgeBgClasses} shrink-0`}>
@@ -107,11 +106,6 @@ export const TafseerStudyCard: React.FC<TafseerStudyCardProps> = ({
             {badgeLabel || theme.defaultBadge}
           </span>
         </div>
-        {(footerSource || theme.defaultFooter) && (
-          <span className="text-[11px] font-reader text-stone-400 dark:text-stone-500 hidden sm:inline">
-            {footerSource || theme.defaultFooter}
-          </span>
-        )}
       </div>
 
       {/* Thematic Synthesis / Executive Summary Block (if present) */}
@@ -121,8 +115,8 @@ export const TafseerStudyCard: React.FC<TafseerStudyCardProps> = ({
         </div>
       )}
 
-      {/* Title if present (e.g., Ahkam rulings title, Insight title) */}
-      {title && (
+      {/* Specific section title if present and not redundant with card badge */}
+      {title && !isRedundantTitle && (
         <h4 className="font-serif-heading font-semibold text-lg sm:text-[19px] text-stone-900 dark:text-stone-100 tracking-tight">
           {title}
         </h4>
@@ -147,12 +141,9 @@ export const TafseerStudyCard: React.FC<TafseerStudyCardProps> = ({
         </div>
       )}
 
-      {/* Mobile/Action footer if action is present or small screen footer */}
+      {/* Action button if present */}
       {onActionClick && actionText && (
-        <div className={`pt-2.5 border-t ${theme.dividerClasses} flex items-center justify-between text-xs font-reader`}>
-          <span className="sm:hidden text-stone-400 dark:text-stone-500">
-            {footerSource || theme.defaultFooter}
-          </span>
+        <div className={`pt-2.5 border-t ${theme.dividerClasses} flex items-center justify-end text-xs font-reader`}>
           <button
             type="button"
             onClick={onActionClick}
