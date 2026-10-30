@@ -779,7 +779,17 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
       return sentences.slice(0, 3);
     }
 
-    return paragraphs.slice(0, 3).map((p) => {
+    // Filter out paragraphs that start with Arabic scripture/text or are pure quotations/headers
+    const eligibleParas = paragraphs.filter((p) => {
+      if (/^[\u0600-\u06ff]/.test(p)) return false;
+      if (/^[“"']/.test(p)) return false;
+      if (/^Commentary\b/i.test(p)) return false;
+      return true;
+    });
+
+    const sourceParas = eligibleParas.length >= 2 ? eligibleParas : paragraphs;
+
+    return sourceParas.slice(0, 3).map((p) => {
       const firstSentence = p.split(/(?<=[.?!])\s+/)[0];
       return firstSentence && firstSentence.length > 35
         ? firstSentence.replace(/^[\s•\-\d.)]+/, '').trim()
