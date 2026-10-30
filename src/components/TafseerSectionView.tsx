@@ -136,11 +136,13 @@ const TafseerVerseHeading: React.FC<{
       >
         {/* Left Side: Rosette + Title + Translation Snippet (Flushed with Text Margin) */}
         <div className="flex items-center gap-2.5 sm:gap-3 min-w-0 flex-1">
-          {/* Authentic Uthmanic Ayah End Marker */}
-          <AyahEndMarker vNum={primaryNum} size="sm" className="group-hover/badge:scale-110 !mx-0" />
+          {/* Authentic Uthmanic Ayah End Marker with centered baseline alignment */}
+          <div className="flex items-center justify-center shrink-0">
+            <AyahEndMarker vNum={primaryNum} size="sm" className="group-hover/badge:scale-110 !mx-0 !align-middle" />
+          </div>
 
           {/* Verse Title & Translation Snippet */}
-          <div className="flex items-baseline gap-2 text-left min-w-0 flex-1">
+          <div className="flex items-center gap-2 text-left min-w-0 flex-1">
             <span className="font-serif-heading text-[16.5px] sm:text-[18px] font-bold text-stone-900 dark:text-stone-100 tracking-wide group-hover/badge:text-[#CD7743] dark:group-hover/badge:text-[#E08955] transition-colors shrink-0">
               {displayTitle}
             </span>
