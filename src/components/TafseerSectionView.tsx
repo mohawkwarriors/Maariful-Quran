@@ -138,7 +138,7 @@ const TafseerVerseHeading: React.FC<{
         <div className="flex items-center gap-2.5 sm:gap-3 min-w-0 flex-1">
           {/* Authentic Uthmanic Ayah End Marker with centered baseline alignment */}
           <div className="flex items-center justify-center shrink-0">
-            <AyahEndMarker vNum={primaryNum} size="sm" className="group-hover/badge:scale-110 !mx-0 !align-middle" />
+            <AyahEndMarker vNum={primaryNum} size="sm" className="group-hover/badge:scale-110 !mx-0 !align-middle -translate-y-[0.17em]" />
           </div>
 
           {/* Verse Title & Translation Snippet */}
