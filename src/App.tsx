@@ -406,7 +406,6 @@ function ReaderApp() {
           scrollProgress={scrollProgress}
           isSidebarCollapsed={isSidebarCollapsed}
           onToggleSidebar={() => setIsSidebarCollapsed((prev) => !prev)}
-          onOpenRootExplorer={() => setIsRootExplorerOpen(true)}
         />
 
         {/* Reading Canvas Container: Uniform layout width regardless of sidebar collapse */}
