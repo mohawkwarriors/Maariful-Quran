@@ -7,7 +7,7 @@ export interface AyahMarkerProps {
 }
 
 const toArabicNumeral = (num: number): string => {
-  const arabicDigits = ['┘á', '┘í', '┘ó', '┘ú', '┘ñ', '┘Ñ', '┘ª', '┘º', '┘¿', '┘⌐'];
+  const arabicDigits = ['\u0660', '\u0661', '\u0662', '\u0663', '\u0664', '\u0665', '\u0666', '\u0667', '\u0668', '\u0669'];
   return num
     .toString()
     .split('')
@@ -16,8 +16,8 @@ const toArabicNumeral = (num: number): string => {
 };
 
 /**
- * Authentic Classical Quranic Ayah End Marker (╪╣┘ä╪º┘à╪⌐ ┘å┘ç╪º┘è╪⌐ ╪º┘ä╪ó┘è╪⌐ - U+06DD).
- * Uses the exact same font glyph (█¥) and Eastern Arabic numerals (┘á-┘⌐) as the Arabic Quran text.
+ * Authentic Classical Quranic Ayah End Marker (U+06DD).
+ * Uses the exact same font glyph (U+06DD) and Eastern Arabic numerals (U+0660-U+0669) as the Arabic Quran text.
  * Renders in a dedicated inline container with calibrated vertical alignment so it is
  * optically and vertically centered with the surrounding text line.
  */
