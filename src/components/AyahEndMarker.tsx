@@ -60,9 +60,7 @@ export const AyahEndMarker: React.FC<AyahMarkerProps> = ({
       style={{
         ...sizeStyles,
         lineHeight: 1,
-        unicodeBidi: 'isolate',
         whiteSpace: 'nowrap',
-        fontKerning: 'none',
       }}
     >
       <span className="leading-none whitespace-nowrap select-none">

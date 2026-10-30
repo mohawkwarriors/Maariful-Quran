@@ -70,7 +70,7 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
           <div className="flex items-center gap-2.5 sm:gap-3 flex-wrap min-w-0">
             <span
               dir="rtl"
-              className="font-quran text-2xl sm:text-3xl text-[#CD7743] dark:text-[#E08955] leading-[1.6] inline-block px-1 select-text"
+              className="font-quran text-2xl sm:text-3xl text-[#CD7743] dark:text-[#E08955] leading-[1.6] inline-block px-1 select-text -translate-y-[0.16em]"
             >
               {data.word}
             </span>
@@ -96,7 +96,7 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
                   </span>
                   <span
                     dir="rtl"
-                    className="font-quran text-[15px] sm:text-[16px] text-[#CD7743] dark:text-[#E08955] leading-normal select-text inline-flex items-center justify-center"
+                    className="font-quran text-[15px] sm:text-[16px] text-[#CD7743] dark:text-[#E08955] leading-normal select-text inline-flex items-center justify-center -translate-y-[0.12em]"
                   >
                     {parsedRoot.arabic}
                   </span>
@@ -173,7 +173,7 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
               >
                 <span
                   dir="rtl"
-                  className="font-quran text-[16px] sm:text-[17px] leading-normal text-[#CD7743] dark:text-[#E08955] inline-flex items-center justify-center shrink-0 select-text"
+                  className="font-quran text-[16px] sm:text-[17px] leading-normal text-[#CD7743] dark:text-[#E08955] inline-flex items-center justify-center shrink-0 select-text -translate-y-[0.14em]"
                 >
                   {rw.arabic}
                 </span>
