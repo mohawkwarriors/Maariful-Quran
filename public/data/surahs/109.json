@@ -32,25 +32,31 @@
           "id": "109-card-1",
           "verseNumber": 1,
           "arabicPhrase": "قُلْ يَا أَيُّهَا الْكَافِرُونَ",
-          "englishPhrase": "Say: O you who disbelieve",
+          "englishPhrase": "Say: 'O you disbelievers!",
           "vocabulary": [
             {
               "word": "قُلْ",
               "root": "ق - و - ل",
-              "meaning": "Proclaim openly",
-              "grammarNote": "Imperative verb"
+              "meaning": "Say / Proclaim",
+              "grammarNote": "Imperative verb, 2nd person masculine singular"
             },
             {
-              "word": "يَا أَيُّهَا",
+              "word": "يَا",
               "root": "أداة نداء",
-              "meaning": "O you (all)",
-              "grammarNote": "Vocative particle"
+              "meaning": "O (Vocative particle)",
+              "grammarNote": "Vocative particle (harf nida) used for addressing"
+            },
+            {
+              "word": "أَيُّهَا",
+              "root": "منادى",
+              "meaning": "You (Alerting prefix)",
+              "grammarNote": "Vocative noun (ayyu) + alerting particle (ha at-tanbih)"
             },
             {
               "word": "الْكَافِرُونَ",
               "root": "ك - ف - ر",
-              "meaning": "The disbelievers / deniers of truth",
-              "grammarNote": "Plural masculine noun"
+              "meaning": "The disbelievers",
+              "grammarNote": "Active participle, nominative masculine plural noun"
             }
           ]
         },
@@ -58,19 +64,145 @@
           "id": "109-card-2",
           "verseNumber": 2,
           "arabicPhrase": "لَا أَعْبُدُ مَا تَعْبُدُونَ",
-          "englishPhrase": "I do not worship what you worship",
+          "englishPhrase": "I worship not what you worship,",
           "vocabulary": [
             {
-              "word": "لَا أَعْبُدُ",
-              "root": "ع - ب - د",
-              "meaning": "I do not worship / serve",
-              "grammarNote": "Negative imperfect verb"
+              "word": "لَا",
+              "root": "حرف نفي",
+              "meaning": "Not / No",
+              "grammarNote": "Negative particle"
             },
             {
-              "word": "مَا تَعْبُدُونَ",
+              "word": "أَعْبُدُ",
               "root": "ع - ب - د",
-              "meaning": "What you worship of false idols",
-              "grammarNote": "Relative pronoun + verb"
+              "meaning": "I worship / serve",
+              "grammarNote": "Imperfect verb, 1st person singular"
+            },
+            {
+              "word": "مَا",
+              "root": "اسم موصول",
+              "meaning": "What / that which",
+              "grammarNote": "Relative pronoun"
+            },
+            {
+              "word": "تَعْبُدُونَ",
+              "root": "ع - ب - د",
+              "meaning": "You worship",
+              "grammarNote": "Imperfect verb, 2nd person masculine plural"
+            }
+          ]
+        },
+        {
+          "id": "109-card-3",
+          "verseNumber": 3,
+          "arabicPhrase": "وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ",
+          "englishPhrase": "Nor do you worship what I worship,",
+          "vocabulary": [
+            {
+              "word": "وَلَا",
+              "root": "حرف نفي",
+              "meaning": "Nor / And not",
+              "grammarNote": "Conjunction (wa) + negative particle (la)"
+            },
+            {
+              "word": "أَنتُمْ",
+              "root": "ضمير منفصل",
+              "meaning": "You (all)",
+              "grammarNote": "2nd person masculine plural detached pronoun (subject)"
+            },
+            {
+              "word": "عَابِدُونَ",
+              "root": "ع - ب - د",
+              "meaning": "Worshippers",
+              "grammarNote": "Active participle, nominative masculine plural (predicate)"
+            },
+            {
+              "word": "مَا",
+              "root": "اسم موصول",
+              "meaning": "What / the One Whom",
+              "grammarNote": "Relative pronoun"
+            },
+            {
+              "word": "أَعْبُدُ",
+              "root": "ع - ب - د",
+              "meaning": "I worship",
+              "grammarNote": "Imperfect verb, 1st person singular"
+            }
+          ]
+        },
+        {
+          "id": "109-card-4",
+          "verseNumber": 4,
+          "arabicPhrase": "وَلَا أَنَا عَابِدٌ مَّا عَبَدتُّمْ",
+          "englishPhrase": "Nor will I ever worship what you have worshipped,",
+          "vocabulary": [
+            {
+              "word": "وَلَا",
+              "root": "حرف نفي",
+              "meaning": "Nor / And not",
+              "grammarNote": "Conjunction (wa) + negative particle (la)"
+            },
+            {
+              "word": "أَنَا",
+              "root": "ضمير منفصل",
+              "meaning": "I",
+              "grammarNote": "1st person singular detached pronoun (subject)"
+            },
+            {
+              "word": "عَابِدٌ",
+              "root": "ع - ب - د",
+              "meaning": "A worshipper",
+              "grammarNote": "Active participle, nominative singular masculine (predicate)"
+            },
+            {
+              "word": "مَّا",
+              "root": "اسم موصول",
+              "meaning": "What / that which",
+              "grammarNote": "Relative pronoun (with idgham shaddah)"
+            },
+            {
+              "word": "عَبَدتُّمْ",
+              "root": "ع - ب - د",
+              "meaning": "You have worshipped",
+              "grammarNote": "Perfect verb, 2nd person masculine plural"
+            }
+          ]
+        },
+        {
+          "id": "109-card-5",
+          "verseNumber": 5,
+          "arabicPhrase": "وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ",
+          "englishPhrase": "Nor will you ever worship what I worship,",
+          "vocabulary": [
+            {
+              "word": "وَلَا",
+              "root": "حرف نفي",
+              "meaning": "Nor / And not",
+              "grammarNote": "Conjunction (wa) + negative particle (la)"
+            },
+            {
+              "word": "أَنتُمْ",
+              "root": "ضمير منفصل",
+              "meaning": "You (all)",
+              "grammarNote": "2nd person masculine plural detached pronoun (subject)"
+            },
+            {
+              "word": "عَابِدُونَ",
+              "root": "ع - ب - د",
+              "meaning": "Worshippers",
+              "grammarNote": "Active participle, nominative masculine plural (predicate)"
+            },
+            {
+              "word": "مَا",
+              "root": "اسم موصول",
+              "meaning": "What / the One Whom",
+              "grammarNote": "Relative pronoun"
+            },
+            {
+              "word": "أَعْبُدُ",
+              "root": "ع - ب - د",
+              "meaning": "I worship",
+              "grammarNote": "Imperfect verb, 1st person singular"
             }
           ]
         },
@@ -78,25 +210,31 @@
           "id": "109-card-6",
           "verseNumber": 6,
           "arabicPhrase": "لَكُمْ دِينُكُمْ وَلِيَ دِينِ",
-          "englishPhrase": "For you is your religion, and for me is my religion",
+          "englishPhrase": "Unto you is your religion, and unto me is my religion.'",
           "vocabulary": [
             {
               "word": "لَكُمْ",
               "root": "شبه جملة",
-              "meaning": "Unto you belongs",
-              "grammarNote": "Preposition + Pronoun"
+              "meaning": "Unto you is / For you is",
+              "grammarNote": "Preposition (li) + 2nd person plural pronoun (kum)"
             },
             {
               "word": "دِينُكُمْ",
               "root": "د - ي - ن",
-              "meaning": "Your way of life and idolatry",
-              "grammarNote": "Noun + Possessive pronoun"
+              "meaning": "Your religion / way",
+              "grammarNote": "Noun (deen) + possessive pronoun (kum)"
             },
             {
-              "word": "وَلِيَ دِينِ",
+              "word": "وَلِيَ",
+              "root": "شبه جملة",
+              "meaning": "And unto me is / and for me is",
+              "grammarNote": "Conjunction (wa) + preposition (li) + 1st person pronoun (ya)"
+            },
+            {
+              "word": "دِينِ",
               "root": "د - ي - ن",
-              "meaning": "And unto me belongs my pure faith",
-              "grammarNote": "Conjunction + Preposition + Noun"
+              "meaning": "My religion",
+              "grammarNote": "Noun (deen) with elided first-person possessive ya (deeni)"
             }
           ]
         }

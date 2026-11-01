@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { ThematicSection, PhraseCard, SubSection, FootnoteItem } from '../types/quran';
 import { AnnotatedTranslation } from './AnnotatedTranslation';
 import { WordDeepDiveModal } from './WordDeepDiveModal';
-import { getWordDeepDive } from '../services/quranLexicon';
+import { getWordDeepDive, stripArabicDiacritics } from '../services/quranLexicon';
 import { TafseerStudyCard, StudyCardType } from './TafseerStudyCard';
 import { TafseerQuoteCard, QuoteType } from './TafseerQuoteCard';
 import { StoryDialogueCard } from './StoryDialogueCard';
@@ -138,7 +138,7 @@ const TafseerVerseHeading: React.FC<{
         <div className="flex items-center gap-2.5 sm:gap-3 min-w-0 flex-1">
           {/* Authentic Uthmanic Ayah End Marker with centered baseline alignment */}
           <div className="flex items-center justify-center shrink-0">
-            <AyahEndMarker vNum={primaryNum} size="sm" className="group-hover/badge:scale-110 !mx-0 !align-middle -translate-y-[0.27em]" />
+            <AyahEndMarker vNum={primaryNum} size="sm" className="group-hover/badge:scale-110 !mx-0 !align-middle" />
           </div>
 
           {/* Verse Title & Translation Snippet */}
@@ -819,17 +819,98 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
     const startV = section.verseRange[0];
     const endV = section.verseRange[1];
 
+    // Split section's full arabic text and translation into individual verse parts as golden source of truth
+    const sectionArabicVerses = section.arabicText
+      ? section.arabicText.split(/[\u06DD۝][\d\u0660-\u0669]*/).map((s) => s.trim()).filter(Boolean)
+      : [];
+    const sectionTranslationVerses = section.translation
+      ? section.translation.split(/[\u06DD۝]/).map((s) => s.trim()).filter(Boolean)
+      : [];
+
     for (let v = startV; v <= endV; v++) {
+      const verseIdx = v - startV;
       const cards = cardsByVerse.get(v);
       const words: WordItemProps[] = [];
       const translations: string[] = [];
 
+      // Determine the full Arabic verse string
+      const cardArabicPhrase = cards && cards.length > 0
+        ? cards.map((c) => c.arabicPhrase).filter(Boolean).join(' ')
+        : '';
+      const fallbackArabic = sectionArabicVerses[verseIdx] || '';
+      const fullVerseArabic = cardArabicPhrase.trim() || fallbackArabic.trim();
+
+      // Determine translation for this verse
       if (cards && cards.length > 0) {
         cards.forEach((card) => {
           if (card.englishPhrase) {
             translations.push(card.englishPhrase);
           }
+        });
+      }
+      if (translations.length === 0 && sectionTranslationVerses[verseIdx]) {
+        const cleanTr = sectionTranslationVerses[verseIdx]
+          .replace(/\[(.*?)\]/g, '$1')
+          .trim();
+        translations.push(cleanTr);
+      }
 
+      // Build vocabulary lookup dictionary from card(s)
+      const vocabByWord = new Map<string, { word: string; meaning: string; root?: string; grammarNote?: string }>();
+      if (cards && cards.length > 0) {
+        cards.forEach((card) => {
+          if (card.vocabulary && card.vocabulary.length > 0) {
+            card.vocabulary.forEach((voc) => {
+              if (voc.word) {
+                const trimmed = voc.word.trim();
+                vocabByWord.set(trimmed, voc);
+                vocabByWord.set(stripArabicDiacritics(trimmed), voc);
+
+                // Also index individual component words for compound phrases
+                const subWords = trimmed.split(/\s+/).filter(Boolean);
+                if (subWords.length > 1) {
+                  subWords.forEach((sw) => {
+                    const swStripped = stripArabicDiacritics(sw);
+                    if (!vocabByWord.has(sw)) {
+                      vocabByWord.set(sw, voc);
+                    }
+                    if (!vocabByWord.has(swStripped)) {
+                      vocabByWord.set(swStripped, voc);
+                    }
+                  });
+                }
+              }
+            });
+          }
+        });
+      }
+
+      // If we have full verse Arabic, decompose into full word sequence
+      if (fullVerseArabic) {
+        const rawTokens = fullVerseArabic.split(/\s+/).filter(Boolean);
+        rawTokens.forEach((token) => {
+          const stripped = stripArabicDiacritics(token);
+          const matchedVocab = vocabByWord.get(token) || vocabByWord.get(stripped);
+          if (matchedVocab) {
+            words.push({
+              word: token, // keep original vocalization
+              meaning: matchedVocab.meaning,
+              root: matchedVocab.root,
+              grammarNote: matchedVocab.grammarNote,
+            });
+          } else {
+            const deep = getWordDeepDive(token);
+            words.push({
+              word: token,
+              meaning: deep.primaryMeaning || '',
+              root: deep.root,
+              grammarNote: deep.partOfSpeech,
+            });
+          }
+        });
+      } else if (cards && cards.length > 0) {
+        // Fallback to card vocabulary directly if fullVerseArabic was empty
+        cards.forEach((card) => {
           if (card.vocabulary && card.vocabulary.length > 0) {
             card.vocabulary.forEach((voc) => {
               words.push({
@@ -839,64 +920,19 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
                 grammarNote: voc.grammarNote,
               });
             });
-          } else if (card.arabicPhrase) {
-            // Fallback: split phrase into words
-            const splitWords = card.arabicPhrase.trim().split(/\s+/);
-            splitWords.forEach((sw) => {
-              if (sw) {
-                const deep = getWordDeepDive(sw);
-                words.push({
-                  word: sw,
-                  meaning: deep.primaryMeaning || card.englishPhrase,
-                  root: deep.root,
-                  grammarNote: deep.partOfSpeech,
-                });
-              }
-            });
           }
         });
       }
 
-      // If verse has words, include it
-      if (words.length > 0) {
-        list.push({
-          vNum: v,
-          words,
-          verseTranslation: translations.join(' '),
-        });
-      }
-    }
-
-    // Fallback if no cards were matched
-    if (list.length === 0 && section.phraseCards) {
-      section.phraseCards.forEach((card, idx) => {
-        const vNum = card.verseNumber || startV + idx;
-        const words: WordItemProps[] = [];
-        if (card.vocabulary && card.vocabulary.length > 0) {
-          card.vocabulary.forEach((voc) => {
-            words.push({
-              word: voc.word,
-              meaning: voc.meaning,
-              root: voc.root,
-              grammarNote: voc.grammarNote,
-            });
-          });
-        } else {
-          words.push({
-            word: card.arabicPhrase,
-            meaning: card.englishPhrase,
-          });
-        }
-        list.push({
-          vNum,
-          words,
-          verseTranslation: card.englishPhrase,
-        });
+      list.push({
+        vNum: v,
+        words,
+        verseTranslation: translations.join(' '),
       });
     }
 
     return list;
-  }, [section.phraseCards, section.verseRange]);
+  }, [section.phraseCards, section.verseRange, section.arabicText, section.translation]);
 
   return (
     <section

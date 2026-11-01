@@ -25,42 +25,170 @@
       "translation": "Say: 'I seek refuge with the [Rabb] (Lord and Cherisher) of mankind. ۝ The Sovereign King of mankind. ۝ The True God and Object of Worship of mankind. ۝ From the malice of the retreating whisperer ([Al-Waswas Al-Khannas]), ۝ who casts insidious suggestions into the hearts of mankind— ۝ from among jinn and men.' ۝",
       "phraseCards": [
         {
-          "id": "114-1-phrase-1",
+          "id": "114-card-1",
           "verseNumber": 1,
           "arabicPhrase": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
-          "englishPhrase": "Say: I seek sanctuary with the Lord and Evolver of humanity,",
+          "englishPhrase": "Say: 'I seek refuge with the Lord and Cherisher of mankind,",
           "vocabulary": [
             {
+              "word": "قُلْ",
+              "root": "ق - و - ل",
+              "meaning": "Say / Proclaim",
+              "grammarNote": "Imperative verb, 2nd person masculine singular"
+            },
+            {
               "word": "أَعُوذُ",
-              "root": "ع-و-ذ",
-              "meaning": "I take refuge / seek haven",
-              "grammarNote": "Fleeing from danger to an almighty protector."
+              "root": "ع - و - ذ",
+              "meaning": "I seek refuge / take haven",
+              "grammarNote": "Imperfect verb, 1st person singular"
+            },
+            {
+              "word": "بِرَبِّ",
+              "root": "ر - ب - ب",
+              "meaning": "With the Lord and Nurturer",
+              "grammarNote": "Preposition (bi) + genitive noun (Rabb)"
             },
             {
               "word": "النَّاسِ",
-              "root": "ن-و-س",
-              "meaning": "Mankind",
-              "grammarNote": "Singled out here because humanity is the specific target of demonic sabotage."
+              "root": "ن - و - س",
+              "meaning": "Mankind / humanity",
+              "grammarNote": "Definite noun in genitive (mudaf ilayh)"
             }
           ]
         },
         {
-          "id": "114-4-phrase-1",
-          "verseNumber": 4,
-          "arabicPhrase": "مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ",
-          "englishPhrase": "from the evil of the covert whisperer who slinks away,",
+          "id": "114-card-2",
+          "verseNumber": 2,
+          "arabicPhrase": "مَلِكِ النَّاسِ",
+          "englishPhrase": "The Sovereign King of mankind,",
           "vocabulary": [
             {
+              "word": "مَلِكِ",
+              "root": "م - ل - ك",
+              "meaning": "The Sovereign King / Ruler",
+              "grammarNote": "Noun in genitive (badal / apposition)"
+            },
+            {
+              "word": "النَّاسِ",
+              "root": "ن - و - س",
+              "meaning": "Mankind / humanity",
+              "grammarNote": "Definite noun in genitive (mudaf ilayh)"
+            }
+          ]
+        },
+        {
+          "id": "114-card-3",
+          "verseNumber": 3,
+          "arabicPhrase": "إِلَٰهِ النَّاسِ",
+          "englishPhrase": "The True God and Object of Worship of mankind,",
+          "vocabulary": [
+            {
+              "word": "إِلَٰهِ",
+              "root": "أ - ل - ه",
+              "meaning": "The True God / Object of Worship",
+              "grammarNote": "Noun in genitive (badal / apposition)"
+            },
+            {
+              "word": "النَّاسِ",
+              "root": "ن - و - س",
+              "meaning": "Mankind / humanity",
+              "grammarNote": "Definite noun in genitive (mudaf ilayh)"
+            }
+          ]
+        },
+        {
+          "id": "114-card-4",
+          "verseNumber": 4,
+          "arabicPhrase": "مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ",
+          "englishPhrase": "From the malice of the retreating whisperer (Al-Waswas Al-Khannas),",
+          "vocabulary": [
+            {
+              "word": "مِن",
+              "root": "حرف جر",
+              "meaning": "From",
+              "grammarNote": "Preposition"
+            },
+            {
+              "word": "شَرِّ",
+              "root": "ش - ر - ر",
+              "meaning": "The malice / evil",
+              "grammarNote": "Noun in genitive governed by preposition"
+            },
+            {
               "word": "الْوَسْوَاسِ",
-              "root": "و-س-و-س",
+              "root": "و - س - و - س",
               "meaning": "The incessant whisperer",
-              "grammarNote": "Repetitive onomatopoeic root denoting soft, repeated insidious prompting."
+              "grammarNote": "Active verbal noun / epithet in genitive"
             },
             {
               "word": "الْخَنَّاسِ",
-              "root": "خ-ن-س",
-              "meaning": "The one who shrinks back and retreats",
-              "grammarNote": "Satan retreats whenever the servant engages in the Dhikr (remembrance) of Allah."
+              "root": "خ - ن - س",
+              "meaning": "The one who slinks away and retreats",
+              "grammarNote": "Intensive adjective modifying Al-Waswas"
+            }
+          ]
+        },
+        {
+          "id": "114-card-5",
+          "verseNumber": 5,
+          "arabicPhrase": "الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ",
+          "englishPhrase": "who casts insidious suggestions into the hearts of mankind—",
+          "vocabulary": [
+            {
+              "word": "الَّذِي",
+              "root": "اسم موصول",
+              "meaning": "Who / the one who",
+              "grammarNote": "Relative pronoun in apposition to Al-Khannas"
+            },
+            {
+              "word": "يُوَسْوِسُ",
+              "root": "و - س - و - س",
+              "meaning": "Whispers insidious suggestions",
+              "grammarNote": "Imperfect verb, 3rd person masculine singular"
+            },
+            {
+              "word": "فِي",
+              "root": "حرف جر",
+              "meaning": "In / into",
+              "grammarNote": "Preposition"
+            },
+            {
+              "word": "صُدُورِ",
+              "root": "ص - د - ر",
+              "meaning": "Hearts / breasts / chests",
+              "grammarNote": "Plural noun in genitive"
+            },
+            {
+              "word": "النَّاسِ",
+              "root": "ن - و - س",
+              "meaning": "Mankind / humanity",
+              "grammarNote": "Definite noun in genitive (mudaf ilayh)"
+            }
+          ]
+        },
+        {
+          "id": "114-card-6",
+          "verseNumber": 6,
+          "arabicPhrase": "مِنَ الْجِنَّةِ وَالنَّاسِ",
+          "englishPhrase": "from among jinn and men.'",
+          "vocabulary": [
+            {
+              "word": "مِنَ",
+              "root": "حرف جر",
+              "meaning": "From among / of",
+              "grammarNote": "Preposition (explicative)"
+            },
+            {
+              "word": "الْجِنَّةِ",
+              "root": "ج - ن - ن",
+              "meaning": "The jinn",
+              "grammarNote": "Definite collective noun in genitive"
+            },
+            {
+              "word": "وَالنَّاسِ",
+              "root": "ن - و - س",
+              "meaning": "And mankind",
+              "grammarNote": "Conjunction (wa) + definite noun in genitive"
             }
           ]
         }
