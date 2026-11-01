@@ -1,8 +1,8 @@
 # Project Architectural & Typographic Guidelines: Maariful-Quran Reader
 
 ## 1. Arabic Typography & Ayah Markers
-- **Ayah End Marker Geometry**: The Ayah End Marker (`AyahEndMarker.tsx`) must strictly render as the authentic **8-pointed star rosette shape**. Never revert this to a circle, diamond, or plain bracketed number.
-- **Vertical Alignment**: In `AnnotatedTranslation.tsx`, the rosette must maintain precise optical inline baseline alignment with the surrounding translation text.
+- **Ayah End Marker Geometry**: The Ayah End Marker (`AyahEndMarker.tsx`) must strictly render as the authentic **Uthmanic Quran Ayah End Medallion** vector (circular beaded rim, horizontal side finials, top/bottom apex crowns, and centered Eastern Arabic numerals) matching the design of the markers in the Arabic section. Never revert to plain bracketed numbers or unshaped raw glyphs that decouple on iOS.
+- **Vertical Alignment**: In `AnnotatedTranslation.tsx`, the medallion must maintain precise optical inline baseline alignment with the surrounding translation text.
 - **Root & Word Explore Modals**:
   - The Arabic root text in `RootExplorerModal.tsx` and `WordDeepDiveModal.tsx` must be cleanly vertically and horizontally centered.
   - Do not introduce nested white boxes or high-contrast border wrappers around individual root letters.
