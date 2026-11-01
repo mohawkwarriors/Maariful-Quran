@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Sun, Moon, LayoutGrid, Columns, Menu, BookOpen, Bookmark, BookmarkCheck, Check, X, Layers, PanelLeftOpen } from 'lucide-react';
+import { Sun, Moon, LayoutGrid, Columns, Menu, BookOpen, Bookmark, BookmarkCheck, Check, X, PanelLeftOpen } from 'lucide-react';
 import { BookmarkRecord } from '../types/quran';
 
 interface ReaderHeaderProps {
@@ -23,7 +23,6 @@ interface ReaderHeaderProps {
   scrollProgress?: number;
   isSidebarCollapsed?: boolean;
   onToggleSidebar?: () => void;
-  onOpenRootExplorer?: () => void;
 }
 
 export const ReaderHeader: React.FC<ReaderHeaderProps> = ({
@@ -46,7 +45,6 @@ export const ReaderHeader: React.FC<ReaderHeaderProps> = ({
   scrollProgress = 0,
   isSidebarCollapsed = false,
   onToggleSidebar,
-  onOpenRootExplorer,
 }) => {
   const [showFeedback, setShowFeedback] = useState(false);
   const [feedbackType, setFeedbackType] = useState<'saved' | 'removed'>('saved');
@@ -124,21 +122,8 @@ export const ReaderHeader: React.FC<ReaderHeaderProps> = ({
         </div>
       </div>
 
-      {/* Right Controls: Root Explorer + Bookmarks + View Switcher + Theme */}
+      {/* Right Controls: Bookmarks + View Switcher + Theme */}
       <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
-
-        {/* Triliteral Root Explorer Button */}
-        {onOpenRootExplorer && (
-          <button
-            type="button"
-            onClick={onOpenRootExplorer}
-            className="w-8 h-8 sm:w-8.5 sm:h-8.5 hidden md:flex items-center justify-center rounded-lg text-xs font-medium bg-stone-100/80 dark:bg-[#25252A] text-stone-700 dark:text-stone-300 border border-stone-200 dark:border-stone-700/60 hover:text-[#CD7743] dark:hover:text-[#E08955] hover:border-[#CD7743]/40 transition-all cursor-pointer shadow-2xs"
-            title="Explore Arabic Triliteral Roots"
-            aria-label="Root Explorer"
-          >
-            <Layers className="w-4 h-4" />
-          </button>
-        )}
         {/* Saved Bookmarks Reference Dropdown (Quick Jump) */}
         {allBookmarks.length > 0 && (
           <div className="relative">

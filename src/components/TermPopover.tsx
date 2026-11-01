@@ -5,7 +5,7 @@ import { CuratedTerm } from '../types/quran';
 import { VOCABULARY_KNOWLEDGE } from '../services/vocabularyKnowledge';
 import { getWordDeepDive } from '../services/quranLexicon';
 import { formatArabicEnglishInsight, parseRootDisplay } from '../utils/textFormatter';
-import { triggerOpenRootExplorer } from '../lib/utils';
+import { getEjtaalUrl } from '../lib/utils';
 
 interface TermPopoverProps {
   termText: string;
@@ -128,14 +128,12 @@ export const TermPopover: React.FC<TermPopoverProps> = ({ termText, termData }) 
                   const parsed = parseRootDisplay(effectiveData.arabicRoot);
                   if (!parsed) return null;
                   return (
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setOpen(false);
-                        triggerOpenRootExplorer(effectiveData.arabicRoot);
-                      }}
-                      className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-lg bg-[#5F4B3E]/8 dark:bg-[#5F4B3E]/18 border border-[#5F4B3E]/25 hover:border-[#CD7743]/50 hover:bg-[#CD7743]/10 dark:hover:bg-[#CD7743]/20 transition-all cursor-pointer group shrink-0 shadow-2xs"
-                      title={`Click to explore root ${effectiveData.arabicRoot} in Root Explorer`}
+                    <a
+                      href={getEjtaalUrl(effectiveData.arabicRoot)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-lg bg-[#5F4B3E]/8 dark:bg-[#5F4B3E]/18 border border-[#5F4B3E]/25 hover:border-[#CD7743]/50 hover:bg-[#CD7743]/10 dark:hover:bg-[#CD7743]/20 transition-all cursor-pointer group shrink-0 shadow-2xs text-inherit no-underline"
+                      title={`Open root ${effectiveData.arabicRoot} in Lane's Classical Lexicon (Ejtaal.net)`}
                     >
                       <span className="text-[9.5px] font-bold uppercase tracking-wider text-stone-400 dark:text-stone-500">
                         Root
@@ -151,8 +149,11 @@ export const TermPopover: React.FC<TermPopoverProps> = ({ termText, termData }) 
                           ({parsed.latin})
                         </span>
                       )}
+                      <span className="text-[9px] text-[#596B8E] dark:text-[#788BB3] font-medium hidden sm:inline">
+                        Lane's Lexicon
+                      </span>
                       <ArrowUpRight className="w-3 h-3 text-stone-400 dark:text-stone-500 group-hover:text-[#CD7743] dark:group-hover:text-[#E08955] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
-                    </button>
+                    </a>
                   );
                 })()}
               </div>

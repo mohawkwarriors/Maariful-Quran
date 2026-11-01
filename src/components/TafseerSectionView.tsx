@@ -28,6 +28,11 @@ interface WordItemProps {
   grammarNote?: string;
 }
 
+// Quranic pause/waqf marks: ۖ (U+06D6), ۗ (U+06D7), ۘ (U+06D8), ۙ (U+06D9), ۚ (U+06DA), ۛ (U+06DB), ۜ (U+06DC), and Sajdah ۩ (U+06E9)
+const QURAN_STOP_MARKS_REGEX = /^[\u06D6-\u06DC\u06E9]+$/;
+// Quranic section/division marks: ۞ (U+06DE Rub el Hizb)
+const QURAN_PREFIX_MARKS_REGEX = /^[\u06DE]+$/;
+
 const WordItem: React.FC<WordItemProps> = ({ word, meaning, root, grammarNote }) => {
   const [open, setOpen] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
@@ -264,7 +269,11 @@ const splitIntoParagraphs = (commentary: string): string[] => {
 
       const isSub = isSubheading(line) || isSubheading(prevLine);
       const isVerseMarker = /^\[\s*Verses?/i.test(line) || /^\[\s*Verses?/i.test(prevLine);
-      const isDivider = /^[─\-_=~*]{3,}$/.test(line) || /^[─\-_=~*]{3,}$/.test(prevLine);
+      const isDivider =
+        /^[─\-_=~*]{3,}$/.test(line) ||
+        /^[─\-_=~*]{3,}$/.test(prevLine) ||
+        /^───.*───$/.test(line) ||
+        /^───.*───$/.test(prevLine);
       const isQuoteLine = /^[“"]/.test(line) || /^[“"]/.test(prevLine);
       const isArabicLine = /^[\u0600-\u06FF\s]+$/.test(line) || /^[\u0600-\u06FF\s]+$/.test(prevLine);
       const isNumberedItem = /^\d+\.\s+/.test(line);
@@ -546,8 +555,12 @@ const TafseerCommentaryBlock: React.FC<{
         continue;
       }
 
-      // Filter out redundant raw ASCII divider lines like ────────────────────────────────────────
-      if (/^[─\-_=~*]{3,}$/.test(trimmed)) {
+      // Filter out redundant raw ASCII divider lines like ──────────────────────────────────────── or exegesis banners
+      if (
+        /^[─\-_=~*]{3,}$/.test(trimmed) ||
+        /^───.*───$/.test(trimmed) ||
+        /Full Exegesis/i.test(trimmed)
+      ) {
         i++;
         continue;
       }
@@ -768,7 +781,9 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
         (p) =>
           p.length > 25 &&
           !p.startsWith('[Verse') &&
-          !/^[─\-_=~*]{3,}$/.test(p)
+          !/^[─\-_=~*]{3,}$/.test(p) &&
+          !/^───.*───$/.test(p) &&
+          !/Full Exegesis/i.test(p)
       );
 
     if (paragraphs.length <= 1) {
@@ -784,6 +799,8 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
       if (/^[\u0600-\u06ff]/.test(p)) return false;
       if (/^[“"']/.test(p)) return false;
       if (/^Commentary\b/i.test(p)) return false;
+      if (/Full Exegesis/i.test(p)) return false;
+      if (/^───.*───$/.test(p)) return false;
       return true;
     });
 
@@ -864,17 +881,24 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
               if (voc.word) {
                 const trimmed = voc.word.trim();
                 vocabByWord.set(trimmed, voc);
-                vocabByWord.set(stripArabicDiacritics(trimmed), voc);
+                const stripped = stripArabicDiacritics(trimmed);
+                if (stripped) {
+                  vocabByWord.set(stripped, voc);
+                }
 
                 // Also index individual component words for compound phrases
                 const subWords = trimmed.split(/\s+/).filter(Boolean);
                 if (subWords.length > 1) {
                   subWords.forEach((sw) => {
                     const swStripped = stripArabicDiacritics(sw);
+                    // Never index standalone Quranic marks (pause marks, rub el hizb, sajdah) as vocabulary words
+                    if (!swStripped || QURAN_STOP_MARKS_REGEX.test(sw) || QURAN_PREFIX_MARKS_REGEX.test(sw)) {
+                      return;
+                    }
                     if (!vocabByWord.has(sw)) {
                       vocabByWord.set(sw, voc);
                     }
-                    if (!vocabByWord.has(swStripped)) {
+                    if (swStripped && !vocabByWord.has(swStripped)) {
                       vocabByWord.set(swStripped, voc);
                     }
                   });
@@ -888,20 +912,46 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
       // If we have full verse Arabic, decompose into full word sequence
       if (fullVerseArabic) {
         const rawTokens = fullVerseArabic.split(/\s+/).filter(Boolean);
+        let pendingPrefix = '';
+
         rawTokens.forEach((token) => {
+          // Prepend leading section marker (e.g. ۞ Rub el Hizb) to upcoming word
+          if (QURAN_PREFIX_MARKS_REGEX.test(token)) {
+            pendingPrefix = pendingPrefix ? `${pendingPrefix} ${token}` : token;
+            return;
+          }
+
+          // Attach trailing Quranic pause/waqf mark (e.g. ۖ, ۗ, ۘ, ۙ, ۚ, ۛ, ۜ) or Sajdah mark (۩) to preceding word
+          if (QURAN_STOP_MARKS_REGEX.test(token)) {
+            if (words.length > 0) {
+              const prev = words[words.length - 1];
+              if (!prev.word.includes(token)) {
+                prev.word = `${prev.word} ${token}`;
+              }
+            }
+            return;
+          }
+
+          const fullWord = pendingPrefix ? `${pendingPrefix} ${token}` : token;
+          pendingPrefix = '';
+
           const stripped = stripArabicDiacritics(token);
-          const matchedVocab = vocabByWord.get(token) || vocabByWord.get(stripped);
+          const matchedVocab =
+            vocabByWord.get(fullWord) ||
+            vocabByWord.get(token) ||
+            (stripped ? vocabByWord.get(stripped) : undefined);
+
           if (matchedVocab) {
             words.push({
-              word: token, // keep original vocalization
+              word: fullWord, // keep original vocalization
               meaning: matchedVocab.meaning,
               root: matchedVocab.root,
               grammarNote: matchedVocab.grammarNote,
             });
           } else {
-            const deep = getWordDeepDive(token);
+            const deep = getWordDeepDive(fullWord);
             words.push({
-              word: token,
+              word: fullWord,
               meaning: deep.primaryMeaning || '',
               root: deep.root,
               grammarNote: deep.partOfSpeech,
@@ -913,12 +963,14 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
         cards.forEach((card) => {
           if (card.vocabulary && card.vocabulary.length > 0) {
             card.vocabulary.forEach((voc) => {
-              words.push({
-                word: voc.word,
-                meaning: voc.meaning,
-                root: voc.root,
-                grammarNote: voc.grammarNote,
-              });
+              if (voc.word && !QURAN_STOP_MARKS_REGEX.test(voc.word.trim())) {
+                words.push({
+                  word: voc.word,
+                  meaning: voc.meaning,
+                  root: voc.root,
+                  grammarNote: voc.grammarNote,
+                });
+              }
             });
           }
         });

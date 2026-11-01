@@ -1,3 +1,7 @@
+import { getLanesRootInfo, getEjtaalUrl, isClassicalParticle, LanesRootEntry } from './lanesLexicon';
+export { getEjtaalUrl, getLanesRootInfo, isClassicalParticle };
+export type { LanesRootEntry };
+
 export interface QuranVerseReference {
   surahNumber: number;
   surahName: string;
@@ -693,7 +697,11 @@ const deepDiveMemoCache = new Map<string, WordDeepDiveData>();
  * cross-Quran occurrences and related root words.
  */
 export function getWordDeepDive(word: string, fallbackMeaning?: string, fallbackRoot?: string, fallbackGrammar?: string): WordDeepDiveData {
-  const cleanWord = word.trim().replace(/[.,;!?،]/g, '');
+  const cleanWord = word
+    .trim()
+    .replace(/[\u06D6-\u06DC\u06DE\u06E9]/g, '')
+    .trim()
+    .replace(/[.,;!?،]/g, '');
   const cacheKey = `${cleanWord}|${fallbackMeaning || ''}|${fallbackRoot || ''}|${fallbackGrammar || ''}`;
   const cached = deepDiveMemoCache.get(cacheKey);
   if (cached) return cached;
@@ -727,46 +735,45 @@ export function getWordDeepDive(word: string, fallbackMeaning?: string, fallback
   }
 
   // 3. Synthesize consistent linguistic deep-dive for words not in the manual dictionary
-  const rootStr = fallbackRoot || 'Triliteral Root';
+  const isParticle = isClassicalParticle(cleanWord, fallbackRoot, fallbackGrammar);
+  const rootStr = isParticle ? '' : (fallbackRoot || '');
   const cleanTransliteration = fallbackMeaning ? fallbackMeaning.split(/\s+/).slice(0, 3).join(' ') : 'Quranic Term';
+  const lanesInfo = isParticle ? null : getLanesRootInfo(fallbackRoot);
+
+  // Extract authentic alternative translations or classical nuances
+  const nuances: string[] = [];
+  if (fallbackMeaning && (fallbackMeaning.includes('/') || fallbackMeaning.includes(','))) {
+    fallbackMeaning
+      .split(/[/,]/)
+      .map((s) => s.trim())
+      .filter((s) => s.length > 0 && s.toLowerCase() !== fallbackMeaning.toLowerCase())
+      .forEach((s) => {
+        if (!nuances.includes(s)) nuances.push(s);
+      });
+  }
+  if (lanesInfo?.classicalNuances) {
+    lanesInfo.classicalNuances.forEach((n) => {
+      if (!nuances.includes(n)) nuances.push(n);
+    });
+  }
 
   const synthesized: WordDeepDiveData = {
     word: cleanWord,
     transliteration: cleanTransliteration,
-    partOfSpeech: fallbackGrammar || 'Quranic Vocabulary (مفردات قرآنية)',
+    partOfSpeech: fallbackGrammar || (isParticle ? 'Classical Arabic Particle / Preposition (حرف مبني)' : 'Classical Arabic Vocabulary (مفردات قرآنية)'),
     root: rootStr,
-    rootMeaning: `Classical Arabic triliteral root conveying foundational theological and lexical nuances.`,
+    rootMeaning: isParticle
+      ? 'In Classical Arabic syntax (Nahw), particles, prepositions, and pronouns are indeclinable (mabni) and non-derivative, serving connective syntactic functions rather than carrying triliteral roots.'
+      : (lanesInfo?.laneDefinition || `Classical Arabic root referenced in Edward William Lane's Lexicon (Madd al-Qamus) and classical lexicography.`),
     primaryMeaning: fallbackMeaning || 'Quranic phrase meaning',
-    otherMeanings: [
-      fallbackMeaning || 'Contextual meaning in verse',
-      'Derivative shade in classical exegesis'
-    ],
-    relatedWords: [
-      { arabic: rootStr, transliteration: 'Aṣl', meaning: 'Foundational root meaning' },
-      { arabic: cleanWord, transliteration: 'Lafẓ', meaning: 'Contextual manifestation in verse' },
-      { arabic: 'مَعْنَى', transliteration: 'Ma\'na', meaning: 'Spiritual and juristic implication' }
-    ],
+    otherMeanings: nuances,
+    relatedWords: [], // Strictly no fake/mock placeholders; only genuine verified root derivations
     isRare: false,
-    occurrenceCount: 15,
-    otherQuranVerses: [
-      {
-        surahNumber: 2,
-        surahName: 'Al-Baqarah',
-        verseNumber: 255,
-        reference: '2:255',
-        arabicSnippet: 'اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ',
-        englishText: 'Allah—there is no deity except Him, the Ever-Living, the Sustainer of all existence.'
-      },
-      {
-        surahNumber: 1,
-        surahName: 'Al-Fatihah',
-        verseNumber: 6,
-        reference: '1:6',
-        arabicSnippet: 'اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ',
-        englishText: 'Guide us to the Straight and Level Path.'
-      }
-    ],
-    tafseerNote: fallbackGrammar || `Explicated in Ma'ariful Qur'an by Mufti Muhammad Shafi with attention to classical Hanafi jurisprudence and spiritual wisdom.`
+    occurrenceCount: 1,
+    otherQuranVerses: [], // Strictly no hardcoded Ayat al-Kursi placeholders; only genuine verified cross-references
+    tafseerNote: fallbackGrammar
+      ? (isParticle ? `Grammar: ${fallbackGrammar}. Indeclinable particle in classical Arabic syntax.` : `Grammar & Morphological Note: ${fallbackGrammar}. Root analysis referenced from Lane's Lexicon.`)
+      : (isParticle ? `Classical Arabic indeclinable particle (حرف مبني) elucidated in Ma'ariful Qur'an.` : `Classical Arabic terminology explicated in Ma'ariful Qur'an by Mufti Muhammad Shafi with reference to classical Arabic lexicography.`)
   };
 
   deepDiveMemoCache.set(cacheKey, synthesized);

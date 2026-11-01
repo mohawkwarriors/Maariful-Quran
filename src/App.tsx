@@ -5,7 +5,6 @@ import { NavigationTree } from './components/NavigationTree';
 import { ReaderHeader } from './components/ReaderHeader';
 import { SurahHero } from './components/SurahHero';
 import { TafseerSectionView } from './components/TafseerSectionView';
-import { RootExplorerModal } from './components/RootExplorerModal';
 import { TopicReference } from './services/quranTopics';
 import { SurahData, BookmarkRecord, ThematicSection } from './types/quran';
 import { Loader2, AlertCircle, RefreshCw, BookOpen } from 'lucide-react';
@@ -26,21 +25,8 @@ function ReaderApp() {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
-  const [isRootExplorerOpen, setIsRootExplorerOpen] = useState(false);
-  const [rootExplorerInitialRoot, setRootExplorerInitialRoot] = useState<string | null>(null);
   const [pendingScrollSectionId, setPendingScrollSectionId] = useState<string | null>(null);
   const readingContainerRef = useRef<HTMLDivElement>(null);
-
-  // Listen for direct root navigation events from Word Explore cards or curated term popovers
-  useEffect(() => {
-    const handleOpenRoot = (e: Event) => {
-      const customEvent = e as CustomEvent<{ root?: string }>;
-      setRootExplorerInitialRoot(customEvent.detail?.root || null);
-      setIsRootExplorerOpen(true);
-    };
-    window.addEventListener('open-root-explorer', handleOpenRoot);
-    return () => window.removeEventListener('open-root-explorer', handleOpenRoot);
-  }, []);
 
   // Initialize Theme from localStorage with immediate default fallback
   const [theme, setTheme] = useState<'parchment' | 'charcoal'>(() => {
@@ -273,23 +259,17 @@ function ReaderApp() {
       if (e.key === '[' || e.key === ']' || e.key === 'f' || e.key === 'F') {
         setIsSidebarCollapsed((prev) => !prev);
       } else if (e.key === 'Escape') {
-        if (isRootExplorerOpen) setIsRootExplorerOpen(false);
-        else if (isSidebarCollapsed) setIsSidebarCollapsed(false);
+        if (isSidebarCollapsed) setIsSidebarCollapsed(false);
       }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isSidebarCollapsed, isRootExplorerOpen]);
+  }, [isSidebarCollapsed]);
 
   // Handle jumping to a specific topic reference across Surahs
   const handleSelectTopicReference = (ref: TopicReference) => {
     handleSelectSection(ref.sectionId, ref.surahNumber);
-  };
-
-  const handleSelectRootWord = (word: string) => {
-    const el = document.getElementById(activeSectionId || '');
-    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
   // Find active section details for breadcrumb and bookmarking
@@ -480,21 +460,6 @@ function ReaderApp() {
           ) : null}
         </div>
       </main>
-
-
-
-
-
-      {/* Quranic Triliteral Root Explorer Modal */}
-      <RootExplorerModal
-        isOpen={isRootExplorerOpen}
-        onClose={() => {
-          setIsRootExplorerOpen(false);
-          setRootExplorerInitialRoot(null);
-        }}
-        initialRoot={rootExplorerInitialRoot}
-        onSelectWord={handleSelectRootWord}
-      />
     </div>
   );
 }
