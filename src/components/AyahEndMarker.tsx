@@ -4,6 +4,7 @@ export interface AyahMarkerProps {
   vNum: number;
   className?: string;
   size?: 'sm' | 'md' | 'lg';
+  style?: React.CSSProperties;
 }
 
 const toArabicNumeral = (num: number): string => {
@@ -34,16 +35,20 @@ export const AyahEndMarker: React.FC<AyahMarkerProps> = ({
   vNum,
   className = '',
   size = 'md',
+  style,
 }) => {
-  // Proportional sizing calibrated to font em heights (glyph viewBox 1191 x 1078, aspect ratio ~ 1.10)
+  // Proportional sizing and vertical calibration:
+  // - yOffset centers the numeral font glyph optical mass dead-center within the medallion cavity
+  // - topOffset raises the marker container so its baseline sits flush with surrounding text, preventing the 4-5px sag
   const dimensions =
     size === 'sm'
       ? {
           box: 'w-[23px] h-[21px]',
           numSize: vNum >= 100 ? '9px' : vNum >= 10 ? '10px' : '11px',
           letterSpacing: vNum >= 100 ? '-0.4px' : 'normal',
-          yOffset: '-0.5px',
+          yOffset: vNum >= 100 ? '+1.2px' : vNum >= 10 ? '+1.5px' : '+2.0px',
           margin: 'mx-1',
+          topOffset: '-0.15em',
           verticalAlign: 'middle',
         }
       : size === 'lg'
@@ -51,16 +56,18 @@ export const AyahEndMarker: React.FC<AyahMarkerProps> = ({
           box: 'w-[38px] h-[35px] sm:w-[42px] sm:h-[38px]',
           numSize: vNum >= 100 ? '12.5px' : vNum >= 10 ? '14.5px' : '16px',
           letterSpacing: vNum >= 100 ? '-0.4px' : 'normal',
-          yOffset: '-1px',
+          yOffset: vNum >= 100 ? '+1.2px' : vNum >= 10 ? '+1.6px' : '+2.2px',
           margin: 'mx-2',
+          topOffset: '0px',
           verticalAlign: 'middle',
         }
       : {
           box: 'w-[28px] h-[25px]',
           numSize: vNum >= 100 ? '10px' : vNum >= 10 ? '11px' : '12.5px',
           letterSpacing: vNum >= 100 ? '-0.4px' : 'normal',
-          yOffset: '-0.5px',
+          yOffset: vNum >= 100 ? '+1.2px' : vNum >= 10 ? '+1.5px' : '+2.0px',
           margin: 'mx-1.5',
+          topOffset: '-0.10em',
           verticalAlign: 'middle',
         };
 
@@ -71,7 +78,9 @@ export const AyahEndMarker: React.FC<AyahMarkerProps> = ({
       aria-label={`Ayah ${vNum}`}
       style={{
         verticalAlign: dimensions.verticalAlign,
+        top: dimensions.topOffset,
         lineHeight: 1,
+        ...style,
       }}
     >
       {/* Exact Uthmanic Quran Ayah Medallion Glyph Vector */}
