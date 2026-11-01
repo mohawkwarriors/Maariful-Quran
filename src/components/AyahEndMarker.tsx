@@ -46,9 +46,9 @@ export const AyahEndMarker: React.FC<AyahMarkerProps> = ({
           box: 'w-[23px] h-[21px]',
           numSize: vNum >= 100 ? '9px' : vNum >= 10 ? '10px' : '11px',
           letterSpacing: vNum >= 100 ? '-0.4px' : 'normal',
-          yOffset: vNum >= 100 ? '+1.2px' : vNum >= 10 ? '+1.5px' : '+2.0px',
+          yOffset: vNum >= 100 ? '+1.2px' : vNum >= 10 ? '+1.5px' : '+1.8px',
           margin: 'mx-1',
-          topOffset: '-0.15em',
+          topOffset: '-0.05em',
           verticalAlign: 'middle',
         }
       : size === 'lg'
@@ -56,7 +56,7 @@ export const AyahEndMarker: React.FC<AyahMarkerProps> = ({
           box: 'w-[38px] h-[35px] sm:w-[42px] sm:h-[38px]',
           numSize: vNum >= 100 ? '12.5px' : vNum >= 10 ? '14.5px' : '16px',
           letterSpacing: vNum >= 100 ? '-0.4px' : 'normal',
-          yOffset: vNum >= 100 ? '+1.2px' : vNum >= 10 ? '+1.6px' : '+2.2px',
+          yOffset: vNum >= 100 ? '+1.2px' : vNum >= 10 ? '+1.6px' : '+2.0px',
           margin: 'mx-2',
           topOffset: '0px',
           verticalAlign: 'middle',
@@ -65,9 +65,9 @@ export const AyahEndMarker: React.FC<AyahMarkerProps> = ({
           box: 'w-[28px] h-[25px]',
           numSize: vNum >= 100 ? '10px' : vNum >= 10 ? '11px' : '12.5px',
           letterSpacing: vNum >= 100 ? '-0.4px' : 'normal',
-          yOffset: vNum >= 100 ? '+1.2px' : vNum >= 10 ? '+1.5px' : '+2.0px',
+          yOffset: vNum >= 100 ? '+1.2px' : vNum >= 10 ? '+1.5px' : '+1.8px',
           margin: 'mx-1.5',
-          topOffset: '-0.10em',
+          topOffset: '0px',
           verticalAlign: 'middle',
         };
 
