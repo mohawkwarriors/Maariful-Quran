@@ -16,35 +16,38 @@ const toArabicNumeral = (num: number): string => {
 };
 
 /**
- * Authentic Classical Uthmanic Ayah End Medallion (علامة نهاية الآية).
- * Exactly matches the design of the ayah markers in the Arabic Quran text:
- * - Central circular medallion housing the verse number
- * - Inner concentric beaded frame
- * - Classical side finials (ornate ear crests on horizontal axis) with terminal dots
- * - Top and bottom ornamental apex crowns with terminal dots
- * - Four corner petal accents
- * - Mathematically centered Eastern Arabic numerals (٠-٩) across all devices,
- *   preventing mobile Safari/WebKit unicode ligature separation.
+ * Exact vector geometry extracted directly from the Amiri Quran U+06DD (Arabic End of Ayah) font glyph.
+ * Guarantees a 100% authentic curve-for-curve match with the markers rendered in the Arabic Mushaf block.
+ */
+const AYAH_MEDALLION_PATH =
+  "M596 1078Q589 1072 530 1030Q471 987 459 957Q447 925 460 898Q441 900 423.5 901.0Q406 902 389 902Q242 900 134 819Q0 718 0 539Q0 360 134 259Q246 177 389 176Q406 176 423.5 177.5Q441 179 460 181Q447 153 459 121Q471 91 530 48Q589 6 596 0Q604 6 662 48Q720 90 732 121Q744 153 731 181Q750 179 768.0 177.5Q786 176 803 176Q946 177 1058 259Q1191 359 1191 539Q1191 719 1058 819Q950 900 803 902Q786 902 768.0 901.0Q750 900 731 898Q744 925 732 957Q720 987 661 1030Q632 1051 616.0 1063.0Q600 1075 596 1078ZM935 223Q939 232 935 250Q930 270 909 279Q878 289 849 269Q841 263 842 260Q843 258 846 257Q865 250 867 237Q866 218 840 203Q700 191 630 253Q648 281 624 292Q609 297 603 290Q597 283 596 276Q595 281 588 290Q582 297 567 292Q543 281 561 253Q491 191 351 203Q325 218 324 237Q326 250 345 257Q348 258 349 260Q350 263 342 269Q313 289 282 279Q260 270 255 250Q251 232 255 223Q200 242 149 280Q27 372 27 539Q27 706 149 799Q175 818 201.0 831.5Q227 845 255 855Q251 847 255 828Q260 808 282 799Q314 790 342 809Q352 818 340 822Q326 825 324 841Q325 860 351 875Q493 885 561 825Q543 797 567 786Q582 781 588 788Q595 797 596 802Q597 795 603 788Q609 781 624 786Q648 797 630 825Q698 886 841 875Q865 861 867 841Q865 825 852 822Q840 818 850 809Q878 790 909 799Q931 808 936 828Q941 847 936 855Q964 845 990.5 831.5Q1017 818 1042 799Q1164 706 1164 539Q1164 372 1042 280Q991 243 935 223ZM596 269Q597 259 610 250Q682 197 682 142Q681 92 596 30Q511 92 510 142Q510 198 581 250Q595 260 596 269ZM581 828Q509 881 510 936Q511 985 596 1048Q681 985 682 936Q683 882 610 828Q597 819 596 809Q595 818 581 828ZM790 968Q789 955 800 944Q812 934 824 934Q837 934 848 944Q858 952 858 968Q858 982 848 992Q838 1002 824 1002Q810 1002 800 992Q792 984 790 968ZM790 111Q789 98 800 87Q812 77 824 77Q837 77 848 87Q858 95 858 111Q858 125 848 135Q839 144 824 144Q809 144 800 135Q792 127 790 111ZM333 968Q332 955 343 944Q355 934 367 934Q380 934 391 944Q400 951 400 968Q400 983 391 992Q381 1002 367 1002Q353 1002 343 992Q335 984 333 968ZM333 111Q332 98 343 87Q355 77 367 77Q380 77 391 87Q400 94 400 111Q400 126 391 135Q382 144 367 144Q352 144 343 135Q335 127 333 111Z";
+
+/**
+ * Authentic Classical Quranic Ayah End Marker (علامة نهاية الآية).
+ * Recreates the exact font glyph design of the Uthmanic Quran Ayah marker used in the Arabic section:
+ * - Exact side finials, top/bottom crowns, and corner accents directly from the Uthmanic font glyph
+ * - Eastern Arabic numerals (٠-٩) mathematically centered in the inner cavity
+ * - 100% consistent across iOS Safari, Android, and Desktop without Unicode ligature separation
  */
 export const AyahEndMarker: React.FC<AyahMarkerProps> = ({
   vNum,
   className = '',
   size = 'md',
 }) => {
-  // Proportional dimensional scale & font sizing for numerals
+  // Proportional sizing calibrated to font em heights (glyph viewBox 1191 x 1078, aspect ratio ~ 1.10)
   const dimensions =
     size === 'sm'
       ? {
-          box: 'w-[23px] h-[23px]',
-          numSize: vNum >= 100 ? '9px' : vNum >= 10 ? '10.5px' : '11.5px',
+          box: 'w-[23px] h-[21px]',
+          numSize: vNum >= 100 ? '9px' : vNum >= 10 ? '10px' : '11px',
           letterSpacing: vNum >= 100 ? '-0.4px' : 'normal',
           yOffset: '-0.5px',
           margin: 'mx-1',
-          verticalAlign: '-0.15em',
+          verticalAlign: '-0.12em',
         }
       : size === 'lg'
       ? {
-          box: 'w-[36px] h-[36px] sm:w-[40px] sm:h-[40px]',
+          box: 'w-[38px] h-[35px] sm:w-[42px] sm:h-[38px]',
           numSize: vNum >= 100 ? '12.5px' : vNum >= 10 ? '14.5px' : '16px',
           letterSpacing: vNum >= 100 ? '-0.4px' : 'normal',
           yOffset: '-1px',
@@ -52,8 +55,8 @@ export const AyahEndMarker: React.FC<AyahMarkerProps> = ({
           verticalAlign: 'middle',
         }
       : {
-          box: 'w-[26px] h-[26px]',
-          numSize: vNum >= 100 ? '10px' : vNum >= 10 ? '11.5px' : '13px',
+          box: 'w-[28px] h-[25px]',
+          numSize: vNum >= 100 ? '10px' : vNum >= 10 ? '11px' : '12.5px',
           letterSpacing: vNum >= 100 ? '-0.4px' : 'normal',
           yOffset: '-0.5px',
           margin: 'mx-1.5',
@@ -70,81 +73,14 @@ export const AyahEndMarker: React.FC<AyahMarkerProps> = ({
         lineHeight: 1,
       }}
     >
-      {/* Precision Classical Uthmanic Ayah Medallion Vector */}
+      {/* Exact Uthmanic Quran Ayah Medallion Glyph Vector */}
       <svg
-        viewBox="0 0 44 44"
+        viewBox="0 0 1191 1078"
         className="absolute inset-0 w-full h-full text-[#CD7743] dark:text-[#E08955] drop-shadow-2xs overflow-visible"
-        fill="none"
+        fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
       >
-        {/* Outer Circular Rim */}
-        <circle
-          cx="22"
-          cy="22"
-          r="14.5"
-          stroke="currentColor"
-          strokeWidth="1.3"
-          fill="currentColor"
-          fillOpacity="0.06"
-        />
-
-        {/* Inner Concentric Beaded Frame */}
-        <circle
-          cx="22"
-          cy="22"
-          r="11.8"
-          stroke="currentColor"
-          strokeWidth="0.8"
-          strokeDasharray="2.5 1.5"
-          fill="currentColor"
-          fillOpacity="0.03"
-        />
-
-        {/* Left Side Finial / Ear (Classic Uthmanic horizontal ornament) */}
-        <path
-          d="M 7.5,22 C 4.5,19 1.5,20.2 1,22 C 1.5,23.8 4.5,25 7.5,22 Z"
-          stroke="currentColor"
-          strokeWidth="1.1"
-          fill="currentColor"
-          fillOpacity="0.12"
-        />
-        <circle cx="1.8" cy="22" r="1.1" fill="currentColor" />
-
-        {/* Right Side Finial / Ear */}
-        <path
-          d="M 36.5,22 C 39.5,19 42.5,20.2 43,22 C 42.5,23.8 39.5,25 36.5,22 Z"
-          stroke="currentColor"
-          strokeWidth="1.1"
-          fill="currentColor"
-          fillOpacity="0.12"
-        />
-        <circle cx="42.2" cy="22" r="1.1" fill="currentColor" />
-
-        {/* Top Ornamental Apex Crown */}
-        <path
-          d="M 22,7.5 C 20.2,4.5 21,1.5 22,1 C 23,1.5 23.8,4.5 22,7.5 Z"
-          stroke="currentColor"
-          strokeWidth="1"
-          fill="currentColor"
-          fillOpacity="0.15"
-        />
-        <circle cx="22" cy="1.8" r="1.1" fill="currentColor" />
-
-        {/* Bottom Ornamental Apex Crown */}
-        <path
-          d="M 22,36.5 C 20.2,39.5 21,42.5 22,43 C 23,42.5 23.8,39.5 22,36.5 Z"
-          stroke="currentColor"
-          strokeWidth="1"
-          fill="currentColor"
-          fillOpacity="0.15"
-        />
-        <circle cx="22" cy="42.2" r="1.1" fill="currentColor" />
-
-        {/* Four Corner Petal Accents */}
-        <circle cx="12" cy="12" r="0.8" fill="currentColor" />
-        <circle cx="32" cy="12" r="0.8" fill="currentColor" />
-        <circle cx="12" cy="32" r="0.8" fill="currentColor" />
-        <circle cx="32" cy="32" r="0.8" fill="currentColor" />
+        <path d={AYAH_MEDALLION_PATH} />
       </svg>
 
       {/* Dead-center Eastern Arabic Numeral */}
