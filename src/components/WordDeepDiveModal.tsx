@@ -33,14 +33,34 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
     return () => mql.removeEventListener('change', onChange);
   }, []);
 
-  // Filter out any dummy placeholder transliterations or Arabic text in transliteration field
-  const isTransliterationArabic = data.transliteration
-    ? /[\u0600-\u06FF]/.test(data.transliteration) || data.transliteration.trim() === data.word.trim()
-    : true;
-  const cleanTransliteration = !isTransliterationArabic ? data.transliteration : null;
+  // Extract genuine transliteration (never English translation)
+  let cleanTransliteration = '';
+  let morphologyText = data.partOfSpeech || '';
 
-  // Format grammar note and insight cleanly
-  const formattedPartOfSpeech = data.partOfSpeech ? formatArabicEnglishInsight(data.partOfSpeech) : '';
+  // 1. If partOfSpeech has "Transliteration: <phonetic text>", extract it
+  if (/transliteration\s*:\s*/i.test(morphologyText)) {
+    const match = morphologyText.match(/transliteration\s*:\s*([^;,\n]+)/i);
+    if (match) {
+      cleanTransliteration = match[1].trim();
+      morphologyText = morphologyText.replace(/transliteration\s*:\s*([^;,\n]+)[;\n]?/i, '').trim();
+    }
+  }
+
+  // 2. If data.transliteration is present and not matching translation or Arabic
+  if (!cleanTransliteration && data.transliteration) {
+    const isArabic = /[\u0600-\u06FF]/.test(data.transliteration) || data.transliteration.trim() === data.word.trim();
+    const isTranslationEcho =
+      data.primaryMeaning &&
+      (data.transliteration.trim().toLowerCase() === data.primaryMeaning.trim().toLowerCase() ||
+       data.primaryMeaning.toLowerCase().startsWith(data.transliteration.trim().toLowerCase()));
+
+    if (!isArabic && !isTranslationEcho && data.transliteration !== 'Quranic Term') {
+      cleanTransliteration = data.transliteration.trim();
+    }
+  }
+
+  // Format grammar note and insight cleanly (only if genuine morphological content remains)
+  const formattedPartOfSpeech = morphologyText ? formatArabicEnglishInsight(morphologyText) : '';
 
   // Filter out any legacy placeholder related words (strictly genuine words only)
   const authenticRelatedWords = (data.relatedWords || []).filter(
@@ -85,7 +105,7 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
             </span>
 
             {cleanTransliteration && (
-              <span className="text-base sm:text-lg font-bold text-stone-800 dark:text-stone-100">
+              <span className="text-base sm:text-lg font-semibold text-stone-700 dark:text-stone-200 tracking-wide select-text">
                 {cleanTransliteration}
               </span>
             )}

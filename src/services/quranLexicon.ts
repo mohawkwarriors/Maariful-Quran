@@ -737,7 +737,20 @@ export function getWordDeepDive(word: string, fallbackMeaning?: string, fallback
   // 3. Synthesize consistent linguistic deep-dive for words not in the manual dictionary
   const isParticle = isClassicalParticle(cleanWord, fallbackRoot, fallbackGrammar);
   const rootStr = isParticle ? '' : (fallbackRoot || '');
-  const cleanTransliteration = fallbackMeaning ? fallbackMeaning.split(/\s+/).slice(0, 3).join(' ') : 'Quranic Term';
+
+  // Extract authentic transliteration and morphology cleanly from fallbackGrammar if present
+  let genuineTransliteration = '';
+  let genuineMorphology = fallbackGrammar || '';
+
+  if (fallbackGrammar && /transliteration\s*:\s*/i.test(fallbackGrammar)) {
+    const match = fallbackGrammar.match(/transliteration\s*:\s*([^;,\n]+)/i);
+    if (match) {
+      genuineTransliteration = match[1].trim();
+      const remaining = fallbackGrammar.replace(/transliteration\s*:\s*([^;,\n]+)[;\n]?/i, '').trim();
+      genuineMorphology = remaining;
+    }
+  }
+
   const lanesInfo = isParticle ? null : getLanesRootInfo(fallbackRoot);
 
   // Extract authentic primary vs alternative translations cleanly
@@ -758,8 +771,8 @@ export function getWordDeepDive(word: string, fallbackMeaning?: string, fallback
 
   const synthesized: WordDeepDiveData = {
     word: cleanWord,
-    transliteration: cleanTransliteration,
-    partOfSpeech: fallbackGrammar || (isParticle ? 'Classical Arabic Particle / Preposition (حرف مبني)' : 'Classical Arabic Vocabulary (مفردات قرآنية)'),
+    transliteration: genuineTransliteration,
+    partOfSpeech: genuineMorphology || (isParticle ? 'Classical Arabic Particle / Preposition (حرف مبني)' : 'Classical Arabic Vocabulary (مفردات قرآنية)'),
     root: rootStr,
     rootMeaning: isParticle
       ? 'In Classical Arabic syntax (Nahw), particles, prepositions, and pronouns are indeclinable (mabni) and non-derivative, serving connective syntactic functions rather than carrying triliteral roots.'
