@@ -239,7 +239,7 @@ export const FootnotesSection: React.FC<{
 
                   <div className="space-y-1 min-w-0 flex-1">
                     {fn.author && (
-                      <span className="inline-block mr-2 px-1.5 py-0.2 text-[9.5px] uppercase font-bold tracking-wider rounded bg-[#CD7743]/10 text-[#CD7743] dark:bg-[#E08955]/15 dark:text-[#E08955] border border-[#CD7743]/20 dark:border-[#E08955]/25">
+                      <span className="inline-block mr-2 px-1.5 py-0.5 text-[9.5px] uppercase font-bold tracking-wider rounded bg-[#CD7743]/10 text-[#CD7743] dark:bg-[#E08955]/15 dark:text-[#E08955] border border-[#CD7743]/20 dark:border-[#E08955]/25">
                         {fn.author}
                       </span>
                     )}

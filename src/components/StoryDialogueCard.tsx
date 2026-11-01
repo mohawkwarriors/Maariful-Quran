@@ -78,7 +78,7 @@ export const StoryDialogueCard: React.FC<StoryDialogueCardProps> = ({
                     <div
                       dir="rtl"
                       lang="ar"
-                      className="font-quran-uthmani text-right text-lg sm:text-[21px] text-[#1E3A34] dark:text-[#A7D7CE] leading-[2.2] tracking-wide select-text py-0.5"
+                      className="font-quran text-right text-lg sm:text-[21px] text-[#1E3A34] dark:text-[#A7D7CE] leading-[2.2] tracking-wide select-text py-0.5"
                     >
                       {turn.ayah.arabic}
                     </div>

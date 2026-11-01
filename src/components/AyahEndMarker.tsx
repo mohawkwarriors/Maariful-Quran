@@ -68,7 +68,7 @@ export const AyahEndMarker: React.FC<AyahMarkerProps> = ({
       {/* Precision 8-Pointed Star Rosette vector */}
       <svg
         viewBox="0 0 40 40"
-        className="absolute inset-0 w-full h-full text-[#CD7743] dark:text-[#E08955] drop-shadow-2xs overflow-visible"
+        className="absolute inset-0 w-full h-full text-[#CD7743] dark:text-[#E08955] drop-shadow-xs overflow-visible"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >

@@ -584,7 +584,7 @@ export const QURAN_LEXICON: Record<string, WordDeepDiveData> = {
     word: 'مَرَضٌ',
     transliteration: 'Maraḍ',
     partOfSpeech: 'Indefinite Noun (اسم نكرة)',
-    root: 'م - ر - ض (M-R-D)',
+    root: 'م - ر - ض (M-R-Ḍ)',
     rootMeaning: 'To be diseased, sick, out of equilibrium, corrupted from natural health.',
     primaryMeaning: 'Spiritual sickness / malice',
     otherMeanings: [

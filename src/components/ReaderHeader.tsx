@@ -106,7 +106,7 @@ export const ReaderHeader: React.FC<ReaderHeaderProps> = ({
           {activeVerseRange && (
             <>
               <span className="text-stone-400" aria-hidden="true">·</span>
-              <span className="text-[#596B8E] dark:text-[#8FA0C5] whitespace-nowrap hidden xs:inline font-medium">
+              <span className="text-[#596B8E] dark:text-[#8FA0C5] whitespace-nowrap hidden sm:inline font-medium">
                 Verses {activeVerseRange[0]}–{activeVerseRange[1]}
               </span>
             </>
