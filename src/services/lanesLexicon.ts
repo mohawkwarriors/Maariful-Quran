@@ -1,14 +1,32 @@
 /**
  * Classical Arabic Root & Lexicography Service
- * Powered by Edward William Lane's Arabic-English Lexicon (مدّ القاموس - Madd al-Qamus)
+ * Powered by Edward William Lane's Arabic-English Lexicon (مدّ القاموس - Madd al-Qāmūs)
  * and ejtaal.net (Arabic Almanac / Mawrid Reader)
  */
+
+export interface LanesRelatedWord {
+  arabic: string;
+  transliteration: string;
+  meaning: string;
+}
+
+export interface LanesVerseReference {
+  surahNumber: number;
+  surahName: string;
+  verseNumber: number;
+  reference: string;
+  arabicSnippet?: string;
+  englishText: string;
+}
 
 export interface LanesRootEntry {
   arabicLetters: string; // e.g. "ق - و - ل"
   transliteration: string; // e.g. "Q-W-L"
   laneDefinition: string;
+  lanePage?: string; // e.g. "Book 1, p. 2995"
   classicalNuances?: string[];
+  relatedWords?: LanesRelatedWord[];
+  otherQuranVerses?: LanesVerseReference[];
 }
 
 /**
@@ -78,250 +96,243 @@ export function isClassicalParticle(word?: string, root?: string, grammar?: stri
  * Keyed by normalized Arabic root letters.
  */
 export const LANES_ROOT_KNOWLEDGE: Record<string, LanesRootEntry> = {
-  // Surah An-Nas & Al-Falaq roots
   'قول': {
     arabicLetters: 'ق - و - ل',
     transliteration: 'Q-W-L',
-    laneDefinition: 'To say, utter, articulate, pronounce; foundational classical root for speech, dictation, and divine proclamation (Lane p. 2995).',
-    classicalNuances: ['He uttered an articulate phrase', 'He commanded with authority', 'Contextual proclamation']
+    laneDefinition: 'To say, utter, articulate, pronounce; foundational classical root for speech, dictation, and divine proclamation.',
+    lanePage: 'Book 1, p. 2995',
+    relatedWords: [
+      { arabic: 'قَالَ', transliteration: 'Qāla', meaning: 'He said / articulated' },
+      { arabic: 'يَقُولُ', transliteration: 'Yaqūlu', meaning: 'He says / states' },
+      { arabic: 'قَوْل', transliteration: 'Qawl', meaning: 'Word, utterance, speech' },
+      { arabic: 'أَقْوَال', transliteration: 'Aqwāl', meaning: 'Sayings, statements' }
+    ],
+    otherQuranVerses: [
+      { surahNumber: 112, surahName: 'Al-Ikhlas', verseNumber: 1, reference: '112:1', arabicSnippet: 'قُلْ هُوَ اللَّهُ أَحَدٌ', englishText: 'Say, He is Allah, [who is] One.' },
+      { surahNumber: 113, surahName: 'Al-Falaq', verseNumber: 1, reference: '113:1', arabicSnippet: 'قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ', englishText: 'Say, I seek refuge in the Lord of daybreak.' },
+      { surahNumber: 109, surahName: 'Al-Kafirun', verseNumber: 1, reference: '109:1', arabicSnippet: 'قُلْ يَا أَيُّهَا الْكَافِرُونَ', englishText: 'Say, O disbelievers.' }
+    ]
   },
   'عوذ': {
     arabicLetters: 'ع - و - ذ',
     transliteration: 'ʿ-W-Dh',
-    laneDefinition: 'To take refuge, betake oneself for shelter, seek haven against peril, cleave to a protective sanctuary (Lane p. 2192).',
-    classicalNuances: ['Seeking shelter against an adversary', 'Placing oneself under divine asylum', 'Invoking sanctuary']
+    laneDefinition: 'To take refuge, betake oneself for shelter, seek haven against peril, cleave to a protective sanctuary.',
+    lanePage: 'Book 1, p. 2192',
+    relatedWords: [
+      { arabic: 'عَاذَ', transliteration: 'ʿĀdha', meaning: 'He took refuge / sought haven' },
+      { arabic: 'مَعَاذ', transliteration: 'Maʿādh', meaning: 'Place of refuge / sanctuary' },
+      { arabic: 'تَعَوُّذ', transliteration: 'Taʿawwudh', meaning: 'Seeking divine protection' }
+    ],
+    otherQuranVerses: [
+      { surahNumber: 113, surahName: 'Al-Falaq', verseNumber: 1, reference: '113:1', arabicSnippet: 'قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ', englishText: 'Say, I seek refuge in the Lord of daybreak.' },
+      { surahNumber: 7, surahName: 'Al-A\'raf', verseNumber: 200, reference: '7:200', arabicSnippet: 'وَإِمَّا يَنزَغَنَّكَ مِنَ الشَّيْطَانِ نَزْغٌ فَاسْتَعِذْ بِاللَّهِ', englishText: 'And if an evil suggestion comes to you from Satan, then seek refuge in Allah.' }
+    ]
   },
   'ربب': {
     arabicLetters: 'ر - ب - ب',
     transliteration: 'R-B-B',
-    laneDefinition: 'To foster, nourish, rear, bring up gradually toward perfection; to possess supreme dominion, sustain, and govern (Lane p. 1004).',
-    classicalNuances: ['The Evolver and Sustainer', 'Nurturing from stage to stage', 'Sovereign caregiver']
+    laneDefinition: 'To foster, nourish, rear, bring up gradually toward perfection; to possess supreme dominion, sustain, and govern.',
+    lanePage: 'Book 1, p. 1004',
+    relatedWords: [
+      { arabic: 'رَبّ', transliteration: 'Rabb', meaning: 'Lord, Sustainer, Nurturer' },
+      { arabic: 'رُبُوبِيَّة', transliteration: 'Rubūbiyyah', meaning: 'Divine Lordship and providential care' },
+      { arabic: 'رَبِيب', transliteration: 'Rabīb', meaning: 'Foster-child reared with care' }
+    ],
+    otherQuranVerses: [
+      { surahNumber: 1, surahName: 'Al-Fatihah', verseNumber: 2, reference: '1:2', arabicSnippet: 'الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ', englishText: 'Praise be to Allah, Lord of the worlds.' },
+      { surahNumber: 113, surahName: 'Al-Falaq', verseNumber: 1, reference: '113:1', arabicSnippet: 'قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ', englishText: 'Say, I seek refuge with the Lord of the daybreak.' }
+    ]
   },
   'نوس': {
     arabicLetters: 'ن - و - س',
     transliteration: 'N-W-S',
-    laneDefinition: 'To swing, sway, move to and fro; mankind (Al-Nas) as dynamic beings possessing social affinity and movement (Lane p. 2867).',
-    classicalNuances: ['Humanity in its mortal agitation', 'Companionable social beings', 'The general human species']
+    laneDefinition: 'To swing, sway, move to and fro; mankind (Al-Nās) as dynamic mortal beings possessing movement and social affinity.',
+    lanePage: 'Book 1, p. 2867',
+    relatedWords: [
+      { arabic: 'النَّاس', transliteration: 'Al-Nās', meaning: 'Mankind, humanity, people' },
+      { arabic: 'إِنسَان', transliteration: 'Insān', meaning: 'Human being' },
+      { arabic: 'إِنس', transliteration: 'Ins', meaning: 'Mankind as opposed to jinn' }
+    ],
+    otherQuranVerses: [
+      { surahNumber: 2, surahName: 'Al-Baqarah', verseNumber: 21, reference: '2:21', arabicSnippet: 'يَا أَيُّهَا النَّاسُ اعْبُدُوا رَبَّكُمُ', englishText: 'O mankind, worship your Lord.' },
+      { surahNumber: 103, surahName: 'Al-Asr', verseNumber: 2, reference: '103:2', arabicSnippet: 'إِنَّ الْإِنسَانَ لَفِي خُسْرٍ', englishText: 'Indeed, mankind is in loss.' }
+    ]
   },
   'ملك': {
     arabicLetters: 'م - ل - ك',
     transliteration: 'M-L-K',
-    laneDefinition: 'To possess, hold dominion, command authority, have sovereign rule, reign over subjects without restriction (Lane p. 3020).',
-    classicalNuances: ['Supreme kingly dominion', 'Absolute ownership', 'Effective governing control']
+    laneDefinition: 'To possess, hold dominion, command authority, have sovereign rule, reign over subjects without restriction.',
+    lanePage: 'Book 1, p. 3020',
+    relatedWords: [
+      { arabic: 'مَلِك', transliteration: 'Malik', meaning: 'Sovereign King, Monarch' },
+      { arabic: 'مَالِك', transliteration: 'Mālik', meaning: 'Owner, Possessor' },
+      { arabic: 'مُلْك', transliteration: 'Mulk', meaning: 'Dominion, Kingdom, Sovereignty' }
+    ],
+    otherQuranVerses: [
+      { surahNumber: 1, surahName: 'Al-Fatihah', verseNumber: 4, reference: '1:4', arabicSnippet: 'مَالِكِ يَوْمِ الدِّينِ', englishText: 'Sovereign of the Day of Recompense.' },
+      { surahNumber: 67, surahName: 'Al-Mulk', verseNumber: 1, reference: '67:1', arabicSnippet: 'تَبَارَكَ الَّذِي بِيَدِهِ الْمُلْكُ', englishText: 'Blessed is He in whose hand is dominion.' }
+    ]
   },
   'اله': {
     arabicLetters: 'إ - ل - ه',
     transliteration: 'ʾ-L-H',
-    laneDefinition: 'To worship, adore with supreme love and reverential awe; to take refuge in when bewildered or desperate (Lane p. 82).',
-    classicalNuances: ['The sole Object of Adoration', 'The Sanctuary in perplexity', 'Exclusive right of servitude']
+    laneDefinition: 'To worship, adore with supreme love and reverential awe; to take refuge in when bewildered or desperate.',
+    lanePage: 'Book 1, p. 82',
+    relatedWords: [
+      { arabic: 'إِلَٰه', transliteration: 'Ilāh', meaning: 'God, deity worthy of worship' },
+      { arabic: 'اللَّه', transliteration: 'Allāh', meaning: 'The One True Supreme God' },
+      { arabic: 'أُلُوهِيَّة', transliteration: 'Ulūhiyyah', meaning: 'Exclusive Divine Worship' }
+    ],
+    otherQuranVerses: [
+      { surahNumber: 2, surahName: 'Al-Baqarah', verseNumber: 163, reference: '2:163', arabicSnippet: 'وَإِلَٰهُكُمْ إِلَٰهٌ وَاحِدٌ', englishText: 'And your god is one God.' },
+      { surahNumber: 112, surahName: 'Al-Ikhlas', verseNumber: 1, reference: '112:1', arabicSnippet: 'قُلْ هُوَ اللَّهُ أَحَدٌ', englishText: 'Say, He is Allah, [who is] One.' }
+    ]
   },
   'شرر': {
     arabicLetters: 'ش - ر - ر',
     transliteration: 'Sh-R-R',
-    laneDefinition: 'Evil, injury, malice, active corruption, that which produces disadvantage and peril (Lane p. 1526).',
-    classicalNuances: ['Active malice', 'Malignant harm', 'Spiritual detriment']
+    laneDefinition: 'Evil, injury, malice, active corruption, that which produces disadvantage and peril.',
+    lanePage: 'Book 1, p. 1526',
+    relatedWords: [
+      { arabic: 'شَرّ', transliteration: 'Sharr', meaning: 'Evil, harm, wickedness' },
+      { arabic: 'أَشْرَار', transliteration: 'Ashrār', meaning: 'Wicked / evil persons' }
+    ],
+    otherQuranVerses: [
+      { surahNumber: 113, surahName: 'Al-Falaq', verseNumber: 2, reference: '113:2', arabicSnippet: 'مِن شَرِّ مَا خَلَقَ', englishText: 'From the evil of that which He created.' },
+      { surahNumber: 99, surahName: 'Az-Zalzalah', verseNumber: 8, reference: '99:8', arabicSnippet: 'وَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ شَرًّا يَرَهُ', englishText: 'And whoever does an atom\'s weight of evil will see it.' }
+    ]
   },
   'وسوس': {
     arabicLetters: 'و - س - و - س',
     transliteration: 'W-S-W-S',
-    laneDefinition: 'To whisper insidiously, make a faint rustling or covert murmur; insidious suggestions repeated to stir hidden desires (Lane p. 3054).',
-    classicalNuances: ['Covert whisperings in the chest', 'Faint rustling sound of movement', 'Repeated insidious instigation']
+    laneDefinition: 'To whisper insidiously, make a faint rustling or covert murmur; insidious suggestions repeated to stir hidden desires.',
+    lanePage: 'Book 1, p. 3054',
+    relatedWords: [
+      { arabic: 'وَسْوَاس', transliteration: 'Waswās', meaning: 'The whisperer who casts doubt' },
+      { arabic: 'وَسْوَسَة', transliteration: 'Waswasah', meaning: 'Insidious whispering, doubt' },
+      { arabic: 'يُوَسْوِسُ', transliteration: 'Yuwaswisu', meaning: 'He whispers insidious suggestions' }
+    ],
+    otherQuranVerses: [
+      { surahNumber: 7, surahName: 'Al-A\'raf', verseNumber: 20, reference: '7:20', arabicSnippet: 'فَوَسْوَسَ لَهُمَا الشَّيْطَانُ', englishText: 'Then Satan whispered to them both.' },
+      { surahNumber: 20, surahName: 'Ta-Ha', verseNumber: 120, reference: '20:120', arabicSnippet: 'فَوَسْوَسَ إِلَيْهِ الشَّيْطَانُ', englishText: 'Then Satan whispered to him.' }
+    ]
   },
   'خنس': {
     arabicLetters: 'خ - ن - س',
     transliteration: 'Kh-N-S',
-    laneDefinition: 'To withdraw, shrink back, recede, slink away stealthily upon encountering light or the remembrance of God (Lane p. 811).',
-    classicalNuances: ['Retreating upon being countered', 'Slinking into concealment', 'Lurking in secret to strike again']
+    laneDefinition: 'To withdraw, shrink back, recede, slink away stealthily upon encountering light or the remembrance of God.',
+    lanePage: 'Book 1, p. 811',
+    relatedWords: [
+      { arabic: 'خَنَّاس', transliteration: 'Khannās', meaning: 'The one who constantly slinks away and retreats' },
+      { arabic: 'خُنَّس', transliteration: 'Khunnas', meaning: 'Planets receding from sight' }
+    ],
+    otherQuranVerses: [
+      { surahNumber: 81, surahName: 'At-Takwir', verseNumber: 15, reference: '81:15', arabicSnippet: 'فَلَا أُقْسِمُ بِالْخُنَّسِ', englishText: 'So I swear by the retreating stars.' }
+    ]
   },
   'فلق': {
     arabicLetters: 'ف - ل - ق',
     transliteration: 'F-L-Q',
-    laneDefinition: 'To split, cleave asunder, burst forth into light; daybreak cleaving the gloom of night (Lane p. 2441).',
-    classicalNuances: ['The dawn splitting the horizon', 'Cleaving seeds and date-stones to bring forth life', 'Divine emergence of morning']
-  },
-  'غسق': {
-    arabicLetters: 'غ - س - ق',
-    transliteration: 'Gh-S-Q',
-    laneDefinition: 'Darkness deepening intensely; the setting of the red dusk and full immersion into night (Lane p. 2253).',
-    classicalNuances: ['Deepening nightfall', 'Intense midnight gloom', 'Concealment of predators']
-  },
-  'وقب': {
-    arabicLetters: 'و - ق - ب',
-    transliteration: 'W-Q-B',
-    laneDefinition: 'To enter into, penetrate a cavity or hollow, overspread completely (Lane p. 2958).',
-    classicalNuances: ['Penetrating deep obscurity', 'Entering into an aperture', 'Overspreading darkness']
-  },
-  'نفث': {
-    arabicLetters: 'ن - ف - ث',
-    transliteration: 'N-F-Th',
-    laneDefinition: 'To blow with a slight moisture or spitting sound; uttering incantations over knots (Lane p. 2824).',
-    classicalNuances: ['Blowing over cord knots', 'Occult incantation', 'Subtle breath with slight moisture']
-  },
-  'عقد': {
-    arabicLetters: 'ع - ق - د',
-    transliteration: 'ʿ-Q-D',
-    laneDefinition: 'To tie a knot, bind fast, compact, consolidate an agreement or contract (Lane p. 2102).',
-    classicalNuances: ['Firm knots in cords', 'Inviolable covenants', 'Resolution of intention']
+    laneDefinition: 'To split, cleave asunder, burst forth into light; daybreak cleaving the gloom of night.',
+    lanePage: 'Book 1, p. 2441',
+    relatedWords: [
+      { arabic: 'فَلَق', transliteration: 'Falaq', meaning: 'Daybreak, morning light' },
+      { arabic: 'فَالِق', transliteration: 'Fāliq', meaning: 'Cleaver of dawn and seeds' }
+    ],
+    otherQuranVerses: [
+      { surahNumber: 6, surahName: 'Al-An\'am', verseNumber: 95, reference: '6:95', arabicSnippet: 'إِنَّ اللَّهَ فَالِقُ الْحَبِّ وَالنَّوَىٰ', englishText: 'Indeed, Allah is the cleaver of grain and date seeds.' }
+    ]
   },
   'حسد': {
     arabicLetters: 'ح - س - د',
     transliteration: 'Ḥ-S-D',
-    laneDefinition: 'To envy, begrudge another person their blessing and desire that they be deprived of it (Lane p. 570).',
-    classicalNuances: ['Coveting cessation of another\'s grace', 'Malignant resentment', 'Internal spiritual poison']
+    laneDefinition: 'To envy, begrudge another person their blessing and desire that they be deprived of it.',
+    lanePage: 'Book 1, p. 570',
+    relatedWords: [
+      { arabic: 'حَاسِد', transliteration: 'Ḥāsid', meaning: 'Envier' },
+      { arabic: 'حَسَد', transliteration: 'Ḥasad', meaning: 'Malignant envy' }
+    ],
+    otherQuranVerses: [
+      { surahNumber: 2, surahName: 'Al-Baqarah', verseNumber: 109, reference: '2:109', arabicSnippet: 'حَسَدًا مِّنْ عِندِ أَنفُسِهِم', englishText: 'Out of envy from their own souls.' }
+    ]
   },
-
-  // Al-Ikhlas & Al-Kawthar roots
   'احد': {
     arabicLetters: 'أ - ح - د',
     transliteration: 'ʾ-Ḥ-D',
-    laneDefinition: 'Sole, indivisible, unique, having no component parts, partner, or peer in essence or attributes (Lane p. 26).',
-    classicalNuances: ['Absolute indivisibility', 'Uniqueness transcending multiplicity', 'Singular in eternity']
+    laneDefinition: 'Sole, indivisible, unique, having no component parts, partner, or peer in essence or attributes.',
+    lanePage: 'Book 1, p. 26',
+    relatedWords: [
+      { arabic: 'أَحَد', transliteration: 'Aḥad', meaning: 'The One, Indivisible' },
+      { arabic: 'وَاحِد', transliteration: 'Wāḥid', meaning: 'Single, One' }
+    ],
+    otherQuranVerses: [
+      { surahNumber: 112, surahName: 'Al-Ikhlas', verseNumber: 1, reference: '112:1', arabicSnippet: 'قُلْ هُوَ اللَّهُ أَحَدٌ', englishText: 'Say, He is Allah, [who is] One.' }
+    ]
   },
   'صمد': {
     arabicLetters: 'ص - م - د',
     transliteration: 'Ṣ-M-D',
-    laneDefinition: 'The Eternal Refuge, the Lord to whom recourse is had in all affairs, solid without void, self-sufficient (Lane p. 1726).',
-    classicalNuances: ['Depended upon by all creation', 'Free from need of sustenance', 'Immense and imperishable']
-  },
-  'ولد': {
-    arabicLetters: 'و - ل - د',
-    transliteration: 'W-L-D',
-    laneDefinition: 'To beget, bring forth offspring, produce progeny (Lane p. 3058).',
-    classicalNuances: ['Biological descent', 'Originating offspring', 'Transcended by the Divine']
-  },
-  'كفا': {
-    arabicLetters: 'ك - ف - أ',
-    transliteration: 'K-F-ʾ',
-    laneDefinition: 'To be equal, like, matching in station, an equal peer or counterpart (Lane p. 2616).',
-    classicalNuances: ['An equivalent counterpart', 'A matching comparable entity', 'Co-equal status']
-  },
-  'تبب': {
-    arabicLetters: 'ت - ب - ب',
-    transliteration: 'T-B-B',
-    laneDefinition: 'To suffer ruin, loss, perdition, cut off from success, continual destruction (Lane p. 297).',
-    classicalNuances: ['Complete destruction of enterprise', 'Total loss in this life and Hereafter', 'Severed from good']
-  },
-  'كسب': {
-    arabicLetters: 'ك - س - ب',
-    transliteration: 'K-S-B',
-    laneDefinition: 'To earn, gain, acquire through physical exertion, conduct, or moral deeds (Lane p. 2611).',
-    classicalNuances: ['Material acquisition', 'Accumulation of deeds', 'Personal accountability']
-  },
-  'كوثر': {
-    arabicLetters: 'ك - و - ث - ر',
-    transliteration: 'K-W-Th-R',
-    laneDefinition: 'Abundant, overflowing, perpetual good; the superabundant river and basin granted to the Prophet ﷺ (Lane p. 2596).',
-    classicalNuances: ['Superabundant grace', 'Celestial river in Paradise', 'Unending legacy']
-  },
-  'نحر': {
-    arabicLetters: 'ن - ح - ر',
-    transliteration: 'N-Ḥ-R',
-    laneDefinition: 'To sacrifice, slaughter an animal by piercing the upper chest / jugular; devotion of sacrificial rites (Lane p. 2774).',
-    classicalNuances: ['Sacrificial offering for Allah alone', 'Devotional slaughter', 'Consecration of life']
-  },
-  'شنا': {
-    arabicLetters: 'ش - ن - أ',
-    transliteration: 'Sh-N-ʾ',
-    laneDefinition: 'To hate, detest with deep malice, bear bitter animosity (Lane p. 1601).',
-    classicalNuances: ['Spiteful hatred', 'Detraction and enmity', 'Grudge of adversaries']
-  },
-  'بتر': {
-    arabicLetters: 'ب - ت - ر',
-    transliteration: 'B-T-R',
-    laneDefinition: 'To cut off, sever before maturity, deprive of offspring and lasting memory (Lane p. 150).',
-    classicalNuances: ['Cut off from all goodness', 'Deprived of lineage and legacy', 'Extinguished posterity']
-  },
-
-  // Al-Fatihah & Al-Baqarah foundational roots
-  'سمو': {
-    arabicLetters: 'س - م - و',
-    transliteration: 'S-M-W',
-    laneDefinition: 'To be high, lofty, elevated; a distinguishing sign, mark, or name designating reality (Lane p. 1429).',
-    classicalNuances: ['Elevation above the earth', 'Designation of identity', 'Transcendence']
-  },
-  'حمد': {
-    arabicLetters: 'ح - م - د',
-    transliteration: 'Ḥ-M-D',
-    laneDefinition: 'To praise, laud, commend with feelings of supreme love, gratitude, and reverence for intrinsic perfection (Lane p. 627).',
-    classicalNuances: ['Voluntary praise for excellence', 'Heartfelt gratitude', 'Universal laudation']
-  },
-  'رحم': {
-    arabicLetters: 'ر - ح - م',
-    transliteration: 'R-Ḥ-M',
-    laneDefinition: 'Tenderness, mercy, compassion, maternal womb bond; benevolence toward the vulnerable (Lane p. 1055).',
-    classicalNuances: ['All-encompassing universal mercy (Rahman)', 'Specialized abiding grace (Rahim)', 'Bond of kinship']
-  },
-  'دين': {
-    arabicLetters: 'د - ي - ن',
-    transliteration: 'D-Y-N',
-    laneDefinition: 'Obedience, subjection, reckoning, moral law, religion, recompense of actions (Lane p. 917).',
-    classicalNuances: ['The Day of Divine Reckoning', 'The primordial religion', 'Complete submission']
-  },
-  'عبد': {
-    arabicLetters: 'ع - ب - د',
-    transliteration: 'ʿ-B-D',
-    laneDefinition: 'To serve with utmost humility and lowliness combined with supreme love and veneration (Lane p. 1935).',
-    classicalNuances: ['Total human servitude', 'Adoration without reservation', 'Submission to divine law']
-  },
-  'هدي': {
-    arabicLetters: 'ه - د - ي',
-    transliteration: 'H-D-Y',
-    laneDefinition: 'To guide gently, illuminate the path, show the way of safety, lead step by step to salvation (Lane p. 2904).',
-    classicalNuances: ['Inward spiritual illumination', 'Clear outward instruction', 'Bestowal of success']
-  },
-  'صرط': {
-    arabicLetters: 'ص - ر - ط',
-    transliteration: 'Ṣ-R-Ṭ',
-    laneDefinition: 'A level, wide, evident highway that swallows travelers smoothly without divergent bends (Lane p. 1678).',
-    classicalNuances: ['The upright level highway', 'Direct path without deviation', 'The authentic prophetic tradition']
+    laneDefinition: 'The Eternal Refuge, the Lord to whom recourse is had in all affairs, solid without void, self-sufficient.',
+    lanePage: 'Book 1, p. 1726',
+    relatedWords: [
+      { arabic: 'الصَّمَد', transliteration: 'Al-Ṣamad', meaning: 'The Eternal Refuge turned to in all needs' }
+    ],
+    otherQuranVerses: [
+      { surahNumber: 112, surahName: 'Al-Ikhlas', verseNumber: 2, reference: '112:2', arabicSnippet: 'اللَّهُ الصَّمَدُ', englishText: 'Allah, the Eternal Refuge.' }
+    ]
   },
   'كتب': {
     arabicLetters: 'ك - ت - ب',
     transliteration: 'K-T-B',
-    laneDefinition: 'To draw together, join parts, stitch, inscribe, decree firmly with permanent obligation (Lane p. 2589).',
-    classicalNuances: ['Gathering wisdom into unified scripture', 'Firm decree in the Preserved Tablet', 'Binding divine obligation']
+    laneDefinition: 'To draw together, join parts, stitch, inscribe, decree firmly with permanent obligation.',
+    lanePage: 'Book 1, p. 2589',
+    relatedWords: [
+      { arabic: 'كِتَاب', transliteration: 'Kitāb', meaning: 'Book, Scripture, Decree' },
+      { arabic: 'كَتَبَ', transliteration: 'Kataba', meaning: 'He inscribed / decreed' },
+      { arabic: 'كَاتِب', transliteration: 'Kātib', meaning: 'Scribe, writer' }
+    ],
+    otherQuranVerses: [
+      { surahNumber: 2, surahName: 'Al-Baqarah', verseNumber: 2, reference: '2:2', arabicSnippet: 'ذَٰلِكَ الْكِتَابُ لَا رَيْبَ ۛ فِيهِ', englishText: 'That is the Book about which there is no doubt.' }
+    ]
   },
   'ريب': {
     arabicLetters: 'ر - ي - ب',
     transliteration: 'R-Y-B',
-    laneDefinition: 'Disquieting agitation of mind, suspicion, suspicion causing restless disturbance (Lane p. 1205).',
-    classicalNuances: ['Absence of tormenting doubt', 'Unwavering inner certainty', 'Pure serenity of truth']
+    laneDefinition: 'Disquieting agitation of mind, suspicion, suspicion causing restless disturbance.',
+    lanePage: 'Book 1, p. 1205',
+    relatedWords: [
+      { arabic: 'رَيْب', transliteration: 'Rayb', meaning: 'Doubt, suspicion, disquiet' },
+      { arabic: 'مُرِيب', transliteration: 'Murīb', meaning: 'Disturbing, disquieting' }
+    ],
+    otherQuranVerses: [
+      { surahNumber: 2, surahName: 'Al-Baqarah', verseNumber: 2, reference: '2:2', arabicSnippet: 'ذَٰلِكَ الْكِتَابُ لَا رَيْبَ ۛ فِيهِ', englishText: 'That is the Book about which there is no doubt.' }
+    ]
   },
   'وقي': {
     arabicLetters: 'و - ق - ي',
     transliteration: 'W-Q-Y',
-    laneDefinition: 'To shield, preserve, guard, erect a defensive barrier between oneself and peril (Lane p. 3059).',
-    classicalNuances: ['Taking protection against divine wrath', 'Moral vigilance (Taqwa)', 'Shielding conscience']
+    laneDefinition: 'To shield, preserve, guard, erect a defensive barrier between oneself and peril.',
+    lanePage: 'Book 1, p. 3059',
+    relatedWords: [
+      { arabic: 'تَقْوَى', transliteration: 'Taqwā', meaning: 'God-consciousness, pious shield' },
+      { arabic: 'مُتَّقِينَ', transliteration: 'Muttaqīn', meaning: 'Those who shield themselves with piety' }
+    ],
+    otherQuranVerses: [
+      { surahNumber: 2, surahName: 'Al-Baqarah', verseNumber: 2, reference: '2:2', arabicSnippet: 'هُدًى لِّلْمُتَّقِينَ', englishText: 'Guidance for those conscious of Allah.' }
+    ]
   },
-  'كفر': {
-    arabicLetters: 'ك - ف - ر',
-    transliteration: 'K-F-R',
-    laneDefinition: 'To cover, conceal, bury; linguistically a tiller burying seed in earth, theologically burying innate truth (Lane p. 2621).',
-    classicalNuances: ['Active suppression of conscience', 'Ingratitude toward divine favors', 'Concealing monotheistic reality']
-  },
-  'غيب': {
-    arabicLetters: 'غ - ي - ب',
-    transliteration: 'Gh-Y-B',
-    laneDefinition: 'That which is concealed from physical sensory perception, absent from sight but confirmed by revelation (Lane p. 2311).',
-    classicalNuances: ['Metaphysical celestial realities', 'Unseen divine realm', 'Transcendence beyond empirical senses']
-  },
-  'صلو': {
-    arabicLetters: 'ص - ل - و',
-    transliteration: 'Ṣ-L-W',
-    laneDefinition: 'Supplication, bending to connect, bowing the back, worship; the sacred bond between Creator and creation (Lane p. 1720).',
-    classicalNuances: ['Prescribed five daily prayers', 'Direct communion with Allah', 'Divine blessings upon creation']
-  },
-  'نزل': {
-    arabicLetters: 'ن - ز - ل',
-    transliteration: 'N-Z-L',
-    laneDefinition: 'To descend from an elevation, alight, lodge, settle; revelation sent down from on high (Lane p. 2788).',
-    classicalNuances: ['Descent of celestial scripture', 'Hospitality toward guests', 'Spiritual arrival']
-  },
-  'فلح': {
-    arabicLetters: 'ف - ل - ح',
-    transliteration: 'F-L-Ḥ',
-    laneDefinition: 'To split, cleave the earth by plowing, harvest prosperity, attain eternal salvation and flourishing in Paradise (Lane p. 2443).',
-    classicalNuances: ['Harvesting the fruits of righteousness', 'Everlasting triumph in the Hereafter', 'Attaining moral fulfillment']
+  'هدي': {
+    arabicLetters: 'ه - د - ي',
+    transliteration: 'H-D-Y',
+    laneDefinition: 'To guide gently, illuminate the path, show the way of safety, lead step by step to salvation.',
+    lanePage: 'Book 1, p. 2904',
+    relatedWords: [
+      { arabic: 'هُدًى', transliteration: 'Hudan', meaning: 'Guidance, illumination' },
+      { arabic: 'اهْدِنَا', transliteration: 'Ihdinā', meaning: 'Guide us' }
+    ],
+    otherQuranVerses: [
+      { surahNumber: 1, surahName: 'Al-Fatihah', verseNumber: 6, reference: '1:6', arabicSnippet: 'اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ', englishText: 'Guide us to the straight path.' }
+    ]
   }
 };
 
@@ -343,6 +354,9 @@ export function getLanesRootInfo(rootStr?: string): LanesRootEntry | null {
   return {
     arabicLetters: spaced,
     transliteration: clean,
-    laneDefinition: `Classical Arabic triliteral root investigated in Edward William Lane's Lexicon (Madd al-Qamus), referencing classical authorities Taj al-ʿArus and Lisan al-ʿArab.`,
+    laneDefinition: `Classical Arabic triliteral root investigated in Edward William Lane's Lexicon (Madd al-Qāmūs).`,
+    lanePage: 'Arabic Almanac Lexicon',
+    relatedWords: [],
+    otherQuranVerses: []
   };
 }

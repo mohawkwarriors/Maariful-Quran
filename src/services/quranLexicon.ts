@@ -740,21 +740,20 @@ export function getWordDeepDive(word: string, fallbackMeaning?: string, fallback
   const cleanTransliteration = fallbackMeaning ? fallbackMeaning.split(/\s+/).slice(0, 3).join(' ') : 'Quranic Term';
   const lanesInfo = isParticle ? null : getLanesRootInfo(fallbackRoot);
 
-  // Extract authentic alternative translations or classical nuances
-  const nuances: string[] = [];
+  // Extract authentic primary vs alternative translations cleanly
+  let primaryTranslation = fallbackMeaning || 'Quranic phrase meaning';
+  const alternativeTranslations: string[] = [];
+
   if (fallbackMeaning && (fallbackMeaning.includes('/') || fallbackMeaning.includes(','))) {
-    fallbackMeaning
-      .split(/[/,]/)
-      .map((s) => s.trim())
-      .filter((s) => s.length > 0 && s.toLowerCase() !== fallbackMeaning.toLowerCase())
-      .forEach((s) => {
-        if (!nuances.includes(s)) nuances.push(s);
-      });
-  }
-  if (lanesInfo?.classicalNuances) {
-    lanesInfo.classicalNuances.forEach((n) => {
-      if (!nuances.includes(n)) nuances.push(n);
-    });
+    const parts = fallbackMeaning.split(/[/,]/).map((s) => s.trim()).filter((s) => s.length > 0);
+    if (parts.length > 0) {
+      primaryTranslation = parts[0];
+      for (let i = 1; i < parts.length; i++) {
+        if (!alternativeTranslations.includes(parts[i]) && parts[i].toLowerCase() !== primaryTranslation.toLowerCase()) {
+          alternativeTranslations.push(parts[i]);
+        }
+      }
+    }
   }
 
   const synthesized: WordDeepDiveData = {
@@ -764,16 +763,14 @@ export function getWordDeepDive(word: string, fallbackMeaning?: string, fallback
     root: rootStr,
     rootMeaning: isParticle
       ? 'In Classical Arabic syntax (Nahw), particles, prepositions, and pronouns are indeclinable (mabni) and non-derivative, serving connective syntactic functions rather than carrying triliteral roots.'
-      : (lanesInfo?.laneDefinition || `Classical Arabic root referenced in Edward William Lane's Lexicon (Madd al-Qamus) and classical lexicography.`),
-    primaryMeaning: fallbackMeaning || 'Quranic phrase meaning',
-    otherMeanings: nuances,
-    relatedWords: [], // Strictly no fake/mock placeholders; only genuine verified root derivations
+      : (lanesInfo?.laneDefinition || `Classical Arabic root referenced in Edward William Lane's Lexicon (Madd al-Qāmūs).`),
+    primaryMeaning: primaryTranslation,
+    otherMeanings: alternativeTranslations,
+    relatedWords: (lanesInfo?.relatedWords as any) || [],
     isRare: false,
     occurrenceCount: 1,
-    otherQuranVerses: [], // Strictly no hardcoded Ayat al-Kursi placeholders; only genuine verified cross-references
-    tafseerNote: fallbackGrammar
-      ? (isParticle ? `Grammar: ${fallbackGrammar}. Indeclinable particle in classical Arabic syntax.` : `Grammar & Morphological Note: ${fallbackGrammar}. Root analysis referenced from Lane's Lexicon.`)
-      : (isParticle ? `Classical Arabic indeclinable particle (حرف مبني) elucidated in Ma'ariful Qur'an.` : `Classical Arabic terminology explicated in Ma'ariful Qur'an by Mufti Muhammad Shafi with reference to classical Arabic lexicography.`)
+    otherQuranVerses: (lanesInfo?.otherQuranVerses as any) || [],
+    tafseerNote: ''
   };
 
   deepDiveMemoCache.set(cacheKey, synthesized);
