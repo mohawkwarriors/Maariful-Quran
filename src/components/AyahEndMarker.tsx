@@ -27,6 +27,7 @@ const AYAH_MEDALLION_PATH =
  * Recreates the exact font glyph design of the Uthmanic Quran Ayah marker used in the Arabic section:
  * - Exact side finials, top/bottom crowns, and corner accents directly from the Uthmanic font glyph
  * - Eastern Arabic numerals (٠-٩) mathematically centered in the inner cavity
+ * - Calibrated 'middle' vertical alignment ensuring pixel-perfect baseline harmony across mobile, tablet, and desktop
  * - 100% consistent across iOS Safari, Android, and Desktop without Unicode ligature separation
  */
 export const AyahEndMarker: React.FC<AyahMarkerProps> = ({
@@ -43,7 +44,7 @@ export const AyahEndMarker: React.FC<AyahMarkerProps> = ({
           letterSpacing: vNum >= 100 ? '-0.4px' : 'normal',
           yOffset: '-0.5px',
           margin: 'mx-1',
-          verticalAlign: '-0.12em',
+          verticalAlign: 'middle',
         }
       : size === 'lg'
       ? {
@@ -86,7 +87,7 @@ export const AyahEndMarker: React.FC<AyahMarkerProps> = ({
       {/* Dead-center Eastern Arabic Numeral */}
       <span
         dir="rtl"
-        className="relative z-10 flex items-center justify-center text-center font-bold text-[#CD7743] dark:text-[#E08955] leading-none select-none"
+        className="absolute inset-0 flex items-center justify-center text-center font-bold text-[#CD7743] dark:text-[#E08955] leading-none select-none pointer-events-none"
         style={{
           fontFamily: "'Amiri', 'Amiri Quran', 'Scheherazade New', serif",
           fontSize: dimensions.numSize,
