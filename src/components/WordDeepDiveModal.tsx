@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import * as Popover from '@radix-ui/react-popover';
-import { X, Layers, Star, Compass, ExternalLink } from 'lucide-react';
+import { X, Layers, Compass, ExternalLink } from 'lucide-react';
 import { WordDeepDiveData } from '../services/quranLexicon';
 import { getEjtaalUrl, getLanesRootInfo } from '../services/lanesLexicon';
 import { formatArabicEnglishInsight, parseRootDisplay } from '../utils/textFormatter';
@@ -49,10 +49,16 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
   // 2. If data.transliteration is present and not matching translation or Arabic
   if (!cleanTransliteration && data.transliteration) {
     const isArabic = /[\u0600-\u06FF]/.test(data.transliteration) || data.transliteration.trim() === data.word.trim();
+    const normalizeForCompare = (s?: string) => (s || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+    const transNorm = normalizeForCompare(data.transliteration);
+    const meaningNorm = normalizeForCompare(data.primaryMeaning);
     const isTranslationEcho =
-      data.primaryMeaning &&
-      (data.transliteration.trim().toLowerCase() === data.primaryMeaning.trim().toLowerCase() ||
-       data.primaryMeaning.toLowerCase().startsWith(data.transliteration.trim().toLowerCase()));
+      transNorm.length > 0 &&
+      meaningNorm.length > 0 &&
+      (transNorm === meaningNorm ||
+       meaningNorm.startsWith(transNorm) ||
+       transNorm.startsWith(meaningNorm) ||
+       (transNorm.length >= 3 && meaningNorm.includes(transNorm)));
 
     if (!isArabic && !isTranslationEcho && data.transliteration !== 'Quranic Term') {
       cleanTransliteration = data.transliteration.trim();
@@ -93,8 +99,8 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
 
   const cardContent = (
     <div className="space-y-3">
-      {/* 1. Header: Word, Transliteration, Morphology Subtitle & Close (Translation NOT in header to avoid repetition) */}
-      <div className="border-b border-stone-100 dark:border-stone-800 pb-2.5 space-y-1">
+      {/* 1. Header: Word, Transliteration & Close Button (Translation and Morphology are placed in Card 1) */}
+      <div className="border-b border-stone-100 dark:border-stone-800 pb-2.5">
         <div className="flex items-start justify-between gap-3">
           <div className="flex items-baseline gap-2.5 sm:gap-3 flex-wrap min-w-0">
             <span
@@ -120,47 +126,41 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
             <X className="w-4 h-4" />
           </button>
         </div>
+      </div>
 
-        {/* Morphology / Part of Speech (Shown ONLY here, never repeated in a bottom card) */}
+      {/* 2. CARD 1: Translation, Part of Speech & Alternative Translations */}
+      <div className="p-3 sm:p-3.5 rounded-xl bg-stone-50 dark:bg-[#25252B] border border-stone-200/80 dark:border-stone-800 space-y-2">
+        {/* Plain Primary Translation / Definition */}
+        <div className="text-sm sm:text-[15px] font-semibold text-stone-900 dark:text-stone-100 leading-snug select-text">
+          {data.primaryMeaning}
+        </div>
+
+        {/* Morphology / Part of Speech (verbal noun, preposition, etc.) - Placed after translation and before alternative translations */}
         {formattedPartOfSpeech && (
-          <div className="text-xs text-[#596B8E] dark:text-[#788BB3] font-medium leading-normal pl-0.5">
+          <div className="text-xs text-[#596B8E] dark:text-[#788BB3] font-medium leading-normal select-text">
             {formattedPartOfSpeech}
           </div>
         )}
-      </div>
 
-      {/* 2. Rarity Banner (if Key Theological Term) */}
-      {data.isRare && (
-        <div className="flex items-center gap-2 px-2.5 py-1.5 rounded-lg bg-[#CD7743]/10 dark:bg-[#CD7743]/18 text-[#CD7743] dark:text-[#E08955] text-xs">
-          <Star className="w-3.5 h-3.5 fill-current shrink-0" />
-          <span className="font-semibold">Key Theological Term:</span>
-          <span className="truncate opacity-90">
-            {data.rarityNote || `${data.occurrenceCount} occurrences across the Quran.`}
-          </span>
-        </div>
-      )}
-
-      {/* 3. CARD 1: Translation Card (Comes FIRST) */}
-      <div className="p-3 sm:p-3.5 rounded-xl bg-stone-50 dark:bg-[#25252B] border border-stone-200/80 dark:border-stone-800 text-xs sm:text-[13px] space-y-1.5">
-        <div className="flex items-baseline gap-2 flex-wrap leading-snug">
-          <span className="text-[10.5px] uppercase tracking-wider font-bold text-stone-500 dark:text-stone-400 shrink-0">
-            Translation:
-          </span>
-          <span className="text-sm sm:text-[15px] font-semibold text-stone-900 dark:text-stone-100">
-            {data.primaryMeaning}
-          </span>
-        </div>
+        {/* Alternative Translations rendered as clean bullet points */}
         {data.otherMeanings && data.otherMeanings.length > 0 && (
-          <div className="text-xs text-stone-600 dark:text-stone-300 flex items-start gap-1.5 leading-relaxed pt-1.5 border-t border-stone-200/60 dark:border-stone-800/80">
-            <span className="text-[#596B8E] dark:text-[#788BB3] font-semibold shrink-0">
-              Alternative Translations:
+          <div className="pt-2 border-t border-stone-200/60 dark:border-stone-800/80 space-y-1.5">
+            <span className="text-[10.5px] font-bold uppercase tracking-wider text-stone-500 dark:text-stone-400 block">
+              Alternative Translations
             </span>
-            <span className="opacity-95">{data.otherMeanings.join(' · ')}</span>
+            <ul className="space-y-1.5 text-xs text-stone-600 dark:text-stone-300">
+              {data.otherMeanings.map((meaning, idx) => (
+                <li key={`alt-${idx}`} className="flex items-start gap-2 leading-relaxed">
+                  <span className="text-[#CD7743] dark:text-[#E08955] text-xs leading-none select-none shrink-0 mt-0.5">•</span>
+                  <span className="select-text">{meaning}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         )}
       </div>
 
-      {/* 4. CARD 2: Classical Root Word (Comes SECOND, No button at top, hyperlinked citation at bottom) */}
+      {/* 3. CARD 2: Classical Root Word (Arabic letters optically aligned with English text) */}
       <div className="p-3 sm:p-3.5 rounded-xl bg-[#5F4B3E]/6 dark:bg-[#5F4B3E]/14 border border-[#5F4B3E]/20 dark:border-[#5F4B3E]/30 space-y-2">
         <div className="flex items-center gap-2">
           <span className="text-[10.5px] font-bold uppercase tracking-wider text-stone-500 dark:text-stone-400">
@@ -170,7 +170,7 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
             <>
               <span
                 dir="rtl"
-                className="font-quran text-[17px] sm:text-[18px] text-[#CD7743] dark:text-[#E08955] leading-none select-text inline-flex items-center"
+                className="font-quran text-[17px] sm:text-[18px] text-[#CD7743] dark:text-[#E08955] leading-none select-text inline-flex items-center -translate-y-0.5"
               >
                 {parsedRoot.arabic}
               </span>
@@ -187,7 +187,7 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
           )}
         </div>
 
-        <p className="text-xs sm:text-[12.5px] leading-relaxed text-stone-700 dark:text-stone-300">
+        <p className="text-xs sm:text-[12.5px] leading-relaxed text-stone-700 dark:text-stone-300 select-text">
           {data.root && parsedRoot
             ? (lanesInfo?.laneDefinition || data.rootMeaning || 'No classical root information available from this source.')
             : 'In Classical Arabic grammar (Nahw), particles, prepositions, and pronouns are indeclinable (mabni) and non-derivative, serving connective syntactic functions rather than carrying triliteral roots.'}
@@ -213,14 +213,14 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
         </div>
       </div>
 
-      {/* 5. CARD 3: Related Words (Comes THIRD) */}
+      {/* 4. CARD 3: Related Words (Uniform full-width single-line rows) */}
       <div className="space-y-2">
-        <div className="text-[10px] font-semibold uppercase tracking-wider text-[#596B8E] dark:text-[#788BB3] flex items-center gap-1.5">
+        <div className="text-[10.5px] font-bold uppercase tracking-wider text-[#596B8E] dark:text-[#788BB3] flex items-center gap-1.5">
           <Layers className="w-3.5 h-3.5 text-[#596B8E] dark:text-[#788BB3]" />
           <span>Related Words (Same Root)</span>
         </div>
         {authenticRelatedWords.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <div className="space-y-1.5">
             {authenticRelatedWords.slice(0, 4).map((rw, rwIdx) => (
               <div
                 key={`rw-${rwIdx}`}
@@ -228,22 +228,20 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
               >
                 <span
                   dir="rtl"
-                  className="font-quran text-[16px] sm:text-[17px] leading-normal text-[#CD7743] dark:text-[#E08955] inline-flex items-center justify-center shrink-0 select-text -translate-y-[0.14em]"
+                  className="font-quran text-[17px] sm:text-[18px] leading-none text-[#CD7743] dark:text-[#E08955] shrink-0 select-text -translate-y-0.5"
                 >
                   {rw.arabic}
                 </span>
-                <div className="min-w-0 flex-1 flex items-baseline gap-1.5 flex-wrap">
-                  <span className="text-stone-700 dark:text-stone-200 font-mono text-[11px] font-semibold shrink-0">
-                    {rw.transliteration}
-                  </span>
-                  <span className="text-stone-300 dark:text-stone-600 shrink-0">·</span>
-                  <span
-                    className="text-stone-600 dark:text-stone-300 font-medium text-[11px] sm:text-xs leading-snug truncate"
-                    title={rw.meaning}
-                  >
-                    {rw.meaning}
-                  </span>
-                </div>
+                <span className="text-stone-800 dark:text-stone-200 font-semibold text-xs tracking-wide shrink-0">
+                  {rw.transliteration}
+                </span>
+                <span className="text-stone-300 dark:text-stone-600 shrink-0 select-none">·</span>
+                <span
+                  className="text-stone-600 dark:text-stone-300 font-medium text-xs leading-snug truncate"
+                  title={rw.meaning}
+                >
+                  {rw.meaning}
+                </span>
               </div>
             ))}
           </div>
@@ -254,9 +252,9 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
         )}
       </div>
 
-      {/* 6. CARD 4: Other Occurrences in the Qur'an (Comes FOURTH) */}
+      {/* 5. CARD 4: Other Occurrences in the Qur'an */}
       <div className="space-y-2 pt-1 border-t border-stone-100 dark:border-stone-800">
-        <div className="text-[10px] font-semibold uppercase tracking-wider text-[#4C7971] dark:text-[#639C92] flex items-center gap-1.5">
+        <div className="text-[10.5px] font-bold uppercase tracking-wider text-[#4C7971] dark:text-[#639C92] flex items-center gap-1.5">
           <Compass className="w-3.5 h-3.5 text-[#4C7971] dark:text-[#639C92]" />
           <span>Other Occurrences in the Qur'an</span>
         </div>
