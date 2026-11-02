@@ -1,8 +1,6 @@
 import React from 'react';
 import { SurahData } from '../types/quran';
 import { SurahHistoricalContext } from './SurahHistoricalContext';
-import { Download } from 'lucide-react';
-import { exportSurahForAnnotation } from '../utils/exportSurahPdf';
 
 interface SurahHeroProps {
   surah: SurahData;
@@ -15,40 +13,21 @@ export const SurahHero: React.FC<SurahHeroProps> = ({ surah }) => {
 
   return (
     <div className="pt-6 pb-8 px-4 sm:px-8 border-b border-[#E8E5DF] dark:border-[#2E2E33] bg-[#FDFCFB] dark:bg-[#1C1C20] text-center flex flex-col items-center">
-      {/* 1. Very Top Row: 3-column flex layout ensuring zero text overlap at any screen width */}
-      <div className="w-full max-w-4xl xl:max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 min-h-[34px]">
-        {/* Left balance spacer on desktop to keep metadata centered */}
-        <div className="hidden md:block w-32 shrink-0 pointer-events-none" aria-hidden="true" />
-
-        {/* Centered Metadata */}
-        <div className="flex items-center justify-center flex-wrap gap-2 text-xs uppercase font-medium tracking-widest text-[#596B8E] dark:text-[#788BB3] text-center">
-          <span>{surah.revelationType}</span>
-          <span aria-hidden="true">·</span>
-          <span>{surah.versesCount} Verses</span>
-          <span aria-hidden="true">·</span>
-          <span>Juz {surah.juz.join(', ')}</span>
-          {surah.volumeNumber && (
-            <>
-              <span aria-hidden="true">·</span>
-              <span className="text-[#CD7743] dark:text-[#E08955] font-semibold">
-                Ma'ariful Qur'an Vol. {surah.volumeNumber} of 8
-              </span>
-            </>
-          )}
-        </div>
-
-        {/* Download PDF button: Dedicated non-overlapping container at top right */}
-        <div className="w-auto md:w-32 flex justify-center md:justify-end shrink-0">
-          <button
-            type="button"
-            onClick={() => exportSurahForAnnotation(surah)}
-            className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-white dark:bg-[#25252B] hover:bg-[#CD7743]/10 dark:hover:bg-[#CD7743]/20 text-stone-700 dark:text-stone-300 hover:text-[#CD7743] dark:hover:text-[#E08955] border border-stone-200 dark:border-stone-700/80 shadow-2xs hover:border-[#CD7743]/40 transition-all cursor-pointer whitespace-nowrap"
-            title="Download this Surah formatted with wide margins and notes space as a PDF for annotation"
-          >
-            <Download className="w-3.5 h-3.5 text-[#CD7743] dark:text-[#E08955] shrink-0" />
-            <span>Download PDF</span>
-          </button>
-        </div>
+      {/* 1. Surah Metadata */}
+      <div className="flex items-center justify-center flex-wrap gap-2 text-xs uppercase font-medium tracking-widest text-[#596B8E] dark:text-[#788BB3] text-center">
+        <span>{surah.revelationType}</span>
+        <span aria-hidden="true">·</span>
+        <span>{surah.versesCount} Verses</span>
+        <span aria-hidden="true">·</span>
+        <span>Juz {surah.juz.join(', ')}</span>
+        {surah.volumeNumber && (
+          <>
+            <span aria-hidden="true">·</span>
+            <span className="text-[#CD7743] dark:text-[#E08955] font-semibold">
+              Ma'ariful Qur'an Vol. {surah.volumeNumber} of 8
+            </span>
+          </>
+        )}
       </div>
 
       {/* 2. Surah Titles: Even 24px margin from metadata row */}
