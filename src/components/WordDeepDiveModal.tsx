@@ -100,32 +100,30 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
   const cardContent = (
     <div className="space-y-3">
       {/* 1. Header: Word, Transliteration & Close Button (Translation and Morphology are placed in Card 1) */}
-      <div className="border-b border-stone-100 dark:border-stone-800 pb-2.5">
-        <div className="flex items-start justify-between gap-3">
-          <div className="flex items-baseline gap-2.5 sm:gap-3 flex-wrap min-w-0">
-            <span
-              dir="rtl"
-              className="font-quran text-3xl sm:text-4xl text-[#CD7743] dark:text-[#E08955] leading-[1.3] inline-block px-1 select-text"
-            >
-              {data.word}
-            </span>
-
-            {cleanTransliteration && (
-              <span className="text-base sm:text-lg font-semibold text-stone-700 dark:text-stone-200 tracking-wide select-text">
-                {cleanTransliteration}
-              </span>
-            )}
-          </div>
-
-          <button
-            type="button"
-            onClick={() => onOpenChange(false)}
-            className="text-stone-400 hover:text-stone-600 dark:hover:text-stone-200 rounded-lg p-1.5 hover:bg-stone-100 dark:hover:bg-stone-800/60 transition-colors cursor-pointer shrink-0"
-            aria-label="Close word details"
+      <div className="flex items-start justify-between gap-3 pb-0.5">
+        <div className="flex items-baseline gap-2.5 sm:gap-3 flex-wrap min-w-0">
+          <span
+            dir="rtl"
+            className="font-quran text-3xl sm:text-4xl text-[#CD7743] dark:text-[#E08955] leading-[1.3] inline-block px-1 select-text"
           >
-            <X className="w-4 h-4" />
-          </button>
+            {data.word}
+          </span>
+
+          {cleanTransliteration && (
+            <span className="text-base sm:text-lg font-semibold text-stone-700 dark:text-stone-200 tracking-wide select-text">
+              {cleanTransliteration}
+            </span>
+          )}
         </div>
+
+        <button
+          type="button"
+          onClick={() => onOpenChange(false)}
+          className="text-stone-400 hover:text-stone-600 dark:hover:text-stone-200 rounded-lg p-1.5 hover:bg-stone-100 dark:hover:bg-stone-800/60 transition-colors cursor-pointer shrink-0"
+          aria-label="Close word details"
+        >
+          <X className="w-4 h-4" />
+        </button>
       </div>
 
       {/* 2. CARD 1: Translation, Part of Speech & Alternative Translations */}
