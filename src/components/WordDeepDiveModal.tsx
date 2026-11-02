@@ -97,23 +97,39 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
   const parsedRoot = data.root ? parseRootDisplay(data.root) : null;
   const ejtaalLink = data.root ? getEjtaalUrl(data.root) : null;
 
+  const isSameAsTransliteration = Boolean(
+    cleanTransliteration &&
+    data.primaryMeaning &&
+    cleanTransliteration.trim().toLowerCase() === data.primaryMeaning.trim().toLowerCase()
+  );
+
   const cardContent = (
     <div className="space-y-3">
-      {/* 1. Header: Word, Transliteration & Close Button (Translation and Morphology are placed in Card 1) */}
-      <div className="flex items-start justify-between gap-3 pb-0.5">
-        <div className="flex items-baseline gap-2.5 sm:gap-3 flex-wrap min-w-0">
-          <span
-            dir="rtl"
-            className="font-quran text-3xl sm:text-4xl text-[#CD7743] dark:text-[#E08955] leading-[1.3] inline-block px-1 select-text"
-          >
-            {data.word}
-          </span>
-
-          {cleanTransliteration && (
-            <span className="text-base sm:text-lg font-semibold text-stone-700 dark:text-stone-200 tracking-wide select-text">
-              {cleanTransliteration}
+      {/* 1. Header: Arabic Word with Phonetic Subtitle on the left, Primary English Translation next to it */}
+      <div className="flex items-start justify-between gap-3 sm:gap-4 pb-0.5">
+        <div className="flex items-start gap-3 sm:gap-4 flex-1 min-w-0">
+          {/* Arabic Script & Transliteration Subtitle */}
+          <div className="flex flex-col items-center shrink-0">
+            <span
+              dir="rtl"
+              className="font-quran text-3xl sm:text-4xl text-[#CD7743] dark:text-[#E08955] leading-[1.3] inline-block px-1 pb-1 select-text"
+            >
+              {data.word}
             </span>
-          )}
+
+            {cleanTransliteration && !isSameAsTransliteration && (
+              <span className="text-xs font-medium text-stone-500 dark:text-stone-400 tracking-wide select-text px-1 mt-1 sm:mt-1.5">
+                {cleanTransliteration}
+              </span>
+            )}
+          </div>
+
+          {/* Primary English Translation */}
+          <div className="flex-1 min-w-0 pt-1 sm:pt-1.5">
+            <span className="text-base sm:text-lg font-semibold text-stone-900 dark:text-stone-100 leading-snug select-text block">
+              {data.primaryMeaning}
+            </span>
+          </div>
         </div>
 
         <button
@@ -126,37 +142,34 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
         </button>
       </div>
 
-      {/* 2. CARD 1: Translation, Part of Speech & Alternative Translations */}
-      <div className="p-3 sm:p-3.5 rounded-xl bg-stone-50 dark:bg-[#25252B] border border-stone-200/80 dark:border-stone-800 space-y-2">
-        {/* Plain Primary Translation / Definition */}
-        <div className="text-sm sm:text-[15px] font-semibold text-stone-900 dark:text-stone-100 leading-snug select-text">
-          {data.primaryMeaning}
+      {/* 2. CARD 1: Morphology / Part of Speech & Alternative Translations */}
+      {(formattedPartOfSpeech || (data.otherMeanings && data.otherMeanings.length > 0)) && (
+        <div className="p-3 sm:p-3.5 rounded-xl bg-stone-50 dark:bg-[#25252B] border border-stone-200/80 dark:border-stone-800 space-y-2">
+          {/* Morphology / Part of Speech (verbal noun, preposition, etc.) */}
+          {formattedPartOfSpeech && (
+            <div className="text-xs text-[#596B8E] dark:text-[#788BB3] font-medium leading-normal select-text">
+              {formattedPartOfSpeech}
+            </div>
+          )}
+
+          {/* Alternative Translations rendered as clean bullet points */}
+          {data.otherMeanings && data.otherMeanings.length > 0 && (
+            <div className={`${formattedPartOfSpeech ? 'pt-2 border-t border-stone-200/60 dark:border-stone-800/80' : ''} space-y-1.5`}>
+              <span className="text-[10.5px] font-bold uppercase tracking-wider text-stone-500 dark:text-stone-400 block">
+                Alternative Translations
+              </span>
+              <ul className="space-y-1.5 text-xs text-stone-600 dark:text-stone-300">
+                {data.otherMeanings.map((meaning, idx) => (
+                  <li key={`alt-${idx}`} className="flex items-start gap-2 leading-relaxed">
+                    <span className="text-[#CD7743] dark:text-[#E08955] text-xs leading-none select-none shrink-0 mt-0.5">•</span>
+                    <span className="select-text">{meaning}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
-
-        {/* Morphology / Part of Speech (verbal noun, preposition, etc.) - Placed after translation and before alternative translations */}
-        {formattedPartOfSpeech && (
-          <div className="text-xs text-[#596B8E] dark:text-[#788BB3] font-medium leading-normal select-text">
-            {formattedPartOfSpeech}
-          </div>
-        )}
-
-        {/* Alternative Translations rendered as clean bullet points */}
-        {data.otherMeanings && data.otherMeanings.length > 0 && (
-          <div className="pt-2 border-t border-stone-200/60 dark:border-stone-800/80 space-y-1.5">
-            <span className="text-[10.5px] font-bold uppercase tracking-wider text-stone-500 dark:text-stone-400 block">
-              Alternative Translations
-            </span>
-            <ul className="space-y-1.5 text-xs text-stone-600 dark:text-stone-300">
-              {data.otherMeanings.map((meaning, idx) => (
-                <li key={`alt-${idx}`} className="flex items-start gap-2 leading-relaxed">
-                  <span className="text-[#CD7743] dark:text-[#E08955] text-xs leading-none select-none shrink-0 mt-0.5">•</span>
-                  <span className="select-text">{meaning}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-      </div>
+      )}
 
       {/* 3. CARD 2: Classical Root Word (Arabic letters optically aligned with English text) */}
       <div className="p-3 sm:p-3.5 rounded-xl bg-[#5F4B3E]/6 dark:bg-[#5F4B3E]/14 border border-[#5F4B3E]/20 dark:border-[#5F4B3E]/30 space-y-2">
