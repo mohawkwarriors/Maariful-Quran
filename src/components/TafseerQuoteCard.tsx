@@ -286,6 +286,7 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
               <div
                 key={`dua-ar-${idx}`}
                 dir="rtl"
+                lang="ar"
                 className="font-quran text-xl sm:text-2xl text-[#2D7266] dark:text-[#4AA291] text-right leading-loose select-text"
               >
                 {line}
@@ -310,6 +311,7 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
           {arabicText && (
             <div
               dir="rtl"
+              lang="ar"
               className="font-quran text-xl sm:text-[23px] text-[#1C1917] dark:text-[#F5F5F4] text-right leading-[2.1] select-text py-0.5"
             >
               {arabicText}

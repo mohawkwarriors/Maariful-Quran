@@ -140,6 +140,7 @@ export const TermPopover: React.FC<TermPopoverProps> = ({ termText, termData }) 
                       </span>
                       <span
                         dir="rtl"
+                        lang="ar"
                         className="font-quran text-[14px] sm:text-[15px] text-[#CD7743] dark:text-[#E08955] leading-normal select-text inline-flex items-center justify-center"
                       >
                         {parsed.arabic}
@@ -206,7 +207,7 @@ export const TermPopover: React.FC<TermPopoverProps> = ({ termText, termData }) 
           {/* 5. Source Reference */}
           {effectiveData.volumeReference && (
             <div className="flex items-center gap-1.5 pt-2 text-[11px] text-stone-500 dark:text-stone-400 border-t border-stone-100 dark:border-stone-800">
-              <BookOpen className="w-3.5 h-3.5 text-amber-700 dark:text-amber-400 shrink-0" />
+              <BookOpen className="w-3.5 h-3.5 text-[#CD7743] dark:text-[#E08955] shrink-0" />
               <span className="font-medium">Source: {effectiveData.volumeReference}</span>
             </div>
           )}

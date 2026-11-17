@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { ThematicSection, PhraseCard, SubSection, FootnoteItem } from '../types/quran';
 import { AnnotatedTranslation } from './AnnotatedTranslation';
 import { WordDeepDiveModal } from './WordDeepDiveModal';
-import { getWordDeepDive, stripArabicDiacritics } from '../services/quranLexicon';
+import { getWordDeepDive, stripArabicDiacritics, onCorpusMorphologyLoaded } from '../services/quranLexicon';
 import { TafseerStudyCard, StudyCardType } from './TafseerStudyCard';
 import { TafseerQuoteCard, QuoteType } from './TafseerQuoteCard';
 import { StoryDialogueCard } from './StoryDialogueCard';
@@ -40,6 +40,14 @@ const WordItem: React.FC<WordItemProps> = ({ word, meaning, root, grammarNote })
   // Deep dive data with root, other meanings, related words, and cross-Quran occurrences
   const deepDiveData = getWordDeepDive(word, meaning, root, grammarNote);
 
+  const isPlaceholder = (s?: string) =>
+    !s || s === 'Quranic phrase meaning' || s === 'Quranic term';
+  const displayMeaning = !isPlaceholder(meaning)
+    ? meaning
+    : !isPlaceholder(deepDiveData.primaryMeaning)
+    ? deepDiveData.primaryMeaning
+    : deepDiveData.lemmaTransliteration || deepDiveData.transliteration || '—';
+
   const handleMouseEnter = () => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
     setOpen(true);
@@ -58,16 +66,38 @@ const WordItem: React.FC<WordItemProps> = ({ word, meaning, root, grammarNote })
     };
   }, []);
 
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      setOpen((prev) => !prev);
+    } else if (e.key === ' ') {
+      e.preventDefault();
+    }
+  };
+
+  const handleKeyUp = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    if (e.key === ' ') {
+      e.preventDefault();
+      setOpen((prev) => !prev);
+    }
+  };
+
   const trigger = (
     <div
+      role="button"
+      tabIndex={0}
+      aria-expanded={open}
       onClick={() => setOpen((prev) => !prev)}
-      className="inline-flex flex-col items-center justify-between group cursor-pointer text-center px-2 sm:px-2.5 pt-1.5 pb-2 rounded-xl hover:bg-[#CD7743]/10 dark:hover:bg-[#CD7743]/15 transition-all select-text shrink-0 min-w-[56px] sm:min-w-[64px] max-w-[150px] sm:max-w-[170px]"
+      onKeyDown={handleKeyDown}
+      onKeyUp={handleKeyUp}
+      className="inline-flex flex-col items-center justify-between group cursor-pointer text-center px-2 sm:px-2.5 pt-1.5 pb-2 rounded-xl hover:bg-[#CD7743]/10 dark:hover:bg-[#CD7743]/15 transition-all select-text shrink-0 min-w-[56px] sm:min-w-[64px] max-w-[150px] sm:max-w-[170px] focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CD7743]"
       title="Hover on desktop or click for root, related words & Quranic occurrences"
     >
       {/* Arabic Word Container - Generous vertical clearance for harakat & deep descenders like ع, ي, ر */}
       <div className="w-full flex items-center justify-center min-h-[48px] sm:min-h-[52px] px-1 pb-1.5 overflow-visible">
         <span
           dir="rtl"
+          lang="ar"
           className="font-quran text-[26px] sm:text-[29px] md:text-[31px] leading-[1.7] sm:leading-[1.8] text-stone-900 dark:text-stone-100 group-hover:text-[#CD7743] dark:group-hover:text-[#E08955] transition-colors block text-center select-text overflow-visible"
         >
           {word}
@@ -77,7 +107,7 @@ const WordItem: React.FC<WordItemProps> = ({ word, meaning, root, grammarNote })
       {/* English translation: dedicated top margin ensuring it never collides with Arabic descenders */}
       <div dir="ltr" className="w-full flex items-center justify-center min-h-[22px] sm:min-h-[24px] px-0.5 mt-2 sm:mt-2.5">
         <span className="text-[11px] sm:text-[11.5px] text-stone-600 dark:text-stone-300 group-hover:text-[#CD7743] dark:group-hover:text-[#E08955] font-reader transition-colors text-center leading-normal break-words line-clamp-2">
-          {meaning}
+          {displayMeaning}
         </span>
       </div>
     </div>
@@ -769,6 +799,10 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
   onToggleBookmark,
 }) => {
   const [isSectionCollapsed, setIsSectionCollapsed] = useState(false);
+  const [corpusVersion, setCorpusVersion] = useState(0);
+  useEffect(() => {
+    return onCorpusMorphologyLoaded(() => setCorpusVersion((v) => v + 1));
+  }, []);
   const surahName = SURAH_TRANSLITERATED_NAMES[section.surahNumber];
 
   // Distill key takeaways and wisdom points for quick summary mode
@@ -984,7 +1018,7 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
     }
 
     return list;
-  }, [section.phraseCards, section.verseRange, section.arabicText, section.translation]);
+  }, [section.phraseCards, section.verseRange, section.arabicText, section.translation, corpusVersion]);
 
   return (
     <section
@@ -1031,7 +1065,7 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
               <Bookmark
                 className={`w-4 h-4 transition-transform active:scale-125 ${
                   isBookmarked
-                    ? 'fill-[#CD7743] text-[#CD7743]'
+                    ? 'fill-[#CD7743] text-[#CD7743] dark:fill-[#E08955] dark:text-[#E08955]'
                     : 'text-stone-400 dark:text-stone-400'
                 }`}
               />
@@ -1044,6 +1078,7 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
             className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-stone-200 dark:border-stone-700/80 bg-white dark:bg-[#25252A] hover:bg-stone-50 dark:hover:bg-[#2B2B32] text-xs font-medium text-stone-600 dark:text-stone-300 hover:text-[#CD7743] dark:hover:text-[#E08955] transition-all cursor-pointer shadow-2xs"
             title={isSectionCollapsed ? 'Expand section' : 'Collapse section'}
             aria-label={isSectionCollapsed ? `Expand section ${section.title}` : `Collapse section ${section.title}`}
+            aria-expanded={!isSectionCollapsed}
           >
             {isSectionCollapsed ? (
               <>
@@ -1068,9 +1103,41 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
           {/* Arabic Mushaf Block: Majestic book spread presentation */}
           <div
             dir="rtl"
-            className="font-quran text-[26px] sm:text-[30px] md:text-[32px] leading-[2.2] sm:leading-[2.4] text-right text-[#111827] dark:text-[#F9FAFB] p-5 sm:p-8 rounded-2xl bg-[#FCFAF7] dark:bg-[#1E1E22] border border-[#ECE7DF] dark:border-[#2D2D33] shadow-xs select-text tracking-wide"
+            lang="ar"
+            className="font-quran text-[26px] sm:text-[30px] md:text-[32px] leading-[2.25] sm:leading-[2.45] text-right text-[#111827] dark:text-[#F9FAFB] p-5 sm:p-8 rounded-2xl bg-[#FCFAF7] dark:bg-[#1E1E22] border border-[#ECE7DF] dark:border-[#2D2D33] shadow-xs select-text"
           >
-            {section.arabicText}
+            {(() => {
+              const parts: React.ReactNode[] = [];
+              const regex = /([\u06DD۝][\d\u0660-\u0669]*)/g;
+              let lastIdx = 0;
+              let match: RegExpExecArray | null;
+              let ayahOffset = 0;
+              while ((match = regex.exec(section.arabicText)) !== null) {
+                if (match.index > lastIdx) {
+                  parts.push(section.arabicText.slice(lastIdx, match.index).trimEnd());
+                }
+                const rawDigits = match[0].replace(/[\u06DD۝]/g, '');
+                const westernDigits = rawDigits.replace(/[\u0660-\u0669]/g, (d) =>
+                  String(d.charCodeAt(0) - 0x0660)
+                );
+                const parsedNum = parseInt(westernDigits, 10);
+                const vNum = !isNaN(parsedNum) ? parsedNum : section.verseRange[0] + ayahOffset;
+                ayahOffset++;
+                parts.push(
+                  <AyahEndMarker
+                    key={`mushaf-ayah-${vNum}-${match.index}`}
+                    vNum={vNum}
+                    size="lg"
+                    className="mx-1.5 !align-middle -translate-y-0.5"
+                  />
+                );
+                lastIdx = regex.lastIndex;
+              }
+              if (lastIdx < section.arabicText.length) {
+                parts.push(section.arabicText.slice(lastIdx));
+              }
+              return parts;
+            })()}
           </div>
 
           {/* Translation Block */}
@@ -1123,7 +1190,7 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
                       return (
                         <div
                           key={`word-end-${vNum}`}
-                          className="inline-flex items-center gap-1.5 sm:gap-2 shrink-0 self-center"
+                          className="inline-flex items-start gap-1.5 sm:gap-2 shrink-0"
                         >
                           <WordItem
                             key={`word-${vNum}-${wIdx}`}
@@ -1132,7 +1199,7 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
                             root={item.root}
                             grammarNote={item.grammarNote}
                           />
-                          <div className="flex flex-col items-center justify-center self-stretch pb-5 sm:pb-6">
+                          <div className="flex items-center justify-center h-[48px] sm:h-[52px] pt-1.5 shrink-0">
                             <AyahEndMarker vNum={vNum} size="lg" />
                           </div>
                         </div>

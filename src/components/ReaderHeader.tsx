@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Sun, Moon, LayoutGrid, Columns, Menu, BookOpen, Bookmark, BookmarkCheck, Check, X, PanelLeftOpen } from 'lucide-react';
 import { BookmarkRecord } from '../types/quran';
@@ -49,6 +49,27 @@ export const ReaderHeader: React.FC<ReaderHeaderProps> = ({
   const [showFeedback, setShowFeedback] = useState(false);
   const [feedbackType, setFeedbackType] = useState<'saved' | 'removed'>('saved');
   const [isBookmarksMenuOpen, setIsBookmarksMenuOpen] = useState(false);
+  const bookmarksMenuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!isBookmarksMenuOpen) return;
+    const handlePointerDown = (e: MouseEvent) => {
+      if (bookmarksMenuRef.current && !bookmarksMenuRef.current.contains(e.target as Node)) {
+        setIsBookmarksMenuOpen(false);
+      }
+    };
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setIsBookmarksMenuOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handlePointerDown);
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('mousedown', handlePointerDown);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isBookmarksMenuOpen]);
 
   // Consolidate bookmarks list
   const allBookmarks: BookmarkRecord[] =
@@ -77,6 +98,7 @@ export const ReaderHeader: React.FC<ReaderHeaderProps> = ({
       <div className="flex items-center gap-2 sm:gap-2.5 min-w-0">
         {/* Mobile menu trigger */}
         <button
+          type="button"
           onClick={onOpenMobileNav}
           className="lg:hidden p-1.5 rounded-md hover:bg-stone-200/60 dark:hover:bg-stone-800 text-stone-700 dark:text-stone-300 transition-colors cursor-pointer"
           aria-label="Open Navigation"
@@ -126,15 +148,16 @@ export const ReaderHeader: React.FC<ReaderHeaderProps> = ({
       <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
         {/* Saved Bookmarks Reference Dropdown (Quick Jump) */}
         {allBookmarks.length > 0 && (
-          <div className="relative">
+          <div className="relative" ref={bookmarksMenuRef}>
             <button
               type="button"
               onClick={() => setIsBookmarksMenuOpen((prev) => !prev)}
+              aria-expanded={isBookmarksMenuOpen}
               className="relative w-8 h-8 sm:w-8.5 sm:h-8.5 flex items-center justify-center rounded-lg text-xs font-medium bg-[#CD7743]/10 dark:bg-[#CD7743]/20 text-[#CD7743] dark:text-[#E08955] border border-[#CD7743]/30 hover:bg-[#CD7743]/20 transition-all cursor-pointer shadow-2xs"
               title={`View saved bookmarked sections (${allBookmarks.length})`}
               aria-label="View saved bookmarked sections"
             >
-              <BookmarkCheck className="w-4 h-4 text-[#CD7743]" />
+              <BookmarkCheck className="w-4 h-4 text-[#CD7743] dark:text-[#E08955]" />
               <span className="absolute -top-1 -right-1 w-4 h-4 bg-[#CD7743] text-white text-[9px] font-bold rounded-full flex items-center justify-center shadow-xs">
                 {allBookmarks.length}
               </span>
@@ -148,9 +171,10 @@ export const ReaderHeader: React.FC<ReaderHeaderProps> = ({
                     Bookmarked Sections ({allBookmarks.length})
                   </span>
                   <button
+                    type="button"
                     onClick={() => setIsBookmarksMenuOpen(false)}
-                    className="p-1 text-stone-400 hover:text-stone-600 dark:hover:text-stone-200 rounded"
-                    aria-label="Close"
+                    className="p-1 text-stone-400 hover:text-stone-600 dark:hover:text-stone-200 rounded cursor-pointer"
+                    aria-label="Close bookmarks menu"
                   >
                     <X className="w-3.5 h-3.5" />
                   </button>
@@ -158,13 +182,16 @@ export const ReaderHeader: React.FC<ReaderHeaderProps> = ({
                 {allBookmarks.map((bm) => (
                   <div
                     key={`${bm.surahNumber}-${bm.sectionId}`}
-                    onClick={() => {
-                      onResumeBookmark(bm);
-                      setIsBookmarksMenuOpen(false);
-                    }}
-                    className="group flex items-center justify-between p-2 rounded-lg hover:bg-[#CD7743]/10 dark:hover:bg-[#CD7743]/15 transition-colors cursor-pointer text-xs"
+                    className="group flex items-center justify-between p-2 rounded-lg hover:bg-[#CD7743]/10 dark:hover:bg-[#CD7743]/15 transition-colors text-xs"
                   >
-                    <div className="min-w-0 flex-1 pr-2">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        onResumeBookmark(bm);
+                        setIsBookmarksMenuOpen(false);
+                      }}
+                      className="min-w-0 flex-1 pr-2 text-left cursor-pointer"
+                    >
                       <div className="font-semibold text-stone-900 dark:text-stone-100 truncate">
                         Surah {bm.surahNumber}: {bm.surahName}
                       </div>
@@ -172,17 +199,14 @@ export const ReaderHeader: React.FC<ReaderHeaderProps> = ({
                         {bm.verseRange ? `[${bm.verseRange[0]}–${bm.verseRange[1]}] ` : ''}
                         {bm.sectionTitle || 'Section'}
                       </div>
-                    </div>
+                    </button>
                     {onRemoveBookmark && (
                       <button
                         type="button"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          onRemoveBookmark(bm);
-                        }}
-                        className="p-1 rounded text-stone-400 hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-950/30 transition-colors opacity-60 group-hover:opacity-100 shrink-0"
+                        onClick={() => onRemoveBookmark(bm)}
+                        className="p-1 rounded text-stone-400 hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-950/30 transition-colors opacity-60 group-hover:opacity-100 shrink-0 cursor-pointer"
                         title="Remove bookmark"
-                        aria-label="Remove bookmark"
+                        aria-label={`Remove bookmark for Surah ${bm.surahNumber}: ${bm.sectionTitle || 'Section'}`}
                       >
                         <X className="w-3.5 h-3.5" />
                       </button>
@@ -214,7 +238,7 @@ export const ReaderHeader: React.FC<ReaderHeaderProps> = ({
             <Bookmark
               className={`w-4 h-4 transition-transform active:scale-125 ${
                 isCurrentlyBookmarked
-                  ? 'fill-[#CD7743] text-[#CD7743]'
+                  ? 'fill-[#CD7743] text-[#CD7743] dark:fill-[#E08955] dark:text-[#E08955]'
                   : 'text-stone-500 dark:text-stone-400'
               }`}
             />
@@ -258,7 +282,9 @@ export const ReaderHeader: React.FC<ReaderHeaderProps> = ({
         {/* Dual View Mode Toggle: Separate vs Inline */}
         <div className="flex items-center p-1 rounded-lg bg-stone-200/70 dark:bg-[#25252A] text-xs font-medium">
           <button
+            type="button"
             onClick={() => onViewModeChange('separate')}
+            aria-pressed={viewMode === 'separate'}
             className={`flex items-center gap-1.5 px-2 sm:px-2.5 py-1 rounded-md transition-all cursor-pointer ${
               viewMode === 'separate'
                 ? 'bg-white dark:bg-[#18181A] text-stone-900 dark:text-stone-100 shadow-xs font-semibold'
@@ -270,7 +296,9 @@ export const ReaderHeader: React.FC<ReaderHeaderProps> = ({
             <span className="hidden sm:inline">Separate</span>
           </button>
           <button
+            type="button"
             onClick={() => onViewModeChange('inline')}
+            aria-pressed={viewMode === 'inline'}
             className={`flex items-center gap-1.5 px-2 sm:px-2.5 py-1 rounded-md transition-all cursor-pointer ${
               viewMode === 'inline'
                 ? 'bg-white dark:bg-[#18181A] text-stone-900 dark:text-stone-100 shadow-xs font-semibold'
@@ -286,6 +314,9 @@ export const ReaderHeader: React.FC<ReaderHeaderProps> = ({
 
         {/* Theme Spring Sliding Pill Switch */}
         <button
+          type="button"
+          role="switch"
+          aria-checked={theme === 'charcoal'}
           onClick={onToggleTheme}
           className="relative flex items-center h-8 w-14 rounded-full p-1 bg-stone-200 dark:bg-stone-800 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#CD7743] cursor-pointer"
           title={`Switch to ${theme === 'parchment' ? 'Slate Charcoal (Night)' : 'Warm Parchment (Day)'} mode`}

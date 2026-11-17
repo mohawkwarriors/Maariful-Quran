@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { Search, Book, Layers, ChevronRight, ChevronDown, X, BookmarkCheck, Bookmark, PanelLeftClose, Compass } from 'lucide-react';
 import { SurahManifestItem, SearchResultItem, BookmarkRecord } from '../types/quran';
 import { globalSearchEngine } from '../services/quranService';
@@ -58,6 +58,27 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState<SearchResultItem[]>([]);
   const [isSearching, setIsSearching] = useState(false);
+  const searchContainerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!isSearching) return;
+    const handlePointerDown = (e: MouseEvent) => {
+      if (searchContainerRef.current && !searchContainerRef.current.contains(e.target as Node)) {
+        setIsSearching(false);
+      }
+    };
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setIsSearching(false);
+      }
+    };
+    document.addEventListener('mousedown', handlePointerDown);
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('mousedown', handlePointerDown);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isSearching]);
 
   // Track open/collapsed state per surah in navigation tree
   const [surahExpandedMap, setSurahExpandedMap] = useState<Record<number, boolean>>({});
@@ -259,6 +280,7 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
 
             {/* Mobile Close Button */}
             <button
+              type="button"
               onClick={onCloseMobile}
               className="lg:hidden p-1.5 rounded-md text-stone-400 hover:text-stone-600 dark:hover:text-stone-200 cursor-pointer"
               aria-label="Close navigation"
@@ -269,7 +291,7 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
         </div>
 
         {/* Universal Search Bar */}
-        <div className="relative">
+        <div className="relative" ref={searchContainerRef}>
           <Search className="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-stone-400 pointer-events-none" />
           <input
             type="text"
@@ -281,11 +303,13 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
           />
           {searchQuery && (
             <button
+              type="button"
+              aria-label="Clear search"
               onClick={() => {
                 setSearchQuery('');
                 setIsSearching(false);
               }}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-stone-400 hover:text-stone-600 dark:hover:text-stone-200"
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-stone-400 hover:text-stone-600 dark:hover:text-stone-200 cursor-pointer"
             >
               <X className="w-4 h-4" />
             </button>
@@ -301,13 +325,14 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
               ) : (
                 searchResults.map((res) => (
                   <button
+                    type="button"
                     key={res.id}
                     onClick={() => handleResultClick(res)}
                     className="w-full text-left p-3.5 hover:bg-[#CD7743]/10 dark:hover:bg-[#CD7743]/15 transition-colors block cursor-pointer"
                   >
                     <div className="flex items-center justify-between text-xs text-[#CD7743] dark:text-[#E08955] font-medium mb-0.5">
                       <span className="uppercase tracking-wider font-semibold">{res.type}</span>
-                      <span className="text-[#596B8E] text-xs font-mono">{res.surahName}</span>
+                      <span className="text-[#596B8E] dark:text-[#788BB3] text-xs font-mono">{res.surahName}</span>
                     </div>
                     <div className="text-sm font-semibold text-stone-900 dark:text-stone-100 truncate">
                       {res.title}
@@ -335,13 +360,16 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
               {allBookmarks.map((bm) => (
                 <div
                   key={`${bm.surahNumber}-${bm.sectionId}`}
-                  className="group flex items-center justify-between p-1.5 rounded-lg bg-white/70 dark:bg-[#222227]/70 hover:bg-white dark:hover:bg-[#26262C] border border-stone-200/60 dark:border-stone-700/60 text-xs transition-colors cursor-pointer"
-                  onClick={() => {
-                    onResumeBookmark(bm);
-                    onCloseMobile();
-                  }}
+                  className="group flex items-center justify-between p-1.5 rounded-lg bg-white/70 dark:bg-[#222227]/70 hover:bg-white dark:hover:bg-[#26262C] border border-stone-200/60 dark:border-stone-700/60 text-xs transition-colors"
                 >
-                  <div className="min-w-0 flex-1 pr-1.5">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      onResumeBookmark(bm);
+                      onCloseMobile();
+                    }}
+                    className="min-w-0 flex-1 pr-1.5 text-left cursor-pointer"
+                  >
                     <div className="font-semibold text-stone-900 dark:text-stone-100 truncate">
                       Surah {bm.surahNumber}: {bm.surahName}
                     </div>
@@ -349,17 +377,14 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
                       {bm.verseRange ? `[${bm.verseRange[0]}–${bm.verseRange[1]}] ` : ''}
                       {bm.sectionTitle || 'Section'}
                     </div>
-                  </div>
+                  </button>
                   {onRemoveBookmark && (
                     <button
                       type="button"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        onRemoveBookmark(bm);
-                      }}
-                      className="p-1 rounded text-stone-400 hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-950/30 transition-colors opacity-60 group-hover:opacity-100 shrink-0"
+                      onClick={() => onRemoveBookmark(bm)}
+                      className="p-1 rounded text-stone-400 hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-950/30 transition-colors opacity-60 group-hover:opacity-100 shrink-0 cursor-pointer"
                       title="Remove bookmark"
-                      aria-label="Remove bookmark"
+                      aria-label={`Remove bookmark for Surah ${bm.surahNumber}: ${bm.sectionTitle || 'Section'}`}
                     >
                       <X className="w-3.5 h-3.5" />
                     </button>
@@ -373,6 +398,8 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
         {/* Tab Switch: Surah vs Juz vs Theme */}
         <div className="flex items-center gap-1 mt-3.5 p-1 rounded-xl bg-stone-100 dark:bg-[#25252A] text-xs font-medium">
           <button
+            type="button"
+            aria-pressed={navTab === 'surah'}
             onClick={() => setNavTab('surah')}
             className={`flex-1 flex items-center justify-center gap-1 py-2 rounded-lg transition-all cursor-pointer ${
               navTab === 'surah'
@@ -384,6 +411,8 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
             <span>Surah</span>
           </button>
           <button
+            type="button"
+            aria-pressed={navTab === 'juz'}
             onClick={() => setNavTab('juz')}
             className={`flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg transition-all cursor-pointer ${
               navTab === 'juz'
@@ -395,6 +424,8 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
             <span>Juz</span>
           </button>
           <button
+            type="button"
+            aria-pressed={navTab === 'theme'}
             onClick={() => setNavTab('theme')}
             className={`flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg transition-all cursor-pointer ${
               navTab === 'theme'
@@ -495,7 +526,7 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
                     </div>
 
                     <div className="flex items-center gap-2 shrink-0 pl-1">
-                      <span className="font-quran text-base sm:text-lg text-stone-700 dark:text-stone-300">
+                      <span dir="rtl" lang="ar" className="font-quran text-base sm:text-lg leading-[1.6] text-stone-700 dark:text-stone-300">
                         {surah.nameArabic}
                       </span>
                       <div className="p-0.5 text-stone-400">
@@ -540,7 +571,7 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
                               </div>
                             </div>
                             {isSecBookmarked && (
-                              <Bookmark className="w-3.5 h-3.5 fill-[#CD7743] text-[#CD7743] shrink-0 mt-0.5" />
+                              <Bookmark className="w-3.5 h-3.5 fill-[#CD7743] text-[#CD7743] dark:fill-[#E08955] dark:text-[#E08955] shrink-0 mt-0.5" />
                             )}
                           </button>
                         );
@@ -624,7 +655,7 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
                     </div>
 
                     <div className="flex items-center gap-2 shrink-0 pl-1">
-                      <span className="font-quran text-base text-stone-700 dark:text-stone-300">
+                      <span dir="rtl" lang="ar" className="font-quran text-base leading-[1.6] text-stone-700 dark:text-stone-300">
                         {JUZ_ARABIC_NAMES[juzNum] || `الجزء ${juzNum}`}
                       </span>
                       <div className="p-0.5 text-stone-400">
@@ -671,7 +702,7 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
                                 </span>
                               </div>
                             </div>
-                            <span className="font-quran text-sm text-stone-500 shrink-0">
+                            <span dir="rtl" lang="ar" className="font-quran text-base leading-[1.6] text-stone-500 dark:text-stone-400 shrink-0">
                               {s.nameArabic}
                             </span>
                           </button>
@@ -690,7 +721,9 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
             <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none text-xs">
               {QURAN_TOPIC_CATEGORIES.map((cat) => (
                 <button
+                  type="button"
                   key={cat.id}
+                  aria-pressed={selectedTopicCategory === cat.id}
                   onClick={() => setSelectedTopicCategory(cat.id)}
                   className={`px-2.5 py-1 rounded-lg shrink-0 transition-colors cursor-pointer text-xs ${
                     selectedTopicCategory === cat.id
@@ -775,7 +808,7 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
                               {topic.category}
                             </span>
                             {topic.arabicTitle && (
-                              <span className="font-quran text-xs text-stone-500 dark:text-stone-400 truncate">
+                              <span dir="rtl" lang="ar" className="font-quran text-sm leading-[1.6] text-stone-500 dark:text-stone-400 truncate">
                                 {topic.arabicTitle}
                               </span>
                             )}

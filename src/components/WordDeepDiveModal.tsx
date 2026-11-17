@@ -112,6 +112,7 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
           <div className="flex flex-col items-center shrink-0">
             <span
               dir="rtl"
+              lang="ar"
               className="font-quran text-3xl sm:text-4xl text-[#CD7743] dark:text-[#E08955] leading-[1.3] inline-block px-1 pb-1 select-text"
             >
               {data.word}
@@ -160,7 +161,11 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
                   <span className="text-[10.5px] font-bold uppercase tracking-wider text-stone-400 dark:text-stone-500">
                     Lemma:
                   </span>
-                  <span dir="rtl" className="font-quran text-[15px] text-[#CD7743] dark:text-[#E08955] leading-none select-text">
+                  <span
+                    dir="rtl"
+                    lang="ar"
+                    className="font-quran text-[17px] text-[#CD7743] dark:text-[#E08955] leading-[1.6] inline-flex items-center -translate-y-[1px] select-text"
+                  >
                     {data.lemma}
                   </span>
                   {data.lemmaTransliteration && (
@@ -301,26 +306,26 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
             {authenticVerses.slice(0, 3).map((ref, rIdx) => (
               <div
                 key={`qref-${rIdx}`}
-                className="p-2 sm:p-2.5 px-3 rounded-lg bg-[#4C7971]/8 dark:bg-[#4C7971]/15 border border-[#4C7971]/20 text-[11px] flex items-center justify-between gap-3"
+                className="p-2.5 px-3 rounded-lg bg-[#4C7971]/8 dark:bg-[#4C7971]/15 border border-[#4C7971]/20 text-[11px] space-y-1.5"
               >
-                <div className="flex-1 min-w-0 space-y-0.5">
-                  <span className="font-semibold text-[#4C7971] dark:text-[#639C92] font-mono text-[10px] block">
-                    [{ref.reference}] Surah {ref.surahName}
-                  </span>
+                <span className="font-semibold text-[#4C7971] dark:text-[#639C92] font-mono text-[10.5px] block">
+                  [{ref.reference}] Surah {ref.surahName}
+                </span>
+
+                {ref.arabicSnippet && (
+                  <div
+                    dir="rtl"
+                    lang="ar"
+                    className="font-quran text-[17px] sm:text-[18px] leading-[1.95] text-stone-900 dark:text-stone-100 text-right select-text py-0.5"
+                  >
+                    {ref.arabicSnippet}
+                  </div>
+                )}
+
+                {ref.englishText && (
                   <p className="text-stone-600 dark:text-stone-300 italic line-clamp-2 leading-snug">
                     "{ref.englishText}"
                   </p>
-                </div>
-
-                {ref.arabicSnippet && (
-                  <div className="shrink-0 flex items-center self-center">
-                    <span
-                      dir="rtl"
-                      className="font-quran text-[13px] sm:text-[14px] leading-[1.6] text-stone-800 dark:text-stone-200 truncate max-w-[190px] sm:max-w-[240px] px-0.5 inline-block text-right select-text"
-                    >
-                      {ref.arabicSnippet}
-                    </span>
-                  </div>
                 )}
               </div>
             ))}

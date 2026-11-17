@@ -83,6 +83,9 @@
 .font-quran,
 .font-quran-uthmani {
   font-family: 'KFGQPC Uthmanic Script HAFS', 'Amiri Quran', 'Scheherazade New', 'Amiri', serif;
+  letter-spacing: 0 !important;
+  font-feature-settings: "kern" 1, "liga" 1, "clig" 1, "calt" 1, "ccmp" 1, "mark" 1, "mkmk" 1;
+  text-rendering: optimizeLegibility;
 }
 
 .font-serif-heading {
@@ -91,6 +94,18 @@
 
 .font-reader {
   font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-padding-top: 4.5rem;
+}
+
+:where(h1, h2, h3, h4) {
+  text-wrap: balance;
+}
+
+:where(p, li) {
+  text-wrap: pretty;
 }
 
 /* PRD Section 5: Native content-visibility for 60fps smooth scrolling with 0 stutter on large chapters */

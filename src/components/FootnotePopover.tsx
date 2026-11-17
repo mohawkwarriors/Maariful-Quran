@@ -199,6 +199,7 @@ export const FootnotesSection: React.FC<{
         <button
           type="button"
           onClick={() => setIsExpanded((prev) => !prev)}
+          aria-expanded={isExpanded}
           className="w-full flex items-center justify-between gap-3 text-left cursor-pointer group"
         >
           <div className="flex items-center gap-2.5">

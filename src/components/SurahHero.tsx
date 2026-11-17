@@ -34,6 +34,7 @@ export const SurahHero: React.FC<SurahHeroProps> = ({ surah }) => {
       <div className="mt-6 flex flex-col items-center justify-center">
         <h1
           dir="rtl"
+          lang="ar"
           className="font-quran text-4xl sm:text-5xl md:text-6xl text-[#111827] dark:text-[#F9FAFB] leading-[1.3] sm:leading-[1.35] tracking-normal block select-text overflow-visible"
         >
           سورة {surah.nameArabic}
@@ -56,7 +57,8 @@ export const SurahHero: React.FC<SurahHeroProps> = ({ surah }) => {
         <div className="mt-6 flex justify-center w-full">
           <div
             dir="rtl"
-            className="font-quran text-2xl sm:text-3xl md:text-4xl text-[#CD7743] dark:text-[#E08955] inline-flex items-center justify-center text-center px-10 sm:px-16 pt-4 pb-6 sm:pt-5 sm:pb-7 rounded-2xl bg-[#CD7743]/8 dark:bg-[#CD7743]/15 border border-[#CD7743]/30 dark:border-[#CD7743]/40 shadow-2xs overflow-visible select-text leading-[2.0] sm:leading-[2.2] tracking-wide"
+            lang="ar"
+            className="font-quran text-2xl sm:text-3xl md:text-4xl text-[#CD7743] dark:text-[#E08955] inline-flex items-center justify-center text-center px-10 sm:px-16 pt-4 pb-6 sm:pt-5 sm:pb-7 rounded-2xl bg-[#CD7743]/8 dark:bg-[#CD7743]/15 border border-[#CD7743]/30 dark:border-[#CD7743]/40 shadow-2xs overflow-visible select-text leading-[2.0] sm:leading-[2.2]"
           >
             بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
           </div>
