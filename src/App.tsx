@@ -6,6 +6,7 @@ import { ReaderHeader } from './components/ReaderHeader';
 import { SurahHero } from './components/SurahHero';
 import { TafseerSectionView } from './components/TafseerSectionView';
 import { TopicReference } from './services/quranTopics';
+import { onCorpusMorphologyLoaded } from './services/quranLexicon';
 import { SurahData, BookmarkRecord, ThematicSection } from './types/quran';
 import { Loader2, AlertCircle, RefreshCw, BookOpen } from 'lucide-react';
 
@@ -26,7 +27,14 @@ function ReaderApp() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
   const [pendingScrollSectionId, setPendingScrollSectionId] = useState<string | null>(null);
+  const [, setCorpusTick] = useState(0);
   const readingContainerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    return onCorpusMorphologyLoaded(() => {
+      setCorpusTick((t) => t + 1);
+    });
+  }, []);
 
   // Initialize Theme from localStorage with immediate default fallback
   const [theme, setTheme] = useState<'parchment' | 'charcoal'>(() => {
@@ -455,6 +463,17 @@ function ReaderApp() {
                     <span>Proceed to Next: Surah {activeSurahNumber + 1}</span>
                   </button>
                 )}
+                <p className="pt-3 text-[11px] text-stone-400 dark:text-stone-500">
+                  Exegesis: Ma&apos;ariful Qur&apos;an (Mufti Muhammad Shafi) · Morphology &amp; Lemmas:{' '}
+                  <a
+                    href="https://corpus.quran.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-[#CD7743] dark:hover:text-[#E08955] underline decoration-stone-300 dark:decoration-stone-700 underline-offset-2 transition-colors"
+                  >
+                    Quranic Arabic Corpus
+                  </a>
+                </p>
               </div>
             </>
           ) : null}

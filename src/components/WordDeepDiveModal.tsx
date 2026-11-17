@@ -142,8 +142,8 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
         </button>
       </div>
 
-      {/* 2. CARD 1: Morphology / Part of Speech & Alternative Translations */}
-      {(formattedPartOfSpeech || (data.otherMeanings && data.otherMeanings.length > 0)) && (
+      {/* 2. CARD 1: Morphology / Part of Speech, Lemma, Frequency & Alternative Translations */}
+      {(formattedPartOfSpeech || data.lemma || data.occurrenceCount > 1 || data.isRare || (data.otherMeanings && data.otherMeanings.length > 0)) && (
         <div className="p-3 sm:p-3.5 rounded-xl bg-stone-50 dark:bg-[#25252B] border border-stone-200/80 dark:border-stone-800 space-y-2">
           {/* Morphology / Part of Speech (verbal noun, preposition, etc.) */}
           {formattedPartOfSpeech && (
@@ -152,9 +152,36 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
             </div>
           )}
 
+          {/* Lemma & Quranic Frequency */}
+          {(data.lemma || data.occurrenceCount > 1 || data.isRare) && (
+            <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-[11px] text-stone-600 dark:text-stone-300 pt-0.5">
+              {data.lemma && (
+                <span className="inline-flex items-center gap-1.5">
+                  <span className="text-[10.5px] font-bold uppercase tracking-wider text-stone-400 dark:text-stone-500">
+                    Lemma:
+                  </span>
+                  <span dir="rtl" className="font-quran text-[15px] text-[#CD7743] dark:text-[#E08955] leading-none select-text">
+                    {data.lemma}
+                  </span>
+                  {data.lemmaTransliteration && (
+                    <span className="text-stone-500 dark:text-stone-400 select-text">
+                      ({data.lemmaTransliteration})
+                    </span>
+                  )}
+                </span>
+              )}
+              {data.occurrenceCount > 0 && (
+                <span className="text-stone-500 dark:text-stone-400">
+                  {data.lemma ? '· ' : ''}
+                  {data.isRare ? `Rare (${data.occurrenceCount}× in Qur'an)` : `Occurs ${data.occurrenceCount}× in Qur'an`}
+                </span>
+              )}
+            </div>
+          )}
+
           {/* Alternative Translations rendered as clean bullet points */}
           {data.otherMeanings && data.otherMeanings.length > 0 && (
-            <div className={`${formattedPartOfSpeech ? 'pt-2 border-t border-stone-200/60 dark:border-stone-800/80' : ''} space-y-1.5`}>
+            <div className={`${(formattedPartOfSpeech || data.lemma || data.occurrenceCount > 1 || data.isRare) ? 'pt-2 border-t border-stone-200/60 dark:border-stone-800/80' : ''} space-y-1.5`}>
               <span className="text-[10.5px] font-bold uppercase tracking-wider text-stone-500 dark:text-stone-400 block">
                 Alternative Translations
               </span>
@@ -303,6 +330,25 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
             No other occurrences indexed for this word from this source.
           </div>
         )}
+      </div>
+
+      {/* 6. Discreet Corpus Attribution */}
+      <div className="pt-2 border-t border-stone-100 dark:border-stone-800/80 flex items-center justify-between gap-2 text-[10.5px] text-stone-400 dark:text-stone-500">
+        <span>Morphology &amp; lemmas: Quranic Arabic Corpus</span>
+        <a
+          href={
+            data.corpusRootBw
+              ? `https://corpus.quran.com/qurandictionary.jsp?q=${encodeURIComponent(data.corpusRootBw)}`
+              : 'https://corpus.quran.com'
+          }
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#596B8E] dark:text-[#788BB3] hover:text-[#CD7743] dark:hover:text-[#E08955] transition-colors inline-flex items-center gap-1 font-medium shrink-0"
+          title="View morphological concordance on corpus.quran.com"
+        >
+          <span>corpus.quran.com</span>
+          <ExternalLink className="w-2.5 h-2.5" />
+        </a>
       </div>
     </div>
   );

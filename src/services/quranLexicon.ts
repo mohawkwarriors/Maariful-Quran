@@ -15,6 +15,10 @@ export interface WordDeepDiveData {
   word: string;
   transliteration?: string;
   partOfSpeech?: string;
+  lemma?: string;
+  lemmaTransliteration?: string;
+  lemmaOccurrenceCount?: number;
+  corpusRootBw?: string;
   root: string;
   rootMeaning: string;
   primaryMeaning: string;
@@ -645,7 +649,7 @@ export const QURAN_LEXICON: Record<string, WordDeepDiveData> = {
  */
 export function stripArabicDiacritics(text: string): string {
   return text
-    .replace(/[\u064B-\u065F\u0670\u06D6-\u06DC\u06DF-\u06E8\u06EA-\u06ED]/g, '')
+    .replace(/[\u0640\u064B-\u065F\u0670\u06D6-\u06ED]/g, '')
     .replace(/[أإآٱ]/g, 'ا')
     .replace(/ة/g, 'ه')
     .replace(/ى/g, 'ي')
@@ -691,6 +695,148 @@ function getIndexedLexicon(): IndexedLexiconEntry[] {
 
 const deepDiveMemoCache = new Map<string, WordDeepDiveData>();
 
+// ============================================================================
+// Quranic Arabic Corpus (Version 0.4) Morphology & Lemmas Index Loader
+// Source: https://corpus.quran.com
+// ============================================================================
+interface CorpusLemmaEntry {
+  tr: string;
+  pos: string;
+  c: number;
+  m?: string;
+  v: [number, number][];
+}
+
+interface CorpusRootEntry {
+  ar: string;
+  c: number;
+  l: string[];
+  v: [number, number][];
+}
+
+interface CorpusMorphologyPayload {
+  meta: {
+    source: string;
+    url: string;
+    license: string;
+    totalWords: number;
+    uniqueSurfaceWords: number;
+    uniquePosSummaries: number;
+    uniqueLemmas: number;
+    uniqueRoots: number;
+    referencedVerses: number;
+  };
+  posTable: string[];
+  words: Record<string, [string, string, number, number]>;
+  lemmas: Record<string, CorpusLemmaEntry>;
+  roots: Record<string, CorpusRootEntry>;
+  verses: Record<string, [string, string, string]>;
+}
+
+let corpusData: CorpusMorphologyPayload | null = null;
+let corpusStrippedMap: Map<string, string> | null = null;
+let corpusLoadPromise: Promise<boolean> | null = null;
+const corpusLoadedListeners = new Set<() => void>();
+
+export function onCorpusMorphologyLoaded(cb: () => void): () => void {
+  if (corpusData) {
+    cb();
+  }
+  corpusLoadedListeners.add(cb);
+  return () => {
+    corpusLoadedListeners.delete(cb);
+  };
+}
+
+export async function preloadCorpusMorphology(): Promise<boolean> {
+  if (corpusData) return true;
+  if (corpusLoadPromise) return corpusLoadPromise;
+
+  corpusLoadPromise = (async () => {
+    try {
+      const response = await fetch('/data/corpus-morphology.json');
+      if (!response.ok) return false;
+      const parsed = (await response.json()) as CorpusMorphologyPayload;
+      if (!parsed || !parsed.words || !parsed.posTable) return false;
+
+      const strippedMap = new Map<string, string>();
+      const bestCount = new Map<string, number>();
+      for (const [wKey, tuple] of Object.entries(parsed.words)) {
+        const stripped = stripArabicDiacritics(wKey);
+        if (!stripped) continue;
+        const cnt = tuple[3] || 0;
+        const prev = bestCount.get(stripped);
+        if (prev === undefined || cnt > prev) {
+          bestCount.set(stripped, cnt);
+          strippedMap.set(stripped, wKey);
+        }
+      }
+
+      corpusData = parsed;
+      corpusStrippedMap = strippedMap;
+      deepDiveMemoCache.clear();
+      corpusLoadedListeners.forEach((cb) => {
+        try {
+          cb();
+        } catch {
+          // ignore listener errors
+        }
+      });
+      return true;
+    } catch {
+      return false;
+    }
+  })();
+
+  return corpusLoadPromise;
+}
+
+if (typeof window !== 'undefined') {
+  void preloadCorpusMorphology();
+}
+
+interface CorpusWordMatch {
+  entry: [string, string, number, number];
+  posSummary: string;
+  lemmaObj?: CorpusLemmaEntry;
+  rootObj?: CorpusRootEntry;
+}
+
+function lookupCorpusWord(cleanWord: string): CorpusWordMatch | null {
+  if (!corpusData) return null;
+  const noTatweel = cleanWord.replace(/\u0640/g, '').trim();
+  const stripped = stripArabicDiacritics(cleanWord);
+  const resolvedKey =
+    (corpusData.words[cleanWord] ? cleanWord : undefined) ||
+    (corpusData.words[noTatweel] ? noTatweel : undefined) ||
+    (stripped && corpusStrippedMap ? corpusStrippedMap.get(stripped) : undefined);
+
+  if (!resolvedKey) return null;
+  const entry = corpusData.words[resolvedKey];
+  if (!entry) return null;
+
+  const [lemmaAr, rootBw, posIdx] = entry;
+  return {
+    entry,
+    posSummary: corpusData.posTable[posIdx] || '',
+    lemmaObj: lemmaAr ? corpusData.lemmas[lemmaAr] : undefined,
+    rootObj: rootBw ? corpusData.roots[rootBw] : undefined,
+  };
+}
+
+function enrichWithCorpusMetadata(base: WordDeepDiveData, cleanWord: string): WordDeepDiveData {
+  const match = lookupCorpusWord(cleanWord);
+  if (!match) return base;
+  const [lemmaAr, rootBw] = match.entry;
+  return {
+    ...base,
+    lemma: base.lemma || lemmaAr || undefined,
+    lemmaTransliteration: base.lemmaTransliteration || match.lemmaObj?.tr || undefined,
+    lemmaOccurrenceCount: base.lemmaOccurrenceCount ?? match.lemmaObj?.c,
+    corpusRootBw: base.corpusRootBw || rootBw || undefined,
+  };
+}
+
 /**
  * Intelligent helper to extract or synthesize deep-dive data for any word
  * Guarantees that EVERY word receives full, consistent sections including
@@ -711,7 +857,7 @@ export function getWordDeepDive(word: string, fallbackMeaning?: string, fallback
 
   // 1. Exact match in lexicon
   if (QURAN_LEXICON[cleanWord]) {
-    const res = QURAN_LEXICON[cleanWord];
+    const res = enrichWithCorpusMetadata(QURAN_LEXICON[cleanWord], cleanWord);
     deepDiveMemoCache.set(cacheKey, res);
     return res;
   }
@@ -725,40 +871,48 @@ export function getWordDeepDive(word: string, fallbackMeaning?: string, fallback
       stripped === entry.keyStripped ||
       (stem.length >= 3 && entry.keyStem.length >= 3 && stem === entry.keyStem)
     ) {
-      const res: WordDeepDiveData = {
-        ...entry.data,
-        word: cleanWord, // preserve exact vocalized spelling from Quran text
-      };
+      const res = enrichWithCorpusMetadata(
+        {
+          ...entry.data,
+          word: cleanWord, // preserve exact vocalized spelling from Quran text
+        },
+        cleanWord
+      );
       deepDiveMemoCache.set(cacheKey, res);
       return res;
     }
   }
 
-  // 3. Synthesize consistent linguistic deep-dive for words not in the manual dictionary
-  const isParticle = isClassicalParticle(cleanWord, fallbackRoot, fallbackGrammar);
-  const rootStr = isParticle ? '' : (fallbackRoot || '');
+  // 3. Extract authentic transliteration and morphology cleanly from fallbackGrammar if present
+  const isSyntheticMeaning =
+    !fallbackMeaning ||
+    fallbackMeaning === 'Quranic phrase meaning' ||
+    fallbackMeaning === 'Quranic term';
+  const cleanFallbackMeaning = isSyntheticMeaning ? undefined : fallbackMeaning;
 
-  // Extract authentic transliteration and morphology cleanly from fallbackGrammar if present
   let genuineTransliteration = '';
-  let genuineMorphology = fallbackGrammar || '';
+  let genuineMorphology =
+    fallbackGrammar &&
+    fallbackGrammar !== 'Classical Arabic Vocabulary (مفردات قرآنية)' &&
+    fallbackGrammar !== 'Classical Arabic Particle / Preposition (حرف مبني)'
+      ? fallbackGrammar
+      : '';
 
-  if (fallbackGrammar && /transliteration\s*:\s*/i.test(fallbackGrammar)) {
-    const match = fallbackGrammar.match(/transliteration\s*:\s*([^;,\n]+)/i);
+  if (genuineMorphology && /transliteration\s*:\s*/i.test(genuineMorphology)) {
+    const match = genuineMorphology.match(/transliteration\s*:\s*([^;,\n]+)/i);
     if (match) {
       genuineTransliteration = match[1].trim();
-      const remaining = fallbackGrammar.replace(/transliteration\s*:\s*([^;,\n]+)[;\n]?/i, '').trim();
+      const remaining = genuineMorphology.replace(/transliteration\s*:\s*([^;,\n]+)[;\n]?/i, '').trim();
       genuineMorphology = remaining;
     }
   }
 
-  const lanesInfo = isParticle ? null : getLanesRootInfo(fallbackRoot);
-
   // Extract authentic primary vs alternative translations cleanly
-  let primaryTranslation = fallbackMeaning || 'Quranic phrase meaning';
+  let primaryTranslation = cleanFallbackMeaning || 'Quranic term';
   const alternativeTranslations: string[] = [];
 
-  if (fallbackMeaning && (fallbackMeaning.includes('/') || fallbackMeaning.includes(','))) {
-    const parts = fallbackMeaning.split(/[/,]/).map((s) => s.trim()).filter((s) => s.length > 0);
+  if (cleanFallbackMeaning && (cleanFallbackMeaning.includes('/') || cleanFallbackMeaning.includes(','))) {
+    const parts = cleanFallbackMeaning.split(/[/,]/).map((s) => s.trim()).filter((s) => s.length > 0);
     if (parts.length > 0) {
       primaryTranslation = parts[0];
       for (let i = 1; i < parts.length; i++) {
@@ -769,6 +923,91 @@ export function getWordDeepDive(word: string, fallbackMeaning?: string, fallback
     }
   }
 
+  // 4. Lookup in preprocessed Quranic Arabic Corpus v0.4 morphology & lemmas index
+  const corpusMatch = lookupCorpusWord(cleanWord);
+  if (corpusMatch && corpusData) {
+    const [lemmaAr, rootBw, , wordCount] = corpusMatch.entry;
+    const { posSummary, lemmaObj, rootObj } = corpusMatch;
+    const effectiveRoot = rootObj ? rootObj.ar : '';
+    const isParticle = !effectiveRoot || isClassicalParticle(cleanWord, effectiveRoot, genuineMorphology || posSummary);
+    const lanesInfo = isParticle ? null : getLanesRootInfo(effectiveRoot);
+
+    const occurrenceCount = lemmaObj?.c || wordCount || 1;
+    const isRare = occurrenceCount <= 5;
+    const rarityNote = isRare
+      ? `Appears ${occurrenceCount} time${occurrenceCount === 1 ? '' : 's'} in the Qur'an.`
+      : undefined;
+
+    let relatedWords: WordDeepDiveData['relatedWords'] = (lanesInfo?.relatedWords as WordDeepDiveData['relatedWords']) || [];
+    if (relatedWords.length === 0 && rootObj?.l?.length) {
+      const siblingLemmas = [
+        ...rootObj.l.filter((sib) => sib !== lemmaAr),
+        ...rootObj.l.filter((sib) => sib === lemmaAr),
+      ].slice(0, 4);
+      relatedWords = siblingLemmas
+        .map((sibLem) => {
+          const sibObj = corpusData!.lemmas[sibLem];
+          if (!sibObj) return null;
+          return {
+            arabic: sibLem,
+            transliteration: sibObj.tr || sibLem,
+            meaning: sibObj.m ? `${sibObj.m} (${sibObj.c}×)` : `${sibObj.pos} (${sibObj.c}× in Qur'an)`,
+          };
+        })
+        .filter((x): x is NonNullable<typeof x> => x !== null);
+    }
+
+    let otherQuranVerses: QuranVerseReference[] = (lanesInfo?.otherQuranVerses as QuranVerseReference[]) || [];
+    if (otherQuranVerses.length === 0) {
+      const verseCoords = lemmaObj?.v?.length ? lemmaObj.v : (rootObj?.v || []);
+      otherQuranVerses = verseCoords
+        .slice(0, 3)
+        .map<QuranVerseReference | null>(([sNum, vNum]) => {
+          const vData = corpusData!.verses[`${sNum}:${vNum}`];
+          if (!vData) return null;
+          return {
+            surahNumber: sNum,
+            surahName: vData[0],
+            verseNumber: vNum,
+            reference: `${sNum}:${vNum}`,
+            arabicSnippet: vData[1] || undefined,
+            englishText: vData[2] || '',
+          };
+        })
+        .filter((x): x is QuranVerseReference => x !== null);
+    }
+
+    const fromCorpus: WordDeepDiveData = {
+      word: cleanWord,
+      transliteration: genuineTransliteration || lemmaObj?.tr || '',
+      partOfSpeech: genuineMorphology || posSummary || (isParticle ? 'Classical Arabic Particle / Preposition (حرف مبني)' : 'Classical Arabic Vocabulary (مفردات قرآنية)'),
+      lemma: lemmaAr || undefined,
+      lemmaTransliteration: lemmaObj?.tr || undefined,
+      lemmaOccurrenceCount: lemmaObj?.c,
+      corpusRootBw: rootBw || undefined,
+      root: isParticle ? '' : effectiveRoot,
+      rootMeaning: isParticle
+        ? 'In Classical Arabic syntax (Nahw), particles, prepositions, and pronouns are indeclinable (mabni) and non-derivative, serving connective syntactic functions rather than carrying triliteral roots.'
+        : (lanesInfo?.laneDefinition || `Classical Arabic root occurring ${rootObj?.c || occurrenceCount}× across the Qur'an (Quranic Arabic Corpus / Lane's Madd al-Qāmūs).`),
+      primaryMeaning: cleanFallbackMeaning ? primaryTranslation : (lemmaObj?.m || 'Quranic term'),
+      otherMeanings: alternativeTranslations,
+      relatedWords,
+      isRare,
+      rarityNote,
+      occurrenceCount,
+      otherQuranVerses,
+      tafseerNote: ''
+    };
+
+    deepDiveMemoCache.set(cacheKey, fromCorpus);
+    return fromCorpus;
+  }
+
+  // 5. Fallback synthesis if corpus index has not finished loading or word is unrecognized
+  const isParticle = isClassicalParticle(cleanWord, fallbackRoot, fallbackGrammar);
+  const rootStr = isParticle ? '' : (fallbackRoot || '');
+  const lanesInfo = isParticle ? null : getLanesRootInfo(fallbackRoot);
+
   const synthesized: WordDeepDiveData = {
     word: cleanWord,
     transliteration: genuineTransliteration,
@@ -777,7 +1016,7 @@ export function getWordDeepDive(word: string, fallbackMeaning?: string, fallback
     rootMeaning: isParticle
       ? 'In Classical Arabic syntax (Nahw), particles, prepositions, and pronouns are indeclinable (mabni) and non-derivative, serving connective syntactic functions rather than carrying triliteral roots.'
       : (lanesInfo?.laneDefinition || `Classical Arabic root referenced in Edward William Lane's Lexicon (Madd al-Qāmūs).`),
-    primaryMeaning: primaryTranslation,
+    primaryMeaning: fallbackMeaning ? primaryTranslation : 'Quranic phrase meaning',
     otherMeanings: alternativeTranslations,
     relatedWords: (lanesInfo?.relatedWords as any) || [],
     isRare: false,
