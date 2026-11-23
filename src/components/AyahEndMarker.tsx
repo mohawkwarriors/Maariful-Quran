@@ -39,9 +39,10 @@ export const AyahEndMarker: React.FC<AyahMarkerProps> = ({
   style,
 }) => {
   // Proportional sizing and vertical calibration:
-  // - yOffset centers the numeral font glyph optical mass dead-center within the circular medallion cavity.
-  //   Arabic numeral glyphs in font-quran sit slightly high in their em-box; positive translateY gracefully
-  //   lowers them into the geometric center of the medallion.
+  // - yOffset centers the Amiri Bold Eastern Arabic numeral optical mass dead-center within the circular
+  //   medallion cavity (viewBox vertical center = 539 / 1078 = 50%). Because Amiri's OS/2 ascender (+1195)
+  //   is larger than its descender (-563) to leave room for Arabic tashkeel, digits naturally sit slightly
+  //   below the em-box midpoint; a small negative translateY (-0.073em) lifts them to exact 50% optical center.
   // - verticalAlign: '-0.16em' ensures authentic optical baseline alignment with English and Latin text lines,
   //   grounding the medallion so it never floats above the text baseline or reaches unnaturally high.
   const dimensions =
@@ -50,7 +51,7 @@ export const AyahEndMarker: React.FC<AyahMarkerProps> = ({
           box: 'w-[23px] h-[21px]',
           numSize: vNum >= 100 ? '9px' : vNum >= 10 ? '10px' : '11px',
           letterSpacing: vNum >= 100 ? '-0.4px' : 'normal',
-          yOffset: vNum >= 100 ? '+1.0px' : vNum >= 10 ? '+1.3px' : '+1.6px',
+          yOffset: '-0.073em',
           margin: 'mx-1',
           topOffset: '0px',
           verticalAlign: '-0.16em',
@@ -60,7 +61,7 @@ export const AyahEndMarker: React.FC<AyahMarkerProps> = ({
           box: 'w-[38px] h-[35px] sm:w-[42px] sm:h-[38px]',
           numSize: vNum >= 100 ? '12.5px' : vNum >= 10 ? '14.5px' : '16px',
           letterSpacing: vNum >= 100 ? '-0.4px' : 'normal',
-          yOffset: vNum >= 100 ? '+1.2px' : vNum >= 10 ? '+1.6px' : '+2.0px',
+          yOffset: '-0.073em',
           margin: 'mx-2',
           topOffset: '0px',
           verticalAlign: 'middle',
@@ -69,7 +70,7 @@ export const AyahEndMarker: React.FC<AyahMarkerProps> = ({
           box: 'w-[28px] h-[25px]',
           numSize: vNum >= 100 ? '10px' : vNum >= 10 ? '11px' : '12.5px',
           letterSpacing: vNum >= 100 ? '-0.4px' : 'normal',
-          yOffset: vNum >= 100 ? '+1.2px' : vNum >= 10 ? '+1.5px' : '+1.8px',
+          yOffset: '-0.073em',
           margin: 'mx-1.5',
           topOffset: '0px',
           verticalAlign: '-0.16em',

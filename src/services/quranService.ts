@@ -9,7 +9,7 @@ export interface ManifestResponse {
   surahs: SurahManifestItem[];
 }
 
-export const DATA_CACHE_KEY = '20261025-v2';
+export const DATA_CACHE_KEY = '20261122-v3';
 
 export async function fetchManifest(): Promise<ManifestResponse> {
   const res = await fetch(`/data/manifest.json?v=${DATA_CACHE_KEY}`);

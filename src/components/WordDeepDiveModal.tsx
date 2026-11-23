@@ -149,7 +149,7 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
 
         {/* Primary English Translation */}
         <div className="flex-1 min-w-0">
-          <span className="text-base sm:text-lg font-semibold text-stone-900 dark:text-stone-100 leading-snug select-text block">
+          <span className="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-100 leading-tight tracking-tight select-text block">
             {formattedPrimaryMeaning}
           </span>
         </div>
