@@ -2,6 +2,7 @@ import React from 'react';
 import { CuratedTerm } from '../types/quran';
 import { TermPopover } from './TermPopover';
 import { AyahEndMarker } from './AyahEndMarker';
+import { VOCABULARY_KNOWLEDGE } from '../services/vocabularyKnowledge';
 
 interface AnnotatedTranslationProps {
   text?: string;
@@ -10,7 +11,11 @@ interface AnnotatedTranslationProps {
 }
 
 export const TranslationAyahMarker: React.FC<{ vNum: number }> = ({ vNum }) => {
-  return <AyahEndMarker vNum={vNum} size="sm" />;
+  return (
+    <span id={`translation-ayah-${vNum}`} className="inline">
+      <AyahEndMarker vNum={vNum} size="sm" />
+    </span>
+  );
 };
 
 export const AnnotatedTranslation: React.FC<AnnotatedTranslationProps> = ({
@@ -59,13 +64,23 @@ export const AnnotatedTranslation: React.FC<AnnotatedTranslationProps> = ({
           termKey.toLowerCase().includes(t.term.toLowerCase())
       );
 
-      parts.push(
-        <TermPopover
-          key={`term-${match.index}-${termKey}`}
-          termText={termKey}
-          termData={matchingTerm}
-        />
-      );
+      const cleanKey = termKey.toLowerCase().replace(/[^\w\s-]/g, '').trim();
+      const hasKnownVocab =
+        Boolean(VOCABULARY_KNOWLEDGE[cleanKey]) ||
+        Object.keys(VOCABULARY_KNOWLEDGE).some((k) => cleanKey.includes(k) || k.includes(cleanKey));
+      const isEditorialClarification = !matchingTerm && !hasKnownVocab && (/\band\b/i.test(termKey) || /[()]/.test(termKey));
+
+      if (isEditorialClarification) {
+        parts.push(`[${termKey}]`);
+      } else {
+        parts.push(
+          <TermPopover
+            key={`term-${match.index}-${termKey}`}
+            termText={termKey}
+            termData={matchingTerm}
+          />
+        );
+      }
     }
 
     lastIndex = regex.lastIndex;

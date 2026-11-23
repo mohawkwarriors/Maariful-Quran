@@ -66,7 +66,7 @@ export const HADITH_SOURCES: HadithSourceRule[] = [
 ];
 
 export const HADITH_NARRATORS: HadithNarratorRule[] = [
-  { regex: /\b(?:abu\s+hurairah|abu\s+huraira)\b/i, name: 'Sayyidina Abu Hurairah ؓ' },
+  { regex: /\b(?:abu\s+hura[iy]rah?)\b/i, name: 'Sayyidina Abu Hurairah ؓ' },
   { regex: /\b(?:ibn\s+['’`]?abbas|abdullah\s+ibn\s+['’`]?abbas)\b/i, name: "Sayyidina Ibn 'Abbas ؓ" },
   { regex: /\b(?:['’`]?a['’`]?ishah|['’`]?ayesha|sayyidah\s+['’`]?a['’`]?ishah)\b/i, name: "Sayyidah 'A'ishah ؓ" },
   { regex: /\b(?:abu\s+umamah|abu\s+umama)\b/i, name: 'Sayyidina Abu Umamah ؓ' },
@@ -106,14 +106,14 @@ export function extractHadithNarrator(text?: string | null): string | undefined 
     }
   }
 
-  // Dynamic regex fallback for other companion names
+  // Dynamic regex fallback for other companion names (strictly requires explicit companion honorific and capitalized name)
   const m = text.match(
-    /(?:from|narrated by|reported by|relat(?:ed)? by)\s+(?:the\s+blessed\s+Companion\s+|Sayyid(?:na|ina)\s+|Hadrat\s+)?([A-Z][a-zA-Z'`-]+(?:\s+[A-Z][a-zA-Z'`-]+)?)(?=\s+(?:that|who|when|reported|narrated|said|appearing|\(|,|ؓ|$))/i
+    /(?:from|narrated by|reported by|relat(?:ed)? by)\s+(?:[Tt]he\s+(?:blessed|noble)\s+Companion\s+|Sayyid(?:na|ina|ah)\s+|Hadrat\s+)([A-Z][a-zA-Z'`-]+(?:\s+(?:ibn|bin|bint|abu|abi|umm|al-)\s*[A-Z][a-zA-Z'`-]+|\s+[A-Z][a-zA-Z'`-]+)?)(?=\s+(?:that|who|when|reported|narrated|said|appearing|\(|,|ؓ|$))/
   );
   if (m && m[1]) {
     const raw = m[1].trim();
     if (
-      !/^(the|a|an|allah|holy|prophet|messenger|islam|this|that|he|she|they|each|all|some|another|one|two|three)$/i.test(
+      !/^(the|a|an|allah|holy|prophet|messenger|islam|this|that|he|she|they|each|all|some|another|one|two|three|imam|al-bukhari|muslim|tirmidhi)$/i.test(
         raw
       )
     ) {
@@ -165,14 +165,22 @@ export function extractHadithSourceName(
 
   // 2. Check parenthetical source at end (e.g. (See Qurtubi), (Mazhari), (Tirmidhi))
   const mEnd = text.match(
-    /\((?:See\s+|Recorded\s+by\s+|Narrated\s+by\s+)?([^)]+)\)\s*[."”']*\s*$/i
+    /\(((?:See\s+|Recorded\s+by\s+|Reported\s+by\s+|Transmitted\s+by\s+|Narrated\s+by\s+)?[^)]+)\)\s*[."”']*\s*$/i
   );
   if (mEnd) {
-    const raw = mEnd[1].trim();
+    const fullParen = mEnd[1].trim();
+    const raw = fullParen.replace(/^(?:See\s+|Recorded\s+by\s+|Reported\s+by\s+|Transmitted\s+by\s+|Narrated\s+by\s+)/i, '').trim();
     for (const src of HADITH_SOURCES) {
       if (src.regex.test(raw)) return src.name;
     }
-    if (raw.length > 2 && raw.length < 35 && !/^\d+(?::\d+)?$/.test(raw)) {
+    if (
+      /^(?:See\s+|Recorded\s+by\s+|Reported\s+by\s+|Transmitted\s+by\s+|Narrated\s+by\s+|Tafsir\s+|Tafseer\s+|Sahih\s+|Sunan\s+|Musnad\s+|Jami['’`]?\s+|Muwatta['’`]?\s+)/i.test(
+        fullParen
+      ) &&
+      raw.length > 2 &&
+      raw.length < 35 &&
+      !/^\d+(?::\d+)?$/.test(raw)
+    ) {
       return raw.charAt(0).toUpperCase() + raw.slice(1);
     }
   }

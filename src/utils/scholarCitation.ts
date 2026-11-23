@@ -18,7 +18,7 @@ export function parseScholarCitation(
   // 1. Match author name from beginning of citation or narrative
   let author: string | null = null;
   const authorMatch = clean.match(
-    /^(?:According\s+to\s+(?:the\s+(?:great|famous|well-known)\s+commentator(?:\s+and\s+Companion)?\s+)?|The\s+famous\s+commentator\s+)?(Imam\s+[A-Za-z`'’\-]+(?:\s+[A-Za-z`'’\-]+)*|Sayyidna\s+[A-Za-z`'’\-]+(?:\s+[A-Za-z`'’\-]+)*|Al-Qurtubi|al-Suyuti|Qurtubi|Ibn\s+Kathir|Ibn\s+Abbas|Hasan\s+al-Basri|Muqatil)\b/i
+    /^(?:According\s+to\s+(?:the\s+(?:great|famous|well-known)\s+commentator(?:\s+and\s+Companion)?\s+)?|The\s+famous\s+commentator\s+)?(Imam\s+[A-Z][a-zA-Z`'’\-]+(?:\s+(?:al-|ibn\s+|abu\s+|['’`]?)[A-Z][a-zA-Z`'’\-]+){0,3}|Sayyid(?:na|ina)\s+[A-Z][a-zA-Z`'’\-]+(?:\s+(?:ibn\s+|abu\s+|['’`]?)[A-Z][a-zA-Z`'’\-]+){0,3}|Al-Qurtubi|al-Suyuti|Qurtubi|Ibn\s+Kathir|Ibn\s+['’`]?Abbas|Hasan\s+al-Basri|Muqatil)(?=\s+(?:says|said|has|had|explains|reports|writes|states|remarks|notes|adds|postulated|in|on)\b|[,.(:]|$)/i
   );
 
   if (authorMatch) {

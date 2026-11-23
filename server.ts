@@ -125,12 +125,15 @@ function generateScholarlyFallback(surahNumber: number, surahName?: string, vers
 }
 
 app.post('/api/tafseer/generate', async (req: Request, res: Response) => {
-  try {
-    const { surahNumber, surahName, verseRange } = req.body;
+  const rawSurahNumber = Number(req.body?.surahNumber);
+  const { surahName, verseRange } = req.body || {};
 
-    if (!surahNumber || surahNumber < 1 || surahNumber > 114) {
-      return res.status(400).json({ error: 'Valid Surah number (1-114) is required.' });
-    }
+  if (!Number.isInteger(rawSurahNumber) || rawSurahNumber < 1 || rawSurahNumber > 114) {
+    return res.status(400).json({ error: 'Valid integer Surah number (1-114) is required.' });
+  }
+  const surahNumber = rawSurahNumber;
+
+  try {
 
     const paddedNumber = String(surahNumber).padStart(3, '0');
     const existingFilePath = path.join(__dirname, 'public', 'data', 'surahs', `${paddedNumber}.json`);
@@ -252,16 +255,32 @@ REQUIREMENTS:
                       type: Type.OBJECT,
                       properties: {
                         term: { type: Type.STRING },
+                        arabicWord: { type: Type.STRING },
                         arabicRoot: { type: Type.STRING },
                         literalMeaning: { type: Type.STRING },
                         theologicalContext: { type: Type.STRING },
+                        relatedWords: {
+                          type: Type.ARRAY,
+                          items: { type: Type.STRING },
+                        },
                         volumeReference: { type: Type.STRING },
                       },
                       required: ['term', 'literalMeaning', 'theologicalContext'],
                     },
                   },
                 },
-                required: ['id', 'title', 'arabicText', 'translation', 'commentary'],
+                required: [
+                  'id',
+                  'verseRange',
+                  'title',
+                  'juzNumber',
+                  'revelationType',
+                  'arabicText',
+                  'translation',
+                  'phraseCards',
+                  'commentary',
+                  'subsections',
+                ],
               },
             },
           },
@@ -287,7 +306,7 @@ REQUIREMENTS:
   } catch (err: any) {
     console.error('Error generating tafseer via Gemini, falling back to scholarly synthesis:', err);
     try {
-      const fallback = generateScholarlyFallback(req.body?.surahNumber, req.body?.surahName, req.body?.verseRange);
+      const fallback = generateScholarlyFallback(surahNumber, surahName, verseRange);
       return res.json(fallback);
     } catch {
       return res.status(500).json({ error: err.message || 'Failed to generate tafseer' });

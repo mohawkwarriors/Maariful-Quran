@@ -8,8 +8,9 @@ export interface AyahMarkerProps {
 }
 
 const toArabicNumeral = (num: number): string => {
+  const safeNum = Number.isFinite(num) && num > 0 ? Math.floor(num) : 1;
   const arabicDigits = ['\u0660', '\u0661', '\u0662', '\u0663', '\u0664', '\u0665', '\u0666', '\u0667', '\u0668', '\u0669'];
-  return num
+  return safeNum
     .toString()
     .split('')
     .map((d) => arabicDigits[parseInt(d, 10)] ?? d)

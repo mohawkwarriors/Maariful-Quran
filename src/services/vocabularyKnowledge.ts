@@ -201,7 +201,7 @@ export const VOCABULARY_KNOWLEDGE: Record<string, Partial<CuratedTerm>> = {
   },
   samad: {
     term: 'As-Samad (الصمد)',
-    arabicRoot: 'ص-م-d (Ṣ-M-D)',
+    arabicRoot: 'ص-م-د (Ṣ-M-D)',
     literalMeaning: 'The solid, unshakable refuge upon whom all depend.',
     relatedWords: ['Samada (turned towards for sanctuary)', 'Masmud (sought out)', 'Samad (eternal fortress)'],
     theologicalContext:
@@ -324,5 +324,95 @@ export const VOCABULARY_KNOWLEDGE: Record<string, Partial<CuratedTerm>> = {
     theologicalContext:
       "Allah's undivided and eternal dominion over every realm, creature, and motion in existence.",
     volumeReference: "Ma'ariful Qur'an, Vol. 8, p. 490",
+  },
+  istianah: {
+    term: "Al-Isti'anah (الاستعانة)",
+    arabicRoot: 'ع-و-ن (\'A-W-N)',
+    literalMeaning: 'Seeking aid, succor, and active reliance upon divine strength.',
+    relatedWords: ["'Awn (help / assistance)", "Musta'an (the One sought for help)", "Ta'awun (mutual cooperation)"],
+    theologicalContext:
+      'Recognizing that human effort is powerless without Allah\'s enabling grace (Tawfiq), uniting sincere exertion with exclusive reliance upon Him in worship and worldly affairs.',
+    volumeReference: "Ma'ariful Qur'an, Vol. 1, p. 73",
+  },
+  salihat: {
+    term: 'As-Salihat (الصالحات)',
+    arabicRoot: 'ص-ل-ح (Ṣ-L-Ḥ)',
+    literalMeaning: 'Righteous, sound, and wholesome deeds free of corruption.',
+    relatedWords: ['Salih (righteous)', 'Islah (reformation / peacemaking)', 'Maslahah (public good)'],
+    theologicalContext:
+      'Virtuous actions performed with sincere faith (Iman) and in accordance with Prophetic guidance (Sunnah) that bring spiritual harmony in both worlds.',
+    volumeReference: "Ma'ariful Qur'an, Vol. 8, p. 868",
+  },
+  haqq: {
+    term: 'Al-Haqq (الحق)',
+    arabicRoot: 'ح-ق-ق (Ḥ-Q-Q)',
+    literalMeaning: 'Established truth, unshakable reality, and binding moral duty.',
+    relatedWords: ['Haqiqah (ultimate reality)', 'Huquq (rights and obligations)', 'Ahaqq (most worthy)'],
+    theologicalContext:
+      'One of the Supreme Names of Allah and the immutable standard of divine revelation, creed, and justice to which believers mutually counsel one another.',
+    volumeReference: "Ma'ariful Qur'an, Vol. 8, p. 869",
+  },
+  sabr: {
+    term: 'As-Sabr (الصبر)',
+    arabicRoot: 'ص-ب-ر (Ṣ-B-R)',
+    literalMeaning: 'Restraining the soul from panic, despair, or complaint; steadfast endurance.',
+    relatedWords: ['Sabir (patient one)', 'Musabarah (persevering against adversity)', 'Sabbar (deeply steadfast)'],
+    theologicalContext:
+      'Threefold spiritual fortitude: constancy in obeying Allah (Sabr \'ala al-Ta\'ah), restraint from prohibited desires (Sabr \'an al-Ma\'siyah), and dignified composure during trials (Sabr \'ala al-Bala\').',
+    volumeReference: "Ma'ariful Qur'an, Vol. 1, p. 386",
+  },
+  nahr: {
+    term: 'An-Nahr (النحر)',
+    arabicRoot: 'ن-ح-ر (N-Ḥ-R)',
+    literalMeaning: 'Sacrifice offered at the upper chest; upright devotion in prayer.',
+    relatedWords: ['Yawm an-Nahr (Day of Sacrifice / Eid al-Adha)', 'Manhar (place of offering)'],
+    theologicalContext:
+      'Offering animal sacrifice solely in Allah\'s name in gratitude for His boundless favors, standing in contrast to pagan offerings dedicated to idols.',
+    volumeReference: "Ma'ariful Qur'an, Vol. 8, p. 883",
+  },
+  kafirun: {
+    term: 'Al-Kafirun (الكافرون)',
+    arabicRoot: 'ك-ف-ر (K-F-R)',
+    literalMeaning: 'Those who cover over, conceal, or reject manifest truth.',
+    relatedWords: ['Kufr (disbelief / ingratitude)', 'Kaffarah (expiation)', 'Kafur (ungrateful)'],
+    theologicalContext:
+      'An uncompromising demarcation between pure monotheism (Tawhid) and polytheism (Shirk), rejecting any syncretic compromise in matters of divine worship.',
+    volumeReference: "Ma'ariful Qur'an, Vol. 8, p. 885",
+  },
+  afwaj: {
+    term: 'Afwaj (أفواج)',
+    arabicRoot: 'ف-و-ج (F-W-J)',
+    literalMeaning: 'Throngs, multitudes, and successive waves of people.',
+    relatedWords: ['Fawj (company / contingent)', 'Afwajan (in crowds and delegations)'],
+    theologicalContext:
+      'Following the Conquest of Makkah (Fath Makkah), entire Arabian tribes entered the fold of Islam in massive delegations rather than as isolated individuals.',
+    volumeReference: "Ma'ariful Qur'an, Vol. 8, p. 889",
+  },
+  tawwab: {
+    term: 'At-Tawwab (التواب)',
+    arabicRoot: 'ت-و-ب (T-W-B)',
+    literalMeaning: 'The Oft-Returning; the One who continually accepts repentance.',
+    relatedWords: ['Tawbah (repentance)', 'Ta\'ib (penitent believer)', 'Mathab (place of return)'],
+    theologicalContext:
+      'Allah\'s attribute of repeatedly turning toward His servants with mercy—first by inspiring their hearts to repent, and second by pardoning their slips and elevating their ranks.',
+    volumeReference: "Ma'ariful Qur'an, Vol. 8, p. 891",
+  },
+  hasid: {
+    term: 'Al-Hasid (الحاسد)',
+    arabicRoot: 'ح-س-د (Ḥ-S-D)',
+    literalMeaning: 'The envier when his resentment turns into active malice.',
+    relatedWords: ['Hasad (destructive envy)', 'Mahsud (the envied)'],
+    theologicalContext:
+      'Seeking refuge in Allah from the covert and overt harm of the envious soul when it acts upon its burning resentment of divine blessings granted to others.',
+    volumeReference: "Ma'ariful Qur'an, Vol. 8, p. 914",
+  },
+  'al-waswas al-khannas': {
+    term: 'Al-Waswas Al-Khannas (الوسواس الخناس)',
+    arabicRoot: 'و-س-و-س / خ-ن-س',
+    literalMeaning: 'The stealthy whisperer who slinks back and retreats.',
+    relatedWords: ['Waswasah (insidious whispering)', 'Khanasa (shrunk back / hid)'],
+    theologicalContext:
+      'The devil perches near the human heart to cast subtle doubts when a person is heedless, immediately shrinking back and retreating whenever Allah\'s name is remembered (Dhikr).',
+    volumeReference: "Ma'ariful Qur'an, Vol. 8, p. 918",
   },
 };

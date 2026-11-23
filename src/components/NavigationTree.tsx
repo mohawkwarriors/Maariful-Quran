@@ -884,6 +884,20 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
     </div>
   );
 
+  useEffect(() => {
+    if (!isOpenMobile) return;
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onCloseMobile();
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.body.style.overflow = prevOverflow;
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isOpenMobile, onCloseMobile]);
+
   return (
     <>
       {/* Desktop Fixed Left Pane (~350px - 380px for clear reading) */}
@@ -893,10 +907,11 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
 
       {/* Mobile Drawer Overlay */}
       {isOpenMobile && (
-        <div className="fixed inset-0 z-50 lg:hidden flex">
+        <div className="fixed inset-0 z-50 lg:hidden flex" role="dialog" aria-modal="true" aria-label="Surah Navigation">
           <div
             className="fixed inset-0 bg-black/40 backdrop-blur-xs"
             onClick={onCloseMobile}
+            aria-hidden="true"
           />
           <div className="relative w-84 max-w-[85vw] h-full shadow-2xl z-10 animate-in slide-in-from-left duration-200">
             {content}

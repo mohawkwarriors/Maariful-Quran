@@ -205,15 +205,15 @@ export function interleaveStudyCards(
 
         const blockType = blocks[i].type;
         let typeBonus = 0;
-        if (blockType === 'verse-heading' && n > 5) {
-          typeBonus = -12; // Avoid placing directly after verse heading before reading verse text
-        } else if (blockType === 'subheading') {
-          typeBonus = 6; // Placing directly under matching subheading is great
+        if ((blockType === 'verse-heading' || blockType === 'subheading') && n > 1) {
+          typeBonus = -50; // Never orphan a verse-heading or subheading from the prose immediately following it
         } else if (blockType === 'text') {
           typeBonus = 3;
         }
 
-        const sc = scores[subIdx][i];
+        const prevBlockScore =
+          i > 0 && blocks[i - 1].type === 'subheading' ? scores[subIdx][i - 1] : 0;
+        const sc = Math.max(scores[subIdx][i], prevBlockScore);
         const dist = Math.abs(i - idealPos);
         const val = sc * 2 - (dist / Math.max(1, n)) * 8 + typeBonus;
 

@@ -33,6 +33,21 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
     return () => mql.removeEventListener('change', onChange);
   }, []);
 
+  // Lock background scroll and bind Escape key when mobile bottom sheet is open
+  useEffect(() => {
+    if (!isMobile || !open) return;
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onOpenChange(false);
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.body.style.overflow = prevOverflow;
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isMobile, open, onOpenChange]);
+
   // Extract genuine transliteration (never English translation)
   let cleanTransliteration = '';
   let morphologyText = data.partOfSpeech || '';
@@ -103,46 +118,47 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
     cleanTransliteration.trim().toLowerCase() === data.primaryMeaning.trim().toLowerCase()
   );
 
-  const cardContent = (
-    <div className="space-y-3">
-      {/* 1. Header: Arabic Word with Phonetic Subtitle on the left, Primary English Translation next to it */}
-      <div className="flex items-start justify-between gap-3 sm:gap-4 pb-0.5">
-        <div className="flex items-start gap-3 sm:gap-4 flex-1 min-w-0">
-          {/* Arabic Script & Transliteration Subtitle */}
-          <div className="flex flex-col items-center shrink-0">
-            <span
-              dir="rtl"
-              lang="ar"
-              className="font-quran text-3xl sm:text-4xl text-[#CD7743] dark:text-[#E08955] leading-[1.3] inline-block px-1 pb-1 select-text"
-            >
-              {data.word}
-            </span>
+  const cardHeader = (
+    <div className="flex items-start justify-between gap-3 sm:gap-4">
+      <div className="flex items-start gap-3 sm:gap-4 flex-1 min-w-0">
+        {/* Arabic Script & Transliteration Subtitle */}
+        <div className="flex flex-col items-center shrink-0">
+          <span
+            dir="rtl"
+            lang="ar"
+            className="font-quran text-3xl sm:text-4xl text-[#CD7743] dark:text-[#E08955] leading-[1.65] inline-block px-1 pt-0.5 pb-0.5 select-text overflow-visible"
+          >
+            {data.word}
+          </span>
 
-            {cleanTransliteration && !isSameAsTransliteration && (
-              <span className="text-xs font-medium text-stone-500 dark:text-stone-400 tracking-wide select-text px-1 mt-1 sm:mt-1.5">
-                {cleanTransliteration}
-              </span>
-            )}
-          </div>
-
-          {/* Primary English Translation */}
-          <div className="flex-1 min-w-0 pt-1 sm:pt-1.5">
-            <span className="text-base sm:text-lg font-semibold text-stone-900 dark:text-stone-100 leading-snug select-text block">
-              {data.primaryMeaning}
+          {cleanTransliteration && !isSameAsTransliteration && (
+            <span className="text-xs font-medium text-stone-500 dark:text-stone-400 tracking-wide select-text px-1 mt-0.5 sm:mt-1">
+              {cleanTransliteration}
             </span>
-          </div>
+          )}
         </div>
 
-        <button
-          type="button"
-          onClick={() => onOpenChange(false)}
-          className="text-stone-400 hover:text-stone-600 dark:hover:text-stone-200 rounded-lg p-1.5 hover:bg-stone-100 dark:hover:bg-stone-800/60 transition-colors cursor-pointer shrink-0"
-          aria-label="Close word details"
-        >
-          <X className="w-4 h-4" />
-        </button>
+        {/* Primary English Translation */}
+        <div className="flex-1 min-w-0 pt-1 sm:pt-1.5">
+          <span className="text-base sm:text-lg font-semibold text-stone-900 dark:text-stone-100 leading-snug select-text block">
+            {data.primaryMeaning}
+          </span>
+        </div>
       </div>
 
+      <button
+        type="button"
+        onClick={() => onOpenChange(false)}
+        className="text-stone-400 hover:text-stone-600 dark:hover:text-stone-200 rounded-lg p-1.5 hover:bg-stone-100 dark:hover:bg-stone-800/60 transition-colors cursor-pointer shrink-0"
+        aria-label="Close word details"
+      >
+        <X className="w-4 h-4" />
+      </button>
+    </div>
+  );
+
+  const cardBody = (
+    <div className="space-y-3">
       {/* 2. CARD 1: Morphology / Part of Speech, Lemma, Frequency & Alternative Translations */}
       {(formattedPartOfSpeech || data.lemma || data.occurrenceCount > 1 || data.isRare || (data.otherMeanings && data.otherMeanings.length > 0)) && (
         <div className="p-3 sm:p-3.5 rounded-xl bg-stone-50 dark:bg-[#25252B] border border-stone-200/80 dark:border-stone-800 space-y-2">
@@ -213,7 +229,8 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
             <>
               <span
                 dir="rtl"
-                className="font-quran text-[17px] sm:text-[18px] text-[#CD7743] dark:text-[#E08955] leading-none select-text inline-flex items-center -translate-y-0.5"
+                lang="ar"
+                className="font-quran text-[17px] sm:text-[18px] text-[#CD7743] dark:text-[#E08955] leading-[1.5] select-text inline-flex items-center justify-center"
               >
                 {parsedRoot.arabic}
               </span>
@@ -232,7 +249,7 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
 
         <p className="text-xs sm:text-[12.5px] leading-relaxed text-stone-700 dark:text-stone-300 select-text">
           {data.root && parsedRoot
-            ? (lanesInfo?.laneDefinition || data.rootMeaning || 'No classical root information available from this source.')
+            ? ((!lanesInfo?.isFallback && lanesInfo?.laneDefinition) || data.rootMeaning || lanesInfo?.laneDefinition || 'No classical root information available from this source.')
             : 'In Classical Arabic grammar (Nahw), particles, prepositions, and pronouns are indeclinable (mabni) and non-derivative, serving connective syntactic functions rather than carrying triliteral roots.'}
         </p>
 
@@ -271,7 +288,8 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
               >
                 <span
                   dir="rtl"
-                  className="font-quran text-[17px] sm:text-[18px] leading-none text-[#CD7743] dark:text-[#E08955] shrink-0 select-text -translate-y-0.5"
+                  lang="ar"
+                  className="font-quran text-[17px] sm:text-[18px] leading-[1.5] text-[#CD7743] dark:text-[#E08955] shrink-0 select-text inline-flex items-center justify-center"
                 >
                   {rw.arabic}
                 </span>
@@ -377,10 +395,15 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
               <div
                 role="dialog"
                 aria-modal="true"
-                className="relative w-full max-h-[85vh] overflow-y-auto rounded-t-3xl bg-white dark:bg-[#1E1E23] border-t border-stone-200 dark:border-stone-800 p-4 sm:p-5 pb-8 shadow-2xl z-10 animate-in slide-in-from-bottom duration-250 text-stone-900 dark:text-stone-100"
+                className="relative w-full max-h-[85vh] flex flex-col overflow-hidden rounded-t-3xl bg-white dark:bg-[#1E1E23] border-t border-stone-200 dark:border-stone-800 shadow-2xl z-10 animate-in slide-in-from-bottom duration-250 text-stone-900 dark:text-stone-100"
               >
-                <div className="w-12 h-1.5 bg-stone-300 dark:bg-stone-700 rounded-full mx-auto mb-3 shrink-0" />
-                {cardContent}
+                <div className="shrink-0 px-4 sm:px-5 pt-3.5 pb-2.5 border-b border-stone-100 dark:border-stone-800/80">
+                  <div className="w-12 h-1.5 bg-stone-300 dark:bg-stone-700 rounded-full mx-auto mb-3 shrink-0" />
+                  {cardHeader}
+                </div>
+                <div className="flex-1 min-h-0 overflow-y-auto overscroll-contain px-4 sm:px-5 pt-3.5 pb-8">
+                  {cardBody}
+                </div>
               </div>
             </div>,
             document.body
@@ -389,12 +412,22 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
     );
   }
 
-  // Desktop View: Hover / Click Floating Popover
+  // Desktop View: Hover / Click Floating Popover constrained to live viewport space below sticky header
+  const handlePointerEnter = (e: React.PointerEvent) => {
+    if (e.pointerType !== 'mouse') return;
+    onMouseEnter?.();
+  };
+
+  const handlePointerLeave = (e: React.PointerEvent) => {
+    if (e.pointerType !== 'mouse') return;
+    onMouseLeave?.();
+  };
+
   return (
     <Popover.Root open={open} onOpenChange={onOpenChange}>
       <span
-        onMouseEnter={onMouseEnter}
-        onMouseLeave={onMouseLeave}
+        onPointerEnter={handlePointerEnter}
+        onPointerLeave={handlePointerLeave}
         className="inline-block"
       >
         <Popover.Trigger asChild>{trigger}</Popover.Trigger>
@@ -402,12 +435,24 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
 
       <Popover.Portal>
         <Popover.Content
-          onMouseEnter={onMouseEnter}
-          onMouseLeave={onMouseLeave}
-          className="z-50 w-[480px] sm:w-[540px] max-w-[94vw] p-4 sm:p-5 bg-white dark:bg-[#1E1E23] border border-stone-200 dark:border-stone-700/80 rounded-2xl shadow-2xl text-stone-900 dark:text-stone-100 text-xs animate-in fade-in zoom-in-95 duration-150"
+          onPointerEnter={handlePointerEnter}
+          onPointerLeave={handlePointerLeave}
+          collisionPadding={{ top: 68, right: 16, bottom: 16, left: 16 }}
+          style={{ maxHeight: 'min(82vh, var(--radix-popover-content-available-height, 82vh))' }}
+          className="z-50 w-[480px] sm:w-[540px] max-w-[94vw] flex flex-col bg-white dark:bg-[#1E1E23] border border-stone-200 dark:border-stone-700/80 rounded-2xl shadow-2xl text-stone-900 dark:text-stone-100 text-xs animate-in fade-in zoom-in-95 duration-150"
           sideOffset={8}
         >
-          {cardContent}
+          <div
+            className="flex flex-col min-h-0 overflow-hidden rounded-2xl"
+            style={{ maxHeight: 'inherit' }}
+          >
+            <div className="shrink-0 px-4 sm:px-5 pt-3.5 sm:pt-4 pb-2.5 border-b border-stone-100 dark:border-stone-800/80">
+              {cardHeader}
+            </div>
+            <div className="flex-1 min-h-0 overflow-y-auto overscroll-contain px-4 sm:px-5 py-3.5">
+              {cardBody}
+            </div>
+          </div>
           <Popover.Arrow className="fill-white dark:fill-[#1E1E23]" />
         </Popover.Content>
       </Popover.Portal>

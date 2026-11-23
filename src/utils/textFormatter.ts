@@ -90,11 +90,15 @@ export function formatArabicEnglishInsight(text: string): string {
     // Replace terms enclosed in parentheses like "(Taqwa)" where Arabic is not already present
     result = result.replace(rule.parenRegex, rule.replacement);
 
-    // Replace standalone occurrences not already preceded by Arabic text or open paren
+    // Replace standalone occurrences not already preceded or followed by Arabic text or open paren
     result = result.replace(rule.standaloneRegex, (match, offset, fullStr) => {
-      // Check if preceded by Arabic characters within the last 15 chars
+      // Check if preceded or immediately followed by Arabic characters within 15 chars
       const preceding = fullStr.substring(Math.max(0, offset - 15), offset);
-      if (/[\u0600-\u06FF]/.test(preceding)) {
+      const following = fullStr.substring(
+        offset + match.length,
+        Math.min(fullStr.length, offset + match.length + 15)
+      );
+      if (/[\u0600-\u06FF]/.test(preceding) || /^\s*\(?[\u0600-\u06FF]/.test(following)) {
         return match;
       }
       return rule.replacement;

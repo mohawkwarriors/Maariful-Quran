@@ -32,6 +32,8 @@ export const TermPopover: React.FC<TermPopoverProps> = ({ termText, termData }) 
     andad: 'andad',
     fasad: 'fasad',
     islah: 'islah',
+    'al-waswas al-khannas': 'al-waswas al-khannas',
+    'waswas al-khannas': 'al-waswas al-khannas',
   };
 
   const resolvedKey = aliasKeyMap[cleanKey] || cleanKey;
@@ -43,11 +45,17 @@ export const TermPopover: React.FC<TermPopoverProps> = ({ termText, termData }) 
 
   // Deep dive lexicon fallback if still not in curated vocabulary table
   const lexiconFallback = !termData && !knownData ? getWordDeepDive(termText) : null;
+  const validFallbackMeaning =
+    lexiconFallback?.primaryMeaning &&
+    lexiconFallback.primaryMeaning !== 'Quranic phrase meaning' &&
+    lexiconFallback.primaryMeaning !== 'Quranic term'
+      ? lexiconFallback.primaryMeaning
+      : undefined;
 
   const rawMeaning =
     termData?.literalMeaning ||
     knownData?.literalMeaning ||
-    lexiconFallback?.primaryMeaning ||
+    validFallbackMeaning ||
     'Classical Arabic theological term.';
 
   const rawContext =
@@ -57,8 +65,11 @@ export const TermPopover: React.FC<TermPopoverProps> = ({ termText, termData }) 
     `In Ma'ariful Qur'an, Mufti Muhammad Shafi examines the linguistic root, spiritual dimensions, and practical rulings pertaining to this term.`;
 
   const effectiveData: CuratedTerm = {
-    term: termData?.term || knownData?.term || (lexiconFallback ? `${termText} (${lexiconFallback.root})` : termText),
-    arabicRoot: termData?.arabicRoot || knownData?.arabicRoot || lexiconFallback?.root,
+    term:
+      termData?.term ||
+      knownData?.term ||
+      (lexiconFallback?.root ? `${termText} (${lexiconFallback.root})` : termText),
+    arabicRoot: termData?.arabicRoot || knownData?.arabicRoot || lexiconFallback?.root || undefined,
     literalMeaning: rawMeaning,
     relatedWords:
       termData?.relatedWords ||
@@ -69,8 +80,9 @@ export const TermPopover: React.FC<TermPopoverProps> = ({ termText, termData }) 
     volumeReference: termData?.volumeReference || knownData?.volumeReference || "Ma'ariful Qur'an Exegesis",
   };
 
-  // Hover handlers for desktop with smooth delay tolerance
-  const handleMouseEnter = () => {
+  // Hover handlers gated strictly to mouse pointers so touch devices don't double-toggle on tap
+  const handlePointerEnter = (e: React.PointerEvent) => {
+    if (e.pointerType !== 'mouse') return;
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
       timeoutRef.current = null;
@@ -78,7 +90,8 @@ export const TermPopover: React.FC<TermPopoverProps> = ({ termText, termData }) 
     setOpen(true);
   };
 
-  const handleMouseLeave = () => {
+  const handlePointerLeave = (e: React.PointerEvent) => {
+    if (e.pointerType !== 'mouse') return;
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
     timeoutRef.current = setTimeout(() => {
       setOpen(false);
@@ -94,14 +107,13 @@ export const TermPopover: React.FC<TermPopoverProps> = ({ termText, termData }) 
   return (
     <Popover.Root open={open} onOpenChange={setOpen}>
       <span
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
+        onPointerEnter={handlePointerEnter}
+        onPointerLeave={handlePointerLeave}
         className="inline-block"
       >
         <Popover.Trigger asChild>
           <button
             type="button"
-            onClick={() => setOpen((prev) => !prev)}
             className="inline-flex items-baseline text-inherit border-b border-dotted border-[#CD7743]/80 hover:text-[#CD7743] dark:hover:text-[#E08955] hover:border-solid transition-colors cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#CD7743] rounded-xs px-0.5 font-medium"
             title="Hover or click to view root, meaning, and exegesis"
           >
@@ -112,9 +124,11 @@ export const TermPopover: React.FC<TermPopoverProps> = ({ termText, termData }) 
 
       <Popover.Portal>
         <Popover.Content
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-          className="z-50 w-[500px] sm:w-[580px] max-w-[95vw] max-h-[85vh] overflow-y-auto p-5 sm:p-6 bg-white dark:bg-[#202025] border border-stone-200 dark:border-stone-700/80 rounded-2xl shadow-2xl text-[#1F2937] dark:text-[#F3F4F6] text-xs sm:text-[13px] animate-in fade-in zoom-in-95 duration-150 space-y-3.5"
+          onPointerEnter={handlePointerEnter}
+          onPointerLeave={handlePointerLeave}
+          collisionPadding={{ top: 68, right: 16, bottom: 16, left: 16 }}
+          style={{ maxHeight: 'min(82vh, var(--radix-popover-content-available-height, 82vh))' }}
+          className="z-50 w-[500px] sm:w-[580px] max-w-[95vw] overflow-y-auto overscroll-contain p-5 sm:p-6 bg-white dark:bg-[#202025] border border-stone-200 dark:border-stone-700/80 rounded-2xl shadow-2xl text-[#1F2937] dark:text-[#F3F4F6] text-xs sm:text-[13px] animate-in fade-in zoom-in-95 duration-150 space-y-3.5"
           sideOffset={8}
         >
           {/* 1. Header: Word, Root, Close Button */}

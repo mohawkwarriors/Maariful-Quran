@@ -27,6 +27,7 @@ export interface LanesRootEntry {
   classicalNuances?: string[];
   relatedWords?: LanesRelatedWord[];
   otherQuranVerses?: LanesVerseReference[];
+  isFallback?: boolean;
 }
 
 /**
@@ -35,7 +36,8 @@ export interface LanesRootEntry {
  */
 export function getCleanArabicRoot(rootStr?: string): string {
   if (!rootStr) return '';
-  return rootStr
+  const primarySegment = rootStr.split('/')[0];
+  return primarySegment
     .replace(/[^\u0600-\u06FF]/g, '')
     .replace(/[أإآء]/g, 'ا')
     .trim();
@@ -46,7 +48,8 @@ export function getCleanArabicRoot(rootStr?: string): string {
  */
 export function formatArabicRootSpaced(rootStr?: string): string {
   if (!rootStr) return '';
-  const clean = rootStr.replace(/[^\u0600-\u06FF]/g, '').trim();
+  const primarySegment = rootStr.split('/')[0];
+  const clean = primarySegment.replace(/[^\u0600-\u06FF]/g, '').trim();
   if (!clean) return rootStr.trim();
   return clean.split('').join(' - ');
 }
@@ -57,8 +60,11 @@ export function formatArabicRootSpaced(rootStr?: string): string {
  */
 export function getEjtaalUrl(rootStr?: string): string {
   if (!rootStr) return 'https://ejtaal.net/aa/';
-  const rawClean = rootStr.replace(/[^\u0600-\u06FF]/g, '').trim();
-  if (!rawClean) return 'https://ejtaal.net/aa/';
+  const primarySegment = rootStr.split('/')[0];
+  const rawClean = primarySegment.replace(/[^\u0600-\u06FF]/g, '').trim();
+  if (!rawClean || PSEUDO_PARTICLE_ROOTS.has(getCleanArabicRoot(primarySegment))) {
+    return 'https://ejtaal.net/aa/';
+  }
   return `https://ejtaal.net/aa/#q=${encodeURIComponent(rawClean)}`;
 }
 
@@ -72,7 +78,8 @@ export const PSEUDO_PARTICLE_ROOTS = new Set([
   'ثم', 'او', 'ام', 'بل', 'لكن',
   'ذلك', 'ذالك', 'ذاك', 'تلك', 'هذا', 'هذه', 'هولاء', 'اولئك',
   'الذي', 'التي', 'الذين',
-  'هو', 'هي', 'هم', 'هن', 'هما', 'انا', 'نحن', 'انت', 'انتم'
+  'هو', 'هي', 'هم', 'هن', 'هما', 'انا', 'نحن', 'انت', 'انتم',
+  'حروفمقطعة', 'حروفمقطعه'
 ]);
 
 export function isClassicalParticle(word?: string, root?: string, grammar?: string): boolean {
@@ -357,6 +364,7 @@ export function getLanesRootInfo(rootStr?: string): LanesRootEntry | null {
     laneDefinition: `Classical Arabic triliteral root investigated in Edward William Lane's Lexicon (Madd al-Qāmūs).`,
     lanePage: 'Arabic Almanac Lexicon',
     relatedWords: [],
-    otherQuranVerses: []
+    otherQuranVerses: [],
+    isFallback: true
   };
 }

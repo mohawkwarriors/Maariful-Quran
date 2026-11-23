@@ -647,12 +647,15 @@ export const QURAN_LEXICON: Record<string, WordDeepDiveData> = {
 /**
  * Normalizes Arabic text by removing vowels/diacritics (harakat), tatweel, and normalizing alifs.
  */
-export function stripArabicDiacritics(text: string): string {
-  return text
-    .replace(/[\u0640\u064B-\u065F\u0670\u06D6-\u06ED]/g, '')
+export function stripArabicDiacritics(text: string, expandDaggerAlif = false): string {
+  const src = expandDaggerAlif ? text.replace(/\u0670/g, 'ا') : text;
+  return src
+    .replace(/[\u0621\u0640\u064B-\u065F\u0670\u06D6-\u06ED\u200B-\u200D\uFEFF]/g, '')
     .replace(/[أإآٱ]/g, 'ا')
+    .replace(/ا+/g, 'ا')
     .replace(/ة/g, 'ه')
-    .replace(/ى/g, 'ي')
+    .replace(/[ىئ]/g, 'ي')
+    .replace(/ؤ/g, 'و')
     .replace(/[.,;!?،\s]/g, '')
     .trim();
 }
@@ -762,13 +765,15 @@ export async function preloadCorpusMorphology(): Promise<boolean> {
       const strippedMap = new Map<string, string>();
       const bestCount = new Map<string, number>();
       for (const [wKey, tuple] of Object.entries(parsed.words)) {
-        const stripped = stripArabicDiacritics(wKey);
-        if (!stripped) continue;
         const cnt = tuple[3] || 0;
-        const prev = bestCount.get(stripped);
-        if (prev === undefined || cnt > prev) {
-          bestCount.set(stripped, cnt);
-          strippedMap.set(stripped, wKey);
+        for (const expandDagger of [false, true]) {
+          const stripped = stripArabicDiacritics(wKey, expandDagger);
+          if (!stripped) continue;
+          const prev = bestCount.get(stripped);
+          if (prev === undefined || cnt > prev) {
+            bestCount.set(stripped, cnt);
+            strippedMap.set(stripped, wKey);
+          }
         }
       }
 
@@ -805,11 +810,13 @@ interface CorpusWordMatch {
 function lookupCorpusWord(cleanWord: string): CorpusWordMatch | null {
   if (!corpusData) return null;
   const noTatweel = cleanWord.replace(/\u0640/g, '').trim();
-  const stripped = stripArabicDiacritics(cleanWord);
+  const stripped = stripArabicDiacritics(cleanWord, false);
+  const strippedExpanded = stripArabicDiacritics(cleanWord, true);
   const resolvedKey =
     (corpusData.words[cleanWord] ? cleanWord : undefined) ||
     (corpusData.words[noTatweel] ? noTatweel : undefined) ||
-    (stripped && corpusStrippedMap ? corpusStrippedMap.get(stripped) : undefined);
+    (stripped && corpusStrippedMap ? corpusStrippedMap.get(stripped) : undefined) ||
+    (strippedExpanded && corpusStrippedMap ? corpusStrippedMap.get(strippedExpanded) : undefined);
 
   if (!resolvedKey) return null;
   const entry = corpusData.words[resolvedKey];
@@ -988,7 +995,7 @@ export function getWordDeepDive(word: string, fallbackMeaning?: string, fallback
       root: isParticle ? '' : effectiveRoot,
       rootMeaning: isParticle
         ? 'In Classical Arabic syntax (Nahw), particles, prepositions, and pronouns are indeclinable (mabni) and non-derivative, serving connective syntactic functions rather than carrying triliteral roots.'
-        : (lanesInfo?.laneDefinition || `Classical Arabic root occurring ${rootObj?.c || occurrenceCount}× across the Qur'an (Quranic Arabic Corpus / Lane's Madd al-Qāmūs).`),
+        : ((!lanesInfo?.isFallback && lanesInfo?.laneDefinition) || `Classical Arabic root occurring ${rootObj?.c || occurrenceCount}× across the Qur'an (Quranic Arabic Corpus / Lane's Madd al-Qāmūs).`),
       primaryMeaning: cleanFallbackMeaning ? primaryTranslation : (lemmaObj?.m || 'Quranic term'),
       otherMeanings: alternativeTranslations,
       relatedWords,

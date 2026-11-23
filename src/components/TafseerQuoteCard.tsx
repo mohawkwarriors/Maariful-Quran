@@ -1,7 +1,7 @@
 import React from 'react';
 import { BookOpen, Quote, Sparkles } from 'lucide-react';
 import { parseQuranCitation, formatQuranCitationFooter } from '../utils/quranCitation';
-import { parseHadithCitation } from '../utils/hadithCitation';
+import { parseHadithCitation, HADITH_SOURCES } from '../utils/hadithCitation';
 import { parseScholarCitation } from '../utils/scholarCitation';
 
 export type QuoteType = 'hadith' | 'scholar' | 'quran' | 'dua';
@@ -47,8 +47,18 @@ const formatCitationLabel = (text: string): string | null => {
   if (lower.includes('ruh al-ma')) return "Ruh al-Ma'ani";
   if (lower.includes('baghawi')) return 'Tafseer al-Baghawi';
 
-  // Capitalize general citation
-  if (raw.length > 2 && raw.length < 35) {
+  for (const src of HADITH_SOURCES) {
+    if (src.regex.test(raw)) return src.name;
+  }
+
+  // Capitalize general citation only when explicitly prefixed as a reference/book
+  if (
+    /^(?:See\s+|Recorded\s+by\s+|Reported\s+by\s+|Transmitted\s+by\s+|Narrated\s+by\s+|Tafsir\s+|Tafseer\s+|Sahih\s+|Sunan\s+|Musnad\s+|Jami['’`]?\s+|Muwatta['’`]?\s+)/i.test(
+      raw
+    ) &&
+    raw.length > 2 &&
+    raw.length < 40
+  ) {
     return raw.charAt(0).toUpperCase() + raw.slice(1);
   }
   return null;
@@ -76,8 +86,9 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
   // Determine if this is a Hadith Qudsi (where Allah speaks in the first person)
   const isHadithQudsi =
     type === 'hadith' &&
-    (/Allah\s+(?:has\s+)?said|Allah\s+says/i.test(fullText) ||
-      fullText.toLowerCase().includes('mazhari'));
+    /\b(?:Hadith\s+Qudsi|Allah\s+(?:Almighty\s+|Most\s+High\s+)?(?:has\s+)?said\s*:|Allah\s+(?:Almighty\s+)?says\s*:)/i.test(
+      fullText
+    );
 
   // Extract structured Hadith citation and compiler source if this is a Hadith card
   const hadithCitation = React.useMemo(() => {
@@ -169,17 +180,21 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
     let cleanedEn = enLines.length > 0 ? enLines.join('\n') : textToAnalyze;
 
     // For hadith and scholar quotes, strip trailing parenthetical citations like (Ibn Kathir), (Bukhari), etc.
-    // since they are already displayed cleanly in the footer citation
+    // ONLY when the parenthetical is a genuine book/compiler citation (never strip English Hadith translations!)
     if (type === 'hadith' || type === 'scholar') {
       cleanedEn = cleanedEn.replace(
-        /\s*\((?:See\s+|Recorded\s+by\s+|Narrated\s+by\s+)?[^)]+\)\s*[."”']*\s*$/i,
-        (match) => {
-          // If the match ends with closing quote or period, preserve the sentence punctuation
-          if (/[."”']/.test(match)) {
-            const punct = match.match(/[."”']+$/);
-            return punct ? punct[0] : '';
+        /\s*\(([^)]+)\)\s*([."”']*)\s*$/i,
+        (match, inner: string, trailingPunct: string) => {
+          const trimmedInner = inner.trim();
+          const isKnownSource =
+            HADITH_SOURCES.some((src) => src.regex.test(trimmedInner)) ||
+            /^(?:See\s+|Recorded\s+by\s+|Reported\s+by\s+|Transmitted\s+by\s+|Narrated\s+by\s+|Tafsir\s+|Tafseer\s+|Sahih\s+|Sunan\s+|Musnad\s+)/i.test(
+              trimmedInner
+            );
+          if (!isKnownSource) {
+            return match;
           }
-          return '';
+          return trailingPunct || '';
         }
       );
     }

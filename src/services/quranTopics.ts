@@ -35,21 +35,21 @@ export const QURAN_THEMATIC_TOPICS: QuranThematicTopic[] = [
       {
         surahNumber: 2,
         surahName: 'Al-Baqarah',
-        verseRange: [21, 29],
-        sectionId: '2-21-29',
+        verseRange: [13, 26],
+        sectionId: '2-13-26',
         excerpt: 'Universal call to humanity to worship the singular Creator who made the earth a couch and heaven a canopy.'
       },
       {
         surahNumber: 2,
         surahName: 'Al-Baqarah',
-        verseRange: [254, 260],
-        sectionId: '2-254-260',
+        verseRange: [241, 256],
+        sectionId: '2-241-256',
         excerpt: 'Ayat al-Kursi (The Throne Verse) declaring Allah\'s eternal life, sleepless vigilance, and encompassing knowledge.'
       },
       {
         surahNumber: 1,
         surahName: 'Al-Fatihah',
-        verseRange: [1, 7],
+        verseRange: [1, 4],
         sectionId: '1-1-4',
         excerpt: 'All praise belongs to Allah, Lord of all realms, the Entirely Merciful, Sovereign of the Day of Recompense.'
       }
@@ -65,22 +65,22 @@ export const QURAN_THEMATIC_TOPICS: QuranThematicTopic[] = [
       {
         surahNumber: 2,
         surahName: 'Al-Baqarah',
-        verseRange: [275, 281],
-        sectionId: '2-275-281',
+        verseRange: [268, 277],
+        sectionId: '2-268-277',
         excerpt: 'Allah has permitted legitimate commerce and strictly forbidden usury; warnings against economic exploitation.'
       },
       {
         surahNumber: 2,
         surahName: 'Al-Baqarah',
-        verseRange: [282, 283],
-        sectionId: '2-282-283',
+        verseRange: [278, 286],
+        sectionId: '2-278-286',
         excerpt: 'The verse of financial contracts (Ayat al-Mudayanah): recording transactions, securing witness testimony, and maintaining honest bookkeeping.'
       },
       {
         surahNumber: 2,
         surahName: 'Al-Baqarah',
-        verseRange: [261, 274],
-        sectionId: '2-261-274',
+        verseRange: [257, 267],
+        sectionId: '2-257-267',
         excerpt: 'The spiritual rewards of spending in the way of Allah without reminders of generosity or injury.'
       }
     ]
@@ -95,8 +95,8 @@ export const QURAN_THEMATIC_TOPICS: QuranThematicTopic[] = [
       {
         surahNumber: 2,
         surahName: 'Al-Baqarah',
-        verseRange: [30, 39],
-        sectionId: '2-30-39',
+        verseRange: [27, 40],
+        sectionId: '2-27-40',
         excerpt: 'The appointment of Adam as Khalifah (vicegerent), teaching of the names, and divine guidance after descending to earth.'
       }
     ]
@@ -111,15 +111,15 @@ export const QURAN_THEMATIC_TOPICS: QuranThematicTopic[] = [
       {
         surahNumber: 2,
         surahName: 'Al-Baqarah',
-        verseRange: [124, 141],
-        sectionId: '2-124-141',
+        verseRange: [119, 129],
+        sectionId: '2-119-129',
         excerpt: 'The trials of Ibrahim, the construction of the House of Peace in Makkah, and the pure primordial monotheism (Hanifiyyah).'
       },
       {
         surahNumber: 2,
         surahName: 'Al-Baqarah',
-        verseRange: [142, 152],
-        sectionId: '2-142-152',
+        verseRange: [144, 158],
+        sectionId: '2-144-158',
         excerpt: 'The divine command turning the orientation of prayer (Qiblah) toward the Masjid al-Haram, establishing the Middle Nation.'
       }
     ]
@@ -134,8 +134,8 @@ export const QURAN_THEMATIC_TOPICS: QuranThematicTopic[] = [
       {
         surahNumber: 2,
         surahName: 'Al-Baqarah',
-        verseRange: [183, 188],
-        sectionId: '2-183-187',
+        verseRange: [173, 187],
+        sectionId: '2-173-187',
         excerpt: 'Fasting prescribed as it was for earlier communities; the night of prayer and Allah\'s declaration of nearness to those who call.'
       }
     ]
@@ -150,15 +150,15 @@ export const QURAN_THEMATIC_TOPICS: QuranThematicTopic[] = [
       {
         surahNumber: 2,
         surahName: 'Al-Baqarah',
-        verseRange: [153, 162],
-        sectionId: '2-153-162',
+        verseRange: [144, 158],
+        sectionId: '2-144-158',
         excerpt: 'Seek help through patience and prayer; Allah is with the patient; the blessed station of those martyred in Allah\'s way.'
       },
       {
         surahNumber: 2,
         surahName: 'Al-Baqarah',
-        verseRange: [214, 218],
-        sectionId: '2-214-218',
+        verseRange: [199, 215],
+        sectionId: '2-199-215',
         excerpt: 'Do you expect to enter Paradise without experiencing the hardship of those before you who were shaken until they cried out for aid?'
       }
     ]
@@ -173,8 +173,8 @@ export const QURAN_THEMATIC_TOPICS: QuranThematicTopic[] = [
       {
         surahNumber: 2,
         surahName: 'Al-Baqarah',
-        verseRange: [8, 20],
-        sectionId: '2-8-20',
+        verseRange: [13, 26],
+        sectionId: '2-13-26',
         excerpt: 'The psychological profile of the Munafiqun: the parable of the kindled fire and the storm cloud laden with darkness and thunder.'
       }
     ]
@@ -189,8 +189,8 @@ export const QURAN_THEMATIC_TOPICS: QuranThematicTopic[] = [
       {
         surahNumber: 2,
         surahName: 'Al-Baqarah',
-        verseRange: [261, 274],
-        sectionId: '2-261-274',
+        verseRange: [257, 267],
+        sectionId: '2-257-267',
         excerpt: 'The parable of the grain of corn yielding seven hundredfold; giving openly and secretly to safeguard human dignity.'
       }
     ]
@@ -205,15 +205,15 @@ export const QURAN_THEMATIC_TOPICS: QuranThematicTopic[] = [
       {
         surahNumber: 2,
         surahName: 'Al-Baqarah',
-        verseRange: [284, 286],
-        sectionId: '2-284-286',
+        verseRange: [278, 286],
+        sectionId: '2-278-286',
         excerpt: 'The ultimate petition of the believers: "Our Lord, lay not upon us a burden like that which You laid upon those before us."'
       },
       {
         surahNumber: 1,
         surahName: 'Al-Fatihah',
         verseRange: [5, 7],
-        sectionId: '1-1-4',
+        sectionId: '1-5-7',
         excerpt: 'The universal prayer: "Guide us to the Straight Path, the path of those upon whom You have bestowed favor."'
       }
     ]

@@ -164,7 +164,7 @@ export const ReaderHeader: React.FC<ReaderHeaderProps> = ({
             </button>
 
             {isBookmarksMenuOpen && (
-              <div className="absolute right-0 top-full mt-2 w-72 sm:w-80 max-h-80 overflow-y-auto p-2 bg-white dark:bg-[#222227] border border-stone-200 dark:border-stone-700/80 rounded-xl shadow-2xl z-50 text-left space-y-1">
+              <div className="fixed sm:absolute left-3 right-3 sm:left-auto sm:right-0 top-15 sm:top-full sm:mt-2 sm:w-80 max-h-80 overflow-y-auto p-2 bg-white dark:bg-[#222227] border border-stone-200 dark:border-stone-700/80 rounded-xl shadow-2xl z-50 text-left space-y-1">
                 <div className="flex items-center justify-between px-2.5 py-1.5 border-b border-stone-100 dark:border-stone-800 text-xs font-semibold text-stone-900 dark:text-stone-100">
                   <span className="flex items-center gap-1.5 text-[#CD7743] dark:text-[#E08955]">
                     <BookmarkCheck className="w-3.5 h-3.5" />
@@ -251,7 +251,7 @@ export const ReaderHeader: React.FC<ReaderHeaderProps> = ({
                 initial={{ opacity: 0, y: 8, scale: 0.95 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 exit={{ opacity: 0, y: -4, scale: 0.95 }}
-                className="absolute right-0 top-full mt-2 w-64 p-2.5 rounded-lg bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-950 text-xs shadow-xl z-50 pointer-events-none flex items-start gap-2"
+                className="fixed sm:absolute right-3 sm:right-0 top-15 sm:top-full sm:mt-2 w-64 max-w-[calc(100vw-1.5rem)] p-2.5 rounded-lg bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-950 text-xs shadow-xl z-50 pointer-events-none flex items-start gap-2"
               >
                 {feedbackType === 'removed' ? (
                   <>

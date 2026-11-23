@@ -36,6 +36,8 @@ const QURAN_PREFIX_MARKS_REGEX = /^[\u06DE]+$/;
 const WordItem: React.FC<WordItemProps> = ({ word, meaning, root, grammarNote }) => {
   const [open, setOpen] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const openedViaHoverRef = useRef(false);
+  const isPinnedRef = useRef(false);
 
   // Deep dive data with root, other meanings, related words, and cross-Quran occurrences
   const deepDiveData = getWordDeepDive(word, meaning, root, grammarNote);
@@ -48,16 +50,40 @@ const WordItem: React.FC<WordItemProps> = ({ word, meaning, root, grammarNote })
     ? deepDiveData.primaryMeaning
     : deepDiveData.lemmaTransliteration || deepDiveData.transliteration || '—';
 
+  const handleOpenChange = (nextOpen: boolean) => {
+    if (!nextOpen) {
+      openedViaHoverRef.current = false;
+      isPinnedRef.current = false;
+    }
+    setOpen(nextOpen);
+  };
+
   const handleMouseEnter = () => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    if (!open) {
+      openedViaHoverRef.current = true;
+    }
     setOpen(true);
   };
 
   const handleMouseLeave = () => {
+    if (isPinnedRef.current) return;
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
     timeoutRef.current = setTimeout(() => {
+      openedViaHoverRef.current = false;
       setOpen(false);
-    }, 180);
+    }, 200);
+  };
+
+  const handleTriggerClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (open && openedViaHoverRef.current) {
+      // Clicking a hover-opened word pins it open instead of closing it
+      e.preventDefault();
+      openedViaHoverRef.current = false;
+      isPinnedRef.current = true;
+    } else if (!open) {
+      isPinnedRef.current = true;
+    }
   };
 
   useEffect(() => {
@@ -69,7 +95,7 @@ const WordItem: React.FC<WordItemProps> = ({ word, meaning, root, grammarNote })
   const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
     if (e.key === 'Enter') {
       e.preventDefault();
-      setOpen((prev) => !prev);
+      handleOpenChange(!open);
     } else if (e.key === ' ') {
       e.preventDefault();
     }
@@ -78,7 +104,7 @@ const WordItem: React.FC<WordItemProps> = ({ word, meaning, root, grammarNote })
   const handleKeyUp = (e: React.KeyboardEvent<HTMLDivElement>) => {
     if (e.key === ' ') {
       e.preventDefault();
-      setOpen((prev) => !prev);
+      handleOpenChange(!open);
     }
   };
 
@@ -87,7 +113,7 @@ const WordItem: React.FC<WordItemProps> = ({ word, meaning, root, grammarNote })
       role="button"
       tabIndex={0}
       aria-expanded={open}
-      onClick={() => setOpen((prev) => !prev)}
+      onClick={handleTriggerClick}
       onKeyDown={handleKeyDown}
       onKeyUp={handleKeyUp}
       className="inline-flex flex-col items-center justify-between group cursor-pointer text-center px-2 sm:px-2.5 pt-1.5 pb-2 rounded-xl hover:bg-[#CD7743]/10 dark:hover:bg-[#CD7743]/15 transition-all select-text shrink-0 min-w-[56px] sm:min-w-[64px] max-w-[150px] sm:max-w-[170px] focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CD7743]"
@@ -117,7 +143,7 @@ const WordItem: React.FC<WordItemProps> = ({ word, meaning, root, grammarNote })
     <WordDeepDiveModal
       data={deepDiveData}
       open={open}
-      onOpenChange={setOpen}
+      onOpenChange={handleOpenChange}
       trigger={trigger}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -141,12 +167,16 @@ const parseVerseMarker = (raw: string) => {
 const TafseerVerseHeading: React.FC<{
   label: string;
   verseSnippet?: string;
-}> = ({ label, verseSnippet }) => {
+  sectionId?: string;
+}> = ({ label, verseSnippet, sectionId }) => {
   const { displayTitle, primaryNum } = parseVerseMarker(label);
 
   const handleClick = () => {
     const targetEl =
       document.getElementById(`verse-card-${primaryNum}`) ||
+      (sectionId ? document.getElementById(`translation-block-${sectionId}`) : null) ||
+      document.getElementById(`translation-ayah-${primaryNum}`) ||
+      document.getElementById(`mushaf-ayah-${primaryNum}`) ||
       document.getElementById('translation-block');
     if (targetEl) {
       targetEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -207,7 +237,7 @@ const TafseerVerseHeading: React.FC<{
 };
 
 const isSubheading = (line: string): boolean => {
-  const l = line.trim();
+  const l = line.trim().replace(/(?:\s*\[\^?\d{1,2}\])+$/, '').trim();
   if (!l) return false;
   // Exclude verse markers, horizontal dividers, banner dividers, pure Arabic lines
   if (/^\[\s*Verses?/i.test(l)) return false;
@@ -253,7 +283,11 @@ const isSubheading = (line: string): boolean => {
   return true;
 };
 
-const TafseerSubheading: React.FC<{ title: string }> = ({ title }) => {
+const TafseerSubheading: React.FC<{
+  title: string;
+  footnotes?: FootnoteItem[];
+  sectionId?: string;
+}> = ({ title, footnotes, sectionId }) => {
   return (
     <div className="not-prose pt-8 sm:pt-9 pb-2 first:pt-1 group/subhead select-text">
       <div className="flex items-center gap-2.5 sm:gap-3">
@@ -262,7 +296,7 @@ const TafseerSubheading: React.FC<{ title: string }> = ({ title }) => {
 
         {/* Sub-section Header Title */}
         <h3 className="font-serif-heading font-bold text-[17.5px] sm:text-[19px] md:text-[20px] text-stone-900 dark:text-stone-100 tracking-wide leading-snug">
-          {title}
+          {renderContentWithFootnotes(title, footnotes, sectionId)}
         </h3>
       </div>
 
@@ -406,7 +440,7 @@ const TafseerCommentaryBlock: React.FC<{
       /((?:(?:(?:The\s+)?Prayer\s+for\s+[^\n]+|Du['’`]?a\s+(?:for|when|after|before)\s+[^\n]+|Supplication\s+(?:for|of)\s+[^\n]+)\n(?:[^\n]*?(?:taught|teaches|instructs|pray|supplicat)[^\n]*:\s*\n)?(?:[\u0600-\u06FF\s]+\n)?[“"][^”"\n]+[”"]|[^\n]*?(?:taught\s+(?:man|us|the\s+believers|Muslims)\s+(?:what\s+to\s+pray|how\s+to\s+pray|this\s+prayer|this\s+du['’`]?a|a\s+special\s+du['’`]?a)|teaches\s+Muslims\s+to\s+make\s+a\s+special\s+du['’`]?a|supplicated\s+(?:with\s+these\s+words|in\s+these\s+words)|used\s+to\s+make\s+this\s+(?:prayer|du['’`]?a))[^\n]*:\s*\n(?:[\u0600-\u06FF\s]+\n)?[“"][^”"\n]+[”"]|(?:رَ‌?بَّنَا|اللَّهُمَّ|رَبِّ)[\u0600-\u06FF\s،]+\n[“"][^”"\n]+[”"]))/gi;
 
     const hadithRegex =
-      /((?:The\s+Sahih\s+of\s+[A-Za-z]+|According\s+to\s+a\s+hadith|In\s+a\s+hadith|The\s+Holy\s+Prophet\s*(?:\([^)]+\))?\s*(?:said|has\s+said|continued|reported))[^\n]*:[\s\S]*?\([a-zA-Z\s`'-]+\))/gi;
+      /((?:The\s+Sahih\s+of\s+[A-Za-z]+|According\s+to\s+a\s+hadith|In\s+a\s+hadith|The\s+Holy\s+Prophet\s*(?:\([^)]+\))?\s*(?:said|has\s+said|continued|reported))[^\n]*:[\s\S]*?\((?:See\s+|Recorded\s+by\s+|Reported\s+by\s+|Narrated\s+by\s+)?[^)]*(?:Bukhari|Muslim|Tirmidhi|Abu\s+Dawud|Nasa['’`]?i|Ibn\s+Majah|Ahmad|Malik|Bayhaqi|Tabarani|Hakim|Darimi|Mishkat|Mazhari|Qurtubi|Ibn\s+Kathir|Tabari|Ibn\s+Jarir|Baghawi|Ruh\s+al-Ma['’`]?ani|Fath\s+al-Bari|Ibn\s+Abi\s+Hatim|Ibn\s+Abi\s+Shaybah|Bazzar|Jassas|Tafsir\s+Kabir|al-Bahr\s+al-Muhit|Jam['’`]?[- ]ul-Fawa['’`]?id)[^)]*\))/gi;
 
     const processParagraph = (textToProcess: string): RawCommentaryBlock[] => {
       const t = textToProcess.trim();
@@ -724,6 +758,7 @@ const TafseerCommentaryBlock: React.FC<{
                   key={`cvh-${idx}-${block.raw}`}
                   label={block.raw}
                   verseSnippet={snippet}
+                  sectionId={sectionId}
                 />
               );
             }
@@ -733,6 +768,8 @@ const TafseerCommentaryBlock: React.FC<{
                 <TafseerSubheading
                   key={`csub-${idx}-${block.content.slice(0, 20)}`}
                   title={block.content}
+                  footnotes={footnotes}
+                  sectionId={sectionId}
                 />
               );
             }
@@ -808,6 +845,13 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
   // Distill key takeaways and wisdom points for quick summary mode
   const summaryPoints = React.useMemo(() => {
     if (!section.commentary) return [];
+    const stripFnMarkers = (str: string) => str.replace(/\[\^?\d{1,2}\]/g, '').trim();
+    const splitSentencesSafe = (str: string) =>
+      str
+        .split(/(?<!\b(?:i\.e|e\.g|etc|Vol|vs|Dr|St|No|p|pp))[.?!]+\s+/)
+        .map((s) => stripFnMarkers(s))
+        .filter(Boolean);
+
     const paragraphs = section.commentary
       .split(/\n\s*\n/)
       .map((p) => p.trim())
@@ -815,16 +859,18 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
         (p) =>
           p.length > 25 &&
           !p.startsWith('[Verse') &&
+          !isSubheading(p) &&
+          !p.endsWith(':') &&
+          !(p.length < 80 && !/[.?!]["”']?$/.test(stripFnMarkers(p))) &&
           !/^[─\-_=~*]{3,}$/.test(p) &&
           !/^───.*───$/.test(p) &&
           !/Full Exegesis/i.test(p)
       );
 
     if (paragraphs.length <= 1) {
-      const sentences = section.commentary
-        .split(/(?<=[.?!])\s+/)
-        .map((s) => s.trim())
-        .filter((s) => s.length > 30);
+      const sentences = splitSentencesSafe(section.commentary).filter(
+        (s) => s.length > 35 && !isSubheading(s)
+      );
       return sentences.slice(0, 3);
     }
 
@@ -841,10 +887,15 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
     const sourceParas = eligibleParas.length >= 2 ? eligibleParas : paragraphs;
 
     return sourceParas.slice(0, 3).map((p) => {
-      const firstSentence = p.split(/(?<=[.?!])\s+/)[0];
-      return firstSentence && firstSentence.length > 35
-        ? firstSentence.replace(/^[\s•\-\d.)]+/, '').trim()
-        : p.slice(0, 160) + '...';
+      const cleanP = stripFnMarkers(p);
+      const sentenceMatch = cleanP.match(
+        /^[\s\S]*?(?<!\b(?:i\.e|e\.g|etc|Vol|vs|Dr|St|No|p|pp))[.?!](?=\s|$)/
+      );
+      const firstSentence = sentenceMatch ? sentenceMatch[0].trim() : cleanP;
+      if (firstSentence && firstSentence.length > 35 && firstSentence.length <= 240) {
+        return firstSentence.replace(/^[\s•\-\d.)]+/, '').trim();
+      }
+      return cleanP.length > 160 ? cleanP.slice(0, 160).trimEnd() + '...' : cleanP;
     });
   }, [section.commentary]);
 
@@ -884,26 +935,28 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
       const words: WordItemProps[] = [];
       const translations: string[] = [];
 
-      // Determine the full Arabic verse string
+      // Determine the full Arabic verse string (prefer golden sectionArabicVerses when phraseCards only cover a sub-phrase)
       const cardArabicPhrase = cards && cards.length > 0
         ? cards.map((c) => c.arabicPhrase).filter(Boolean).join(' ')
         : '';
       const fallbackArabic = sectionArabicVerses[verseIdx] || '';
-      const fullVerseArabic = cardArabicPhrase.trim() || fallbackArabic.trim();
+      const fullVerseArabic =
+        fallbackArabic.trim().length >= cardArabicPhrase.trim().length
+          ? fallbackArabic.trim()
+          : cardArabicPhrase.trim();
 
-      // Determine translation for this verse
-      if (cards && cards.length > 0) {
-        cards.forEach((card) => {
-          if (card.englishPhrase) {
-            translations.push(card.englishPhrase);
-          }
-        });
-      }
-      if (translations.length === 0 && sectionTranslationVerses[verseIdx]) {
-        const cleanTr = sectionTranslationVerses[verseIdx]
-          .replace(/\[(.*?)\]/g, '$1')
-          .trim();
-        translations.push(cleanTr);
+      // Determine translation for this verse (prefer full verse translation if phraseCards only cover a sub-phrase)
+      const cardTranslation =
+        cards && cards.length > 0
+          ? cards.map((c) => c.englishPhrase).filter(Boolean).join(' ').trim()
+          : '';
+      const cleanSectionTr = sectionTranslationVerses[verseIdx]
+        ? sectionTranslationVerses[verseIdx].replace(/\[(.*?)\]/g, '$1').trim()
+        : '';
+      if (cleanSectionTr && cleanSectionTr.length >= cardTranslation.length) {
+        translations.push(cleanSectionTr);
+      } else if (cardTranslation) {
+        translations.push(cardTranslation);
       }
 
       // Build vocabulary lookup dictionary from card(s)
@@ -1124,12 +1177,13 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
                 const vNum = !isNaN(parsedNum) ? parsedNum : section.verseRange[0] + ayahOffset;
                 ayahOffset++;
                 parts.push(
-                  <AyahEndMarker
-                    key={`mushaf-ayah-${vNum}-${match.index}`}
-                    vNum={vNum}
-                    size="lg"
-                    className="mx-1.5 !align-middle -translate-y-0.5"
-                  />
+                  <span key={`mushaf-ayah-${vNum}-${match.index}`} id={`mushaf-ayah-${vNum}`} className="inline">
+                    <AyahEndMarker
+                      vNum={vNum}
+                      size="lg"
+                      className="mx-1.5 !align-middle -translate-y-0.5"
+                    />
+                  </span>
                 );
                 lastIdx = regex.lastIndex;
               }
@@ -1141,7 +1195,10 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
           </div>
 
           {/* Translation Block */}
-          <div id="translation-block" className="p-4 sm:p-6 rounded-2xl bg-white/80 dark:bg-[#202024]/80 border border-[#EBE7DF] dark:border-[#2B2B30] shadow-2xs scroll-mt-24">
+          <div
+            id={`translation-block-${section.id}`}
+            className="p-4 sm:p-6 rounded-2xl bg-white/80 dark:bg-[#202024]/80 border border-[#EBE7DF] dark:border-[#2B2B30] shadow-2xs scroll-mt-24"
+          >
             <div className="text-xs font-semibold uppercase tracking-wider text-stone-400 dark:text-stone-500 mb-2">
               Translation
             </div>

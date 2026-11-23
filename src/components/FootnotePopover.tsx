@@ -21,7 +21,8 @@ export const FootnotePopover: React.FC<FootnotePopoverProps> = ({ id, note, sect
     };
   }, []);
 
-  const handleMouseEnter = () => {
+  const handlePointerEnter = (e: React.PointerEvent) => {
+    if (e.pointerType !== 'mouse') return;
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
       timeoutRef.current = null;
@@ -29,21 +30,24 @@ export const FootnotePopover: React.FC<FootnotePopoverProps> = ({ id, note, sect
     setOpen(true);
   };
 
-  const handleMouseLeave = () => {
+  const handlePointerLeave = (e: React.PointerEvent) => {
+    if (e.pointerType !== 'mouse') return;
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
     timeoutRef.current = setTimeout(() => {
       setOpen(false);
     }, 220);
   };
 
-  const handlePopoverContentMouseEnter = () => {
+  const handlePopoverContentPointerEnter = (e: React.PointerEvent) => {
+    if (e.pointerType !== 'mouse') return;
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
       timeoutRef.current = null;
     }
   };
 
-  const handlePopoverContentMouseLeave = () => {
+  const handlePopoverContentPointerLeave = (e: React.PointerEvent) => {
+    if (e.pointerType !== 'mouse') return;
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
     timeoutRef.current = setTimeout(() => {
       setOpen(false);
@@ -59,9 +63,8 @@ export const FootnotePopover: React.FC<FootnotePopoverProps> = ({ id, note, sect
         <Popover.Trigger asChild>
           <button
             type="button"
-            onClick={() => setOpen((prev) => !prev)}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
+            onPointerEnter={handlePointerEnter}
+            onPointerLeave={handlePointerLeave}
             className="inline-flex items-center justify-center font-sans font-semibold text-[11px] leading-none text-[#CD7743] hover:text-[#B56332] dark:text-[#E08955] dark:hover:text-[#F29F6D] bg-[#CD7743]/10 dark:bg-[#E08955]/15 hover:bg-[#CD7743]/20 dark:hover:bg-[#E08955]/25 border border-[#CD7743]/30 dark:border-[#E08955]/40 rounded-sm px-1.5 py-0.5 mx-0.5 transition-all cursor-pointer shadow-2xs select-none focus:outline-none focus-visible:ring-1 focus-visible:ring-[#CD7743]"
             aria-label={`Footnote ${id}: ${note.author ? note.author + ' - ' : ''}${note.text.slice(0, 50)}...`}
             title="Hover or click to view scholarly footnote"
@@ -76,9 +79,11 @@ export const FootnotePopover: React.FC<FootnotePopoverProps> = ({ id, note, sect
           side="top"
           align="center"
           sideOffset={6}
-          className="z-50 w-[420px] sm:w-[480px] max-w-[92vw] max-h-[65vh] overflow-y-auto p-4 sm:p-5 bg-white dark:bg-[#202025] border border-stone-200 dark:border-stone-700/80 rounded-2xl shadow-2xl text-[#1F2937] dark:text-[#F3F4F6] text-xs sm:text-[13px] animate-in fade-in zoom-in-95 duration-150 space-y-3"
-          onMouseEnter={handlePopoverContentMouseEnter}
-          onMouseLeave={handlePopoverContentMouseLeave}
+          collisionPadding={{ top: 68, right: 16, bottom: 16, left: 16 }}
+          style={{ maxHeight: 'min(65vh, var(--radix-popover-content-available-height, 65vh))' }}
+          className="z-50 w-[420px] sm:w-[480px] max-w-[92vw] overflow-y-auto overscroll-contain p-4 sm:p-5 bg-white dark:bg-[#202025] border border-stone-200 dark:border-stone-700/80 rounded-2xl shadow-2xl text-[#1F2937] dark:text-[#F3F4F6] text-xs sm:text-[13px] animate-in fade-in zoom-in-95 duration-150 space-y-3"
+          onPointerEnter={handlePopoverContentPointerEnter}
+          onPointerLeave={handlePopoverContentPointerLeave}
         >
           {/* Header */}
           <div className="flex items-center justify-between gap-2 border-b border-stone-100 dark:border-stone-800 pb-2.5">

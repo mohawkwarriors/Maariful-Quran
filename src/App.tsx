@@ -68,15 +68,20 @@ function ReaderApp() {
   };
 
   // Persistent Bookmarks collection state
+  const isValidBookmark = (b: any): b is BookmarkRecord =>
+    Boolean(b && typeof b === 'object' && typeof b.surahNumber === 'number' && typeof b.sectionId === 'string');
+
   const [bookmarks, setBookmarks] = useState<BookmarkRecord[]>(() => {
     try {
       const savedList = localStorage.getItem('maariful_bookmarks_list');
       if (savedList) {
-        return JSON.parse(savedList);
+        const parsed = JSON.parse(savedList);
+        if (Array.isArray(parsed)) return parsed.filter(isValidBookmark);
       }
       const single = localStorage.getItem('maariful_bookmark');
       if (single) {
-        return [JSON.parse(single)];
+        const parsedSingle = JSON.parse(single);
+        if (isValidBookmark(parsedSingle)) return [parsedSingle];
       }
       return [];
     } catch {
@@ -99,7 +104,12 @@ function ReaderApp() {
   }, [bookmarks]);
 
   // Load Manifest
-  const { data: manifest, isLoading: isManifestLoading, error: manifestError } = useQuery({
+  const {
+    data: manifest,
+    isLoading: isManifestLoading,
+    error: manifestError,
+    refetch: refetchManifest,
+  } = useQuery({
     queryKey: ['manifest'],
     queryFn: fetchManifest,
   });
@@ -183,7 +193,7 @@ function ReaderApp() {
       const maxScroll = totalHeight - viewportHeight;
 
       if (maxScroll <= 0) {
-        setScrollProgress(100);
+        setScrollProgress(window.scrollY > 0 ? 100 : 0);
         return;
       }
 
@@ -206,13 +216,35 @@ function ReaderApp() {
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     window.addEventListener('resize', handleScroll, { passive: true });
+    let resizeObserver: ResizeObserver | null = null;
+    if (typeof ResizeObserver !== 'undefined' && readingContainerRef.current) {
+      resizeObserver = new ResizeObserver(handleScroll);
+      resizeObserver.observe(readingContainerRef.current);
+    }
     updateScrollProgress();
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('resize', handleScroll);
+      resizeObserver?.disconnect();
     };
   }, [surahData, isSurahLoading, viewMode, activeSurahNumber]);
+
+  const resolveSectionElement = (sectionId: string): { el: HTMLElement | null; resolvedId: string } => {
+    const directEl = document.getElementById(sectionId);
+    if (directEl) return { el: directEl, resolvedId: sectionId };
+    const m = sectionId.match(/^(\d+)-(\d+)-(\d+)$/);
+    if (m && surahData?.sections) {
+      const startVerse = parseInt(m[2], 10);
+      const matchedSec = surahData.sections.find(
+        (sec) => sec.verseRange[0] <= startVerse && startVerse <= sec.verseRange[1]
+      );
+      if (matchedSec) {
+        return { el: document.getElementById(matchedSec.id), resolvedId: matchedSec.id };
+      }
+    }
+    return { el: null, resolvedId: sectionId };
+  };
 
   // Handle section jumping with race-free pending section scrolling
   const handleSelectSection = (sectionId: string, targetSurahNumber?: number) => {
@@ -223,10 +255,10 @@ function ReaderApp() {
       return;
     }
 
-    const el = document.getElementById(sectionId);
+    const { el, resolvedId } = resolveSectionElement(sectionId);
     if (el) {
       el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      setActiveSectionId(sectionId);
+      setActiveSectionId(resolvedId);
     }
   };
 
@@ -235,10 +267,10 @@ function ReaderApp() {
     if (!pendingScrollSectionId || !surahData || surahData.number !== activeSurahNumber) return;
 
     const timer = setTimeout(() => {
-      const el = document.getElementById(pendingScrollSectionId);
+      const { el, resolvedId } = resolveSectionElement(pendingScrollSectionId);
       if (el) {
         el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        setActiveSectionId(pendingScrollSectionId);
+        setActiveSectionId(resolvedId);
       }
       setPendingScrollSectionId(null);
     }, 80);
@@ -398,7 +430,7 @@ function ReaderApp() {
 
         {/* Reading Canvas Container: Uniform layout width regardless of sidebar collapse */}
         <div className="flex-1 w-full mx-auto pb-28 max-w-5xl xl:max-w-6xl 2xl:max-w-7xl px-4 sm:px-8 lg:px-12">
-          {isSurahLoading ? (
+          {isManifestLoading || isSurahLoading ? (
             <div className="py-24 px-4 text-center space-y-4">
               <Loader2 className="w-8 h-8 text-[#CD7743] animate-spin mx-auto" />
               <div className="space-y-1">
@@ -410,17 +442,17 @@ function ReaderApp() {
                 </p>
               </div>
             </div>
-          ) : surahError ? (
+          ) : manifestError || surahError ? (
             <div className="py-20 px-6 max-w-md mx-auto text-center space-y-4">
               <AlertCircle className="w-10 h-10 text-red-500 mx-auto" />
               <h3 className="font-serif-heading font-semibold text-xl text-stone-900 dark:text-stone-100">
                 Could Not Load Tafseer
               </h3>
               <p className="text-xs text-stone-600 dark:text-stone-400 leading-relaxed">
-                {(surahError as Error).message || 'An error occurred while compiling the commentary.'}
+                {((manifestError || surahError) as Error).message || 'An error occurred while compiling the commentary.'}
               </p>
               <button
-                onClick={() => refetchSurah()}
+                onClick={() => (manifestError ? refetchManifest() : refetchSurah())}
                 className="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold rounded-lg bg-[#CD7743] text-white hover:bg-[#b86432] transition-colors cursor-pointer"
               >
                 <RefreshCw className="w-3.5 h-3.5" />

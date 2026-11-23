@@ -1,5 +1,6 @@
 import FlexSearch from 'flexsearch';
 import { SurahManifestItem, SurahData, SearchResultItem, ThematicSection } from '../types/quran';
+import { stripArabicDiacritics } from './quranLexicon';
 
 export interface ManifestResponse {
   totalSurahs: number;
@@ -173,7 +174,8 @@ export class QuranSearchEngine {
   public populateFromManifest(manifest: ManifestResponse) {
     manifest.surahs.forEach((surah) => {
       const docId = `surah-${surah.number}`;
-      const searchContent = `${surah.number} ${surah.nameTransliterated} ${surah.nameArabic} ${surah.nameEnglish} ${surah.thematicSummary}`;
+      const strippedNameAr = stripArabicDiacritics(surah.nameArabic || '');
+      const searchContent = `${surah.number} ${surah.nameTransliterated} ${surah.nameArabic} ${strippedNameAr} ${surah.nameEnglish} ${surah.thematicSummary}`;
       
       this.surahIndex.add(docId, searchContent);
       this.lookupMap.set(docId, {
@@ -189,7 +191,7 @@ export class QuranSearchEngine {
       if (surah.sectionsPreview) {
         surah.sectionsPreview.forEach((sec) => {
           const secDocId = `section-${surah.number}-${sec.id}`;
-          const secContent = `${surah.nameTransliterated} ${sec.title} ${sec.summary || ''} Verses ${sec.verseRange[0]}-${sec.verseRange[1]}`;
+          const secContent = `${surah.nameTransliterated} ${surah.nameArabic} ${strippedNameAr} ${sec.title} ${sec.summary || ''} Verses ${sec.verseRange[0]}-${sec.verseRange[1]} ${surah.number}:${sec.verseRange[0]}`;
           this.sectionIndex.add(secDocId, secContent);
           this.lookupMap.set(secDocId, {
             id: secDocId,
@@ -209,9 +211,11 @@ export class QuranSearchEngine {
   }
 
   public indexSurahData(surah: SurahData) {
+    const strippedSurahAr = stripArabicDiacritics(surah.nameArabic || '');
     surah.sections.forEach((sec) => {
       const secDocId = `section-${surah.number}-${sec.id}`;
-      const secContent = `${surah.nameTransliterated} ${sec.title} ${sec.translation} ${sec.commentary} Verses ${sec.verseRange[0]}-${sec.verseRange[1]}`;
+      const strippedSecAr = stripArabicDiacritics(sec.arabicText || '');
+      const secContent = `${surah.nameTransliterated} ${surah.nameArabic} ${strippedSurahAr} ${sec.title} ${sec.arabicText || ''} ${strippedSecAr} ${sec.translation} ${sec.commentary} Verses ${sec.verseRange[0]}-${sec.verseRange[1]} ${surah.number}:${sec.verseRange[0]}`;
       
       this.sectionIndex.add(secDocId, secContent);
       this.lookupMap.set(secDocId, {
@@ -246,7 +250,7 @@ export class QuranSearchEngine {
       if (sec.curatedTerms) {
         sec.curatedTerms.forEach((term, tIdx) => {
           const termDocId = `term-${surah.number}-${sec.id}-${tIdx}`;
-          const termContent = `${term.term} ${term.arabicRoot || ''} ${term.literalMeaning} ${term.theologicalContext}`;
+          const termContent = `${term.term} ${term.arabicRoot || ''} ${stripArabicDiacritics(term.arabicRoot || '')} ${term.literalMeaning} ${term.theologicalContext}`;
           this.sectionIndex.add(termDocId, termContent);
           this.lookupMap.set(termDocId, {
             id: termDocId,
@@ -267,8 +271,39 @@ export class QuranSearchEngine {
     if (!query || !query.trim() || !this.isReady) return [];
 
     const cleanQuery = query.trim();
-    const surahMatches: string[] = this.surahIndex.search(cleanQuery, { limit: 5 });
-    const sectionMatches: string[] = this.sectionIndex.search(cleanQuery, { limit: 10 });
+
+    // Direct verse citation lookup (e.g. "2:255", "Surah 2:185", "2:1-5")
+    const citationMatch = cleanQuery.match(/^(?:surah\s+)?(\d{1,3})\s*:\s*(\d{1,3})(?:\s*[-–—]\s*(\d{1,3}))?$/i);
+    if (citationMatch) {
+      const sNum = parseInt(citationMatch[1], 10);
+      const vStart = parseInt(citationMatch[2], 10);
+      const vEnd = citationMatch[3] ? parseInt(citationMatch[3], 10) : vStart;
+      const matches: SearchResultItem[] = [];
+      for (const item of this.lookupMap.values()) {
+        if (
+          item.type === 'section' &&
+          item.surahNumber === sNum &&
+          item.verseRange &&
+          item.verseRange[0] <= vEnd &&
+          vStart <= item.verseRange[1]
+        ) {
+          matches.push(item);
+        }
+      }
+      const surahItem = this.lookupMap.get(`surah-${sNum}`);
+      if (surahItem) matches.push(surahItem);
+      if (matches.length > 0) return matches.slice(0, limit);
+    }
+
+    const strippedQuery = /[\u0600-\u06FF]/.test(cleanQuery) ? stripArabicDiacritics(cleanQuery) : '';
+    const surahMatches: string[] = [
+      ...this.surahIndex.search(cleanQuery, { limit: 5 }),
+      ...(strippedQuery && strippedQuery !== cleanQuery ? this.surahIndex.search(strippedQuery, { limit: 5 }) : []),
+    ];
+    const sectionMatches: string[] = [
+      ...this.sectionIndex.search(cleanQuery, { limit: 10 }),
+      ...(strippedQuery && strippedQuery !== cleanQuery ? this.sectionIndex.search(strippedQuery, { limit: 10 }) : []),
+    ];
 
     const combinedIds = Array.from(new Set([...surahMatches, ...sectionMatches])).slice(0, limit);
     return combinedIds
