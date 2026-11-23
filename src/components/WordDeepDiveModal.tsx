@@ -118,30 +118,37 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
     cleanTransliteration.trim().toLowerCase() === data.primaryMeaning.trim().toLowerCase()
   );
 
+  const capitalizeFirstLetter = (text?: string): string =>
+    text
+      ? text.replace(/^(\s*["'(]*)([a-z])/, (_, prefix: string, ch: string) => `${prefix}${ch.toUpperCase()}`)
+      : '';
+
+  const formattedPrimaryMeaning = capitalizeFirstLetter(data.primaryMeaning);
+
   const cardHeader = (
     <div className="flex items-start justify-between gap-3 sm:gap-4">
-      <div className="flex items-start gap-3 sm:gap-4 flex-1 min-w-0">
+      <div className="flex items-center gap-3.5 sm:gap-4 flex-1 min-w-0">
         {/* Arabic Script & Transliteration Subtitle */}
         <div className="flex flex-col items-center shrink-0">
           <span
             dir="rtl"
             lang="ar"
-            className="font-quran text-3xl sm:text-4xl text-[#CD7743] dark:text-[#E08955] leading-[1.65] inline-block px-1 pt-0.5 pb-0.5 select-text overflow-visible"
+            className="font-quran text-3xl sm:text-4xl text-[#CD7743] dark:text-[#E08955] leading-[1.85] inline-block px-1 pt-0.5 pb-2.5 select-text overflow-visible"
           >
             {data.word}
           </span>
 
           {cleanTransliteration && !isSameAsTransliteration && (
-            <span className="text-xs font-medium text-stone-500 dark:text-stone-400 tracking-wide select-text px-1 mt-0.5 sm:mt-1">
+            <span className="text-xs font-medium text-stone-500 dark:text-stone-400 tracking-wide select-text px-1 mt-2 sm:mt-2.5">
               {cleanTransliteration}
             </span>
           )}
         </div>
 
         {/* Primary English Translation */}
-        <div className="flex-1 min-w-0 pt-1 sm:pt-1.5">
+        <div className="flex-1 min-w-0">
           <span className="text-base sm:text-lg font-semibold text-stone-900 dark:text-stone-100 leading-snug select-text block">
-            {data.primaryMeaning}
+            {formattedPrimaryMeaning}
           </span>
         </div>
       </div>
@@ -210,7 +217,7 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
                 {data.otherMeanings.map((meaning, idx) => (
                   <li key={`alt-${idx}`} className="flex items-start gap-2 leading-relaxed">
                     <span className="text-[#CD7743] dark:text-[#E08955] text-xs leading-none select-none shrink-0 mt-0.5">•</span>
-                    <span className="select-text">{meaning}</span>
+                    <span className="select-text">{capitalizeFirstLetter(meaning)}</span>
                   </li>
                 ))}
               </ul>
