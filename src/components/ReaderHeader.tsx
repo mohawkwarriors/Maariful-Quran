@@ -290,10 +290,10 @@ export const ReaderHeader: React.FC<ReaderHeaderProps> = ({
                 ? 'bg-white dark:bg-[#18181A] text-stone-900 dark:text-stone-100 shadow-xs font-semibold'
                 : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200'
             }`}
-            title="Separate: Mushaf Arabic block and commentary presented separately"
+            title="Mushaf: Continuous Uthmanic Arabic script with translation and commentary below"
           >
             <LayoutGrid className="w-3.5 h-3.5" />
-            <span className="hidden sm:inline">Separate</span>
+            <span className="hidden sm:inline">Mushaf</span>
           </button>
           <button
             type="button"
@@ -304,10 +304,10 @@ export const ReaderHeader: React.FC<ReaderHeaderProps> = ({
                 ? 'bg-white dark:bg-[#18181A] text-stone-900 dark:text-stone-100 shadow-xs font-semibold'
                 : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200'
             }`}
-            title="Inline: Phrase-by-phrase and word-by-word interactive study flow"
+            title="Word by Word: Verse-by-verse Arabic with word-under-word English meanings"
           >
             <Columns className="w-3.5 h-3.5" />
-            <span className="hidden sm:inline">Inline</span>
+            <span className="hidden sm:inline">Word by Word</span>
           </button>
         </div>
 

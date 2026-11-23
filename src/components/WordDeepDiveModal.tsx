@@ -23,8 +23,10 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
   onMouseEnter,
   onMouseLeave,
 }) => {
-  // Mobile breakpoint detection (< 640px)
-  const [isMobile, setIsMobile] = useState(false);
+  // Mobile breakpoint detection (< 640px) — synchronous initial read prevents 1-frame flash on lazy mount
+  const [isMobile, setIsMobile] = useState(() =>
+    typeof window !== 'undefined' ? window.matchMedia('(max-width: 639px)').matches : false
+  );
   useEffect(() => {
     const mql = window.matchMedia('(max-width: 639px)');
     const onChange = () => setIsMobile(mql.matches);

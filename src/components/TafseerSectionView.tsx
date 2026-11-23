@@ -151,6 +151,136 @@ const WordItem: React.FC<WordItemProps> = ({ word, meaning, root, grammarNote })
   );
 };
 
+/**
+ * Interactive Arabic word token for the continuous Mushaf block in Separate view.
+ * Lazily mounts WordDeepDiveModal on hover, click, or keyboard activation to keep large Surahs instant.
+ */
+const MushafWordItem: React.FC<WordItemProps> = React.memo(({ word, meaning, root, grammarNote }) => {
+  const [isActivated, setIsActivated] = useState(false);
+  const [open, setOpen] = useState(false);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const openedViaHoverRef = useRef(false);
+  const isPinnedRef = useRef(false);
+
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
+  }, []);
+
+  const handleOpenChange = (nextOpen: boolean) => {
+    if (!nextOpen) {
+      openedViaHoverRef.current = false;
+      isPinnedRef.current = false;
+    }
+    setOpen(nextOpen);
+  };
+
+  const handleMouseEnter = () => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    if (!isActivated) setIsActivated(true);
+    if (!open) {
+      openedViaHoverRef.current = true;
+    }
+    setOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    if (isPinnedRef.current) return;
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    timeoutRef.current = setTimeout(() => {
+      openedViaHoverRef.current = false;
+      setOpen(false);
+    }, 200);
+  };
+
+  const handleTriggerClick = (e: React.MouseEvent<HTMLSpanElement>) => {
+    if (!isActivated) {
+      setIsActivated(true);
+      isPinnedRef.current = true;
+      setOpen(true);
+      return;
+    }
+    if (open && openedViaHoverRef.current) {
+      e.preventDefault();
+      openedViaHoverRef.current = false;
+      isPinnedRef.current = true;
+    } else if (!open) {
+      isPinnedRef.current = true;
+    }
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLSpanElement>) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      if (!isActivated) setIsActivated(true);
+      isPinnedRef.current = !open;
+      handleOpenChange(!open);
+    } else if (e.key === ' ') {
+      e.preventDefault();
+    }
+  };
+
+  const handleKeyUp = (e: React.KeyboardEvent<HTMLSpanElement>) => {
+    if (e.key === ' ') {
+      e.preventDefault();
+      if (!isActivated) setIsActivated(true);
+      isPinnedRef.current = !open;
+      handleOpenChange(!open);
+    }
+  };
+
+  const trigger = (
+    <span
+      role="button"
+      tabIndex={0}
+      aria-expanded={open}
+      onClick={handleTriggerClick}
+      onKeyDown={handleKeyDown}
+      onKeyUp={handleKeyUp}
+      className={`inline-block cursor-pointer rounded-lg px-0.5 transition-colors select-text focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CD7743] ${
+        open
+          ? 'text-[#CD7743] dark:text-[#E08955] bg-[#CD7743]/12 dark:bg-[#CD7743]/20'
+          : 'hover:text-[#CD7743] dark:hover:text-[#E08955] hover:bg-[#CD7743]/10 dark:hover:bg-[#CD7743]/15'
+      }`}
+      title="Hover or click to explore root, meaning & Quranic occurrences"
+    >
+      {word}
+    </span>
+  );
+
+  if (!isActivated) {
+    return (
+      <span
+        className="inline-block"
+        onPointerEnter={(e) => {
+          if (e.pointerType !== 'mouse') return;
+          handleMouseEnter();
+        }}
+        onPointerLeave={(e) => {
+          if (e.pointerType !== 'mouse') return;
+          handleMouseLeave();
+        }}
+      >
+        {trigger}
+      </span>
+    );
+  }
+
+  const deepDiveData = getWordDeepDive(word, meaning, root, grammarNote);
+
+  return (
+    <WordDeepDiveModal
+      data={deepDiveData}
+      open={open}
+      onOpenChange={handleOpenChange}
+      trigger={trigger}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    />
+  );
+});
+
 const parseVerseMarker = (raw: string) => {
   const match = raw.match(/^\[\s*(Verses?)\s*([\d\s\-–—,and]+)\s*\]$/i);
   if (!match) return { isPlural: false, displayTitle: raw, primaryNum: 1 };
@@ -1153,45 +1283,94 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
           {viewMode === 'separate' ? (
         /* ================= STANDARD SEPARATE VIEW ================= */
         <div className="space-y-6">
-          {/* Arabic Mushaf Block: Majestic book spread presentation */}
+          {/* Arabic Mushaf Block: Majestic book spread presentation with interactive Word Explorer */}
           <div
             dir="rtl"
             lang="ar"
             className="font-quran text-[26px] sm:text-[30px] md:text-[32px] leading-[2.25] sm:leading-[2.45] text-right text-[#111827] dark:text-[#F9FAFB] px-5 pt-5 pb-7 sm:px-8 sm:pt-7 sm:pb-9 rounded-2xl bg-[#FCFAF7] dark:bg-[#1E1E22] border border-[#ECE7DF] dark:border-[#2D2D33] shadow-xs select-text overflow-visible"
           >
-            {(() => {
-              const parts: React.ReactNode[] = [];
-              const regex = /([\u06DD۝][\d\u0660-\u0669]*)/g;
-              let lastIdx = 0;
-              let match: RegExpExecArray | null;
-              let ayahOffset = 0;
-              while ((match = regex.exec(section.arabicText)) !== null) {
-                if (match.index > lastIdx) {
-                  parts.push(section.arabicText.slice(lastIdx, match.index).trimEnd());
-                }
-                const rawDigits = match[0].replace(/[\u06DD۝]/g, '');
-                const westernDigits = rawDigits.replace(/[\u0660-\u0669]/g, (d) =>
-                  String(d.charCodeAt(0) - 0x0660)
-                );
-                const parsedNum = parseInt(westernDigits, 10);
-                const vNum = !isNaN(parsedNum) ? parsedNum : section.verseRange[0] + ayahOffset;
-                ayahOffset++;
-                parts.push(
-                  <span key={`mushaf-ayah-${vNum}-${match.index}`} id={`mushaf-ayah-${vNum}`} className="inline">
-                    <AyahEndMarker
-                      vNum={vNum}
-                      size="lg"
-                      className="mx-1.5 !align-middle -translate-y-0.5"
-                    />
-                  </span>
-                );
-                lastIdx = regex.lastIndex;
-              }
-              if (lastIdx < section.arabicText.length) {
-                parts.push(section.arabicText.slice(lastIdx));
-              }
-              return parts;
-            })()}
+            {versesData.some((v) => v.words.length > 0)
+              ? versesData.map(({ vNum, words }) => (
+                  <React.Fragment key={`mushaf-v-${vNum}`}>
+                    {words.map((item, wIdx) => {
+                      const isLastWord = wIdx === words.length - 1;
+                      if (isLastWord) {
+                        return (
+                          <span
+                            key={`mw-${vNum}-${wIdx}`}
+                            className="inline whitespace-nowrap"
+                          >
+                            <MushafWordItem
+                              word={item.word}
+                              meaning={item.meaning}
+                              root={item.root}
+                              grammarNote={item.grammarNote}
+                            />
+                            <span id={`mushaf-ayah-${vNum}`} className="inline">
+                              <AyahEndMarker
+                                vNum={vNum}
+                                size="lg"
+                                className="mx-1.5 !align-middle -translate-y-0.5"
+                              />
+                            </span>
+                          </span>
+                        );
+                      }
+                      return (
+                        <React.Fragment key={`mw-${vNum}-${wIdx}`}>
+                          <MushafWordItem
+                            word={item.word}
+                            meaning={item.meaning}
+                            root={item.root}
+                            grammarNote={item.grammarNote}
+                          />{' '}
+                        </React.Fragment>
+                      );
+                    })}
+                    {words.length === 0 && (
+                      <span id={`mushaf-ayah-${vNum}`} className="inline">
+                        <AyahEndMarker
+                          vNum={vNum}
+                          size="lg"
+                          className="mx-1.5 !align-middle -translate-y-0.5"
+                        />
+                      </span>
+                    )}{' '}
+                  </React.Fragment>
+                ))
+              : (() => {
+                  const parts: React.ReactNode[] = [];
+                  const regex = /([\u06DD۝][\d\u0660-\u0669]*)/g;
+                  let lastIdx = 0;
+                  let match: RegExpExecArray | null;
+                  let ayahOffset = 0;
+                  while ((match = regex.exec(section.arabicText)) !== null) {
+                    if (match.index > lastIdx) {
+                      parts.push(section.arabicText.slice(lastIdx, match.index).trimEnd());
+                    }
+                    const rawDigits = match[0].replace(/[\u06DD۝]/g, '');
+                    const westernDigits = rawDigits.replace(/[\u0660-\u0669]/g, (d) =>
+                      String(d.charCodeAt(0) - 0x0660)
+                    );
+                    const parsedNum = parseInt(westernDigits, 10);
+                    const vNum = !isNaN(parsedNum) ? parsedNum : section.verseRange[0] + ayahOffset;
+                    ayahOffset++;
+                    parts.push(
+                      <span key={`mushaf-ayah-${vNum}-${match.index}`} id={`mushaf-ayah-${vNum}`} className="inline">
+                        <AyahEndMarker
+                          vNum={vNum}
+                          size="lg"
+                          className="mx-1.5 !align-middle -translate-y-0.5"
+                        />
+                      </span>
+                    );
+                    lastIdx = regex.lastIndex;
+                  }
+                  if (lastIdx < section.arabicText.length) {
+                    parts.push(section.arabicText.slice(lastIdx));
+                  }
+                  return parts;
+                })()}
           </div>
 
           {/* Translation Block */}
