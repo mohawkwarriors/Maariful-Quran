@@ -35,7 +35,7 @@ export const SurahHero: React.FC<SurahHeroProps> = ({ surah }) => {
         <h1
           dir="rtl"
           lang="ar"
-          className="font-quran text-4xl sm:text-5xl md:text-6xl text-[#111827] dark:text-[#F9FAFB] leading-[1.3] sm:leading-[1.35] tracking-normal block select-text overflow-visible"
+          className="font-quran text-4xl sm:text-5xl md:text-6xl text-[#111827] dark:text-[#F9FAFB] leading-[1.55] sm:leading-[1.6] pb-1 tracking-normal block select-text overflow-visible"
         >
           سورة {surah.nameArabic}
         </h1>

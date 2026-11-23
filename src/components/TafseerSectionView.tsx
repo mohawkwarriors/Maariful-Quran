@@ -120,11 +120,11 @@ const WordItem: React.FC<WordItemProps> = ({ word, meaning, root, grammarNote })
       title="Hover on desktop or click for root, related words & Quranic occurrences"
     >
       {/* Arabic Word Container - Generous vertical clearance for harakat & deep descenders like ع, ي, ر */}
-      <div className="w-full flex items-center justify-center min-h-[48px] sm:min-h-[52px] px-1 pb-1.5 overflow-visible">
+      <div className="w-full flex items-center justify-center min-h-[50px] sm:min-h-[56px] px-1 pb-2 overflow-visible">
         <span
           dir="rtl"
           lang="ar"
-          className="font-quran text-[26px] sm:text-[29px] md:text-[31px] leading-[1.7] sm:leading-[1.8] text-stone-900 dark:text-stone-100 group-hover:text-[#CD7743] dark:group-hover:text-[#E08955] transition-colors block text-center select-text overflow-visible"
+          className="font-quran text-[26px] sm:text-[29px] md:text-[31px] leading-[1.85] sm:leading-[1.95] text-stone-900 dark:text-stone-100 group-hover:text-[#CD7743] dark:group-hover:text-[#E08955] transition-colors block text-center select-text overflow-visible"
         >
           {word}
         </span>
@@ -1157,7 +1157,7 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
           <div
             dir="rtl"
             lang="ar"
-            className="font-quran text-[26px] sm:text-[30px] md:text-[32px] leading-[2.25] sm:leading-[2.45] text-right text-[#111827] dark:text-[#F9FAFB] p-5 sm:p-8 rounded-2xl bg-[#FCFAF7] dark:bg-[#1E1E22] border border-[#ECE7DF] dark:border-[#2D2D33] shadow-xs select-text"
+            className="font-quran text-[26px] sm:text-[30px] md:text-[32px] leading-[2.25] sm:leading-[2.45] text-right text-[#111827] dark:text-[#F9FAFB] px-5 pt-5 pb-7 sm:px-8 sm:pt-7 sm:pb-9 rounded-2xl bg-[#FCFAF7] dark:bg-[#1E1E22] border border-[#ECE7DF] dark:border-[#2D2D33] shadow-xs select-text overflow-visible"
           >
             {(() => {
               const parts: React.ReactNode[] = [];

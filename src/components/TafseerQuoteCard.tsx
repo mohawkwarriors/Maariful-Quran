@@ -296,13 +296,13 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
             </p>
           )}
 
-          <div className="rounded-xl bg-[#2D7266]/5 dark:bg-[#2D7266]/10 border border-[#2D7266]/20 dark:border-[#2D7266]/30 p-3.5 sm:p-4 my-2 space-y-2">
+          <div className="rounded-xl bg-[#2D7266]/5 dark:bg-[#2D7266]/10 border border-[#2D7266]/20 dark:border-[#2D7266]/30 px-3.5 pt-3.5 pb-4.5 sm:px-4 sm:pt-4 sm:pb-5 my-2 space-y-2.5">
             {parsedDua.arabicLines.map((line, idx) => (
               <div
                 key={`dua-ar-${idx}`}
                 dir="rtl"
                 lang="ar"
-                className="font-quran text-xl sm:text-2xl text-[#2D7266] dark:text-[#4AA291] text-right leading-loose select-text"
+                className="font-quran text-xl sm:text-2xl text-[#2D7266] dark:text-[#4AA291] text-right leading-[2.15] pb-1 select-text overflow-visible"
               >
                 {line}
               </div>
@@ -327,7 +327,7 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
             <div
               dir="rtl"
               lang="ar"
-              className="font-quran text-xl sm:text-[23px] text-[#1C1917] dark:text-[#F5F5F4] text-right leading-[2.1] select-text py-0.5"
+              className="font-quran text-xl sm:text-[23px] text-[#1C1917] dark:text-[#F5F5F4] text-right leading-[2.15] select-text pt-0.5 pb-2 overflow-visible"
             >
               {arabicText}
             </div>

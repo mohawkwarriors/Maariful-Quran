@@ -146,7 +146,7 @@ export const TermPopover: React.FC<TermPopoverProps> = ({ termText, termData }) 
                       href={getEjtaalUrl(effectiveData.arabicRoot)}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-lg bg-[#5F4B3E]/8 dark:bg-[#5F4B3E]/18 border border-[#5F4B3E]/25 hover:border-[#CD7743]/50 hover:bg-[#CD7743]/10 dark:hover:bg-[#CD7743]/20 transition-all cursor-pointer group shrink-0 shadow-2xs text-inherit no-underline"
+                      className="inline-flex items-center gap-1.5 px-2.5 pt-1 pb-1.5 rounded-lg bg-[#5F4B3E]/8 dark:bg-[#5F4B3E]/18 border border-[#5F4B3E]/25 hover:border-[#CD7743]/50 hover:bg-[#CD7743]/10 dark:hover:bg-[#CD7743]/20 transition-all cursor-pointer group shrink-0 shadow-2xs text-inherit no-underline"
                       title={`Open root ${effectiveData.arabicRoot} in Lane's Classical Lexicon (Ejtaal.net)`}
                     >
                       <span className="text-[9.5px] font-bold uppercase tracking-wider text-stone-400 dark:text-stone-500">
@@ -155,7 +155,7 @@ export const TermPopover: React.FC<TermPopoverProps> = ({ termText, termData }) 
                       <span
                         dir="rtl"
                         lang="ar"
-                        className="font-quran text-[14px] sm:text-[15px] text-[#CD7743] dark:text-[#E08955] leading-normal select-text inline-flex items-center justify-center"
+                        className="font-quran text-[14px] sm:text-[15px] text-[#CD7743] dark:text-[#E08955] leading-[1.8] -translate-y-0.5 select-text inline-flex items-center justify-center overflow-visible"
                       >
                         {parsed.arabic}
                       </span>

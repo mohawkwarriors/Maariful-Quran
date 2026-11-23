@@ -526,7 +526,7 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
                     </div>
 
                     <div className="flex items-center gap-2 shrink-0 pl-1">
-                      <span dir="rtl" lang="ar" className="font-quran text-base sm:text-lg leading-[1.6] text-stone-700 dark:text-stone-300">
+                      <span dir="rtl" lang="ar" className="font-quran text-base sm:text-lg leading-[1.85] pb-0.5 -translate-y-0.5 text-stone-700 dark:text-stone-300 overflow-visible">
                         {surah.nameArabic}
                       </span>
                       <div className="p-0.5 text-stone-400">
@@ -655,7 +655,7 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
                     </div>
 
                     <div className="flex items-center gap-2 shrink-0 pl-1">
-                      <span dir="rtl" lang="ar" className="font-quran text-base leading-[1.6] text-stone-700 dark:text-stone-300">
+                      <span dir="rtl" lang="ar" className="font-quran text-base leading-[1.85] pb-0.5 -translate-y-0.5 text-stone-700 dark:text-stone-300 overflow-visible">
                         {JUZ_ARABIC_NAMES[juzNum] || `الجزء ${juzNum}`}
                       </span>
                       <div className="p-0.5 text-stone-400">
@@ -702,7 +702,7 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
                                 </span>
                               </div>
                             </div>
-                            <span dir="rtl" lang="ar" className="font-quran text-base leading-[1.6] text-stone-500 dark:text-stone-400 shrink-0">
+                            <span dir="rtl" lang="ar" className="font-quran text-base leading-[1.85] pb-0.5 -translate-y-0.5 text-stone-500 dark:text-stone-400 shrink-0 overflow-visible">
                               {s.nameArabic}
                             </span>
                           </button>
@@ -808,7 +808,7 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
                               {topic.category}
                             </span>
                             {topic.arabicTitle && (
-                              <span dir="rtl" lang="ar" className="font-quran text-sm leading-[1.6] text-stone-500 dark:text-stone-400 truncate">
+                              <span dir="rtl" lang="ar" className="font-quran text-sm leading-[1.85] pb-0.5 text-stone-500 dark:text-stone-400 overflow-visible">
                                 {topic.arabicTitle}
                               </span>
                             )}

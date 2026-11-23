@@ -168,7 +168,7 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
     <div className="space-y-3">
       {/* 2. CARD 1: Morphology / Part of Speech, Lemma, Frequency & Alternative Translations */}
       {(formattedPartOfSpeech || data.lemma || data.occurrenceCount > 1 || data.isRare || (data.otherMeanings && data.otherMeanings.length > 0)) && (
-        <div className="p-3 sm:p-3.5 rounded-xl bg-stone-50 dark:bg-[#25252B] border border-stone-200/80 dark:border-stone-800 space-y-2">
+        <div className="px-3 pt-3 pb-3.5 sm:px-3.5 sm:pt-3.5 sm:pb-4 rounded-xl bg-stone-50 dark:bg-[#25252B] border border-stone-200/80 dark:border-stone-800 space-y-2">
           {/* Morphology / Part of Speech (verbal noun, preposition, etc.) */}
           {formattedPartOfSpeech && (
             <div className="text-xs text-[#596B8E] dark:text-[#788BB3] font-medium leading-normal select-text">
@@ -187,7 +187,7 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
                   <span
                     dir="rtl"
                     lang="ar"
-                    className="font-quran text-[17px] text-[#CD7743] dark:text-[#E08955] leading-[1.6] inline-flex items-center -translate-y-[1px] select-text"
+                    className="font-quran text-[17px] text-[#CD7743] dark:text-[#E08955] leading-[1.85] pb-0.5 inline-flex items-center -translate-y-0.5 select-text overflow-visible"
                   >
                     {data.lemma}
                   </span>
@@ -209,7 +209,7 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
 
           {/* Alternative Translations rendered as clean bullet points */}
           {data.otherMeanings && data.otherMeanings.length > 0 && (
-            <div className={`${(formattedPartOfSpeech || data.lemma || data.occurrenceCount > 1 || data.isRare) ? 'pt-2 border-t border-stone-200/60 dark:border-stone-800/80' : ''} space-y-1.5`}>
+            <div className={`${(formattedPartOfSpeech || data.lemma || data.occurrenceCount > 1 || data.isRare) ? 'pt-2.5 border-t border-stone-200/60 dark:border-stone-800/80' : ''} space-y-1.5`}>
               <span className="text-[10.5px] font-bold uppercase tracking-wider text-stone-500 dark:text-stone-400 block">
                 Alternative Translations
               </span>
@@ -237,7 +237,7 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
               <span
                 dir="rtl"
                 lang="ar"
-                className="font-quran text-[17px] sm:text-[18px] text-[#CD7743] dark:text-[#E08955] leading-[1.5] select-text inline-flex items-center justify-center"
+                className="font-quran text-[17px] sm:text-[18px] text-[#CD7743] dark:text-[#E08955] leading-[1.85] pb-0.5 -translate-y-0.5 select-text inline-flex items-center justify-center overflow-visible"
               >
                 {parsedRoot.arabic}
               </span>
@@ -280,36 +280,41 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
         </div>
       </div>
 
-      {/* 4. CARD 3: Related Words (Uniform full-width single-line rows) */}
+      {/* 4. CARD 3: Related Words (Compact 2-column grid on desktop to save vertical space) */}
       <div className="space-y-2">
         <div className="text-[10.5px] font-bold uppercase tracking-wider text-[#596B8E] dark:text-[#788BB3] flex items-center gap-1.5">
           <Layers className="w-3.5 h-3.5 text-[#596B8E] dark:text-[#788BB3]" />
           <span>Related Words (Same Root)</span>
         </div>
         {authenticRelatedWords.length > 0 ? (
-          <div className="space-y-1.5">
+          <div
+            className={`grid gap-1.5 ${
+              authenticRelatedWords.length > 1 ? 'grid-cols-1 sm:grid-cols-2' : 'grid-cols-1'
+            }`}
+          >
             {authenticRelatedWords.slice(0, 4).map((rw, rwIdx) => (
               <div
                 key={`rw-${rwIdx}`}
-                className="flex items-center gap-2.5 px-3 py-2 rounded-xl bg-stone-50 dark:bg-[#25252B] border border-stone-200/70 dark:border-stone-800 text-xs shadow-2xs hover:border-[#596B8E]/40 transition-colors"
+                className="flex items-center gap-2.5 px-3 pt-2 pb-3 rounded-xl bg-stone-50 dark:bg-[#25252B] border border-stone-200/70 dark:border-stone-800 text-xs shadow-2xs hover:border-[#596B8E]/40 transition-colors min-w-0"
               >
                 <span
                   dir="rtl"
                   lang="ar"
-                  className="font-quran text-[17px] sm:text-[18px] leading-[1.5] text-[#CD7743] dark:text-[#E08955] shrink-0 select-text inline-flex items-center justify-center"
+                  className="font-quran text-[17px] leading-[1.85] text-[#CD7743] dark:text-[#E08955] shrink-0 select-text inline-flex items-center justify-center min-w-[38px] pb-0.5 -translate-y-0.5"
                 >
                   {rw.arabic}
                 </span>
-                <span className="text-stone-800 dark:text-stone-200 font-semibold text-xs tracking-wide shrink-0">
-                  {rw.transliteration}
-                </span>
-                <span className="text-stone-300 dark:text-stone-600 shrink-0 select-none">·</span>
-                <span
-                  className="text-stone-600 dark:text-stone-300 font-medium text-xs leading-snug truncate"
-                  title={rw.meaning}
-                >
-                  {rw.meaning}
-                </span>
+                <div className="min-w-0 flex-1 flex flex-col justify-center">
+                  <span className="text-stone-800 dark:text-stone-200 font-semibold text-[11.5px] leading-tight tracking-wide truncate">
+                    {rw.transliteration}
+                  </span>
+                  <span
+                    className="text-stone-600 dark:text-stone-300 font-medium text-[11px] leading-tight truncate mt-0.5"
+                    title={capitalizeFirstLetter(rw.meaning)}
+                  >
+                    {capitalizeFirstLetter(rw.meaning)}
+                  </span>
+                </div>
               </div>
             ))}
           </div>
@@ -331,7 +336,7 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
             {authenticVerses.slice(0, 3).map((ref, rIdx) => (
               <div
                 key={`qref-${rIdx}`}
-                className="p-2.5 px-3 rounded-lg bg-[#4C7971]/8 dark:bg-[#4C7971]/15 border border-[#4C7971]/20 text-[11px] space-y-1.5"
+                className="p-3 rounded-lg bg-[#4C7971]/8 dark:bg-[#4C7971]/15 border border-[#4C7971]/20 text-[11px] space-y-1.5"
               >
                 <span className="font-semibold text-[#4C7971] dark:text-[#639C92] font-mono text-[10.5px] block">
                   [{ref.reference}] Surah {ref.surahName}
@@ -341,7 +346,7 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
                   <div
                     dir="rtl"
                     lang="ar"
-                    className="font-quran text-[17px] sm:text-[18px] leading-[1.95] text-stone-900 dark:text-stone-100 text-right select-text py-0.5"
+                    className="font-quran text-[17px] sm:text-[18px] leading-[2.1] text-stone-900 dark:text-stone-100 text-right select-text pt-0.5 pb-1.5 overflow-visible"
                   >
                     {ref.arabicSnippet}
                   </div>
