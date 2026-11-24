@@ -465,7 +465,7 @@ function ReaderApp() {
               <SurahHero surah={surahData} />
 
               {/* Thematic Sections List with Content Visibility Optimization */}
-              <div className="divide-y divide-[#E8E5DF] dark:divide-[#2E2E33]">
+              <div>
                 {surahData.sections.map((section) => (
                   <TafseerSectionView
                     key={section.id}

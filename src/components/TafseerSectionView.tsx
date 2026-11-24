@@ -1201,75 +1201,74 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
     <section
       id={section.id}
       data-section-id={section.id}
-      className="tafseer-section-optimized scroll-mt-20 py-7 sm:py-9 px-2.5 sm:px-6 md:px-8 border-b border-[#E8E5DF] dark:border-[#2E2E33]"
+      className="tafseer-section-optimized scroll-mt-20 py-6 sm:py-8 px-2.5 sm:px-6 md:px-8 border-t-2 last:border-b-2 border-[#CD7743]/55 dark:border-[#E08955]/45"
     >
-      {/* Section Header Band with Collapse Toggle */}
-      <div className="rounded-2xl bg-[#F4EFE6]/75 dark:bg-[#1E1E24] border border-[#E5DDD0] dark:border-[#2F2F38] px-4 py-4 sm:px-6 sm:py-5 mb-6 shadow-2xs">
-        <div className="flex items-start justify-between gap-3">
-          <div className="min-w-0">
-            <div className="flex items-center flex-wrap gap-2 text-[11px] sm:text-xs font-medium text-[#596B8E] dark:text-[#788BB3] uppercase tracking-wider mb-2">
-              <span className="px-2.5 py-0.5 rounded-full bg-[#CD7743]/12 dark:bg-[#E08955]/14 border border-[#CD7743]/30 dark:border-[#E08955]/32 text-[#CD7743] dark:text-[#E08955] font-semibold">
-                Verses {section.verseRange[0]}–{section.verseRange[1]}
-              </span>
-              <span>Juz {section.juzNumber}</span>
-              <span aria-hidden="true">·</span>
-              <span className="capitalize">{section.revelationType}</span>
-            </div>
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-serif-heading font-semibold text-[#1C1917] dark:text-[#F3F4F6] tracking-tight">
-              {section.title}
-            </h2>
-            {section.summary && (
-              <p className="mt-1.5 text-sm sm:text-[15px] text-stone-600 dark:text-stone-400 leading-relaxed max-w-3xl">
-                {section.summary}
-              </p>
-            )}
+      {/* Section Header with Collapse Toggle */}
+      <div className="flex items-start justify-between gap-3 mb-5">
+        <div>
+          <div className="flex items-center flex-wrap gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-medium text-[#596B8E] dark:text-[#788BB3] uppercase tracking-wider mb-1.5">
+            <span className="text-[#CD7743] dark:text-[#E08955] font-semibold">
+              Verses {section.verseRange[0]}–{section.verseRange[1]}
+            </span>
+            <span aria-hidden="true">·</span>
+            <span>Juz {section.juzNumber}</span>
+            <span aria-hidden="true">·</span>
+            <span className="capitalize">{section.revelationType}</span>
           </div>
+          <h2 className="text-2xl sm:text-[28px] md:text-[34px] leading-tight font-serif-heading font-semibold text-[#1C1917] dark:text-[#F3F4F6] tracking-tight">
+            {section.title}
+          </h2>
+          {section.summary && (
+            <p className="mt-1.5 text-sm sm:text-[15px] text-stone-600 dark:text-stone-400 leading-relaxed max-w-3xl">
+              {section.summary}
+            </p>
+          )}
+        </div>
 
-          <div className="flex items-center gap-2 shrink-0 mt-0.5">
-            {/* Bookmark Section Button (Icon only - no text) */}
-            {onToggleBookmark && (
-              <button
-                type="button"
-                onClick={onToggleBookmark}
-                className={`w-8 h-8 rounded-xl border flex items-center justify-center transition-all cursor-pointer shadow-2xs ${
-                  isBookmarked
-                    ? 'bg-[#CD7743]/15 dark:bg-[#CD7743]/25 text-[#CD7743] dark:text-[#E08955] border-[#CD7743]/50 hover:bg-red-50 dark:hover:bg-red-950/30 hover:border-red-300 dark:hover:border-red-800/50 hover:text-red-600'
-                    : 'border-stone-200 dark:border-stone-700/80 bg-white dark:bg-[#25252A] hover:bg-stone-50 dark:hover:bg-[#2B2B32] text-stone-400 hover:text-[#CD7743] dark:hover:text-[#E08955]'
-                }`}
-                title={isBookmarked ? 'Bookmarked — click to unbookmark' : 'Bookmark this section'}
-                aria-label={isBookmarked ? `Unbookmark section ${section.title}` : `Bookmark section ${section.title}`}
-              >
-                <Bookmark
-                  className={`w-4 h-4 transition-transform active:scale-125 ${
-                    isBookmarked
-                      ? 'fill-[#CD7743] text-[#CD7743] dark:fill-[#E08955] dark:text-[#E08955]'
-                      : 'text-stone-400 dark:text-stone-400'
-                  }`}
-                />
-              </button>
-            )}
-
+        <div className="flex items-center gap-2 shrink-0 mt-1">
+          {/* Bookmark Section Button (Icon only - no text) */}
+          {onToggleBookmark && (
             <button
               type="button"
-              onClick={() => setIsSectionCollapsed((prev) => !prev)}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-stone-200 dark:border-stone-700/80 bg-white dark:bg-[#25252A] hover:bg-stone-50 dark:hover:bg-[#2B2B32] text-xs font-medium text-stone-600 dark:text-stone-300 hover:text-[#CD7743] dark:hover:text-[#E08955] transition-all cursor-pointer shadow-2xs"
-              title={isSectionCollapsed ? 'Expand section' : 'Collapse section'}
-              aria-label={isSectionCollapsed ? `Expand section ${section.title}` : `Collapse section ${section.title}`}
-              aria-expanded={!isSectionCollapsed}
+              onClick={onToggleBookmark}
+              className={`w-8 h-8 rounded-xl border flex items-center justify-center transition-all cursor-pointer shadow-2xs ${
+                isBookmarked
+                  ? 'bg-[#CD7743]/15 dark:bg-[#CD7743]/25 text-[#CD7743] dark:text-[#E08955] border-[#CD7743]/50 hover:bg-red-50 dark:hover:bg-red-950/30 hover:border-red-300 dark:hover:border-red-800/50 hover:text-red-600'
+                  : 'border-stone-200 dark:border-stone-700/80 bg-white dark:bg-[#25252A] hover:bg-stone-50 dark:hover:bg-[#2B2B32] text-stone-400 hover:text-[#CD7743] dark:hover:text-[#E08955]'
+              }`}
+              title={isBookmarked ? 'Bookmarked — click to unbookmark' : 'Bookmark this section'}
+              aria-label={isBookmarked ? `Unbookmark section ${section.title}` : `Bookmark section ${section.title}`}
             >
-              {isSectionCollapsed ? (
-                <>
-                  <ChevronDown className="w-3.5 h-3.5 text-[#CD7743] dark:text-[#E08955]" />
-                  <span>Expand Section</span>
-                </>
-              ) : (
-                <>
-                  <ChevronUp className="w-3.5 h-3.5 text-[#596B8E] dark:text-[#788BB3]" />
-                  <span>Collapse</span>
-                </>
-              )}
+              <Bookmark
+                className={`w-4 h-4 transition-transform active:scale-125 ${
+                  isBookmarked
+                    ? 'fill-[#CD7743] text-[#CD7743] dark:fill-[#E08955] dark:text-[#E08955]'
+                    : 'text-stone-400 dark:text-stone-400'
+                }`}
+              />
             </button>
-          </div>
+          )}
+
+          <button
+            type="button"
+            onClick={() => setIsSectionCollapsed((prev) => !prev)}
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-stone-200 dark:border-stone-700/80 bg-white dark:bg-[#25252A] hover:bg-stone-50 dark:hover:bg-[#2B2B32] text-xs font-medium text-stone-600 dark:text-stone-300 hover:text-[#CD7743] dark:hover:text-[#E08955] transition-all cursor-pointer shadow-2xs"
+            title={isSectionCollapsed ? 'Expand section' : 'Collapse section'}
+            aria-label={isSectionCollapsed ? `Expand section ${section.title}` : `Collapse section ${section.title}`}
+            aria-expanded={!isSectionCollapsed}
+          >
+            {isSectionCollapsed ? (
+              <>
+                <ChevronDown className="w-3.5 h-3.5 text-[#CD7743] dark:text-[#E08955]" />
+                <span>Expand Section</span>
+              </>
+            ) : (
+              <>
+                <ChevronUp className="w-3.5 h-3.5 text-[#596B8E] dark:text-[#788BB3]" />
+                <span>Collapse</span>
+              </>
+            )}
+          </button>
         </div>
       </div>
 
