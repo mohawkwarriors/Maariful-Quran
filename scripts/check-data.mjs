@@ -132,6 +132,17 @@ for (const file of files) {
       errors.push(`${file} (${fp}): stray '}' in text ${JSON.stringify(m[0])}`);
     }
   }
+
+  // Enforce expanded Verse / Verses wording in subsection titles
+  for (let sIdx = 0; sIdx < (data.sections || []).length; sIdx++) {
+    const subs = data.sections[sIdx].subsections || [];
+    for (let subIdx = 0; subIdx < subs.length; subIdx++) {
+      const title = subs[subIdx]?.title || '';
+      if (/\(vv?\.\s*\d+/i.test(title)) {
+        errors.push(`${file} (sections[${sIdx}].subsections[${subIdx}].title): abbreviated verse label ${JSON.stringify(title)}`);
+      }
+    }
+  }
 }
 
 // 3. Check cross-surah boundary bleeds

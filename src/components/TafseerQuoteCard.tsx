@@ -1,5 +1,5 @@
-import React from 'react';
-import { BookOpen, Quote, Sparkles } from 'lucide-react';
+import React, { useState } from 'react';
+import { BookOpen, Quote, Sparkles, ChevronDown, ChevronRight } from 'lucide-react';
 import { parseQuranCitation, formatQuranCitationFooter } from '../utils/quranCitation';
 import { parseHadithCitation, HADITH_SOURCES } from '../utils/hadithCitation';
 import { parseScholarCitation } from '../utils/scholarCitation';
@@ -265,107 +265,135 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
     };
   }, [type, rawText, arabic, english]);
 
+  const [isExpanded, setIsExpanded] = useState(true);
+
+  const footerCitation =
+    type === 'quran'
+      ? quranCitation?.fullCitation ||
+        (surahNumber
+          ? typeof verseNumber === 'number'
+            ? formatQuranCitationFooter({ surahNumber, surahName, verseStart: verseNumber })
+            : typeof verseNumber === 'string'
+            ? formatQuranCitationFooter({ surahNumber, surahName, verseRangeStr: verseNumber })
+            : formatQuranCitationFooter({ surahNumber, surahName })
+          : detectedCitation || theme.defaultSource)
+      : type === 'hadith'
+      ? hadithCitation?.fullCitation || detectedCitation || theme.defaultSource
+      : type === 'scholar'
+      ? scholarCitation?.fullCitation || detectedCitation || theme.defaultSource
+      : detectedCitation || theme.defaultSource;
+
   return (
     <div
-      className={`not-prose my-5 rounded-2xl bg-[#FCFAF7] dark:bg-[#1E1E23] border ${theme.borderClasses} p-4 sm:p-5 shadow-2xs space-y-3.5 transition-all select-text`}
+      className={`not-prose my-5 rounded-2xl bg-[#FCFAF7] dark:bg-[#1E1E23] border ${theme.borderClasses} shadow-2xs overflow-hidden transition-all select-text`}
     >
-      {/* Header bar with category badge */}
-      <div className="flex items-center justify-between gap-2 border-b border-stone-100 dark:border-stone-800/80 pb-2.5">
-        <div className="flex items-center gap-2">
+      {/* Collapsible Header bar with category badge and chevron */}
+      <button
+        type="button"
+        onClick={() => setIsExpanded((prev) => !prev)}
+        aria-expanded={isExpanded}
+        aria-label={`${isExpanded ? 'Collapse' : 'Expand'} ${theme.badgeTitle}`}
+        className="w-full px-4 py-3 sm:px-5 sm:py-3.5 flex items-center justify-between gap-3 text-left hover:bg-stone-100/60 dark:hover:bg-stone-800/40 transition-colors cursor-pointer select-none focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#CD7743]"
+      >
+        <div className="flex items-center gap-2 min-w-0">
           <div className={`p-1.5 rounded-lg ${theme.badgeBgClasses} shrink-0`}>
             <IconComponent className={`w-3.5 h-3.5 ${theme.badgeClasses}`} />
           </div>
-          <span className={`text-xs font-semibold uppercase tracking-wider ${theme.badgeClasses}`}>
+          <span className={`text-xs font-semibold uppercase tracking-wider ${theme.badgeClasses} truncate`}>
             {theme.badgeTitle}
           </span>
         </div>
-      </div>
 
-      {/* Dua Supplication Body */}
-      {type === 'dua' && parsedDua ? (
-        <div className="space-y-3 pt-0.5">
-          {parsedDua.title && (
-            <h4 className="font-serif-heading font-bold text-[16px] sm:text-[17.5px] text-[#2D7266] dark:text-[#4AA291] tracking-wide pt-0.5">
-              {parsedDua.title}
-            </h4>
+        <div className="flex items-center gap-2 shrink-0">
+          {!isExpanded && footerCitation && footerCitation !== theme.badgeTitle && (
+            <span className="hidden sm:inline text-xs text-stone-400 dark:text-stone-500 font-reader truncate max-w-[260px]">
+              {footerCitation}
+            </span>
+          )}
+          <span className="p-0.5 rounded-md text-stone-400 dark:text-stone-500">
+            {isExpanded ? (
+              <ChevronDown className={`w-4 h-4 ${theme.badgeClasses}`} />
+            ) : (
+              <ChevronRight className="w-4 h-4" />
+            )}
+          </span>
+        </div>
+      </button>
+
+      {isExpanded && (
+        <div className="px-4 pb-4 sm:px-5 sm:pb-5 pt-3.5 border-t border-stone-100 dark:border-stone-800/80 space-y-3.5">
+          {/* Dua Supplication Body */}
+          {type === 'dua' && parsedDua ? (
+            <div className="space-y-3 pt-0.5">
+              {parsedDua.title && (
+                <h4 className="font-serif-heading font-bold text-[16px] sm:text-[17.5px] text-[#2D7266] dark:text-[#4AA291] tracking-wide pt-0.5">
+                  {parsedDua.title}
+                </h4>
+              )}
+
+              {parsedDua.leadIn && (
+                <p className="font-reader text-[14.5px] sm:text-[15.5px] leading-relaxed text-stone-700 dark:text-stone-300">
+                  {parsedDua.leadIn}
+                </p>
+              )}
+
+              <div className="rounded-xl bg-[#2D7266]/5 dark:bg-[#2D7266]/10 border border-[#2D7266]/20 dark:border-[#2D7266]/30 px-3.5 pt-3.5 pb-4.5 sm:px-4 sm:pt-4 sm:pb-5 my-2 space-y-2.5">
+                {parsedDua.arabicLines.map((line, idx) => (
+                  <div
+                    key={`dua-ar-${idx}`}
+                    dir="rtl"
+                    lang="ar"
+                    className="font-quran text-xl sm:text-2xl text-[#2D7266] dark:text-[#4AA291] text-right leading-[2.15] pb-1 select-text overflow-visible"
+                  >
+                    {line}
+                  </div>
+                ))}
+
+                {parsedDua.prayerQuotes.length > 0 ? (
+                  <div className="font-reader text-[15.5px] sm:text-[16.5px] font-medium italic text-stone-900 dark:text-stone-100 leading-[1.8] whitespace-pre-line select-text">
+                    {parsedDua.prayerQuotes.join('\n')}
+                  </div>
+                ) : parsedDua.generalLines.length > 0 ? (
+                  <div className="font-reader text-[15px] sm:text-[16px] italic text-stone-800 dark:text-stone-200 leading-[1.8] whitespace-pre-line select-text">
+                    {parsedDua.generalLines.join('\n')}
+                  </div>
+                ) : null}
+              </div>
+            </div>
+          ) : (
+            /* Scripture, Hadith, or Scholar Card with Arabic + English */
+            <div className="space-y-3 pt-0.5">
+              {/* Arabic Scripture / Hadith text */}
+              {arabicText && (
+                <div
+                  dir="rtl"
+                  lang="ar"
+                  className="font-quran text-xl sm:text-[23px] text-[#1C1917] dark:text-[#F5F5F4] text-right leading-[2.15] select-text pt-0.5 pb-2 overflow-visible"
+                >
+                  {arabicText}
+                </div>
+              )}
+
+              {/* Subtle separator between Arabic and English if both are present */}
+              {arabicText && englishText && (
+                <div className="border-t border-stone-200/50 dark:border-stone-800/50 my-1" />
+              )}
+
+              {/* English Translation / Scholarly Quotation */}
+              {englishText && (
+                <div className="font-reader italic text-[15px] sm:text-[16px] leading-[1.8] text-stone-800 dark:text-stone-200 select-text whitespace-pre-line">
+                  {englishText}
+                </div>
+              )}
+            </div>
           )}
 
-          {parsedDua.leadIn && (
-            <p className="font-reader text-[14.5px] sm:text-[15.5px] leading-relaxed text-stone-700 dark:text-stone-300">
-              {parsedDua.leadIn}
-            </p>
-          )}
-
-          <div className="rounded-xl bg-[#2D7266]/5 dark:bg-[#2D7266]/10 border border-[#2D7266]/20 dark:border-[#2D7266]/30 px-3.5 pt-3.5 pb-4.5 sm:px-4 sm:pt-4 sm:pb-5 my-2 space-y-2.5">
-            {parsedDua.arabicLines.map((line, idx) => (
-              <div
-                key={`dua-ar-${idx}`}
-                dir="rtl"
-                lang="ar"
-                className="font-quran text-xl sm:text-2xl text-[#2D7266] dark:text-[#4AA291] text-right leading-[2.15] pb-1 select-text overflow-visible"
-              >
-                {line}
-              </div>
-            ))}
-
-            {parsedDua.prayerQuotes.length > 0 ? (
-              <div className="font-reader text-[15.5px] sm:text-[16.5px] font-medium italic text-stone-900 dark:text-stone-100 leading-[1.8] whitespace-pre-line select-text">
-                {parsedDua.prayerQuotes.join('\n')}
-              </div>
-            ) : parsedDua.generalLines.length > 0 ? (
-              <div className="font-reader text-[15px] sm:text-[16px] italic text-stone-800 dark:text-stone-200 leading-[1.8] whitespace-pre-line select-text">
-                {parsedDua.generalLines.join('\n')}
-              </div>
-            ) : null}
+          {/* Subtle Citation Footer */}
+          <div className="pt-2 border-t border-stone-100 dark:border-stone-800/80 flex items-center justify-between text-xs text-stone-400 dark:text-stone-500 font-reader">
+            <span>{footerCitation}</span>
           </div>
         </div>
-      ) : (
-        /* Scripture, Hadith, or Scholar Card with Arabic + English */
-        <div className="space-y-3 pt-0.5">
-          {/* Arabic Scripture / Hadith text */}
-          {arabicText && (
-            <div
-              dir="rtl"
-              lang="ar"
-              className="font-quran text-xl sm:text-[23px] text-[#1C1917] dark:text-[#F5F5F4] text-right leading-[2.15] select-text pt-0.5 pb-2 overflow-visible"
-            >
-              {arabicText}
-            </div>
-          )}
-
-          {/* Subtle separator between Arabic and English if both are present */}
-          {arabicText && englishText && (
-            <div className="border-t border-stone-200/50 dark:border-stone-800/50 my-1" />
-          )}
-
-          {/* English Translation / Scholarly Quotation */}
-          {englishText && (
-            <div className="font-reader italic text-[15px] sm:text-[16px] leading-[1.8] text-stone-800 dark:text-stone-200 select-text whitespace-pre-line">
-              {englishText}
-            </div>
-          )}
-        </div>
       )}
-
-      {/* Subtle Citation Footer */}
-      <div className="pt-2 border-t border-stone-100 dark:border-stone-800/80 flex items-center justify-between text-xs text-stone-400 dark:text-stone-500 font-reader">
-        <span>
-          {type === 'quran'
-            ? quranCitation?.fullCitation ||
-              (surahNumber
-                ? typeof verseNumber === 'number'
-                  ? formatQuranCitationFooter({ surahNumber, surahName, verseStart: verseNumber })
-                  : typeof verseNumber === 'string'
-                  ? formatQuranCitationFooter({ surahNumber, surahName, verseRangeStr: verseNumber })
-                  : formatQuranCitationFooter({ surahNumber, surahName })
-                : detectedCitation || theme.defaultSource)
-            : type === 'hadith'
-            ? hadithCitation?.fullCitation || detectedCitation || theme.defaultSource
-            : type === 'scholar'
-            ? scholarCitation?.fullCitation || detectedCitation || theme.defaultSource
-            : detectedCitation || theme.defaultSource}
-        </span>
-      </div>
     </div>
   );
 };

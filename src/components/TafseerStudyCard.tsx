@@ -1,5 +1,5 @@
-import React from 'react';
-import { Sparkles, Scale, Lightbulb, History, LucideIcon } from 'lucide-react';
+import React, { useState } from 'react';
+import { Sparkles, Scale, Lightbulb, History, ChevronDown, ChevronRight, LucideIcon } from 'lucide-react';
 
 export type StudyCardType = 'takeaways' | 'ahkam' | 'insights' | 'asbab';
 
@@ -23,6 +23,7 @@ interface ThemeConfig {
   dividerClasses: string;
   badgeClasses: string;
   badgeBgClasses: string;
+  headerHoverClasses: string;
   dotClasses: string;
   ringClasses: string;
 }
@@ -36,6 +37,7 @@ const CARD_THEMES: Record<StudyCardType, ThemeConfig> = {
     dividerClasses: 'border-[#CD7743]/15 dark:border-[#CD7743]/20',
     badgeClasses: 'text-[#CD7743] dark:text-[#E08955]',
     badgeBgClasses: 'bg-[#CD7743]/12 dark:bg-[#CD7743]/22',
+    headerHoverClasses: 'hover:bg-[#CD7743]/[0.06] dark:hover:bg-[#CD7743]/[0.08]',
     dotClasses: 'bg-[#CD7743] dark:bg-[#E08955]',
     ringClasses: 'ring-[#CD7743]/20',
   },
@@ -47,6 +49,7 @@ const CARD_THEMES: Record<StudyCardType, ThemeConfig> = {
     dividerClasses: 'border-[#5F4B3E]/15 dark:border-[#5F4B3E]/20',
     badgeClasses: 'text-[#5F4B3E] dark:text-[#8C7262]',
     badgeBgClasses: 'bg-[#5F4B3E]/12 dark:bg-[#5F4B3E]/22',
+    headerHoverClasses: 'hover:bg-[#5F4B3E]/[0.06] dark:hover:bg-[#5F4B3E]/[0.08]',
     dotClasses: 'bg-[#5F4B3E] dark:bg-[#8C7262]',
     ringClasses: 'ring-[#5F4B3E]/20',
   },
@@ -58,6 +61,7 @@ const CARD_THEMES: Record<StudyCardType, ThemeConfig> = {
     dividerClasses: 'border-[#596B8E]/15 dark:border-[#596B8E]/20',
     badgeClasses: 'text-[#596B8E] dark:text-[#7587AC]',
     badgeBgClasses: 'bg-[#596B8E]/12 dark:bg-[#596B8E]/22',
+    headerHoverClasses: 'hover:bg-[#596B8E]/[0.06] dark:hover:bg-[#596B8E]/[0.08]',
     dotClasses: 'bg-[#596B8E] dark:text-[#7587AC]',
     ringClasses: 'ring-[#596B8E]/20',
   },
@@ -69,6 +73,7 @@ const CARD_THEMES: Record<StudyCardType, ThemeConfig> = {
     dividerClasses: 'border-[#4C7971]/15 dark:border-[#4C7971]/20',
     badgeClasses: 'text-[#4C7971] dark:text-[#639C92]',
     badgeBgClasses: 'bg-[#4C7971]/12 dark:bg-[#4C7971]/22',
+    headerHoverClasses: 'hover:bg-[#4C7971]/[0.06] dark:hover:bg-[#4C7971]/[0.08]',
     dotClasses: 'bg-[#4C7971] dark:bg-[#639C92]',
     ringClasses: 'ring-[#4C7971]/20',
   },
@@ -85,6 +90,7 @@ export const TafseerStudyCard: React.FC<TafseerStudyCardProps> = ({
   onActionClick,
   actionText,
 }) => {
+  const [isExpanded, setIsExpanded] = useState(true);
   const theme = CARD_THEMES[type] || CARD_THEMES.takeaways;
   const IconComponent = theme.icon;
 
@@ -92,65 +98,92 @@ export const TafseerStudyCard: React.FC<TafseerStudyCardProps> = ({
   const isRedundantTitle = !title ||
     /^(?:Revelation Context & Prophetic Traditions|Historical Context & Occasion of Revelation|Occasion of Revelation|Asbab al-Nuzul|Exegetical & Spiritual Insights from Ma'ariful Qur'an|Summary & Key Takeaways|Key Takeaways|Summary)$/i.test(title.trim());
 
+  const resolvedLabel = badgeLabel || theme.defaultBadge;
+
   return (
     <div
-      className={`relative p-4 sm:p-5 rounded-2xl border ${theme.borderClasses} ${theme.containerClasses} shadow-2xs space-y-3.5 transition-all select-text`}
+      className={`relative rounded-2xl border ${theme.borderClasses} ${theme.containerClasses} shadow-2xs overflow-hidden transition-all select-text`}
     >
-      {/* Header bar with icon and category badge */}
-      <div className={`flex items-center justify-between gap-2 border-b ${theme.dividerClasses} pb-3`}>
-        <div className="flex items-center gap-2.5">
+      {/* Collapsible Header bar with icon, category badge, and chevron */}
+      <button
+        type="button"
+        onClick={() => setIsExpanded((prev) => !prev)}
+        aria-expanded={isExpanded}
+        aria-label={`${isExpanded ? 'Collapse' : 'Expand'} ${resolvedLabel}`}
+        className={`w-full px-4 py-3 sm:px-5 sm:py-3.5 flex items-center justify-between gap-3 text-left ${theme.headerHoverClasses} transition-colors cursor-pointer select-none focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#CD7743]`}
+      >
+        <div className="flex items-center gap-2.5 min-w-0">
           <div className={`p-1.5 rounded-lg ${theme.badgeBgClasses} shrink-0`}>
             <IconComponent className={`w-4 h-4 ${theme.badgeClasses}`} />
           </div>
-          <span className={`text-xs font-semibold uppercase tracking-wider ${theme.badgeClasses}`}>
-            {badgeLabel || theme.defaultBadge}
+          <span className={`text-xs font-semibold uppercase tracking-wider ${theme.badgeClasses} truncate`}>
+            {resolvedLabel}
           </span>
         </div>
-      </div>
 
-      {/* Summary note / lead paragraph (if present and no bullet points) */}
-      {summary && (!points || points.length === 0) && (
-        <p className="text-[15px] sm:text-[15.5px] font-reader text-[#292524] dark:text-[#D6D3D1] leading-relaxed">
-          {summary.replace(/^["“”']+|["“”']+$/g, '')}
-        </p>
-      )}
-
-      {/* Specific section title if present and not redundant with card badge */}
-      {title && !isRedundantTitle && (
-        <h4 className="font-serif-heading font-semibold text-lg sm:text-[19px] text-stone-900 dark:text-stone-100 tracking-tight">
-          {title}
-        </h4>
-      )}
-
-      {/* Bullet points for takeaways */}
-      {points && points.length > 0 && (
-        <ul className="space-y-2.5 text-[15px] sm:text-[15.5px] text-stone-700 dark:text-stone-300 leading-relaxed font-reader">
-          {points.map((pt, idx) => (
-            <li key={`card-pt-${idx}`} className="flex items-start gap-2.5">
-              <span className={`w-1.5 h-1.5 rounded-full ${theme.dotClasses} shrink-0 mt-2 ring-2 ${theme.ringClasses}`} />
-              <span>{pt}</span>
-            </li>
-          ))}
-        </ul>
-      )}
-
-      {/* Narrative body for Ahkam, Insights, Asbab */}
-      {content && (
-        <div className="text-[15px] sm:text-[16px] leading-[1.8] text-stone-800 dark:text-stone-200 font-reader whitespace-pre-line">
-          {content}
+        <div className="flex items-center gap-2 shrink-0">
+          {!isExpanded && title && !isRedundantTitle && (
+            <span className="hidden sm:inline text-xs text-stone-500 dark:text-stone-400 font-reader truncate max-w-[260px]">
+              {title}
+            </span>
+          )}
+          <span className="p-0.5 rounded-md text-stone-400 dark:text-stone-500">
+            {isExpanded ? (
+              <ChevronDown className={`w-4 h-4 ${theme.badgeClasses}`} />
+            ) : (
+              <ChevronRight className="w-4 h-4" />
+            )}
+          </span>
         </div>
-      )}
+      </button>
 
-      {/* Action button if present */}
-      {onActionClick && actionText && (
-        <div className={`pt-2.5 border-t ${theme.dividerClasses} flex items-center justify-end text-xs font-reader`}>
-          <button
-            type="button"
-            onClick={onActionClick}
-            className={`${theme.badgeClasses} hover:underline font-medium cursor-pointer transition-colors ml-auto`}
-          >
-            {actionText}
-          </button>
+      {isExpanded && (
+        <div className={`px-4 pb-4 sm:px-5 sm:pb-5 pt-3.5 border-t ${theme.dividerClasses} space-y-3.5`}>
+          {/* Summary note / lead paragraph (if present and no bullet points) */}
+          {summary && (!points || points.length === 0) && (
+            <p className="text-[15px] sm:text-[15.5px] font-reader text-[#292524] dark:text-[#D6D3D1] leading-relaxed">
+              {summary.replace(/^["“”']+|["“”']+$/g, '')}
+            </p>
+          )}
+
+          {/* Specific section title if present and not redundant with card badge */}
+          {title && !isRedundantTitle && (
+            <h4 className="font-serif-heading font-semibold text-lg sm:text-[19px] text-stone-900 dark:text-stone-100 tracking-tight">
+              {title}
+            </h4>
+          )}
+
+          {/* Bullet points for takeaways */}
+          {points && points.length > 0 && (
+            <ul className="space-y-2.5 text-[15px] sm:text-[15.5px] text-stone-700 dark:text-stone-300 leading-relaxed font-reader">
+              {points.map((pt, idx) => (
+                <li key={`card-pt-${idx}`} className="flex items-start gap-2.5">
+                  <span className={`w-1.5 h-1.5 rounded-full ${theme.dotClasses} shrink-0 mt-2 ring-2 ${theme.ringClasses}`} />
+                  <span>{pt}</span>
+                </li>
+              ))}
+            </ul>
+          )}
+
+          {/* Narrative body for Ahkam, Insights, Asbab */}
+          {content && (
+            <div className="text-[15px] sm:text-[16px] leading-[1.8] text-stone-800 dark:text-stone-200 font-reader whitespace-pre-line">
+              {content}
+            </div>
+          )}
+
+          {/* Action button if present */}
+          {onActionClick && actionText && (
+            <div className={`pt-2.5 border-t ${theme.dividerClasses} flex items-center justify-end text-xs font-reader`}>
+              <button
+                type="button"
+                onClick={onActionClick}
+                className={`${theme.badgeClasses} hover:underline font-medium cursor-pointer transition-colors ml-auto`}
+              >
+                {actionText}
+              </button>
+            </div>
+          )}
         </div>
       )}
     </div>
