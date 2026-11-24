@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BookOpen, Quote, Sparkles, ChevronDown, ChevronRight } from 'lucide-react';
+import { ChevronDown, ChevronRight } from 'lucide-react';
 import { parseQuranCitation, formatQuranCitationFooter } from '../utils/quranCitation';
 import { parseHadithCitation, HADITH_SOURCES } from '../utils/hadithCitation';
 import { parseScholarCitation } from '../utils/scholarCitation';
@@ -107,14 +107,12 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
     switch (type) {
       case 'hadith':
         return {
-          icon: isHadithQudsi ? Sparkles : BookOpen,
           badgeTitle: hadithCitation
             ? hadithCitation.badgeLabel
             : isHadithQudsi
             ? 'Hadith Qudsi'
             : 'Hadith',
           badgeClasses: 'text-[#CD7743] dark:text-[#E08955]',
-          badgeBgClasses: 'bg-[#CD7743]/10 dark:bg-[#CD7743]/20',
           borderClasses: 'border-[#CD7743]/30 dark:border-[#E08955]/35 hover:border-[#CD7743]/50',
           defaultSource:
             hadithCitation?.fullCitation ||
@@ -124,19 +122,15 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
         };
       case 'scholar':
         return {
-          icon: Quote,
           badgeTitle: 'Classical Authority',
           badgeClasses: 'text-[#596B8E] dark:text-[#788BB3]',
-          badgeBgClasses: 'bg-[#596B8E]/10 dark:bg-[#596B8E]/20',
           borderClasses: 'border-[#596B8E]/30 dark:border-[#788BB3]/35 hover:border-[#596B8E]/50',
           defaultSource: scholarCitation?.fullCitation || "Ma'ariful Qur'an Classical Exegesis",
         };
       case 'quran':
         return {
-          icon: BookOpen,
           badgeTitle: "Qur'an",
           badgeClasses: 'text-[#4C7971] dark:text-[#639C92]',
-          badgeBgClasses: 'bg-[#4C7971]/10 dark:bg-[#4C7971]/20',
           borderClasses: 'border-[#4C7971]/30 dark:border-[#639C92]/35 hover:border-[#4C7971]/50',
           defaultSource: surahNumber
             ? formatQuranCitationFooter({ surahNumber, surahName })
@@ -144,17 +138,13 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
         };
       case 'dua':
         return {
-          icon: Sparkles,
           badgeTitle: "Supplication & Prayer · Du'a",
           badgeClasses: 'text-[#2D7266] dark:text-[#4AA291]',
-          badgeBgClasses: 'bg-[#2D7266]/10 dark:bg-[#2D7266]/20',
           borderClasses: 'border-[#2D7266]/30 dark:border-[#4AA291]/35 hover:border-[#2D7266]/50',
           defaultSource: "Qur'anic Supplication & Prophetic Du'a",
         };
     }
   }, [type, isHadithQudsi, hadithCitation, scholarCitation, surahNumber, surahName]);
-
-  const IconComponent = theme.icon;
 
   // Extract separate Arabic and English segments if not directly provided
   const { arabicText, englishText } = React.useMemo(() => {
@@ -296,9 +286,6 @@ export const TafseerQuoteCard: React.FC<TafseerQuoteCardProps> = ({
         className="w-full px-4 py-3 sm:px-5 sm:py-3.5 flex items-center justify-between gap-3 text-left hover:bg-stone-100/60 dark:hover:bg-stone-800/40 transition-colors cursor-pointer select-none focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#CD7743]"
       >
         <div className="flex items-center gap-2 min-w-0">
-          <div className={`p-1.5 rounded-lg ${theme.badgeBgClasses} shrink-0`}>
-            <IconComponent className={`w-3.5 h-3.5 ${theme.badgeClasses}`} />
-          </div>
           <span className={`text-xs font-semibold uppercase tracking-wider ${theme.badgeClasses} truncate`}>
             {theme.badgeTitle}
           </span>

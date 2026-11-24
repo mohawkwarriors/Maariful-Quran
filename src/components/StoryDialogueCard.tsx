@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BookOpen, MessageSquareQuote, ChevronDown, ChevronRight } from 'lucide-react';
+import { BookOpen, ChevronDown, ChevronRight } from 'lucide-react';
 
 export interface DialogueAyah {
   arabic: string;
@@ -43,9 +43,6 @@ export const StoryDialogueCard: React.FC<StoryDialogueCardProps> = ({
         className="w-full px-4 py-3 sm:px-5 sm:py-3.5 flex items-center justify-between gap-3 text-left hover:bg-stone-100/60 dark:hover:bg-stone-800/40 transition-colors cursor-pointer select-none focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#CD7743]"
       >
         <div className="flex items-center gap-2 min-w-0">
-          <div className="p-1.5 rounded-lg bg-[#CD7743]/10 dark:bg-[#CD7743]/20 shrink-0">
-            <MessageSquareQuote className="w-3.5 h-3.5 text-[#CD7743] dark:text-[#E08955]" />
-          </div>
           <span className="text-xs font-semibold uppercase tracking-wider text-[#CD7743] dark:text-[#E08955] truncate">
             {label}
           </span>
