@@ -1281,7 +1281,7 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
           <div
             dir="rtl"
             lang="ar"
-            className="font-quran text-[26px] sm:text-[30px] md:text-[32px] leading-[2.25] sm:leading-[2.45] text-right text-[#111827] dark:text-[#F9FAFB] px-5 pt-5 pb-7 sm:px-8 sm:pt-7 sm:pb-9 rounded-2xl bg-[#FCFAF7] dark:bg-[#1E1E22] border border-[#ECE7DF] dark:border-[#2D2D33] shadow-xs select-text overflow-visible"
+            className="font-quran text-[21px] sm:text-[23px] md:text-[24px] leading-[2.1] sm:leading-[2.25] text-right text-[#111827] dark:text-[#F9FAFB] px-5 pt-4 pb-6 sm:px-8 sm:pt-6 sm:pb-8 rounded-2xl bg-[#FCFAF7] dark:bg-[#1E1E22] border border-[#ECE7DF] dark:border-[#2D2D33] shadow-xs select-text overflow-visible"
           >
             {versesData.some((v) => v.words.length > 0)
               ? versesData.map(({ vNum, words }) => (
@@ -1303,7 +1303,7 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
                             <span id={`mushaf-ayah-${vNum}`} className="inline">
                               <AyahEndMarker
                                 vNum={vNum}
-                                size="lg"
+                                size="md"
                                 className="mx-1.5 !align-middle -translate-y-0.5"
                               />
                             </span>
@@ -1325,7 +1325,7 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
                       <span id={`mushaf-ayah-${vNum}`} className="inline">
                         <AyahEndMarker
                           vNum={vNum}
-                          size="lg"
+                          size="md"
                           className="mx-1.5 !align-middle -translate-y-0.5"
                         />
                       </span>
@@ -1353,7 +1353,7 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
                       <span key={`mushaf-ayah-${vNum}-${match.index}`} id={`mushaf-ayah-${vNum}`} className="inline">
                         <AyahEndMarker
                           vNum={vNum}
-                          size="lg"
+                          size="md"
                           className="mx-1.5 !align-middle -translate-y-0.5"
                         />
                       </span>
