@@ -59,13 +59,13 @@ export const FootnotePopover: React.FC<FootnotePopoverProps> = ({ id, note, sect
 
   return (
     <Popover.Root open={open} onOpenChange={setOpen}>
-      <sup id={anchorId} className="inline-block align-baseline">
+      <sup id={anchorId} className="inline-block align-baseline -top-[0.55em] relative leading-none">
         <Popover.Trigger asChild>
           <button
             type="button"
             onPointerEnter={handlePointerEnter}
             onPointerLeave={handlePointerLeave}
-            className="inline-flex items-center justify-center font-sans font-semibold text-[11px] leading-none text-[#CD7743] hover:text-[#B56332] dark:text-[#E08955] dark:hover:text-[#F29F6D] bg-[#CD7743]/10 dark:bg-[#E08955]/15 hover:bg-[#CD7743]/20 dark:hover:bg-[#E08955]/25 border border-[#CD7743]/30 dark:border-[#E08955]/40 rounded-sm px-1.5 py-0.5 mx-0.5 transition-all cursor-pointer shadow-2xs select-none focus:outline-none focus-visible:ring-1 focus-visible:ring-[#CD7743]"
+            className="inline-flex items-center justify-center font-sans font-semibold text-[10.5px] leading-none text-[#CD7743] hover:text-[#B56332] dark:text-[#E08955] dark:hover:text-[#F29F6D] hover:underline ml-0.5 mr-0.5 transition-colors cursor-pointer select-none focus:outline-none focus-visible:ring-1 focus-visible:ring-[#CD7743]"
             aria-label={`Footnote ${id}: ${note.author ? note.author + ' - ' : ''}${note.text.slice(0, 50)}...`}
             title="Hover or click to view scholarly footnote"
           >
