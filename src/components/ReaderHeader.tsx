@@ -1,7 +1,8 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Sun, Moon, LayoutGrid, Columns, Menu, BookOpen, Bookmark, BookmarkCheck, Check, X, PanelLeftOpen } from 'lucide-react';
 import { BookmarkRecord } from '../types/quran';
+import { claimActivePopover, releaseActivePopover } from '../utils/popoverCoordinator';
 
 interface ReaderHeaderProps {
   surahName: string;
@@ -50,45 +51,84 @@ export const ReaderHeader: React.FC<ReaderHeaderProps> = ({
   const [feedbackType, setFeedbackType] = useState<'saved' | 'removed'>('saved');
   const [isBookmarksMenuOpen, setIsBookmarksMenuOpen] = useState(false);
   const bookmarksMenuRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (!isBookmarksMenuOpen) return;
-    const handlePointerDown = (e: MouseEvent) => {
-      if (bookmarksMenuRef.current && !bookmarksMenuRef.current.contains(e.target as Node)) {
-        setIsBookmarksMenuOpen(false);
-      }
-    };
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        setIsBookmarksMenuOpen(false);
-      }
-    };
-    document.addEventListener('mousedown', handlePointerDown);
-    document.addEventListener('keydown', handleKeyDown);
-    return () => {
-      document.removeEventListener('mousedown', handlePointerDown);
-      document.removeEventListener('keydown', handleKeyDown);
-    };
-  }, [isBookmarksMenuOpen]);
+  const feedbackTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const menuCoordinatorIdRef = useRef<symbol | null>(null);
+  if (menuCoordinatorIdRef.current === null) {
+    menuCoordinatorIdRef.current = Symbol('bookmarks-menu');
+  }
 
   // Consolidate bookmarks list
   const allBookmarks: BookmarkRecord[] =
     bookmarks.length > 0 ? bookmarks : bookmark ? [bookmark] : [];
 
-  // Check if current active section is bookmarked
+  const closeBookmarksMenu = useCallback(() => {
+    setIsBookmarksMenuOpen(false);
+  }, []);
+
+  // Reset menu open state if the last bookmark is removed
+  useEffect(() => {
+    if (allBookmarks.length === 0 && isBookmarksMenuOpen) {
+      setIsBookmarksMenuOpen(false);
+    }
+  }, [allBookmarks.length, isBookmarksMenuOpen]);
+
+  // Cleanup toast timer on unmount
+  useEffect(() => {
+    return () => {
+      if (feedbackTimerRef.current) {
+        clearTimeout(feedbackTimerRef.current);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    const id = menuCoordinatorIdRef.current!;
+    if (!isBookmarksMenuOpen) {
+      releaseActivePopover(id);
+      return;
+    }
+
+    claimActivePopover(id, true, closeBookmarksMenu);
+
+    const handlePointerDown = (e: PointerEvent) => {
+      if (bookmarksMenuRef.current && !bookmarksMenuRef.current.contains(e.target as Node)) {
+        setIsBookmarksMenuOpen(false);
+      }
+    };
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && !e.defaultPrevented) {
+        e.preventDefault();
+        setIsBookmarksMenuOpen(false);
+      }
+    };
+    document.addEventListener('pointerdown', handlePointerDown);
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('pointerdown', handlePointerDown);
+      document.removeEventListener('keydown', handleKeyDown);
+      releaseActivePopover(id);
+    };
+  }, [isBookmarksMenuOpen, closeBookmarksMenu]);
+
+  // Check if current active section is bookmarked (false while Surah is loading and no section is resolved)
   const isCurrentlyBookmarked = activeSectionId
     ? allBookmarks.some(
         (b) => b.surahNumber === surahNumber && b.sectionId === activeSectionId
       )
-    : allBookmarks.some((b) => b.surahNumber === surahNumber);
+    : false;
 
   const handleBookmarkClick = () => {
+    if (!activeSectionId) return;
     const nextState = !isCurrentlyBookmarked;
     onToggleBookmark();
     setFeedbackType(nextState ? 'saved' : 'removed');
     setShowFeedback(true);
-    setTimeout(() => {
+    if (feedbackTimerRef.current) {
+      clearTimeout(feedbackTimerRef.current);
+    }
+    feedbackTimerRef.current = setTimeout(() => {
       setShowFeedback(false);
+      feedbackTimerRef.current = null;
     }, 2200);
   };
 
@@ -125,7 +165,7 @@ export const ReaderHeader: React.FC<ReaderHeaderProps> = ({
           </span>
           {activeVerseRange && (
             <>
-              <span className="text-stone-400" aria-hidden="true">·</span>
+              <span className="text-stone-400 hidden sm:inline" aria-hidden="true">·</span>
               <span className="text-[#596B8E] dark:text-[#8FA0C5] whitespace-nowrap hidden sm:inline font-medium">
                 Verses {activeVerseRange[0]}–{activeVerseRange[1]}
               </span>
@@ -222,11 +262,14 @@ export const ReaderHeader: React.FC<ReaderHeaderProps> = ({
         <div className="relative">
           <button
             type="button"
+            disabled={!activeSectionId}
             onClick={handleBookmarkClick}
-            className={`w-8 h-8 sm:w-8.5 sm:h-8.5 flex items-center justify-center rounded-lg text-xs font-medium transition-all cursor-pointer border ${
-              isCurrentlyBookmarked
-                ? 'bg-[#CD7743]/15 dark:bg-[#CD7743]/25 text-[#CD7743] dark:text-[#E08955] border-[#CD7743]/50 shadow-xs hover:bg-red-50 dark:hover:bg-red-950/30 hover:border-red-300 dark:hover:border-red-800/50 hover:text-red-600 dark:hover:text-red-400'
-                : 'bg-stone-100/80 dark:bg-[#25252A] text-stone-700 dark:text-stone-300 border-stone-200 dark:border-stone-700/60 hover:text-stone-900 dark:hover:text-stone-100 hover:border-[#CD7743]/40'
+            className={`w-8 h-8 sm:w-8.5 sm:h-8.5 flex items-center justify-center rounded-lg text-xs font-medium transition-all border ${
+              !activeSectionId
+                ? 'opacity-50 cursor-not-allowed bg-stone-100/80 dark:bg-[#25252A] text-stone-400 border-stone-200 dark:border-stone-700/60'
+                : isCurrentlyBookmarked
+                ? 'cursor-pointer bg-[#CD7743]/15 dark:bg-[#CD7743]/25 text-[#CD7743] dark:text-[#E08955] border-[#CD7743]/50 shadow-xs hover:bg-red-50 dark:hover:bg-red-950/30 hover:border-red-300 dark:hover:border-red-800/50 hover:text-red-600 dark:hover:text-red-400'
+                : 'cursor-pointer bg-stone-100/80 dark:bg-[#25252A] text-stone-700 dark:text-stone-300 border-stone-200 dark:border-stone-700/60 hover:text-stone-900 dark:hover:text-stone-100 hover:border-[#CD7743]/40'
             }`}
             title={
               isCurrentlyBookmarked
@@ -251,12 +294,12 @@ export const ReaderHeader: React.FC<ReaderHeaderProps> = ({
                 initial={{ opacity: 0, y: 8, scale: 0.95 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 exit={{ opacity: 0, y: -4, scale: 0.95 }}
-                className="fixed sm:absolute right-3 sm:right-0 top-15 sm:top-full sm:mt-2 w-64 max-w-[calc(100vw-1.5rem)] p-2.5 rounded-lg bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-950 text-xs shadow-xl z-50 pointer-events-none flex items-start gap-2"
+                className="fixed sm:absolute right-3 sm:right-0 top-15 sm:top-full sm:mt-2 w-64 max-w-[calc(100vw-1.5rem)] overflow-hidden p-2.5 rounded-lg bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-950 text-xs shadow-xl z-50 pointer-events-none flex items-start gap-2"
               >
                 {feedbackType === 'removed' ? (
                   <>
                     <Bookmark className="w-4 h-4 text-stone-400 dark:text-stone-600 shrink-0 mt-0.5" />
-                    <div>
+                    <div className="min-w-0 flex-1">
                       <div className="font-semibold">Bookmark removed</div>
                       <div className="text-[11px] opacity-80 truncate">
                         {activeSectionTitle || `Cleared for Surah ${surahNumber}`}
@@ -266,7 +309,7 @@ export const ReaderHeader: React.FC<ReaderHeaderProps> = ({
                 ) : (
                   <>
                     <Check className="w-4 h-4 text-[#4C7971] dark:text-[#4C7971] shrink-0 mt-0.5" />
-                    <div>
+                    <div className="min-w-0 flex-1">
                       <div className="font-semibold">Section bookmarked!</div>
                       <div className="text-[11px] opacity-80 truncate">
                         Surah {surahNumber} · {activeSectionTitle || (activeVerseRange ? `Verses ${activeVerseRange[0]}–${activeVerseRange[1]}` : surahName)}

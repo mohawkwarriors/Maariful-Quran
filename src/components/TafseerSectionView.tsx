@@ -1,8 +1,13 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { ThematicSection, PhraseCard, SubSection, FootnoteItem } from '../types/quran';
 import { AnnotatedTranslation } from './AnnotatedTranslation';
 import { WordDeepDiveModal } from './WordDeepDiveModal';
-import { getWordDeepDive, stripArabicDiacritics, onCorpusMorphologyLoaded } from '../services/quranLexicon';
+import {
+  getWordDeepDive,
+  stripArabicDiacritics,
+  onCorpusMorphologyLoaded,
+  isCorpusMorphologyLoaded,
+} from '../services/quranLexicon';
 import { TafseerStudyCard, StudyCardType } from './TafseerStudyCard';
 import { TafseerQuoteCard, QuoteType } from './TafseerQuoteCard';
 import { StoryDialogueCard } from './StoryDialogueCard';
@@ -11,6 +16,7 @@ import { renderContentWithFootnotes, FootnotesSection } from './FootnotePopover'
 import { SURAH_TRANSLITERATED_NAMES, matchAyahFromSection, parseQuranCitation } from '../utils/quranCitation';
 import { interleaveStudyCards, RawCommentaryBlock } from '../utils/cardPlacement';
 import { matchStoryDialogueSequence } from '../utils/storyDialogue';
+import { useHoverClickPopover } from '../hooks/useHoverClickPopover';
 import { ChevronDown, ChevronUp, Bookmark, ArrowUpRight } from 'lucide-react';
 
 interface TafseerSectionViewProps {
@@ -19,6 +25,7 @@ interface TafseerSectionViewProps {
   isActive: boolean;
   isBookmarked?: boolean;
   onToggleBookmark?: () => void;
+  onToggleBookmarkSection?: (section: ThematicSection) => void;
 }
 
 interface WordItemProps {
@@ -26,6 +33,7 @@ interface WordItemProps {
   meaning: string;
   root?: string;
   grammarNote?: string;
+  corpusVersion?: number;
 }
 
 // Quranic pause/waqf marks: ۖ (U+06D6), ۗ (U+06D7), ۘ (U+06D8), ۙ (U+06D9), ۚ (U+06DA), ۛ (U+06DB), ۜ (U+06DC), and Sajdah ۩ (U+06E9)
@@ -33,83 +41,43 @@ const QURAN_STOP_MARKS_REGEX = /^[\u06D6-\u06DC\u06E9]+$/;
 // Quranic section/division marks: ۞ (U+06DE Rub el Hizb)
 const QURAN_PREFIX_MARKS_REGEX = /^[\u06DE]+$/;
 
-const WordItem: React.FC<WordItemProps> = ({ word, meaning, root, grammarNote }) => {
-  const [open, setOpen] = useState(false);
-  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const openedViaHoverRef = useRef(false);
-  const isPinnedRef = useRef(false);
+const isPlaceholderMeaning = (s?: string) =>
+  !s || s === 'Quranic phrase meaning' || s === 'Quranic term';
 
-  // Deep dive data with root, other meanings, related words, and cross-Quran occurrences
-  const deepDiveData = getWordDeepDive(word, meaning, root, grammarNote);
+const WordItem: React.FC<WordItemProps> = React.memo(({ word, meaning, root, grammarNote, corpusVersion: _corpusVersion }) => {
+  const {
+    isActivated,
+    open,
+    triggerRef,
+    handleOpenChange,
+    handleMouseEnter,
+    handleMouseLeave,
+    handlePointerEnter,
+    handlePointerLeave,
+    handleTriggerClick,
+    handleKeyDown,
+    handleKeyUp,
+  } = useHoverClickPopover<HTMLDivElement>({
+    lazy: true,
+    disableHoverOnMobile: true,
+    label: 'word-item',
+  });
 
-  const isPlaceholder = (s?: string) =>
-    !s || s === 'Quranic phrase meaning' || s === 'Quranic term';
-  const displayMeaning = !isPlaceholder(meaning)
+  // Compute deep-dive data lazily on activation (or only when fallback label is needed)
+  const needsFallbackMeaning = isPlaceholderMeaning(meaning);
+  const deepDiveData = isActivated || needsFallbackMeaning
+    ? getWordDeepDive(word, meaning, root, grammarNote)
+    : null;
+
+  const displayMeaning = !needsFallbackMeaning
     ? meaning
-    : !isPlaceholder(deepDiveData.primaryMeaning)
-    ? deepDiveData.primaryMeaning
-    : deepDiveData.lemmaTransliteration || deepDiveData.transliteration || '—';
-
-  const handleOpenChange = (nextOpen: boolean) => {
-    if (!nextOpen) {
-      openedViaHoverRef.current = false;
-      isPinnedRef.current = false;
-    }
-    setOpen(nextOpen);
-  };
-
-  const handleMouseEnter = () => {
-    if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    if (!open) {
-      openedViaHoverRef.current = true;
-    }
-    setOpen(true);
-  };
-
-  const handleMouseLeave = () => {
-    if (isPinnedRef.current) return;
-    if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    timeoutRef.current = setTimeout(() => {
-      openedViaHoverRef.current = false;
-      setOpen(false);
-    }, 200);
-  };
-
-  const handleTriggerClick = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (open && openedViaHoverRef.current) {
-      // Clicking a hover-opened word pins it open instead of closing it
-      e.preventDefault();
-      openedViaHoverRef.current = false;
-      isPinnedRef.current = true;
-    } else if (!open) {
-      isPinnedRef.current = true;
-    }
-  };
-
-  useEffect(() => {
-    return () => {
-      if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    };
-  }, []);
-
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
-    if (e.key === 'Enter') {
-      e.preventDefault();
-      handleOpenChange(!open);
-    } else if (e.key === ' ') {
-      e.preventDefault();
-    }
-  };
-
-  const handleKeyUp = (e: React.KeyboardEvent<HTMLDivElement>) => {
-    if (e.key === ' ') {
-      e.preventDefault();
-      handleOpenChange(!open);
-    }
-  };
+    : !isPlaceholderMeaning(deepDiveData?.primaryMeaning)
+    ? deepDiveData!.primaryMeaning
+    : deepDiveData?.lemmaTransliteration || deepDiveData?.transliteration || '—';
 
   const trigger = (
     <div
+      ref={triggerRef}
       role="button"
       tabIndex={0}
       aria-expanded={open}
@@ -139,9 +107,21 @@ const WordItem: React.FC<WordItemProps> = ({ word, meaning, root, grammarNote })
     </div>
   );
 
+  if (!isActivated) {
+    return (
+      <span
+        className="inline-block"
+        onPointerEnter={handlePointerEnter}
+        onPointerLeave={handlePointerLeave}
+      >
+        {trigger}
+      </span>
+    );
+  }
+
   return (
     <WordDeepDiveModal
-      data={deepDiveData}
+      data={deepDiveData!}
       open={open}
       onOpenChange={handleOpenChange}
       trigger={trigger}
@@ -149,89 +129,34 @@ const WordItem: React.FC<WordItemProps> = ({ word, meaning, root, grammarNote })
       onMouseLeave={handleMouseLeave}
     />
   );
-};
+});
 
 /**
  * Interactive Arabic word token for the continuous Mushaf block in Separate view.
  * Lazily mounts WordDeepDiveModal on hover, click, or keyboard activation to keep large Surahs instant.
  */
-const MushafWordItem: React.FC<WordItemProps> = React.memo(({ word, meaning, root, grammarNote }) => {
-  const [isActivated, setIsActivated] = useState(false);
-  const [open, setOpen] = useState(false);
-  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const openedViaHoverRef = useRef(false);
-  const isPinnedRef = useRef(false);
-
-  useEffect(() => {
-    return () => {
-      if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    };
-  }, []);
-
-  const handleOpenChange = (nextOpen: boolean) => {
-    if (!nextOpen) {
-      openedViaHoverRef.current = false;
-      isPinnedRef.current = false;
-    }
-    setOpen(nextOpen);
-  };
-
-  const handleMouseEnter = () => {
-    if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    if (!isActivated) setIsActivated(true);
-    if (!open) {
-      openedViaHoverRef.current = true;
-    }
-    setOpen(true);
-  };
-
-  const handleMouseLeave = () => {
-    if (isPinnedRef.current) return;
-    if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    timeoutRef.current = setTimeout(() => {
-      openedViaHoverRef.current = false;
-      setOpen(false);
-    }, 200);
-  };
-
-  const handleTriggerClick = (e: React.MouseEvent<HTMLSpanElement>) => {
-    if (!isActivated) {
-      setIsActivated(true);
-      isPinnedRef.current = true;
-      setOpen(true);
-      return;
-    }
-    if (open && openedViaHoverRef.current) {
-      e.preventDefault();
-      openedViaHoverRef.current = false;
-      isPinnedRef.current = true;
-    } else if (!open) {
-      isPinnedRef.current = true;
-    }
-  };
-
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLSpanElement>) => {
-    if (e.key === 'Enter') {
-      e.preventDefault();
-      if (!isActivated) setIsActivated(true);
-      isPinnedRef.current = !open;
-      handleOpenChange(!open);
-    } else if (e.key === ' ') {
-      e.preventDefault();
-    }
-  };
-
-  const handleKeyUp = (e: React.KeyboardEvent<HTMLSpanElement>) => {
-    if (e.key === ' ') {
-      e.preventDefault();
-      if (!isActivated) setIsActivated(true);
-      isPinnedRef.current = !open;
-      handleOpenChange(!open);
-    }
-  };
+const MushafWordItem: React.FC<WordItemProps> = React.memo(({ word, meaning, root, grammarNote, corpusVersion: _corpusVersion }) => {
+  const {
+    isActivated,
+    open,
+    triggerRef,
+    handleOpenChange,
+    handleMouseEnter,
+    handleMouseLeave,
+    handlePointerEnter,
+    handlePointerLeave,
+    handleTriggerClick,
+    handleKeyDown,
+    handleKeyUp,
+  } = useHoverClickPopover<HTMLSpanElement>({
+    lazy: true,
+    disableHoverOnMobile: true,
+    label: 'mushaf-word',
+  });
 
   const trigger = (
     <span
+      ref={triggerRef}
       role="button"
       tabIndex={0}
       aria-expanded={open}
@@ -253,14 +178,8 @@ const MushafWordItem: React.FC<WordItemProps> = React.memo(({ word, meaning, roo
     return (
       <span
         className="inline-block"
-        onPointerEnter={(e) => {
-          if (e.pointerType !== 'mouse') return;
-          handleMouseEnter();
-        }}
-        onPointerLeave={(e) => {
-          if (e.pointerType !== 'mouse') return;
-          handleMouseLeave();
-        }}
+        onPointerEnter={handlePointerEnter}
+        onPointerLeave={handlePointerLeave}
       >
         {trigger}
       </span>
@@ -300,20 +219,42 @@ const TafseerVerseHeading: React.FC<{
   sectionId?: string;
 }> = ({ label, verseSnippet, sectionId }) => {
   const { displayTitle, primaryNum } = parseVerseMarker(label);
+  const highlightCleanupRef = useRef<(() => void) | null>(null);
+
+  useEffect(() => {
+    return () => {
+      highlightCleanupRef.current?.();
+    };
+  }, []);
 
   const handleClick = () => {
     const targetEl =
       document.getElementById(`verse-card-${primaryNum}`) ||
-      (sectionId ? document.getElementById(`translation-block-${sectionId}`) : null) ||
       document.getElementById(`translation-ayah-${primaryNum}`) ||
       document.getElementById(`mushaf-ayah-${primaryNum}`) ||
+      (sectionId ? document.getElementById(`translation-block-${sectionId}`) : null) ||
       document.getElementById('translation-block');
     if (targetEl) {
+      highlightCleanupRef.current?.();
       targetEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      targetEl.classList.add('ring-2', 'ring-[#CD7743]/60', 'transition-all');
-      setTimeout(() => {
-        targetEl.classList.remove('ring-2', 'ring-[#CD7743]/60');
+      const isAyahMarker =
+        targetEl.id.startsWith('translation-ayah-') || targetEl.id.startsWith('mushaf-ayah-');
+      const highlightEl =
+        isAyahMarker && targetEl.firstElementChild instanceof HTMLElement
+          ? targetEl.firstElementChild
+          : targetEl;
+      const highlightClasses = isAyahMarker
+        ? ['rounded-full', 'ring-2', 'ring-[#CD7743]/70', 'ring-offset-2', 'transition-all']
+        : ['ring-2', 'ring-[#CD7743]/60', 'transition-all'];
+      highlightEl.classList.add(...highlightClasses);
+      const timer = setTimeout(() => {
+        highlightEl.classList.remove(...highlightClasses);
+        highlightCleanupRef.current = null;
       }, 1800);
+      highlightCleanupRef.current = () => {
+        clearTimeout(timer);
+        highlightEl.classList.remove(...highlightClasses);
+      };
     }
   };
 
@@ -952,16 +893,24 @@ const TafseerCommentaryBlock: React.FC<{
   );
 };
 
-export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
+const TafseerSectionViewBase: React.FC<TafseerSectionViewProps> = ({
   section,
   viewMode,
   isActive,
   isBookmarked = false,
   onToggleBookmark,
+  onToggleBookmarkSection,
 }) => {
+  const handleToggleBookmark = onToggleBookmarkSection
+    ? () => onToggleBookmarkSection(section)
+    : onToggleBookmark;
   const [isSectionCollapsed, setIsSectionCollapsed] = useState(false);
-  const [corpusVersion, setCorpusVersion] = useState(0);
+  const [corpusVersion, setCorpusVersion] = useState(() => (isCorpusMorphologyLoaded() ? 1 : 0));
   useEffect(() => {
+    if (isCorpusMorphologyLoaded()) {
+      setCorpusVersion((v) => (v === 0 ? 1 : v));
+      return;
+    }
     return onCorpusMorphologyLoaded(() => setCorpusVersion((v) => v + 1));
   }, []);
   const surahName = SURAH_TRANSLITERATED_NAMES[section.surahNumber];
@@ -1227,10 +1176,10 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
 
         <div className="flex items-center gap-2 shrink-0 mt-1">
           {/* Bookmark Section Button (Icon only - no text) */}
-          {onToggleBookmark && (
+          {handleToggleBookmark && (
             <button
               type="button"
-              onClick={onToggleBookmark}
+              onClick={handleToggleBookmark}
               className={`w-8 h-8 rounded-xl border flex items-center justify-center transition-all cursor-pointer shadow-2xs ${
                 isBookmarked
                   ? 'bg-[#CD7743]/15 dark:bg-[#CD7743]/25 text-[#CD7743] dark:text-[#E08955] border-[#CD7743]/50 hover:bg-red-50 dark:hover:bg-red-950/30 hover:border-red-300 dark:hover:border-red-800/50 hover:text-red-600'
@@ -1299,6 +1248,7 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
                               meaning={item.meaning}
                               root={item.root}
                               grammarNote={item.grammarNote}
+                              corpusVersion={corpusVersion}
                             />
                             <span id={`mushaf-ayah-${vNum}`} className="inline">
                               <AyahEndMarker
@@ -1317,6 +1267,7 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
                             meaning={item.meaning}
                             root={item.root}
                             grammarNote={item.grammarNote}
+                            corpusVersion={corpusVersion}
                           />{' '}
                         </React.Fragment>
                       );
@@ -1428,6 +1379,7 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
                             meaning={item.meaning}
                             root={item.root}
                             grammarNote={item.grammarNote}
+                            corpusVersion={corpusVersion}
                           />
                           <div className="flex items-center justify-center h-[48px] sm:h-[52px] pt-1.5 shrink-0">
                             <AyahEndMarker vNum={vNum} size="lg" />
@@ -1442,6 +1394,7 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
                         meaning={item.meaning}
                         root={item.root}
                         grammarNote={item.grammarNote}
+                        corpusVersion={corpusVersion}
                       />
                     );
                   })}
@@ -1488,3 +1441,5 @@ export const TafseerSectionView: React.FC<TafseerSectionViewProps> = ({
     </section>
   );
 };
+
+export const TafseerSectionView = React.memo(TafseerSectionViewBase);

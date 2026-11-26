@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React from 'react';
 import * as Popover from '@radix-ui/react-popover';
 import { BookOpen, X, Layers, ArrowUpRight } from 'lucide-react';
 import { CuratedTerm } from '../types/quran';
@@ -6,6 +6,7 @@ import { VOCABULARY_KNOWLEDGE } from '../services/vocabularyKnowledge';
 import { getWordDeepDive } from '../services/quranLexicon';
 import { formatArabicEnglishInsight, parseRootDisplay } from '../utils/textFormatter';
 import { getEjtaalUrl } from '../lib/utils';
+import { useHoverClickPopover } from '../hooks/useHoverClickPopover';
 
 interface TermPopoverProps {
   termText: string;
@@ -13,8 +14,16 @@ interface TermPopoverProps {
 }
 
 export const TermPopover: React.FC<TermPopoverProps> = ({ termText, termData }) => {
-  const [open, setOpen] = useState(false);
-  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const {
+    open,
+    handleOpenChange,
+    handlePointerEnter,
+    handlePointerLeave,
+    handleTriggerClick,
+  } = useHoverClickPopover({
+    closeDelayMs: 180,
+    label: 'term-popover',
+  });
 
   // Look up enriched knowledge based on termText
   const cleanKey = termText.toLowerCase().replace(/[^\w\s-]/g, '').trim();
@@ -80,32 +89,8 @@ export const TermPopover: React.FC<TermPopoverProps> = ({ termText, termData }) 
     volumeReference: termData?.volumeReference || knownData?.volumeReference || "Ma'ariful Qur'an Exegesis",
   };
 
-  // Hover handlers gated strictly to mouse pointers so touch devices don't double-toggle on tap
-  const handlePointerEnter = (e: React.PointerEvent) => {
-    if (e.pointerType !== 'mouse') return;
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-      timeoutRef.current = null;
-    }
-    setOpen(true);
-  };
-
-  const handlePointerLeave = (e: React.PointerEvent) => {
-    if (e.pointerType !== 'mouse') return;
-    if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    timeoutRef.current = setTimeout(() => {
-      setOpen(false);
-    }, 180);
-  };
-
-  useEffect(() => {
-    return () => {
-      if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    };
-  }, []);
-
   return (
-    <Popover.Root open={open} onOpenChange={setOpen}>
+    <Popover.Root open={open} onOpenChange={handleOpenChange}>
       <span
         onPointerEnter={handlePointerEnter}
         onPointerLeave={handlePointerLeave}
@@ -114,6 +99,7 @@ export const TermPopover: React.FC<TermPopoverProps> = ({ termText, termData }) 
         <Popover.Trigger asChild>
           <button
             type="button"
+            onClick={handleTriggerClick}
             className="inline-flex items-baseline text-inherit border-b border-dotted border-[#CD7743]/80 hover:text-[#CD7743] dark:hover:text-[#E08955] hover:border-solid transition-colors cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#CD7743] rounded-xs px-0.5 font-medium"
             title="Hover or click to view root, meaning, and exegesis"
           >
@@ -126,9 +112,11 @@ export const TermPopover: React.FC<TermPopoverProps> = ({ termText, termData }) 
         <Popover.Content
           onPointerEnter={handlePointerEnter}
           onPointerLeave={handlePointerLeave}
+          onOpenAutoFocus={(e) => e.preventDefault()}
+          onCloseAutoFocus={(e) => e.preventDefault()}
           collisionPadding={{ top: 68, right: 16, bottom: 16, left: 16 }}
-          style={{ maxHeight: 'min(82vh, var(--radix-popover-content-available-height, 82vh))' }}
-          className="z-50 w-[500px] sm:w-[580px] max-w-[95vw] overflow-y-auto overscroll-contain p-5 sm:p-6 bg-white dark:bg-[#202025] border border-stone-200 dark:border-stone-700/80 rounded-2xl shadow-2xl text-[#1F2937] dark:text-[#F3F4F6] text-xs sm:text-[13px] animate-in fade-in zoom-in-95 duration-150 space-y-3.5"
+          style={{ maxHeight: 'min(82vh, var(--radix-popover-content-available-height, 45vh))' }}
+          className="z-50 w-[500px] sm:w-[580px] max-w-[calc(100vw-2rem)] overflow-y-auto overscroll-contain p-5 sm:p-6 bg-white dark:bg-[#202025] border border-stone-200 dark:border-stone-700/80 rounded-2xl shadow-2xl text-[#1F2937] dark:text-[#F3F4F6] text-xs sm:text-[13px] animate-in fade-in zoom-in-95 duration-150 space-y-3.5"
           sideOffset={8}
         >
           {/* 1. Header: Word, Root, Close Button */}

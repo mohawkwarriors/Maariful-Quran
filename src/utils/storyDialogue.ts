@@ -19,7 +19,7 @@ export function matchStoryDialogueSequence(
 
   // Trigger on the Abu Hazim encounter
   const isAbuHazimIntro =
-    current.includes('Sulayman ibn ` Abd al-Malik') &&
+    /Sulayman\s+ibn\s+[`'’]?\s*Abd\s+al-Malik/i.test(current) &&
     (current.includes('Abu Hazim') || current.includes('meet someone who had lived with a Companion'));
 
   if (!isAbuHazimIntro) return null;

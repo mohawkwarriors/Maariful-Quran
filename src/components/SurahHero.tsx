@@ -6,7 +6,7 @@ interface SurahHeroProps {
   surah: SurahData;
 }
 
-export const SurahHero: React.FC<SurahHeroProps> = ({ surah }) => {
+const SurahHeroBase: React.FC<SurahHeroProps> = ({ surah }) => {
   const historicalContext = surah.historicalContext || {
     background: `Surah ${surah.nameTransliterated} (${surah.nameEnglish}) was revealed during the ${surah.revelationType} phase of the prophetic mission, comprising ${surah.versesCount} verses across Juz ${surah.juz.join(', ')}. Classical exegesis in Ma'ariful Qur'an records that this chapter addresses foundational guidance pertinent to the ${surah.revelationType} community, clarifying theology, moral perseverance, and divine injunctions.`,
   };
@@ -77,3 +77,5 @@ export const SurahHero: React.FC<SurahHeroProps> = ({ surah }) => {
     </div>
   );
 };
+
+export const SurahHero = React.memo(SurahHeroBase);

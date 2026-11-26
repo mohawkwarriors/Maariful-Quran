@@ -1,7 +1,15 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import * as Popover from '@radix-ui/react-popover';
 import { BookMarked, X, ChevronDown, ChevronUp, Feather } from 'lucide-react';
 import { FootnoteItem } from '../types/quran';
+import { useHoverClickPopover } from '../hooks/useHoverClickPopover';
+
+const EXPAND_FOOTNOTES_EVENT = 'maariful:expand-footnotes';
+
+interface ExpandFootnotesDetail {
+  sectionId?: string;
+  targetId: string;
+}
 
 export interface FootnotePopoverProps {
   id: number;
@@ -10,59 +18,38 @@ export interface FootnotePopoverProps {
 }
 
 export const FootnotePopover: React.FC<FootnotePopoverProps> = ({ id, note, sectionId }) => {
-  const [open, setOpen] = useState(false);
-  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
-
-  useEffect(() => {
-    return () => {
-      if (timeoutRef.current) {
-        clearTimeout(timeoutRef.current);
-      }
-    };
-  }, []);
-
-  const handlePointerEnter = (e: React.PointerEvent) => {
-    if (e.pointerType !== 'mouse') return;
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-      timeoutRef.current = null;
-    }
-    setOpen(true);
-  };
-
-  const handlePointerLeave = (e: React.PointerEvent) => {
-    if (e.pointerType !== 'mouse') return;
-    if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    timeoutRef.current = setTimeout(() => {
-      setOpen(false);
-    }, 220);
-  };
-
-  const handlePopoverContentPointerEnter = (e: React.PointerEvent) => {
-    if (e.pointerType !== 'mouse') return;
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-      timeoutRef.current = null;
-    }
-  };
-
-  const handlePopoverContentPointerLeave = (e: React.PointerEvent) => {
-    if (e.pointerType !== 'mouse') return;
-    if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    timeoutRef.current = setTimeout(() => {
-      setOpen(false);
-    }, 220);
-  };
+  const {
+    open,
+    forceClose,
+    handleOpenChange,
+    handlePointerEnter,
+    handlePointerLeave,
+    handleTriggerClick,
+  } = useHoverClickPopover({
+    closeDelayMs: 220,
+    label: 'footnote-popover',
+  });
 
   const anchorId = sectionId ? `fn-ref-${sectionId}-${id}` : `fn-ref-${id}`;
   const targetId = sectionId ? `fn-note-${sectionId}-${id}` : `fn-note-${id}`;
 
+  const handleJumpToBottomNote = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    forceClose();
+    window.dispatchEvent(
+      new CustomEvent<ExpandFootnotesDetail>(EXPAND_FOOTNOTES_EVENT, {
+        detail: { sectionId, targetId },
+      })
+    );
+  };
+
   return (
-    <Popover.Root open={open} onOpenChange={setOpen}>
+    <Popover.Root open={open} onOpenChange={handleOpenChange}>
       <sup id={anchorId} className="inline-block align-baseline -top-[0.55em] relative leading-none">
         <Popover.Trigger asChild>
           <button
             type="button"
+            onClick={handleTriggerClick}
             onPointerEnter={handlePointerEnter}
             onPointerLeave={handlePointerLeave}
             className="inline-flex items-center justify-center font-sans font-semibold text-[10.5px] leading-none text-[#CD7743] hover:text-[#B56332] dark:text-[#E08955] dark:hover:text-[#F29F6D] hover:underline ml-0.5 mr-0.5 transition-colors cursor-pointer select-none focus:outline-none focus-visible:ring-1 focus-visible:ring-[#CD7743]"
@@ -80,10 +67,12 @@ export const FootnotePopover: React.FC<FootnotePopoverProps> = ({ id, note, sect
           align="center"
           sideOffset={6}
           collisionPadding={{ top: 68, right: 16, bottom: 16, left: 16 }}
-          style={{ maxHeight: 'min(65vh, var(--radix-popover-content-available-height, 65vh))' }}
-          className="z-50 w-[420px] sm:w-[480px] max-w-[92vw] overflow-y-auto overscroll-contain p-4 sm:p-5 bg-white dark:bg-[#202025] border border-stone-200 dark:border-stone-700/80 rounded-2xl shadow-2xl text-[#1F2937] dark:text-[#F3F4F6] text-xs sm:text-[13px] animate-in fade-in zoom-in-95 duration-150 space-y-3"
-          onPointerEnter={handlePopoverContentPointerEnter}
-          onPointerLeave={handlePopoverContentPointerLeave}
+          style={{ maxHeight: 'min(65vh, var(--radix-popover-content-available-height, 45vh))' }}
+          className="z-50 w-[420px] sm:w-[480px] max-w-[calc(100vw-2rem)] overflow-y-auto overscroll-contain p-4 sm:p-5 bg-white dark:bg-[#202025] border border-stone-200 dark:border-stone-700/80 rounded-2xl shadow-2xl text-[#1F2937] dark:text-[#F3F4F6] text-xs sm:text-[13px] animate-in fade-in zoom-in-95 duration-150 space-y-3"
+          onPointerEnter={handlePointerEnter}
+          onPointerLeave={handlePointerLeave}
+          onOpenAutoFocus={(e) => e.preventDefault()}
+          onCloseAutoFocus={(e) => e.preventDefault()}
         >
           {/* Header */}
           <div className="flex items-center justify-between gap-2 border-b border-stone-100 dark:border-stone-800 pb-2.5">
@@ -118,7 +107,7 @@ export const FootnotePopover: React.FC<FootnotePopoverProps> = ({ id, note, sect
             {sectionId && (
               <a
                 href={`#${targetId}`}
-                onClick={() => setOpen(false)}
+                onClick={handleJumpToBottomNote}
                 className="hover:text-[#CD7743] dark:hover:text-[#E08955] transition-colors underline"
               >
                 Jump to bottom note ↓
@@ -192,6 +181,31 @@ export const FootnotesSection: React.FC<{
   sectionId?: string;
 }> = ({ footnotes, sectionId }) => {
   const [isExpanded, setIsExpanded] = useState(true);
+  const [pendingScrollTargetId, setPendingScrollTargetId] = useState<string | null>(null);
+
+  useEffect(() => {
+    const handleExpandRequest = (event: Event) => {
+      const detail = (event as CustomEvent<ExpandFootnotesDetail>).detail;
+      if (!detail || detail.sectionId !== sectionId) return;
+      setIsExpanded(true);
+      setPendingScrollTargetId(detail.targetId);
+    };
+    window.addEventListener(EXPAND_FOOTNOTES_EVENT, handleExpandRequest);
+    return () => window.removeEventListener(EXPAND_FOOTNOTES_EVENT, handleExpandRequest);
+  }, [sectionId]);
+
+  useEffect(() => {
+    if (!isExpanded || !pendingScrollTargetId) return;
+    const rafId = window.requestAnimationFrame(() => {
+      const el = document.getElementById(pendingScrollTargetId);
+      if (el) {
+        const isFar = Math.abs(el.getBoundingClientRect().top) > window.innerHeight * 2;
+        el.scrollIntoView({ behavior: isFar ? 'auto' : 'smooth', block: 'start' });
+      }
+      setPendingScrollTargetId(null);
+    });
+    return () => window.cancelAnimationFrame(rafId);
+  }, [isExpanded, pendingScrollTargetId]);
 
   if (!footnotes || footnotes.length === 0) {
     return null;

@@ -54,7 +54,7 @@ const CARD_THEMES: Record<StudyCardType, ThemeConfig> = {
     dividerClasses: 'border-[#596B8E]/15 dark:border-[#596B8E]/20',
     badgeClasses: 'text-[#596B8E] dark:text-[#7587AC]',
     headerHoverClasses: 'hover:bg-[#596B8E]/[0.06] dark:hover:bg-[#596B8E]/[0.08]',
-    dotClasses: 'bg-[#596B8E] dark:text-[#7587AC]',
+    dotClasses: 'bg-[#596B8E] dark:bg-[#7587AC]',
     ringClasses: 'ring-[#596B8E]/20',
   },
   asbab: {

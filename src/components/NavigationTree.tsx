@@ -21,6 +21,7 @@ interface NavigationTreeProps {
   onSelectSection: (sectionId: string, surahNumber?: number) => void;
   isOpenMobile: boolean;
   onCloseMobile: () => void;
+  isSidebarCollapsed?: boolean;
   onCollapseSidebar?: () => void;
   onSelectTopicReference?: (ref: TopicReference) => void;
   activeThematicSections?: {
@@ -35,7 +36,7 @@ interface NavigationTreeProps {
   onRemoveBookmark?: (b: BookmarkRecord) => void;
 }
 
-export const NavigationTree: React.FC<NavigationTreeProps> = ({
+const NavigationTreeBase: React.FC<NavigationTreeProps> = ({
   surahs,
   activeSurahNumber,
   activeSectionId,
@@ -43,6 +44,7 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
   onSelectSection,
   isOpenMobile,
   onCloseMobile,
+  isSidebarCollapsed = false,
   onCollapseSidebar,
   onSelectTopicReference,
   activeThematicSections = [],
@@ -52,6 +54,13 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
   onRemoveBookmark,
 }) => {
   const allBookmarks = bookmarks.length > 0 ? bookmarks : bookmark ? [bookmark] : [];
+  const bookmarkedKeySet = useMemo(
+    () => new Set(allBookmarks.map((b) => `${b.surahNumber}:${b.sectionId}`)),
+    [allBookmarks]
+  );
+  const [isDesktop, setIsDesktop] = useState(() =>
+    typeof window !== 'undefined' ? window.matchMedia('(min-width: 1024px)').matches : true
+  );
   const [navTab, setNavTab] = useState<'surah' | 'juz' | 'theme'>('surah');
   const [selectedTopicCategory, setSelectedTopicCategory] = useState<string>('all');
   const [expandedTopics, setExpandedTopics] = useState<Record<string, boolean>>({});
@@ -60,25 +69,51 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
   const [isSearching, setIsSearching] = useState(false);
   const searchContainerRef = useRef<HTMLDivElement>(null);
 
+  // Track lg breakpoint so we mount only one active host (desktop aside OR mobile drawer)
+  // and auto-close the mobile drawer when resizing up to desktop (preventing stuck scroll lock).
+  useEffect(() => {
+    const mql = window.matchMedia('(min-width: 1024px)');
+    const onChange = () => {
+      setIsDesktop(mql.matches);
+      if (mql.matches) {
+        onCloseMobile();
+      }
+    };
+    setIsDesktop(mql.matches);
+    mql.addEventListener('change', onChange);
+    return () => mql.removeEventListener('change', onChange);
+  }, [onCloseMobile]);
+
+  // Outside-dismiss for search dropdown (uses pointerdown for iOS Safari reliability)
   useEffect(() => {
     if (!isSearching) return;
-    const handlePointerDown = (e: MouseEvent) => {
+    const handlePointerDown = (e: PointerEvent) => {
       if (searchContainerRef.current && !searchContainerRef.current.contains(e.target as Node)) {
         setIsSearching(false);
       }
     };
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        setIsSearching(false);
-      }
-    };
-    document.addEventListener('mousedown', handlePointerDown);
-    document.addEventListener('keydown', handleKeyDown);
+    document.addEventListener('pointerdown', handlePointerDown);
     return () => {
-      document.removeEventListener('mousedown', handlePointerDown);
-      document.removeEventListener('keydown', handleKeyDown);
+      document.removeEventListener('pointerdown', handlePointerDown);
     };
   }, [isSearching]);
+
+  // Prioritized Escape handling: search dropdown closes first; mobile drawer closes only if search wasn't open
+  useEffect(() => {
+    if (!isSearching && (!isOpenMobile || isDesktop)) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key !== 'Escape' || e.defaultPrevented) return;
+      if (isSearching) {
+        e.preventDefault();
+        setIsSearching(false);
+      } else if (isOpenMobile && !isDesktop) {
+        e.preventDefault();
+        onCloseMobile();
+      }
+    };
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [isSearching, isOpenMobile, isDesktop, onCloseMobile]);
 
   // Track open/collapsed state per surah in navigation tree
   const [surahExpandedMap, setSurahExpandedMap] = useState<Record<number, boolean>>({});
@@ -136,27 +171,12 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
   }, [surahs]);
 
 
-  // Filter thematic topics by category and search query
+  // Filter thematic topics by selected category only (dismissed global search won't silently filter Theme tab)
   const filteredTopics = useMemo(() => {
-    return QURAN_THEMATIC_TOPICS.filter((topic) => {
-      const matchesCategory =
-        selectedTopicCategory === 'all' || topic.category === selectedTopicCategory;
-      if (!matchesCategory) return false;
-
-      if (!searchQuery.trim()) return true;
-      const q = searchQuery.toLowerCase();
-      return (
-        topic.title.toLowerCase().includes(q) ||
-        topic.description.toLowerCase().includes(q) ||
-        (topic.arabicTitle && topic.arabicTitle.includes(q)) ||
-        topic.references.some(
-          (r) =>
-            r.surahName.toLowerCase().includes(q) ||
-            r.excerpt.toLowerCase().includes(q)
-        )
-      );
-    });
-  }, [selectedTopicCategory, searchQuery]);
+    return QURAN_THEMATIC_TOPICS.filter(
+      (topic) => selectedTopicCategory === 'all' || topic.category === selectedTopicCategory
+    );
+  }, [selectedTopicCategory]);
 
   const toggleTopicExpand = (topicId: string) => {
     setExpandedTopics((prev) => ({
@@ -228,10 +248,18 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
     }
   };
 
+  const handleSearchFocus = () => {
+    if (searchQuery.trim()) {
+      const results = globalSearchEngine.search(searchQuery, 15);
+      setSearchResults(results);
+      setIsSearching(true);
+    }
+  };
+
   const handleResultClick = (res: SearchResultItem) => {
     if (res.sectionId) {
       onSelectSection(res.sectionId, res.surahNumber);
-    } else if (res.surahNumber !== activeSurahNumber) {
+    } else {
       onSelectSurah(res.surahNumber);
     }
     setIsSearching(false);
@@ -297,6 +325,8 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
             type="text"
             value={searchQuery}
             onChange={handleSearchChange}
+            onFocus={handleSearchFocus}
+            onClick={handleSearchFocus}
             aria-label="Search Surahs, rulings, and terms"
             placeholder="Search Surahs, rulings, terms..."
             className="w-full pl-10 pr-9 py-2.5 text-sm rounded-xl bg-stone-100 dark:bg-[#25252A] border border-stone-200 dark:border-stone-700/80 text-stone-800 dark:text-stone-200 placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-[#CD7743]/40 transition-all"
@@ -485,68 +515,76 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
                       : 'border-stone-200/80 dark:border-stone-800/80 bg-white dark:bg-[#202025]'
                   }`}
                 >
-                  {/* Surah Card Header */}
-                  <button
-                    type="button"
-                    onClick={() => {
-                      if (!isSelected) {
-                        onSelectSurah(surah.number);
-                        setSurahExpandedMap((prev) => ({ ...prev, [surah.number]: true }));
-                      } else {
-                        toggleSurahExpand(surah.number);
-                      }
-                    }}
-                    className={`w-full text-left p-3 sm:p-3.5 flex items-center justify-between gap-2.5 transition-colors cursor-pointer ${
+                  {/* Surah Card Header: Sibling buttons (valid HTML) — main button selects Surah & closes mobile drawer; chevron toggles sections without closing drawer */}
+                  <div
+                    className={`w-full flex items-center justify-between gap-1 transition-colors ${
                       isSelected
                         ? 'bg-[#CD7743]/8 dark:bg-[#CD7743]/15'
                         : 'hover:bg-stone-50/80 dark:hover:bg-[#25252B]'
                     }`}
                   >
-                    <div className="flex items-center gap-2.5 min-w-0 flex-1">
-                      <span
-                        className={`font-mono text-xs font-semibold px-2 py-0.5 rounded shrink-0 ${
-                          isSelected
-                            ? 'bg-[#CD7743] text-white'
-                            : 'bg-stone-100 dark:bg-[#2A2A30] text-stone-600 dark:text-stone-300'
-                        }`}
-                      >
-                        {String(surah.number).padStart(3, '0')}
-                      </span>
-                      <div className="min-w-0 flex-1 truncate">
-                        <div className="text-sm font-semibold text-stone-900 dark:text-stone-100 truncate">
-                          {surah.nameTransliterated}
-                        </div>
-                        <div className="text-xs text-stone-500 dark:text-stone-400 truncate mt-0.5">
-                          {surah.nameEnglish} ·{' '}
-                          <span className="text-[#596B8E] dark:text-[#788BB3] font-medium">
-                            {surah.versesCount} verses
-                          </span>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        if (!isSelected) {
+                          onSelectSurah(surah.number);
+                          setSurahExpandedMap((prev) => ({ ...prev, [surah.number]: true }));
+                          onCloseMobile();
+                        } else {
+                          toggleSurahExpand(surah.number);
+                        }
+                      }}
+                      className="flex-1 min-w-0 text-left py-3 pl-3 pr-1.5 sm:py-3.5 sm:pl-3.5 flex items-center justify-between gap-2.5 cursor-pointer"
+                    >
+                      <div className="flex items-center gap-2.5 min-w-0 flex-1">
+                        <span
+                          className={`font-mono text-xs font-semibold px-2 py-0.5 rounded shrink-0 ${
+                            isSelected
+                              ? 'bg-[#CD7743] text-white'
+                              : 'bg-stone-100 dark:bg-[#2A2A30] text-stone-600 dark:text-stone-300'
+                          }`}
+                        >
+                          {String(surah.number).padStart(3, '0')}
+                        </span>
+                        <div className="min-w-0 flex-1 truncate">
+                          <div className="text-sm font-semibold text-stone-900 dark:text-stone-100 truncate">
+                            {surah.nameTransliterated}
+                          </div>
+                          <div className="text-xs text-stone-500 dark:text-stone-400 truncate mt-0.5">
+                            {surah.nameEnglish} ·{' '}
+                            <span className="text-[#596B8E] dark:text-[#788BB3] font-medium">
+                              {surah.versesCount} verses
+                            </span>
+                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    <div className="flex items-center gap-2 shrink-0 pl-1">
-                      <span dir="rtl" lang="ar" className="font-quran text-base sm:text-lg leading-[1.85] pb-0.5 -translate-y-0.5 text-stone-700 dark:text-stone-300 overflow-visible">
+                      <span dir="rtl" lang="ar" className="font-quran text-base sm:text-lg leading-[1.85] pb-0.5 -translate-y-0.5 text-stone-700 dark:text-stone-300 shrink-0 overflow-visible">
                         {surah.nameArabic}
                       </span>
-                      <div className="p-0.5 text-stone-400">
-                        {isExpanded ? (
-                          <ChevronDown className="w-4 h-4 text-[#CD7743] dark:text-[#E08955]" />
-                        ) : (
-                          <ChevronRight className="w-4 h-4" />
-                        )}
-                      </div>
-                    </div>
-                  </button>
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={() => toggleSurahExpand(surah.number)}
+                      aria-expanded={isExpanded}
+                      aria-label={`${isExpanded ? 'Collapse' : 'Expand'} sections for Surah ${surah.nameTransliterated}`}
+                      className="p-2.5 pr-3 sm:pr-3.5 text-stone-400 hover:text-[#CD7743] dark:hover:text-[#E08955] transition-colors shrink-0 cursor-pointer"
+                    >
+                      {isExpanded ? (
+                        <ChevronDown className="w-4 h-4 text-[#CD7743] dark:text-[#E08955]" />
+                      ) : (
+                        <ChevronRight className="w-4 h-4" />
+                      )}
+                    </button>
+                  </div>
 
                   {/* Expanded Thematic Sections Sub-Tray */}
                   {isExpanded && sectionsToDisplay.length > 0 && (
                     <div className="border-t border-stone-100 dark:border-stone-800/80 bg-stone-50/70 dark:bg-[#1A1A1E]/70 p-2 sm:p-2.5 space-y-1.5">
                       {sectionsToDisplay.map((sec) => {
                         const isSecActive = isSelected && activeSectionId === sec.id;
-                        const isSecBookmarked = allBookmarks.some(
-                          (b) => b.surahNumber === surah.number && b.sectionId === sec.id
-                        );
+                        const isSecBookmarked = bookmarkedKeySet.has(`${surah.number}:${sec.id}`);
                         return (
                           <button
                             key={sec.id}
@@ -885,29 +923,26 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
   );
 
   useEffect(() => {
-    if (!isOpenMobile) return;
+    if (!isOpenMobile || isDesktop) return;
     const prevOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onCloseMobile();
-    };
-    window.addEventListener('keydown', handleKeyDown);
     return () => {
       document.body.style.overflow = prevOverflow;
-      window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [isOpenMobile, onCloseMobile]);
+  }, [isOpenMobile, isDesktop]);
 
   return (
     <>
       {/* Desktop Fixed Left Pane (~350px - 380px for clear reading) */}
-      <aside className="hidden lg:block w-[350px] xl:w-[380px] shrink-0 h-screen sticky top-0 z-20">
-        {content}
-      </aside>
+      {isDesktop && !isSidebarCollapsed && (
+        <aside className="w-[350px] xl:w-[380px] shrink-0 h-screen sticky top-0 z-20">
+          {content}
+        </aside>
+      )}
 
       {/* Mobile Drawer Overlay */}
-      {isOpenMobile && (
-        <div className="fixed inset-0 z-50 lg:hidden flex" role="dialog" aria-modal="true" aria-label="Surah Navigation">
+      {!isDesktop && isOpenMobile && (
+        <div className="fixed inset-0 z-50 flex" role="dialog" aria-modal="true" aria-label="Surah Navigation">
           <div
             className="fixed inset-0 bg-black/40 backdrop-blur-xs"
             onClick={onCloseMobile}
@@ -921,3 +956,5 @@ export const NavigationTree: React.FC<NavigationTreeProps> = ({
     </>
   );
 };
+
+export const NavigationTree = React.memo(NavigationTreeBase);

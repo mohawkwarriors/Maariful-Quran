@@ -71,15 +71,6 @@
 .border-backup-teal { border-color: var(--backup-teal-border); }
 .bg-backup-teal-light { background-color: var(--backup-teal-light); }
 
-@font-face {
-  font-family: 'KFGQPC Uthmanic Script HAFS';
-  src: url('https://cdn.jsdelivr.net/gh/mustafa0x/quran-fonts@master/fonts/KFGQPC%20Uthmanic%20Script%20HAFS.woff2') format('woff2'),
-       url('https://cdn.jsdelivr.net/gh/mustafa0x/quran-fonts@master/fonts/KFGQPC%20Uthmanic%20Script%20HAFS.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 .font-quran,
 .font-quran-uthmani {
   font-family: 'KFGQPC Uthmanic Script HAFS', 'Amiri Quran', 'Scheherazade New', 'Amiri', serif;

@@ -1,10 +1,31 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useSyncExternalStore } from 'react';
 import { createPortal } from 'react-dom';
 import * as Popover from '@radix-ui/react-popover';
 import { X, Layers, Compass, ExternalLink } from 'lucide-react';
 import { WordDeepDiveData } from '../services/quranLexicon';
 import { getEjtaalUrl, getLanesRootInfo } from '../services/lanesLexicon';
 import { formatArabicEnglishInsight, parseRootDisplay } from '../utils/textFormatter';
+
+const MOBILE_MEDIA_QUERY = '(max-width: 639px)';
+let mobileMql: MediaQueryList | null = null;
+function getMobileMql(): MediaQueryList | null {
+  if (typeof window === 'undefined') return null;
+  if (!mobileMql) {
+    mobileMql = window.matchMedia(MOBILE_MEDIA_QUERY);
+  }
+  return mobileMql;
+}
+
+function subscribeMobileBreakpoint(listener: () => void): () => void {
+  const mql = getMobileMql();
+  if (!mql) return () => {};
+  mql.addEventListener('change', listener);
+  return () => mql.removeEventListener('change', listener);
+}
+
+function getMobileSnapshot(): boolean {
+  return getMobileMql()?.matches ?? false;
+}
 
 interface WordDeepDiveModalProps {
   data: WordDeepDiveData;
@@ -23,17 +44,12 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
   onMouseEnter,
   onMouseLeave,
 }) => {
-  // Mobile breakpoint detection (< 640px) — synchronous initial read prevents 1-frame flash on lazy mount
-  const [isMobile, setIsMobile] = useState(() =>
-    typeof window !== 'undefined' ? window.matchMedia('(max-width: 639px)').matches : false
+  // Mobile breakpoint detection (< 640px) via single shared MediaQueryList subscription
+  const isMobile = useSyncExternalStore(
+    subscribeMobileBreakpoint,
+    getMobileSnapshot,
+    () => false
   );
-  useEffect(() => {
-    const mql = window.matchMedia('(max-width: 639px)');
-    const onChange = () => setIsMobile(mql.matches);
-    setIsMobile(mql.matches);
-    mql.addEventListener('change', onChange);
-    return () => mql.removeEventListener('change', onChange);
-  }, []);
 
   // Lock background scroll and bind Escape key when mobile bottom sheet is open
   useEffect(() => {
@@ -41,12 +57,15 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
     const prevOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onOpenChange(false);
+      if (e.key === 'Escape' && !e.defaultPrevented) {
+        e.preventDefault();
+        onOpenChange(false);
+      }
     };
-    window.addEventListener('keydown', handleKeyDown);
+    document.addEventListener('keydown', handleKeyDown);
     return () => {
       document.body.style.overflow = prevOverflow;
-      window.removeEventListener('keydown', handleKeyDown);
+      document.removeEventListener('keydown', handleKeyDown);
     };
   }, [isMobile, open, onOpenChange]);
 
@@ -394,7 +413,13 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
   if (isMobile) {
     return (
       <>
-        <span onClick={() => onOpenChange(!open)} className="inline-block cursor-pointer">
+        <span
+          onClick={(e) => {
+            if (e.defaultPrevented) return;
+            onOpenChange(!open);
+          }}
+          className="inline-block cursor-pointer"
+        >
           {trigger}
         </span>
         {open &&
@@ -409,6 +434,7 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
               <div
                 role="dialog"
                 aria-modal="true"
+                aria-label={`Word details for ${data.word}`}
                 className="relative w-full max-h-[85vh] flex flex-col overflow-hidden rounded-t-3xl bg-white dark:bg-[#1E1E23] border-t border-stone-200 dark:border-stone-800 shadow-2xl z-10 animate-in slide-in-from-bottom duration-250 text-stone-900 dark:text-stone-100"
               >
                 <div className="shrink-0 px-4 sm:px-5 pt-3.5 pb-2.5 border-b border-stone-100 dark:border-stone-800/80">
@@ -428,7 +454,7 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
 
   // Desktop View: Hover / Click Floating Popover constrained to live viewport space below sticky header
   const handlePointerEnter = (e: React.PointerEvent) => {
-    if (e.pointerType !== 'mouse') return;
+    if (e.pointerType !== 'mouse' || e.buttons !== 0) return;
     onMouseEnter?.();
   };
 
@@ -451,8 +477,10 @@ export const WordDeepDiveModal: React.FC<WordDeepDiveModalProps> = ({
         <Popover.Content
           onPointerEnter={handlePointerEnter}
           onPointerLeave={handlePointerLeave}
+          onOpenAutoFocus={(e) => e.preventDefault()}
+          onCloseAutoFocus={(e) => e.preventDefault()}
           collisionPadding={{ top: 68, right: 16, bottom: 16, left: 16 }}
-          style={{ maxHeight: 'min(82vh, var(--radix-popover-content-available-height, 82vh))' }}
+          style={{ maxHeight: 'min(82vh, var(--radix-popover-content-available-height, 45vh))' }}
           className="z-50 w-[480px] sm:w-[540px] max-w-[94vw] flex flex-col bg-white dark:bg-[#1E1E23] border border-stone-200 dark:border-stone-700/80 rounded-2xl shadow-2xl text-stone-900 dark:text-stone-100 text-xs animate-in fade-in zoom-in-95 duration-150"
           sideOffset={8}
         >

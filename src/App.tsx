@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { QueryClient, QueryClientProvider, useQuery } from '@tanstack/react-query';
 import { fetchManifest, fetchSurah, globalSearchEngine } from './services/quranService';
 import { NavigationTree } from './components/NavigationTree';
@@ -6,9 +6,9 @@ import { ReaderHeader } from './components/ReaderHeader';
 import { SurahHero } from './components/SurahHero';
 import { TafseerSectionView } from './components/TafseerSectionView';
 import { TopicReference } from './services/quranTopics';
-import { onCorpusMorphologyLoaded } from './services/quranLexicon';
+import { hasActivePopover } from './utils/popoverCoordinator';
 import { SurahData, BookmarkRecord, ThematicSection } from './types/quran';
-import { Loader2, AlertCircle, RefreshCw, BookOpen } from 'lucide-react';
+import { Loader2, AlertCircle, RefreshCw, BookOpen, ArrowLeft } from 'lucide-react';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -19,6 +19,8 @@ const queryClient = new QueryClient({
   },
 });
 
+const HEADER_SCROLL_OFFSET = 72;
+
 function ReaderApp() {
   const [activeSurahNumber, setActiveSurahNumber] = useState<number>(2); // Default to Surah Al-Baqarah
   const [activeSectionId, setActiveSectionId] = useState<string | null>(null);
@@ -27,14 +29,8 @@ function ReaderApp() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
   const [pendingScrollSectionId, setPendingScrollSectionId] = useState<string | null>(null);
-  const [, setCorpusTick] = useState(0);
   const readingContainerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    return onCorpusMorphologyLoaded(() => {
-      setCorpusTick((t) => t + 1);
-    });
-  }, []);
+  const scrollCancelRef = useRef<(() => void) | null>(null);
 
   // Initialize Theme from localStorage with immediate default fallback
   const [theme, setTheme] = useState<'parchment' | 'charcoal'>(() => {
@@ -88,6 +84,12 @@ function ReaderApp() {
       return [];
     }
   });
+
+  // O(1) lookup set for bookmarked sections
+  const bookmarkedKeySet = useMemo(
+    () => new Set(bookmarks.map((b) => `${b.surahNumber}:${b.sectionId}`)),
+    [bookmarks]
+  );
 
   // Sync bookmarks list to localStorage
   useEffect(() => {
@@ -197,11 +199,11 @@ function ReaderApp() {
         return;
       }
 
-      // Distance scrolled from top of the reading container
+      // Distance scrolled from top of the reading container (quantized to integer % to avoid 60fps root re-renders)
       const scrolled = -rect.top;
       const rawProgress = (scrolled / maxScroll) * 100;
-      const clamped = Math.min(100, Math.max(0, rawProgress));
-      setScrollProgress(clamped);
+      const rounded = Math.round(Math.min(100, Math.max(0, rawProgress)));
+      setScrollProgress((prev) => (prev === rounded ? prev : rounded));
     };
 
     const handleScroll = () => {
@@ -230,37 +232,126 @@ function ReaderApp() {
     };
   }, [surahData, isSurahLoading, viewMode, activeSurahNumber]);
 
-  const resolveSectionElement = (sectionId: string): { el: HTMLElement | null; resolvedId: string } => {
-    const directEl = document.getElementById(sectionId);
-    if (directEl) return { el: directEl, resolvedId: sectionId };
-    const m = sectionId.match(/^(\d+)-(\d+)-(\d+)$/);
-    if (m && surahData?.sections) {
-      const startVerse = parseInt(m[2], 10);
-      const matchedSec = surahData.sections.find(
-        (sec) => sec.verseRange[0] <= startVerse && startVerse <= sec.verseRange[1]
-      );
-      if (matchedSec) {
-        return { el: document.getElementById(matchedSec.id), resolvedId: matchedSec.id };
-      }
-    }
-    return { el: null, resolvedId: sectionId };
-  };
+  // Cleanup any in-flight section scroll convergence loop on unmount
+  useEffect(() => {
+    return () => {
+      scrollCancelRef.current?.();
+    };
+  }, []);
 
-  // Handle section jumping with race-free pending section scrolling
-  const handleSelectSection = (sectionId: string, targetSurahNumber?: number) => {
-    if (targetSurahNumber && targetSurahNumber !== activeSurahNumber) {
-      setPendingScrollSectionId(sectionId);
-      setActiveSurahNumber(targetSurahNumber);
-      setScrollProgress(0);
+  /**
+   * Accurately scrolls to a section element even when preceding sections use
+   * `content-visibility: auto` (where smooth scrolling across skipped sections
+   * otherwise causes massive layout-shift undershoots on long Surahs like Al-Baqarah).
+   */
+  const scrollToSectionAccurately = useCallback((el: HTMLElement) => {
+    scrollCancelRef.current?.();
+
+    const initialRect = el.getBoundingClientRect();
+    const isFarJump = Math.abs(initialRect.top - HEADER_SCROLL_OFFSET) > window.innerHeight * 2;
+    const targetTop = Math.max(0, window.scrollY + initialRect.top - HEADER_SCROLL_OFFSET);
+
+    if (!isFarJump) {
+      window.scrollTo({ top: targetTop, behavior: 'smooth' });
+      scrollCancelRef.current = null;
       return;
     }
 
-    const { el, resolvedId } = resolveSectionElement(sectionId);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      setActiveSectionId(resolvedId);
-    }
-  };
+    let cancelled = false;
+    let rafId = 0;
+    let framesRemaining = 8;
+
+    const cancel = () => {
+      if (cancelled) return;
+      cancelled = true;
+      if (rafId) window.cancelAnimationFrame(rafId);
+      window.removeEventListener('wheel', cancel);
+      window.removeEventListener('touchstart', cancel);
+      if (scrollCancelRef.current === cancel) {
+        scrollCancelRef.current = null;
+      }
+    };
+
+    scrollCancelRef.current = cancel;
+    window.addEventListener('wheel', cancel, { passive: true, once: true });
+    window.addEventListener('touchstart', cancel, { passive: true, once: true });
+
+    const converge = () => {
+      if (cancelled || !el.isConnected) {
+        cancel();
+        return;
+      }
+      const rect = el.getBoundingClientRect();
+      const delta = rect.top - HEADER_SCROLL_OFFSET;
+      const atBottom =
+        window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2 && delta > 0;
+      const atTop = window.scrollY <= 1 && delta < 0;
+
+      if (Math.abs(delta) > 4 && !atBottom && !atTop) {
+        window.scrollTo({
+          top: Math.max(0, window.scrollY + delta),
+          behavior: 'auto',
+        });
+      }
+
+      framesRemaining -= 1;
+      if (framesRemaining <= 0 || (Math.abs(el.getBoundingClientRect().top - HEADER_SCROLL_OFFSET) <= 4 && framesRemaining <= 5)) {
+        cancel();
+        return;
+      }
+      rafId = window.requestAnimationFrame(converge);
+    };
+
+    window.scrollTo({ top: targetTop, behavior: 'auto' });
+    rafId = window.requestAnimationFrame(converge);
+  }, []);
+
+  const resolveSectionElement = useCallback(
+    (sectionId: string): { el: HTMLElement | null; resolvedId: string } => {
+      const directEl = document.getElementById(sectionId);
+      if (directEl) return { el: directEl, resolvedId: sectionId };
+      const m = sectionId.match(/^(\d+)-(\d+)-(\d+)$/);
+      if (m && surahData?.sections) {
+        const startVerse = parseInt(m[2], 10);
+        const matchedSec = surahData.sections.find(
+          (sec) => sec.verseRange[0] <= startVerse && startVerse <= sec.verseRange[1]
+        );
+        if (matchedSec) {
+          return { el: document.getElementById(matchedSec.id), resolvedId: matchedSec.id };
+        }
+      }
+      return { el: null, resolvedId: sectionId };
+    },
+    [surahData?.sections]
+  );
+
+  // Handle section jumping with race-free pending section scrolling (even while target Surah is still loading)
+  const handleSelectSection = useCallback(
+    (sectionId: string, targetSurahNumber?: number) => {
+      const targetSurah = targetSurahNumber ?? activeSurahNumber;
+      if (targetSurah !== activeSurahNumber) {
+        scrollCancelRef.current?.();
+        setPendingScrollSectionId(sectionId);
+        setActiveSurahNumber(targetSurah);
+        setScrollProgress(0);
+        return;
+      }
+
+      if (!surahData || surahData.number !== targetSurah) {
+        setPendingScrollSectionId(sectionId);
+        return;
+      }
+
+      const { el, resolvedId } = resolveSectionElement(sectionId);
+      if (el) {
+        scrollToSectionAccurately(el);
+        setActiveSectionId(resolvedId);
+      } else {
+        setPendingScrollSectionId(sectionId);
+      }
+    },
+    [activeSurahNumber, resolveSectionElement, scrollToSectionAccurately, surahData]
+  );
 
   // Scroll to pending section once Surah data finishes loading into the DOM
   useEffect(() => {
@@ -269,80 +360,101 @@ function ReaderApp() {
     const timer = setTimeout(() => {
       const { el, resolvedId } = resolveSectionElement(pendingScrollSectionId);
       if (el) {
-        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        scrollToSectionAccurately(el);
         setActiveSectionId(resolvedId);
       }
       setPendingScrollSectionId(null);
-    }, 80);
+    }, 60);
 
     return () => clearTimeout(timer);
-  }, [surahData, pendingScrollSectionId, activeSurahNumber]);
+  }, [surahData, pendingScrollSectionId, activeSurahNumber, resolveSectionElement, scrollToSectionAccurately]);
 
-  const handleSelectSurah = (num: number) => {
-    setActiveSurahNumber(num);
-    setActiveSectionId(null);
-    setPendingScrollSectionId(null);
-    setScrollProgress(0);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  const handleSelectSurah = useCallback(
+    (num: number) => {
+      scrollCancelRef.current?.();
+      const isSameSurah = num === activeSurahNumber;
+      const isFarFromTop = window.scrollY > window.innerHeight * 2;
+      setActiveSurahNumber(num);
+      setActiveSectionId(null);
+      setPendingScrollSectionId(null);
+      setScrollProgress(0);
+      window.scrollTo({ top: 0, behavior: !isSameSurah || isFarFromTop ? 'auto' : 'smooth' });
+    },
+    [activeSurahNumber]
+  );
 
-  // Global hotkeys for Focus Mode ('f') and modal closing ('Escape')
+  const handleCloseMobileNav = useCallback(() => setIsMobileNavOpen(false), []);
+  const handleCollapseSidebar = useCallback(() => setIsSidebarCollapsed(true), []);
+
+  // Global hotkeys for desktop Focus Mode ('f', '[', ']') and Escape exit (only when no overlay handled Escape)
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (
         e.target instanceof HTMLInputElement ||
-        e.target instanceof HTMLTextAreaElement
+        e.target instanceof HTMLTextAreaElement ||
+        (e.target instanceof HTMLElement && e.target.isContentEditable)
       ) {
         return;
       }
 
       if (e.key === '[' || e.key === ']' || e.key === 'f' || e.key === 'F') {
+        if (e.ctrlKey || e.metaKey || e.altKey) return;
+        if (typeof window !== 'undefined' && !window.matchMedia('(min-width: 1024px)').matches) return;
         setIsSidebarCollapsed((prev) => !prev);
       } else if (e.key === 'Escape') {
+        if (e.defaultPrevented || hasActivePopover() || isMobileNavOpen) return;
         if (isSidebarCollapsed) setIsSidebarCollapsed(false);
       }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isSidebarCollapsed]);
+  }, [isSidebarCollapsed, isMobileNavOpen]);
 
   // Handle jumping to a specific topic reference across Surahs
-  const handleSelectTopicReference = (ref: TopicReference) => {
-    handleSelectSection(ref.sectionId, ref.surahNumber);
-  };
+  const handleSelectTopicReference = useCallback(
+    (ref: TopicReference) => {
+      handleSelectSection(ref.sectionId, ref.surahNumber);
+    },
+    [handleSelectSection]
+  );
 
   // Find active section details for breadcrumb and bookmarking
   const currentSection =
     surahData?.sections.find((s) => s.id === activeSectionId) || surahData?.sections[0];
+  const resolvedActiveSectionId =
+    surahData?.number === activeSurahNumber ? (activeSectionId || currentSection?.id || null) : null;
 
   // Toggle bookmark for a specific section
-  const handleToggleBookmarkSection = (sec: ThematicSection) => {
-    setBookmarks((prev) => {
-      const exists = prev.some(
-        (b) => b.surahNumber === activeSurahNumber && b.sectionId === sec.id
-      );
-      if (exists) {
-        return prev.filter(
-          (b) => !(b.surahNumber === activeSurahNumber && b.sectionId === sec.id)
+  const handleToggleBookmarkSection = useCallback(
+    (sec: ThematicSection) => {
+      setBookmarks((prev) => {
+        const exists = prev.some(
+          (b) => b.surahNumber === activeSurahNumber && b.sectionId === sec.id
         );
-      } else {
-        const newRecord: BookmarkRecord = {
-          id: `${activeSurahNumber}-${sec.id}`,
-          surahNumber: activeSurahNumber,
-          surahName:
-            surahData?.nameTransliterated ||
-            currentSurahMeta?.nameTransliterated ||
-            `Surah ${activeSurahNumber}`,
-          sectionId: sec.id,
-          sectionTitle: sec.title,
-          verseRange: sec.verseRange,
-          timestamp: Date.now(),
-        };
-        return [newRecord, ...prev];
-      }
-    });
-  };
+        if (exists) {
+          return prev.filter(
+            (b) => !(b.surahNumber === activeSurahNumber && b.sectionId === sec.id)
+          );
+        } else {
+          const newRecord: BookmarkRecord = {
+            id: `${activeSurahNumber}-${sec.id}`,
+            surahNumber: activeSurahNumber,
+            surahName:
+              surahData?.nameTransliterated ||
+              currentSurahMeta?.nameTransliterated ||
+              `Surah ${activeSurahNumber}`,
+            sectionId: sec.id,
+            sectionTitle: sec.title,
+            verseRange: sec.verseRange,
+            timestamp: Date.now(),
+          };
+          return [newRecord, ...prev];
+        }
+      });
+    },
+    [activeSurahNumber, surahData?.nameTransliterated, currentSurahMeta?.nameTransliterated]
+  );
 
   // Toggle bookmark for current in-view section (from reader header)
   const handleToggleActiveBookmark = () => {
@@ -353,7 +465,7 @@ function ReaderApp() {
   };
 
   // Remove a specific bookmark record
-  const handleRemoveBookmarkRecord = (targetBookmark: BookmarkRecord) => {
+  const handleRemoveBookmarkRecord = useCallback((targetBookmark: BookmarkRecord) => {
     setBookmarks((prev) =>
       prev.filter(
         (b) =>
@@ -363,45 +475,51 @@ function ReaderApp() {
           )
       )
     );
-  };
+  }, []);
 
   // Resume reading from a bookmark
-  const handleResumeBookmark = (b: BookmarkRecord) => {
-    handleSelectSection(b.sectionId, b.surahNumber);
-  };
+  const handleResumeBookmark = useCallback(
+    (b: BookmarkRecord) => {
+      handleSelectSection(b.sectionId, b.surahNumber);
+    },
+    [handleSelectSection]
+  );
+
+  const activeThematicSections = useMemo(
+    () =>
+      surahData?.sections.map((s) => {
+        const manifestSec = currentSurahMeta?.sectionsPreview?.find((p) => p.id === s.id);
+        const isInvalid = !s.title || /^[\s\-_—─–]+$/.test(s.title);
+        return {
+          id: s.id,
+          verseRange: s.verseRange,
+          title: manifestSec?.title || (isInvalid ? `Verses ${s.verseRange[0]}–${s.verseRange[1]}` : s.title),
+          summary: s.summary || manifestSec?.summary,
+        };
+      }) || [],
+    [surahData?.sections, currentSurahMeta?.sectionsPreview]
+  );
 
   return (
     <div className="min-h-screen flex bg-[#F8F7F4] dark:bg-[#18181A] text-[#1F2937] dark:text-[#F3F4F6] font-reader transition-colors duration-200">
-      {/* 1. LEFT PANE (Fixed width ~340px) - Hidden when sidebar collapsed */}
-      {!isSidebarCollapsed && (
-        <NavigationTree
-          surahs={manifest?.surahs || []}
-          activeSurahNumber={activeSurahNumber}
-          activeSectionId={activeSectionId || currentSection?.id || null}
-          onSelectSurah={handleSelectSurah}
-          onSelectSection={handleSelectSection}
-          isOpenMobile={isMobileNavOpen}
-          onCloseMobile={() => setIsMobileNavOpen(false)}
-          onCollapseSidebar={() => setIsSidebarCollapsed(true)}
-          onSelectTopicReference={handleSelectTopicReference}
-          activeThematicSections={
-            surahData?.sections.map((s) => {
-              const manifestSec = currentSurahMeta?.sectionsPreview?.find((p) => p.id === s.id);
-              const isInvalid = !s.title || /^[\s\-_—─–]+$/.test(s.title);
-              return {
-                id: s.id,
-                verseRange: s.verseRange,
-                title: manifestSec?.title || (isInvalid ? `Verses ${s.verseRange[0]}–${s.verseRange[1]}` : s.title),
-                summary: s.summary || manifestSec?.summary,
-              };
-            }) || []
-          }
-          bookmark={bookmarks[0] || null}
-          bookmarks={bookmarks}
-          onResumeBookmark={handleResumeBookmark}
-          onRemoveBookmark={handleRemoveBookmarkRecord}
-        />
-      )}
+      {/* 1. LEFT PANE & MOBILE DRAWER (Always mounted so desktop collapse never locks out mobile navigation) */}
+      <NavigationTree
+        surahs={manifest?.surahs || []}
+        activeSurahNumber={activeSurahNumber}
+        activeSectionId={resolvedActiveSectionId}
+        onSelectSurah={handleSelectSurah}
+        onSelectSection={handleSelectSection}
+        isOpenMobile={isMobileNavOpen}
+        onCloseMobile={handleCloseMobileNav}
+        isSidebarCollapsed={isSidebarCollapsed}
+        onCollapseSidebar={handleCollapseSidebar}
+        onSelectTopicReference={handleSelectTopicReference}
+        activeThematicSections={activeThematicSections}
+        bookmark={bookmarks[0] || null}
+        bookmarks={bookmarks}
+        onResumeBookmark={handleResumeBookmark}
+        onRemoveBookmark={handleRemoveBookmarkRecord}
+      />
 
       {/* 2. RIGHT READING CANVAS (Fluid width, max text container ~760px) */}
       <main className="flex-1 flex flex-col min-w-0" ref={readingContainerRef}>
@@ -410,7 +528,7 @@ function ReaderApp() {
           surahName={surahData?.nameTransliterated || currentSurahMeta?.nameTransliterated || 'Loading...'}
           surahNumber={activeSurahNumber}
           activeVerseRange={currentSection?.verseRange}
-          activeSectionId={activeSectionId}
+          activeSectionId={resolvedActiveSectionId}
           activeSectionTitle={currentSection?.title}
           viewMode={viewMode}
           onViewModeChange={setViewMode}
@@ -471,30 +589,41 @@ function ReaderApp() {
                     key={section.id}
                     section={section}
                     viewMode={viewMode}
-                    isActive={activeSectionId === section.id}
-                    isBookmarked={bookmarks.some(
-                      (b) => b.surahNumber === activeSurahNumber && b.sectionId === section.id
-                    )}
-                    onToggleBookmark={() => handleToggleBookmarkSection(section)}
+                    isActive={resolvedActiveSectionId === section.id}
+                    isBookmarked={bookmarkedKeySet.has(`${activeSurahNumber}:${section.id}`)}
+                    onToggleBookmarkSection={handleToggleBookmarkSection}
                   />
                 ))}
               </div>
 
-              {/* Surah Complete Footer & Next Surah Quick Jump */}
+              {/* Surah Complete Footer & Previous / Next Surah Quick Jump */}
               <div className="pt-12 pb-6 px-6 text-center space-y-3">
                 <div className="w-8 h-0.5 bg-[#CD7743]/40 mx-auto rounded-full" />
                 <p className="text-xs uppercase tracking-widest text-[#596B8E] dark:text-[#788BB3]">
                   End of Surah {surahData.nameTransliterated}
                 </p>
-                {activeSurahNumber < 114 && (
-                  <button
-                    onClick={() => handleSelectSurah(activeSurahNumber + 1)}
-                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white dark:bg-[#222227] border border-stone-200 dark:border-stone-700/80 text-xs font-semibold text-stone-800 dark:text-stone-200 hover:border-[#CD7743] dark:hover:border-[#CD7743] shadow-xs transition-all cursor-pointer"
-                  >
-                    <BookOpen className="w-4 h-4 text-[#CD7743] dark:text-[#E08955]" />
-                    <span>Proceed to Next: Surah {activeSurahNumber + 1}</span>
-                  </button>
-                )}
+                <div className="flex flex-wrap items-center justify-center gap-3">
+                  {activeSurahNumber > 1 && (
+                    <button
+                      type="button"
+                      onClick={() => handleSelectSurah(activeSurahNumber - 1)}
+                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white dark:bg-[#222227] border border-stone-200 dark:border-stone-700/80 text-xs font-semibold text-stone-800 dark:text-stone-200 hover:border-[#CD7743] dark:hover:border-[#CD7743] shadow-xs transition-all cursor-pointer"
+                    >
+                      <ArrowLeft className="w-4 h-4 text-[#CD7743] dark:text-[#E08955]" />
+                      <span>Previous: Surah {activeSurahNumber - 1}</span>
+                    </button>
+                  )}
+                  {activeSurahNumber < 114 && (
+                    <button
+                      type="button"
+                      onClick={() => handleSelectSurah(activeSurahNumber + 1)}
+                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white dark:bg-[#222227] border border-stone-200 dark:border-stone-700/80 text-xs font-semibold text-stone-800 dark:text-stone-200 hover:border-[#CD7743] dark:hover:border-[#CD7743] shadow-xs transition-all cursor-pointer"
+                    >
+                      <BookOpen className="w-4 h-4 text-[#CD7743] dark:text-[#E08955]" />
+                      <span>Proceed to Next: Surah {activeSurahNumber + 1}</span>
+                    </button>
+                  )}
+                </div>
                 <p className="pt-3 text-[11px] text-stone-400 dark:text-stone-500">
                   Exegesis: Ma&apos;ariful Qur&apos;an (Mufti Muhammad Shafi) · Morphology &amp; Lemmas:{' '}
                   <a

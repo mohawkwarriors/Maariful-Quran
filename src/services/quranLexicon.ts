@@ -661,6 +661,58 @@ export function stripArabicDiacritics(text: string, expandDaggerAlif = false): s
 }
 
 /**
+ * Normalizes multi-word Arabic text for search queries while preserving word boundaries.
+ */
+export function normalizeArabicForSearch(text: string): string {
+  return text
+    .replace(/[\u0621\u0640\u064B-\u065F\u0670\u06D6-\u06ED\u200B-\u200D\uFEFF\u06DD۝]/g, '')
+    .replace(/[أإآٱ]/g, 'ا')
+    .replace(/ا+/g, 'ا')
+    .replace(/ة/g, 'ه')
+    .replace(/[ىئ]/g, 'ي')
+    .replace(/ؤ/g, 'و')
+    .replace(/[\u0660-\u0669.,;!?،؛؟()[\]{}"'«»]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+/**
+ * Produces space-separated normalized Arabic search tokens for FlexSearch indexing.
+ * Emits both Uthmanic base tokens and modern-spelling/proclitic variants (e.g.
+ * ٱلْكِتَـٰبُ -> الكتاب, ٱلصَّلَوٰةَ -> الصلاه, لِّلْمُتَّقِينَ -> المتقين) without corrupting لِلَّهِ.
+ */
+export function buildArabicSearchIndexText(text: string): string {
+  if (!text) return '';
+  const base = normalizeArabicForSearch(text);
+  const expanded = normalizeArabicForSearch(
+    text
+      .replace(/و\u0640?\u0670/g, 'ا')
+      .replace(/\u0640?\u0670/g, 'ا')
+  );
+
+  const tokens = new Set<string>();
+  const addTokens = (str: string) => {
+    for (const tok of str.split(' ')) {
+      if (!tok) continue;
+      tokens.add(tok);
+      // Emit definite-article variant for attached proclitics (e.g. للمتقين -> المتقين, بالغيب -> الغيب)
+      if (tok.startsWith('لل') && tok.length >= 4 && tok !== 'لله') {
+        tokens.add('ال' + tok.slice(2));
+      } else if (
+        tok.length >= 5 &&
+        (tok.startsWith('وال') || tok.startsWith('بال') || tok.startsWith('فال'))
+      ) {
+        tokens.add(tok.slice(1));
+      }
+    }
+  };
+
+  addTokens(base);
+  addTokens(expanded);
+  return Array.from(tokens).join(' ');
+}
+
+/**
  * Strips attached proclitics (prepositions like li-, bi-, wa-, fa-, and article al-)
  */
 export function getArabicStem(text: string): string {
@@ -741,9 +793,13 @@ let corpusStrippedMap: Map<string, string> | null = null;
 let corpusLoadPromise: Promise<boolean> | null = null;
 const corpusLoadedListeners = new Set<() => void>();
 
+export function isCorpusMorphologyLoaded(): boolean {
+  return corpusData !== null;
+}
+
 export function onCorpusMorphologyLoaded(cb: () => void): () => void {
   if (corpusData) {
-    cb();
+    return () => {};
   }
   corpusLoadedListeners.add(cb);
   return () => {

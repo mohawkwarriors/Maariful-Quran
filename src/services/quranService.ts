@@ -1,6 +1,6 @@
 import FlexSearch from 'flexsearch';
 import { SurahManifestItem, SurahData, SearchResultItem, ThematicSection } from '../types/quran';
-import { stripArabicDiacritics } from './quranLexicon';
+import { buildArabicSearchIndexText, normalizeArabicForSearch } from './quranLexicon';
 
 export interface ManifestResponse {
   totalSurahs: number;
@@ -111,39 +111,47 @@ export function generateClientFallbackSurah(surahNumber: number, surahName?: str
 
 export async function fetchSurah(surahNumber: number, surahName?: string): Promise<SurahData> {
   const padded = String(surahNumber).padStart(3, '0');
-  
+  let staticStatus: number | null = null;
+  let lastError: unknown = null;
+
   try {
     const res = await fetch(`/data/surahs/${padded}.json?v=${DATA_CACHE_KEY}`);
+    staticStatus = res.status;
     if (res.ok) {
       return await res.json();
     }
-  } catch {
-    // Continue to server-side generation
+  } catch (err) {
+    lastError = err;
   }
 
-  // Try server generation
-  try {
-    const genRes = await fetch('/api/tafseer/generate', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ surahNumber, surahName }),
-    });
-
-    if (genRes.ok) {
-      return await genRes.json();
-    }
-  } catch {
-    // Server offline or static hosting
-  }
-
-  // Fallback to client-side scholarly synthesis
-  if (!cachedManifestData) {
+  // Only attempt on-demand server generation / client fallback if the static Surah JSON is missing (404)
+  if (staticStatus === 404) {
     try {
-      cachedManifestData = await fetchManifest();
-    } catch {}
+      const genRes = await fetch('/api/tafseer/generate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ surahNumber, surahName }),
+      });
+
+      if (genRes.ok) {
+        return await genRes.json();
+      }
+    } catch {
+      // Server offline or static hosting
+    }
+
+    if (!cachedManifestData) {
+      try {
+        cachedManifestData = await fetchManifest();
+      } catch {}
+    }
+
+    return generateClientFallbackSurah(surahNumber, surahName, cachedManifestData);
   }
 
-  return generateClientFallbackSurah(surahNumber, surahName, cachedManifestData);
+  throw lastError instanceof Error
+    ? lastError
+    : new Error(`Could not load Surah ${surahNumber} (HTTP ${staticStatus ?? 'network error'})`);
 }
 
 /**
@@ -153,30 +161,38 @@ export class QuranSearchEngine {
   private surahIndex: any;
   private sectionIndex: any;
   private lookupMap: Map<string, SearchResultItem> = new Map();
+  private indexedSurahs: Set<number> = new Set();
   private isReady = false;
 
   constructor() {
-    // Using FlexSearch Index for fast, tokenized full-text queries
-    // @ts-ignore
-    const IndexClass = FlexSearch.Index || (FlexSearch as any).default?.Index || FlexSearch;
-    
-    this.surahIndex = new IndexClass({
-      tokenize: 'forward',
-      cache: true,
-    });
+    // Using FlexSearch Index with dedupe disabled so Arabic doubled letters (e.g. الله)
+    // are never collapsed into distinct words (e.g. اله / الهمزة), while English stays case-insensitive.
+    const fsAny = FlexSearch as any;
+    const IndexClass = fsAny.Index || fsAny.default?.Index || FlexSearch;
+    const EncoderClass = fsAny.Encoder || fsAny.default?.Encoder;
+    const encoder = EncoderClass
+      ? new EncoderClass({
+          normalize: true,
+          dedupe: false,
+          split: /[\s.,;!?،؛؟()[\]{}"'«»\-–—:/]+/,
+        })
+      : undefined;
 
-    this.sectionIndex = new IndexClass({
-      tokenize: 'forward',
-      cache: true,
-    });
+    const indexOpts = encoder
+      ? { tokenize: 'forward', cache: true, encoder }
+      : { tokenize: 'forward', cache: true };
+
+    this.surahIndex = new IndexClass(indexOpts);
+    this.sectionIndex = new IndexClass(indexOpts);
   }
 
   public populateFromManifest(manifest: ManifestResponse) {
+    if (this.isReady) return;
     manifest.surahs.forEach((surah) => {
       const docId = `surah-${surah.number}`;
-      const strippedNameAr = stripArabicDiacritics(surah.nameArabic || '');
-      const searchContent = `${surah.number} ${surah.nameTransliterated} ${surah.nameArabic} ${strippedNameAr} ${surah.nameEnglish} ${surah.thematicSummary}`;
-      
+      const indexedNameAr = buildArabicSearchIndexText(surah.nameArabic || '');
+      const searchContent = `${surah.number} ${surah.nameTransliterated} ${surah.nameArabic} ${indexedNameAr} ${surah.nameEnglish} ${surah.thematicSummary}`;
+
       this.surahIndex.add(docId, searchContent);
       this.lookupMap.set(docId, {
         id: docId,
@@ -191,7 +207,7 @@ export class QuranSearchEngine {
       if (surah.sectionsPreview) {
         surah.sectionsPreview.forEach((sec) => {
           const secDocId = `section-${surah.number}-${sec.id}`;
-          const secContent = `${surah.nameTransliterated} ${surah.nameArabic} ${strippedNameAr} ${sec.title} ${sec.summary || ''} Verses ${sec.verseRange[0]}-${sec.verseRange[1]} ${surah.number}:${sec.verseRange[0]}`;
+          const secContent = `${surah.nameTransliterated} ${surah.nameArabic} ${indexedNameAr} ${sec.title} ${sec.summary || ''} Verses ${sec.verseRange[0]}-${sec.verseRange[1]} ${surah.number}:${sec.verseRange[0]}`;
           this.sectionIndex.add(secDocId, secContent);
           this.lookupMap.set(secDocId, {
             id: secDocId,
@@ -211,12 +227,15 @@ export class QuranSearchEngine {
   }
 
   public indexSurahData(surah: SurahData) {
-    const strippedSurahAr = stripArabicDiacritics(surah.nameArabic || '');
+    if (this.indexedSurahs.has(surah.number)) return;
+    this.indexedSurahs.add(surah.number);
+
+    const indexedSurahAr = buildArabicSearchIndexText(surah.nameArabic || '');
     surah.sections.forEach((sec) => {
       const secDocId = `section-${surah.number}-${sec.id}`;
-      const strippedSecAr = stripArabicDiacritics(sec.arabicText || '');
-      const secContent = `${surah.nameTransliterated} ${surah.nameArabic} ${strippedSurahAr} ${sec.title} ${sec.arabicText || ''} ${strippedSecAr} ${sec.translation} ${sec.commentary} Verses ${sec.verseRange[0]}-${sec.verseRange[1]} ${surah.number}:${sec.verseRange[0]}`;
-      
+      const indexedSecAr = buildArabicSearchIndexText(sec.arabicText || '');
+      const secContent = `${surah.nameTransliterated} ${surah.nameArabic} ${indexedSurahAr} ${sec.title} ${sec.arabicText || ''} ${indexedSecAr} ${sec.translation} ${sec.commentary} Verses ${sec.verseRange[0]}-${sec.verseRange[1]} ${surah.number}:${sec.verseRange[0]}`;
+
       this.sectionIndex.add(secDocId, secContent);
       this.lookupMap.set(secDocId, {
         id: secDocId,
@@ -250,7 +269,7 @@ export class QuranSearchEngine {
       if (sec.curatedTerms) {
         sec.curatedTerms.forEach((term, tIdx) => {
           const termDocId = `term-${surah.number}-${sec.id}-${tIdx}`;
-          const termContent = `${term.term} ${term.arabicRoot || ''} ${stripArabicDiacritics(term.arabicRoot || '')} ${term.literalMeaning} ${term.theologicalContext}`;
+          const termContent = `${term.term} ${term.arabicRoot || ''} ${buildArabicSearchIndexText(term.arabicRoot || '')} ${term.literalMeaning} ${term.theologicalContext}`;
           this.sectionIndex.add(termDocId, termContent);
           this.lookupMap.set(termDocId, {
             id: termDocId,
@@ -295,14 +314,14 @@ export class QuranSearchEngine {
       if (matches.length > 0) return matches.slice(0, limit);
     }
 
-    const strippedQuery = /[\u0600-\u06FF]/.test(cleanQuery) ? stripArabicDiacritics(cleanQuery) : '';
+    const normalizedArabic = /[\u0600-\u06FF]/.test(cleanQuery) ? normalizeArabicForSearch(cleanQuery) : '';
     const surahMatches: string[] = [
       ...this.surahIndex.search(cleanQuery, { limit: 5 }),
-      ...(strippedQuery && strippedQuery !== cleanQuery ? this.surahIndex.search(strippedQuery, { limit: 5 }) : []),
+      ...(normalizedArabic && normalizedArabic !== cleanQuery ? this.surahIndex.search(normalizedArabic, { limit: 5 }) : []),
     ];
     const sectionMatches: string[] = [
       ...this.sectionIndex.search(cleanQuery, { limit: 10 }),
-      ...(strippedQuery && strippedQuery !== cleanQuery ? this.sectionIndex.search(strippedQuery, { limit: 10 }) : []),
+      ...(normalizedArabic && normalizedArabic !== cleanQuery ? this.sectionIndex.search(normalizedArabic, { limit: 10 }) : []),
     ];
 
     const combinedIds = Array.from(new Set([...surahMatches, ...sectionMatches])).slice(0, limit);
