@@ -294,9 +294,6 @@ const TafseerVerseHeading: React.FC<{
           </div>
         </div>
 
-        {/* Trailing hairline extending across remaining width */}
-        <div className="h-px flex-1 bg-gradient-to-r from-[#CD7743]/20 via-[#CD7743]/10 to-transparent mx-2 hidden md:block max-w-[120px]" />
-
         {/* Right side Jump icon / hint */}
         <div className="flex items-center gap-1 text-[11px] font-reader text-stone-400 dark:text-stone-500 opacity-60 group-hover/badge:opacity-100 group-hover/badge:text-[#CD7743] dark:group-hover/badge:text-[#E08955] transition-all shrink-0">
           <span className="hidden sm:inline">Jump to verse</span>
@@ -450,6 +447,42 @@ const splitIntoParagraphs = (commentary: string): string[] => {
   }
 
   return finalParas;
+};
+
+const TafseerSummaryBlock: React.FC<{ points: string[] }> = ({ points }) => {
+  const [isExpanded, setIsExpanded] = useState(true);
+
+  if (!points || points.length === 0) return null;
+
+  return (
+    <div className="border-l-2 border-[#CD7743]/70 dark:border-[#E08955]/70 bg-[#CD7743]/[0.035] dark:bg-[#CD7743]/[0.04] pl-4 sm:pl-5 pr-3 sm:pr-4 py-3 rounded-r-lg space-y-2.5 select-text">
+      <div className="flex items-center justify-between gap-3">
+        <span className="text-[11px] sm:text-xs font-semibold uppercase tracking-widest text-[#CD7743] dark:text-[#E08955]">
+          Summary
+        </span>
+        <button
+          type="button"
+          onClick={() => setIsExpanded((prev) => !prev)}
+          aria-expanded={isExpanded}
+          aria-label={isExpanded ? 'Hide Summary' : 'Show Summary'}
+          className="text-xs font-reader text-stone-400 dark:text-stone-500 hover:text-[#CD7743] dark:hover:text-[#E08955] transition-colors cursor-pointer select-none focus:outline-none focus-visible:underline"
+        >
+          {isExpanded ? 'Hide' : 'Show'}
+        </button>
+      </div>
+
+      {isExpanded && (
+        <ul className="space-y-2 text-[15.5px] sm:text-[16px] leading-[1.78] text-[#292524]/90 dark:text-[#D6D3D1]/90 font-reader">
+          {points.map((pt, idx) => (
+            <li key={`summary-pt-${idx}`} className="flex items-start gap-2.5">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#CD7743]/75 dark:bg-[#E08955]/75 shrink-0 mt-[10px]" />
+              <span>{pt}</span>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
 };
 
 const TafseerCommentaryBlock: React.FC<{
@@ -799,10 +832,9 @@ const TafseerCommentaryBlock: React.FC<{
         </span>
       </div>
 
-      {/* Baked-in Key Takeaways Card */}
+      {/* Inline Editorial Summary */}
       {summaryPoints && summaryPoints.length > 0 && (
-        <TafseerStudyCard
-          type="takeaways"
+        <TafseerSummaryBlock
           points={
             sectionSummary && !summaryPoints.includes(sectionSummary)
               ? [sectionSummary, ...summaryPoints]
