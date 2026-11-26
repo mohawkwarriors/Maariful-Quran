@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Sun, Moon, LayoutGrid, Columns, Menu, BookOpen, Bookmark, BookmarkCheck, Check, X, PanelLeftOpen } from 'lucide-react';
+import { Sun, Moon, LayoutGrid, Columns, Menu, Bookmark, BookmarkCheck, Check, X, PanelLeftOpen } from 'lucide-react';
 import { BookmarkRecord } from '../types/quran';
 import { claimActivePopover, releaseActivePopover } from '../utils/popoverCoordinator';
 

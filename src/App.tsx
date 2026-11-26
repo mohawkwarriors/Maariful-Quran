@@ -5,6 +5,7 @@ import { NavigationTree } from './components/NavigationTree';
 import { ReaderHeader } from './components/ReaderHeader';
 import { SurahHero } from './components/SurahHero';
 import { TafseerSectionView } from './components/TafseerSectionView';
+import { AboutModal } from './components/AboutModal';
 import { TopicReference } from './services/quranTopics';
 import { hasActivePopover } from './utils/popoverCoordinator';
 import { SurahData, BookmarkRecord, ThematicSection } from './types/quran';
@@ -26,11 +27,14 @@ function ReaderApp() {
   const [activeSectionId, setActiveSectionId] = useState<string | null>(null);
   const [viewMode, setViewMode] = useState<'separate' | 'inline'>('separate');
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+  const [isAboutOpen, setIsAboutOpen] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
   const [pendingScrollSectionId, setPendingScrollSectionId] = useState<string | null>(null);
   const readingContainerRef = useRef<HTMLDivElement>(null);
   const scrollCancelRef = useRef<(() => void) | null>(null);
+  const handleOpenAbout = useCallback(() => setIsAboutOpen(true), []);
+  const handleCloseAbout = useCallback(() => setIsAboutOpen(false), []);
 
   // Initialize Theme from localStorage with immediate default fallback
   const [theme, setTheme] = useState<'parchment' | 'charcoal'>(() => {
@@ -398,18 +402,18 @@ function ReaderApp() {
       }
 
       if (e.key === '[' || e.key === ']' || e.key === 'f' || e.key === 'F') {
-        if (e.ctrlKey || e.metaKey || e.altKey) return;
+        if (isAboutOpen || e.ctrlKey || e.metaKey || e.altKey) return;
         if (typeof window !== 'undefined' && !window.matchMedia('(min-width: 1024px)').matches) return;
         setIsSidebarCollapsed((prev) => !prev);
       } else if (e.key === 'Escape') {
-        if (e.defaultPrevented || hasActivePopover() || isMobileNavOpen) return;
+        if (e.defaultPrevented || hasActivePopover() || isMobileNavOpen || isAboutOpen) return;
         if (isSidebarCollapsed) setIsSidebarCollapsed(false);
       }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isSidebarCollapsed, isMobileNavOpen]);
+  }, [isSidebarCollapsed, isMobileNavOpen, isAboutOpen]);
 
   // Handle jumping to a specific topic reference across Surahs
   const handleSelectTopicReference = useCallback(
@@ -519,6 +523,7 @@ function ReaderApp() {
         bookmarks={bookmarks}
         onResumeBookmark={handleResumeBookmark}
         onRemoveBookmark={handleRemoveBookmarkRecord}
+        onOpenAbout={handleOpenAbout}
       />
 
       {/* 2. RIGHT READING CANVAS (Fluid width, max text container ~760px) */}
@@ -625,7 +630,15 @@ function ReaderApp() {
                   )}
                 </div>
                 <p className="pt-3 text-[11px] text-stone-400 dark:text-stone-500">
-                  Exegesis: Ma&apos;ariful Qur&apos;an (Mufti Muhammad Shafi) · Morphology &amp; Lemmas:{' '}
+                  Exegesis:{' '}
+                  <button
+                    type="button"
+                    onClick={handleOpenAbout}
+                    className="hover:text-[#CD7743] dark:hover:text-[#E08955] underline decoration-stone-300 dark:decoration-stone-700 underline-offset-2 transition-colors cursor-pointer"
+                  >
+                    Ma&apos;ariful Qur&apos;an (Mufti Muhammad Shafi)
+                  </button>
+                  {' '}· Morphology &amp; Lemmas:{' '}
                   <a
                     href="https://corpus.quran.com"
                     target="_blank"
@@ -640,6 +653,8 @@ function ReaderApp() {
           ) : null}
         </div>
       </main>
+
+      <AboutModal open={isAboutOpen} onClose={handleCloseAbout} />
     </div>
   );
 }

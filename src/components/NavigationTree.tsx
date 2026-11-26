@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useRef, useEffect } from 'react';
-import { Search, Book, Layers, ChevronRight, ChevronDown, X, BookmarkCheck, Bookmark, PanelLeftClose, Compass } from 'lucide-react';
+import { Search, Book, Layers, ChevronRight, ChevronDown, X, BookmarkCheck, Bookmark, PanelLeftClose, Compass, Info } from 'lucide-react';
 import { SurahManifestItem, SearchResultItem, BookmarkRecord } from '../types/quran';
 import { globalSearchEngine } from '../services/quranService';
 import { QURAN_THEMATIC_TOPICS, QURAN_TOPIC_CATEGORIES, TopicReference } from '../services/quranTopics';
@@ -34,6 +34,7 @@ interface NavigationTreeProps {
   bookmarks?: BookmarkRecord[];
   onResumeBookmark?: (b: BookmarkRecord) => void;
   onRemoveBookmark?: (b: BookmarkRecord) => void;
+  onOpenAbout?: () => void;
 }
 
 const NavigationTreeBase: React.FC<NavigationTreeProps> = ({
@@ -52,6 +53,7 @@ const NavigationTreeBase: React.FC<NavigationTreeProps> = ({
   bookmarks = [],
   onResumeBookmark,
   onRemoveBookmark,
+  onOpenAbout,
 }) => {
   const allBookmarks = bookmarks.length > 0 ? bookmarks : bookmark ? [bookmark] : [];
   const bookmarkedKeySet = useMemo(
@@ -293,6 +295,22 @@ const NavigationTreeBase: React.FC<NavigationTreeProps> = ({
           </div>
 
           <div className="flex items-center gap-1">
+            {/* About Ma'ariful Qur'an Button */}
+            {onOpenAbout && (
+              <button
+                type="button"
+                onClick={() => {
+                  onCloseMobile();
+                  onOpenAbout();
+                }}
+                className="p-1.5 rounded-lg text-stone-400 hover:text-[#CD7743] dark:hover:text-[#E08955] hover:bg-stone-200/50 dark:hover:bg-stone-800 transition-colors cursor-pointer"
+                title="About Ma'ariful Qur'an"
+                aria-label="About Ma'ariful Qur'an"
+              >
+                <Info className="w-5 h-5" />
+              </button>
+            )}
+
             {/* Desktop Collapse Sidebar Button */}
             {onCollapseSidebar && (
               <button
@@ -918,7 +936,6 @@ const NavigationTreeBase: React.FC<NavigationTreeProps> = ({
           </div>
         )}
       </div>
-
     </div>
   );
 
